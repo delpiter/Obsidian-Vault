@@ -88,3 +88,124 @@ $$
 >[!done] Conclusione
 >Qualunque siano i numeri $x,y\in \mathbb{R}$, l'**errore relativo** sul prodotto è sempre ***minore o uguale*** a $3u$
 >Di conseguenza il prodotto è sempre una operazione sicura (**stabile**).
+
+## Somma Algebrica
+---
+>[!info]
+>La ***somma algebrica macchina*** tra due numeri $x,y\in F(\beta,t,L,U)$ richiede:
+
+>[!caution] 1\. *Confronto* degli **esponenti**
+>Se gli esponenti sono **uguali**, si può procedere direttamente con la *somma delle mantisse*.
+>Se sono **diversi**, è necessario *allinearli*.
+
+>[!abstract] 2\. *Allineamento* degli **esponenti**
+>Per *allineare* il gli **esponenti** bisogna determinare il numero con l'*esponente minore*.
+>Successivamente si ***scala*** la mantissa del numero con l'esponente minore, spostando la virgola a sinistra di un numero di posizioni pari alla *differenza di esponenti*.
+
+>[!tip] 3\. *Somma* delle **mantisse**
+
+>4\. *Normalizzazione* del risultato
+>Se la mantissa non è **normalizzata**, si sposta la virgola e si aggiusta l'esponente
+
+>[!missing] 5\. *Arrotondamento*
+
+### Esempio
+> Consideriamo i numeri $x=0.78546\cdot 10^{2},\quad y=0.61332\cdot 10^{-1}$
+
+>[!caution] Calcoliamo: $x\oplus y$
+
+> **Confronto** e **Allineamento**
+
+Scaliamo $y$ in maniera tale che abbia la stessa parte esponente di $x$.
+$$
+y=0.61332\cdot 10^{-1}=0.00061332\cdot 10^{2}
+$$
+
+> **Somma**
+
+Sommiamo le mantisse:
+$$
+0.78546 \cdot 10^{2}+ 0.00061332\cdot 10^{2}=0.78607332\cdot 10^2
+$$
+
+>[!done] Il risultato è già normalizzato
+
+> **Arrotondamento**
+
+$$
+fl(0.78607332\cdot 10^2)= 0.78607 \cdot 10^2
+$$
+
+## Prodotto Macchina
+---
+>[!info]
+>Il ***prodotto*** tra due numeri $x,y\in F(\beta,t,L,U)$, richiede le seguenti fasi:
+
+>[!caution] 1\. **Prodotto** delle *mantisse*
+
+>[!missing] 2\. *Arrotondamento*
+>Si [[Floating Point#Troncamento e Arrotondamento|arrotonda]] (o *tronca*) il numero ottenuto alle prime $t$ cifre.
+
+>[!tip] **Somma** degli *esponenti*
+>In fine si **sommano** gli esponenti, **normalizzando** se necessario
+
+### Esempio
+>Consideriamo i due numeri: $x = 0.11111\cdot10^3 ,\ y = 0.52521\cdot10^2\in F(10,5,L,U)$
+
+>[!caution] Calcoliamo $x\otimes y$
+
+>**Prodotto** delle Mantisse
+
+$$
+0.11111 \cdot 0.52521 = 0.0583568
+$$
+
+>**Arrotondamento** a $5$ cifre
+
+$$
+0.0583568 = 0.058356 \cdot 10^{-1}
+$$
+
+> **Somma** degli esponenti
+
+$$
+x\cdot y= 0.058356 \cdot 10^{-1} \cdot 10^3 \cdot 10^2=0.58356\cdot 10^4
+$$
+
+## Divisione Macchina
+---
+>[!info]
+>La ***divisione macchina*** tra due numeri $x,y\in F(\beta, t,L,U)$ richiede le seguenti fasi:
+
+>[!caution] 1\. **Scala** il *dividendo*
+>Si **scala** il *dividendo* $x$ finché la sua mantissa non risulti ***minore*** di quella del *divisore* $y$.
+
+>[!abstract] 2\. **Divisione** tra *Mantisse*
+>Si esegue la **divisione** tra le mantisse.
+
+>[!missing] 3\. *Arrotondamento*
+>Si [[Floating Point#Troncamento e Arrotondamento|arrotonda]] (o *tronca*) il numero ottenuto alle prime $t$ cifre.
+
+>[!tip] **Sottrazione** tra *esponenti*
+
+### Esempio
+>Consideriamo i due numeri: $x = 0.12100\cdot10^5 ,\ y = 0.11000\cdot10^2\in F(10,5,L,U)$
+
+>[!caution] Calcoliamo $x \oslash y$
+
+> **Scaliamo** il dividendo
+
+$$
+0.12100\cdot10^5 = 0.012100\cdot10^6
+$$
+
+>**Dividiamo** le mantisse
+
+$$
+\frac{0.012100}{0.11000}=0.11000
+$$
+>**Sottrazione** degli esponenti
+
+$$
+0.11000 \cdot 10^6 \cdot 10 ^{-2}= 0.11000\cdot10^4
+$$
