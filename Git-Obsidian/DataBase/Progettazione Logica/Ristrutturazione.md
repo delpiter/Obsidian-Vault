@@ -5,66 +5,118 @@
 
 Si pone l'obbiettivo di *semplificare* la traduzione e [[Analisi dell'Efficienza|ottimizzare le prestazioni]]
 
-## Eliminazione delle generalizzazioni
+## Eliminazione delle Generalizzazioni
+---
+>Il modello relazionale non può rappresentare direttamente le [[Modello Entity-Relationship#Generalizzazione|gerarchie di generalizzazione]].
 
-### "Collasso" sull’entità padre
+>[!done] Soluzione
+>Si eliminano le **gerarchie**, sostituendole con entità *e* *relazioni*.
 
-Introduce:
-- **Valori nulli**
-- Un attributo aggiuntivo che indica di quale entità figlia si tratta
+Ci sono 3 possibilità:
+- **Collasso** sul *padre*.
+- **Collasso** sui *figli*.
+- **Sostituzione** con *relazioni*.
 
-✅ **Pro:** Accesso contestuale agli attributi del padre e della figlia.
-❌ **Contro:** Spreco di memoria per valori null.
+![[HirearchyElimination.png]]
 
-### "Collasso" sulle entità figlie
+### Collasso sull’entità padre
+>[!info] Concetto
+>Il ***collasso sull'entità padre*** consiste nell'*eliminazione delle entità figlie*, "spostando" gli attributi e le relazioni delle entità figlie sull'**entità padre**.
 
-Possibile solo se la generalizzazione è totale.
+![[BottomUpCollapse.png]]
 
-✅ **Pro:**
-- Conveniente quando si fanno operazioni che coinvolgono le singole entità figlie.
-- Non introduce valori nulli.
+>Attributo "***Tipo***":
+- Viene introdotto un attributo "**selettore**" aggiuntivo che indica di quale entità figlia si tratta
 
-❌ **Contro:** Possibile solo se la generalizzazione è totale.
+>[!help] Copertura
+>Se la copertura è ***Totale-Esclusiva***:
+>- "***Tipo***" assume $n$ valori, quante sono le *sotto entità*.
+>
+>***Parziale-Esclusiva***:
+>- "***Tipo***" assume $n+1$ valori, il valore in più serve per istanze che non appartengono a sotto entità.
+>
+>***Sovrapposta***:
+>- Occorrono tanti **selettori** quante sono le sotto-entità, ciascuno con un valore booleano.
+>- Se *parziale* i selettori possono essere **tutti falsi**.
 
-### Sostituzione della generalizzazione con relazioni
+Eventuali **relazioni  connesse** alle *sotto entità*, si trasportano sull'***entità padre***.
 
-- Relazioni tra le entità figlie e l’entità padre.
-- Necessità di introdurre vincoli:
-  - Un’occorrenza dell’entità "padre" non può partecipare contemporaneamente alle relazioni figlie.
-  - Se la generalizzazione è totale, ogni occorrenza dell’entità padre deve appartenere ad almeno una e al massimo una delle entità figlie.
+>[!done] Pro
 
-✅ **Pro:**
-- Conviene quando la generalizzazione non è totale.
-- Non si introducono valori nulli.
+Accesso contestuale agli attributi del padre e della figlia.
+
+>[!fail] Contro
+
+**Spreco di memoria** per valori [[Informazione Incompleta#Null|Null]].
+
+### Collasso sulle entità figlie
+>[!info] Concetto
+>Il ***collasso sulle entità figlie*** consiste nell'*eliminazione dell'entità padre*, "**duplicando**" gli attributi e le relazioni dell'entità padre sulle **entità figlie**.
+
+![[TopDownCollapse.png]]
+
+>[!done] Pro
+- ***Conveniente*** quando si fanno operazioni che coinvolgono le *singole entità figlie*.
+- **Non** introduce valori [[Informazione Incompleta#Null|Null]].
+
+>[!fail] Contro
+
+- Possibile **solo** se la generalizzazione è ***totale***.
+- La copertura *non esclusiva* introduce ***ridondanza***.
+
+### Sostituzione con Relazioni
+
+![[SubstitutionWithRelation.png]]
+
+>Tutte le **entità** vengono mantenute
+- Instaurate relazioni tra la entità **padre** e le entità **figlie**
+- Le entità figlie sono ***identificate esternamente*** dall'entità padre.
+
+La sostituzione con associazioni è ***sempre possibile***, indipendentemente dalla copertura della gerarchia.
+
+>[!done] Pro
+
+- Conviene se gli *accessi* alle **entità figlie** sono **separati** dagli accessi al **padre**.
+- **Non** si introducono valori [[Informazione Incompleta#Null|null]].
 - Genera entità con pochi attributi.
 
-❌ **Contro:** Aumenta il numero di accessi per mantenere i vincoli introdotti.
+>[!fail] Contro
 
+ - **Aumenta** il numero di *accessi* per mantenere i vincoli introdotti.
+
+## Attributi Multi-Valore
 ---
+>[!hint] Obbiettivo
+>***Eliminazione*** degli *attributi multivalore*, che non sono presenti nel [[Modello Relazionale|Modello Logico]].
 
-## Eliminazione degli attributi multi-valore
+> **Possibilità**:
 
-- Non presenti nel modello logico, quindi vanno rimossi.
 - Possono essere sostituiti introducendo una relazione **uno a molti**.
-- Aumenta il numero di entità.
+	- Aggiungendo *opportuni identificatori*.
 
----
+>[!warning] Metodo Possibile (*sconsigliato*)
 
+Se è nota la cardinalità massima $K$ di un attributo multivalore, allora è possibile prevedere $K$ attributi a singolo valore.
 ## Partizionamento e accorpamento di concetti
-
-### Obiettivo:
-Ridurre il numero di accessi. È necessario conoscere il volume dei dati.
+---
+>[!hint] Obbiettivo
+> L'**obbiettivo** del ***partizionamento*** e ***accorpamento*** di concetti è quello di *ridurre il numero di accessi*.
+>>[!caution] È necessario conoscere il volume dei dati.
 
 ### Partizionamento
-Separazione degli attributi di un concetto che vengono acceduti separatamente.
-- **Partizionamento verticale**: Separazione di un’entità sulla base dei suoi attributi.
+>[!tldr] Idea
+>**Separazione** degli attributi di un concetto che vengono ***acceduti separatamente***.
 
+***Partizionamento Verticale***
+- Separazione di un’*entità* sulla base dei suoi attributi.
+
+***Partizionamento Orizzontale***
+- Separazione di una *relazione* sulla base dei suoi attributi.
 ### Accorpamento
-- Raggruppamento di attributi di concetti diversi che vengono acceduti insieme.
-- Generalmente riguarda associazioni **uno a uno**.
+>[!tldr] Idea
+>**Raggruppamento** di attributi di concetti diversi che vengono ***acceduti insieme***.
 
----
-
+Generalmente riguarda associazioni **uno a uno**.
 ## Scelta degli identificatori
 
 In caso di entità con più identificatori:
@@ -73,55 +125,3 @@ In caso di entità con più identificatori:
 - Scegliere l’identificatore minimale.
 - Preferire identificatori interni.
 - Preferire identificatori utilizzati da molte operazioni.
-
----
-
-## Analisi delle ridondanze
-
-### Definizione
-Informazione significativa ma derivabile da altre già presenti (**attributi derivabili**).
-
-✅ **Vantaggi:**
-- Operazioni sui dati spesso più efficienti.
-
-❌ **Svantaggi:**
-- Maggiore occupazione di memoria.
-- Maggiore complessità degli aggiornamenti.
-
-### Decisione
-- Si calcola il costo e l’occupazione di memoria di entrambi gli schemi (con e senza ridondanze).
-- Necessario disporre di **tabelle dei volumi e delle operazioni**.
-- Frequenza delle operazioni.
-- **Pesi delle operazioni:**
-  - Lettura: **1**
-  - Scrittura: **2**
-
----
-
-# TRADUZIONE SCHEMA E/R
-
-Necessità di tradurre i costrutti del modello E/R in costrutti del modello relazionale per garantire l’equivalenza.
-
-### Traduzione con identificatore interno
-- Le entità del modello E/R si traducono in tabelle.
-- L’identificatore diventa **chiave primaria**.
-
-### Traduzione con identificatore esterno
-- Le entità con identificatore esterno si traducono in una tabella che include tra le chiavi gli identificatori dell’entità esterna.
-
-### Traduzione di relazioni **molti a molti**
-- La relazione diventa una tabella con la chiave costruita dalle chiavi delle entità coinvolte.
-
-### Traduzione di relazioni **uno a molti**
-**Due possibilità:**
-1. Tradurre la relazione come una **tabella separata** (come nel caso molti a molti).
-2. **Inglobare** la relazione nell’entità con cardinalità massima 1.
-
-### Traduzione di relazioni **uno a uno**
-**Tre possibilità a seconda della cardinalità minima:**
-1. **Partecipazione obbligatoria per entrambe le entità:**
-   - Si traduce inglobando la relazione in una delle due entità.
-2. **Partecipazione obbligatoria per una sola entità:**
-   - Si traduce inglobando la relazione nell’entità con partecipazione obbligatoria.
-3. **Partecipazione facoltativa per entrambe le entità:**
-   - Analogamente al caso **uno a molti**.

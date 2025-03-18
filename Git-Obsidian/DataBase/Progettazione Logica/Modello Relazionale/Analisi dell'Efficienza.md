@@ -69,6 +69,14 @@ Il costo degli ***accessi in scrittura*** è in generale considerato **doppio** 
 >[!info] Ridondanza
 >Una ridondanza in uno [[Modello Entity-Relationship|schema E/R]] è un'informazione significativa ma ***derivabile da altre***.
 
+
+>[!done] Pro:
+- Operazioni sui dati spesso ***più efficienti***.
+
+>[!fail] Contro
+- Maggiore *occupazione di memoria*.
+- Maggiore *complessità degli aggiornamenti*.
+
 In questa fase si decide se *eliminare* o *meno* le ***ridondanze***.
 
 Se si mantiene una *ridondanza*:
