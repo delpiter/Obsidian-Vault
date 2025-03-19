@@ -118,10 +118,20 @@ Se è nota la cardinalità massima $K$ di un attributo multivalore, allora è po
 
 Generalmente riguarda associazioni **uno a uno**.
 ## Scelta degli identificatori
+---
+>[!important] Concetto
+>La ***scelta degli identificatori*** è un'operazione indispensabile per la traduzione nel [[Modello Relazionale]].
+>Corrisponde alla scelta della [[Vincoli di Integrità#Chiave|chiave primaria]]
 
-In caso di entità con più identificatori:
-- **Necessario sceglierne uno.**
-- Evitare attributi con valori nulli.
-- Scegliere l’identificatore minimale.
-- Preferire identificatori interni.
-- Preferire identificatori utilizzati da molte operazioni.
+> ***Criteri*** da rispettare:
+- Assenza di [[Informazione Incompleta#Null|opzionalità]].
+- *Semplicità*.
+- Utilizzo nelle operazioni più *frequenti* o *importanti*.
+
+Se nessuno degli identificatori soddisfa i requisiti si introducono nuovi attributi (***codici***) ad *hoc*.
+
+> In caso di *entità* con ***più identificatori***:
+- **È necessario sceglierne uno.**
+- Scegliere l’***identificatore minimale***.
+- Preferire identificatori **interni**.
+- Preferire identificatori utilizzati da **molte operazioni**.
