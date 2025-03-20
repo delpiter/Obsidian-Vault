@@ -56,3 +56,39 @@ $K$ quantifica l'entità con cui l'errore relativo sui dati si ***amplifica*** s
 >[!nota]
 >Il condizionamento è ***legato al problema numerico*** e **non** ha alcun legame con gli errori di arrotondamento delle operazioni macchina, ne con il particolare algoritmo utilizzato.
 
+##### Esempio
+>[!quote] Testo
+> Consideriamo lo studio del condizionamento della valutazione di una funzione $f:\mathbb{R}\to\mathbb{R}$ (differenziabile) in un punto $x$.
+
+Supponiamo di voler calcolare il valore di una funzione $f(x)$, ma il dato $x$ a nostra disposizione è effetto da un errore.
+
+>[!warning] È importante stimare l'errore sulla funzione $f(x)$ in base all'errore sul dato.
+
+>Indichiamo con $\tilde{x}=x+\delta_{x}$ il dato affetto da una perturbazione $\delta_{x}$, **piccola**.
+
+Consideriamo uno sviluppo in serie del primo ordine di $f(x)$ in un intorno di $x$:
+$$
+f(x+\delta_{x})=f(x)+\delta_{x}f'(x)+\circ(\delta_{x})
+$$
+
+Essendo la perturbazione $\delta_{x}$ piccola:
+$$
+f(\tilde{x})-f(x)\approx (\tilde{x}-x)\cdot f'(x)
+$$
+$$
+\displaystyle{\frac{f(\tilde{x})-f(x)}{f(x)}}\approx \displaystyle{\frac{(\tilde{x}-x)f'(x)}{f(x)}}
+$$
+$$
+\left| \displaystyle{\frac{f(\tilde{x})-f(x)}{f(x)}} \right|\approx \left| \displaystyle{\frac{f'(x)x}{f(x)}} \right|\left| \displaystyle{\frac{\tilde{x}-x}{x}} \right|   
+$$
+
+- Poniamo $K=\left| \displaystyle{\frac{f'(x)x}{f(x)}} \right|$
+
+$K$ è detto ***indice di condizionamento del problema*** della valutazione di una funzione $f:\mathbb{R}\to\mathbb{R}$ differenziabile in un punto $x$
+
+##### Riformulare un Problema Mal Condizionato
+>[!Help] Soluzione
+>Nel caso in cui si abbia un ***problema mal condizionato***, si possono seguire le seguenti strade:
+>1. Cambiare la *formulazione del problema*, per superare l'ostacolo.
+>2. Usare la *precisione multipla* nei calcoli.
+>3. Usare *tecniche di regolarizzazione* che sostituiscono al problema di partenza un problema leggermente modificato ma **ben condizionato**.

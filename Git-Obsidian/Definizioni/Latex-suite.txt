@@ -39,6 +39,8 @@
 	{trigger: "ome", replacement: "\\omega", options: "mA"},
 	{trigger: "@o", replacement: "\\omega", options: "mA"},
 	{trigger: "@O", replacement: "\\Omega", options: "mA"},
+	{trigger: "@y", replacement: "\\psi", options: "mA"},
+	{trigger: "@Y", replacement: "\\Psi", options: "mA"},
 	{trigger: "pi", replacement: "\\pi", options: "mA"},
 	{trigger: "fora", replacement: "\\forall", options: "mA"},
 	{trigger: "smino", replacement: "\\setminus\\{0\\}", options: "mA"},	
