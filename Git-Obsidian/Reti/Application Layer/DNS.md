@@ -11,7 +11,7 @@
 
 Un nome simbolico rende ***più facile*** l'utilizzo agli esserei umani.
 
-## DNS
+## Domain Name System
 ---
 >[!cite] Concetto
 >Il ***D***omain ***N***ame ***S***ystem consente la traduzione di un [[Protocollo IP|indirizzo IP]] in un ***domain*** e viceversa.

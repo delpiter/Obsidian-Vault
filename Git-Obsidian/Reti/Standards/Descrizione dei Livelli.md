@@ -43,7 +43,7 @@ Si occupa del problema della *commutazione*.
 ## Transport Layer
 ---
 >[!hint] Scopo
->Lo scopo del ***transport layer*** è fornire un canale sicuro #addLink end-to-end, *svincolando* gli *strati superiori* da tutti i **problemi di rete**.
+>Lo scopo del ***transport layer*** è fornire un canale sicuro **end-to-end** (da utente a utente), *svincolando* gli *strati superiori* da tutti i **problemi di rete**.
 
 Una tipica funzione è adattare la dimensione dei frammenti forniti dagli strati superiori (*files*) a quella richiesta dalle reti (*packets*)
 - Funzione di pacchettizzazione (***fragmenting/reassembling***).

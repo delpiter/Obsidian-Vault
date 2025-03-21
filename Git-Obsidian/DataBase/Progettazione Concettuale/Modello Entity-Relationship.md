@@ -206,7 +206,7 @@ Se i *vincoli di cardinalità* per un’entità $E$ relativamente a un’associa
 >$$min-card(A, B) = max-card(A, B) = 1$$
 
 Ogni entità deve avere ***almeno un identificatore***, ma ne può avere ***più di uno***
-- In fase di *progettazione logica*, uno di essi sarà scelto come #addLink ***chiave primaria***, per gli altri si dovrà comunque imporre un **vincolo di unicità**
+- In fase di *progettazione logica*, uno di essi sarà scelto come [[Vincoli di Integrità#Chiavi|chiave primaria]], per gli altri si dovrà comunque imporre un **vincolo di unicità**
 
 Nel caso di *più identificatori* è ammesso che gli attributi o le entità coinvolti in alcune identificazioni, **tranne una**, possano essere ***opzionali***
 ##### Tipologie
