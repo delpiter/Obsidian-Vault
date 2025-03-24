@@ -98,10 +98,10 @@ $$
 >2. $\mid\mid\alpha A\mid\mid = \mid\alpha\mid \cdot \mid\mid A\mid\mid\quad \forall A\in M(m\times n), \ \forall \alpha \in\mathbb{R}$
 >>[!hint] La norma di una matrice scalata è uguale al valore assoluto dello scalare per la norma della matrice.
 >
->3. $\mid\mid A+ B\mid\mid \leq \mid\mid A\mid\mid + \mid\mid B\mid\mid\quad \forall A\in M(m\times p), B\in M(q\times n)$
+>3. $\mid\mid A+ B\mid\mid \leq \mid\mid A\mid\mid + \mid\mid B\mid\mid\quad \forall A,B\in \mathbb{R}^{m\times n}$
 >>[!hint] La norma di una matrice somma è minore o uguale alla somma delle norme di due matrici.
 >
->4. $\|A\cdot B\| \leq \|A\|\cdot \|B\| \ \forall A\in M(m\times p), B\in M(q\times n)$
+>4. $\|A\cdot B\| \leq \|A\|\cdot \|B\| \ \forall A\in \mathbb{R}^{m\times p}, B\in \mathbb{R}^{q\times n}$
 >>[!hint] La norma del prodotto di due matrici è minore o uguale al prodotto delle norme delle due matrici.
 
 ### Norme Compatibili
@@ -112,19 +112,30 @@ $$
 $$
 - Vale la seguente *disuguaglianza*:
 $$
-\|A_{x}\|_{v}\leq \|A\|_{M} \cdot\|x\|_{v}
+\|Ax\|_{v}\leq \|A\|_{M} \cdot\|x\|_{v}
 $$
+>[!question] $Ax$
+>Il vettore risultato è un vettore $y$ con $m$ componenti
+$$A_{m\times n}\cdot x_{n} \to y_{n}$$
+
+>[!quote] A parole
+>La "*lunghezza*" del vettore trasformato di partenza non può essere maggiore della lunghezza del vettore iniziale moltiplicato per la "*lunghezza della trasformazione*".
+>Il *fattore di scala* rappresenta un ***limite superiore***. 
 
 Poiché si conoscono le norme di vettori, è interessante definire ***norme di matrici indotte*** dalle corrispondenti norme di vettori.
 
 >[!def] Norme di Matrici Indotte
 >Sia $A\in\mathbb{R}^{m\times n}$ e $x\in\mathbb{R}^n, x\neq 0$.
->Si definisce ***norma indotta*** (o *norma naturale*) $\| A\|_{N}$, la più piccola costante $C$ per cui vale la maggiorazione:
->$$\|A_{x}\|_{v}\leq C\cdot\|x\|_{v}$$
+>Si definisce ***norma indotta*** dalla norma naturale $\| \ \|_{v}$ (o *norma naturale* $\| A\|_{N}$), la più piccola costante $C$ per cui vale la maggiorazione:
+>$$\|Ax\|_{v}\leq C\cdot\|x\|_{v}$$
 >- da cui
 >
->$$\|A_{x}\|_{v}\leq \|A\|_{N}\cdot\|x\|_{v}\implies\displaystyle{\frac{\|A_{x}\|_{v}}{\|x\|_{v}}}\leq\|A\|_{N}$$
+>$$\|Ax\|_{v}\leq \|A\|_{N}\cdot\|x\|_{v}\implies\displaystyle{\frac{\|Ax\|_{v}}{\|x\|_{v}}}\leq\|A\|_{N}$$
 
+La *norma naturale* di una matrice $A$ è il massimo fattore di scala che la matrice $A$ può produrre su un vettore di lunghezza $1$.
+$$
+\| A\|_{n}=\sup\limits_{\|x\|_{v}\neq0} \displaystyle{\frac{\|Ax\|_{v}}{\|x\|_{v}}}=\max\limits_{\|x\|_{v}=1}\|Ax\|_{v}
+$$
 ### Norme Indotte dalle Norme più Comuni
 > Consideriamo le norme più comuni su $\mathbb{R}^n$
 
@@ -149,8 +160,7 @@ Si considera la norma di $1$ di tutte le righe e si prende il valore massimo.
 $$
 \|A\|_{2} =\sqrt{ \rho(A^TA) }
 $$
-Dove $\rho$ è il ***raggio spettrale***, cioè l'autovettore di modulo massimo della matrice $A^TA$.
-
+Dove $\rho$ è il ***raggio spettrale***, cioè l'autovalore di modulo massimo della matrice $A^TA$
 #### Richiami
 - [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|Matrici Simmetriche]]
 - [[9 - Matrici Diagonali#Autovettore e Autovalore|Autovalore e Autovettore]]
