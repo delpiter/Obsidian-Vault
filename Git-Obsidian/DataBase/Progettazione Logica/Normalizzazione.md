@@ -39,10 +39,13 @@ Tabella studente con annesse le informazioni dell'università:
 
 - Utilizzata come tecnica di verifica dei risultati della progettazione di una base di dati.
 - **Non** è una metodologia di progettazione.
-### Proprietà di uno schema relazionale
-Garantiscono:
-- **Qualità** del database.
-- **Assenza di determinati difetti**.
+
+>[!hint] Proprietà di uno schema relazionale
+>Garantiscono:
+>- **Qualità** del database.
+>- **Assenza di determinati difetti**.
+
+![[NormalForms.png]]
 ### Dipendenze Funzionali
 >[!def] Definizione
 >Si considerino uno [[Modello Relazionale|schema di relazione]] $R(T)$ e un'estensione $r$; Due sottoinsiemi *non vuoti* di $T$ denominati $X$ e $Y$ rispettivamente.
@@ -84,21 +87,38 @@ $$
 $$
 t_{1}[T]=t_{2}[T]
 $$
-## Prima forma normale (1NF) - "Forma Atomica"
-- Ogni attributo deve avere un **dominio atomico**.
-- Ogni attributo deve contenere solo **un valore**.
+### Prima Forma Normale (1NF)
+>[!tldr] Forma Atomica
+>Uno schema $R(T)$ è in ***1NF*** <u>se e solo se</u> il *dominio* di ciascun attributo comprende solo valori valore ***atomici*** (semplici, indivisibili) e il **valore** di ciascun attributo in una tupla è un *singolo del dominio* di quell’attributo.
+### Seconda Forma Normale (2NF)
+>[!tldr] Second Normal Form
+>Uno schema $R(T)$  con vincoli $F$ è in ***2NF*** <u>se e solo se</u> ogni attributo **non primo** dipende *completamente* da **ogni chiave** candidata dello schema.
 
-## Seconda forma normale (2NF)
-Uno schema è in **2NF** se:
-1. È in **1NF**.
-2. Ogni attributo **non chiave** dipende **completamente** da ogni chiave.
+> Esempio: **PRODUTTORI**(Produttore, Modello, <u>NomeModello</u>, Stato)
 
-## Terza forma normale (3NF)
-Uno schema è in **3NF** se:
-1. È in **2NF**.
-2. Non esistono **dipendenze transitive**.
-   - **Un attributo non chiave** non deve dipendere da **un altro attributo non chiave**, che a sua volta dipende dalla chiave dello schema.
-- È sempre possibile ottenere schemi in **3NF** preservando tutte le dipendenze.
+Dipendenze Funzionali:
+- **NomeModello** $\to$ **Produttore**
+- **NomeModello** $\to$ **Modello**
+- **Produttore**, **Modello** $\to$ **NomeModello**
+- **Produttore** $\to$ **Stato** (*dipendenza parziale*)
+
+>[!fail] La relazione non è in ***2NF***
+
+La trasformazione in **2FN** prevede due relazioni:
+- **PRODUTTORI**(<u>Produttore</u>, Stato)
+- **MODELLI**(<u>NomeModello</u>, <u>Modello</u>, NomeModello)
+## Terza Forma Normale (3NF)
+> Per definire la **3NF** è necessario introdurre il concetto di *dipendenza transitiva*.
+
+>[!info] Dipendenza Transitiva
+>Dato uno schema $R(t), X\subseteq T, A \in T$, $A$ ***dipende transitivamente*** da $X$ se esiste $Y \subset T$ tale che:
+>1. $X\to Y$
+>2. $\neg(Y \to X)$ ($Y$ non determina $X$)
+>3. $Y \to A$
+>4. $A\notin Y$
+
+>[!tldr] Third Normal Form
+>Uno schema $R(T)$  con vincoli $F$ è in ***3NF*** <u>se e solo se</u> **non** c'è ***dipendenza transitiva*** di un *attributo non primo* da una chiave.
 
 ## Forma normale di Boyce e Codd (BCNF)
 Uno schema è in **BCNF** se:
