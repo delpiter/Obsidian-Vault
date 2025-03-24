@@ -93,7 +93,7 @@ $$
 >[!def] Definizione
 >Sia $\mathbb{R}^{m\times n}$ lo [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] delle ***matrici*** $m\times n$ su $\mathbb{R}$, si dice che l'applicazione $\|A\|$ da $\mathbb{R}^{m\times n}$ a $\mathbb{R}_{+}\cup \{ 0 \}$ è norma della matrice $A$ se gode delle *seguenti proprietà*:
 >1. $\mid\mid A \mid\mid >0 \quad \forall A\neq 0$ e $\mid\mid A \mid\mid=0\iff A=0$
->>[!hint] La norma di una matrice è sempre non negativa e nulla solo se il vettore è nullo.
+>>[!hint] La norma di una matrice è sempre non negativa e nulla solo se la matrice è nulla.
 >
 >2. $\mid\mid\alpha A\mid\mid = \mid\alpha\mid \cdot \mid\mid A\mid\mid\quad \forall A\in M(m\times n), \ \forall \alpha \in\mathbb{R}$
 >>[!hint] La norma di una matrice scalata è uguale al valore assoluto dello scalare per la norma della matrice.
