@@ -54,15 +54,18 @@ Diventa necessario introdurre uno strumento matematico che estenda l'[[Errore di
 >Si dice che le norme $\mid\mid x\mid\mid$ e $\mid\mid x \mid\mid_{*}$ sono ***equivalenti***.
 >>[!done] Quindi tutte le norme su $\mathbb{R}^n$ sono equivalenti.
 
-Si può far vedere che valgono le seguenti disugualianze:
+Si può far vedere che valgono le seguenti disuguaglianze:
 
 $$
 \begin{array}
 \ \|x\|_{\infty} \leq \|x\|_2 \leq \sqrt{n} \|x\|_{\infty} \\
 \|x\|_{\infty} \leq \|x\|_1 \leq n \|x\|_{\infty} \\
 \|x\|_2 \leq \|x\|_1 \leq \sqrt{n} \|x\|_2 \\
-\|x\|_{\infty} \leq \|x\|_2 \leq \|x\|_1 \\
 \end{array}
+$$
+- Da queste *disuguaglianze* possiamo dedurre:
+$$
+\|x\|_{\infty} \leq \|x\|_2 \leq \|x\|_1
 $$
 
 L'equivalenza delle norme è importante perché ***garantisce*** che i risultati ottenuti con una *norma* sono validi anche per le altre *norme equivalenti*.
