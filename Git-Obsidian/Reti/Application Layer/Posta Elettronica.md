@@ -33,19 +33,22 @@ Il protocollo si basa sulla disponibilità nella rete di computer dedicati, chia
 ### Protocolli di Accesso
 ---
 #### POP3
->[!info] \[RFC1939\]
->Il protocollo **POP3** (***P***ost ***O***ffice ***P***rotocol ***3***) utilizza il protocollo di trasporto #addLink TCP sulla [[Livello di Trasporto#Numero di Porta|porta]] $110$ del server
-> Dopo la lettura del messaggio , esso viene eliminato dalla *mailbox*.
+>[!info]
+>Il protocollo **POP3** (***P***ost ***O***ffice ***P***rotocol ***3***) \[RFC1939\] utilizza il protocollo di trasporto #addLink TCP sulla [[Livello di Trasporto#Numero di Porta|porta]] $110$ del server
+> 
 
-Il protocollo **POP3** presenta diverse 
+Il protocollo **POP3** presenta diverse *limitazioni*:
+- Non consente di creare gerarchie di cartelle
+- Dopo la lettura del messaggio , esso viene eliminato dal *server*.
 
 #### IMAP4
-Mantenimento offline delle mail
-Accessibile da più utenti
-Messaggi mantenuti dal server
-Accessibile parte singola del messaggio
-Messaggi organizzati per cartelle
+>[!tip] Info
+>Il protocollo **IMAP4** (***I***nternet ***M***essage ***A***ccess ***P***rotocol ***v4***) \[RFC3501\], supera le limitazione poste dal protocollo **POP3**.
+>- Le mail possono restare nel *server*, nella quale è possibile definire una **gerachia di cartelle** a discrezione dell'utente.
 
+A differenza di **POP3**, **IMAP** mantiene lo stato della mailbox da un accesso al successivo.
+
+**IMAP** utilizza il protocollo ***TCP*** sulla [[Livello di Trasporto#Numero di Porta|porta]] $143$
 ## MIME
 ---
 >[!tldr] MIME Types
