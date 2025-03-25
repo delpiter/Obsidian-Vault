@@ -46,6 +46,21 @@ Tabella studente con annesse le informazioni dell'università:
 >- **Assenza di determinati difetti**.
 
 ![[NormalForms.png]]
+### Decomposizione Senza Perdita
+>La decomposizione *non deve alterare* il **contenuto informativo** del database.
+
+>[!hint] Decomposizione Lossless
+>Uno schema $R(X)$ si decompone senza perdita negli schemi $R_{1}(X_{1})$ e $R_{2}(X_{2})$ se, per ogni stato legale $r$ su $R(X)$, il #addLink ***join naturale*** delle #addLink ***proiezioni*** di $r$ su $X_{1}$ e $X_{2}$ è uguale a $r$ stessa:
+>$$\pi_{X_{1}}(r)\bowtie\pi_{X_{2}}(r)=r$$
+>>[!quote] A Parole
+>>Uno *schema* si decompone ***senza perdita*** se, eseguendo il **join naturale** delle tabelle “decomposte”, si ottiene esattamente la tabella originale.
+
+>[!missing] Decomposizione Lossy
+> Una decomposizione **con perdita**, a seguito del **join naturale**, può:
+>  - **Perdere** delle tuple (*tuple spurie*).
+>  - **Generare** delle tuple errate.
+
+
 ### Dipendenze Funzionali
 >[!def] Definizione
 >Si considerino uno [[Modello Relazionale|schema di relazione]] $R(T)$ e un'estensione $r$; Due sottoinsiemi *non vuoti* di $T$ denominati $X$ e $Y$ rispettivamente.
@@ -120,17 +135,21 @@ La trasformazione in **2FN** prevede due relazioni:
 >[!tldr] Third Normal Form
 >Uno schema $R(T)$  con vincoli $F$ è in ***3NF*** <u>se e solo se</u> **non** c'è ***dipendenza transitiva*** di un *attributo non primo* da una chiave.
 
+> Esempio di normalizzazione in **3NF**:
+
+**IMPIEGATI**(<u>Impiegato</u>, Stipendio, <u>Settore</u>, Budget, Ruolo)
+
+Dipendenze:
+- *Impiegato* $\to$ Stipendio (*dipendenza parziale*)
+- *Settore* $\to$ Budget (*dipendenza parziale*)
+- *Impiegato*, *Settore* $\to$ Ruolo
+
+La tabella viene scomposta nelle seguenti tabelle:
+- **IMPIEGATI**(<u>Impiegato</u>, Stipendio)
+- **SETTORI**(<u>Settore</u>, Budget)
+- **RUOLI**(<u>Impiegato</u>, <u>Settore</u>, Ruolo)
+
 ## Forma normale di Boyce e Codd (BCNF)
 Uno schema è in **BCNF** se:
 - Per ogni dipendenza funzionale non banale **Y → Z**, **Y** è una **superchiave** dello schema.
 - **Non è sempre possibile** portare uno schema in **BCNF**.
-
----
-
-# DECOMPOSIZIONE SENZA PERDITA
-
-- La decomposizione non deve alterare il **contenuto informativo** del database.
-- **Decomposizione lossless**: Uno schema si decompone senza perdita se, eseguendo il **join naturale** delle tabelle “decomposte”, si ottiene esattamente la tabella originale.
-- Una decomposizione **con perdita** può:
-  - **Perdere** delle tuple.
-  - **Generare** delle tuple errate.

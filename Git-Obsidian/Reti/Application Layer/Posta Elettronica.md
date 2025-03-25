@@ -30,13 +30,16 @@ Il protocollo si basa sulla disponibilità nella rete di computer dedicati, chia
 
 ![[SMTP.png]]
 
-MIME (Multipurpose Internet Mail Extension)
-- Codifica degli allegati
-- Dice come viene codificato il file allegato
-Come HTTP, SMTP usa messaggi a stringhe
-## POP3
-Dopo la lettura del messaggio viene eliminato
-## IMAP4
+### Protocolli di Accesso
+---
+#### POP3
+>[!info] \[RFC1939\]
+>Il protocollo **POP3** (***P***ost ***O***ffice ***P***rotocol ***3***) utilizza il protocollo di trasporto #addLink TCP sulla [[Livello di Trasporto#Numero di Porta|porta]] $110$ del server
+> Dopo la lettura del messaggio , esso viene eliminato dalla *mailbox*.
+
+Il protocollo **POP3** presenta diverse 
+
+#### IMAP4
 Mantenimento offline delle mail
 Accessibile da più utenti
 Messaggi mantenuti dal server
