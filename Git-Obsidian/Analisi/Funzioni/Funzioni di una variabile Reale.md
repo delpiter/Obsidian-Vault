@@ -210,15 +210,18 @@ g(x)=log(x)/log(1/2)
 >Sia $U=\{(x,y)\in\mathbb{R}\times\mathbb{R}|x^2+y^2=1\}$
 >La circonferenza goniometrica è una circonferenza di raggio $1$
 
-[[Git-Obsidian/Analisi/Definizioni_Analisi#Valori Notevoli|Alcuni valori notevoli]]
-### Coseno
+[[Definizioni_Analisi#Valori Notevoli|Alcuni valori notevoli]]
 
-$$
-\begin{array}
-/Cos:\mathbb{R}\to\mathbb{R} \\
-\alpha\mapsto x_{p}
-\end{array}
-$$
+Considerando una retta $a$ con origine $O$ (*centro della circonferenza goniometrica*), e l'angolo che la retta fa con l'asse delle ascisse.
+
+> Chiamiamo $A$ l'intersezione di $a$ con la circonferenza
+
+Se $A=(x,y)$ definiamo:
+- $cos(\alpha)=x$
+- $sin(\alpha)=y$
+### Coseno
+>[!def] Definizione
+>$$\begin{array}\ cos:\mathbb{R}\to\mathbb{R} \\\alpha\mapsto x_{p}\end{array}$$
 #### Proprietà
 - Il coseno è una funzione periodica di periodo $2\pi\text{-periodo}$
 - $cos(\alpha)\in[-1,1]\ \ \ \forall \alpha \in\mathbb{R}$
@@ -238,14 +241,14 @@ grid: true
 ---
 f(x)=cos(x)
 ```
+#### Teorema del Coseno
+>[!info]
+>Dato un triangolo di lati $a,b,c$ e detti $\alpha,\beta,\gamma$ gli angoli opposti a tali lati, vale la relazione:
+>$$a^2=b^2+c^2-2bc\ cos(\alpha)$$
 
 ### Seno
-$$
-\begin{array}
-/Sen:\mathbb{R}\to\mathbb{R} \\
-\alpha\mapsto y_{p}
-\end{array}
-$$
+>[!def] Definizione
+>$$\begin{array}/Sen:\mathbb{R}\to\mathbb{R} \\\alpha\mapsto y_{p}\end{array}$$
 #### Proprietà
 - Il seno è una funzione periodica di periodo $2\pi\text{-periodo}$
 - $sen(\alpha)\in[-1,1]\ \ \ \forall \alpha \in\mathbb{R}$
@@ -265,6 +268,10 @@ grid: true
 ---
 f(x)=sin(x)
 ```
+#### Teorema dei Seni
+>[!info]
+>Dato un triangolo di lati $a,b,c$ e detti $\alpha,\beta,\gamma$ gli angoli opposti a tali lati, vale la relazione:
+>$$\frac{a}{sin(\alpha)}=\frac{b}{sin(\beta)}=\frac{c}{sin(\gamma))}$$
 ### Formule Seno e Coseno
 $$
 \begin{array}

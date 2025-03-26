@@ -48,7 +48,7 @@ $$
 >[!example] Nota la $a(t)$
 >$$a(t) \underset{ \text{Integro } (v_{0}) }{ \to } v(t) \underset{ \text{Integro } (x_{0})}{ \to } x(t)$$
 
-### Unità di Misura
+## Unità di Misura
 
 | Quantità      | Unità di Misura             | Simbolo  |
 | ------------- | --------------------------- | -------- |
