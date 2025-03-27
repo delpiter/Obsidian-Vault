@@ -45,7 +45,7 @@
 	{trigger: "fora", replacement: "\\forall", options: "mA"},
 	{trigger: "smino", replacement: "\\setminus\\{0\\}", options: "mA"},	
 	{trigger: "@P", replacement: "\\Phi", options: "mA"},
-   	{trigger: "@p", replacement: "\\varphi", options: "mA"},
+   	{trigger: "@p", replacement: "\\phi", options: "mA"},
 
 	// Operations
 	{trigger: "te", replacement: "\\text{$0}", options: "m"},

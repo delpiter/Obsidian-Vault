@@ -122,7 +122,7 @@ Dipendenze Funzionali:
 La trasformazione in **2FN** prevede due relazioni:
 - **PRODUTTORI**(<u>Produttore</u>, Stato)
 - **MODELLI**(<u>NomeModello</u>, <u>Modello</u>, NomeModello)
-## Terza Forma Normale (3NF)
+### Terza Forma Normale (3NF)
 > Per definire la **3NF** è necessario introdurre il concetto di *dipendenza transitiva*.
 
 >[!info] Dipendenza Transitiva
@@ -149,7 +149,26 @@ La tabella viene scomposta nelle seguenti tabelle:
 - **SETTORI**(<u>Settore</u>, Budget)
 - **RUOLI**(<u>Impiegato</u>, <u>Settore</u>, Ruolo)
 
-## Forma normale di Boyce e Codd (BCNF)
-Uno schema è in **BCNF** se:
-- Per ogni dipendenza funzionale non banale **Y → Z**, **Y** è una **superchiave** dello schema.
-- **Non è sempre possibile** portare uno schema in **BCNF**.
+
+#### Algoritmo di Decomposizione in **3NF**
+>[!hint] Idea
+>L'algoritmo consiste nel creare una relazione per ogni gruppo di ***dipendenza funzionale*** che hanno lo **stesso lato sinistro** (*determinante*) e inserire nello schema corrispondente gli attributi coinvolti in *almeno una* dipendenza funzionale del gruppo.
+
+> Esempio: se le **FD** individuate sullo schema **R**(<u>AB</u>CDEF) sono:
+- **AB** $\to$ CD
+- **AB** $\to$ E
+- **C** $\to$ F
+- **F** $\to$ G
+
+Si generano gli schemi:
+- **R1**(<u>AB</u>CDE)
+- **R2**(<u>C</u>F)
+- **R3**(<u>F</u>G)
+
+### Forma normale di Boyce e Codd (BCNF)
+>[!tldr] Boyce-Codd Normal Form
+>Uno schema $R(T)$ con vincoli $F$ è in **BCNF** se, per ogni *dipendenza funzionale* non banale $X\to Y$ definita su di esso, $X$ è una [[Vincoli di Integrità#Superchiave|superchiave]] di $R(T)$
+
+>[!warning] Attenzione
+> **Non è sempre possibile** portare uno schema in **BCNF** e allo stesso tempo *preservare tutte le dipendenze funzionali*.
+

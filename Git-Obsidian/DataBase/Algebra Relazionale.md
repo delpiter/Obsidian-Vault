@@ -75,8 +75,6 @@ Mantiene le tuple **dangling** aggiungendo i valori mancanti sotto forma di **NU
 - **Right Outer Join**
 - **Full Outer Join**
 
----
-
 ## Espressioni e viste
 
 - Assegnare ad una soluzione un nome per facilitarne l’uso nelle query.

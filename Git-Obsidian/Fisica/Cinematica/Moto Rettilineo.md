@@ -86,3 +86,33 @@ L'ultima *formula* rappresenta la **velocità** in ***funzione della posizione**
 | *Uniforme*                 | $v(t)=k,\quad a(t)=0$ |
 | *Uniformemente Accelerato* | $a(t)=k$              |
 | *Vario*                    | $a(t)\neq k$          |
+
+## Caduta Verticale dei Gravi
+---
+> Trascurando l'attrito con l'aria:
+
+>[!quote] Caduta del Grave
+>***Qualunque corpo*** lasciato libero di cadere, in prossimità della superficie terrestre, si muove verso il basso con accelerazione costante che vale in modulo $g=9.81\ m/s^2$.
+
+Fissato un asse diretto verso l'alto:
+- $a=-g=-9.81\ m /s^2$
+
+> Un corpo cade da un'altezza $h$ con $v_{0}=0$
+
+Con le condizioni iniziali: $x_{0}=h\quad v_{0}=0\quad t_{0}=0$, sono valide le seguenti espressioni
+$$
+\begin{cases}
+v=-gt \\
+x=h-\frac{1}{2}gt^2
+\end{cases}
+$$
+$$
+\begin{cases}
+v(x)=\sqrt{ 2g(h-x) } \\
+t(x)=\sqrt{ \displaystyle{\frac{2(h-x)}{g}} }
+\end{cases}
+$$
+Da queste espressioni si ottiene, ponendo $x=0$:
+- Il tempo di caduta $t_{c}=\sqrt{ \frac{2h}{g} }$
+- La velocità al suolo $v_{c}=\sqrt{ 2gh }$
+
