@@ -13,6 +13,7 @@ Scelto un sistema di riferimento tale che si abbia $\vec{v}_{0}=0$ nel piano $xy
 $$
 \vec{v}_{0}=v_{0x}\hat{i}+v_{0x}\hat{j}=v_{0}cos(\phi_{0})\hat{i}+v_{0}sin(\phi_{0})\hat{j}
 $$
+Con $v_{0}=|\vec{v}_{0}|$
 
 ![[MotoProiettile.png]]
 
@@ -36,11 +37,13 @@ $$
 > Possiamo ricavare la traiettoria:
 
 $$
-y(x)=(tan(\phi_{0})x- \frac{g}{2v_{0}^2cos^2(\phi_{0})}x^2
+y(x)=tan(\phi_{0})x- \frac{g}{2v_{0}^2cos^2(\phi_{0})}x^2
 $$
 Che è l'equazione di una parabola che passa per l'origine (*punto di lancio*).
-- Trovando la $x$ corrispondente all'altra soluzione di $y=0$ ricaviamo la ***gittata***.
-
+- Trovando la $x$ corrispondente all'altra soluzione di $y=0$ ricaviamo la ***gittata*** ($R$).
+$$
+R=\frac{2v_{0}^2}{g}sin(\phi_{0})cos(\phi_{0})=\frac{v_{0}^2}{g}sin(2\phi_{0})
+$$
 
 
 >[!caution] L'accelerazione di gravità agisce solamente sulla componente del vettore $\hat{j}$
