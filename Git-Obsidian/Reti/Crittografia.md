@@ -93,3 +93,4 @@ Per instaurare una ***comunicazione a due vie*** sono necessarie **4 chiavi** (*
 Utilizzato per ridurre l'*utilizzo eccessivo delle risorse*.
 
 ![[Hybrid.png]]
+
