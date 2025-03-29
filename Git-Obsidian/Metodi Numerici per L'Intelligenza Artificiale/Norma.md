@@ -180,3 +180,6 @@ $$
 \displaystyle \frac{1}{\sqrt{ n }}\|A\|_{1}\leq \|A\|_{2}\leq\sqrt{ n } \|A\|_{1}
 \end{array}
 $$
+
+> Il calcolo di $\|A\|_{2}$ risulta più oneroso di quello di $\|A\|_{\infty}$ o di $\|A\|_{1}$
+- Queste relazioni possono essere utili nel caso sia sufficiente disporre solo di una *stima*.
