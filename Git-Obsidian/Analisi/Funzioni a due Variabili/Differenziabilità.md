@@ -43,7 +43,7 @@ z=f(x_{0},y_{0})+ \displaystyle{\frac{df}{dy}}(x_{0},y_{0})(y-y_{0}) \\
 x=x_{0}
 \end{cases}
 $$
-![[derivataR3.png]]
+![[derivataR3.png|500]]
 #### Il Piano
 Esiste un piano che contiene entrambe le rette:
 
@@ -108,7 +108,7 @@ $$
 
 ### Dimostrazione
 Passo al limite nella definizione di differenziabilità
->$$f(x_{0}+h,y_{0}+k)=f(x_{0},y_{0})+\displaystyle{\frac{df}{dx}}(x_{0},y_{0})h+ \displaystyle{\frac{df}{dy}}(x_{0},y_{0})k+ \circ(\sqrt{ h^2+k^2 })$$
+$$f(x_{0}+h,y_{0}+k)=f(x_{0},y_{0})+\displaystyle{\frac{df}{dx}}(x_{0},y_{0})h+ \displaystyle{\frac{df}{dy}}(x_{0},y_{0})k+ \circ(\sqrt{ h^2+k^2 })$$
 >Per $(h,k)\to(0,0)$
 
 $$

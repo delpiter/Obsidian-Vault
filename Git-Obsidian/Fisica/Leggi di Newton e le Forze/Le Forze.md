@@ -46,3 +46,11 @@ Possiamo dire ciò perché:
 
 In base alla [[Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]] la somma delle forze agenti su di esso sarà anch'essa nulla.
 
+![[ForzaNormale.png|500]]
+$$
+\vec{a}=0\implies \sum \vec{F}=0
+$$
+
+> Fissiamo un asse $y$ verticale diretto verso l'alto.
+
+Il peso $\vec{P}=-mg\hat{j}$ sarà dunque bilanciato da una forza che il ***tavolo esercita sul libro***
