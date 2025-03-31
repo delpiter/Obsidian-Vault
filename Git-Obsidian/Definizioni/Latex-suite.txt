@@ -65,6 +65,7 @@
 	{trigger: "re", replacement: "\\mathrm{Re}", options: "mA"},
 	{trigger: "im", replacement: "\\mathrm{Im}", options: "mA"},
 	{trigger: "ker", replacement: "\\mathrm{ker}", options: "mA"},
+	{trigger: "join", replacement: "\\bowtie", options: "mA"},
 
 	{trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
 	{trigger: "([a-zA-Z])\\.,", replacement: "\\mathbf{[[0]]}", options: "rmA"},
