@@ -1,3 +1,4 @@
+
 >[!tldr] Idea
 >Determinare il ***numero delle soluzioni*** e *separare* ogni soluzione, cioè individuare per ogni soluzione, un *intervallo* che non ne contenga altre.
 
@@ -46,3 +47,27 @@ $$
 
 >[!done] Conclusione
 >Il metodo di bisezione è un metodo di ***sicura ma lenta convergenza***.
+##### Pseudo Codice
+```pseudo
+	\begin{algorithm}
+	\caption{Metodo di Bisezione}
+	\begin{algorithmic}
+	\State $ \text{Poni } x_{k+1}=a_{k} +\displaystyle\frac{b_k-a_k}{2} $
+	\If{$f(x_{k+1})\cdot f(a_{k})<0$}
+	\State $a_{k+1}=a_k$
+	\State $b_{k+1}=x_{k+1}$
+	\EndIf
+	\If{$ f(x_{k+1})\cdot f(b_{k})<0  $}
+	  \State $ b_{k+1}=b_{k} $
+	\State $ a_{k+1}=x_{k+1} $
+	\If{$ f(x_{k+1}) =0 $}
+   \State $ x_{k+1}=\alpha $
+ \EndIf
+ \EndIf
+ \State $ k=k+1 $
+	\end{algorithmic}
+	\end{algorithm}
+```
+
+## Regula Falsi
+---
