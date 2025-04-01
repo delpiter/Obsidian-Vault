@@ -66,6 +66,7 @@
 	{trigger: "im", replacement: "\\mathrm{Im}", options: "mA"},
 	{trigger: "ker", replacement: "\\mathrm{ker}", options: "mA"},
 	{trigger: "join", replacement: "\\bowtie", options: "mA"},
+	{trigger: "der", replacement: "\\displaystyle{\\frac{\\text{d}$0}{\\text{d}$1}}$2", options: "mA"},
 
 	{trigger: "([a-zA-Z]),\\.", replacement: "\\mathbf{[[0]]}", options: "rmA"},
 	{trigger: "([a-zA-Z])\\.,", replacement: "\\mathbf{[[0]]}", options: "rmA"},
@@ -125,8 +126,8 @@
 	{trigger: "<=", replacement: "\\leq", options: "mA"},
 	{trigger: ">>", replacement: "\\gg", options: "mA"},
 	{trigger: "<<", replacement: "\\ll", options: "mA"},
-	{trigger: "~~", replacement: "\\sim", options: "mA"},
-	{trigger: "\\sim ~", replacement: "\\approx", options: "mA"},
+	{trigger: "sim", replacement: "\\sim", options: "mA"},
+	{trigger: "app", replacement: "\\approx", options: "mA"},
 	{trigger: "prop", replacement: "\\propto", options: "mA"},
 	{trigger: "nabl", replacement: "\\nabla", options: "mA"},
 	{trigger: "del", replacement: "\\nabla", options: "mA"},
@@ -145,6 +146,10 @@
 	{trigger: "yjj", replacement: "y_{j}", options: "mA"},
 
 
+	// Trigonometry
+	{trigger: "sin", replacement: "\\sin", options: "mA"},
+	{trigger: "cos", replacement: "\\cos", options: "mA"},
+	{trigger: "tan", replacement: "\\tan", options: "mA"},
 
 	{trigger: "mcal", replacement: "\\mathcal{$0}$1", options: "mA"},
 	{trigger: "mbb", replacement: "\\mathbb{$0}$1", options: "mA"},
