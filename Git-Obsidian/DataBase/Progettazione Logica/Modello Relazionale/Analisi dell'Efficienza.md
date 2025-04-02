@@ -18,7 +18,7 @@
 ![[ExampleER.png]]
 
 ### Tavola dei Volumi
->[!def] Definizione
+>[!definizione] Definizione
 >La ***tavola dei volumi*** specifica il numero stimato di istanze per ogni entità $E$ e associazione $R$ dello schema.
 
 I valori sono necessariamente **approssimati** ma **indicativi**.

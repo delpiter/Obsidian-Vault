@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >Il ***multiplexing*** è il meccanismo per cui più *canali trasmissivi in ingresso* condividono lo stesso [[Git-Obsidian/Reti/Introduzione/Introduzione#Canale|canale]] per trasferire più flussi di informazione in **un solo segnale** (detto _multiplato_).
 
 Più canali sono trasportati dallo stesso ***mezzo di trasmissione***.
@@ -44,7 +44,7 @@ Si può realizzare utilizzando:
 ## Assegnazione della Banda
 ---
 ### Assegnazione Statica
->[!def] Concetto
+>[!definizione] Concetto
 >Nella ***assegnazione statica*** la quantità di banda che viene riservata per una comunicazione è *fissa* durante l'intera durata della comunicazione.
 >- La banda dedicata è espressa in **bit per secondo** (`bit/sec`).
 

@@ -57,7 +57,7 @@ $\mathcal{P}(\zeta>7)=\mathcal{P}\left( \zeta_{0}> \displaystyle\frac{7}{\sqrt{ 
 
 ## Teorema Centrale del Limite
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Siano $X_{1},\dots,X_{n}$ [[3 - Variabili Aleatorie|Variabili aleatorie]] ($n\geq20$) *indipendenti*, aventi tutte la ***stessa densità***
 >Sia $\mu=E[X_{1}]$ e $\sigma^2=Var(X_{1})$
 ><u>Allora</u>

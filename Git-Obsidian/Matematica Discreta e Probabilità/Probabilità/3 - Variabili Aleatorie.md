@@ -256,7 +256,7 @@ $\mathcal{P}(X=2)=\displaystyle\binom{3}{2}\cdot \left(\displaystyle{\frac{18}{3
 $\mathcal{P}(X=3)=\left(\displaystyle{\frac{18}{37}}\right)^3$
 
 ### Schema Successo-Insuccesso a Prove Indipendenti
->[!def] Definizione
+>[!definizione] Definizione
 >Effettuiamo $n$ *prove* o *tentativi*, ognuna delle quali può dare ***successo*** o ***insuccesso***, **indipendente** l'uno dall'altro
 >Ogni prova ha probabilità $p$ di avare *successo*
 >>[!note] Variabile Binomiale
@@ -285,7 +285,7 @@ $$
 $$
 
 ### Schema Successo-Insuccesso senza Rimpiazzo
->[!def] Definizione
+>[!definizione] Definizione
 >Effettuiamo $n$ *prove* o *tentativi*, ognuna delle quali può dare ***successo*** o ***insuccesso***
 >
 >>[!caution] Nota Bene
@@ -340,7 +340,7 @@ $$
 $$
 
 ### Schema Successo-Insuccesso a Prove Indipendenti
->[!def] Densità Geometrica
+>[!definizione] Densità Geometrica
 >Fissiamo il numero di Prove e procediamo finché otteniamo un successo
 >$X=\#$ di *insuccessi* prima di un *successo*
 >$p=$ probabilità do avere successo in *ogni tentativo*
@@ -472,7 +472,7 @@ $X=\#$ di bambini malati $\sim B\left( 10^6, \displaystyle{\frac{1}{200.000}} \r
 
 >[!warning] I calcoli sono fatti su numeri talmente grandi che neanche la *calcolatrice* è in grado di farli
  
->[!def] Definizione
+>[!definizione] Definizione
 >Le ***variabili di Poisson*** vengono usate quando il numero degli *insuccessi* è **molto più grande** del numero dei *successi*
 >Consideriamo
 >$$d(k)=\begin{cases}e^{ -\lambda }\cdot \displaystyle{\frac{\lambda^k}{k!}} \quad \text{se }k=0,1,2,\dots \\0 \qquad\qquad \text{altrimenti}\end{cases}$$

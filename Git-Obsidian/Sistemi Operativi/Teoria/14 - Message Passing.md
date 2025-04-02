@@ -1,6 +1,6 @@
 ## Introduzione
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Il ***message passing*** è un paradigma di *comunicazione* tra processi
 >La *sincronizzazione* avviene tramite lo ***scambio di messaggi***, e non più semplici segnali
 

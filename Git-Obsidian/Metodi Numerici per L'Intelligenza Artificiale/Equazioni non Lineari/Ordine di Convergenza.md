@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >Sia data una *successione di iterati* $\{ x_{k} \}$, generata da un [[Soluzione Numerica di Sistemi non Lineari|metodo numerico convergente]] ad un limite $\alpha$ e sia $e_{k}=x_{k}-\alpha$.
 >Se esistono due numeri reali $p\geq1$ e $c>0$, tali che:
 >$$\lim\limits_{k\to +\infty} \frac{|e_{k+1}|}{|e_{x}|^p}=c$$

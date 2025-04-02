@@ -49,7 +49,7 @@ Funziona come un **punto di ingresso** in cui un livello riceve *servizi* dal **
 >Il **PCI** contiene informazioni di *controllo* **necessarie per il dialogo** a livello $n$, come *intestazioni* e *metadati*.
 
 ### Encapsulation
->[!def] Definizione 
+>[!definizione] Definizione 
 >L'***incapsulamento*** è il processo in cui i dati passati da un livello superiore vengono combinati con le informazioni di controllo del livello attuale per formare una **PDU**
 
 Una **PDU** è costituita dall'informazione di ***controllo del protocollo*** e dai dati ricevuti dallo ***strato superiore***.

@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >La ***topologia di*** [[Git-Obsidian/Reti/Introduzione/Introduzione|rete]] è il modello geometrico finalizzato a rappresentare le *relazioni di connettività*.
 
 È possibile descrivere una rete utilizzando un [[I Grafi|grafo]] 
@@ -21,7 +21,7 @@
 - Poco resistente ai guasti
 
 ### Topologia ad Anello
->[!def] Definizione
+>[!definizione] Definizione
 >Una ***topologia ad anello*** è una topologia lineare di tipo *chiuso*, in cui a **tutti i nodi** fanno capo due rami.
 >
 
@@ -51,7 +51,7 @@
 ![[StarTopology.png]]
 
 ### Topologia a Maglia
->[!def] Definizione
+>[!definizione] Definizione
 >Nella ***topologia a maglia completa*** (***fully connected***) ogni nodo è *connesso direttamente* ad ogni altro nodo.
 >È presente un collegamento per **ogni coppia di nodi**
 

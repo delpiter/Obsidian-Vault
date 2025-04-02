@@ -1,6 +1,6 @@
 ## Introduzione
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >I ***monitor*** sono un paradigma di *programmazione concorrente* che fornisce un approccio più ***strutturato*** alla programmazione concorrente
 >>[!info] Composizione
 >>Un ***monitor*** è un modulo *software* che consiste di:

@@ -15,7 +15,7 @@ Questa attività di progettazione può essere vista, come la definizione di un m
 
 ## Progettazione che Garantisce l'Equivalenza
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Diciamo che la progettazione garantisce l'equivalenza se:
 >- ***Preserva l'informazione***.
 >- Per ogni stato legale $db_{rel}$ di $DB_{rel}$ esiste uno stato legale $db_{conc}$ di $DB_{conc}$ tale che $M(db_{conc})=db_{rel}$

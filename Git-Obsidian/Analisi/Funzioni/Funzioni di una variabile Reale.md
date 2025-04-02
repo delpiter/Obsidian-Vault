@@ -220,7 +220,7 @@ Se $A=(x,y)$ definiamo:
 - $cos(\alpha)=x$
 - $sin(\alpha)=y$
 ### Coseno
->[!def] Definizione
+>[!definizione] Definizione
 >$$\begin{array}\ cos:\mathbb{R}\to\mathbb{R} \\\alpha\mapsto x_{p}\end{array}$$
 #### Proprietà
 - Il coseno è una funzione periodica di periodo $2\pi\text{-periodo}$
@@ -247,7 +247,7 @@ f(x)=cos(x)
 >$$a^2=b^2+c^2-2bc\ cos(\alpha)$$
 
 ### Seno
->[!def] Definizione
+>[!definizione] Definizione
 >$$\begin{array}/Sen:\mathbb{R}\to\mathbb{R} \\\alpha\mapsto y_{p}\end{array}$$
 #### Proprietà
 - Il seno è una funzione periodica di periodo $2\pi\text{-periodo}$

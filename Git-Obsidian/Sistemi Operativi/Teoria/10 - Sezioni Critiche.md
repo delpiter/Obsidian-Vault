@@ -52,5 +52,5 @@
 - Message Passing
 
 ### Busy-Waiting
->[!def] Busy-Waiting
+>[!definizione] Busy-Waiting
 >Il ***busy-waiting*** è una *tecnica di sincronizzazione* dei processi dove il processo *aspetta* e *controlla continuamente* per la verifica della condizione che ***permette l'avanzamento*** della sua esecuzione

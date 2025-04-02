@@ -1,5 +1,5 @@
 
->[!def] Definizione
+>[!definizione] Definizione
 >La ***command substitution*** sostituisce a run time, in uno *script*, la riga di comando di un programma con l'[[File Descriptor#Stream di `I/O` dei processi|output]] su `stdout`
 >>[!note] Comando
 >>```OUT=`./example.exe` ```

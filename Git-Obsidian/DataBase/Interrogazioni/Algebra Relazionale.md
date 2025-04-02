@@ -1,5 +1,5 @@
 
->[!def] Definizione
+>[!definizione] Definizione
 > L'***algebra relazionale*** è un linguaggio procedurale di tipo algebrico i cui *operandi sono relazioni*.
 >È un linguaggio formale per [[Linguaggi di Manipolazione|interrogare]] un [[Modello Relazionale]].
 

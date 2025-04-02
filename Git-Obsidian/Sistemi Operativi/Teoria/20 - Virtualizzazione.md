@@ -1,6 +1,6 @@
 ## Virtualizzazione vs Emulazione
 ---
->[!def] Virtualizzazione
+>[!definizione] Virtualizzazione
 >Tramite ***virtualizzazione*** è possibile eseguire uno o più [[3 - Livelli del Sistema Operativo#^9f2787|sistemi operativi]] su un ***unico dispositivo***.
 >Ciò avviene in un ambiente *protetto* e *monitorato* che prende il nome di **macchina virtuale**
 
@@ -58,7 +58,7 @@ Il codice della ***macchina virtuale*** viene eseguito direttamente dall'***host
 >- Un solo ***kernel***, quello del sistema ***host***
 >- Multiple istanze isolate di *user-space*
 >
->>[!def] User-Space
+>>[!definizione] User-Space
 >> Lo ***user-space*** consiste in un *file system* del container
 >> - Su di esso posso *scaricare* librerie e *installare* applicazioni senza interferire con gli *altri container*
 >> 

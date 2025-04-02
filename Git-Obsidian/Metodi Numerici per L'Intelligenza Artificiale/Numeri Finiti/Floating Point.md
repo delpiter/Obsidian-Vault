@@ -23,7 +23,7 @@
 
 In un *calcolatore* ognuna di queste parti deve essere ***limitata***
 
->[!def] Definizione dell'Insieme di numeri Floating Point
+>[!definizione] Definizione dell'Insieme di numeri Floating Point
 >Per un calcolatore che utsa:
 >- Base di rappresentazione $\beta$
 >- $t$ cifre per la *mantissa*
@@ -148,7 +148,7 @@ $$
 s:=(\beta^{-1}+\beta^{-t})\beta^{p+1}-(\beta^{-1})\beta^{p+1}=\beta^{p+1-t}
 $$
 
->[!def] Spacing
+>[!definizione] Spacing
 >$s$ prende il nome di formula dello ***spacing*** tra $\beta^p$ e $\beta^{  p+1}$
 
 #### Conclusioni
@@ -161,7 +161,7 @@ $$
 >[!info] Precisione di Macchina
 >$esp$ è lo spacing tra $\beta^0$ e $\beta^1$
 >$$p=0 \implies esp=\beta^{1-t}$$
->>[!def] Definizione
+>>[!definizione] Definizione
 >>È il più ***piccolo numero positivo*** di macchina tale che sommato all'unità rende una quantità più grande di $1$
 
 $$

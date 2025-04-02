@@ -4,7 +4,7 @@
 ---
 >Due o più processi possono cooperare attraverso semplici segnali
 
->[!def] Definizione
+>[!definizione] Definizione
 >Il ***semaforo*** è un tipo di dato astratto per il quale sono definite due operazioni
 >>[!note] `V`
 >>Invocata per *inviare* un segnale, come il verificarsi di un *evento* o il rilascio di una *risorsa*
@@ -70,7 +70,7 @@ Infatti, vengono semplicemente "*spostati*":
 
 ## Semafori Binari
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >I ***semafori binari*** sono una variante dei semafori il cui valore può assumere solo i valori `0` e `1`
 >>[!question] A cosa servono?
 >>Servono a garantire [[9 - Condivisione di Risorse#Mutua Esclusione|mutua esclusione]]

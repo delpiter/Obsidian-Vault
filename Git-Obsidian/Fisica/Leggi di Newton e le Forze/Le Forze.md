@@ -278,3 +278,32 @@ $$
 T=\frac{2\pi}{\omega}=2\pi\sqrt{ \frac{m}{k} }\quad \nu=\frac{1}{2\pi}\sqrt{ \frac{k}{m} }
 $$
 Dove  $\omega$ è detta ***pulsazione***, $T$ è detto ***periodo***, $\nu$ è detta ***frequenza***.
+
+## Il Pendolo Semplice
+---
+>Scriviamo la somma delle forze lungo l'asse $x$ scelto come in figura.
+
+$$
+\sum F_{x}=-mg\sin\theta=ma\implies a=-g\sin\theta
+$$
+![[Pendolo.png]]
+
+Dato che la massa $m$ si muove su un arco di circonferenza di raggio $l$, la sua *accelerazione tangenziale* sarà pari al **raggio** per l'**accelerazione angolare**.
+$$
+a=l\alpha=l\displaystyle{\frac{\text{d}^2\theta}{\text{d}t^2}}
+$$
+- Quindi abbiamo l'equazione differenziale:
+$$
+\displaystyle{\frac{\text{d}^2\theta}{\text{d}t^2}}=-\frac{g}{l}\sin\theta
+$$
+>[!abstract] Osservazione
+>Nell'ipotesi di ***piccole oscillazioni***, ovvero che la massima escursione angolare $\theta$ sia piccola, possiamo approssimare $\sin\theta\simeq\theta$, ottenendo:
+>$$\displaystyle{\frac{\text{d}^2\theta}{\text{d}t^2}}=-\frac{g}{l}\theta=-\omega^2\theta$$
+
+Si tratta di un'equazione differenziale di un ***oscillatore armonico*** con **pulsazione** e **periodo**.
+
+$$
+\omega=\sqrt{ \frac{g}{l} }\qquad T=\frac{2\pi}{\omega}=2\pi\sqrt{  \frac{l}{g}}
+$$
+
+> Concetto usato per ricavare misure precise dell' #addLink accelerazione gravitazionale.

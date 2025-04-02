@@ -1,6 +1,6 @@
 ## Regioni Critiche Condizionali
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Le ***regioni critiche condizionali*** sono costrutti che specificano *operazioni* su dati *condivisi* da eseguire in [[9 - Condivisione di Risorse#Mutua Esclusione|mutua esclusione]] 
 >Possono determinare la *sospensione* e la *riattivazione* dei ***processi***
 

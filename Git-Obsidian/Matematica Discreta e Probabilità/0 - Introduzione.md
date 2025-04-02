@@ -24,7 +24,7 @@ pie
 ```
 
 
->[!def] Probabilità
+>[!definizione] Probabilità
 >La ***Probabilità*** studia le possibilità che possa *realizzarsi* un certo evento *casuale o aleatorio*
 >- È una ***scienza esatta***
 

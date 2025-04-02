@@ -1,7 +1,7 @@
 # Definizioni
 ---
 ### Sistema Informativo
->[!def] Definizione
+>[!definizione] Definizione
 >Un ***sistema informativo*** è una componente di un'organizzazione il cui scopo è quello di *gestire le informazioni utili* ai fini dell'organizzazione stessa.
 >Componente che gestisce **informazioni di interesse**
 
@@ -71,7 +71,7 @@ Nell'ambito informatico si presentano sotto varie forme:
 
 ## Database
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Collezione di ***dati di interesse*** per una o più applicazioni.
 >È un *insieme di dati* **organizzato** e **multidimensionale**.
 

@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >Le ***espressioni condizionali*** sono particolari comandi che valutano alcune condizioni e *restituiscono* un [[Exit Status]] di valore `0` per indicare la ***verità*** dell'espressioni o di valore diverso da `0` per indicarne la ***falsità***
 >>[!note] Sintassi
 >>Ciascuna espressione si scrive mettendo le condizioni da valutare tra doppie parentesi quadre

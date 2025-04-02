@@ -62,7 +62,7 @@ Tabella studente con annesse le informazioni dell'università:
 
 
 ### Dipendenze Funzionali
->[!def] Definizione
+>[!definizione] Definizione
 >Si considerino uno [[Modello Relazionale|schema di relazione]] $R(T)$ e un'estensione $r$; Due sottoinsiemi *non vuoti* di $T$ denominati $X$ e $Y$ rispettivamente.
 >Si dice che in $r$ vale la dipendenza funzionale $X\to Y$ ($X$ <u>determina funzionalmente</u> $y$) se:
 >$$\forall t_{1},t_{2}\in r:t_{1}[X]=t_{2}[X]\implies t_{1}[Y]=t_{2}[Y]$$

@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >Il ***file descriptor*** è un'astrazione per permettere l'accesso ai file
 >Ogni *file descriptor* è rappresentato da un ***integer***
 >- Consente di utilizzare delle *funzioni* per accedere ai ***file***

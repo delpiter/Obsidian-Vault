@@ -20,7 +20,7 @@
 - Applicare il metodo fino a ***convergenza alla soluzione***.
 
 ### Molteplicità
->[!def] Definizione
+>[!definizione] Definizione
 >Se $\alpha\in\mathbb{R}$ è tale che $f(\alpha)=0$ ed $f'(\alpha)\neq0$, $x$ viene chiamata ***radice semplice***.
 >In generale se $f^{(k)}(\alpha)=0,\quad k=0,\dots,m-1$ e $f^{(m)}(\alpha)\neq0$ allora $\alpha$ è detta ***radice multipla*** di [[9 - Matrici Diagonali#Molteplicità|molteplicità]] $m$
 

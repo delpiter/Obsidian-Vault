@@ -29,7 +29,7 @@
 >- Proiezione
 
 ### Classificazione
->[!def] Definizione
+>[!definizione] Definizione
 >Raggruppa gli oggetti in ***classi*** in base alle loro ***proprietà***
 ### Generalizzazione
 >Cattura le relazioni di tipo ***<<È un>>*** ovvero permette di *astrarre* le *caratteristiche comuni* fra più classi definendo ***superclassi***

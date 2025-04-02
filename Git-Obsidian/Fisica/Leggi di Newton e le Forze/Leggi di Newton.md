@@ -18,7 +18,7 @@ Le successive *leggi di Newton* sono formulate **considerando sistemi di riferim
 ## Seconda Legge di Newton
 ---
 ### La Massa
->[!def] Definizione
+>[!definizione] Definizione
 >La ***massa*** è la proprietà di un corpo che rappresenta quanta resistenza esso oppone ai *cambiamenti di velocità*.
 
 Se applico la stessa forza a due corpi $1$ e $2$ e se misuriamo le accelerazioni $a_{1}$ e $a_{2}$, si definisce:

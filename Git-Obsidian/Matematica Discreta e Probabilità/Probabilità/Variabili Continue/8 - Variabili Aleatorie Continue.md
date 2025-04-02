@@ -25,7 +25,7 @@ $Z=$ Valore tra un anno
 ---
 >Riprendiamo il concetto di [[5 - Trasformazioni di Variabili Aleatorie#Caso Speciale|Funzione di Ripartizione]] fatto in *precedenza*
 
->[!def] Definizione
+>[!definizione] Definizione
 >Sia $X$ una [[3 - Variabili Aleatorie|Variabile Aleatoria]] qualunque
 >$$\begin{array}\ F_{X}:\mathbb{R}\to[0,1] \\F_{X}(t)=\mathcal{P}(X\leq t)\end{array}$$
 
@@ -41,7 +41,7 @@ $Z=$ Valore tra un anno
 
 ## Variabile Aleatoria Continua
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Una [[3 - Variabili Aleatorie|Variabile Aleatoria]] $X$ si dice ***Continua*** se $F_{X}(t)$ è *continua*
 
 ![[Funzione di Ripartizione Continua.png]]
@@ -84,7 +84,7 @@ $\mathcal{P}(a<X<b)=F_{X}(b)-F_{X}(a)$
 
 ## Densità Continua
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >La ***densità continua*** di una *variabile aleatoria continua* $X$ è una funzione $f_{X}:\mathbb{R}\to\mathbb{R}$ **tale che**
 >$$\forall a<b \quad \mathcal{P}(a<X<b)=\int_{a}^b f_{X}(s)\, ds $$
 
@@ -97,7 +97,7 @@ $\displaystyle\mathcal{P}\left( \frac{1}{2}<X<2 \right)=\int_{1}^{1/2} f_{X}(s)\
 
 
 ### Funzione di Ripartizione e Densità Astratte 
->[!def] Definizione
+>[!definizione] Definizione
 >Una $f:\mathbb{R}\to\mathbb{R}$ è una ***funzione di ripartizione astratta*** se:
 >1. $\lim\limits_{t\to -\infty}f(t)=0\quad \lim\limits_{t\to \infty}f(t)=1$
 >2. $f(t)$ ***deve*** essere continua
@@ -198,7 +198,7 @@ $$
 
 ## Trasformazione di Variabile Continua
 ---
->[!def] Concetti
+>[!definizione] Concetti
 >Sia $Z=\Phi(X)$
 >Per calcolare $F_{Z}(t)$:
 >$$F_{Z}(t)=\mathcal{P}(Z\leq t)=\mathcal{P}(\Phi(X)\leq t)$$

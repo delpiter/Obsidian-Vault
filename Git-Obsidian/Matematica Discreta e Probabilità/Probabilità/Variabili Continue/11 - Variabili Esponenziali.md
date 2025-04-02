@@ -3,10 +3,9 @@
 
 ## Variabile Esponenziale Continua
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Consideriamo $a>0$
-
-$$f(s)=\begin{cases}
+>$$f(s)=\begin{cases}
 ae^{ -as }\quad \ \text{se } s>0 \\
 0\qquad\quad\text{se } s<0
 \end{cases}$$

@@ -1,6 +1,6 @@
 ## Problema Matematico
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Un ***problema matematico***, che indichiamo con $f$ è una *descrizione precisa* e **senza ambiguità** di un legame tra i dati del problema $x$ (*input*) e i risultati corrispondenti $y$ (*output*)
 >>[!done] In altre parole
 >>È una *funzione* che trasforma i **dati** in **risultati**.

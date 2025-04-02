@@ -1,6 +1,6 @@
 ## Fase di Ristrutturazione
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >La ***ristrutturazione*** è una fase della [[Progettazione Logica]] che consiste nell'eliminazione dallo [[Modello Entity-Relationship|schema E/R]] dei *costrutti* che **non possono** essere direttamente rappresentati nel ***modello logico target*** ([[Modello Relazionale]]).
 
 Si pone l'obbiettivo di *semplificare* la traduzione e [[Analisi dell'Efficienza|ottimizzare le prestazioni]]

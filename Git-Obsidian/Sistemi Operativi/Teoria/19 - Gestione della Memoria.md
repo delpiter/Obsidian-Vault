@@ -11,7 +11,7 @@ Il ***memory manager*** ha due compiti principali:
 - ***Allocare*** memoria ai processi e ***deallocarla*** quando non più necessaria
 
 ## Binding
->[!def] Definizione
+>[!definizione] Definizione
 >Il ***binding*** è l'associazione di indirizzi di memoria ai dati e alle istruzioni di un programma
 
 #### Tipi di Binding
@@ -78,7 +78,7 @@ Il ***memory manager*** ha due compiti principali:
 >> Se l'indirizzo da convertire è $\leq$ del ***registro limite*** allora procedi con la *rilocazione*, altrimenti *lancia un errore*
 
 ##### Loading Dinamico
->[!def] Significato
+>[!definizione] Significato
 >Consente di poter *caricare* alcune ***routine di libreria*** solo quando vengono richiamate
 
 - Tutte le routine a ***caricamento dinamico*** risiedono su un *disco*, e quando servono, *vengono caricate*
@@ -104,14 +104,14 @@ Il ***memory manager*** ha due compiti principali:
 
 - Può causare problemi di "***versioning***"
 
->[!def] Codice Reentrant
+>[!definizione] Codice Reentrant
 >Il ***codice reentrant*** (*multi-instance*) è una routine riutilizzabile che diversi programmi possono chiamare, interrompere e riprendere simultaneamente
 
 ^8c1dc6
 
 ## Allocazione
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >È una delle funzioni principali del gestore di memoria
 >Consiste nel ***reperire e assegnare*** uno *spazio di memoria fisica* ad un programma
 
@@ -134,7 +134,7 @@ Il ***memory manager*** ha due compiti principali:
 >Durante l'esecuzione, un programma ***può essere spostato*** all'interno della memoria
 
 ### Allocazione a Partizioni Fisse
->[!def] Descrizione
+>[!definizione] Descrizione
 >La memoria disponibile viene ***suddivisa in partizioni***
 >Ogni processo viene caricato in una delle partizioni *libere* che ha ***dimensioni sufficiente a contenerlo***
 
@@ -156,7 +156,7 @@ Allocazione di tipo Statica e Contigua
 ^f4efb4
 
 ### Allocazione a Partizioni Dinamiche
->[!def] Descrizione 
+>[!definizione] Descrizione 
 >La memoria disponibile viene *assegnata* nella ***quantità richiesta*** ai vari processi richiedenti
 >Nella memoria possono essere presenti ***zone inutilizzate*** per effetto della terminazione dei processi
 
@@ -240,7 +240,7 @@ Un blocco libero viene ***selezionato e suddiviso*** in due parti:
 
 ## Paginazione
 ---
->[!def] Descrizione
+>[!definizione] Descrizione
 >Lo *spazio di indirizzamento logico* di un processo viene suddiviso in un insieme di blocchi di dimensione fissa chiamati ***pagine***
 >
 >La *memoria fisica* viene suddivisa in un insieme di blocchi della stessa dimensione delle pagine, chiamati ***frame***
@@ -320,7 +320,7 @@ Lo ***spazio di indirizzamento logico*** è dato da un insieme di segmenti
 
 ## Memoria Virtuale
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Tecnica che permette l'*esecuzione* di processi che ***non*** sono ***completamente in memoria***
 >- Permette di eseguire in concorrenza processi che hanno necessità di *memoria maggiore di quella disponibile*
 >
@@ -369,7 +369,7 @@ Il processore genera un *trap* (***page fault***)
 >***Minimizzare*** il numero di *page fault*
 
 ##### FIFO
->[!def] Descrizione
+>[!definizione] Descrizione
 >Se c'è necessità di liberare un frame in memoria viene individuato come "*vittima*" il frame che fu per ***primo caricato in memoria***
 
 >[!done] Vantaggi
@@ -384,7 +384,7 @@ Il processore genera un *trap* (***page fault***)
 >Non è detto che *aumentando il numero di frame*, il *numero di page fault* ***diminuisca***
 
 ##### Algoritmo MIN
->[!def] Descrizione
+>[!definizione] Descrizione
 >Selezione come pagina "*vittima*" una pagina che non sarà più acceduta o che non verrà acceduta nel futuro più lontano
 
 >[!done] Vantaggi
@@ -396,7 +396,7 @@ Il processore genera un *trap* (***page fault***)
 - Algoritmo solo teorico: richiede la ***conoscenza dei riferimenti futuri*** del programma
 
 ##### Algoritmo LRU
->[!def] Descrizione
+>[!definizione] Descrizione
 >Selezione come pagina "*vittima*" una pagina che è stata usata ***meno recentemente*** in passato (***least recently used***)
 
 [[Cache#Tecniche di Gestione|Least Recently Used]]
@@ -417,7 +417,7 @@ Periodicamente è possibile osservare quali ***pagine sono state accedute*** e n
 Non conosciamo l'*ordine* in cui sono state usate
 - Possiamo usare queste informazioni per *approssimare* l'algoritmo `LRU`
 ### Swapper
->[!def] Swap
+>[!definizione] Swap
 > Con questo termine si intende l'azione di ***copiare l'intera area di memoria*** usata da un processo
 > - Memoria secondaria -> Memoria principale (***swap-in***)
 > - Memoria principale -> Memoria secondaria (***swap-out***)
@@ -425,7 +425,7 @@ Non conosciamo l'*ordine* in cui sono state usate
 > Obsoleto
 
 ### Trashing
->[!def] Definizione
+>[!definizione] Definizione
 >Un processo si dice che è in ***trashing*** quando spende più tempo per la paginazione che per l'esecuzione
 
 >Si ha trashing se:
@@ -436,7 +436,7 @@ Non conosciamo l'*ordine* in cui sono state usate
 
 
 ### Working Set
->[!def] Definizione
+>[!definizione] Definizione
 >Si definisce ***working set*** di *finestra* $\Delta$ l'insieme delle pagine accedute nei più recenti $\Delta$ riferimenti
 
 > È una rappresentazione approssimata del concetto di località

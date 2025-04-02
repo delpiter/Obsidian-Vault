@@ -132,7 +132,7 @@ I metodi definiti dal protocollo **HTTP** sono otto:
 ### Cookie
 > Per rendere **HTTP** *stateful*, sono stati introdotti i cookie
 
->[!def] Definizione
+>[!definizione] Definizione
 >I ***cookie*** sono informazioni di testo che *identificano* il browser nei confronti di un server.
 >Sono usati principalmente per:
 >- Gestione delle **sessioni**.

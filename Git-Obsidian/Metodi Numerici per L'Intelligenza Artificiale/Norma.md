@@ -12,7 +12,7 @@ Diventa necessario introdurre uno strumento matematico che estenda l'[[Errore di
 >[!done] In altre Parole
 >È un modo di quantificare la "*grandezza*" di un **vettore**.
 
->[!def] Definizione
+>[!definizione] Definizione
 >Ogni applicazione $\mid\mid \cdot \mid\mid:\mathbb{R}^n a, \mathbb{R}_{+}\cup\{ 0 \}$ si chiama ***norma*** su $\mathbb{R}^n$ se gode delle seguenti proprietà:
 >1. $\mid\mid x \mid\mid >0 \quad \forall x \in\mathbb{R}^n$ e $\mid\mid x \mid\mid=0$ se e solo se $x=0$
 >>[!hint] La norma di un vettore è sempre non negativa e nulla solo se il vettore è nullo.
@@ -90,7 +90,7 @@ $$
 $$
 ## Norma di Matrici
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Sia $\mathbb{R}^{m\times n}$ lo [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] delle ***matrici*** $m\times n$ su $\mathbb{R}$, si dice che l'applicazione $\|A\|$ da $\mathbb{R}^{m\times n}$ a $\mathbb{R}_{+}\cup \{ 0 \}$ è norma della matrice $A$ se gode delle *seguenti proprietà*:
 >1. $\mid\mid A \mid\mid >0 \quad \forall A\neq 0$ e $\mid\mid A \mid\mid=0\iff A=0$
 >>[!hint] La norma di una matrice è sempre non negativa e nulla solo se la matrice è nulla.
@@ -124,7 +124,7 @@ $$A_{m\times n}\cdot x_{n} \to y_{n}$$
 
 Poiché si conoscono le norme di vettori, è interessante definire ***norme di matrici indotte*** dalle corrispondenti norme di vettori.
 
->[!def] Norme di Matrici Indotte
+>[!definizione] Norme di Matrici Indotte
 >Sia $A\in\mathbb{R}^{m\times n}$ e $x\in\mathbb{R}^n, x\neq 0$.
 >Si definisce ***norma indotta*** dalla norma naturale $\| \ \|_{v}$ (o *norma naturale* $\| A\|_{N}$), la più piccola costante $C$ per cui vale la maggiorazione:
 >$$\|Ax\|_{v}\leq C\cdot\|x\|_{v}$$

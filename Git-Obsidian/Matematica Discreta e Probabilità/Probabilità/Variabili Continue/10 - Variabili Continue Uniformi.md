@@ -1,7 +1,7 @@
 >[[3 - Variabili Aleatorie#Variabili Discrete e Densità Uniforme|Variabile Uniforme]]
 ---
 
->[!def] Concetto
+>[!definizione] Concetto
 >$$U\sim([a,b])$$
 >La *variabile* ha [[8 - Variabili Aleatorie Continue#Densità Continua|densità]] ***costante*** in $[a,b]$ e ***nulla*** fuori
 

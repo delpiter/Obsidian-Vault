@@ -1,6 +1,6 @@
 ## Introduzione
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Una [[3 - Variabili Aleatorie|variabile aleatoria]] ***bidimensionale*** è una *coppia ordinata* $\underline{X}(X_{1},X_{2})$ di ***variabili aleatorie***, definite sullo stesso *spazio* $\Omega$
 >>[!note] Densità
 >>Sia $\underline{X}(X_{1},X_{2})$, la sua densità è:
@@ -90,7 +90,7 @@ $\mathcal{P}(X_{1}=1,X_{2}=0)=\mathcal{P}(X_{1}=1)\cdot\mathcal{P}(X_{2}=0\mid X
 >Date le densità marginali, posso ottenere diverse ***densità congiunte***
 
 ##### Osservazione
->[!def] Ridefinizione di [[2 - Unione di Eventi#Eventi Indipendenti|variabili indipendenti]]
+>[!definizione] Ridefinizione di [[2 - Unione di Eventi#Eventi Indipendenti|variabili indipendenti]]
 >Due variabili $X,Y$ si dicono ***indipendenti*** se $\forall h,k$ gli eventi $X=h$ e $Y=k$ sono indipendenti
 >>[!note] Cioè
 >>$$\underbrace{ \mathcal{P}(X=h,Y=k) }_{ d_{X,Y}(h,k) }=\underbrace{ \mathcal{P}(X=h)\cdot\mathcal{P}(Y=k) }_{ d_{X}(h)\cdot d_{Y}(k) }$$

@@ -1,6 +1,6 @@
 ## Algoritmo
 ---
->[!def] Algoritmo
+>[!definizione] Algoritmo
 >Un ***algoritmo***, che indichiamo con $\Psi$, è una sequenza di operazioni di macchina che devono essere eseguite al fine di ottenere, in un *numero finito di passi*, da un vettore di numeri macchina $\tilde{x}$, un ***output*** $\Psi(\tilde{x})=\tilde{y}$.
 
 ### Stabilità
@@ -84,7 +84,7 @@ $$\mid E_{alg}\mid\approx g(n)\cdot\varepsilon\quad \mid \varepsilon\mid \leq u$
 - $g(n)=c\cdot n, \ c>0$ -> crescita dell'errore lineare.
 - $g(n)=c^n, \ c>1$ -> crescita dell'errore esponenziale.
 
->[!def] Definizione
+>[!definizione] Definizione
 > Un algoritmo è detto ***stabile*** se $g(n)$ è lineare, cioè l'errore algoritmico è dell'*ordine di grandezza della precisione di macchina*, instabile altrimenti.
 
 ## Bontà di un Algoritmo

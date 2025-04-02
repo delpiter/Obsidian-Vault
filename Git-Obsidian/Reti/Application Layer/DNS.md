@@ -75,7 +75,7 @@ La gerarchia `DNS` comprende un **enorme insieme di record** la cui gestione pra
 >Sparsi per la rete sono disponibili server specializzati per associare *indirizzi IP* a nomi di dominio, denominati ***Name Server*** che svolgono la funzione di *risoluzione dei nomi* (***name resolution***) 
 
 #### Zona
->[!def] Definizione
+>[!definizione] Definizione
 >Una ***zona*** è definita come un sottoalbero della gerarchia `DNS` con un *name server* responsabile della risoluzione dei nomi di dominio corrispondenti ai **nodi del sottoalbero**
 
 ![[DNSZone.png|600]]

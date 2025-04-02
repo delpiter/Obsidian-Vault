@@ -155,7 +155,7 @@ Esiste un istante $t$ dopo di che $needp$ e $needq$ sono sempre `true`
 	\end{algorithm}
 ```
 
->[!def] Facile
+>[!definizione] Facile
 >L'algoritmo di *Peterson* è più semplice e lineare di quello di *Dekker*
 >È inoltre più facilmente generalizzabile al caso di ***processi multipli***
 

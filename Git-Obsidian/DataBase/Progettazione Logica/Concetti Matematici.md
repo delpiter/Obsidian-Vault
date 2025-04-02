@@ -1,7 +1,7 @@
 >Nella progettazione logica vengono utilizzati diversi concetti matematici.
 ## Prodotto Cartesiano
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Si considerino due insiemi $A$ e $B$, non vuoti e non necessariamente distinti.
 >Si definisce ***prodotto cartesiano*** $A\times B$ come l'insieme delle coppie ordinate $(a,b)$ con $a\in A$ e $b\in B$.
 
@@ -21,7 +21,7 @@ La **definizione** può essere estesa considerando $n>0$ insiemi $D_{1},D_{2},\d
 
 ## Relazione Matematica
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Si considerino due insiemi $A$ e $B$, *non vuoti e non necessariamente distinti*.
 >Ogni ***sottoinsieme non vuoto*** del  [[1 - Combinatoria Elementare#Definizioni di Base|prodotto cartesiano]] $A\times B$ è detto:
 >- Relazione da $A$ a $B$.

@@ -75,7 +75,7 @@ Li lanciamo ripetutamente fino ad ottenere almeno un ***6*** e almeno una ***tes
 - $Y=\#$ lanci per ottenere la prima ***testa***
 - $Z=\#$ lanci totali $\implies Z=max(X,Y)$
 
->[!def] Funzione di Ripartizione
+>[!definizione] Funzione di Ripartizione
 >$$F_{X}(K)=\mathcal{P}(X\geq k)$$
 >$$F_{Z}=\mathcal{P}(Z\geq k)=\mathcal{P}(max(X,Y)\leq k)=\mathcal{P}(X\leq k,Y\leq k)$$
 
@@ -115,7 +115,7 @@ $$
 
 ## Somma di Variabili di Poisson Indipendenti
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Siano:
 >- $X\sim P(\lambda)$ una [[3 - Variabili Aleatorie#Variabili di Poisson|variabile di Poisson]] di parametro $\lambda$
 >- $Y\sim P(\mu)$ una ***variabile di Poisson*** di parametro $\mu$

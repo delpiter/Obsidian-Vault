@@ -76,7 +76,7 @@ $$
 $$
 ## Variabile Normale
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Una variabile $\zeta=\sigma\zeta_{0}+\mu$ dove:
 >- $\zeta_{0}\sim N(0,1)$
 >- $\sigma,\mu \in\mathbb{R},\quad \sigma>0$

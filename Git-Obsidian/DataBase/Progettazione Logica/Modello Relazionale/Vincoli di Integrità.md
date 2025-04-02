@@ -1,6 +1,6 @@
 >La ***correttezza sintattica*** di uno stato di una relazione non è condizione sufficiente affinché i dati rappresentino un'*informazione possibile*.
 
->[!def] Definizione
+>[!definizione] Definizione
 >Un ***vincolo di integrità*** è una *funzione booleana* che associa un’[[Modello Relazionale#Data Base Relazionale|istanza]] $r$ di un *database* definito su uno **schema** a un ***valore di verità***.
 >>[!done] Istanza Lecita
 >>Un'***istanza lecita*** è una istanza che **soddisfa i vincoli definiti**
@@ -34,7 +34,7 @@ $$(\text{Voto}=30) \text{ or not }(\text{Lode}=true) $$
 	- Analogo per il ***codice fiscale***.
 
 ##### Chiavi
->[!def] Definizione
+>[!definizione] Definizione
 >Una ***chiave*** è un *insieme di attributi* che consente di **identificare univocamente** una tupla di una relazione.
 
 > Viene usata per:
@@ -83,7 +83,7 @@ Poiché ogni istanza $r$ su $R(X)$ è un insieme, ne consegue che:
 #### Vincolo di Integrità Referenziale
 > Si considerino due schemi $R_{1}(X_{1})$ e $R_{2}(X_{2})$ di un *database* $R$, e sia $Y$ un insieme di attributi in $X_{2}$.
 
->[!def] Definizione
+>[!definizione] Definizione
 >Un vincolo di integrità referenziale su $Y$ impone che in **ogni istanza** $r=\{ r_{1},r_{2},\dots \}$ del *database* l'insieme dei valori di $Y$ in $r_{2}$ sia un sottoinsieme dell'insieme dei valori della chiave primaria di $R_{1}(X_{1})$.
 
 >[!Foreign Key]

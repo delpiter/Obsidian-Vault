@@ -82,7 +82,7 @@ $$
 
 >[!note] Ci aspettiamo che questa probabilità tenda a $0$
 
->[!def] Definizione
+>[!definizione] Definizione
 >Sia $Y_{1},Y_{2},Y_{3},\dots$ una *successione* di ***variabili aleatorie***.
 >Diciamo che questa successione tende ad una costante $a$ se:
 >$\forall \varepsilon > 0$
@@ -91,7 +91,7 @@ $$
 
 ## Legge dei Grandi Numeri
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Siano $X_{1},X_{2},X_{3},\dots$ [[3 - Variabili Aleatorie|variabili aleatorie]] *indipendenti* che abbiano tutte la ***stessa densità*** con [[6 - Valore Atteso|valore atteso]] $\mu$ e [[3 - Varianza|varianza]] $\sigma^2$
 ><u>Allora</u>
 >La *successione*

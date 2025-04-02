@@ -11,7 +11,7 @@ necessario per poter evolvere
 >- Interfacce di rete
 
 ## Risorsa
- >[!def] Definizione
+ >[!definizione] Definizione
  >Ogni *componente* riusabile o meno, sia *hardware* sia *software* necessario al processo o al sistema si chiama ***risorsa***
 
 #### Definizioni
@@ -117,7 +117,7 @@ Una risorsa è ***prerilasciabile*** se:
 >[!todo] Richieste bloccanti
 > Le richieste di risorse devono essere ***bloccanti***
 
->[!def] Attesa Circolare
+>[!definizione] Attesa Circolare
 >Esiste una **sequenza di processi** $P_{0},P_{1},\dots,P_{n}$, tali per cui $P_{0}$ attende una risorsa *controllata* da $P_{1}$, $P_{1}$ attende una risorsa *controllata* da $P_{2}$, $\dots$, $P_{n}$ attende una risorsa *controllata* da $P_{0}$
 
 La *presenza* di queste condizioni è ***necessaria e sufficiente***
@@ -181,7 +181,7 @@ La presenza di un *ciclo* nel caso di Holt ***non è sufficiente*** per avere de
 ![[Deadlock2.png]]
 - *Immagine a) Deadlock, Immagine b) No Deadlock*
 ##### Riducibilità di un grafo di Holt
->[!def] Definizione
+>[!definizione] Definizione
 >Un grafo di Holt si dice ***riducibile*** se esiste almeno un nodo processo con soli archi entranti
 >
 >>[!done] Riduzione
@@ -222,7 +222,7 @@ La presenza di un *ciclo* nel caso di Holt ***non è sufficiente*** per avere de
 ![[EsDeadlock2.png]]
 
 ##### Knot
->[!def] Definizione
+>[!definizione] Definizione
 >Dato un nodo $n$, l'insieme dei nodi raggiungibili da $n$ viene detto *insieme di raggiungibilità* di $n$ e si scrive $R(n)$
 >Un ***knot*** del grafo $G$ è il massimo sottoinsieme *non banale* di nodi $M$ tale che:
 >$$\forall n \in M, R(n) =M$$

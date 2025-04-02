@@ -3,7 +3,7 @@
 La modalità di accesso a un elemento nel web viene specificata mediante un'espressione denominata ***U***niform ***R***esource ***L***ocator
 
 
->[!def] Definizione
+>[!definizione] Definizione
 >L'`URL` è un indirizzo web che *identifica univocamente* una risorsa su internet.
 
 ![[URL.png]]

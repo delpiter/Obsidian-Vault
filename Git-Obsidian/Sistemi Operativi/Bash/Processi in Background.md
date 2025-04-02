@@ -18,7 +18,7 @@
 
 Il comando `{sh} jobs` stampa a video tutti i ***jobs in esecuzione*** 
 ### Processi in Foreground
->[!def] Definizione
+>[!definizione] Definizione
 >Sono i processi che "***controllano***" il terminale dal quale sono stati lanciati
 >- Ad ogni istante *un solo processo* è in ***foreground***
 
@@ -31,7 +31,7 @@ Il comando `{sh} jobs` stampa a video tutti i ***jobs in esecuzione***
 
 
 ### Processi in Background
->[!def] Definizione
+>[!definizione] Definizione
 >Vengono ***eseguiti in parallelo*** rispetto all'esecuzione della bash
 >- *Consentono* alla bash che li ha lanciati di leggere ed eseguire altri comandi e programmi
 >

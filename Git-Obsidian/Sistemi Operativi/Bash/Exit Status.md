@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >Gli ***Exit Status*** sono valori numerici compresi tra $0$ e $255$ con cui ogni comando dice a chi ha *ordinato di eseguire* il comando stesso, se esso è ***andato a buon fine***
 
 >Se un comando va a ***buon fine***:

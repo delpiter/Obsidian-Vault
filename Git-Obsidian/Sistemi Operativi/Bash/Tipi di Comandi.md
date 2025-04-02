@@ -43,7 +43,7 @@ Un ***eseguibile*** nel file sistem ***non è detto*** che l'interprete sappia c
 
 ## Liste di Comandi
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Una ***lista di Comandi*** è un elenco di comandi da lanciare in esecuzione in *successione*
 >Sintatticamente, ciascun elemento dell'elenco deve essere **separato** dal successivo da un `;`
 
@@ -65,7 +65,7 @@ Un ***eseguibile*** nel file sistem ***non è detto*** che l'interprete sappia c
 >Sequenze di comandi **non** condizionali
 - Sono comandi separati dal `;`, i comandi sono eseguiti in *successione*
 
->[!def] Definizione
+>[!definizione] Definizione
 >Sono sequenze di comandi che vengono eseguite *secondo delle condizioni*
 >>[!abstract] Caratteri
 >>`||` Viene utilizzato per eseguire due comandi in sequenza

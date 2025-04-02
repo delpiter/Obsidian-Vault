@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >La ***misurazione*** è l'operazione necessaria per *associare* ad ogni [[Metodo Scientifico|grandezza fisica]] un **numero**
 
 Si tratta di un ***insieme di procedimenti*** tali che la misura della *grandezza* sia ottenuta in modo **non ambiguo** e **riproducibile**

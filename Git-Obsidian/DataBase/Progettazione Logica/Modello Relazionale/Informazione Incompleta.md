@@ -39,7 +39,7 @@ Il valore "DataMorte" può non esserci per i seguenti motivi:
 #### Null
 >Nel [[Modello Relazionale]] si adotta il concetto di **valore nullo** (`NULL`).
 
->[!def] Definizione
+>[!definizione] Definizione
 >Il ***valore nullo*** (`NULL`) denota *assenza di un valore* nel [[Modello Relazionale#Dominio di un attributo|dominio]].
 >>[!attention] Attenzione
 >>`NULL` ***non*** è un valore del domino.

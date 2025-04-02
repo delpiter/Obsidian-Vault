@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >Il moto rettilineo si svolge ***lungo una retta*** sulla quale fissiamo un'*origine* e un *verso*
 >Può essere descritto tramite una unica **coordinata scalare**: $x(t)$
 >- Chiamata ***legge oraria***

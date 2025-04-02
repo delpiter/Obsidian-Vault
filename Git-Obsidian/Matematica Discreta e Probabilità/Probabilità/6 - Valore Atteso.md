@@ -1,6 +1,6 @@
 ## Valore Atteso di una Variabile Aleatoria Discreta
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >Se $X$ è [[3 - Variabili Aleatorie#Variabili Aleatorie Discrete|variabile aleatoria discreta]]:
 >$$E[X]=\sum_{k}k\cdot d_{X}(k)$$
 
@@ -183,7 +183,7 @@ $x=\displaystyle\frac{5}{6}$, e otteniamo:
 $$
 \sum_{k=1}^\infty k\left( \frac{5}{6} \right)^{k-1}\cdot \frac{1}{6}=\frac{1}{\left( 1-\frac{5}{6} \right)^2}\cdot \frac{1}{6}=\frac{1}{\frac{1}{6^2}}\cdot \frac{1}{6} = 6
 $$
->[!def] In Generale
+>[!definizione] In Generale
 >$X\sim\tilde{G}(p)$
 >$$E[X]=\frac{1}{p}$$
 

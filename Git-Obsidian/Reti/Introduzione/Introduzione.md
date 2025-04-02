@@ -19,7 +19,7 @@
 ## Definizioni di Base
 ---
 ### Rete
->[!def] Definizione
+>[!definizione] Definizione
 >Una ***rete*** è un sistema che connette due o più utenti per *condividere informazioni*
 
 #### Componenti della Rete

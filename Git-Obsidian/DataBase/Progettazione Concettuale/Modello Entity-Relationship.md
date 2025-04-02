@@ -27,7 +27,7 @@ I modelli concettuali prevedono una ***rappresentazione grafica***
 >- ***Identificatore*** (identifier)
 >- ***Gerarchia di Generalizzazione*** (generalization)
 #### Entità
->[!def] Definizione
+>[!definizione] Definizione
 > Una ***entità*** sono elementi della realtà ***raggruppati in una classe***, avendo caratteristiche comuni.
 > Hanno una esistenza "***autonoma***", indipendente dalle *proprietà associate*
 
@@ -56,7 +56,7 @@ Graficamente un'entità si rappresenta con un ***rettangolo*** al cui interno è
 > Un'***estensione di un'entità*** a un certo tempo è un ***insieme*** di specifici oggetti
 
 #### Associazione
->[!def] Definizione
+>[!definizione] Definizione
 >Un'***associazione*** o ***relazione*** rappresenta un *legame logico* tra entità, rilevante nella realtà che si sta considerando
 
 >[!hint] Istanza
@@ -83,7 +83,7 @@ Graficamente un'*associazione* si rappresenta con un **rombo** al cui interno ne
 ##### Grado delle Associazioni
 > Una associazione ***n-aria*** coinvolge $n$ entità, non necessariamente distinte
 
->[!def] Grado di un'associazione
+>[!definizione] Grado di un'associazione
 > Il ***grado di un’associazione*** è il numero di istanze di entità che sono coinvolte in un’istanza dell’associazione
 
 ***Associazione Binaria***:
@@ -111,7 +111,7 @@ Graficamente un'*associazione* si rappresenta con un **rombo** al cui interno ne
 - *Persona* sposata ad una *Persona* (**one to one**)
 
 #### Attributo
->[!def] Definizione
+>[!definizione] Definizione
 >Un ***attributo*** è una *proprietà elementare* di un'entità o di un'associazione
 
 > Denotato con un nome che ***deve essere univoco*** all'interno dell'entità o associazione
@@ -159,7 +159,7 @@ Se la ***cardinalità massima*** è $1$
 Se la ***cardinalità massima*** è $n$
 
 ##### Associazioni
->[!def] Definizione
+>[!definizione] Definizione
 >I ***vincoli di cardinalità di associazioni*** sono coppie di valori $(min-card, max-card)$ che vengono specificate per *ogni partecipazione* di entità ad un'associazione e descrivono **numero minimo** e **numero massimo** di occorrenze di relazione a cui una entità può partecipare
 
 >[!example] Esempio
@@ -194,7 +194,7 @@ Se i *vincoli di cardinalità* per un’entità $E$ relativamente a un’associa
 
 
 #### Identificatori
->[!def] Definizione
+>[!definizione] Definizione
 > Un ***identificatore*** è un attributo o insieme di attributi che identificano l’occorrenza di un’entità o relazione.
 > Un ***vincolo d’identificazione*** per un’entità $E$ definisce un *identificatore* per $E$
 
@@ -221,7 +221,7 @@ Nel caso di *più identificatori* è ammesso che gli attributi o le entità coin
 ![[Identifiers.png]]
 
 #### Reificazione
->[!def] Definizione
+>[!definizione] Definizione
 >L'operazione di ***reificazione*** consiste nel "*trasformare*" un'**associazione** in una **Entità**
 
 Nasce dalla necessità di avere identificatori all'*interno di una relazione*.

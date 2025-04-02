@@ -1,4 +1,4 @@
->[!def] Definizione
+>[!definizione] Definizione
 >Il ***metodo scientifico*** è la modalità con cui la *scienza* procede per raggiungere una *conoscenza della realtà*
 >>[!done] In Breve
 >>Esso consiste nella **raccolta di dati empirici** sotto la guida delle **ipotesi teoriche** da vagliare e nella analisi rigorosa, logico-razionale e, dove possibile, matematica di questi dati

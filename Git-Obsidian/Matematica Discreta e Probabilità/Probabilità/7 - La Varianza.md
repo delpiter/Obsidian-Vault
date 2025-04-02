@@ -2,7 +2,7 @@
 
 ## Varianza
 ---
->[!def] Definizione
+>[!definizione] Definizione
 >La ***varianza*** da una misura della *dispersione* di valori di $X$, tenendo conto delle rispettive ***probabilità***
 >$$Var(X)=E[(X-E[X])^2]$$
 >Come in *statistica*, la varianza ***non*** si calcola usando la *definizione*
@@ -40,7 +40,7 @@ $$
 >[!question] È vero che se $X\sim B(n,p)$ allora $Var(X)=np(1-p)$?
 
 #### Somma di Varianze
->[!def] Proprietà
+>[!definizione] Proprietà
 >Se $X$ e $X$ sono ***variabili aleatorie*** *indipendenti*
 ><u>Allora</u>
 >$$Var(X+Y)=Var(X)+Var(Y)$$

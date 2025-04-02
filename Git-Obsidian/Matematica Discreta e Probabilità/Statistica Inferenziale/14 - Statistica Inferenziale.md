@@ -45,7 +45,7 @@ $$
 >[!warning] Problema
 >Nella pratica ***non*** conosciamo $\sigma_{X}$ e $\mu_{X}$
 
->[!def] Definizione
+>[!definizione] Definizione
 >Il nostro scopo è quello di *stimare* $\sigma_{X}$ e $\mu_{X}$ e anche quello di dare una ***precisione*** o "***confidenza***" di questa *stima*
 >$$\mathcal{P}\left( -z_{c}< \displaystyle{\frac{\overline{X_{n}}-\mu_{X}}{\sigma_{X} / \sqrt{ n }}} < z_{c}\right)=c$$
 
