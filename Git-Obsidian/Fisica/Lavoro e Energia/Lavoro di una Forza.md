@@ -76,6 +76,21 @@ $$
 >><u>Oppure</u>
 >>Il lavoro compiuto da una ***forza conservativa*** agente su un punto materiale che descrive un *percorso chiuso* è **nullo**.
 
+Le due definizioni sono *equivalenti*:
+> Dimostrazione
+
+$$
+\oint_{\gamma} \vec{F} \cdot d\vec{r} =
+\int_{A}^{B} \vec{F} \cdot d\vec{r}_{\gamma_1} +
+\int_{B}^{A} \vec{F} \cdot d\vec{r}_{\gamma_2} =
+\int_{A}^{B} \vec{F} \cdot d\vec{r}_{\gamma_1} -
+\int_{A}^{B} \vec{F} \cdot d\vec{r}_{\gamma_2}
+$$
+Quindi:
+$$
+\oint_{\gamma}\vec{F}\cdot\text{d}\vec{r}=0\iff \int^{B}_{A} \vec{F} \cdot \text{d}\vec{r}_{\gamma_1} =
+\int^{B}_{A} \vec{F} \cdot \text{d}\vec{r}_{\gamma_2}
+$$
 
 ---
 
@@ -94,6 +109,3 @@ $$
 $$
 >[!definizione] Forze non Conservative
 >Chiamiamo le forze il cui **lavoro** *dipende* anche dal percorso, ***forze non conservative***.
->>[!cite] Definizione
->>
-
