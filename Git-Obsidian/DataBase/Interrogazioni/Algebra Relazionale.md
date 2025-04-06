@@ -140,6 +140,8 @@ $$
 >È possibile che una tupla delle due relazioni *non faccia match* con nessuna tupla dell'altra relazione.
 >In tal caso la tupla è denominata ***dangling***.
 
+^2163ac
+
 Nel caso limite è quindi possibile che il risultato del join sia ***vuoto***.
 
 > Ne consegue che la cardinalità del *join* $|r_{1}\bowtie r_{2}|$ è:
@@ -200,24 +202,89 @@ $$
 >L'intersezione si può scrivere come:
 >$$r_{1} \cap r_{2} = r_{1}-(r_{1}-r_{2})$$
 
-## Operatori derivati
+## Operatori Derivati
+---
+### Divisione
+>[!tldr] Idea
+>La divisione, $\div$, di $r_{1}$ per $r_{2}$ , con $r_{1}$ su $R_{1}(X_{1}X_{2})$ e $r_{2}$ su $R_{2}(X_{2})$, è il *più grande* insieme di tuple $t\in\pi_{X_{1}}(r_{1})$, e dunque con schema $X_{1}$, tale che, facendo il ***prodotto cartesiano*** con $r_{2}$, ciò che si ottiene è una relazione contenuta in $r_{1}$ o uguale a $r_{1}$.
 
-### Theta Join (θ-join)
-**Sintassi:**
-```
-r1 ⋈_F r2 = σ_F(r1 × r2)
-```
-- Combinazione fra join e selezione.
+> **Sintassi**:
+
+$$
+r_{1}\div r_{2}=\{ t|\{ t \}\bowtie r_{2}\subseteq r_{1} \}
+$$
+
+***Derivazione***
+- $R_{1}\div R_{2}$ si può esprimere come:
+$$
+\pi_{X_{1}}(R_{1})-\pi_{X_{1}}((\pi_{X_{1}}(R_{1})\bowtie R_{2})-R_{1})
+$$
+>[!example] Esempio
+
+![[AlgebraDivision.png]]
+
+### Theta Join
+>[!tldr] Idea
+> L'operatore di ***thetha-join***, $\bowtie_{F}$ è la combinazione di *prodotto cartesiano* e *selezione*.
+
+>**Sintassi:**
+
+$$
+r_{1}\bowtie_{F}r_{2}=\sigma_{F}(r_{1}\bowtie r_{2})
+$$
+
+>[!hint] Osservazione
+>Con $R_{1}$ e $R_{2}$ senza attributi in comune e $F$ formula del tipo $A \theta B$, con $A\in X_{1}$ e $B\in X_{2}$:
+>- Se $F$ è una congiunzione di uguaglianze, si parla di ***equijoin***.
+>- Il natural join può essere simulato per mezzo della *ridenominazione* dell'***equijoin*** e della ***proiezione***.
+
+>[!done] Il theta-join e il join naturale sono detti anche ***inner join***
+
+> Precisazione
+
+Il *theta-join* richiede in ingresso relazioni con **schemi disgiunti**.
+
+### Semijoin
+>[!tldr] Idea
+>Il ***semijoin*** da $S$ a $R$, indicato con $R\ltimes S$ , è la proiezione del natural join $R\bowtie S$ sugli attributi dello schema $R$
+>È detto anche *left semijoin*.
+
+> **Sintassi**
+
+$$
+r\ltimes s = \pi_{X}(r\bowtie s)=r\bowtie \pi_{X\cap Y}(s)
+$$
+Si definisce anche il ***right semijoin*** $R\rtimes S$ che equivale a $R\ltimes S$.
 
 ### Outer Join
-Mantiene le tuple **dangling** aggiungendo i valori mancanti sotto forma di **NULL**.
-- Una tupla di una delle relazioni operande che non fa “match” con alcuna tupla dell’altra relazione.
+>[!tldr] Idea
+> L'operatore di ***outer-join*** mantiene le [[#^2163ac|tuple dangling]] aggiungendo i valori mancanti sotto forma di [[Informazione Incompleta#Null|null]].
 
-#### Tipi di Outer Join
-- **Left Outer Join**
-- **Right Outer Join**
-- **Full Outer Join**
+> **Sottotipi**:
+- **Left Outer Join** ($=\bowtie$)
+	- Sono incluse solo le tuple dangling dell'operando *sinistro*.
+- **Right Outer Join** ($\bowtie =$)
+	- Sono incluse solo le tuple dangling dell'operando *destro*.
+- **Full Outer Join** ($=\bowtie=$)
+	- Sono incluse solo le tuple dangling di *entrambi gli operandi*.
 
 ## Espressioni e viste
+> È possibile, adottare una rappresentazione grafica in cui l'espressione è rappresentata  con un albero.
 
-- Assegnare ad una soluzione un nome per facilitarne l’uso nelle query.
+>[!hint] Viste
+>Al fine di semplificare espressioni complesse è possibile fare uso di viste.
+>Le ***viste*** sono espressioni a cui viene *assegnato un nome* che è possibile **riutilizzare** in altre espressioni.
+## Algebra con Valori Nulli
+---
+> La presenza di valori [[Informazione Incompleta#Null|nulli]] nelle relazioni richiede un'estensione della semantica degli operatori.
+
+>[!info] $\pi, \cup, -$
+>Negli operatori di *proiezione*, *unione* e *differenza* due tuple sono uguali anche in ***presenza di valori nulli***.
+
+>[!warning] $\sigma$
+>Una ***selezione*** produce le sole tuple per cui l'espressione di predicati *risulta vera*.
+
+![[NullLogic.png]]
+
+>[!abstract] $\bowtie$
+>Il ***join naturale*** *non* combina due tuple se queste hanno entrambe valore **nullo** su un attributo in comune.
