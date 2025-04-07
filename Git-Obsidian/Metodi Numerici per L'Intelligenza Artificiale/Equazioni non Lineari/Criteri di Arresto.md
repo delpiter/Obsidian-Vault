@@ -1,4 +1,4 @@
->Un [[Soluzione Numerica di Sistemi non Lineari|metodo numerico convergente]] genera una successione $\{ x_{k} \}$  di *iterati* che soddisfa: $\displaystyle\lim\limits_{k\to +\infty}x_{k}=\alpha$.
+>Un [[Soluzione Numerica di Funzioni non Lineari|metodo numerico convergente]] genera una successione $\{ x_{k} \}$  di *iterati* che soddisfa: $\displaystyle\lim\limits_{k\to +\infty}x_{k}=\alpha$.
 
 >[!warning]
 >In un contesto di calcolo computazionale, non è possibile eseguire un ***numero infinito di passi***.

@@ -171,7 +171,7 @@ Iterando il ragionamento (Metodo di Bisezione) si hanno 2 possibilità
 >[!info] Teorema
 >Sia $I$ intervallo di $\mathbb{R}$, sia $f:I\to\mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]] 
 ><u>Allora</u>
->$f(I)$ è a sua volta un intervallo (o [[Git-Obsidian/Analisi/Definizioni_Analisi#Intervallo degenere|intervallo degenere]])
+>$f(I)$ è a sua volta un intervallo (o [[Definizioni_Analisi#Intervallo degenere|intervallo degenere]])
 >
 >>[!done] In Breve
 >>Se una funzione è continua, la sua immagine assume tutti i valori fra il massimo e il minimo della funzione

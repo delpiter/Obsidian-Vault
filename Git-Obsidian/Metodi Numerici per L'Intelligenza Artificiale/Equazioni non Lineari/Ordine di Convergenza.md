@@ -1,5 +1,5 @@
 >[!definizione] Definizione
->Sia data una *successione di iterati* $\{ x_{k} \}$, generata da un [[Soluzione Numerica di Sistemi non Lineari|metodo numerico convergente]] ad un limite $\alpha$ e sia $e_{k}=x_{k}-\alpha$.
+>Sia data una *successione di iterati* $\{ x_{k} \}$, generata da un [[Soluzione Numerica di Funzioni non Lineari|metodo numerico convergente]] ad un limite $\alpha$ e sia $e_{k}=x_{k}-\alpha$.
 >Se esistono due numeri reali $p\geq1$ e $c>0$, tali che:
 >$$\lim\limits_{k\to +\infty} \frac{|e_{k+1}|}{|e_{x}|^p}=c$$
 >Si dice che la successione ha ***ordine di convergenza*** $p$ e fattore di convergenza $c$.
@@ -44,3 +44,34 @@ Se il metodo iterativo ha ordine di convergenza $p$, allora
 
 >[!hint] Convergenza Locale
 >Un metodo numerico convergente ha una ***convergenza locale*** se la convergenza **non*** è *garantita* qualunque sia l'ampiezza dell'intervallo iniziale $[a,b]$
+
+### Teorema di Convergenza Locale
+>[!definizione] Teorema
+>Se $f:[a,b]\mapsto \mathbb{R}$ soddisfa le seguenti ipotesi
+>1. $f(a)\cdot f(b)<0$
+>2. $f,f',f''$ sono continue in $[a,b]$ ($f\in C^2[a,b]$)
+>3. $f'(x)\neq 0 \forall x \in[a,b]$
+>
+><u>Allora</u>
+>Esiste un intorno $I\subset[a,b]$ dell'unica radice $\alpha\in(a,b)$ tale che:
+>- Se $x\in I$ allora la successione di Newton $\{ x_{i} \}_{i\geq1}$ converge ad $\alpha$
+
+>[!cite] Teorema di Convergenza Globale del metodo di Newton
+>Sia $f(x)\in C^2[a,b]$, con $[a,b]$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] chiuso e limitato, ***sono verificate*** le seguenti condizioni:
+>1. $f(a)f(b) < 0$
+>2. $f'(x) \ne 0 \quad \forall x \in [a,b]$
+>3. $f''(x) > 0 \quad \textit{oppure} \quad f''(x) < 0 \quad \forall x \in [a,b]$
+>4. $\left| \frac{f(a)}{f'(a)} \right| < b - a \quad \quad\left| \frac{f(b)}{f'(b)} \right| < b - a$
+>>[!quote] A parole
+>>L'intersezione della retta che collega gli estremi cade internamente all'intervallo $[a,b]$
+>
+><u>Allora</u>
+>Il [[Localizzare le Radici#Metodo di Newton|metodo di Newton]] converge all'unica soluzione $\alpha\in[a,b]$.
+
+> ***Spiegazione***:
+
+- La condizione 1. assicura che una radice **esista**.
+- La condizione 2. assicura che non vi siano **tangenti orizzontali**.
+- La condizione 3. assicura che la **convessità o concavità sia mantenuta** su tutto $[a,b]$.
+- La condizione 4. assicura che le **tangenti agli estremi intersecano l'asse** $x$ internamente ad $[a,b]$.
+
