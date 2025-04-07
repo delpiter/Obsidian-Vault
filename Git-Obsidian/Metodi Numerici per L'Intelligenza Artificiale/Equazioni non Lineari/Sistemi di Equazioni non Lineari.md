@@ -1,0 +1,200 @@
+> Un sistema di equazioni non lineari può essere scritto nella forma:
+
+$$
+\begin{cases}
+f_{1}(x_{1},x_{2},\dots,x_{n})=0 \\
+f_{2}(x_{1},x_{2},\dots,x_{n})=0 \\
+f_{3}(x_{1},x_{2},\dots,x_{n})=0 \\
+\dots \\
+f_{n}(x_{1},x_{2},\dots,x_{n})=0
+\end{cases}
+$$
+Con $f_{i}:\mathbb{R}^n\to\mathbb{R}$, $i=1,\dots,n$ funzioni non lineari ***continue e differenziabili***.
+
+>[!abstract] Consideriamo la funzione $F:\mathbb{R}^n\to \mathbb{R}^n$, funzione a valori vettoriali
+
+$$
+X=\begin{bmatrix}
+x_{1} \\
+x_{2} \\
+\dots \\
+x_{n}
+\end{bmatrix}\in\mathbb{R}^n\to F(X)=\begin{bmatrix}
+f_{1}(x_{1},x_{2},\dots,x_{n})=0 \\
+f_{2}(x_{1},x_{2},\dots,x_{n})=0 \\
+\dots \\
+f_{n}(x_{1},x_{2},\dots,x_{n})=0
+\end{bmatrix}
+$$
+
+>[!quote] Calcolare la soluzione del sistema
+>Calcolare il vettore $\alpha=[\alpha_{1},\alpha_{2},\dots,\alpha_{n}]^T\in\mathbb{R}^n$ che annulla le equazioni ***equivale*** a calcolare $\alpha=[\alpha_{1},\alpha_{2},\dots,\alpha_{n}]^T\in\mathbb{R}^n$ tale che $F(\alpha)=0$
+
+
+>[!info] Gradiente
+>Il [[Calcolo Differenziale#Gradiente|gradiente]] di una funzione $f:\mathbb{R}^n\to\mathbb{R}$ differenziabile è dato da:
+>$$\nabla f(X) = \begin{bmatrix}\displaystyle\frac{\partial f(X)}{\partial x_1} \\\displaystyle\frac{\partial f(X)}{\partial x_2} \\\vdots \\\displaystyle\frac{\partial f(X)}{\partial x_n}\end{bmatrix}$$
+
+### Matrice Jacobiana
+>[!definizione]
+>La ***matrice Jacobiana*** di $F(X)$ è la matrice le cui *entrate* sono le **derivate parziali** di ciascuna funzione $f_{i}(x_{1},x_{2},x_{3},\dots,x_{n})$, $i=1,\dots,n$ rispetto a *ciascuna variabile* $j=1,\dots,n$.
+
+$$
+J(X) =
+\begin{bmatrix}
+\displaystyle\frac{\partial f_1(X)}{\partial x_1} & \displaystyle\frac{\partial f_1(X)}{\partial x_2} & \cdots & \cdots & \displaystyle\frac{\partial f_1(X)}{\partial x_n} \\
+\displaystyle\frac{\partial f_2(X)}{\partial x_1} & \displaystyle\frac{\partial f_2(X)}{\partial x_2} & \cdots & \cdots & \displaystyle\frac{\partial f_2(X)}{\partial x_n} \\
+\vdots & \vdots & \ddots & & \vdots \\
+\displaystyle\frac{\partial f_n(X)}{\partial x_1} & \displaystyle\frac{\partial f_n(X)}{\partial x_2} & \cdots & \cdots & \displaystyle\frac{\partial f_n(X)}{\partial x_n}
+\end{bmatrix}
+$$
+Che può essere riscritto come:
+$$
+J(X) =
+\begin{bmatrix}
+\displaystyle\frac{\partial F(X)}{\partial x_1} & \displaystyle\frac{\partial F(X)}{\partial x_2} & \cdots & \displaystyle\frac{\partial F(X)}{\partial x_n}
+\end{bmatrix}
+$$
+- *Dove*
+$$
+\frac{\partial F(X)}{\partial x_i} =
+\begin{bmatrix}
+\displaystyle\frac{\partial f_1(X)}{\partial x_i} \\
+\displaystyle\frac{\partial f_2(X)}{\partial x_i} \\
+\vdots \\
+\displaystyle\frac{\partial f_n(X)}{\partial x_i}
+\end{bmatrix}
+$$
+> Poiché
+
+$$
+\nabla F(X)=
+\begin{bmatrix}
+\displaystyle\frac{\partial F(X)}{\partial x_1} \\
+\displaystyle\frac{\partial F(X)}{\partial x_2} \\
+\vdots \\
+\displaystyle\frac{\partial F(X)}{\partial x_n}
+\end{bmatrix}
+$$
+Si ha quindi che $\nabla F(X)=J^T(X)$
+
+## Metodo di Newton Raphson
+---
+> Analizziamo il caso $n=2$
+
+Dato:
+$$
+F(X)=F(x_{1},x_{2})=\begin{bmatrix}
+f_{1}(x_{1},x_{2}) \\
+f_{2}(x_{1},x_{2})
+\end{bmatrix}
+$$
+- Individuare il vettore $\alpha=[\alpha_{1},\alpha_{2}]^T\in\mathbb{R}^2$ tale che $F(\alpha)=\begin{bmatrix}f_{1}(\alpha_{1},\alpha_{2}) \\f_{2}(\alpha_{1},\alpha_{2})\end{bmatrix}=\begin{bmatrix}0\\0\end{bmatrix}$
+
+>[!hint] Geometricamente
+>Equivale ad individuare un ***punto del piano*** in cui entrambe le funzioni si *annullino contemporaneamente*.
+
+> Consideriamo il polinomio di Taylor di grado $1$ bivariato centrato in un intorno del punto $X_{k}=\left[x^{(k)}_{1},x^{(k)}_{2}\right]^T\in\mathbb{R}^2$ (l'iterato $k$-*esimo*) per entrambe le funzioni $f_{1},f_{2}$
+
+Tali polinomi rappresentano il ***piano che meglio approssima ciascuna dele funzioni*** bivariate.
+$$
+x_3 = P_1(x_1, x_2) = f_1\left(x_1^{(k)}, x_2^{(k)}\right) + \frac{\partial f_1}{\partial x_1}\left(x_1^{(k)}, x_2^{(k)}\right)(x_1 - x_1^{(k)}) + \frac{\partial f_1}{\partial x_2}\left(x_1^{(k)}, x_2^{(k)}\right)(x_2 - x_2^{(k)})
+$$
+$$
+x_3 = Q_1(x_1, x_2) = f_2\left(x_1^{(k)}, x_2^{(k)}\right) + \frac{\partial f_2}{\partial x_1}\left(x_1^{(k)}, x_2^{(k)}\right)(x_1 - x_1^{(k)}) + \frac{\partial f_2}{\partial x_2}\left(x_1^{(k)}, x_2^{(k)}\right)(x_2 - x_2^{(k)})
+$$
+
+>[!abstract] Obbiettivo
+>Il nostro obbiettivo è di individuare un punto del piano $X_{k+1}=\left[x_{1}^{k+1},x_{2}^{k+1}\right]^T$ in cui $F(X_{k+1})=0$.
+
+
+$$
+\begin{cases}
+\displaystyle 0 = f_1\left(x_1^{(k)}, x_2^{(k)}\right) + \frac{\partial f_1}{\partial x_1}\left(x_1^{(k)}, x_2^{(k)}\right)(x_1 - x_1^{(k)}) + \frac{\partial f_1}{\partial x_2}\left(x_1^{(k)}, x_2^{(k)}\right)(x_2 - x_2^{(k)}) \\
+\displaystyle 0 = f_2\left(x_1^{(k)}, x_2^{(k)}\right) + \frac{\partial f_2}{\partial x_1}\left(x_1^{(k)}, x_2^{(k)}\right)(x_1 - x_1^{(k)}) + \frac{\partial f_2}{\partial x_2}\left(x_1^{(k)}, x_2^{(k)}\right)(x_2 - x_2^{(k)})
+\end{cases}
+$$
+
+^263baf
+
+- Questo sistema di equazioni lineari rappresenta l'intersezione di due piani tangenti alle due superfici in $X_{k}=\left[x^{(k)}_{1},x^{(k)}_{2}\right]^T$ con il piano $x_{3}=0$
+
+>[!hint] Geometricamente
+>Significa trovare il punto sulla ***retta  di intersezione*** dei due piani tangenti in cui si ha $x_{3}=0$
+
+Indicato con:
+$$
+J(X_k) = 
+\begin{bmatrix}
+\displaystyle\frac{\partial f_1}{\partial x_1}\left(x_1^{(k)}, x_2^{(k)}\right) & \displaystyle\frac{\partial f_1}{\partial x_2}\left(x_1^{(k)}, x_2^{(k)}\right) \\
+\displaystyle\frac{\partial f_2}{\partial x_1}\left(x_1^{(k)}, x_2^{(k)}\right) & \displaystyle\frac{\partial f_2}{\partial x_2}\left(x_1^{(k)}, x_2^{(k)}\right)
+\end{bmatrix}
+$$
+
+Lo Jacobiano di $F(X)$ calcolato in $X_{k}$
+- $F(X_{k})=\left[ f_{1}(x_{1}^{(k)}),f_{2}(x_{2}^{(k)}) \right]^T$
+- $X-X_{k}=\left[ x_{1}-x_{1}^{(k)},x_{2}-x_{2}^{(k)} \right]^T$
+
+Il [[#^263baf|sistema]] si può esprimere in forma matriciale come
+$$
+\begin{array}
+\ 0=F(X_{k})+J(X_{k})(X-X_{k}) \\
+J(X_{k})(X-X_{k})=-F(X_{k}) \\
+\end{array}
+$$
+> Sotto l'ipotesi che $\det J(X_{k})\neq 0$ si ricava:
+
+$$
+\cancel{ J^{-1}(X_{k})J(X_{k}) }(X-X_{k})=-J^{-1}(X_{k})F(X_{k})
+$$
+>[!hint] Osservazione
+>Possiamo notare che $-J^{-1}(X_{k})F(X_{k})$ è la soluzione del sistema lineare
+>$$J(X_{k})s_{k}=-F(X_{k})$$
+
+*Quindi*
+- $X_{k+1}=X_{k}+s_{k}$
+
+### Pseudocodice
+>L'algoritmo si può schematizzare come:
+
+- Dato $X_{0}\in\mathbb{R}^n$ ed ,$F$ per ogni iterazione $k$
+```pseudo
+	\begin{algorithm}
+	\caption{Newton-Raphson}
+	\begin{algorithmic}
+\State $ \text{Valutare } J(X_{k-1})$
+\State $ \text{Risolvere il sistema lineare } J(X_{k})s_{k}=-F(X_{k})$
+\State $\text{Porre }X_k=X_{k-1}+s_{k-1}$
+	\end{algorithmic}
+	\end{algorithm}
+```
+>[!help] Convergenza
+>È un metodo a [[Ordine di Convergenza#Convergenza Locale e Globale|convergenza locale]] e [[Ordine di Convergenza#Ordini|ordine di convergenza]] *quadratico*.
+
+#### Esempio
+>[!example] Esempio 1
+>Calcolare il punto di intersezione tra il cerchio di coordinate $x^2_{1}+x^2_{2}-9$ e la retta $x_{1}+x_{2}=3$
+
+Si tratta di risolvere il sistema
+$$
+\begin{cases}
+f_{1}(x_{1},x_{2})=x^2_{1}+x^2_{2}-9=0\\
+f_{2}(x_{1},x_{2})=x_{1}+x_{2}-3 =0
+\end{cases}
+$$
+$$
+F(X)=F(x_{1},x_{2})=\begin{bmatrix}
+f_{1}(x_{1},x_{2}) \\
+f_{2}(x_{1},x_{2})
+\end{bmatrix}=\begin{bmatrix}
+x_{1}^2+x_{2}^2-9 \\
+x_{1}+x_{2}-3
+\end{bmatrix}
+$$
+Calcoliamo la ***Jacobiana***:
+$$
+J(X)=\begin{bmatrix}
+2x_{1} & 2x_{2} \\
+1 & 1
+\end{bmatrix}
+$$
