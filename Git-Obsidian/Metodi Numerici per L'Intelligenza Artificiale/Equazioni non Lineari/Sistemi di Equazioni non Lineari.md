@@ -42,10 +42,10 @@ $$
 $$
 J(X) =
 \begin{bmatrix}
-\displaystyle\frac{\partial f_1(X)}{\partial x_1} & \displaystyle\frac{\partial f_1(X)}{\partial x_2} & \cdots & \cdots & \displaystyle\frac{\partial f_1(X)}{\partial x_n} \\
-\displaystyle\frac{\partial f_2(X)}{\partial x_1} & \displaystyle\frac{\partial f_2(X)}{\partial x_2} & \cdots & \cdots & \displaystyle\frac{\partial f_2(X)}{\partial x_n} \\
-\vdots & \vdots & \ddots & & \vdots \\
-\displaystyle\frac{\partial f_n(X)}{\partial x_1} & \displaystyle\frac{\partial f_n(X)}{\partial x_2} & \cdots & \cdots & \displaystyle\frac{\partial f_n(X)}{\partial x_n}
+\displaystyle\frac{\partial f_1(X)}{\partial x_1} & \displaystyle\frac{\partial f_1(X)}{\partial x_2} & \cdots & \displaystyle\frac{\partial f_1(X)}{\partial x_n} \\
+\displaystyle\frac{\partial f_2(X)}{\partial x_1} & \displaystyle\frac{\partial f_2(X)}{\partial x_2} & \cdots & \displaystyle\frac{\partial f_2(X)}{\partial x_n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\displaystyle\frac{\partial f_n(X)}{\partial x_1} & \displaystyle\frac{\partial f_n(X)}{\partial x_2} & \cdots & \displaystyle\frac{\partial f_n(X)}{\partial x_n}
 \end{bmatrix}
 $$
 Che può essere riscritto come:
@@ -198,3 +198,150 @@ J(X)=\begin{bmatrix}
 1 & 1
 \end{bmatrix}
 $$
+
+### Varianti del Metodo di Newton-Raphson
+> Alcune varianti al metodo possono *migliorarne l'efficienza*.
+
+>[!caution] Metodo delle Corde
+>Si utilizza lo stesso *Jacobiano* $J(X_{0})$ o una sua approssimazione $A(X_{0})$ per tutte le iterazioni $k$.
+>Si potrebbe quindi #addLink fattorizzare $J(X_{0})=LU$ e utilizzare i medesimi $L$ e $U$ ***per ogni iterazione***.
+
+>[!abstract] Metodo di Shamanskii
+>Si valuta lo *Jacobiano* ogni $m$ iterazioni e quindi lo si utilizza per le $m$ iterazioni successive.
+>$$J_{k+i}=J_{i}, \quad i=1,\dots,m$$
+>Giunti al calcolo di $x_{k+m+1}$ si rivaluta lo *Jacobiano*.
+
+### Iterato Iniziale
+>[!question] Come trovo l'iterato iniziale?
+
+Per trovare l'iterato iniziale si utilizza un ***approccio grafico***
+
+L'approccio grafico offre un modo intuitivo per *visualizzare queste soluzioni*.
+
+> Considerando le funzioni $f_{1}(x_{1},x_{2})$ e $f_{2}(x_{1},x_{2})$ come superfici nello spazio tridimensionale:
+
+$$x_{3}=f_{1}(x_{1},x_{2}),\quad x_{3}=f_{2}(x_{1},x_{2})$$
+Le soluzioni corrispondono ai punti in cui entrambe le superfici assumono il valore $x_{3}=0$.
+
+>[!help] Curve di Livello
+>Le [[Funzioni di due Variabili Reali#Curva di Livello|curve di livello]] a quota zero di queste superfici sono date da:
+>- $f_{1}(x_{1},x_{2})=0$
+>- $f_{2}(x_{1},x_{2})=0$
+
+Queste *curve* sono tracciate nel piano $x_{1}x_{2}$e descrivono tutti i punti $(x_{1},x_{2})$ dove ciascuna superficie "tocca"  il piano orizzontale $x_{3}=0$.
+- I punti $x_{1}x_{2}$ che si trovano ***sull'intersezione*** di queste due curve di livello sono esattamente i punti in cui sia $f_{1}$ che $f_{2}$ sono *uguali a zero*.
+
+>[!hint] Possiamo esaminare il grafico e stimare uno di questi punti
+
+#### Esempio
+$$
+\begin{cases}
+f_{1}(x_{1},x_{2})=x^2_{1}+x^2_{2}-4=0\\
+f_{2}(x_{1},x_{2})=x^2_{1}-x^2_{2}-1=0
+\end{cases}
+$$
+
+![[FirstIterateGraphicalMethood.png|500]]
+
+
+![[FirstItearte.png|500]]
+
+### Metodo di Newton-Rapshon per il calcolo del Minimo
+>[[Punti Critici|Masismi e Minimi di una funzione a due variabili]].
+
+>[!info]
+>Data $f:\mathbb{R}^n\mapsto \mathbb{R},\quad f\in C^2$ (*differenziabile due volte con continuità*), trovare $X^*\in\mathbb{R}^n$ tale che $X^*=\arg\min\limits_{X\in\mathbb{R}^2}f(x)$.
+
+I punti di stazionarietà locale $X^*$ sono soluzione del seguente *sistema non lineare*:
+
+$$
+\nabla f(X)=
+\begin{bmatrix}
+\displaystyle\frac{\partial f(X)}{\partial x_1} \\
+\displaystyle\frac{\partial fX)}{\partial x_2} \\
+\vdots \\
+\displaystyle\frac{\partial f(X)}{\partial x_n}
+\end{bmatrix}=\begin{bmatrix}
+0 \\
+0 \\
+\dots \\
+0
+\end{bmatrix}
+$$
+Con $X=\begin{bmatrix}x_{1}\\x_{2}\\\dots\\x_{n}\end{bmatrix}\in\mathbb{R}^n$
+
+Per verificare se tale punto è un massimo, minimo o sella occorrerà esaminare la ***matrice*** [[Differenziabilità#Matrice Hessiana|Hessiana]] $H(X)$.
+
+$$
+H(X) =
+\begin{bmatrix}
+\displaystyle\frac{\partial^2 f(X)}{\partial^2 x_1} & \displaystyle\frac{\partial^2 f(X)}{\partial x_{1}\partial x_2} & \cdots & \displaystyle\frac{\partial^2 f(X)}{\partial x_{1}\partial x_n} \\
+\displaystyle\frac{\partial^2 f(X)}{\partial x_{2}\partial x_1} & \displaystyle\frac{\partial^2 f(X)}{\partial^2 x_2} & \cdots & \displaystyle\frac{\partial^2 f(X)}{\partial x_{2}\partial x_n} \\
+\vdots & \vdots & \ddots & \vdots \\
+\displaystyle\frac{\partial^2 f(X)}{\partial x_{n}\partial x_1} & \displaystyle\frac{\partial^2 f(X)}{\partial x_{n}\partial x_2} & \cdots & \displaystyle\frac{\partial^2 f(X)}{\partial^2 x_n}
+\end{bmatrix}
+$$
+
+Consideriamo il ***polinomio di Taylor*** di grado 1 bivariato centrato in un intorno del punto $X_{k}$
+- $P_1(x_1, x_2)$
+$$
+x_3 = 
+\displaystyle\frac{\partial f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1} 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1^2}(x_1 - x_1^{(k)}) 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1 \partial x_2}(x_2 - x_2^{(k)})
+$$
+- $Q_1(x_1, x_2)$
+$$
+x_3 = 
+\displaystyle\frac{\partial f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2} 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2 \partial x_1}(x_1 - x_1^{(k)}) 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2^2}(x_2 - x_2^{(k)})
+$$
+
+> Tali polinomi rappresentano il piano che meglio approssima ciascuna delle due componenti del gradiente in un intorno del punto $X_{k}$
+
+>[!hint] Poiché $\nabla f$ non è lineare
+>Usiamo l'**approssimazione** di ciascuna delle due componenti del gradiente in un intorno di $X_{k}$, e imponiamo che i *piani tangenti* da essi rappresentati si annullino.
+
+$$
+\begin{cases}
+x_{3}=\displaystyle\frac{\partial f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1} 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1^2}(x_1 - x_1^{(k)}) 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1 \partial x_2}(x_2 - x_2^{(k)}) \\
+x_3 = \displaystyle\frac{\partial f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2} 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2 \partial x_1}(x_1 - x_1^{(k)}) 
++ \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2^2}(x_2 - x_2^{(k)}) \\
+x_{3}=0
+\end{cases}
+$$
+
+Il sistema riscritto in termini matriciali diventa:
+$$
+0=\nabla f(X_{k})+H(X_{k})(X-X_{k})
+$$
+
+Sotto l'ipotesi che $\det H(X_{k})\neq0$ si ricava:
+$$
+X-X_{k}=-H^{-1}(X_{k})\nabla f(X_{k})
+$$
+
+> E si determina il procedimento iterativo:
+
+$$
+H(X_{k})s_{k}=-\nabla f(X_{k})
+$$
+*Quindi*
+- $X_{k+1}=X_{k}+s_{k}$
+
+>[!abstract] L'algoritmo diventa:
+
+```pseudo
+	\begin{algorithm}
+	\caption{Newton-Raphson Min Point}
+	\begin{algorithmic}
+\State $ \text{Valutare } H(X_{k-1})$
+\State $ \text{Risolvere il sistema lineare } H(X_{k})s_{k}=-\nabla f(X_{k})$
+\State $\text{Porre }X_k=X_{k-1}+s_{k-1}$
+	\end{algorithmic}
+	\end{algorithm}
+```

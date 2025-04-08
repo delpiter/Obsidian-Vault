@@ -197,16 +197,13 @@ j(x)=7x-8.563
 ### Metodo delle Secanti
 >[!info]
 >Il seguente metodo richiede ***due iterati iniziali*** (*input* del problema).
->L'**approssimazione** della funzione $f$ nell'intervallo $[x_{k-1},x_{k}]$ è la retta che passa per i punti: $(x_{k-1},f(x_{k-1})),(x_{k},f(x_{k}))$ con *coefficiente angolare*:
->$$m_{k}=\frac{f(x_{k}-f(x_{k-1}))}{x_{k}-x_{k-1}}$$
+>L'**approssimazione** della funzione $f$ nell'intervallo $[x_{k-1},x_{k}]$ è la retta che passa per i punti: $(x_{k-1}),f(x_{k-1}),(x_{k},f(x_{k}))$ con *coefficiente angolare*:
+>$$m_{k}=\frac{f(x_{k})-f(x_{k-1})}{x_{k}-x_{k-1}}$$
 
 La retta calcolata interseca l'asse $x$ nel punto:
 $$
 x_{k+1}=x_{k}-f(x_{k}) \displaystyle{\frac{x_{k}-f(x_{k-1})}{f(x_{k})-f(x_{k-1})}}
 $$
-
->[!quote] A parole
->Il coefficiente angolare della "*retta successiva*" è quello della retta che passa 
 
 La convergenza del metodo è garantita se le approssimazioni $x_{0}$ e $x_{1}$ si scelgono abbastanza vicine alla soluzione.
 
