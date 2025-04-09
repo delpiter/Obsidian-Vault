@@ -117,36 +117,73 @@ Valori possibili:
 - Usato per rappresentare sia **data** che **ora**.
 	- Formato principale: `yyyy-mm-dd hh:mm:ss`.
 ##### Blob e cBlob
-> Usato per rappresentare oggetti di grandi dimensioni
-* Oggetti di grandi dimensioni sottoforma di bit  
-  * Non è possibile interrogare in base al blob  
-  * Dimensioni fisse  
-  * **cBlob** \=\> stringhe al posto di bit
-## Dominio di Dati
-### **Dominio “Custom”**
-* **CREATE DOMAIN** domainName as DataType(val default vincolo);
+> Usato per rappresentare oggetti di grandi dimensioni.
 
+`{sql icon} blob`
+- Oggetti di **grandi dimensioni** sottoforma di `bit`.  
+- **Non** è possibile interrogare in base al *blob*.
 
-* #### Vincoli
-  * Definibili per ciascun dominio  
-    * **Intra-Relazionali**  
-      * CHECK(Condizione)  
-      * NOT NULL  
-      * UNIQUE  
-        * Superchiave non primaria  
-      * Primary Key  
-        * Vincolo di chiave  
-    * **Inter-Relazionali**  
-      * Vincolo References  
-        * Consente di definire vincoli di integrità referenziale tra i valori in cui è definito (Tabella interna) e i valori di un attributo di una seconda tabella  
-        * **Foreign Key** (attrList) **References** TableName(attrList)  
-      * In caso di violazione di VIR  
-        * 4 azioni possibili  
-          * **Cascade**  
-            * Elimina/Aggiorna le righe tabella interna  
-          * **Set Null**  
-            * Imposta i valori a null  
-          * **Set Default**  
-            * Ripristina valori di default  
-          * **No Action**  
-            * Non consente l’azione
+`{sql icon} cblob`
+- Come il **blob** ma con stringhe al posto di `bit`.
+
+#### Dominio “Custom”
+> Utilizzabili in *definizioni di relazioni* anche con **vincoli** e **valori di default**.
+
+```sql
+CREATE DOMAIN domainName as int
+DEFAULT NULL
+CHECK(condition)
+```
+### Vincoli
+> I vincoli sono definibili per ***ciascun dominio***.
+
+#### Intra-Relazionali
+```sql
+attribute domain CHECK(condition)
+```
+
+Mediante la clausola `check` è possibile esprimere ***vincoli di tupla arbitrari***.
+
+```sql
+attribute domain NOT NULL
+```
+
+Sufficiente per **vietare** la presenza di valori [[Informazione Incompleta#Null|nulli]].
+
+```sql
+attribute domain UNIQUE
+```
+
+Esprime la definizione di [[Vincoli di Integrità#Chiavi|chiave non primaria]].
+
+```sql
+attribute domain PRIMARY KEY
+```
+
+Esprime il [[Vincoli di Integrità#Chiavi|vincolo di chiave primaria]].
+
+#### Inter-Relazionali
+>Vincoli espressi tra *diverse tabelle*.
+
+>[!help] Vincolo References
+>Consente di definire [[Vincoli di Integrità#Vincolo di Integrità Referenziale|vincoli di integrità referenziale]] tra i valori in cui è definito (*Tabella interna*) e i valori di un **attributo** di una *seconda tabella*.  
+
+```sql
+FOREIGN KEY attribute REFERENCES table
+```
+
+>[!abstract] Politiche di Reazione
+> In caso di violazione di vincolo di integrità referenziale.
+> 4 ***azioni possibili***:
+> - **Cascade**
+> 	- *Elimina*/*Aggiorna* le righe della tabella interna.
+> - **Set Null**
+> 	- Imposta i valori a **null**.
+> - **Set Default**
+> 	- Imposta i valori di **default**.
+> - **No action**
+> 	- **Non consente** l'azione.
+
+Ciascuna delle azioni possibili si possono impostare:
+- `{sql icon} ON DELETE`
+- `{sql icon} ON UPDATE`
