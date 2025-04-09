@@ -28,15 +28,12 @@ This is the vault full of the ~~shit~~ *stuff* I do at the university.
 - Primary
 ##### CSS Snippets
 ```css
-.markdown-source-view.mod-cm6 .internal-embed>img,
-.markdown-source-view.mod-cm6 .cm-content>img,
-.markdown-preview-view img,
-.markdown-rendered img {
-    border: 1px solid #ccc;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: rgb(128, 128, 128) 3px 3px 5px;
+img:not(.code-styler-icon):not(.code-styler-inline-icon) {
+    border: 1px solid #ccc;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: rgb(128, 128, 128) 3px 3px 5px;
 }
 ```
 
