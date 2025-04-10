@@ -119,18 +119,6 @@ WHERE attr IS NULL
 ```
 
 È possibile invertire la condizione: `{sql icon} IS NOT NULL`.
-
-##### IN
->Controlla se il valore di un attributo è **contenuto** in una *lista di valori*.
-
-```sql
-SELECT attribute1 AS attr, attribute2
-FROM table1 AS t1 JOIN table2 ON table1.attr=table2.attr
-WHERE attr IN list
-```
-
-È possibile invertire la condizione: `{sql icon} NOT IN`.
-
 #### ORDER BY
 > Usato per ***ordinare il risultato*** di una query secondo i valori di uno più attributi.
 
@@ -144,6 +132,58 @@ WHERE condition
 ORDER BY attr1 ASC, attr2 DESC
 ```
 
+#### EXIST
+> Condizione di **esistenza**.
+ 
+ Ritorna un *valore booleano* in base a **quante righe** vengono riportate nella ***query interna***.
+ - $0$ Righe: `False`.
+ - $>0$ Righe: `True`
+
+```sql
+SELECT attribute1 AS attr, attribute2
+FROM table1 AS t1 JOIN table2 ON table1.attr=table2.attr
+WHERE EXISTS (SELECT * ...)
+```
+
+È possibile invertire la condizione: `{sql icon} NOT EXISTS`.
+- È vero se la [[Query Annidate|subquery]] ***non*** restituisce alcuna tupla.
+
+>[!hint] Non molto utile se la subquery ritorna sempre lo stesso risultato
+>Quando la tupla **non dipende** dalla specifica tupla del *blocco esterno*.
+
+#### IN
+>Controlla se il valore di un attributo è **contenuto** in una *lista di valori*.
+
+```sql
+SELECT attribute1 AS attr, attribute2
+FROM table1 AS t1 JOIN table2 ON table1.attr=table2.attr
+WHERE attr IN list
+```
+
+È possibile invertire la condizione: `{sql icon} NOT IN`.
+
+>[!cite] Query Annidate
+>Al posto di una lista di attributi "*statica*" è possibile inserire una [[Query Annidate|query annidata]].
+#### ANY
+>La riga soddisfa la condizione se è **vero** il confronto fra il valore di un attributo e ***almeno uno*** dei valori in una *lista*.
+
+```sql
+SELECT attribute1 AS attr
+FROM table1 AS t1 JOIN table2 ON table1.attr=table2.attr
+WHERE attr ANY list
+```
+
+Come `{sql icon} IN` la lista di elementi può essere sostituita con ***query annidate***.
+#### ALL
+>La riga soddisfa la condizione se è **vero** il confronto fra il valore di un attributo e ***tutti*** i in una *lista*.
+
+```sql
+SELECT attribute1 AS attr
+FROM table1 AS t1 JOIN table2 ON table1.attr=table2.attr
+WHERE attr ALL list
+```
+
+Come `{sql icon} IN` la lista di elementi può essere sostituita con [[Query Annidate|query annidate]].
 #### Operatori Insiemistici
 > Combinano i risultati di due istruzioni `{sql icon} SELECT`.
 
@@ -160,28 +200,6 @@ L'ordine degli ***elementi è importante***.
 - Selezionate solamente le *righe comuni.*
 **EXCEPT**
 - Selezionate *tutte le righe* della tabella $A$ che **non sono** nella tabella $B$.
-
-##### EXIST
-> Condizione di **esistenza**.
- 
- Ritorna un *valore booleano* in base a **quante righe** vengono riportate nella ***query interna***.
- - $0$ Righe: `False`.
- - $>0$ Righe: `True`
-
-```sql
-SELECT attribute1 AS attr, attribute2
-FROM table1 AS t1 JOIN table2 ON table1.attr=table2.attr
-WHERE EXISTS (SELECT * ...)
-```
-
-È possibile invertire la condizione: `{sql icon} NOT EXISTS`.
-
-* #### Operatore **ANY**
-  * La riga soddisfa la condizione se è vero il confronto fra il valore di un attributo e **almeno uno** dei valori **ritornati dalla query annidata**
-* #### Operatore **ALL**
-  * Come Any ma **tutti i valori della query** annidata devono soddisfare la condizione
-
-
 #### Operatori Aggregati
 >Operatori che si applicano a **gruppi di tuple** e restituiscono sempre ***una sola riga***.
 
@@ -280,35 +298,30 @@ HAVING AVG(I.Stipendio)>1000
 5. **SELECT**
 6. **ORDER BY**
 
-### Query Annidate
+## Viste
+---
+>[!cite] Tabelle Virtuali
+>Mediante l’istruzione `{sql icon} CREATE VIEW` si definisce una ***vista***, ovvero una "***tabella virtuale***".
+>Rappresentano tabelle ottenute da ***dati contenuti in altre tabelle***.
 
-#### Semplici
-* Non c’è passaggio di binding  
-* Composte da **una query esterna e una interna**  
-* La Query interna è la **prima ad essere calcolata**  
-* La Query interna viene **calcolata solo una volta**
-#### Complesse
-* C’è un **passaggio di binding**  
-* La query interna viene chiamata **per ogni riga della query esterna**  
-  * SELECT attr  
-    FROM table AS t1  
-    WHERE attr \>/\</= specialOperator(SELECT attr2  
-                 FROM table2  
-                  **WHERE t1.attr \=/\>/\</\!=table2.attr**)  
-* Confronta **ciascuna riga della tabella esterna con il risultato della quey interna**
-#### Viste
-Rappresentano “**tabelle virtuali**” ottenute da **dati contenuti in altre tabelle** del database  
-Ogni vista ha associato un **nome** e una **lista di attributi**, dati dal risultato di una select.
-* create view NomeView \[ListaAttributi\]
-as SELECTSQL  
-\[with \[local | cascade\] check option\]
-* **I dati non sono fisicamente memorizzati a parte**  
-  * **Dipendono** da altre tabelle  
-  * **Non hanno istanze proprie**  
-* Servono a:  
-  * Implementare meccanismi di indipendenza tra livello logico e il livello esterno  
-  * **Semplificare interrogazioni** complesse  
-  * Garantire Retro-compatibilità con precedenti versioni di schema in caso di restrutturazione
+Ogni ***vista*** ha associato un *nome* e una *lista di attributi*, dati dal risultato di una select.
+
+```sql
+CREATE VIEW viewName(attr1,attr2,...)
+AS
+	SELECT attr1,attr2,...
+	FROM table1 t1 JOIN table2 t2 ON t1.attr=t2.attr
+	WHERE condition
+```
+
+>[!tldr] I dati **non** sono fisicamente memorizzati a parte.
+>I dati *dipendono* semplicemente da ***altre tabelle***.  
+ 
+ >Servono a:
+- Implementare *meccanismi di indipendenza* tra livello **logico** e il livello **esterno**.  
+- **Semplificare interrogazioni** complesse.
+- Garantire **Retro-compatibilità** con precedenti versioni di schema in caso di *restrutturazione*.
+
 
 ## Manipolazione dell’Istanza
 ---
