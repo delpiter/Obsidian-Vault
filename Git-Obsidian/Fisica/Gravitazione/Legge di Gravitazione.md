@@ -63,4 +63,57 @@ In termini vettoriali possiamo scrivere:
 $$
 \vec{F}_{12}=-G \displaystyle{\frac{m_{1}m_{2}}{r^2}}\hat{r}
 $$
-- Dove $\hat{r}=\displaystyle{\frac{\vec{r}_{12}}{r_{12}}}$
+Dove:
+- $\vec{F}_{12}$ è la ***forza*** che la particella 1 esercita sulla particella 2.
+- $m_{1}$ e $m_{2}$ sono le ***masse*** delle due particelle.
+- $r$ la ***distanza*** fra le due.
+
+Il versore $\hat{r}=\displaystyle{\frac{\vec{r}_{12}}{r_{12}}}$ indica la ***direzione*** che va dalla particella $1$ alla particella $2$
+- Il segno meno indica che la forza è ***attrattiva*** (La particella 2 sente una forza diretta verso la particella 1).
+
+>[!note] Un altro modo di scrivere la relazione
+>$$\vec{F}_{12}=-G \displaystyle{\frac{m_{1}m_{2}}{r^3}}\vec{r}_{12}$$
+
+> Si può calcolare la ***forza di gravitazione*** esercitata da una distribuzione estesa di massa.
+
+- Per distribuzioni *sferiche* di massa, la forza esercitata all'**esterno** di esse equivale a quella esercitata da un ***punto materiale situato al centro*** della distribuzione sferica.
+
+Se considero un corpo sulla superficie terrestre:
+$$
+F=G \displaystyle{\frac{M_{T}m}{R_{T}^2}}\quad\implies\quad a=G\displaystyle{\frac{M_{T}}{R_{T}^2}}=g
+$$
+>[!hint] Ricavare $G$
+>Conoscendo $g,M_{T}$ e $R_{T}$ potrei calcolare il valore di $G$.
+>>[!missing] Al tempo non era nota la massa della terra
+
+#### Esperimento di Cavendish
+> Esperimento effettuato per determinare il valore di $G$.
+
+>[!caution] Esperimento
+>L'esperimento consiste in una ***bilancia di torsione***.
+>Un **filo** sottile sostiene un **manubrio** leggero, alle cui estremità sono attaccate due ***piccole masse***.
+>A *terra*, due **grandi masse** uguali sono posizionate in modo da provocare la *torsione* del filo per effetto dell’***attrazione gravitazionale*** esercitata sulle masse sospese.
+
+![[EsperimentoCavendish.png]]
+
+> *Cavendish* dichiarò che con la sua bilancia era stato in grado di ***pesare la terra***.
+
+$$
+mg=G\frac{mM_{T}}{R_{T}^2}\quad\implies\quad M_{T}=\frac{gR_{T}^2}{G}
+$$
+Il valore oggi accettato della costante $G$ è:
+$$
+G=6.67\times 10^{-11} \ Nm^2/kg^2
+$$
+
+### Orbite Geostazionarie
+>Affinché l’orbita di un *satellite terrestre* sia ***geostazionaria***, esso deve compiere una intera **rivoluzione** intorno alla terra in $24h$.
+
+Possiamo calcolare il raggio di questa orbita, sapendo che:
+- $T=24h=86400s$
+
+Utilizzando la [[Leggi di Keplero#Terza Legge|terza Legge di Keplero]], dove consideriamo la *terra* come sorgente della ***forza gravitazionale***:
+$$
+\frac{T^2}{R^3}=\frac{4\pi}{GM_{T}} \quad\implies\quad R=\sqrt[3]{ \frac{GM_{T}T^2}{4\pi^2} }\simeq 42160km
+$$
+Dato che il raggio medio della terra è circa $6370 km$, il satellite si trova a circa $36000km$ sopra la superficie terrestre.
