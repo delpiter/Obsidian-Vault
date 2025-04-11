@@ -48,7 +48,7 @@ La direzione di $\vec{a}$ è la *stessa* di $\vec{r}$, il verso è *opposto*
 
 Il modulo dell'accelerazione, solitamente denominato $a_{c}$ si calcola:
 $$
-a_{c}=|\vec{a}(t)|=\sqrt{ \omega^4R^2\cos^2(\omega t)+\omega^4R^2\sin^2(\omega t) }=\omega^2R
+a_{c}=|\vec{a}(t)|=\sqrt{ \omega^4R^2\cos^2(\omega t)+\omega^4R^2\sin^2(\omega t) }=\omega^2R=\frac{v_{s}^2}{R}
 $$
 >[!done] È costante in modulo e proporzionale al quadrato della velocità angolare.
 
