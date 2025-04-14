@@ -349,7 +349,9 @@ y
 >[!check] Teorema di Rouchè-Capelli
 >Sia $Ax=b$ un sistema di $m$ equazioni in $n$ incognite
 >Sia $A|b$ la matrice ottenuta *affiancando il vettore dei termini noti* alla matrice $A$
->Il sistema $Ax=b$ ammette almeno una soluzione $\iff rg(A|b)=rg(A)$
+>Il sistema $Ax=b$ ammette almeno una soluzione $\iff rg(A|b)=rg(A)$.
+>>[!quote] A Parole
+>>La matrice ammette soluzioni se  $A$ e $A|b$ hanno lo stesso [[2 - Teorema del Rango|rango]].
 
 #### Dimostrazione
 >*Se il $rg(A|b)=rg(A)$*
