@@ -346,7 +346,7 @@ y
 
 ### Ruchè-Capelli
 
->[!teorema] Teorema di Rouchè-Capelli
+>[!check] Teorema di Rouchè-Capelli
 >Sia $Ax=b$ un sistema di $m$ equazioni in $n$ incognite
 >Sia $A|b$ la matrice ottenuta *affiancando il vettore dei termini noti* alla matrice $A$
 >Il sistema $Ax=b$ ammette almeno una soluzione $\iff rg(A|b)=rg(A)$

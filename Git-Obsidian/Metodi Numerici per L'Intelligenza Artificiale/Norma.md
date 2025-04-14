@@ -144,8 +144,8 @@ $$
 $$
 \|x\|_{1} = \displaystyle\sum^n_{i=1}\mid x_{i}\mid
 $$
-- $\|A\|_{1}=\displaystyle\max\limits_{i=1,\dots,n}\sum^m_{j=1}\mid a_{ij}\mid$
-Si considera la norma di $1$ di tutte le colonne e si prende il valore massimo.
+- $\|A\|_{1}=\displaystyle\max\limits_{j=1,\dots,n}\sum^m_{i=1}\mid a_{ij}\mid$
+Si considera la norma di $1$ di tutte le *colonne* e si prende il valore massimo.
 
 >[!help] $p=\infty$
 
@@ -153,7 +153,7 @@ $$
 \|x\|_{1}=\max\limits_{j}\mid x_{j}\mid
 $$
 - $\|A\|_{\infty}=\displaystyle\max\limits_{i=1,\dots,m}\sum^n_{j=1}\mid a_{ij}\mid$
-Si considera la norma di $1$ di tutte le righe e si prende il valore massimo.
+Si considera la norma di $1$ di tutte le *righe* e si prende il valore massimo.
 
 >[!summary] $p=2$
 
