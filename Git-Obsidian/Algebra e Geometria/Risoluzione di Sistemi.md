@@ -354,7 +354,7 @@ y
 >>La matrice ammette soluzioni se  $A$ e $A|b$ hanno lo stesso [[2 - Teorema del Rango|rango]].
 
 #### Dimostrazione
->*Se il $rg(A|b)=rg(A)$*
+>*Se il* $rg(A|b)=rg(A)$
 
 Vuol dire che $b$ è ***combinazione lineare*** dei vettori colonna $v_{1},\dots,v_{n}$ di $A$, cioè:
 $$
@@ -381,6 +381,7 @@ x_{1} \\
 x_{n}
 \end{pmatrix}
 $$
+
 >[!done] Il sistema ha una ***unica soluzione***
 
 >*Se invece $rg(A|b)>rg(A)$*
@@ -390,7 +391,6 @@ Vuol dire che $b$ non è ***combinazione lineare*** dei vettori colonna di $A$
 	- Non esiste $x:Ax=b$
 
 >[!fail] Il sistema *non ha soluzione*
-
 
 ## Insieme delle Soluzioni
 ---

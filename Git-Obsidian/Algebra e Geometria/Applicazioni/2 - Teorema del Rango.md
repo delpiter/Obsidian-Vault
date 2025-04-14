@@ -1,6 +1,6 @@
 ## Teorema
 ---
->[!teorema] Enunciato
+>[!check] Enunciato
 >Sia $f:V\to U$ un'***applicazione lineare***
 ><u>Allora</u>
 >$$\text{dim}(\mathrm{ker}f)+\text{dim}(\mathrm{Im}f)=\text{dim}(V)$$

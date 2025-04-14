@@ -73,7 +73,7 @@ La probabilità di collisione *cresce in modo sorprendente*
 >Una *funzione hash* si dice ***semplice uniforme*** quando rende **uniforme** il *riempimento* della tabella
 
 ###### Complessità SUH
->[!teorema]
+>[!check]
 >Siano le collisioni ***gestite con chaining***
 >Sia la funzione di hash ***Semplice Uniforme***
 ><u>Allora</u>
@@ -184,7 +184,7 @@ Costante $A$ ottimale:
 >La gestione di collisioni con il metodo ***open addressing*** richiede che per ogni chiave $k$, la sequenza di [[Definizioni_Algoritmi#Probe|probe]] $<h(k,0),\dots,h(k,m-1)>$ deve essere una permutazione degli indici $<1,\dots,m>$ tali che ogni posizione della ***tabella hash*** è **prima o poi** considerata come uno *slot per una nuova chiave*
 
 #### Open Addressing - Ricerca
->[!teorema]
+>[!check]
 >Sia $n$ il numero di celle occupate e $m$ il numero totale di celle
 >Data una *hash table* con *open addressing* e load factor $\alpha=\displaystyle\frac{n}{m}<1$
 >La lunghezza **media** di una [[Definizioni_Algoritmi#Probe|probe]] in una *ricerca senza successo* è di $\displaystyle{\frac{1}{(1-\alpha)}}$
@@ -266,7 +266,7 @@ $$
 $$
 
 #### Open Addressing - Inserimento
->[!teorema]
+>[!check]
 >Data una *hash table* con *open addressing* e **load factor** $\alpha=\frac{n}{m}<1$
 >La lunghezza media di una [[Definizioni_Algoritmi#Probe|probe]] è $\frac{1}{1-\alpha}$
 >- Assumendo una ***permutazione uniforme degli indici***

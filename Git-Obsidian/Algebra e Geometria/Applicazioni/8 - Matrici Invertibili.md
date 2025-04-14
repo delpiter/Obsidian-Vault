@@ -4,7 +4,7 @@
 
 ## Matrice Inversa
 ---
->[!Teorema]
+>[!check]
 >$$A^{-1}=\frac{1}{\det(A)}\cdot \text{cof}(A)^T$$
 >Dove il ***cofattore*** è definito nel seguente modo:
 >$$\text{cof}(A)_{ij}=(-1)^{i+j}\det(A^{ij})$$

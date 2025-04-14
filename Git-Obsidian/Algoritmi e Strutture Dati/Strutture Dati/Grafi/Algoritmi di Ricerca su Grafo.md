@@ -256,7 +256,7 @@ $$
 >- *Tempo di inizio visita $d[u]$*
 >- *Tempo di fine visita $f[u]$*
 
->[!teorema] Per ogni vertice $u$ è verificata la disuguaglianza
+>[!check] Per ogni vertice $u$ è verificata la disuguaglianza
 >$$d[u]<f[u]$$
 
 ##### Stato dei Vertici

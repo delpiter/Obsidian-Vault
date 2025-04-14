@@ -35,7 +35,7 @@ L'induzione di un ordine totale può essere fatta per mezzo dell'***ordinamento 
 La ***linked list*** contiene l'***ordinamento***
 
 #### Teorema
->[!teorema] Teorema `DAG`
+>[!check] Teorema `DAG`
 >Un grafo diretto $G$ è aciclico $\iff$ Una ricerca `DFS` si $G$ non produce [[Algoritmi di Ricerca su Grafo#Back Edges|Back Edges]] 
 
 ##### Dimostrazione

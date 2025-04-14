@@ -37,7 +37,7 @@ b_{1j} \\
 b_{nj}
 \end{pmatrix}
 $$
->[!teorema]
+>[!check]
 >$$M=B^{-1}\times A \times B$$
 
 ### Dimostrazione
@@ -222,7 +222,7 @@ Cioè $A$ è simile ad $N$
 ---
 >[!question] Come si fa a capire se una matrice quadrata $A$ è invertibile?
 
->[!teorema]
+>[!check]
 >Una ***matrice quadrata*** $A$ è invertibile $\iff$ i suoi vettori colonna sono [[2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]
 
 ### Dimostrazione

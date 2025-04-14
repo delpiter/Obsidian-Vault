@@ -345,10 +345,11 @@ $E_{ij}$ sono dette le "***matrici elementari***" o la base canonica di $\mathca
 >*Sia $V=\{ \text{matrici }2\times3 \text{ a coefficiente}\in\mathbb{R}\}=\mathcal{M}_{2,3}(\mathbb{R})$*
 
 $$
-\{ \begin{pmatrix}
+\left\{   
+\begin{pmatrix}
 a & c & e \\
 b & d & f
-\end{pmatrix},a,b,c,d,e,f\in\mathbb{R} \}
+\end{pmatrix},a,b,c,d,e,f\in\mathbb{R} \right\}
 $$
 
 $V$ è uno spazio vettoriale rispetto alle operazioni

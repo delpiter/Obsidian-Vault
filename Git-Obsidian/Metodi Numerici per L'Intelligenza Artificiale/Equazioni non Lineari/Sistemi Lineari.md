@@ -115,6 +115,80 @@ g(x)=-3/2x+5/2
 ```
 > ***Nessuna soluzione***
 
-## Teorema di Ruchè-Capelli
+## Risoluzione Sistemi
 ---
 ![[Risoluzione di Sistemi#Ruchè-Capelli]]
+
+#### Casi
+> Se $m<n$
+
+>[!quote] Abbiamo ***più*** incognite che relazioni.
+>Il sistema si dice ***indeterminato***
+- Se indichiamo con $k$ il *rango*: $rg(A)=k$ e $k<n$ allora il sistema ammette $\infty^{n-k}$ **soluzioni**.
+
+> Se $m>n$
+
+>[!quote] Abbiamo ***meno*** incognite che relazioni.
+>Lo chiamiamo sistema ***sovradeterminato***.
+
+>Se $m=k$
+
+>[!quote] Il numero di incognite è ***uguale*** al numero di relazioni.
+>Il sistema si dice ***normale*** e sotto opportune ipotesi ammette **una e una sola soluzione**.
+
+#### Matrici Singolari
+>[!definizione]
+>Sia $A\in\mathbb{R}^{n\times m}$, la matrice è detta ***non singolare*** se soddisfa una delle seguenti *condizioni equivalenti*:
+>1. $\det(A)\neq 0$
+>2. Esiste la [[8 - Matrici Invertibili#Matrice Inversa|matrice inversa]] $A^{-1}$ di $A$
+>3. $\text{rank}(A)=n$
+>
+><u>Altrimenti $A$ è singolare</u>
+
+![[Risoluzione di Sistemi#Insieme delle Soluzioni]]
+
+>[!warning] Nota
+>Il metodo dell'inversa risulta ***poco efficiente*** e anche ***poco accurato***
+
+> Esempio $7x=21$
+
+Il metodo restituisce la seguente soluzione:
+$$
+x=7^{-1}\cdot21=0.142857\cdot 21=2.99997
+$$
+
+#### Soluzione Basata sul Metodo di Cramer
+> Un metodo ben noto è basato sul [[Risoluzione di Sistemi#Metodo di Cramer|metodo di Cramer]].
+
+$$
+x_{1}=
+\displaystyle{\frac{\det\begin{pmatrix}
+b_{1} & a_{12} & \dots & a_{1n} \\
+b_{2} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+b_{n} & a_{n2} & \dots & a_{nn} \\
+\end{pmatrix}}{\det\begin{pmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\
+\end{pmatrix}}}
+$$
+$$
+x_{2}=
+\displaystyle{\frac{\det\begin{pmatrix}
+a_{11} & b_{1} & \dots & a_{1n} \\
+a_{21} & b_{2} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & b_{n} & \dots & a_{nn} \\
+\end{pmatrix}}{\det\begin{pmatrix}
+a_{11} & a_{12} & \dots & a_{1n} \\
+a_{21} & a_{22} & \dots & a_{2n} \\
+\vdots & \vdots & \ddots & \vdots \\
+a_{n1} & a_{n2} & \dots & a_{nn} \\
+\end{pmatrix}}}
+$$
+- $\dots$
+
+>[!danger] Metodo ad alta complessità computazionale
+>Questo metodo comporta una [[Complessità di Algoritmi|complessità computazionale]] di circa $O((n+1)!)$.

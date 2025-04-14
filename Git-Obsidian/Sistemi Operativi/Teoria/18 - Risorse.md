@@ -191,7 +191,7 @@ La presenza di un *ciclo* nel caso di Holt ***non è sufficiente*** per avere de
 
 - Dalle immagini di prima (*grafo b)*), possiamo applicare le seguenti *riduzioni*:
 ![[HoltReduction.png]]
->[!teorema]
+>[!check]
 >![[#^8b5cc1]]
 ><u>Allora</u>
 > Lo stato ***non*** è di *deadlock* ***se e solo se*** il grafo di Holt è *completamente riducibile*
