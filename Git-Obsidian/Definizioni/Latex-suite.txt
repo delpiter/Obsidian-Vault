@@ -126,7 +126,7 @@
 	{trigger: "<=", replacement: "\\leq", options: "mA"},
 	{trigger: ">>", replacement: "\\gg", options: "mA"},
 	{trigger: "<<", replacement: "\\ll", options: "mA"},
-	{trigger: "sim", replacement: "\\sim", options: "mA"},
+	{trigger: "sim", replacement: "\\simeq", options: "mA"},
 	{trigger: "app", replacement: "\\approx", options: "mA"},
 	{trigger: "prop", replacement: "\\propto", options: "mA"},
 	{trigger: "nabl", replacement: "\\nabla", options: "mA"},
