@@ -286,6 +286,7 @@ GROUP BY I.Ruolo
 HAVING AVG(I.Stipendio)>1000
 ```
 
+
 ### Ordine delle Operazioni
 >[!info]
 >L'ordine degli operatori in [[SQL]] è *importante* per garantire che i dati vengano **elaborati correttamente**. Di seguito è riportato l'***ordine logico*** in cui **SQL** esegue le clausole all'interno di una query
@@ -303,6 +304,8 @@ HAVING AVG(I.Stipendio)>1000
 >[!cite] Tabelle Virtuali
 >Mediante l’istruzione `{sql icon} CREATE VIEW` si definisce una ***vista***, ovvero una "***tabella virtuale***".
 >Rappresentano tabelle ottenute da ***dati contenuti in altre tabelle***.
+>Le tuple della vista sono il risultato di una query che viene *valutata* dinamicamente *ogni volta* che si fa **riferimento** alla vista.
+
 
 Ogni ***vista*** ha associato un *nome* e una *lista di attributi*, dati dal risultato di una select.
 
@@ -322,7 +325,28 @@ AS
 - **Semplificare interrogazioni** complesse.
 - Garantire **Retro-compatibilità** con precedenti versioni di schema in caso di *restrutturazione*.
 
+### Aggiornabilità
+> Una vista è una funzione che calcola un risultato $y$ a partire da una istanza $r$ ($V(r)=y$)
 
+>[!attention] Aggiornamento di una vista
+>L'***aggiornamento di una vista*** che trasforma $y$ in $y'$, può essere eseguito se e solo se è univocamente definita la nuova istanza $r'$ tale che $V(r')=y'$.
+
+Ciò corrisponde a dire che la vista è "***invertibile***", $V^{-1}(y')=r'$
+- I [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] pongono dei limiti sulle tipologie di viste che possono essere aggiornate.
+
+>[!summary] Restrizioni Comuni
+>- `{sql icon} GROUP BY`
+>- [[#Operatori Aggregati|Funzioni Aggregate]]
+>- `{sql icon} DISTINCT`
+>- `{sql icon} JOIN`
+
+### Check Option
+>[!info]
+>La clausola `{sql icon} WITH CHECK OPTIONS` garantisce che **ogni tupla** inserita nella vista sia anche restituita dalla vista stessa.
+
+> Tipi di *check option*:
+- `CASCADED`
+- `LOCAL`
 ## Manipolazione dell’Istanza
 ---
 > Istruzioni che permettono di aggiornare il ***data base***.

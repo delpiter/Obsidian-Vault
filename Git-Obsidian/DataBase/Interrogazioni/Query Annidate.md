@@ -27,6 +27,38 @@ WHERE attr IN (SELECT attr2
 
 ![[DML#ALL]]
 
+
+### Table Expressions
+>[!tldr] Idea
+>È possibile poter usare all'interno della `{sql icon} SELECT` list o della clausola `{sql icon} FROM`, una subquery che definisce una tabella derivata.
+>La tabella creata "*dinamicamente*" viene chiamata ***table expression***.
+
+> Per ogni sede, visualizzare lo stipendio massimo e quanti impiegati lo percepiscono.
+
+```sql
+SELECT SM.Sede,SM.MaxStip,COUNT(*) AS NumImpMaxStip
+FROM Impiegati I,(SELECT Sede,MAX(Stipendio)
+				  FROM Impiegati
+				  GROUP BY Sede)AS SM(Sede,MaxStip)
+WHERE I.Sede=SM.Sede AND I.Stipendio=SM.MaxStip
+GROUP BY SM.Sede,SM.MaxStip
+```
+
+#### Common Table Expressions
+> Definisce una "[[DML#Viste|vista]] *temporanea*" che può essere usata in una query come se fosse a tutti gli effetti una view.
+
+Ha validità all'interno di ***una singola query***.
+
+```sql
+WITH SediStip(Sede, TotStip)
+AS (SELECT Sede, SUM(Stipendio) 
+	FROM Impiegati GROUP BY Sede) 
+SELECT Sede 
+FROM SediStip 
+WHERE TotStip = (SELECT MAX(TotStip) 
+				 FROM SediStip)
+```
+
 ## Tipi di Query Annidate
 ---
 ### Query Annidate Semplici
