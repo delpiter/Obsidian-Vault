@@ -96,7 +96,7 @@ $$
 >Sia $I$ un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
 >Sia $f:I\to \mathbb{R},c\in[inf(I),sup(I)]\cap\mathbb{R}$ ,$l\in\overline{\mathbb{R}}$
 >Diciamo che $f$ ha limite per $x\to c$ da sinistra (scriviamo $x\to c^-$)
->Se ([[Git-Obsidian/Analisi/Definizioni_Analisi#Notazione Restrizione del dominio|notazione]]) $$\lim\limits_{x\to c}f(x)_{\displaystyle{|_{I\cap(-\infty,c)}}}=l$$
+>Se ([[Definizioni_Analisi#Notazione Restrizione del dominio|notazione]]) $$\lim\limits_{x\to c}f(x)_{\displaystyle{|_{I\cap(-\infty,c)}}}=l$$
 
 >[!example] Osservazione
 >$$\exists \lim\limits_{x\to c}f(x)\Leftrightarrow \begin{cases}\exists \lim\limits_{x\to c^-}f(x)\\ \lim\limits_{x\to c^+}f(x)\end{cases}$$

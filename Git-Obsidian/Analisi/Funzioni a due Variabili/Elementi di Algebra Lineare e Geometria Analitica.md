@@ -148,7 +148,7 @@ Un piano in $\mathbb{R}^3$ può essere rappresentato in $3$ modi:
 >Un piano in $\mathbb{R}^3$ è individuato da:
 >1) Un punto e un vettore ortogonale al piano
 >2) Tre punti
->3) Due rette non [[Git-Obsidian/Analisi/Definizioni_Analisi#Rette Sghembe|sghembe]]
+>3) Due rette non [[Definizioni_Analisi#Rette Sghembe|sghembe]]
 
 ### Punto e vettore Ortogonale
 >[!tip] 1

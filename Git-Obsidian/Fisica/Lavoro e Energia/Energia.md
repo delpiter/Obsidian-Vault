@@ -1,4 +1,4 @@
-	## Teorema dell'Energia Cinetica
+## Teorema dell'Energia Cinetica
 ---
 >[!info]
 >Consideriamo un *caso unidimensionale*. Partendo dalla definizione di lavoro, costruiamo una espressione basata sulle **velocità iniziali** e **finali** del corpo.

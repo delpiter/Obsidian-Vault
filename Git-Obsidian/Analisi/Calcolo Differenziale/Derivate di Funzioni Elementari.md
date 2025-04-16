@@ -7,7 +7,7 @@
 f'(x)=nx^{n-1}
 \end{array}
 >$$
-- Utilizzando la [[Git-Obsidian/Analisi/Definizioni_Analisi#Formula del Binomio di Newton|formula del binomio di newton]] voglio calcolare $f'(c), \forall c\in\mathbb{R}$
+- Utilizzando la [[Definizioni_Analisi#Formula del Binomio di Newton|formula del binomio di newton]] voglio calcolare $f'(c), \forall c\in\mathbb{R}$
 ### Dimostrazione
 $$
 \begin{array}

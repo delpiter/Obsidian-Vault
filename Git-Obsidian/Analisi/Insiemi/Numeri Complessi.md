@@ -135,7 +135,7 @@ $$
 >[!info] Teorema Fondamentale dell'Algebra
 >Sia $w\in\mathbb{C}, w\neq0$ e $n\in\mathbb{N}$, esistono precisamente n radici n-esime complesse di $w$
 
-[[Git-Obsidian/Analisi/Definizioni_Analisi#Notazione numeri complessi in forma goniometrica|Notazione]]
+[[Definizioni_Analisi#Notazione numeri complessi in forma goniometrica|Notazione]]
 - Voglio risolvere $z^n=w$
 	- Sia $w=r(cos(\rho)+isin(\rho))=re^{i\rho}$
 	- Sia $z=\rho e^{i\theta} \implies z^n=\rho^ne^{in\theta}$

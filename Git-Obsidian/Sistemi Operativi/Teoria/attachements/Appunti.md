@@ -1,3 +1,0 @@
----
-## Avvio del sistema operativo
----

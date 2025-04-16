@@ -21,7 +21,7 @@
 ---
 >[!info] Teorema
 >Sia $I$ intervallo di $\mathbb{R}$, $f:I \to\mathbb{R}$
->Sia $c$ [[Git-Obsidian/Analisi/Definizioni_Analisi#Punto interno in un Intervallo|punto interno]] di $I$
+>Sia $c$ [[Definizioni_Analisi#Punto interno in un Intervallo|punto interno]] di $I$
 >Supponiamo che $f$ sia derivabile in $c$ e $c$ è [[#Estremante Locale]]
 ><u>Allora</u>
 >$f'(c)=0$

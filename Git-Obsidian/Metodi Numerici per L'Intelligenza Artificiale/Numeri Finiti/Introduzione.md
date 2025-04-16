@@ -5,7 +5,7 @@
 Quando un numero reale viene inserito in un calcolatore viene ***approssimato***
 
 ## Errore di Arrotondamento
->Quando un algoritmo viene eseguito su un calcolatore, si verificano una serie di errori che si **accumulano** e **propagano**
+>Quando un algoritmo viene eseguito su un calcolatore, si verificano una serie di [[Errore di Rappresentazione|errori]] che si **accumulano** e **propagano**
 
 >[!attention] Risultato
 >Il ***risultato prodotto dall'algoritmo*** differisce dal ***risultato esatto***
