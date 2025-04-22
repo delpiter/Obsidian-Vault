@@ -160,7 +160,10 @@ Si considera la norma di $1$ di tutte le *righe* e si prende il valore massimo.
 $$
 \|A\|_{2} =\sqrt{ \rho(A^TA) }
 $$
-Dove $\rho$ è il ***raggio spettrale***, cioè l'autovalore di modulo massimo della matrice $A^TA$
+Dove $\rho$ è il ***raggio spettrale***, cioè l'autovalore di modulo massimo della matrice $A^TA$.
+
+>[!question] Calcolo
+>Il calcolo del *raggio spettrale* è ***piuttosto oneroso***
 #### Richiami
 - [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|Matrici Simmetriche]]
 - [[9 - Matrici Diagonali#Autovettore e Autovalore|Autovalore e Autovettore]]
