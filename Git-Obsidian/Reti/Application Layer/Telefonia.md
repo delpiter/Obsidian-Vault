@@ -173,3 +173,66 @@ Per funzionare il protocollo richiede:
 >
 >***Risposta Definitiva***
 >- Terminano una transaction (**2xx**,**3xx**,**4xx**,**5xx**,**6xx**)
+
+### Call Flow
+
+![[CallFlow.png]]
+
+> ***Fasi Principali***
+- Il *Proxy Server* elabora l'`INVITE` e coinvolge l'***UAS***
+- Il **dialogo** viene stabilito tramite scambio di `INVITE`, `RINGING`, `OK`, e `ACK`.
+
+>[!Help] User Registration
+>Il client invia `REGISTER` al *server*.
+>Il "*Registrar*" salva le informazioni di **registrazione** in un [[Git-Obsidian/DataBase/Introduzione|Database]].
+
+>[!abstract] User Location
+>Il ***SIP*** *server* chiede al **Location** server dove trovare il chiamato.
+>- Il location server ritorna una **lista di indirizzi** (*contact address*).
+>- SIP **proxy** o **redirect** processa la richiesta in accordo con la lista di indirizzi trovata.
+
+### IP Multimedia Sub-System
+> Architettura funzionale per realizzare *servizi multimediali* su reti **IP**.
+
+Originariamente formulata per ***3GPP Rel-5***.
+- Utilizza il **SIP** per la segnalazione
+- Prevede tutte le funzionalità per gestire la comunicazione fra ***diversi domini di servizio***.
+
+>[!tip] Architettura
+
+![[IPMultimediaSubSystem.png|500]]
+
+##### VoLTE Terminal
+>[!info] ISIM
+>***Integrated SIM*** card (**S**ervice **I**dentity **M**odule)
+>Una SIM *direttamente integrata nel dispositivo*.
+>- **IMPI** (**IP M**ultimedia **P**rivate **I**dentity)
+>	- Contiene le *informazioni sul dominio dell'operatore* con cui è stato sottoscritto il contratto.
+>- **IMPU** (**IP M**ultimedia **P**ublic **I**dentity)
+>	- *Identità pubblica* rilasciata per essere raggiunta dagli altri.
+
+>**SIP UE** (Interno allo smartphone)
+- Gestisce la segnalazione **SIP**
+##### Home Subscriber Server
+>[!abstract] HSS
+>L'**HSS** è il database contenente le informazioni per gestire le chiamate
+>- Contiene il **profilo** dell'utente.
+>- Gestisce le **procedure di autenticazione**.
+>- Gestisce le **procedure di autorizzazione**.
+
+##### Call Session Control Function
+> Tre tipi di **CSCF**
+
+>[!caution] Proxy
+>Può trovarsi nella **visited network**
+>- È il primo punto di contatto, redirige i messaggi **SIP** oppportunamente
+
+>[!question] Interrogating
+>È il ***nodo di bordo*** del dominio di servizio.
+>Raggiungibile grazie al [[DNS]]
+>- Assegna alle richieste di servizio il relativo ***S-CSCF***
+
+>[!tip] Serving
+>Il ***SIP server*** che gestisce la segnalazione
+>- Gestisce la registrazione degli utenti e la comunicazione con **HSS** per avere i profili di servizio.
+>- Gestisce le **policy dell'operatore**.
