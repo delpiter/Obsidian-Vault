@@ -50,7 +50,7 @@ Tabella studente con annesse le informazioni dell'università:
 >La decomposizione *non deve alterare* il **contenuto informativo** del database.
 
 >[!hint] Decomposizione Lossless
->Uno schema $R(X)$ si decompone senza perdita negli schemi $R_{1}(X_{1})$ e $R_{2}(X_{2})$ se, per ogni stato legale $r$ su $R(X)$, il #addLink ***join naturale*** delle #addLink ***proiezioni*** di $r$ su $X_{1}$ e $X_{2}$ è uguale a $r$ stessa:
+>Uno schema $R(X)$ si decompone senza perdita negli schemi $R_{1}(X_{1})$ e $R_{2}(X_{2})$ se, per ogni stato legale $r$ su $R(X)$, il  [[Algebra Relazionale#Join Naturale|join naturale]] delle [[Algebra Relazionale#Proiezione|proiezioni]] di $r$ su $X_{1}$ e $X_{2}$ è uguale a $r$ stessa:
 >$$\pi_{X_{1}}(r)\bowtie\pi_{X_{2}}(r)=r$$
 >>[!quote] A Parole
 >>Uno *schema* si decompone ***senza perdita*** se, eseguendo il **join naturale** delle tabelle “decomposte”, si ottiene esattamente la tabella originale.

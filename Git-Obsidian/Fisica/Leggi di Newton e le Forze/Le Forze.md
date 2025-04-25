@@ -66,7 +66,7 @@ Il peso $\vec{P}=-mg\hat{j}$ sarà dunque bilanciato da una forza che il ***tavo
 
 ### Piano Inclinato
 >[!example] Esempio di Riferimento
->Un corpo di massa $m=18.0kg$ è poggiato su un piano, privo di #addLink attrito, *inclinato* di $\theta=27^\circ$ rispetto all'orizzontale.
+>Un corpo di massa $m=18.0kg$ è poggiato su un piano, privo di [[#Forze di Attrito|attrito]], *inclinato* di $\theta=27^\circ$ rispetto all'orizzontale.
 >Il corpo è tenuto da una fune che sale parallela al piano.
 
 Scelgo un asse $x$ lungo il *piano*, con verso nella salita, e un asse $y$ perpendicolare, diretto verso l'alto.
@@ -306,4 +306,4 @@ $$
 \omega=\sqrt{ \frac{g}{l} }\qquad T=\frac{2\pi}{\omega}=2\pi\sqrt{  \frac{l}{g}}
 $$
 
-> Concetto usato per ricavare misure precise dell' #addLink accelerazione gravitazionale.
+> Concetto usato per ricavare misure precise dell' [[Legge di Gravitazione|accelerazione gravitazionale]].

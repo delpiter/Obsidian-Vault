@@ -32,7 +32,7 @@
 **IMPIEGATI**(<u>Agenzia</u>, Cognome, Nome, CodAgenzia:**AGENZIE**)
 
 >[!nota]
->Queste notazioni sono da intendersi come semplificazioni rispetto alla sintassi del linguaggio #addLink ***SQL***
+>Queste notazioni sono da intendersi come semplificazioni rispetto alla sintassi del linguaggio [[SQL]].
 
 ## Valori Null
 ---

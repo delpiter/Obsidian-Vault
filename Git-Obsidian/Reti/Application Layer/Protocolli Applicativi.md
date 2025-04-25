@@ -2,8 +2,8 @@
 >I [[ISO-OSI#TCP-IP|protocolli applicativi]] sono utilizzati dalle applicazioni per *scambiare informazioni* in **rete**.
 >>[!example] Esempi
 >>- [[HTTP]] per il *web*.
->>- #addLink `SMTP`, `POP3`, `IMAP` per la *posta elettronica*.
->>- #addLink `FTP` per il *trasferimento dei file*.
+>>- `SMTP`, `POP3`, `IMAP` per la [[Posta Elettronica|posta elettronica]].
+>>- [[FTP]] per il *trasferimento dei file*.
 >>- [[DNS|DNS]] per la *risoluzione dei nomi di dominio* in indirizzi.
 >>- #addLink SSH per l'*accesso remoto sicuro* ad un calcolatore.
 >>- ...

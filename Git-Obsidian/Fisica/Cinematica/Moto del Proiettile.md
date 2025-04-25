@@ -1,4 +1,4 @@
->Descriviamo il moto di un *grave nello spazio*, di un proiettile che **non** avrà un moto **puramente verticale**. Nel seguito trascureremo #addLink l’attrito con l’aria.
+>Descriviamo il moto di un *grave nello spazio*, di un proiettile che **non** avrà un moto **puramente verticale**. Nel seguito trascureremo l’[[Le Forze#Forze di Attrito|attrito]] con l’aria.
 
 >[!tldr] Idea
 >Il proiettile ha un'[[Moto Rettilineo#Accelerazione|accelerazione]] **costante**, di modulo $g$ *diretta verso il basso*.
