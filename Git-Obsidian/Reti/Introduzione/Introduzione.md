@@ -40,11 +40,11 @@
 >Utilizzano i ***mezzi trasmissivi*** al fine di creare *canali di comunicazione* sulla base dele richieste degli utenti
 ### Canale
 >[!info] Definizione
->Il ***canale*** è l'entità logica o fisica che permette il *trasporto* dei **singoli flussi informativi** fra punti remoti nello spazio
+>Il ***canale*** è l'entità logica o fisica che permette il *trasporto* dei **singoli flussi informativi** fra punti remoti nello spazio.
 
 Le telecomunicazioni utilizzano ***canali di comunicazione***
 
->Tipicamente un ***collegamento*** può essere usato per implementare più **canali**
+>Tipicamente un ***collegamento*** può essere usato per implementare più **canali**.
 #### Tipologie
 >[!abstract] Monodirezionale
 >L'informazione può essere trasferita in ***una sola direzione***
