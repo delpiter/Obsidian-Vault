@@ -3,11 +3,11 @@
 ![[Derivate#Teorema di Caratterizzazione delle Funzioni Derivabili]]
 
 - Il concetto è equivalente anche per funzioni a due variabili reali
-> Qual è l'unico oggetto che è tangente ad una funzione a due variabili in un punto?
+>[!question] Qual è l'unico oggetto che è tangente ad una funzione a due variabili in un punto?
 
 ## Trovare il Piano Tangente al Grafico
 ---
-- Determinare, nel caso ci sia, l'equazione del piano tangente al grafico di una funzione $f$ nel punto $(x_{0},y_{0})$
+>Determinare, nel caso ci sia, l'equazione del piano tangente al grafico di una funzione $f$ nel punto $(x_{0},y_{0})$
 #### Primo Passo
 
 >[!info] Svolgimento
@@ -58,8 +58,8 @@ z=f(x_{0},y_{0})+ \displaystyle{\frac{df}{dx}}(x_{0},y_{0})(x-x_{0})+ \displayst
 >[!info] Definizione
 >Sia $f:\mathbb{R}^2\to\mathbb{R}$ o $f:A\to\mathbb{R}, A\subseteq\mathbb{R}^2 \text{ Aperto}$
 >Sia $(x_{0},y_{0})\in\mathbb{R}^2$, supponiamo $f$ sia derivabile
->Diciamo che $f$ è differenziabile in $(x_{0},y_{0})$ se:
->$$f(x,y)=f(x_{0},y_{0})+\displaystyle{\frac{df}{dx}}(x_{0},y_{0})(x-x_{0})+ \displaystyle{\frac{df}{dy}}(x_{0},y_{0})(y-y_{0})+ \underbrace{ \circ(|(x,y)-(x_{0},y_{0})|) }_{\displaystyle \circ( \sqrt{ (x-x_{0})^2 +(y-y_{0})^2}) }$$
+>Diciamo che $f$ è differenziabile in $(x_{0},y_{0})$ se $f(x,y)=$
+>$$f(x_{0},y_{0})+\displaystyle{\frac{df}{dx}}(x_{0},y_{0})(x-x_{0})+ \displaystyle{\frac{df}{dy}}(x_{0},y_{0})(y-y_{0})+ \underbrace{ \circ(|(x,y)-(x_{0},y_{0})|) }_{\displaystyle \circ( \sqrt{ (x-x_{0})^2 +(y-y_{0})^2}) }$$
 >Per $(x,y)\to (x_{0},y_{0})$
 
 - Si può scrivere anche con l'incremento:
@@ -81,10 +81,9 @@ $$
 >Diciamo che $f$ è derivabile $2$ volte in $(x_{0},y_{0})$ se $f$ è derivabile e $\partial xf$ e $\partial yf$ sono [[Calcolo Differenziale#Derivabilità|derivabili]]
 >E le indico come:
 >>[!tip] Notazione
->>$$\displaystyle\frac{ \partial^2 f }{ \partial x^2 } = \displaystyle\frac{ \partial  }{ \partial x } \left( \displaystyle\frac{ \partial f }{ \partial x }  \right) \ \ \ |\ \ \ \displaystyle\frac{ \partial^2 f }{ \partial y^2 } = \displaystyle\frac{ \partial  }{ \partial y } \left( \displaystyle\frac{ \partial f }{ \partial y }  \right) \ \ \ |\ \ \ \displaystyle\frac{ \partial^2 f }{ \partial x \partial y } = \displaystyle\frac{ \partial  }{ \partial x } \left( \displaystyle\frac{ \partial f }{ \partial y }  \right) \ \ \ |\ \ \ \displaystyle\frac{ \partial^2 f }{ \partial x \partial y } = \displaystyle\frac{ \partial  }{ \partial y } \left( \displaystyle\frac{ \partial f }{ \partial x }  \right) 
->$$
+>>$$\displaystyle\frac{ \partial^2 f }{ \partial x^2 } = \displaystyle\frac{ \partial  }{ \partial x } \left( \displaystyle\frac{ \partial f }{ \partial x }  \right) \quad \displaystyle\frac{ \partial^2 f }{ \partial y^2 } = \displaystyle\frac{ \partial  }{ \partial y } \left( \displaystyle\frac{ \partial f }{ \partial y }  \right) \quad\displaystyle\frac{ \partial^2 f }{ \partial x \partial y } = \displaystyle\frac{ \partial  }{ \partial x } \left( \displaystyle\frac{ \partial f }{ \partial y }  \right) \quad \displaystyle\frac{ \partial^2 f }{ \partial x \partial y } = \displaystyle\frac{ \partial  }{ \partial y } \left( \displaystyle\frac{ \partial f }{ \partial x }  \right) $$
 
- ### Matrice Hessiana 
+### Matrice Hessiana
 >[!info] Definizione
 >Chiamiamo [[Elementi di Algebra Lineare e Geometria Analitica#Matrici su $ mathbb{R}$ di tipo $(m,n)$|matrice]] Hessiana di $f$ in $(x_{0},y_{0})$ la matrice:
 >$$H_{f}(x_{0},y_{0})\begin{pmatrix}

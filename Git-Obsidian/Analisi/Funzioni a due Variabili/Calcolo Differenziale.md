@@ -33,11 +33,11 @@ Sia $f$ derivabile in $(x_{0},y_{0})$ non implica che $f$ sia continua
 
 ### Gradiente
 >[!info] Definizione
->$$\nabla f(x_{0},y_{0}) = \left( \displaystyle\frac{ \partial f }{ \partial x }(x_{0},y_{0}) ,\displaystyle\frac{ \partial f }{ \partial y }(x_{0},y_{0})  \right)$$
+>$$\nabla f(x_{0},y_{0}) = \left[ \displaystyle\frac{ \partial f }{ \partial x }(x_{0},y_{0}) ,\displaystyle\frac{ \partial f }{ \partial y }(x_{0},y_{0})  \right]$$
 >
 >>[!done] In Breve
->>Il gradiente indica la direzione di massima pendenza della funzione in un punto.
->>In altre parole, il gradiente punta nella direzione in cui la funzione cresce più rapidamente
+>>Il gradiente indica la ***direzione di massima pendenza*** della funzione in un punto.
+>>In altre parole, il gradiente "*punta*" nella direzione in cui la funzione *cresce più rapidamente*.
 
 ## Derivata Direzionale
 ---
@@ -53,7 +53,7 @@ Sia $f$ derivabile in $(x_{0},y_{0})$ non implica che $f$ sia continua
 >
 >>[!done] In Breve
 >>Se esiste il limite per $t\to0$ del rapporto incrementale ed è in $\mathbb{R}$ dico che $f$ è derivabile lungo la direzione $V$ nel punto $(x_{0},y_{0})$
->$$\lim\limits_{h\to 0}\displaystyle{\frac{f(x_{0}+tcos(\theta),y_{0}+tsin(\theta))-f(x_{0},y_{0})}{t}} = 0$$
+>$$\lim\limits_{t\to 0}\displaystyle{\frac{f(x_{0}+tcos(\theta),y_{0}+tsin(\theta))-f(x_{0},y_{0})}{t}} = 0$$
 
 - Indichiamo la derivata direzionale di $f$ lungo $V$ con:
 $$
