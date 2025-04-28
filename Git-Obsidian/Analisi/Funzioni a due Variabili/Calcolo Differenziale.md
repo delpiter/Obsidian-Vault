@@ -42,18 +42,18 @@ Sia $f$ derivabile in $(x_{0},y_{0})$ non implica che $f$ sia continua
 ## Derivata Direzionale
 ---
 >[!info] Definizione
->Sia $(x_{0},y_{0})\in\mathbb{R}^2, \underbrace{ V }_{ Versore }=1(cos(\theta),sin(\theta)), \theta \in[0,2\pi]$
+>Sia $(x_{0},y_{0})\in\mathbb{R}^2, \underbrace{ V }_{ Versore }=1(\cos(\theta),\sin(\theta)), \theta \in[0,2\pi]$
 >Data $f:\mathbb{R}^2\to\mathbb{R}$
 >
 >>[!done] A Parole
 >>Voglio vedere come varia $f$ lungo la direzione $V$
 >
 >Considero il rapporto incrementale di $f$
->$$\displaystyle{\frac{f(x_{0}+tcos(\theta),y_{0}+tsin(\theta))-f(x_{0},y_{0})}{t}}$$
+>$$\displaystyle{\frac{f(x_{0}+t\cos(\theta),y_{0}+t\sin(\theta))-f(x_{0},y_{0})}{t}}$$
 >
 >>[!done] In Breve
 >>Se esiste il limite per $t\to0$ del rapporto incrementale ed è in $\mathbb{R}$ dico che $f$ è derivabile lungo la direzione $V$ nel punto $(x_{0},y_{0})$
->$$\lim\limits_{t\to 0}\displaystyle{\frac{f(x_{0}+tcos(\theta),y_{0}+tsin(\theta))-f(x_{0},y_{0})}{t}} = 0$$
+>$$\lim\limits_{t\to 0}\displaystyle{\frac{f(x_{0}+t\cos(\theta),y_{0}+t\sin(\theta))-f(x_{0},y_{0})}{t}} = 0$$
 
 - Indichiamo la derivata direzionale di $f$ lungo $V$ con:
 $$
@@ -64,7 +64,7 @@ $$
 --- 
 >[!info] Teorema
 >Sia $f:A\to\mathbb{R}$, $A\subseteq\mathbb{R}^2$ Aperto, sia $(x_{0},y_{0})\in A$
->Sia $V=(cos(\theta),sin(\theta))$
+>Sia $V=(\cos(\theta),\sin(\theta))$
 >Se $f$ è [[Differenziabilità#Funzione Differenziabile|differenziabile]] in $(x_{0},y_{0})$
 ><u>Allora</u>
 >$$D_{v}f(x_{0},y_{0})= \nabla f(x_{0},y_{0})\cdot V$$
@@ -72,14 +72,14 @@ $$
 ### Dimostrazione
 Considero la definizione di derivata direzionale:
 $$
-\displaystyle{\frac{f(x_{0}+\overbrace{tcos(\theta)}^{h},y_{0}+\overbrace{tsin(\theta)}^{k})-f(x_{0},y_{0})}{t}}
+\displaystyle{\frac{f(x_{0}+\overbrace{t\cos(\theta)}^{h},y_{0}+\overbrace{t\sin(\theta)}^{k})-f(x_{0},y_{0})}{t}}
 $$
 - Uso la definizione di [[Differenziabilità#Funzione Differenziabile|differenziabilità]]:
 $$
-\displaystyle{\frac{\cancel{ f(x_{0},y_{0}) }+\partial xf(x_{0},y_{0})\cancel{ t }cos(\theta)+\partial yf(x_{0},y_{0})\cancel{ t }sin(\theta)-\cancel{ f(x_{0},y_{0}) }+\circ(t)}{\cancel{ t }}}
+\displaystyle{\frac{\cancel{ f(x_{0},y_{0}) }+\partial xf(x_{0},y_{0})\cancel{ t }\cos(\theta)+\partial yf(x_{0},y_{0})\cancel{ t }\sin(\theta)-\cancel{ f(x_{0},y_{0}) }+\circ(t)}{\cancel{ t }}}
 $$
 - Passo al limite per $t\to0$
-$$D_{v}f(x_{0},y_{0})=\partial xf(x_{0},y_{0})cos(\theta)+\partial yf(x_{0},y_{0})sin(\theta) = \nabla f(x_{0},y_{0})\cdot V$$
+$$D_{v}f(x_{0},y_{0})=\partial xf(x_{0},y_{0})\cos(\theta)+\partial yf(x_{0},y_{0})\sin(\theta) = \nabla f(x_{0},y_{0})\cdot V$$
 #### Osservazione
 Da tale formula si osserva che $D_{v}f(x_{0},y_{0})$ è massima quando $V=\nabla f(x_{0},y_{0})$
 >[!done] In Breve

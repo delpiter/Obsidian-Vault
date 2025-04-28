@@ -64,14 +64,13 @@ Dove $\varepsilon_{r}$ è la *costante dielettrica relativa del mezzo*.
 >Calcoliamo la forza di Coulomb
 
 $$
-F=k \frac{Q^2}{\text{d}^2}\simeq_{5}.3\times 10^5 N
+F=k \frac{Q^2}{\text{d}^2}\simeq 5.3\times 10^5 N
 $$
 
 Equivalente alla forza peso di $50$ *tonnellate*.
+- L'intera terra attira $1g$ di protoni con $F_{a}\simeq10^{-2}N$
 
-L'intera terra attira $1g$ di protoni con $F_{a}\simeq10^{-2}N$
-- Confrontiamo: [[Elettromagnetismo#Elettrostatica|Forza elettrostatica]] e [[Legge di Gravitazione#Legge di Gravitazione Universale|gravitazionale]].
-
+Confrontiamo: [[Elettromagnetismo#Elettrostatica|Forza elettrostatica]] e [[Legge di Gravitazione#Legge di Gravitazione Universale|gravitazionale]].
 $$
 \frac{F_{g}}{F_{em}}=\frac{Gmp^2}{ke^2}\simeq 0.8\times 10^{-36}
 $$
