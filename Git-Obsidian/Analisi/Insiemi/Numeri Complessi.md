@@ -1,12 +1,8 @@
 >[!info] Numeri Complessi
->Un numero complesso si può definire come una coppia ordinata di numeri reali $(a,b)$
->>L'insieme dei numeri complessi è perciò definito come il piano cartesiano
->>$$
-\begin{array}
-\ \mathbb{C}=\mathbb{R}\times\mathbb{R}=\mathbb{R}^2 \\
-\{(a,b)|a\in\mathbb{R},b\in\mathbb{R}\}
-\end{array}
->>$$
+>Un ***numero complesso*** si può definire come una coppia ordinata di numeri reali $(a,b)$
+>>L'insieme dei numeri complessi è perciò definito come il *piano cartesiano*.
+>
+>$$\begin{array}\ \mathbb{C}=\mathbb{R}\times\mathbb{R}=\mathbb{R}^2 \\\{(a,b)|a\in\mathbb{R},b\in\mathbb{R}\}\end{array}$$
 
 #### Osservazione
 - $\mathbb{R}$ è un sottoinsieme di $\mathbb{C}$ in quanto $(a,0)\to\mathbb{R}$
@@ -102,42 +98,42 @@ $$
 >Dato il numero $z=a+ib$, dalla trigonometria ricaviamo immediatamente le relazioni tra le coordinate cartesiane $a,b$ e le coordinate polari $\rho,\theta$
 $$
 \begin{array} \\
-a=\rho(cos\theta) \\
-b=\rho(sin\theta)
+a=\rho(\cos\theta) \\
+b=\rho(\sin\theta)
 \end{array}
 $$
 - Di conseguenza il numero complesso $z$ può essere scritto nella forma
 $$
-z=\rho(cos(\theta)+isin(\theta))
+z=\rho(\cos(\theta)+i\sin(\theta))
 $$
 - Che è detta *forma trigonometrica* dei numeri complessi
 #### Formule inverse
 1. $\rho = \sqrt{ a^2+b^2 }$
-2. $cos(\theta)=\displaystyle{\frac{a}{\sqrt{ a^2+b^2 }}}$
-3. $sin(\theta)=\displaystyle{\frac{b}{\sqrt{ a^2+b^2 }}}$
-4. $tan(\theta)=\displaystyle{\frac{b}{a}}$
+2. $\cos(\theta)=\displaystyle{\frac{a}{\sqrt{ a^2+b^2 }}}$
+3. $\sin(\theta)=\displaystyle{\frac{b}{\sqrt{ a^2+b^2 }}}$
+4. $\tan(\theta)=\displaystyle{\frac{b}{a}}$
 ## Formule di De Moivre
 - - -
 >La forma trigonometrica è comoda per esprimere prodotti e quozienti di numeri complessi:
 $$
-z_{1}=\rho_{1}(cos(\theta_{1})+isin(\theta_{1})),\ \ \ z_{2}=\rho_{2}(cos(\theta_{2})+isin(\theta_{2}))
+z_{1}=\rho_{1}(\cos(\theta_{1})+i\sin(\theta_{1})),\ \ \ z_{2}=\rho_{2}(\cos(\theta_{2})+i\sin(\theta_{2}))
 $$
 - Otteniamo infatti
 $$
 \begin{array}\
-z_{1}z_{2}=\rho_{1}\rho_{2}[cos(\theta_{1})cos(\theta_{2})sin(\theta_{1})sin(\theta_{2})+i(sin(\theta_{1})cos(\theta_{2})+cos(\theta_{1})sin(\theta_{2}))]= \\
-=\rho_{1}\rho_{2}(cos(\theta_{1}+\theta_{2})+isin(\theta_{1}+\theta_{2}))
+z_{1}z_{2}=\rho_{1}\rho_{2}[\cos(\theta_{1})\cos(\theta_{2})\sin(\theta_{1})\sin(\theta_{2})+i(\sin(\theta_{1})\cos(\theta_{2})+\cos(\theta_{1})\sin(\theta_{2}))]= \\
+=\rho_{1}\rho_{2}(\cos(\theta_{1}+\theta_{2})+i\sin(\theta_{1}+\theta_{2}))
 \end{array}
 $$
 ## Radci N-esime
-- - -
+---
 - Dato un numero complesso $w$, diremo che $z$ è una radice $n-esima$ di $w$ se risulta $z^n=w$
 >[!info] Teorema Fondamentale dell'Algebra
 >Sia $w\in\mathbb{C}, w\neq0$ e $n\in\mathbb{N}$, esistono precisamente n radici n-esime complesse di $w$
 
 [[Definizioni_Analisi#Notazione numeri complessi in forma goniometrica|Notazione]]
 - Voglio risolvere $z^n=w$
-	- Sia $w=r(cos(\rho)+isin(\rho))=re^{i\rho}$
+	- Sia $w=r(\cos(\rho)+i\sin(\rho))=re^{i\rho}$
 	- Sia $z=\rho e^{i\theta} \implies z^n=\rho^ne^{in\theta}$
 - Devo imporre
 $$
@@ -154,5 +150,5 @@ z_{k}
 \theta_{k}=\displaystyle{\frac{\rho+2k\pi}{n}}
 \end{cases}
 $$
-### Osservazione
-> Vale sempre vche le radici $n$-esime di $w$ sono i vertici di un poligono regolare di $n$ lati inscritto in una circonferenza di raggio $\sqrt[n]{\mid w \mid}$
+>[!hint] Osservazione
+> Vale sempre che le radici $n$-esime di $w$ sono i vertici di un poligono regolare di $n$ lati inscritto in una circonferenza di raggio $\sqrt[n]{\mid w \mid}$

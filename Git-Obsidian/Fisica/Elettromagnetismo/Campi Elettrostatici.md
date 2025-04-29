@@ -21,6 +21,8 @@ Unendo un oggetto di carica $q_{1}$ con un oggetto di carica $q_{2}$:
 >>
 >>Esistono anche ***campi vettoriali*** come quello della [[Legge di Gravitazione|gravitazione]].
 
+^32aa5b
+
 ---
 Una particella **carica** $q_{0}$ ("*carica di prova*" o "*esploratrice*") sente l'effetto di **altre cariche** quando sta nel punto $P$.
 
