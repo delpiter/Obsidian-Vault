@@ -117,7 +117,29 @@ La ***risoluzione del nome*** avviene nei seguenti passi:
 >[!abstract] Body
 >Contenente le **informazioni** del protocollo (*richiesta* o *risposta*)
 
-![[DNSPCI.png]]
+```mermaid
+---
+title: "DNS Packet"
+---
+packet-beta
+  0-15: "Transaction ID"
+  16: "QR"
+  17-20: "Opcode"
+  21: "AA"
+  22: "TC"
+  23: "RD"
+  24: "RA"
+  25-27: "Reserved"
+  28-31: "Rcode"
+  32-47: "Questions"
+  48-63: "Answer RRs"
+  64-79: "Authority RRs"
+  80-95: "Additional RRs"
+  96-127: "Question"
+  128-159: "Answer"
+  160-191: "Authority"
+  192-223: "Additional"
+```
 
 >[!info] Identifier
 > L'***identifier*** contiene il codice che consente di **associare univocamente** un messaggio di *risposta* a uno specifico messaggio di *domanda*.

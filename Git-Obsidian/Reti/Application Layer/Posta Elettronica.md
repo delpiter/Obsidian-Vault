@@ -19,7 +19,7 @@
 ## Simple Mail Transfer Protocol
 ---
 >[!info]
-> Il protocollo **SMTP** \[RFC821\]è un protocollo utilizzato per trasmettere messaggi dal *client* al *server* e **tra i server**.
+> Il protocollo **SMTP** \[RFC821\] è un protocollo utilizzato per trasmettere messaggi dal *client* al *server* e **tra i server**.
 > Il trasferimento delle informazioni avviene tramite connessione #addLink ***TCP***:
 > - Attraverso la [[Livello di Trasporto#Numero di Porta|porta]] $25$.
 
@@ -40,7 +40,6 @@ Il protocollo si basa sulla disponibilità nella rete di computer dedicati, chia
 Il protocollo **POP3** presenta diverse *limitazioni*:
 - Non consente di creare gerarchie di cartelle
 - Dopo la lettura del messaggio , esso viene eliminato dal *server*.
-
 #### IMAP4
 >[!tip] Info
 >Il protocollo **IMAP4** (***I***nternet ***M***essage ***A***ccess ***P***rotocol ***v4***) \[RFC3501\], supera le limitazione poste dal protocollo **POP3**.
