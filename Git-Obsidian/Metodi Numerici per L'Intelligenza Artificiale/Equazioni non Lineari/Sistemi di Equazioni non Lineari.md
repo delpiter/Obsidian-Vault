@@ -204,7 +204,7 @@ $$
 
 >[!caution] Metodo delle Corde
 >Si utilizza lo stesso *Jacobiano* $J(X_{0})$ o una sua approssimazione $A(X_{0})$ per tutte le iterazioni $k$.
->Si potrebbe quindi #addLink fattorizzare $J(X_{0})=LU$ e utilizzare i medesimi $L$ e $U$ ***per ogni iterazione***.
+>Si potrebbe quindi [[Risoluzione di Sistemi Lineari#Fattorizzazione|fattorizzare]] $J(X_{0})=LU$ e utilizzare i medesimi $L$ e $U$ ***per ogni iterazione***.
 
 >[!abstract] Metodo di Shamanskii
 >Si valuta lo *Jacobiano* ogni $m$ iterazioni e quindi lo si utilizza per le $m$ iterazioni successive.
