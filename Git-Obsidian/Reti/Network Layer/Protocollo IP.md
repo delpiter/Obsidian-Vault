@@ -48,3 +48,5 @@ packet-beta
 >Il numero massimo teorico di indirizzi è $2^{32}$
 >- Nella realtà si riescono a sfruttare un ***numero molto inferiore***
 
+
+``
