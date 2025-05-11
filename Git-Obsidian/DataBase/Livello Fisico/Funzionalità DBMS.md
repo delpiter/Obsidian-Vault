@@ -76,11 +76,8 @@ Il [[SQL#Componenti SQL|DCL]] di [[SQL]] semplifica la concessione di privilegi 
 >[!danger] Protezione dai Guasti
 >È possibile che per qualche motivo (*disk failure*, *interruzioni di rete*, *intervento dell’utente*, *transaction abort*, *errori software*, ...) solo una parte delle operazioni da eseguire sia **effettivamente eseguita**.
 
-Per garantire l'integrità il **DBMS** deve provvedere ad annullare tali modifiche
-#### Transazione
->[!definizione]
->Una ***transazione*** è vista come una sequenza di *operazioni elementari* di **lettura** e **scrittura** di oggetti del **DB** che a partire da uno *stato consistente* porta il DB in un ***nuovo stato finale consistente***.
-
+Per garantire l'integrità il **DBMS** deve provvedere ad annullare tali modifiche.
+- Si usano le [[Transazioni]]
 ## Proprietà ACID
 ---
 >[!help] ***A***tomicity 

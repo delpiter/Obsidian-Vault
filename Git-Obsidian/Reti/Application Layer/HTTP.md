@@ -57,7 +57,42 @@ Ciascun messaggio è formato da una intestazione (***header***) seguita da un co
 >- Una *Intestazione* (***header***).
 >- Un *Corpo* (***body***).
 
-![[HTTPRequest.png]]
+```mermaid
+---
+title: "HTTP Request Packet"
+config:
+  packet:
+    showBits: false
+---
+packet-beta
+	0-5: "Method"
+	6: "SP"
+	7-15: "Request-URL"
+	16: "SP"
+	17-29: "HTTP-Version"
+	30: "CR"
+	31: "LF"
+	32-38: "Header-Name"
+	39: ":"
+	40: "SP"
+	41-61: "Header-Value"
+	62: "CR"
+	63: "LF"
+	64-95: "..."
+	96-102: "Header-Name"
+	103: ":"
+	104: "SP"
+	105-125: "Header-Value"
+	126: "CR"
+	127: "LF"
+	128: "CR"
+	129: "LF"
+	130-159: ""
+	160-191: ""
+	192-223: "Body"
+	224-255: ""
+```
+- *Ignora i Bit*
 
 Nella sezione *metodo* è descritto il ***tipo di richiesta*** voluto.
 
