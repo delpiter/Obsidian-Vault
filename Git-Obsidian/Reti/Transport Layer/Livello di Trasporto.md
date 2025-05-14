@@ -3,6 +3,15 @@
 >[!hint] Obbiettivo
 >L'**obbiettivo** del *livello transport* è quello di garantire il dialogo affidabile fra le applicazioni finali.
 
+>[!help] Protocolli
+>Il livello di trasporto ha due protocolli:
+>- [[TCP]]: *Connection Oriented*.
+>- [[UDP]]: *Connectionless*.
+
+Il ***network layer*** consente di applicare una strategia di [[Multiplexing]] nella comunicazione.
+- Permette a più processi applicativi di usare le *funzioni di comunicazione in contemporanea*.
+
+Questo layer ha il compito di controllare il *comportamento del canale di comunicazione* ***end-to-end***.
 ### Numero di Porta
 >[!info] Indirizzo
 >Il ***numero di porta*** è l'*indirizzo* del livello transport.

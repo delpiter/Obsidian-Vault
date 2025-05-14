@@ -16,9 +16,9 @@ $$
 $$
 
 >[!danger] Attenzione
->La risoluzione di un sistema lineare sovradeterminato risulta essere un [[Condizionamento#Condizionamento di un Problema|mal posto]].
+>La risoluzione di un sistema lineare sovradeterminato risulta essere un problema [[Condizionamento#Condizionamento di un Problema|mal posto]].
 
-## Least Sqares
+## Least Squares
 ---
 > Cerchiamo di rendere il problema ***ben posto***.
 

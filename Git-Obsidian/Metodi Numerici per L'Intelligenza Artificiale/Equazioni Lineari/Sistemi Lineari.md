@@ -192,3 +192,38 @@ $$
 
 >[!danger] Metodo ad alta complessità computazionale
 >Questo metodo comporta una [[Complessità di Algoritmi|complessità computazionale]] di circa $O((n+1)!)$.
+
+## Mappa Concettuale
+---
+
+![[LinearSystems.jpg]]
+
+```mermaid
+mindmap
+	root(("Ax=b"))
+		(("m=n"))
+			Piccole dimensioni e Densa
+				Ben Condizionata
+					Fattorizzazione di Gauss
+				Mal Condizionata
+					Fattorizzazione QR
+				Simmetrica e Definita Positiva
+					Fattorizzazione Cholesky
+			Grandi Dimensioni e Sparsa
+				Diagonale strettamente dominante
+					Jacobi
+					Gauss Seidel
+					Gauss Seidel SOR
+				Simmetrica e definita Positiva
+					Gauss Seidel
+					Gauss Seidel SOR
+					Gradiente
+					Gradiente Coniugato
+		(("m>n")) 
+			Ben Condizionata e Rango Max
+				Equazioni Normali
+			Mediamente Mal Condizionata Rango Max
+				QRLS
+			Altamente Mal Condizionata No Rango Max
+				SVDLS
+```

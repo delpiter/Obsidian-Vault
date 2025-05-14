@@ -5,7 +5,7 @@
 >>- `SMTP`, `POP3`, `IMAP` per la [[Posta Elettronica|posta elettronica]].
 >>- [[FTP]] per il *trasferimento dei file*.
 >>- [[DNS|DNS]] per la *risoluzione dei nomi di dominio* in indirizzi.
->>- #addLink SSH per l'*accesso remoto sicuro* ad un calcolatore.
+>>- **SSH** per l'*accesso remoto sicuro* ad un calcolatore.
 >>- ...
 
 I protocolli applicativi devono definire:
@@ -27,7 +27,7 @@ Sono forniti dal sistema operativo in esecuzione sull'**host** e accessibile tra
 >- Indirizzo *Destinatario*.
 >- [[Livello di Trasporto#Numero di Porta|Porta]] *Sorgente*.
 >- Porta *Destinatario*.
->- *Protocollo Utilizzato* ( #addLink TCP/UDP).
+>- *Protocollo Utilizzato* ([[TCP]]/[[UDP]]).
 
 ### Primitive Berkeley Socket
 #### Stream Socket

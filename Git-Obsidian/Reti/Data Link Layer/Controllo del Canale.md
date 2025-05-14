@@ -1,6 +1,7 @@
 ![[Git-Obsidian/Reti/Introduzione/Introduzione#Canale]]
 
 ## Canale di Comunicazione
+---
 > I canali di comunicazione si trovano nel livello ***Data Link***.
 
 >[!abstract] Protocolli di Linea

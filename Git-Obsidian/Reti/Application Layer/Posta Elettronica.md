@@ -16,11 +16,24 @@
 >
 
 ![[Read-Email.png]]
+#### Standard E-mail
+> Il messaggio standard delle e-mail è in formato [[Rappresentazione dei Caratteri#ASCII|ASCII]].
+
+Il pacchetto è formato da:
+>[!abstract] Envelope
+>Anche detto ***header***, contiene informazioni come:
+>- Chi ha *scritto* la mail (`From`).
+>- A chi è *destinata* la mail (`To`), include anche i `cc` e `ccn`.
+>- *Oggetto* della mail (`Subject`).
+
+>[!help] Body
+>Nel ***body*** della mail è contenuto il ***testo*** stesso del messaggio e, se ci sono, dei file allegati ([[#MIME]]).
+
 ## Simple Mail Transfer Protocol
 ---
 >[!info]
 > Il protocollo **SMTP** \[RFC821\] è un protocollo utilizzato per trasmettere messaggi dal *client* al *server* e **tra i server**.
-> Il trasferimento delle informazioni avviene tramite connessione #addLink ***TCP***:
+> Il trasferimento delle informazioni avviene tramite connessione [[TCP]]:
 > - Attraverso la [[Livello di Trasporto#Numero di Porta|porta]] $25$.
 
 > I messaggi devono essere in formato [[Rappresentazione dei Caratteri#ASCII|ASCII]] a $7$ `bit`.
@@ -34,7 +47,7 @@ Il protocollo si basa sulla disponibilità nella rete di computer dedicati, chia
 ---
 #### POP3
 >[!info]
->Il protocollo **POP3** (***P***ost ***O***ffice ***P***rotocol ***3***) \[RFC1939\] utilizza il protocollo di trasporto #addLink TCP sulla [[Livello di Trasporto#Numero di Porta|porta]] $110$ del server
+>Il protocollo **POP3** (***P***ost ***O***ffice ***P***rotocol ***3***) \[RFC1939\] utilizza il protocollo di trasporto [[TCP]] sulla [[Livello di Trasporto#Numero di Porta|porta]] $110$ del server
 > 
 
 Il protocollo **POP3** presenta diverse *limitazioni*:

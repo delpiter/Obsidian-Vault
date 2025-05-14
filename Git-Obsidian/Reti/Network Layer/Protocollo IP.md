@@ -3,7 +3,7 @@
 
 Il protocollo **non fornisce alcuna garanzia** sull'effettivo trasferimento con *successo* dei datagrammi.
 
->Questo protocollo interagisce con i protocollo #addLink **TCP** e **UDP** dello strato superiore
+>Questo protocollo interagisce con i protocollo [[TCP]] e [[UDP]] dello strato superiore.
 
 L'indirizzo *IP* identifica i **punti di interconnessione** di un host con la rete.
 - Non identifica un host individuale ma ***una delle sue interfacce di rete***.
