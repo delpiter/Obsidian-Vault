@@ -103,3 +103,6 @@ Per garantire l'integrità il **DBMS** deve provvedere ad annullare tali modific
 - L'accesso al disco è controllato dal [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]].
 - Alcuni **DBMS** hanno un modulo di ***gestione del buffer***, per pianificare operazioni di lettura e scrittura su disco.
 - Un **gestore dei dati archiviati** che controlla l'accesso alle informazioni memorizzate su disco.
+
+#### Layer del DBMS
+![[DBMSLayers.png]]
