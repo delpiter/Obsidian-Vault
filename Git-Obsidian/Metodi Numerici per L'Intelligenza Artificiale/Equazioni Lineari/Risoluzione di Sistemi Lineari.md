@@ -362,7 +362,7 @@ Consideriamo la relazione relativa al valore esatto $x$: $Mx=Nx+b$ e la relazion
 > Sottraendo la prima dalla seconda otteniamo: $Me^{(k)}=Ne^{(k-1)}$ da cui:
 
 $$
-e^{(k)}=M^{-1}Ne^{(k-1)}?Te^{(k-1)}=T^2e^{(k-2)}=\dots=T^k
+e^{(k)}=M^{-1}Ne^{(k-1)}=Te^{(k-1)}=T^2e^{(k-2)}=\dots=T^k
 e^{(0)}$$
 
 >[!done] Metodo convergente
