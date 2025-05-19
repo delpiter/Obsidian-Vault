@@ -66,6 +66,25 @@ Ly=P\cdot b \\
 Ux=y
 \end{cases}
 $$
+
+###### Calcolo del Determinante con la Fattorizzazione
+> Sia $PA=LU$ con $L$ matrice triangolare inferiore con elementi diagonali uguali a $1$:
+
+$$
+\det(PA)=\det(LU)=\underbrace{ \det(L) }_{ 1 }\det(U)=\det(U)=\prod_{i=1,\dots,n}u_{ii}
+$$
+Possiamo dire quindi:
+$$
+\det(PA)=\det(P)\det(A)=\prod_{i=1,\dots,n}u_{ii}
+$$
+***Ma sappiamo che***:
+$$
+\det(P)=(-1)^{s}
+$$
+- Dove $s$ è il numero di scambi effettuati.
+
+>[!done] Conclusione
+>Quindi $\det(A)=(-1)^{s}\prod_{i=1,\dots,n}u_{ii}$
 ##### Metodo di Cholesky
 > Associato alla fattorizzazione $A=LL^T$ o $A=R^TR$
 
