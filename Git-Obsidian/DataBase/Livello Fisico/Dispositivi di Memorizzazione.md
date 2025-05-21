@@ -38,6 +38,8 @@ Le prestazioni di un **DBMS** dipendono fortemente dall’*organizzazione fisica
 
 È necessario conoscere *come i dati dovranno essere elaborati* e quali sono le ***correlazioni logiche*** tra di essi.
 
+> Il ***File System*** non conosce queste informazioni.
+
 #### Rappresentazione dei Valori
 > Per ogni tipo di dati di [[SQL]] è definito un formato di rappresentazione specifico nel contesto di un **DBMS**.
 
