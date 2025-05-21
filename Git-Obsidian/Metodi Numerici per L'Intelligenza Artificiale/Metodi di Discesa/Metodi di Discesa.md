@@ -210,7 +210,7 @@ $$
 	\State $ x^{(0)},k=0 $
 	\While{$\text{Fino a Convergenza}$}
 	\State $ p^{(k)}=-\nabla f(x^{(k)}) $
-	\State $ \alpha^{(k)}=\displaystyle{\frac{<r^{(k)},r^{(k)}>}{<Ar^{(k)},r^{(k)}>}} $
+	\State $ \alpha^{(k)}=-\displaystyle{\frac{<r^{(k)},p^{(k)}>}{<Ap^{(k)},p^{(k)}>}} $
 	\State $ \text{Aggiorna l'iterato} $
 	\State $ x^{(k+1)}=x^{(k)}+\alpha^{(k)}p^{(k)} $
 	\State $ r^{(k+1)}=r^{(k)}+\alpha^{(k)}Ap^{(k)} $

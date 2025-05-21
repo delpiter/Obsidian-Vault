@@ -300,8 +300,6 @@ $$
 >
 >Il metodo è programmabile in ***forma parallela***.
 
-###### Metodo di Arresto
-
 ##### Metodo di Gauss-Seidel
 >[!tldr] Idea
 >Nel ***metodo di Gauss-Seidel*** la *decomposizione* di $A$ si ottiene scegliendo $M=E+D$ e $N=-F$
@@ -339,7 +337,7 @@ $$
 >Il metodo non si presta ad essere [[Architetture Parallele|parallelizzato]] in quanto ogni nuovo componente dell'iterato *dipende* da tutte le nuove componenti appena calcolate.
 
 Il metodo suggerisce che la **soluzione** al passo $k$ si *ottiene*:
-- Risolvendo il sistema ***triangolare inferiore*** avente $(D+E)$ come matrici dei coefficienti e termine noto $b-Fx^{(k+1)}$.
+- Risolvendo il sistema ***triangolare inferiore*** avente $(D+E)$ come matrici dei coefficienti e termine noto $b-Fx^{(k-1)}$.
 
 #### Convergenza
 >[!definizione]
@@ -358,7 +356,7 @@ $$
 $$
 Poiché $x^{(k)}$ è per ipotesi una successione convergente a $y$ segue che
 $$
-My=My+b
+My=Ny+b
 $$
 - Da cui si ottiene $(M-N)y=b$
 
@@ -376,7 +374,7 @@ Essendo $M-N=A$, si ha $Ay=b$ e quindi $y=x$
 >Si osservi che queste quantità sono legate dalla relazione:
 >$$r^{(k)}=Ax^{(k)}-b=Ax^{(k)}-Ax=A(x^{(k)}-x)=Ae^{(k)}$$
 
-Consideriamo la relazione relativa al valore esatto $x$: $Mx=Nx+b$ e la relazione analoga al passo $k$ $Mx^{(k)}=Nx^{(k-1)}+b$
+Consideriamo la relazione relativa al valore esatto $x$: $Mx=Nx+b$ e la relazione analoga al passo $k:$ $Mx^{(k)}=Nx^{(k-1)}+b$
 
 > Sottraendo la prima dalla seconda otteniamo: $Me^{(k)}=Ne^{(k-1)}$ da cui:
 
@@ -420,8 +418,11 @@ Da cui: $\rho(T)<1$ e, per il teorema precedente il ***procedimento iterativo è
 > Seguono due teoremi che garantiscono la convergenza per classi particolari di matrici
 
 >[!check] Teorema
->Se la matrice $A$ è ***diagonale strettamente dominante***, cioè
+>Se la matrice $A$ è ***diagonale strettamente dominante***:
 >$$\mid a_{ii}\mid>\sum_{k=1, \ k\neq i}^n|a_{ik}| \qquad i=1,2,\dots,n$$
+>>[!quote] Cioè
+>>Ciascun elemento nella diagonale è *maggiore* della **somma dei restanti elementi** della riga.
+>
 >Allora sia il metodo di *Jacobi* che quello di *Gauss-Seidel* convergono e si ha 
 >$$\|T_{G}\|\leq\|T_{J}\|< 1$$
 
@@ -437,7 +438,7 @@ Quindi $\|e^{(k)}\|\leq \|T\|^k\| e^{(0)}\|$
 >$$\|e^{(k)}\|\approx C\rho(T)^k \cdot \|e^{(0)}\|$$
 >Dove $C$ è una opportuna costante maggiore di zero.
 >Da cui segue:
->$$\displaystyle{\frac{\|e^{(k)}\| }{\|e^{(k)}\|}} \approx \rho(T)$$
+>$$\displaystyle{\frac{\|e^{(k+1)}\| }{\|e^{(k)}\|}} \approx \rho(T)$$
 
 Si tratta di ***metodi iterativi a convergenza lineare*** e $\rho(T)$ è il *fattore costante* che descrive quanto l’errore si riduce se $\rho(T)<1$ (o *cresce* in caso contrario) a ogni passo, quando il metodo si stabilizza (per $k$ grande).
 
