@@ -18,6 +18,7 @@
 >- $a(t)$: Numero di *richieste di servizio* **giunte** al tempo $t$.
 >- $s(t)$: Numero di *richieste* **accettate** al tempo $t$.
 >- $p(t)$: Numero di *partenze* dal sistema al tempo $t$.
+>- - $k(t)$: Numero di *richieste* accettate in **attesa di essere soddisfatte**.
 
 ![[Performance.png|500]]
 
@@ -109,3 +110,52 @@ Da una valutazione della ***capacità del servizio*** del sistema considerato.
 > $A_{p}=\lambda_{p}\overline{\vartheta}$
 - *Traffico perduto* (Occupazione media di un sistema che serve gli ***utenti rifiutati***).
 
+>[!tldr] In un sistema ideale
+
+Il sistema ha una ***capacità massima finita*** $\lambda_{s}^{\max}$di smaltire richieste.
+- Se le richieste offerte sono eccessive una parte *non può essere soddisfatta*.
+![[IdealSystem.png|500]]
+
+>[!caution] In un sistema reale
+
+La riduzione di capacità si interpreta come ***perdita di efficienza***.
+- Efficienza del protocollo:
+$$
+\eta=\displaystyle{\frac{\lambda_{s}^{e}}{\lambda_{s}^{\max}}}\leq 1
+$$
+![[RealSystem.png|500]]
+
+##### Capacità Massima e Efficienza
+>[!question] Quali sono le prestazioni ideali per un protocollo [[ISO-OSI#Stack ISO-OSI|Data Link]]?
+
+Il protocollo invia `bit` dello strato $3$ sul canale.
+- La sua ***capacità massima teorica*** è la velocità del canale $C$.
+
+Il tempo medio di servizio minimo possibile sarebbe:
+$$
+\overline{\vartheta}=\frac{L}{C}=\frac{1}{\mu}
+$$
+> Se il protocollo richiede maggiore tempo per la completa trasmissione del frame:
+
+$$
+\overline{\vartheta}_{e}=\frac{L}{C_{e}}> \frac{1}{\mu}
+$$
+$C_{e}$ (capacità effettiva) *dipende dal protocollo*.
+
+##### Unità di Misura
+>Il [[#Traffico]] è una grandezza adimensionale.
+
+>[!info] $A_{0}=\lambda\overline{\vartheta}$
+>**Richieste** di servizio per *unità di tempo* $\times$ **durata** del servizio.
+
+Formalmente si misura con una unità fittizia detta ***Erlang***.
+##### Valutazione dell'Efficienza
+> Si fa riferimento alla `PDU`.
+
+Confronto tra:
+- ***Quantità di tempo*** strettamente usato per inviare i soli dati utente.
+- ***Quantità di tempo*** usato complessivamente per completare l'invio della `PDU`.
+
+$$
+\eta=\displaystyle{\frac{T_{u}}{T_{0}}}=\displaystyle{\frac{\overline{\vartheta}}{\overline{\vartheta}_{e}}}
+$$

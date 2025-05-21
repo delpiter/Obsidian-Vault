@@ -339,7 +339,7 @@ $$
 \displaystyle{\frac{\displaystyle\binom{2}{8}\cdot \displaystyle\binom{2}{1}}{\displaystyle\binom{10}{3}}}+\displaystyle{\frac{\displaystyle\binom{3}{8}\cdot \displaystyle\binom{2}{0}}{\displaystyle\binom{10}{3}}}=0,933
 $$
 
-### Schema Successo-Insuccesso a Prove Indipendenti
+### Schema Successo-Insuccesso a Prove Indipendenti Consecutive
 >[!definizione] Densità Geometrica
 >Fissiamo il numero di Prove e procediamo finché otteniamo un successo
 >$X=\#$ di *insuccessi* prima di un *successo*
