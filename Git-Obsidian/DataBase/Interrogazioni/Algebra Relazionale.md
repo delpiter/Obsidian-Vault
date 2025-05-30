@@ -221,7 +221,7 @@ $$
 $$
 >[!example] Esempio
 
-![[AlgebraDivision.png]]
+![[DivisionExample.jpg]]
 
 ### Theta Join
 >[!tldr] Idea

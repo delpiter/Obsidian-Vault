@@ -51,7 +51,7 @@ a_{ij}=a_{ij}-l_{ik}a_{kj}
 
 >[!definizione] Matrice di Permutazione
 >Matrice ottenuta dalla *matrice identità* **scambiando** due righe tra di loro.
->Effettuare $P\cdot A$ equivale a scambiare le stesse due righe della matrice $A$
+>Effettuare $P\cdot A$ equivale a scambiare le stesse due righe della matrice $A$.
 
 >[!check] Teorema
 >Data una qualunque matrice $A$ non singolare, esiste una matrice di permutazione $P$ non singolare t.c. $PA=LU$
@@ -111,9 +111,6 @@ $$
 
 ##### Metodo di Householder
 > Associato alla fattorizzazione $QR$
-
-*Dove*:
-- $Q$ è [[1 - Introduzione Isometrie#Matrice Ortogonale|ortogonale]] e $R$ è triangolare superiore.
 
 >[!warning] La fattorizzazione è **sempre** possibile ma **non** unica.
 
@@ -278,6 +275,7 @@ Il procedimento iterativo diventa:
 $$
 x^{(k)}=-D^{-1}(E+F)x^{(k-1)}+D^{-1}b_{1}\quad k=1,2,\dots
 $$
+
 > In termini di componenti l'equazione equivale a calcolare la $i$-esima componente dell'iterato $k$-esimo:
 
 $$

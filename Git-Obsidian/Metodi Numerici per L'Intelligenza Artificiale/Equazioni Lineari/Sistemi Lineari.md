@@ -129,7 +129,7 @@ g(x)=-3/2x+5/2
 > Se $m>n$
 
 >[!quote] Abbiamo ***meno*** incognite che relazioni.
->Lo chiamiamo sistema ***sovradeterminato***.
+>Lo chiamiamo sistema [[Sistemi Sovradeterminati|sovradeterminato]].
 
 >Se $m=k$
 

@@ -33,6 +33,7 @@ $$
 \end{bmatrix}=0
 $$
 Sviluppiamo $F(x)$
+
 $$
 \begin{array}
 \ F(x)=\frac{1}{2}(a_{11}x_{1}^2+a_{12}x_{1}x_{2}+\dots+a_{1i}x_{1}x_{i}+\dots+a_{1n}x_{1}x_{n}+ \\ a_{21}x_{2}x_{1}+a_{22}x_{2}^2+\dots+a_{2i}x_{2}x_{i}+\dots+a_{2n}x_{2}x_{n}
@@ -45,6 +46,7 @@ a_{n1}x_{n}x_{1}+a_{n2}x_{n}x_{2}+\dots+a_{ni}x_{n}x_{i}+\dots+a_{nn}x_{n}^2
 )- \\
 -(b_{1}x_{1}+b_{2}x_{2}+\dots+b_{i}x_{i}+\dots+b_{n}x_{n})\end{array}
 $$
+
 
 > Calcoliamo $\displaystyle\frac{ \partial F }{ \partial x_{i} }\quad \forall i\in[1,n]$
 
@@ -163,7 +165,7 @@ $$
 ### Scelta della Direzione
 >[!info]
 >Per quanto riguarda la scelta delle ***direzioni di discesa*** $p^{(k)}$, se si considera la relazione:
->$$\alpha^{(k)}=-\displaystyle{\frac{<r^{(k)},p^{(k)}>}{Ap^{(k)},p^{(k)}}}$$
+>$$\alpha^{(k)}=-\displaystyle{\frac{<r^{(k)},p^{(k)}>}{<Ap^{(k)},p^{(k)}>}}$$
 >Si può affermare che $p^{(k)}$ **non** deve essere *ortogonale al residuo* $r^{(k)}$ o **non** deve essere *ortogonale al gradiente* $\nabla F(x^{(k)})$  perché porterebbe a $\alpha^{(k)}=0$.
 
 Consideriamo lo [[Formula di Taylor|sviluppo in serie di Taylor]] della $F(x^{(k)}+\alpha^{(k)}p^{(k)})$ in un intorno di $x^{(k)}$:
@@ -210,7 +212,7 @@ $$
 	\State $ x^{(0)},k=0 $
 	\While{$\text{Fino a Convergenza}$}
 	\State $ p^{(k)}=-\nabla f(x^{(k)}) $
-	\State $ \alpha^{(k)}=-\displaystyle{\frac{<r^{(k)},p^{(k)}>}{<Ap^{(k)},p^{(k)}>}} $
+	\State $ \alpha^{(k)}=\displaystyle{\frac{<r^{(k)},r^{(k)}>}{<Ap^{(k)},p^{(k)}>}} $
 	\State $ \text{Aggiorna l'iterato} $
 	\State $ x^{(k+1)}=x^{(k)}+\alpha^{(k)}p^{(k)} $
 	\State $ r^{(k+1)}=r^{(k)}+\alpha^{(k)}Ap^{(k)} $
@@ -236,7 +238,7 @@ $$ A=\begin{bmatrix} 8 & 4 \\ 4 & 3 \end{bmatrix}\quad b=\begin{bmatrix} 8 \\ 10
 
 ### Velocità di Convergenza
 >[!info]
->Nel caso del metodo del gradiente applicato alla minimizzazione di una forma quadratica$F(x)=\frac{1}{2}<Ax,x>-<b,x>$ con $A$ matrice [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], il metodo ha  [[Ordine di Convergenza#Ordini|ordine di convergenza lineare]].
+>Nel caso del metodo del gradiente applicato alla minimizzazione di una forma quadratica $F(x)=\frac{1}{2}<Ax,x>-<b,x>$ con $A$ matrice [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], il metodo ha  [[Ordine di Convergenza#Ordini|ordine di convergenza lineare]].
 
 ##### Misurare l'Errore
 >Definiamo la *Norma Indotta* dalla matrice simmetrica e definita positiva $A$ su $x$.

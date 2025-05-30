@@ -59,6 +59,8 @@ $$
 $$
 T_{0}=\frac{D+O}{C}\qquad T_{e}=\frac{D}{C}+\frac{H}{C}+T_{out}
 $$
+- $T_{out}$: *Tempo di Timeout*
+
 >[!danger] Errori
 >Se $P_{k}$ è la probabilità di avere $k$ errori, il tempo medio per trasmettere un frame vale:
 >$$E[T_{k}]=\sum_{k=0}^{\infty}T_{k}p_{k}=\sum_{k=0}^{\infty}(kT_{e}+T_{0})P_{k}$$
@@ -72,8 +74,8 @@ $$
 >- $P_{F}=$ Probabilità di errore per *ciascun frame*. 
 >$$P_{k}=P\{ k \text{ frame errati seguiti da uno corretto} \}=P_{F}^{k}(1-P_{F})$$
 
-Il numero medio di errori consecutivi risulta $E[k]=\frac{P_{F}}{1-P_{F}}$ #wtf $E[k]=\frac{1-P_{F}}{P_{F}}$
-- ([[6 - Valore Atteso#Valore Atteso di una Variabile Geometrica]])
+Il numero medio di errori consecutivi risulta $E[k]=\frac{P_{F}}{1-P_{F}}$
+- ([[6 - Valore Atteso#Valore Atteso di una Variabile Geometrica|Valore Atteso]])
 
 Sia $P_{e}$ la probabilità di un errore per `bit`.
 $$P_{F}=1-P_{\text{frame corretto}}=1-(1-P_{e})^{F}\approx FP_{e}$$
@@ -81,5 +83,36 @@ $$P_{F}=1-P_{\text{frame corretto}}=1-(1-P_{e})^{F}\approx FP_{e}$$
 > ***Valore medio di*** $T_{k}$.
 - In teoria possono essere errati i **frame** ma anche gli `ACK`.
 
-Se vale la formula $P_{F}=FP_{e}$
+Se:
+- **Vale la formula** $P_{F}=FP_{e}$.
+- $P_{e}$ è circa *costante*.
+- $P_{F}$ dipende solamente da $F$.
 
+$$
+E[T_{k}]=T_{0}+T_{e}\cdot \displaystyle{\frac{P_{F}}{1-P_{F}}}
+$$
+>[!done] Conclusione
+>L'***efficienza del protocollo*** è:
+>$$\eta=\frac{\left( \frac{D}{C} \right)}{E[T_{k}]}$$
+>- $T_{0}=\frac{D+O}{C}$
+>- $T_{out}=2I+\frac{H}{C}$
+>- $T_{e}=\frac{D}{C}+T_{out}+\frac{H}{C}=\frac{D}{C}+\frac{O}{C}$
+>
+>L'**efficienza massima** si ha con $T_{out}$ e $T_{e}$ minimi:
+>$$\eta_{\max}=\displaystyle{\frac{D}{\left( (D+O)+(D+O)\cdot \displaystyle{\frac{FP_{e}}{1-FP_{e}}} \right) }}$$.
+
+> Assumendo $FP_{e}\ll1$ e $O\ll D$ *risulta*:
+
+$$
+\eta_{\max}\approx \frac{D}{D+O+D^{2}P_{e}}
+$$
+##### Efficienza Ottima
+> Derivando e uguagliando a zero l'espressione dell'efficienza massima si ottiene il valore ottimo per $D$:
+
+$$
+D_{ott}=\sqrt{ \frac{O}{P_{e}} }
+$$
+- Sostituendo $D_{ott}$ nell'espressione di $\eta_{\max}$ si ottiene:
+$$
+\eta_{ott}=\frac{D_{ott}}{D_{ott}+2O}
+$$

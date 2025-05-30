@@ -50,14 +50,16 @@ $$
 > Data la matrice $A\in\mathbb{R}^{m\times n}$, la sua **decomposizione in valori singolari** è caratterizzata dal seguente *teorema*:
 
 >[!check] Teorema
->Sia $A\in\mathbb{R}^{m\times n}$ a rango $k\leq\min(m,n)$, allora esistono due matrici ortogonali $U\in\mathbb{R}^{m\times n}$ e $V\in\mathbb{R}^{m\times n}$ tali che:
+>Sia $A\in\mathbb{R}^{m\times n}$ a rango $k\leq\min(m,n)$, allora esistono due ***matrici ortogonali*** $U\in\mathbb{R}^{m\times n}$ e $V\in\mathbb{R}^{m\times n}$ tali che:
 >$$U^TAV=\Sigma=diag(\sigma_{1},\sigma_{2},\dots,\sigma_{k},0,\dots,0)$$
 
 I valori sulla diagonale di $\Sigma$ sono detti valori singolari di $A$ e soddisfano:
+
 $$
 \sigma_{1}\geq \sigma_{2}\geq\dots\geq\sigma_{k}\geq0
 $$
 - Se la matrice $A$ ha [[6 - Cambiamenti di Base#Rango di una Matrice|rango]] $k=n$ avremo $\sigma_{n}>0$
+
 $$
 \Sigma=\begin{bmatrix}
 \sigma_{1} &  &  & 0\\
@@ -69,6 +71,7 @@ $$
 \vdots &\vdots & \vdots & \vdots 
 \end{bmatrix}
 $$
+
 
 - Se ha rango $k<n$ avremo che $\sigma_{k}>0$ e $\sigma_{k+1}=\sigma_{k+2}=\dots=\sigma_{n}=0$
 $$
@@ -178,8 +181,9 @@ x_{1}^0  & x_{1}^1 & \dots & x_{1}^n \\
 x_{m}^0  & x_{m}^1 & \dots & x_{m}^n
 \end{bmatrix}
 $$
-	- ([[Condizionamento di un Sistema Lineare#Caso 2|Matrice di Vandermonde]]).
-	- In cui l'elemento di posto $(i,j)$ è dato da $b_{ij}=x_{i}^j$
+
+- ([[Condizionamento di un Sistema Lineare#Caso 2|Matrice di Vandermonde]]).
+- In cui l'elemento di posto $(i,j)$ è dato da $b_{ij}=x_{i}^j$
 
 >[!hint] Osservazione
 >Individuare i coefficienti del polinomio $P_{n}(x)=\sum_{j=0}^n\alpha_{j}x^j$ in maniera tale che $P_{n}(x_{i})=y_{i}$, **equivale** a determinare la soluzione nel ***senso dei minimi quadrati del sistema lineare sovradeterminato*** $B\alpha=y$.

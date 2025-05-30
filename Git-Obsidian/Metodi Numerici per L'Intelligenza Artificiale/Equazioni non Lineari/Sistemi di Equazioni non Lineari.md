@@ -20,10 +20,10 @@ x_{2} \\
 \dots \\
 x_{n}
 \end{bmatrix}\in\mathbb{R}^n\to F(X)=\begin{bmatrix}
-f_{1}(x_{1},x_{2},\dots,x_{n})=0 \\
-f_{2}(x_{1},x_{2},\dots,x_{n})=0 \\
+f_{1}(x_{1},x_{2},\dots,x_{n}) \\
+f_{2}(x_{1},x_{2},\dots,x_{n}) \\
 \dots \\
-f_{n}(x_{1},x_{2},\dots,x_{n})=0
+f_{n}(x_{1},x_{2},\dots,x_{n})
 \end{bmatrix}
 $$
 
@@ -96,7 +96,7 @@ $$
 
 > Consideriamo il polinomio di Taylor di grado $1$ bivariato centrato in un intorno del punto $X_{k}=\left[x^{(k)}_{1},x^{(k)}_{2}\right]^T\in\mathbb{R}^2$ (l'iterato $k$-*esimo*) per entrambe le funzioni $f_{1},f_{2}$
 
-Tali polinomi rappresentano il ***piano che meglio approssima ciascuna dele funzioni*** bivariate.
+Tali polinomi rappresentano il ***piano che meglio approssima ciascuna delle funzioni*** bivariate.
 $$
 x_3 = P_1(x_1, x_2) = f_1\left(x_1^{(k)}, x_2^{(k)}\right) + \frac{\partial f_1}{\partial x_1}\left(x_1^{(k)}, x_2^{(k)}\right)(x_1 - x_1^{(k)}) + \frac{\partial f_1}{\partial x_2}\left(x_1^{(k)}, x_2^{(k)}\right)(x_2 - x_2^{(k)})
 $$
@@ -132,6 +132,7 @@ J(X_k) =
 $$
 
 Lo Jacobiano di $F(X)$ calcolato in $X_{k}$
+
 - $F(X_{k})=\left[ f_{1}(x_{1}^{(k)}),f_{2}(x_{2}^{(k)}) \right]^T$
 - $X-X_{k}=\left[ x_{1}-x_{1}^{(k)},x_{2}-x_{2}^{(k)} \right]^T$
 
