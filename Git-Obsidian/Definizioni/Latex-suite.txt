@@ -8,6 +8,7 @@
 
 
 	// Greek letters
+	{trigger: "@n", replacement: "\\eta", options: "mA"},
 	{trigger: "@a", replacement: "\\alpha", options: "mA"},
 	{trigger: "@A", replacement: "\\alpha", options: "mA"},
 	{trigger: "@b", replacement: "\\beta", options: "mA"},
