@@ -86,3 +86,4 @@ In una rete ***P2P*** qualsiasi nodo utilizza e mette a disposizione contemporan
 >[!example] Esempio
 
 - [µTorrent](https://www.utorrent.com/)
+- Skype

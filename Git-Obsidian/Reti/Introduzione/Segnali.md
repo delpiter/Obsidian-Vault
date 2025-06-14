@@ -14,7 +14,19 @@ $$Asin(2\pi ft + \Phi)$$
 <font color="red">$$g(t) = 2sin(2t+2)$$ </font>
 <font color="green">$$z(t)= 5sin(t+5)$$</font>
 
-![[SinSignal.png|500]]
+```functionplot
+---
+title: 
+xLabel: 
+yLabel: 
+bounds: [-10,10,-8,8]
+disableZoom: false
+grid: true
+---
+f(x)=3*sin(3*x+3)
+f(x)=2*sin(2*x+2)
+f(x)=5*sin(x+5)
+```
 ### Descrivere il Segnale
 >La singola sinusoide ha un *andamento temporale noto*
 

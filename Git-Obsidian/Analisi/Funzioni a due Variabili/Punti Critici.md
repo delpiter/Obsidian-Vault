@@ -88,7 +88,7 @@ q \text{ è indefinita }\Leftrightarrow \det A<0
 ![[Tayolor per funzioni a due Variabili#Formula di Taylor]]
 Osserviamo che se $(x_{0},y_{0})$ è punto critico $df_{(x_{0},y_{0})}(h,k)t$ si annulla
 ##### Osservazione
-Se $d^2f_{(x_{0},y_{0})}$ è [[#Forme Quadratiche |definito positIvo o negativo]], posso dedurre che $(x_{0},y_{0})$ è un [[Funzioni di due Variabili Reali#Estremanti Locali|estremante locale]]
+Se $d^2f_{(x_{0},y_{0})}$ è [[#Forme Quadratiche |definito positivo o negativo]], posso dedurre che $(x_{0},y_{0})$ è un [[Funzioni di due Variabili Reali#Estremanti Locali|estremante locale]]
 
 ---
 >[!info] Teorema

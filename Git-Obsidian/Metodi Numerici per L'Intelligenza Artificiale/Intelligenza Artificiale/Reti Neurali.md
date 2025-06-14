@@ -66,7 +66,7 @@ Un filtro (*kernel*) $h$ (piccola maschera $2D$ di pesi di dimensione $F\times F
 >[!summary] Composizione
 
 Una `CNN` tradizionale è composta da un *insieme di layer sequenziali*:
-- Inizialmente una serie di ***Convolution Layers*** chiamati *Pooling Layers* (*Feature Extractor*).
+- Inizialmente una serie di ***Convolution Layers*** (*Feature Extractor*).
 	- Hanno il compito di ridurre la dimensionalità del volume di input.
 
 *Flatten layer*

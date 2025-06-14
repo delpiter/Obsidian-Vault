@@ -91,3 +91,15 @@ Un minimo ritardo di transito è ***sempre presente***
 >Usato principalmente nelle applicazioni ***real-time***
 >- Necessità di *basso ritardo e jitter*
 
+##### Proprietà
+>[!info] Affidability
+>Probabilità di Errore o perdita delle informazioni.
+
+>[!cite] Fairness
+>Uniformità delle prestazioni.
+
+>[!Jitter]
+>Variazioni del ritardo nella consegna delle informazioni.
+
+>[!missing] Delay
+>Ritardo nella consegna delle informazioni.

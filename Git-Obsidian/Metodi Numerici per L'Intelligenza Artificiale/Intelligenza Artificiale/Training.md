@@ -364,7 +364,7 @@ f(x)=0.1/(1+0.5*x)
 >***Adagrad*** adatta il *Learning Rate* ai parametri, eseguendo aggiornamenti più **grandi** per i parametri *poco frequenti* e aggiornamenti più **piccoli** per quelli *frequenti*.
 
 $$
-s_{j}^{(k)}=s_{j}^{(k+1)}+(\nabla C(w_{j}^{(k)}))^{2}
+s_{j}^{(k)}=s_{j}^{(k-1)}+(\nabla C(w_{j}^{(k)}))^{2}
 $$
 $$
 w^{(k+1)}_{j}=w_{j}^{(k)}-\displaystyle{\frac{\eta}{\sqrt{ s_{j^{(k)}+\varepsilon} }}}\nabla C(w_{j}^{(k)})
@@ -406,14 +406,10 @@ $$
 s_{j}^{(k)}=\beta_{2} s_{j}^{(k-1)}+(1-\beta_{2})(\nabla C(w_{j}^{(k)}))^{2}
 $$
 
-> $v^{0}=0$ e $s^{0}=0$ sono *sbilanciati*, per compensare, si usano le seguenti normalizzazioni:
-
-$$
-\hat{v}_{j}^{(k)}=\displaystyle{\frac{v_{j}^{(k)}}{1-\beta_{1}^{k}}} \qquad 
-\hat{s}_{j}^{(k)}=\displaystyle{\frac{s_{j}^{(k)}}{1-\beta_{2}^{k}}}
-$$
 
 L'equazione di aggiornamento diventa:
 $$
 w_{j}^{(k+1)}=w_{k}^{(k)}-\frac{\eta}{\sqrt{ \hat{s}_{j}^{(k)}+\varepsilon }}\hat{v}_{j}^{(k)}
 $$
+
+**ADAM** adatta in modo dinamico il learning rate per ciascun parametro del modello utilizzando le ***stime del momentum*** del *primo e del secondo grado*.

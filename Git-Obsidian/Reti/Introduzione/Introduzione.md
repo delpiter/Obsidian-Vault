@@ -57,10 +57,10 @@ Le telecomunicazioni utilizzano ***canali di comunicazione***
 
 >[!todo] Punto Multipunto
 >Un nodo può comunicare con tanti altri nodi
-> #addLink ***Broadcast***
+> [[Servizi#Secondo il Numero di Sorgente/Destinatari|Broadcast]]
 > - Un nodo trasmette allo stesso tempo a ***tutti i nodi della rete***
 >
-> #addLink ***Multicast***
+> [[Servizi#Secondo il Numero di Sorgente/Destinatari|Multicast]]
 > - Un nodo trasmette allo stesso tempo ad un ***sottoinsieme dei nodi***
 
 ## Rete di Accesso

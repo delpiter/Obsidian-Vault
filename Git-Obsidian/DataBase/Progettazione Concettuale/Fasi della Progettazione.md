@@ -66,7 +66,8 @@
     <td class="tg-0lax">Partecipante</td>
   </tr>
 </tbody></table>
-- _Esempio di Glossario dei Termini_
+
+- *Esempio di Glossario dei Termini*
 
 >[!info] Tabella delle Operazioni
 >Le *specifiche dei requisiti* riguardano anche le ***operazioni*** da effettuare sui dati e la ***frequenza*** con cui devono essere eseguite.

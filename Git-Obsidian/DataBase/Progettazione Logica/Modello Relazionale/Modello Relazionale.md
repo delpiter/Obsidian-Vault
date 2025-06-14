@@ -35,7 +35,7 @@
 >Ogni attributo dispone di un ***dominio*** che definisce l'insieme dei valori *validi per quell'attributo*
 
 #### Relazione
->Si indichi con $dom(A)$ il ***dominio*** dell'attributo $A$ e si consideri un insieme di attributi $x=\{ A_{1},A_{2},\dots,A_{n} \}$
+>Si indichi con $dom(A)$ il ***dominio*** dell'attributo $A$ e si consideri un insieme di attributi $X=\{ A_{1},A_{2},\dots,A_{n} \}$
 
 >[!summary] Tupla
 >Una **tupla** su $X$ è una *funzione* che associa a ogni $A_{i}\in X$ un valore di $dom(A_{i})$

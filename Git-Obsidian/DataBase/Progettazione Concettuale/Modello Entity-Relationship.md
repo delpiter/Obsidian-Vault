@@ -160,7 +160,7 @@ Se la ***cardinalità massima*** è $n$
 
 ##### Associazioni
 >[!definizione] Definizione
->I ***vincoli di cardinalità di associazioni*** sono coppie di valori $(min-card, max-card)$ che vengono specificate per *ogni partecipazione* di entità ad un'associazione e descrivono **numero minimo** e **numero massimo** di occorrenze di relazione a cui una entità può partecipare
+>I ***vincoli di cardinalità di associazioni*** sono coppie di valori $(\min-card, \max-card)$ che vengono specificate per *ogni partecipazione* di entità ad un'associazione e descrivono **numero minimo** e **numero massimo** di occorrenze di relazione a cui una entità può partecipare
 
 >[!example] Esempio
 
@@ -180,17 +180,17 @@ Se i *vincoli di cardinalità* per un’entità $E$ relativamente a un’associa
 
 >[!abstract] Sulla base della cardinalità minima
 >***Opzionale***
->- Se $min-card(E, A) = 0$
+>- Se $\min-card(E, A) = 0$
 >
 >***Obbligatoria***
->- Se $min-card(E, A)>0$
+>- Se $\min-card(E, A)>0$
 
 >[!hint] Sulla base della cardinalità massima
 >***A valore singolo***
->- Se $max-card(E, A) = 1$
+>- Se $\max-card(E, A) = 1$
 >
 >***A valore multiplo***
->- Se $max-card(E, A)>1$
+>- Se $\max-card(E, A)>1$
 
 
 #### Identificatori
@@ -203,7 +203,7 @@ Se i *vincoli di cardinalità* per un’entità $E$ relativamente a un’associa
 
 >[!warning] Attenzione
 >***Deve*** valere:
->$$min-card(A, B) = max-card(A, B) = 1$$
+>$$\min-card(A, B) = \max-card(A, B) = 1$$
 
 Ogni entità deve avere ***almeno un identificatore***, ma ne può avere ***più di uno***
 - In fase di *progettazione logica*, uno di essi sarà scelto come [[Vincoli di Integrità#Chiavi|chiave primaria]], per gli altri si dovrà comunque imporre un **vincolo di unicità**
@@ -267,8 +267,13 @@ Le proprietà di $E$ sono *ereditate* da $E_{1},E_{2},\dots$
 >	- Es. Propedeuticità degli esami.
 
 In fase di progettazione bisogna fornire un'ulteriore documentazione appropriata per consentire di affrontare correttamente le fasi successive di sviluppo
-## BUSINESS RULES
 
-### 2 Tipi
-- **Regole di Vincolo** → `<Concetto> DEVE / NON DEVE <ESPRESSIONE SUL CONCETTO>`
-- **Regole di Derivazione** → `<Concetto> SI OTTIENE <ESPRESSIONE SUL CONCETTO>`
+> È possibile rimediare a questo problema tramite ***Business Rules***:
+
+2 Tipi:
+- **Regole di Vincolo**
+`<Concetto> DEVE / NON DEVE <ESPRESSIONE SUL CONCETTO>`
+
+- **Regole di Derivazione**
+
+`<Concetto> SI OTTIENE <ESPRESSIONE SUL CONCETTO>`

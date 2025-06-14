@@ -537,3 +537,5 @@ $$
 La scelta della tolleranza $\varepsilon$ nel ***criterio d’arresto*** viene fatta considerando la *percentuale d’errore* da cui sono affetti i *dati iniziali*.
 La scelta del tipo di [[Norma]], dipende dallo specifico problema in esame; 
 - *Norme comunemente usate* sono la norma $\infty$ e la norma $2$.
+
+

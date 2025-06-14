@@ -94,4 +94,3 @@ Dalla definizione di $\Lambda_{n}$ si vede che la ***scelta dei nodi di interpol
 >$$\Lambda_{n}\approx \frac{2}{n}\log_{e}(n)$$
 
 > Se vengono scelti *gradi* $n$ **troppo elevati** l'interpolazione polinomiale risulta ***sensibile alle perturbazioni sui dati***
-

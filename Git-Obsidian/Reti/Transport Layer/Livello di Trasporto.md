@@ -28,4 +28,4 @@ Il numero di porta serve a **distinguere** quale *applicazione* all'interno dell
 >Le ***porte*** da $0$ a $1023$ ($[0,2^{10}-1]$) sono le ***well-known ports***.
 >Sono le *porte* usate dai *processi di sistema* per ricevere ***servizi vastamente usati***.
 
-[List of TCP and UDP port numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_number)
+[List of TCP and UDP port numbers](https://en.wikipedia.org/wiki/List_of_TCP_and_UDP_port_numbers)

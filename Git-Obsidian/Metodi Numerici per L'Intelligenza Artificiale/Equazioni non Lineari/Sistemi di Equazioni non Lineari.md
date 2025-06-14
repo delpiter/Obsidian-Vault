@@ -148,6 +148,10 @@ $$
 $$
 \cancel{ J^{-1}(X_{k})J(X_{k}) }(X-X_{k})=-J^{-1}(X_{k})F(X_{k})
 $$
+- E si determina il procedimento iterativo:
+
+$$X_{k+1}-X_{k}=-J^{-1}(X_{k})F(X_{k})$$
+
 >[!hint] Osservazione
 >Possiamo notare che $-J^{-1}(X_{k})F(X_{k})$ è la soluzione del sistema lineare
 >$$J(X_{k})s_{k}=-F(X_{k})$$
@@ -169,9 +173,9 @@ $$
 	\end{algorithmic}
 	\end{algorithm}
 ```
+
 >[!help] Convergenza
 >È un metodo a [[Ordine di Convergenza#Convergenza Locale e Globale|convergenza locale]] e [[Ordine di Convergenza#Ordini|ordine di convergenza]] *quadratico*.
-
 #### Esempio
 >[!example] Esempio 1
 >Calcolare il punto di intersezione tra il cerchio di coordinate $x^2_{1}+x^2_{2}-9$ e la retta $x_{1}+x_{2}=3$
@@ -285,19 +289,23 @@ $$
 
 Consideriamo il ***polinomio di Taylor*** di grado 1 bivariato centrato in un intorno del punto $X_{k}$
 - $P_1(x_1, x_2)$
+
 $$
 x_3 = 
 \displaystyle\frac{\partial f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1} 
 + \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1^2}(x_1 - x_1^{(k)}) 
 + \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_1 \partial x_2}(x_2 - x_2^{(k)})
 $$
+
 - $Q_1(x_1, x_2)$
+
 $$
 x_3 = 
 \displaystyle\frac{\partial f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2} 
 + \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2 \partial x_1}(x_1 - x_1^{(k)}) 
 + \displaystyle\frac{\partial^2 f\left(x_1^{(k)}, x_2^{(k)}\right)}{\partial x_2^2}(x_2 - x_2^{(k)})
 $$
+
 
 > Tali polinomi rappresentano il piano che meglio approssima ciascuna delle due componenti del gradiente in un intorno del punto $X_{k}$
 

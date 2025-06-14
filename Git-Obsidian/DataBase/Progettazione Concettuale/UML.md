@@ -79,35 +79,35 @@ Dal punto di vista della modellazione è importante caratterizzare queste corris
 #### Vincoli di Cardinalità
 >Sia $A$ un'associazione fra $C_{1}$ e $C_{2}$
 
->[!help] $min-card(C_{1}, A)$
+>[!help] $\min-card(C_{1}, A)$
 >Cardinalità minima di $C_{1}$ in $A$
 >È il ***numero minimo di corrispondenze*** nell'associazione $A$ alle quali ogni istanza di $C_{1}$ deve partecipare
 
->[!help] $max-card(C_{1}, A)$
+>[!help] $\max-card(C_{1}, A)$
 >Cardinalità massima di $C_{1}$ in $A$
 >È il ***numero massimo di corrispondenze*** nell'associazione $A$ alle quali ogni istanza di $C_{1}$ può partecipare
 
 ###### Vincoli di Cardinalità Minima
 >[!hint] Partecipazione Opzionale
->$min-card(C_{1}, A)=0$
+>$\min-card(C_{1}, A)=0$
 >Alcuni elementi di $C_{1}$ ***possono non essere associati*** tramite $A$ a elementi di $C_{2}$
 
 >[!abstract] Partecipazione Obbligatoria
->$min-card(C_{1}, A)>0$
+>$\min-card(C_{1}, A)>0$
 >Ad ogni elemento di $C_{1}$ ***deve essere associato*** tramite $A$, almeno un elemento di $C_{2}$
 
 ##### Tipi di Associazioni
 >[!summary] One-to-One
->$max-card(C_{1}, A) = 1$
->$max-card(C_{2}, A) = 1$
+>$\max-card(C_{1}, A) = 1$
+>$\max-card(C_{2}, A) = 1$
 
 >[!example] One-to-Many
->$max-card(C_{1}, A) = n$
->$max-card(C_{2}, A) = 1$
+>$\max-card(C_{1}, A) = n$
+>$\max-card(C_{2}, A) = 1$
 ><u>oppure</u>
->$max-card(C_{1}, A) = 1$
->$max-card(C_{2}, A) = n$
+>$\max-card(C_{1}, A) = 1$
+>$\max-card(C_{2}, A) = n$
 
 >[!tip] Many-to-Many
->$max-card(C_{1}, A) = n$
->$max-card(C_{2}, A) = m$
+>$\max-card(C_{1}, A) = n$
+>$\max-card(C_{2}, A) = m$

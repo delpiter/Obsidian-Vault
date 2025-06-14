@@ -6,7 +6,7 @@
 
 Il protocollo consiste in due ***connessioni***:
 - Dalla [[Livello di Trasporto#Numero di Porta|porta]] $21$ viaggiano i *comandi*.
-- Dalla **porta** $21$ viaggiano i *file*/*dati*.
+- Dalla **porta** $20$ viaggiano i *file*/*dati*.
 
 ### Connessione di Controllo
 >[!help] Idea

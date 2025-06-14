@@ -104,7 +104,7 @@ title:
 xLabel: 
 yLabel: 
 bounds: [-1,2,-10,15]
-disableZoom: false
+disableZoom: true
 grid: true
 ---
 f(x)=x^3+4x^2-10
@@ -117,7 +117,7 @@ j(x)=17.694x - 21.389
 >Finché non risulta verificato il ***criterio di arresto***:
 ```pseudo
 	\begin{algorithm}
-	\caption{Algo Caption}
+	\caption{Regula Falsi}
 	\begin{algorithmic}
 \State $ \text{Poni}x_{k+1}=
 a_{k}-f(a_{k})\cdot \displaystyle{\frac{b_{k}-a_{k}}{f(b_{k})-f(a_{k})}}$
