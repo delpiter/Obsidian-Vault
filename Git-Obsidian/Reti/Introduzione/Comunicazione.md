@@ -1,11 +1,35 @@
-## Tipi di Comunicazione
+## Funzioni della Rete
 ---
-### Connection Oriented
->[!caution] Concetto
->Una modalità di fornire un servizio si dice ***connection oriented*** quando si stabilisce una **connessione**.
->Una *connessione* è una ***associazione logica*** fra due o più sistemi al fine di trasferire informazioni.
+>[!summary] Funzioni Principali
+>Di seguito le funzioni principali della rete:
+>- **Trasmissione**.
+>- **Commutazione**.
+>- **Segnalazione**.
+>- **Gestione**.
 
-#### Fasi della Comunicazione
+### Trasmissione
+>[!definizione] 
+>La trasmissione consiste nel ***trasferimento fisico del segnale*** da punto a punto o da un punto a molti punti.
+
+### Commutazione
+>[!definizione]
+>***Instradamento*** delle informazioni all’interno della rete al fine di permettere la *comunicazioni fra punti terminali* per soddisfare le richieste degli utenti.
+
+> Tecniche di Commutazione:
+
+#### Commutazione di Circuito
+
+> Per le reti telefoniche
+
+La rete crea un canale di comunicazione dedicato fra due terminali che vogliono comunicare:
+- Detto ***circuito di commutazione***.
+
+Il circuito è **riservato** ad uso esclusivo dei terminali *chiamante* e *chiamato*.
+
+Esiste un ritardo iniziale dovuto al tempo per **instaurare** il circuito
+- Dopo di ché la rete garantisce la [[Servizi#Trasparenza Temporale|trasparenza temporale]].
+
+##### Fasi della Comunicazione
 >[!abstract] Instaurazione della Connessione
 >Fatto tramite lo scambio di opportune ***informazioni iniziali***
 
@@ -20,8 +44,25 @@ I due terminali si ***scambiano informazioni*** utilizzando il circuito dedicato
 
 Al termine del dialogo il circuito deve essere rilasciato al fine di poter essere usato per altre chiamate.
 
-### Connectionless
->[!abstract] Concetto
+#### Commutazione di Pacchetto
+> Per rete telegrafica o reti di calcolatori.
+
+>[!tldr] Idea
+>Trasporta informazioni in ***forma numerica***.
+
+Le informazioni di utente sono *strutturate in messaggi* unitamente ad opportune informazioni di **segnalazione**.
+
+> Commutazione di *Pacchetto*
+- I messaggi vengono suddivisi in sotto-blocchi di lunghezza massima prefissata, detti ***pacchetti***:
+
+
+> Tecniche di commutazione
+
+>[!caution] Connection Oriented
+>Una modalità di fornire un servizio si dice ***connection oriented*** (*circuito virtuale*)quando si stabilisce una **connessione**.
+>Una *connessione* è una ***associazione logica*** fra due o più sistemi al fine di trasferire informazioni.
+
+>[!abstract] Connectionles
 >In un trasferimento di dati di tipo ***connectionless*** non è necessario instaurare alcuna connessione prima di effettuare il *trasferimento dei dati*.
 >- Per ogni *accesso al servizio* vengono fornite **tutte le informazioni necessarie** per il trasferimento dei dati.
 >

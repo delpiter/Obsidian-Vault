@@ -17,7 +17,7 @@ I protocolli applicativi devono definire:
 ## API dello Transport Layer
 ---
 >[!abstract] Socket
->Il ***socket*** è l'interfaccia che le applicazioni usano per interagire con i protocolli dello [[Livello di Trasporto|transport layer]].
+>Il ***socket*** è l'interfaccia che le applicazioni usano per interagire con i protocolli del [[Livello di Trasporto|transport layer]].
 
 Sono forniti dal sistema operativo in esecuzione sull'**host** e accessibile tramite primitive.
 

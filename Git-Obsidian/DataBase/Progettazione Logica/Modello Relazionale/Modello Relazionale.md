@@ -79,7 +79,3 @@
 > è un insieme di ***istanze di relazioni***:
 > $$r=\{ r_{1},r_{2},\dots,r_{n} \}$$
 > con $r_{i}$ istanza di relazione su $R_{i}(X_{i})$
-
-## Forme Normali
-
-Le relazioni devono rispettare determinate proprietà matematiche per garantire coerenza e minimizzazione della ridondanza.

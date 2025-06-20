@@ -21,7 +21,7 @@ Un $B$-Tree $\tau$ della classe $\tau(g,h)$ ha le seguenti *proprietà*:
 ### Organizzazione
 > Un $B$-Tree è organizzato a *nodi*.
 
-1. Ogni nodo intermedio o foglia memorizza tra $g$ e $2g$ *chiavi*, la radice può contenere da $1$ a $2g$ chiavi -> Può avere da $0$ a $2g+10$ figli.
+1. Ogni nodo intermedio o foglia memorizza tra $g$ e $2g$ *chiavi*, la radice può contenere da $1$ a $2g$ chiavi -> Può avere da $0$ a $2g+1$ figli.
 2. Un nodo intermedio con $l$ *chiavi* ($g\leq l\leq2g$) ha $l+1$ puntatori ad **altrettanti nodi figli**.
 3. In ogni nodo le chiavi sono memorizzate in ***ordine decrescente***.
 
@@ -114,11 +114,11 @@ Se la chiave $y$ da cancellare si trova in una foglia $L$ si *rimuove*.
 - Non particolarmente adatto per ***elaborazioni di tipo sequenziale***, nell'ordine dei valori di chiavi e nel reperimento di chiave in un intervallo dato.
 - La **ricerca del successore** di un valore di chiave può comportare la scansione di molti nodi.
 
-### B*-Tree
+### $B^{*}$-Tree
 >[!info] $B^{*}$-Tree
 >Il $B^{*}$-Tree è una variante del $B$-Tree in cui l'utilizzazione dei nodi è almeno pari a $\frac{2}{3}$ invece di $\frac{1}{2}$.
 
-### B+-Tree
+### $B^{+}$-Tree
 >[!info] $B^{+}$-Tree
 >In un $B$-Tree, i valori di chiave svolgono una *duplice funzione*:
 >- **Separatori**.
@@ -134,7 +134,7 @@ Le foglie contengono **tutti i valori di chiave**
 >È possibile che un **separatore** *non sia un valore di chiave presente* nel file dati.
 
 Nel caso di chiavi alfanumeriche la scelta dei separatori è **particolarmente importante**.
-- Facendo uso di separatori di lunghezza ridotta, si *risparmia spazio* e d eventualmente si *riduce l'altezza dell'albero*.
+- Facendo uso di separatori di lunghezza ridotta, si *risparmia spazio* ed eventualmente si *riduce l'altezza dell'albero*.
 
 ##### Ordine
 >In un $B^{+}$-tree l’ordine è un concetto ancora significativo solo se si fa uso di ***separatori di lunghezza fissa***.

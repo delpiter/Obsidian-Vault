@@ -2,12 +2,14 @@
 >>[!help] Primaria vs Secondaria
 >>*Primaria*:
 >>- Definisce un criterio di allocazione dei dati nei file.
+>>
 >>*Secondaria*:
 >>- Rappresenta un ulteriore metodo di accesso all’organizzazione primaria.
 >
 >>[!abstract] Statica vs Dinamica
 >>*Dinamica*:
 >>- Si adatta alla mole effettiva dei dati.
+>>
 >>*Statica*:
 >>- Prevede fasi di riorganizzazione globale a *fronte di variazioni*.
 >
@@ -21,10 +23,13 @@
 
 > ***Chiave Primaria***
 - Restituisce al più un solo record.
+
 > ***Chiave Secondaria***.
 - Restituisce 0 o più record.
+
 > ***Intervallo***
 - Restituisce 0 o più record.
+
 > ***Varie Combinazioni***
 - 0 o più record.
 

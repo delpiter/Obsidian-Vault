@@ -1,7 +1,5 @@
 ## Data Manipulation Language
 ---
-> TODO
-
 ### Operatori
 #### SELECT
 > Le operazioni di *interrogazione* vengono implementate dal costrutto `{sql icon} SELECT` 

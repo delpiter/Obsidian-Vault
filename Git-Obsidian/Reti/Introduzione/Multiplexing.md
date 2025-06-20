@@ -39,7 +39,6 @@ Si può realizzare utilizzando:
 >[!todo] Unframed
 >I singoli *slot* si susseguono ***senza una struttura predefinita***.
 >- Occorre un sistema di sincronizzazione di *slot*
-### Frequency Division Multiplexing
 
 ## Assegnazione della Banda
 ---

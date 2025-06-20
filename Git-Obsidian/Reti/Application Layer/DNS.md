@@ -183,3 +183,23 @@ packet-beta
 >***TTL***:
 >- **Time To Leave**
 >- Durata in secondi del tempo per il quale la risposta può essere mantenuta in memoria
+
+### Tipi di Richiesta e Risposta
+>Tipi:  
+
+>[!info] A
+
+Restituisce un indirizzo [[Protocollo IP|IPv4]] a $32$ `bit` corrispondente ad un nome simbolico indicato nella richiesta
+
+>[!summary] NS
+
+Indica un server `DNS` **autorevole** per il nome di dominio inserito nella richiesta
+
+>[!question] CNAME
+
+Permette di collegare un *nome* `DNS` ad un altro. 
+- La risoluzione continuerà con il nuovo nome indicato dal record `CNAME`. 
+
+>[!check] MX
+
+Collega un nome di dominio ad ***una lista di server di posta*** autorevoli per quel dominio.

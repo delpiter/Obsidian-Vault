@@ -121,6 +121,8 @@ title: "TCP Packet"
 >[!check] Three Way Handshake
 >L'*instaurazione* di una connessione `TCP` avviene mediante **scambio di segmenti** con la procedura detta "***three way handshake***".
 
+^bd3d55
+
 >[!question] Request
 
 La procedura consiste in una ***prima fase*** in cui la sorgente $A$ inoltra un segmento di **richiesta di connessione**,
@@ -154,6 +156,7 @@ Il segmento di risposta `ACK` è caratterizzato da:
 - `AN`$=y+1$.
 
 ![[ThreeWayHandshake.png]]
+
 
 La procedura di selezione dell'`ISN` è di tipo ***pseudocasuale***.
 - Si basa su un *contatore interno* a ogni host che **conta ciclicamente** tra $0$ e $2^{32}-1$.

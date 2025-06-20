@@ -184,3 +184,26 @@ Chiamiamo ***burst*** una sequenza di `bit` lunga $k$ i cui bit intermedi sono *
 >- $k-1<r$: L'errore viene **sempre rilevato**.
 >- $k-1=r$: Si ha resto nullo se $E(x)=G_{r}(x)$ (probabilità $\frac{1}{2^{r-1}}$)
 >- $k-1>r$: Il resto ha **valore casuale** e l'errore sfugge se il resto è nullo ($r$ `bit` a $0$)
+
+#### Cyclic Redundancy Check
+>[!info] `CRC`
+>Il `CRC` (***C***iclic ***R***edundancy ***C***heck) è un codice adatto a riscontrare errori di tipo "*burst*", ovvero errori che **compromettono più bit consecutivi**.
+
+Anche chiamato ***codice polinomiale*** in quanto i `bit` di dati da controllare possono essere considerati come *coefficienti* di un polinomio che chiameremo $M(x)$.
+
+>Per calcolare il `CRC`, oltre $M(x)$, abbiamo bisogno di un **polinomio detto generatore** che chiameremo $G(x)$ e che dovrà rispettare alcune regole:
+- Deve essere ***noto*** sia al mittente che al destinatario.
+- I `bit` di ordine più **alto** e più **basso** devono essere $1$.
+- Il ***grado*** di $M(x)$ deve essere maggiore di quello di $G(x)$.
+
+
+>[!done] Considerazioni
+
+- Il `CRC` è progettato per rilevare sia ***errori singoli*** che ***burst*** di errori grazie alla divisione polinomiale.
+- $G(x)$ ben scelto *massimizza* la capacità del `CRC` di rilevare errori comuni.
+- Polinomi più **lunghi** migliorano l'*affidabilità* ma aumentano il calcolo richiesto.
+
+>[!question] Perché il `CRC` viene usato in protocolli come Ethernet e non il checksum semplice?
+
+Il ***checksum*** usa l’*addizione*, che non rileva errori di bit invertiti con la stessa somma.
+- Il `CRC` invece usa *operazioni binarie* più **resistenti** agli errori.

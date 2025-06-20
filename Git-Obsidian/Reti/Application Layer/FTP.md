@@ -21,7 +21,7 @@ Il **server** utilizza la porta $20$ per la *connessione dati*.
 
 ### Funzionamento
 >[!abstract] Connessione
->Per iniziare il trasferimento, viene instaurata una connessione tramite una sorta di #addLink ***three-way-handshake***.
+>Per iniziare il trasferimento, viene instaurata una connessione tramite una sorta di  [[TCP#^bd3d55|three-way-handshake]].
 
 ![[FTP.png|450]]
 
