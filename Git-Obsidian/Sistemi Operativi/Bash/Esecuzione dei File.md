@@ -98,7 +98,7 @@ Il comando `source`, infatti, non esegue direttamente l'eseguibile
 	- ***Potenzialmente pericoloso***
 
 ### Passaggio di argomenti ad un eseguibile
-> `chomod u+x /home/pinacoteca/example.exe`
+> `chmod u+x /home/pinacoteca/example.exe`
 
 La prima parola: `chmod` è il nome dell'***eseguibile*** o *argomento* di *indice* $0$
 

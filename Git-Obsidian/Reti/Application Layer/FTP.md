@@ -1,7 +1,7 @@
 ## File Transfer Protocol
 ---
 >[!info]
->I'**LFP** \[RFC959\]è un protocollo di rete utilizzato per il ***trasferimento di file*** tra un *client* e un *server* su una *rete*.
+>L'`FTP` \[RFC959\] è un protocollo di rete utilizzato per il ***trasferimento di file*** tra un *client* e un *server* su una *rete*.
 >Il protocollo regola la **comunicazione** tra due sistemi terminali dei quali uno agisce da client e uno da server.
 
 Il protocollo consiste in due ***connessioni***:

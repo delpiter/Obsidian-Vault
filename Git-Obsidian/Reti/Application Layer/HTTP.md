@@ -146,6 +146,22 @@ I metodi definiti dal protocollo **HTTP** sono otto:
 >- **Codice di Stato**
 >- **Frase**
 
+```mermaid
+---
+title: "HTTP Response Packet"
+config:
+  packet:
+    showBits: false
+---
+packet-beta
+	0-5: "Method"
+	6: "SP"
+	7-15: "Status-Code"
+	16: "SP"
+	17-29: "Reason"
+	30: "CR"
+	31: "LF"
+```
 ##### Codici di Stato
 > Il codice è rappresentato da un numero a *tre cifre* delle quali la prima indica la ***classe della risposta***.
 

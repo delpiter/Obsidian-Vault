@@ -124,6 +124,42 @@ Per funzionare il protocollo richiede:
 
 > ***Request***:
 
+```mermaid
+---
+title: "SIP Request Packet"
+config:
+  packet:
+    showBits: false
+---
+packet-beta
+	0-5: "Method"
+	6: "SP"
+	7-15: "Request-URI"
+	16: "SP"
+	17-29: "SIP-Version"
+	30: "CR"
+	31: "LF"
+	32-38: "Header-Name"
+	39: ":"
+	40: "SP"
+	41-61: "Header-Value"
+	62: "CR"
+	63: "LF"
+	64-95: "..."
+	96-102: "Header-Name"
+	103: ":"
+	104: "SP"
+	105-125: "Header-Value"
+	126: "CR"
+	127: "LF"
+	128: "CR"
+	129: "LF"
+	130-159: ""
+	160-191: ""
+	192-223: "Body"
+	224-255: ""
+```
+
 >[!abstract] Start Line
 >***Request-Line***
 >Contiene informazioni *essenziali* per il messaggio.
@@ -146,15 +182,53 @@ Per funzionare il protocollo richiede:
 
 > ***Response***:
 
+```mermaid
+---
+title: "SIP Request Packet"
+config:
+  packet:
+    showBits: false
+---
+packet-beta
+	0-5: "Method"
+	6: "SP"
+	7-15: "Status-Code"
+	16: "SP"
+	17-29: "Reason"
+	30: "CR"
+	31: "LF"
+	32-38: "Header-Name"
+	39: ":"
+	40: "SP"
+	41-61: "Header-Value"
+	62: "CR"
+	63: "LF"
+	64-95: "..."
+	96-102: "Header-Name"
+	103: ":"
+	104: "SP"
+	105-125: "Header-Value"
+	126: "CR"
+	127: "LF"
+	128: "CR"
+	129: "LF"
+	130-159: ""
+	160-191: ""
+	192-223: "Body"
+	224-255: ""
+```
+
 >[!abstract] Start Line
 >***Status-Line***
 >Contiene la versione **SIP** e lo status-code.
+>- Contiene anche una descrizione testuale dello status code
 
 >[!cite] Header
 >Specifica le ***intestazioni*** del messaggio (*transaction*, *dialog*, ...).
 
 >[!tl;dr] Body
->Contenuto del messaggio **SIP**
+>Contenuto del messaggio **SIP**.
+>
 >>[!fail] Generalmente omesso
 
 

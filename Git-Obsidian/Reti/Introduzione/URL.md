@@ -27,17 +27,30 @@ L'***host*** è il sistema terminale dove la risorsa web è ***immagazzinata***.
 - Espresso attraverso il nome del dominio nella gerarchia [[DNS]], oppure come [[Protocollo IP|Indirizzo IP]] numerico.
 
 ### Percorso
->[!help] http\:\/\/www\.azienda\.com ***/news/***
+>[!help] http\:\/\/www\.azienda\.com***/news/***
 
 Il ***percorso*** identifica il percorso dove si trova la risorsa che si sta ricercando.
 
 ### Parametri
 >È possibile inserire parametri alla fine dell'`URL`.
 
->[!help] http\:\/\/www\.azienda\.com/news/***?p1=v1&p2=v2***
+>[!help] http\:\/\/www\.azienda\.com/news***?p1=v1&p2=v2***
 
 I ***parametri*** sono inseriti dopo un punto *di domanda* messo alla fine del percorso.
 - Si possono avere più parametri, ciascuno è *separato dal carattere*: `&`
+
+### Fragment
+>[!help] http\:\/\/www\.azienda\.com/news?p1=v1&p2=v2***\#t=value***
+> Il ***fragment*** è una stringa di caratteri che si riferisce a una *risorsa subordinata* ad un'altra risorsa primaria.
+> - La risorsa primaria è identificata dall'**URI** e il frammento punta alla risorsa subordinata.
+
+I frammenti sono inseriti dopo il **carattere** `#` alla fine del percorso o dopo i parametri.
+- È una informazione riservata al client, se appare in una richiesta, viene ignorato.
+
+> Alcuni siti utilizzano i fragment per passare *ulteriori informazioni extra*.
+
+Il sito di `youtube` è in grado di riconoscere il fragment `#t=3m25s`
+- Indica il minutaggio del video.
 
 >[!info] Codifica Percentuale
 >Se si vuole inserire in un *parametro* un **carattere speciale** come `#` o `&`, è necessario utilizzare la ***codifica percentuale***.

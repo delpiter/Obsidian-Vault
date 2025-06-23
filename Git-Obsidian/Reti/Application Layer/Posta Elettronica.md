@@ -2,8 +2,8 @@
 
 >[!Caution] Fase di Invio
 >La ***fase di invio*** di una *e-mail* è controllata tramite il ***SMTP***.
->I serve ricevono le *e-mail* dai clienti.
->- I server sono in grado di fare da *ralay*.
+>I server ricevono le *e-mail* dai clienti.
+>- I server sono in grado di fare da *relay*.
 
 ![[Send-Email.png]]
 
