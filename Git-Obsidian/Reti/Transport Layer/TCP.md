@@ -127,7 +127,7 @@ title: "TCP Packet"
 
 La procedura consiste in una ***prima fase*** in cui la sorgente $A$ inoltra un segmento di **richiesta di connessione**,
 - *Connection Request* `CR`.
-verso la stazione $B$, specificando il numero iniziale di conteggio dei `byte ISN` che la stazione sceglie per il *flusso di uscita*. 
+verso la stazione $B$, specificando il numero iniziale di conteggio dei `byte ISN` (*Initial* Sequence Number) che la stazione sceglie per il *flusso di uscita*. 
 
 Il segmento `CR` è caratterizzato da:
 - `SYN=1`.
@@ -197,7 +197,8 @@ $$
 MSL< \displaystyle{\frac{2^{32}\cdot8}{C}}
 $$
 $C$ è la capacità della connessione.
-- $C=10\ Mbit /s \implies MSL=2min$
+- $C=10\ Mbit /s \implies$ Poco meno di $1h$ per consumare l'intero ciclo di numerazione.
+- $MSL=2min$ risulta adeguato.
 
 ### Rilascio della Connessione
 >[!cite] Chiusura

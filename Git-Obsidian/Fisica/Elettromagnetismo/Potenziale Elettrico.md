@@ -11,8 +11,10 @@ Consideriamo due [[Elettromagnetismo#Cariche Elettriche|cariche elettriche]] $Q$
 
 Consideriamo il lavoro
 $$
-\mathscr{L}=\int _{A}^B \vec{F}\cdot \text{d}\vec{l}=q_{0}\int _{A}^B \vec{E}\cdot\, \text{d}\vec{l} 
-$$- $q_{0}$ è costante quindi può "*uscire*" dall'integrale.
+\mathscr{L}=\int _{A}^B \vec{F}\cdot \text{d}\vec{l}=q_{0}\int _{A}^B \vec{E}\cdot\, \text{d}\vec{l}
+$$
+
+-  $q_{0}$ è costante quindi può "*uscire*" dall'integrale.
 
 Il campo è ***radiale***, quindi la traiettoria è fatta di tratti infinitamente piccoli:
 - O radiali
@@ -61,7 +63,8 @@ $$
 
 $$
 V=\frac{U}{q_{0}}
-$$Quindi
+$$
+Quindi
 $$
 V=\frac{1}{4\pi\varepsilon_{0}}\sum_{i} \frac{q_{i}}{r_{i}}
 $$
@@ -101,8 +104,8 @@ $$
 ##### Superfici Equipotenziali
 > Le ***superfici equipotenziali*** (sulle quali si trova lo stesso valore di $V$), sono perpendicolari a $\vec{E}$ in ogni punto.
 
+![[SuperficiEquipotenziali.png|250]]
 
-![[SuperficiEquipotenziali.png|450]]
 - Del tutto analogo all'uso di [[Funzioni di due Variabili Reali#Curva di Livello|ISOIPSE]].
 ## Elettrostatica e Conduttori
 ---
@@ -123,7 +126,8 @@ Vicino alla superficie il campo $\vec{E}$ deve essere $\perp$ alla superficie
 
 > Considero la [[Flusso di un Campo Vettoriale#Lamina Piana Infinitamente Estesa|superficie gaussiana]], un cilindro con le basi localmente parallele alla superficie
 
-$$E_{\perp}=\frac{\sigma}{\varepsilon_{0}}$$
+$$E_{\perp}=\frac{\sigma}{\varepsilon_{0}}
+$$
 
 >[!info] Sfera
 >L'interno di un conduttore è tutto allo stesso potenziale.
