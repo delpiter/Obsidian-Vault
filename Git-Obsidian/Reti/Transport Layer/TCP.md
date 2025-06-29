@@ -67,7 +67,7 @@ title: "TCP Packet"
 
 > ***Checksum***:
 - Codice di controllo per la rilevazione di errori sul segmento `TCP`.
-- Calcolato applicando l'**Internet Checksum** allo *pseudo-header*.
+- Calcolato applicando l'[[Controllo dell'Errore#Internet Checksum|internet checksum]] allo *pseudo-header*.
 	- [[Protocollo IP|Indirizzi IP]] *Sorgente* e *destinazione*-
 	- Protocollo
 	- Lunghezza in `byte` del segmento.
@@ -203,6 +203,8 @@ $C$ è la capacità della connessione.
 ### Rilascio della Connessione
 >[!cite] Chiusura
 >La procedura di ***chiusura*** della connessione viene iniziata da *una delle due stazioni*.
+>Il `TCP` sceglie di realizzare una chiusura di tipo ***simplex***:
+>- Le due connessioni vengono rilasciate in modo ***indipendente***.
 
 >[!question] Request
 
@@ -213,11 +215,12 @@ dopo avere svuotato il proprio **buffer di trasmissione**.
 >[!caution] Acknowledgment
 
 La stazione $B$ invia un segmento `ACK` (`ACK=1`) di *riscontro*, informando l'applicazione della ***richiesta di chiusura***.
-- Una volta completato l'invio dei segmenti dati nel *proprio buffer*, la stazione $B$ emette a sua volta un segmento `DR` (`FIN=1`)
 
 >[!done] Close
 
-Infine, la stazione $A$ conclude la connessione con un segmento `ACK` (`ACK=1`).
+A questo punto la connessione da $A$ a $B$ si può considerare ***chiusa***.
+- La stazione $B$ può comunque continuare a inviare messaggi ad $A$.
+- Una volta completato l'invio dei segmenti dati nel *proprio buffer*, la stazione $B$ emette a sua volta un segmento `DR` (`FIN=1`)
 
 ![[TCPCloseConnection.png]]
 

@@ -59,7 +59,6 @@ L'unità di servizio è il ***pacchetto***.
 
 
 $\vartheta$ è il tempo richiesto dal servizio di un generico cliente.
-> Lunghezza del Pacchetto
 - $L$ Lunghezza del pacchetto in `bit`.
 -  $C$ capacità del canale in `bit`$/\sec$.
 $$\overline{\vartheta}=\frac{L}{C}$$
@@ -72,7 +71,7 @@ $$\overline{\vartheta}=\frac{L}{C}$$
 $$
 Il ruolo di $\mu$:
 - Può essere interpretato come la ***capacità massima del servitore***.
-	-Se $\overline{\vartheta}=0.5\sec$ il servitore al più **smaltirà** $\mu=2$ pacchetti$/\sec$.
+	- Se $\overline{\vartheta}=0.5\sec$ il servitore al più **smaltirà** $\mu=2$ pacchetti$/\sec$.
 
 Per il singolo servitore $\lambda_{s}^{\max}=\mu$
 

@@ -10,9 +10,9 @@ $$Asin(2\pi ft + \Phi)$$
 - $f$: Frequenza del segnale (*oscillazioni al secondo* - $Hz$)
 - $\Phi$: Fase del segnale
 
-<font color="CornflowerBlue">$$f(t)=3sin(3t+3)$$ </font>
-<font color="red">$$g(t) = 2sin(2t+2)$$ </font>
-<font color="green">$$z(t)= 5sin(t+5)$$</font>
+<font color="CornflowerBlue">$$f(t)=3\sin(3t+3)$$ </font>
+<font color="red">$$g(t) = 2\sin(2t+2)$$ </font>
+<font color="green">$$z(t)= 5\sin(t+5)$$</font>
 
 ```functionplot
 ---
@@ -20,7 +20,7 @@ title:
 xLabel: 
 yLabel: 
 bounds: [-10,10,-8,8]
-disableZoom: false
+disableZoom: true
 grid: true
 ---
 f(x)=3*sin(3*x+3)

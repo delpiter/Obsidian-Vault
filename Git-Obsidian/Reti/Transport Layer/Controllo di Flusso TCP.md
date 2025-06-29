@@ -158,7 +158,7 @@ Al superamento di una data soglia per il parametro `CW`, denominata *slow start 
 
 ##### Retransmission Time Out
 >[!info]
-> `RTO` *scade* quando un segmento non viene riscontrato oppure il relative `ACK` ***non giunge in tempo utile***.
+> `RTO` *scade* quando un segmento non viene riscontrato oppure il relativo `ACK` ***non giunge in tempo utile***.
 >>[!cite] Congestione
 >>Tale evento viene interpretato come indicatore di ***rete congestionata***.
 >
