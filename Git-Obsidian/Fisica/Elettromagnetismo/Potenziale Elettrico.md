@@ -21,7 +21,7 @@ Il campo è ***radiale***, quindi la traiettoria è fatta di tratti infinitament
 - O perpendicolari (Da ignorare perché $\cos\left( \frac{\pi}{2} \right)=0$)
 
 $$
-\mathscr{L}=q_{0}\int _{r_{a}}^{r_{b}} \displaystyle{\frac{q}{4 \pi\varepsilon_{0}r^2}\hat{r}}\cdot \, (\hat{r}\text{d}r)=\frac{q_{0}q}{4\pi\varepsilon_{0}}\int _{r_{a}}^{r_{b}} \, \text{d}x  
+\mathscr{L}=q_{0}\int _{r_{a}}^{r_{b}} \displaystyle{\frac{q}{4 \pi\varepsilon_{0}r^2}\hat{r}}\cdot \, (\hat{r}\text{d}r)=\frac{q_{0}q}{4\pi\varepsilon_{0}}\int _{r_{a}}^{r_{b}} \, \frac{\text{d}r}{r^{2}}  
 $$
 
 >[!done] Contano solo i tratti radiali
@@ -31,7 +31,7 @@ $$
 $$
 Quindi il lavoro vale:
 $$
-\mathscr{L}=\int _{a}^b \vec{F\cdot} \, \text{d}\vec{l} \frac{q_{0}q}{4\pi\varepsilon_{0}}\left( \frac{1}{r_{a}}-\frac{1}{r_{b}} \right)
+\mathscr{L}=\int _{a}^b \vec{F\cdot} \, \text{d}\vec{l}= \frac{q_{0}q}{4\pi\varepsilon_{0}}\left( \frac{1}{r_{a}}-\frac{1}{r_{b}} \right)
 $$
 
 >[!abstract] Per qualsiasi Traiettoria

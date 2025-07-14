@@ -5,7 +5,7 @@
 >Un segnale è ***Analogico*** quando i valori utili che lo rappresentano sono continui (*infiniti*) in un intervallo e non numerabili
 
 Un segnale molto semplice è la sinusoide:
-$$Asin(2\pi ft + \Phi)$$
+$$A\sin(2\pi ft + \Phi)$$
 - $A$: Ampiezza del segnale
 - $f$: Frequenza del segnale (*oscillazioni al secondo* - $Hz$)
 - $\Phi$: Fase del segnale
@@ -37,7 +37,7 @@ Le tre grandezze fondamentali sono ***sufficienti per caratterizzarla***
 
 Se ci focalizziamo su *ampiezza*, *fase* e *frequenza*, descrivere il segnale è molto più semplice.
 
-La funzione: $1.2sin(2\pi3t)+0.7sin(2\pi4t +1.4)$
+La funzione: $1.2\sin(2\pi3t)+0.7\sin(2\pi4t +1.4)$
 - ***Diventa***:
 ![[Spectrum.png]]
 

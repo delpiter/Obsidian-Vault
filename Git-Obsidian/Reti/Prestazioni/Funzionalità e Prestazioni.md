@@ -90,7 +90,7 @@ Per il singolo servitore $\lambda_{s}^{\max}=\mu$
 
 Si dimostra che il prodotto tra la frequenza di arrivo e il tempo medio di permanenza nel sistema, risulta uguale al *traffico*.
 $$
-A=\lambda\overline{\delta}
+A=\lambda\overline{\vartheta}
 $$
 
 Possiamo definire:

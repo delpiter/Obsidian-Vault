@@ -66,15 +66,15 @@ $$
 ## Funzioni Trigonometriche
 ---
 ### Seno e Coseno
-- $\lim\limits_{x\to \mp\infty}sin(x),cos(x) \implies \text{ Non esiste}$
-- $\lim\limits_{x\to c}sin(x),cos(x) =sin(c),cos(c)$
+- $\lim\limits_{x\to \mp\infty}\sin(x),\cos(x) \implies \text{ Non esiste}$
+- $\lim\limits_{x\to c}\sin(x),\cos(x) =\sin(c),\cos(c)$
 
 ### Tangente
-- $\lim\limits_{x\to \displaystyle{\frac{\pi}{2}}^-}tan(x)=+\infty$
-- $\lim\limits_{x\to \displaystyle{\frac{\pi}{2}}^+}tan(x)=-\infty$
+- $\lim\limits_{x\to \displaystyle{\frac{\pi}{2}}^-}\tan(x)=+\infty$
+- $\lim\limits_{x\to \displaystyle{\frac{\pi}{2}}^+}\tan(x)=-\infty$
 ### Arcotangente
-- $\lim\limits_{x\to +\infty}arctan(x)=\displaystyle{\frac{\pi}{2}}$-
-- $\lim\limits_{x\to -\infty}arctan(x)=-\displaystyle{\frac{\pi}{2}}$
+- $\lim\limits_{x\to +\infty}\arctan(x)=\displaystyle{\frac{\pi}{2}}$
+- $\lim\limits_{x\to -\infty}\arctan(x)=-\displaystyle{\frac{\pi}{2}}$
 
 ## Operazioni e Forme indeterminate
 ---
@@ -95,10 +95,10 @@ $$
 - Ponendo $y=\displaystyle{\frac{1}{x}}$
 	- Si ottiene $\lim\limits_{x\to 0}(1+x)^{\frac{1}{x}}=e$
 - Applicando il $log_{a}$ si ha che:
-	- $\lim\limits_{x\to 0}log_{a}[(1+x)^{\frac{1}{x}}]=log_{a}e$
+	- $\lim\limits_{x\to 0}\log_{a}[(1+x)^{\frac{1}{x}}]=\log_{a}e$
 
 >[!info] Se $a=e$
->$$\lim\limits_{x\to 0}ln\left[ (1+x)^{\frac{1}{x}} \right]=\lim\limits_{x\to 0} \displaystyle{\frac{ln(1+x)}{x}}=1$$
+>$$\lim\limits_{x\to 0}\ln\left[ (1+x)^{\frac{1}{x}} \right]=\lim\limits_{x\to 0} \displaystyle{\frac{ln(1+x)}{x}}=1$$
 
 - Partendo dalla definizione precedente e ponendo:
 >[!info] $y=ln(1+x)$
@@ -147,7 +147,7 @@ $$
 ### Funzioni trigonometriche
 >[!info] Seno
 >Dimostriamo che
->$$\lim\limits_{x\to 0} \displaystyle{\frac{sen(x)}{x}}=1$$
+>$$\lim\limits_{x\to 0} \displaystyle{\frac{\sin(x)}{x}}=1$$
 
 ![[limiteNotevoleSeno.png]]
 - Osservo nell'immagine sovrastante che appaiono 3 figure
@@ -159,24 +159,24 @@ $$
 \begin{array}
 \ 
 \text{Area }\overset{\triangle}{OAP}\leq \text{ Area settore circolare }OAP\leq\text{ Area }\overset{\triangle}{OAT} \\
-= \displaystyle{\frac{sen(x)}{2}\leq \displaystyle{\frac{x}{2}}}\leq \displaystyle{\frac{tg(x)}{2}}, x\in\left[ 0, \displaystyle{\frac{\pi}{2}} \right]
+= \displaystyle{\frac{\sin(x)}{2}\leq \displaystyle{\frac{x}{2}}}\leq \displaystyle{\frac{\tan(x)}{2}}, x\in\left[ 0, \displaystyle{\frac{\pi}{2}} \right]
 \end{array}
 $$
 - Poichè tutte le funzioni sono [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzioni Pari e Dispari|dispari]]
 $$
-|sen(x)| \leq |x| \leq |tg(x)|
+|\sin(x)| \leq |x| \leq |\tan(x)|
 $$
 - Divido tutto per $sen(x)$
 $$
-1\leq |\displaystyle{\frac{x}{sen(x)}}|\leq \displaystyle{\frac{1}{|cos(x)|}}, x\in\left( - \displaystyle{\frac{\pi}{2}}, \displaystyle{\frac{\pi}{2}} \right)\setminus\{0\}
+1\leq |\displaystyle{\frac{x}{\sin(x)}}|\leq \displaystyle{\frac{1}{|\cos(x)|}}, x\in\left( - \displaystyle{\frac{\pi}{2}}, \displaystyle{\frac{\pi}{2}} \right)\setminus\{0\}
 $$
 - Per il [[Limiti#Teorema dei due Carabinieri|teorema dei due carabinieri]]
 $$
 \begin{array}
 \ \lim\limits_{x\to 0}1 = 1 \\
-\lim\limits_{x\to 0} \displaystyle{\frac{1}{|cos(x)|}}=1 \\
+\lim\limits_{x\to 0} \displaystyle{\frac{1}{|\cos(x)|}}=1 \\
 \text{Quindi} \\
-\lim\limits_{x\to 0} \displaystyle{\frac{|x|}{|sen(x)|}}=1
+\lim\limits_{x\to 0} \displaystyle{\frac{|x|}{|\sin(x)|}}=1
 \end{array}
 $$
 - In fine, facciamo l'inverso, quindi:
@@ -184,20 +184,20 @@ $$
 \lim\limits_{x\to 0} \displaystyle{\frac{sen(x)}{x}}=1
 $$
 >[!info] Coseno
->$\lim\limits_{x\to 0} \displaystyle{\frac{1-cos(x)}{x^2}}= \displaystyle{\frac{1}{2}}$
+>$\lim\limits_{x\to 0} \displaystyle{\frac{1-\cos(x)}{x^2}}= \displaystyle{\frac{1}{2}}$
 
 - Dimostraimolo tramite il limite precedente
 $$
-\lim\limits_{x\to 0} \displaystyle{\frac{1-cos(x)}{x^2}}\cdot \displaystyle{\frac{1+cos(x)}{1+cos(x)}}=\lim\limits_{x\to 0} \displaystyle{\frac{1+cos(x)}{x^2}}\cdot \displaystyle{\frac{1}{1+cos(x)}}= \displaystyle{\frac{1}{2}}
+\lim\limits_{x\to 0} \displaystyle{\frac{1-\cos(x)}{x^2}}\cdot \displaystyle{\frac{1+\cos(x)}{1+\cos(x)}}=\lim\limits_{x\to 0} \displaystyle{\frac{1+\cos(x)}{x^2}}\cdot \displaystyle{\frac{1}{1+\cos(x)}}= \displaystyle{\frac{1}{2}}
 $$
 ## Riassumendo
 ---
 $$
 \begin{cases}
 e^x=1+x+\circ(x) \text{ per }x\to 0 \\
-log(1+x) = x+\circ(x) \text{ per }x \to 0 \\
-sen(x)=x+\circ(x) \text{ per }x\to 0 \\
-cos(x)=1- \displaystyle{\frac{x^2}{2}}+\circ(x) \text{ per }x\to 0 \\
-tan(x)=x+\circ(x) \text{ per }x\to 0
+\log(1+x) = x+\circ(x) \text{ per }x \to 0 \\
+\sin(x)=x+\circ(x) \text{ per }x\to 0 \\
+\cos(x)=1- \displaystyle{\frac{x^2}{2}}+\circ(x) \text{ per }x\to 0 \\
+\tan(x)=x+\circ(x) \text{ per }x\to 0
 \end{cases}
 $$

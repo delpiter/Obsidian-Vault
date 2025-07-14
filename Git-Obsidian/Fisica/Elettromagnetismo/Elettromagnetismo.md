@@ -90,12 +90,3 @@ Dato che $e$ è una quantità piccolissima, possiamo considerare la carica elett
 >In un **sistema isolato** la [[Elettromagnetismo#Cariche Elettriche|carica elettrica]] totale è *costante nel tempo*.
 
 La conservazione vale anche nelle interazioni tra particelle elementari.
-- Le cariche possono comparire e scomparire.
-
-
->[!question] boh
-
-$$
-n^\circ \to p^+ e^- \overline{v}_{e}
-$$
-- Decadimento beta del neutrone

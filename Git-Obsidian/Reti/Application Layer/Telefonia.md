@@ -163,8 +163,12 @@ packet-beta
 >[!abstract] Start Line
 >***Request-Line***
 >Contiene informazioni *essenziali* per il messaggio.
->*Method*
->- `INVITE`, `ACK`, `BYE`, `CANCEL`, ...
+>1. *Method*
+>	- `INVITE`, `ACK`, `BYE`, `CANCEL`, ...
+>
+>2. [[Indirizzamento#In Internet|URI]].
+>
+>3. Versione `SIP`.
 
 >[!cite] Header
 >Specifica le ***intestazioni*** del messaggio.
@@ -184,13 +188,13 @@ packet-beta
 
 ```mermaid
 ---
-title: "SIP Request Packet"
+title: "SIP Response Packet"
 config:
   packet:
     showBits: false
 ---
 packet-beta
-	0-5: "Method"
+	0-5: "SIP-Version"
 	6: "SP"
 	7-15: "Status-Code"
 	16: "SP"

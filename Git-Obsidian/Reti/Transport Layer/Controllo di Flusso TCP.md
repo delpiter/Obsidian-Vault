@@ -196,6 +196,7 @@ $$
 > Multiplicative Decrease
 - Decremento la velocità in *modo moltiplicativo*.
 - $r(t_{i+1})=a\times r(t_{i})\qquad a<1$
+
 Anche se i periodi di aumento lineare *non sono costanti* (dipendono dal *carico istantaneo* delle risorse di rete), possiamo dire che un andamento `AIMD` può essere graficamente rappresentato come "***a dente di sega***".
 
 Nel lungo termine permette di avere un'***equa distribuzione della banda disponibile***.

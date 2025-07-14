@@ -8,6 +8,9 @@
 >[!cite] $II$
 >La *somma algebrica* delle differenze di potenziale **lungo una maglia chiusa** è ***zero***.
 
+#todo Domanda Orale
+
+Perché funzionano le leggi?
 ## Esempio
 ---
 > Siano $R=1100\Omega$, calcolare $I_{1},I_{2}$ ,correnti Entranti in $a$, e $I_{3}$ corrente uscente da $a$.

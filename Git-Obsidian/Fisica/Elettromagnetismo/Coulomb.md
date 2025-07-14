@@ -75,3 +75,5 @@ $$
 \frac{F_{g}}{F_{em}}=\frac{Gmp^2}{ke^2}\simeq 0.8\times 10^{-36}
 $$
 
+
+>[!done] La Forza Gravitazionale è trascurabile rispetto alla Forza Elettrica.

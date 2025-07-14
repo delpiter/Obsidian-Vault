@@ -68,7 +68,7 @@ title: "TCP Packet"
 > ***Checksum***:
 - Codice di controllo per la rilevazione di errori sul segmento `TCP`.
 - Calcolato applicando l'[[Controllo dell'Errore#Internet Checksum|internet checksum]] allo *pseudo-header*.
-	- [[Protocollo IP|Indirizzi IP]] *Sorgente* e *destinazione*-
+	- [[Protocollo IP|Indirizzi IP]] *Sorgente* e *destinazione*
 	- Protocollo
 	- Lunghezza in `byte` del segmento.
 
@@ -209,8 +209,7 @@ $C$ è la capacità della connessione.
 >[!question] Request
 
 La stazione $A$ invia su indicazione della propria applicazione un segmento `TCP` "*disconnect request*" (`DR`)
-- Caratterizzato con `FIN=1`.
-dopo avere svuotato il proprio **buffer di trasmissione**.
+- Caratterizzato con `FIN=1`, dopo avere svuotato il proprio **buffer di trasmissione**.
 
 >[!caution] Acknowledgment
 

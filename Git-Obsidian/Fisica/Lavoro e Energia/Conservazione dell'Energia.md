@@ -18,7 +18,7 @@ $$
 >$$K_{f}+U_{f}=K_{i}+U_{i}+\mathscr{L}_{\text{n.c.}}$$
 >$$E_{f}=E_{i}+\mathscr{L}_{\text{n.c.}}$$
 >>[!quote] A parole
->>La variazione di energia meccanica è pari al lavoro compiuto dalle forze non conservativo
+>>La variazione di energia meccanica è pari al lavoro compiuto dalle forze non conservative
 
 ## Legge di Conservazione dell'Energia
 ---

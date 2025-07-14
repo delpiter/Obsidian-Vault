@@ -14,7 +14,9 @@
 >Il *segmento* che congiunge un pianeta al sole descrive ***aree uguali*** in ***tempi uguali***:
 >$$\frac{\Delta A}{\Delta t}=\text{const.}$$
 
-![[IILeggeDiKeplero.jpg|450]]![[IILeggeDiKeplero2.jpg|450]]
+![[IILeggeDiKeplero.jpg|450]]
+
+![[IILeggeDiKeplero2.jpg|450]]
 ## Terza Legge
 ---
 >[!cite] Legge dei Periodi
@@ -22,3 +24,30 @@
 >$$\frac{T^2}{a^3}=\text{const.}$$
 
 ### Dimostrazione
+> Mostriamo che la forza centripeta che causa l'orbita circolare è la [[Legge di Gravitazione#Legge di Gravitazione Universale|forza di Gravitazione]].
+
+La terra compie un'orbita "*circolare*".
+- Sappiamo quindi che la sua [[Moto Circolare|accelerazione centripeta]] è:
+
+$$
+a_{c}=\omega^{2}R=\frac{4\pi^{2}}{T^{2}}R
+$$
+Dove:
+- $T$ è il **periodo** di circolazione attorno al sole ($1$ *anno*).
+- $R$ è il **raggio** dell'orbita attorno al sole.
+
+>[!question] Che forza agisce sulla terra?
+
+> La forza di gravitazione di newton
+
+- Per la [[Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]] questa forza è uguale a $m\cdot a$.
+
+$$
+G \frac{M_{S}M_{T}}{R^{2}}=M_{T}\underbrace{ \frac{2\pi^{2}}{T^{2}}R }_{ a_{c} }
+$$
+Possiamo semplificare la *massa della terra*:
+$$
+\frac{4\pi^{2}}{GM_{S}}=\frac{T^{2}}{R^{3}}
+$$
+
+>[!done] La terza legge di Keplero è automaticamente incorporata nella legge di Newton.

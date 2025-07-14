@@ -37,9 +37,13 @@ Il teorema consente di considerare solo le *velocità iniziali* e *finali*:
 ---
 > Per le [[Lavoro di una Forza#Forze Conservative e Non Conservative|forze conservative]] è conveniente definire l'energia potenziale.
 
+In fisica, l'***energia potenziale*** di un *oggetto* è l'**energia** che esso possiede a causa della sua *posizione* o del suo *orientamento* rispetto a un ***campo di forze***.
+
 >[!definizione]
 >Il *lavoro* $\mathscr{L}$ compiuto da una ***forza conservativa*** su un elemento di un sistema quando questo si sposta da un punto ad un altro è uguale alla **differenza** tra l’*energia potenziale* del sistema **iniziale** e quella **finale**.
 >$$\mathscr{L}=U_{i}-U_{f}=-\Delta U$$
+>
+>L'***energia potenziale*** è un tipo di energia associata solo alle forze conservative ed è legata al concetto di lavoro.
 
 L'energia potenziale racchiude le informazioni sulla forza corrispondente.
 

@@ -56,7 +56,7 @@ $$
 ## Legge di Gravitazione Universale
 ---
 >[!quote] Legge
->Ogni *particella* nell'universo ***attrae*** ogni altra particella con una forza che è *direttamente proporzionale* al quadrato della loro reciproca distanza.
+>Ogni *particella* nell'universo ***attrae*** ogni altra particella con una forza che è *direttamente proporzionale* al prodotto delle loro **masse** e *inversamente proporzionale* al quadrato della loro **distanza**.
 >La [[Leggi di Newton#Seconda Legge di Newton|forza]] è diretta lungo la linea **congiungente** le due particelle.
 
 In termini vettoriali possiamo scrivere:

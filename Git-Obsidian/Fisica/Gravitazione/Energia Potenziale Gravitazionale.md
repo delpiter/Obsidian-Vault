@@ -5,6 +5,7 @@ $$
 \delta\mathscr{L}=\vec{F}\cdot\text{d}\vec{s}=-G \frac{m_{1}m_{2}}{r^2}\hat{r}\cdot\text{d}\vec{s}
 $$
 - Ma $\hat{r}\cdot\text{d}\vec{s}$ è pari alla proiezione di $\text{d}\vec{s}$ su $\hat{r}$ è pari a $\text{d}r$
+
 La variazione tra i due corpi a seguito dello ***spostamento*** $\text{d}\vec{s}$.
 
 *Quindi*
@@ -61,7 +62,7 @@ Dato che la forza di gravità ha un ***raggio d'azione infinito***, singnifica r
 
 È sufficiente che il corpo abbia un'[[Energia#Energia Meccanica|energia meccanica]] ***positiva o uguale a zero***.
 $$
-\frac{1}{2}mv_{f}^2-G \frac{mM_{T}}{R_{T}}=0\quad\implies\quad v_{f}=\sqrt{  2g \frac{M_{T}}{R_{T}}}
+\frac{1}{2}mv_{f}^2-G \frac{mM_{T}}{R_{T}}=0\quad\implies\quad v_{f}=\sqrt{  2G \frac{M_{T}}{R_{T}}}
 $$
 - Inserendo i valori noti per la *terra* si ottiene $v_{f}\simeq 11.2\  km/s$
 
@@ -92,6 +93,16 @@ Se un oggetto di massa $M$ si trasforma in un *buco nero*, l'***orizzonte degli 
 
 ## Massa Inerziale e Massa Gravitazionale
 >La ***massa gravitazionale***, $mg$ , può essere *diversa* dalla ***massa inerziale*** che compare nella [[Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]].
+
+>[!summary] Massa Inerziale
+>La *massa* $m_{i}$ usata nella ***legge di Newton***.
+>È la **resistenza** che un corpo oppone al cambiamento della velocità.
+
+>[!help] Massa Gravitazionale
+>Massa $m_{g}$ usata nella ***legge di gravitazione universale***.
+>Rappresenta la quantità di materia *sorgente della forza gravitazionale*.
+
+>[!danger] Sono due concetti separati!
 
 Dovremmo aggiungere un pedice "$i$" per ricordare che questo è valore dell’***inerzia del corpo***.
 $$

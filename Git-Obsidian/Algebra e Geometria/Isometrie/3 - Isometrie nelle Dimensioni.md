@@ -47,21 +47,21 @@ $$
 
 >[!abstract] Osservazione
 >Per ogni coppia  $a,b\in\mathbb{R}:a^2+b^2=1$
->Esiste $t\in[0,2\pi]:a=cos(t),b=sin(t)$
+>Esiste $t\in[0,2\pi]:a=\cos(t),b=\sin(t)$
 
 Analogamente posso scrivere:
-- $c=sin(s),\quad d=cos(s)$
+- $c=\sin(s),\quad d=\cos(s)$
 
 Le nostre equazioni diventano:
 $$
 \begin{cases}
-\cancel{ cos^2(t)+sin^2(t)=1 } \\
-\cancel{ cos^2(s)+sin^2(s)=1 } \\
-cos(t)sin(s)+sin(t)cos(s)=0
-\end{cases}\implies sin(t+s)=0
+\cancel{ \cos^2(t)+\sin^2(t)=1 } \\
+\cancel{ \cos^2(s)+\sin^2(s)=1 } \\
+\cos(t)\sin(s)+\sin(t)\cos(s)=0
+\end{cases}\implies \sin(t+s)=0
 $$
 
->[!tldr] $sin(t+s)=0\iff t+s=0$ oppure $t+s=\pi$
+>[!tldr] $\sin(t+s)=0\iff t+s=0$ oppure $t+s=\pi$
 
 Quindi
 - $s=-t$
@@ -76,8 +76,8 @@ a & b \\
 c & d
 \end{pmatrix}
 =\begin{pmatrix}
-cos(t) & sin(t) \\
--sin(t) &  cos(t)
+\cos(t) & \sin(t) \\
+-\sin(t) &  \cos(t)
 \end{pmatrix}=S_{t}$$
 
 >*Se $s=\pi-t$*
@@ -88,8 +88,8 @@ a & b \\
 c & d
 \end{pmatrix}
 =\begin{pmatrix}
-cos(t) & sin(t) \\
-sin(t) &  -cos(t)
+\cos(t) & \sin(t) \\
+\sin(t) &  -\cos(t)
 \end{pmatrix}=R_{t}$$
 
 >[!done] Abbiamo mostrato che ogni matrice ortogonale $2\times 2$ è del tipo $S_{t}$ o $R_{t}$
@@ -98,8 +98,8 @@ sin(t) &  -cos(t)
 
 >[!abstract] Osservazione
 >Osserviamo che
->- $\det(R_{t})=cos^2(t)+sin^2(t)=1$
->- $\det(S_{t})=-(cos^2(t)+sin^2(t))=-1$
+>- $\det(R_{t})=\cos^2(t)+\sin^2(t)=1$
+>- $\det(S_{t})=-(\cos^2(t)+\sin^2(t))=-1$
 
 ### Significato Geometrico
 >[!question] Che significato geometrico hanno queste matrici?
@@ -108,28 +108,28 @@ sin(t) &  -cos(t)
 
 $$
 R_{t}(e_{1})=\begin{pmatrix}
-cos(t) & sin(t) \\
--sin(t) & cos(t)
+\cos(t) & \sin(t) \\
+-\sin(t) & \cos(t)
 \end{pmatrix}\begin{pmatrix}
 1 \\
 0
 \end{pmatrix}
 =\begin{pmatrix}
-cos(t) \\
--sin(t)
+\cos(t) \\
+-\sin(t)
 \end{pmatrix}$$
 
 $$
 R_{t}(e_{2})=\begin{pmatrix}
-cos(t) & sin(t) \\
--sin(t) & cos(t)
+\cos(t) & \sin(t) \\
+-\sin(t) & \cos(t)
 \end{pmatrix}\begin{pmatrix}
 0 \\
 1
 \end{pmatrix}
 =\begin{pmatrix}
-sin(t) \\
-cos(t)
+\sin(t) \\
+\cos(t)
 \end{pmatrix}$$
 
 >[!done] $R_{t}$ è la rotazione di centro l'origine e di angolo $-t$
@@ -140,16 +140,16 @@ cos(t)
 
 $$
 S_{t}=\begin{pmatrix}
-cos(t) & sin(t) \\
-sin(t) & -cos(t)
+\cos(t) & \sin(t) \\
+\sin(t) & -\cos(t)
 \end{pmatrix}
 $$
 
 $$
 p(\lambda)=\det\begin{pmatrix}
-cos(t)-\lambda & sin(t) \\
-sin(t) & -cos(t)-\lambda
-\end{pmatrix}=-cos^2(t)+\lambda^2-sin^2(t)=\lambda^2-(sin^2(t)+cos^2(t))
+\cos(t)-\lambda & \sin(t) \\
+\sin(t) & -\cos(t)-\lambda
+\end{pmatrix}=-\cos^2(t)+\lambda^2-\sin^2(t)=\lambda^2-(\sin^2(t)+\cos^2(t))
 $$
 - $p(\lambda)=\lambda^2-1\implies \lambda_{1}=1 \quad \lambda_{2}=-1$
 

@@ -56,7 +56,7 @@ Dato che $\vec{E}$ non dipende dalla carica usata per la misura è una ***propri
 >	- Il segno di $q$ definisce il *verso della forza*.
 
 #### Calcolo di $\vec{E}$ per cariche Puntiformi
-> Una carica $\vec{F}=\displaystyle{\frac{1}{4\pi\varepsilon_{0}}}\cdot \displaystyle{\frac{qq_{0}}{r^2}\hat{r}}$
+> Una carica sente la forza: $\vec{F}=\displaystyle{\frac{1}{4\pi\varepsilon_{0}}}\cdot \displaystyle{\frac{qq_{0}}{r^2}\hat{r}}$
 
 $$
 \implies \vec{E} = \displaystyle{\frac{q}{4\pi\varepsilon_{0}r^2}\hat{r}} 

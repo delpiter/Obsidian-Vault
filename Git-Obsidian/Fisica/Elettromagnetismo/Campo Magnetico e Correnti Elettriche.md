@@ -89,9 +89,39 @@ $$
 
 La ***circuitazione*** del *campo magnetico* su un percorso chiuso è pari alla **somma algebrica** delle correnti "*concatenate*" con $\Gamma$, cioè che attraversano qualsiasi superficie di cui $\Gamma$ si il bordo.
 
-![[CircuitazioneAmpere.png]]
 
 La costante $\displaystyle\mu_{0}=\frac{1}{\varepsilon_{0}C^{2}}=4\pi\times10^{-7} \frac{Tm}{A}$ è detta "***permeabilità***" magnetica del vuoto.
+##### Legge di Ampere-Maxwell
+>[!question] È possibile che sia la variazione di $\vec{E}$ che generi un campo magnetico?
+
+Consideriamo un [[Conduttori#Condensatore|condensatore]] a facce piane e parallele, e due superfici:
+- $S_{1}$ tra i due piani.
+- $S_{2}$ che taglia uno dei conduttori.
+
+![[CircuitazioneAmpere.png]]
+
+
+$S_{1}$ e $S_{2}$ hanno lo stesso "*circuito*" come **bordo**.
+- Secondo la legge di ***Ampere*** con $S_{2}$ ho $\vec{B}=0$, mentre con $S_{1}$ avrei $\vec{B}\neq 0$.
+
+In entrambi i casi la ***circuitazione*** è fatta sullo *stesso percorso*.
+
+>[!danger] C'è una inconsistenza.
+
+*Maxwell* la risolve.
+
+Definiamo una **corrente** "*virtuale*".
+
+$$
+I_{s}=\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}}
+$$
+
+- Detta "***corrente di spostamento***".
+Arriviamo dunque a una modifica della **legge di Ampere**.
+
+$$
+\oint \vec{B \cdot \text{d}\vec{r}}=\mu_{0}(I_{\text{conc}}+\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}})
+$$
 
 ##### Applicazione del Teorema di Ampere
 >[!info]
@@ -99,7 +129,7 @@ La costante $\displaystyle\mu_{0}=\frac{1}{\varepsilon_{0}C^{2}}=4\pi\times10^{-
 >- Il campo deve avere una *simmetria cilindrica*, **non può essere radiale**.
 >
 >>[!quote] In altre Parole
->> So che v$\vec{B}$ deve avere linee ***chiuse***.
+>> So che $\vec{B}$ deve avere linee ***chiuse***.
 >
 >Le linee sono *circonferenze centrate sul filo*.
 
