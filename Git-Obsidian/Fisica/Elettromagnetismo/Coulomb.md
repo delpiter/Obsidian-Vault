@@ -27,7 +27,7 @@ $$
 - $\varepsilon_{0}=8.854\times 10^{-12}\ \  C^2 /Nm^2$ è la ***costante dielettrica del vuoto***.
 
 $$
-\displaystyle\frac{1}{4\pi\varepsilon_{0}}=K=8.987\simeq 9\times 10^9 \ C^2 /Nm^2
+\displaystyle\frac{1}{4\pi\varepsilon_{0}}=K=8.987\times10^{9}\simeq 9\times 10^9 \ C^2 /Nm^2
 $$
 > Due oggetti con carica di $1C$ posti a distanza di $1m$ interagiscono con $F=9\times 10^9 N$
 
@@ -72,7 +72,7 @@ Equivalente alla forza peso di $50$ *tonnellate*.
 
 Confrontiamo: [[Elettromagnetismo#Elettrostatica|Forza elettrostatica]] e [[Legge di Gravitazione#Legge di Gravitazione Universale|gravitazionale]].
 $$
-\frac{F_{g}}{F_{em}}=\frac{Gmp^2}{ke^2}\simeq 0.8\times 10^{-36}
+\frac{F_{g}}{F_{em}}=\frac{Gm_{p}^2}{ke^2}\simeq 0.8\times 10^{-36}
 $$
 
 

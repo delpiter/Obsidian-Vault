@@ -43,7 +43,7 @@ Dove:
 - Per la [[Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]] questa forza è uguale a $m\cdot a$.
 
 $$
-G \frac{M_{S}M_{T}}{R^{2}}=M_{T}\underbrace{ \frac{2\pi^{2}}{T^{2}}R }_{ a_{c} }
+G \frac{M_{S}M_{T}}{R^{2}}=M_{T}\underbrace{ \frac{4\pi^{2}}{T^{2}}R }_{ a_{c} }
 $$
 Possiamo semplificare la *massa della terra*:
 $$

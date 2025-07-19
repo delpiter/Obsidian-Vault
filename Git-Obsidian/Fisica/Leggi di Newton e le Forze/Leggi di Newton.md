@@ -98,7 +98,7 @@ $$
 
 La seconda legge di Newton può essere scritta come:
 $$
-\sum\vec{F}=m\frac{\text{d}\vec{p}}{\text{d}t}
+\sum\vec{F}=m\frac{\text{d}\vec{v}}{\text{d}t}
 $$
 > Se consideriamo una coppia di corpi interagenti, per la terza legge di Newton:
 
