@@ -17,7 +17,7 @@
 Se ora rendo sempre più piccoli gli intervalli temporali $\Delta t$, giungo alla definizione di ***velocità istantanea***.
 
 $$
-\lim\limits_{\Delta t\to 0} \displaystyle{\frac{\Delta x}{\Delta t}}=\displaystyle{\frac{dx}{dt}}=v
+\lim\limits_{\Delta t\to 0} \displaystyle{\frac{\Delta x}{\Delta t}}=\displaystyle{\frac{\text{d}x}{\text{d}t}}=v
 $$
 
 >Il segno della velocità indica la **direzione del moto**
@@ -37,7 +37,7 @@ Se è nota la legge oraria $x(t)$, tramite l'operazione di derivazione, si *rica
 - Si ottiene la definizione di ***accelerazione istantanea***
 
 $$
-a = \displaystyle{\frac{d v}{dt}} = \displaystyle{\frac{d^2x}{dt^2}}
+a = \displaystyle{\frac{\text{d}v}{\text{d}}}=\displaystyle{\frac{\text{d}^{2}x}{\text{d}t^{2}}}
 $$
 
 ## Riassunto

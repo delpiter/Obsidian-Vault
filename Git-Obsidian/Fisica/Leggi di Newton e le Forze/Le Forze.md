@@ -14,7 +14,7 @@ Il diagramma consente di "*visualizzare*" le **interazioni dell'ambiente esterno
 >[!info]
 >Ogni corpo lasciato libero di cadere presenta una accelerazione $g$ ***diretta verso il basso***.
 >In termini di [[Leggi di Newton#Seconda Legge di Newton|forza]], possiamo dire il corpo è soggetto ad una **forza** di modulo $mg$, *diretta verso il basso*.
->Chiameremo tale forza: ***Forza Normale***.
+>Chiameremo tale forza: ***Forza Peso***.
 
 Prendendo come [[Trasformazioni di Galileo|sistema di riferimento]] l'asse $y$ verticale verso l'alto:
 $$
