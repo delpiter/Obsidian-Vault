@@ -45,7 +45,7 @@ $$
 V=I_{1}R_{1}\qquad V=I_{2}R_{2}
 $$
 $$
-I_{1}=\frac{V}{R_{1}}\qquad I_{2}=\frac{V}{R_{2}}\implies I=\frac{V}{R_{1}}+\frac{V}{R_{2}}= \frac{R_{1}R_{2}}{R_{2}+R_{1}}V
+I_{1}=\frac{V}{R_{1}}\qquad I_{2}=\frac{V}{R_{2}}\implies I=\frac{V}{R_{1}}+\frac{V}{R_{2}}= \frac{R_{1}+R_{2}}{R_{2}R_{1}}V
 $$
 > Quindi
 

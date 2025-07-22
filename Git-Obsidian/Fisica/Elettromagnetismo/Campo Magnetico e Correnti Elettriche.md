@@ -90,7 +90,15 @@ $$
 La ***circuitazione*** del *campo magnetico* su un percorso chiuso è pari alla **somma algebrica** delle correnti "*concatenate*" con $\Gamma$, cioè che attraversano qualsiasi superficie di cui $\Gamma$ si il bordo.
 
 
-La costante $\displaystyle\mu_{0}=\frac{1}{\varepsilon_{0}C^{2}}=4\pi\times10^{-7} \frac{Tm}{A}$ è detta "***permeabilità***" magnetica del vuoto.
+La costante $\displaystyle\mu_{0}=\frac{1}{\varepsilon_{0}c^{2}}=4\pi\times10^{-7} \frac{Tm}{A}$ è detta "***permeabilità***" magnetica del vuoto.
+
+>[!hint] Osservazioni
+
+La *circuitazione* è molto simile al calcolo del [[Lavoro di una Forza#Lavoro di una Forza Variabile|lavoro]].
+- L'integrale lungo un percorso di un vettore.
+
+Facendolo su un percorso chiuso, la ***Legge di Ampere*** afferma che *potrebbe non venire zero*.
+- Il campo magnetico ***non è un campo*** [[Lavoro di una Forza#Forze Conservative e Non Conservative|conservativo]].
 ##### Legge di Ampere-Maxwell
 >[!question] È possibile che sia la variazione di $\vec{E}$ che generi un campo magnetico?
 
@@ -120,7 +128,7 @@ $$
 Arriviamo dunque a una modifica della **legge di Ampere**.
 
 $$
-\oint \vec{B \cdot \text{d}\vec{r}}=\mu_{0}(I_{\text{conc}}+\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}})
+\oint \vec{B}\cdot \text{d}\vec{r}=\mu_{0}(I_{\text{conc}}+\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}})
 $$
 
 ##### Applicazione del Teorema di Ampere
@@ -137,6 +145,8 @@ Ora applico il ***teorema di ampere*** per circuitazione su circonferenza di rag
 $$
 2\pi rB=\mu_{0}I \implies B=\frac{\mu_{0}I}{2\pi r}
 $$
+- $2\pi r$ è l'***integrale*** sul cerchio degli *spostamenti lungo il cerchio* (La circonferenza). 
+
 > Detta anche ***legge di Biot e Savart*** per filo rettilineo.
 
 ###### Filo di Lunghezza $\infty$ e diametro $2a$
@@ -147,7 +157,7 @@ $$
 >[!abstract] Se $R>a$
 
 $$
-B_{2}\pi R=\mu_{0}I\implies B=\frac{\mu_{0}I}{2\pi R}
+B2\pi R=\mu_{0}I\implies B=\frac{\mu_{0}I}{2\pi R}
 $$
 
 >[!missing] Se $R<a$

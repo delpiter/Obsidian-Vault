@@ -45,7 +45,7 @@ $$
 \vec{E}\cdot\hat{n} =E=\frac{Q}{4\pi\varepsilon_{0}r^2}
 $$
 $$
-\phi_{A}(\vec{E})=\oint_{A}\vec{E}\cdot\hat{n}\text{d}A=E\oint_{A}\text{d}A=\frac{Q}{4\pi\varepsilon_{0}r^2}\cdot 2\pi r^2=\frac{Q}{\varepsilon_{0}}
+\phi_{A}(\vec{E})=\oint_{A}\vec{E}\cdot\hat{n}\text{d}A=E\oint_{A}\text{d}A=\frac{Q}{4\pi\varepsilon_{0}r^2}\cdot 4\pi r^2=\frac{Q}{\varepsilon_{0}}
 $$
 
 >[!warning] Nota Bene

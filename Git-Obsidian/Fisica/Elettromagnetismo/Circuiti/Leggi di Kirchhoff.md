@@ -3,14 +3,17 @@
 >[!cite] $I$
 >La *somma algebrica* delle **correnti entranti** in un nodo è ***zero***.
 
+La legge è connessa al fatto che la carica elettrica è una ***quantità conservata***.
+- Non può *sparire* o *apparire*, si può solo ***spostare***
+
 ## Seconda Legge di Kirchhoff
 ---
 >[!cite] $II$
 >La *somma algebrica* delle differenze di potenziale **lungo una maglia chiusa** è ***zero***.
 
-#todo Domanda Orale
+La legge è connessa con il fatto che il [[Campi Elettrostatici|campo elettrico]] è [[Lavoro di una Forza#Forze Conservative e Non Conservative|conservativo]].
+- Se la carica parte da una ***DDP*** e percorre un percorso chiuso, la carica ***deve tornare al potenziale iniziale***.
 
-Perché funzionano le leggi?
 ## Esempio
 ---
 > Siano $R=1100\Omega$, calcolare $I_{1},I_{2}$ ,correnti Entranti in $a$, e $I_{3}$ corrente uscente da $a$.

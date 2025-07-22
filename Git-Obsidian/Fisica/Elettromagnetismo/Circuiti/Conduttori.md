@@ -21,6 +21,9 @@ $$
 - $[C]=\text{ farad } \implies 1 \text{ farad }=1\frac{C}{V}$
 - Proprietà *intrinseca* dell'oggetto
 
+>[!tldr] Intuitivamente
+>Se un oggetto ha una *grande capacità elettrica*, e ci metto sopra delle cariche, il suo potenziale aumenta **poco**.
+
 ### Condensatore
 >[!info] Induzione Totale
 >Due [[Induzione Elettrostatica#^dc307d|conduttori]] in configurazione tale per cui ***tutte le linee di forza*** partono da uno e finiscono sull'altro.
