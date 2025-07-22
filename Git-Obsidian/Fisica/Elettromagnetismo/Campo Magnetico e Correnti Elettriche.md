@@ -117,6 +117,16 @@ In entrambi i casi la ***circuitazione*** è fatta sullo *stesso percorso*.
 >[!danger] C'è una inconsistenza.
 
 *Maxwell* la risolve.
+Sia $E=\displaystyle{\frac{\sigma}{\varepsilon_{0}}}=\frac{Q}{\varepsilon_{0}A}$ il campo elettrico fra le armature.
+- Il flusso del campo elettrico sarà:
+
+$$
+\phi(\vec{E})=EA=\frac{Q}{\varepsilon_{0}}
+$$
+>[!attention] Se stiamo caricando un condensatore
+>Se nel filo passa un [[Coulomb]] al secondo, la carica nel condensatore aumenta di un ***Coulomb*** al secondo.
+
+Quindi $Q=EA\varepsilon_{0}=\phi(\vec{E})\varepsilon_{0}$
 
 Definiamo una **corrente** "*virtuale*".
 
@@ -128,7 +138,7 @@ $$
 Arriviamo dunque a una modifica della **legge di Ampere**.
 
 $$
-\oint \vec{B}\cdot \text{d}\vec{r}=\mu_{0}(I_{\text{conc}}+\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}})
+\oint \vec{B}\cdot \text{d}\vec{r}=\mu_{0}\left(I_{\text{conc}}+\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}}\right)
 $$
 
 ##### Applicazione del Teorema di Ampere
@@ -207,6 +217,11 @@ $$
 \oint \vec{B} \, \text{d}\vec{r}=B2\pi R=\mu_{0}NI\implies B=\frac{\mu_{0}Ni}{2\pi R}
 $$
 
+>[!hint] Similitudine
+>La formula del campo magnetico è ***uguale*** alla formula per un filo sottile di lunghezza infinita.
+
+Basta far scorrere una corrente $N$ volte quella del filo.
+- A volte **non è possibile** far scorrere $1000A$ di corrente in un filo, quindi si sceglie di far scorrere $1A$ in un toroide con $1000$ *avvolgimenti*.
 ###### Forza tra due Conduttori rettilinei e paralleli
 $$
 B_{2}=\mu_{0}
@@ -217,3 +232,29 @@ $$
 
 Si attirano o si respingono in ***base alla direzione della corrente***.
 
+## Equazioni di Maxwell
+---
+### Campo Elettrico
+>[!tl;dr] [[Flusso di un Campo Vettoriale#Teorema di Gauss|Teorema di Gauss]]
+
+$$
+\phi(\vec{E})= \frac{\sum Q^{\text{int}}}{\varepsilon_{0}}
+$$
+
+>[!hint] [[Induzione#Legge dell'Induzione|Legge di Faraday Lenz]]
+
+$$
+\oint  \vec{E}\cdot\, \text{d}l=-\displaystyle{\frac{\text{d}\phi(\vec{B})}{\text{d}t}} 
+$$
+
+### Campo Magnetico
+>[!info] Teorema di Gauss
+
+$$
+\phi(\vec{B})= 0
+$$
+>[!help] [[#Legge di Ampere-Maxwell]]
+
+$$
+\oint \vec{B}\cdot \text{d}\vec{l}=\mu_{0}\left(I_{\text{conc}}+\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}}\right)
+$$
