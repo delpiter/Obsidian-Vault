@@ -133,7 +133,7 @@ Lontano dalle estremità il campo sarà ***radiale***.
 - $S\equiv$ Cilindro coassiale al filo
 
 $$
-E=\frac{1}{2\pi\varepsilon_{0}}\cdot \frac{\lambda}{r}\implies E=\frac{1}{2\pi l\varepsilon}\cdot \frac{q}{r}
+E=\frac{1}{2\pi\varepsilon_{0}}\cdot \frac{\lambda}{r}\implies E=\frac{1}{2\pi l\varepsilon_{0}}\cdot \frac{q}{r}
 $$
 
 ### Sfera Uniformemente Carica

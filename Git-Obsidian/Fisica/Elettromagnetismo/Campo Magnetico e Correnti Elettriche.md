@@ -14,12 +14,17 @@ $$
 N(q\vec{v}_{d}\times\vec{B})
 $$
 
-Dove $N$ è la densità delle particelle dei portatori di carica
+Dove $n$ è la densità delle particelle dei portatori di carica ($N$ è la quantità totale di carica)
 - $N=nAl$
 
-La ***forza agente sul filo sarà***:
+
+La ***forza totale agente sul filo sarà***:
 $$
 \vec{F}=N(q\vec{v}_{d}\times\vec{B})
+$$
+Dato che $N=nAl$
+$$
+\vec{F}=nAlq\vec{v_{d}}\times \vec{B} 
 $$
 
 > Ricordiamo che:
@@ -124,7 +129,7 @@ $$
 \phi(\vec{E})=EA=\frac{Q}{\varepsilon_{0}}
 $$
 >[!attention] Se stiamo caricando un condensatore
->Se nel filo passa un [[Coulomb]] al secondo, la carica nel condensatore aumenta di un ***Coulomb*** al secondo.
+>Se nel filo passa un [[Coulomb]] al secondo (Corrente $[A]$), la carica nel condensatore aumenta di un ***Coulomb*** al secondo.
 
 Quindi $Q=EA\varepsilon_{0}=\phi(\vec{E})\varepsilon_{0}$
 

@@ -261,7 +261,7 @@ Abbiamo una ***equazione differenziale*** che è soddisfatta da una $f(t)$ tale 
 
 $$
 \begin{array}
-x(t)=A\cos(\omega t+\phi) \\
+\ x(t)=A\cos(\omega t+\phi) \\
 \displaystyle{\frac{\text{d}x}{\text{d}t}}(t)=-\omega A\sin(\omega t+\phi) \\
 \displaystyle{\frac{\text{d}^2x}{\text{d}t^2}}(t)=-\omega^2 A\cos(\omega t+\phi)=-\omega^2 x(t)
 \end{array}

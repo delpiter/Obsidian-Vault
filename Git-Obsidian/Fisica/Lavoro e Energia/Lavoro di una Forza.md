@@ -80,11 +80,11 @@ Le due definizioni sono *equivalenti*:
 > Dimostrazione
 
 $$
-\oint_{\gamma} \vec{F} \cdot d\vec{r} =
-\int_{A}^{B} \vec{F} \cdot d\vec{r}_{\gamma_1} +
-\int_{B}^{A} \vec{F} \cdot d\vec{r}_{\gamma_2} =
-\int_{A}^{B} \vec{F} \cdot d\vec{r}_{\gamma_1} -
-\int_{A}^{B} \vec{F} \cdot d\vec{r}_{\gamma_2}
+\oint_{\gamma} \vec{F} \cdot \text{d}\vec{r} =
+\int_{A}^{B} \vec{F} \cdot \text{d}\vec{r}_{\gamma_1} +
+\int_{B}^{A} \vec{F} \cdot \text{d}\vec{r}_{\gamma_2} =
+\int_{A}^{B} \vec{F} \cdot \text{d}\vec{r}_{\gamma_1} -
+\int_{A}^{B} \vec{F} \cdot \text{d}\vec{r}_{\gamma_2}
 $$
 Quindi:
 $$

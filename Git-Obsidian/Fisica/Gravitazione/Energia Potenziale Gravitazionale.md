@@ -115,7 +115,7 @@ Supponiamo di avere realizzato un pendolo usando il ***campione di massa di plat
 
 $$
 \begin{array}
-\ \vec{P}=m_{g}\vec{a} \\
+\ \vec{P}=m_{i}\vec{a} \\
 m_{g}^{Pl}g\sin\theta=-m_{i}^{Pl}l \displaystyle{\frac{\text{d}^2\theta}{\text{d}t^2}}
 \end{array}
 $$

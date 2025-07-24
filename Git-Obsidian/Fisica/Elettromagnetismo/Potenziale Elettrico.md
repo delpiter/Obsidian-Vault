@@ -2,6 +2,9 @@
 ---
 > Idea molto simile alla [[Energia Potenziale Gravitazionale]].
 
+>[!definizione]
+>L'***energia potenziale elettrica*** è l'energia immagazzinata da una carica $q$ posta in un [[Campi Elettrostatici|campo]] $\vec{E}$.
+
 >[!info] Lavoro della forza Elettrica
 >Possiamo affermare che se la carica generatrice è ferma, risulta che il [[Lavoro di una Forza|lavoro]] della [[Coulomb|forza elettrica]] ***non dipende dal percorso***.
 
@@ -60,6 +63,7 @@ $$
 ### Potenziale Elettrico
 >[!quote]
 >"Ho una [[Elettromagnetismo#Cariche Elettriche|carica elettrica]] $q$ e questa genera un ***potenziale elettrostatico*** in tutto l'universo".
+>Il ***potenziale elettrico*** è un valore associato alla *posizione* di una carica $q_{0}$ in un campo $\vec{E}$.
 
 $$
 V=\frac{U}{q_{0}}

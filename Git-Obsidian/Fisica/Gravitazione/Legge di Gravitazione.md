@@ -114,6 +114,6 @@ Possiamo calcolare il raggio di questa orbita, sapendo che:
 
 Utilizzando la [[Leggi di Keplero#Terza Legge|terza Legge di Keplero]], dove consideriamo la *terra* come sorgente della ***forza gravitazionale***:
 $$
-\frac{T^2}{R^3}=\frac{4\pi}{GM_{T}} \quad\implies\quad R=\sqrt[3]{ \frac{GM_{T}T^2}{4\pi^2} }\simeq 42160km
+\frac{T^2}{R^3}=\frac{4\pi^{2}}{GM_{T}} \quad\implies\quad R=\sqrt[3]{ \frac{GM_{T}T^2}{4\pi^2} }\simeq 42160km
 $$
 Dato che il raggio medio della terra è circa $6370 km$, il satellite si trova a circa $36000km$ sopra la superficie terrestre.

@@ -67,7 +67,7 @@ Se $d[v]\leq d[u]+W(u,v)$ *prima del rilassamento*
 ### Algoritmo di Dijkstra
 >[!info] Strutture‎ 
 >L'algoritmo mantiene un insieme $S$ che contiene i vertici $v$ *il cui peso* del cammino minimo da $s$, $\delta(s,v)$, è già *stato determinato*
->In oltre, l'algoritmo utilizza una [[Queue|coda di priorità]] contenente tutti i nodi in o***rdine di distanza dalla sorgente***, il cui *cammino minimo* non è ancora stato identificato
+>In oltre, l'algoritmo utilizza una [[Queue|coda di priorità]] contenente tutti i nodi in ***ordine di distanza dalla sorgente***, il cui *cammino minimo* non è ancora stato identificato
 
 >[!warning] Attenzione
 >L'algoritmo non ***assicura una soluzione ottima*** se il grafo contiene degli ***archi negativi***

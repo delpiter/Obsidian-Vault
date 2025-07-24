@@ -23,14 +23,20 @@ $$
 >A causa delle interazioni con il materiale, essi *non accelerano indefinitivamente*, ma raggiungono una certa velocità, detta ***velocità di deriva*** ($\vec{v}_{d}$)
 >$$\mid\vec{v}_{d}\mid \text{ tipica } \simeq 10^{-5}-10^{-4} m/s$$
 
+### Densità di Carica Elettrica
+
 > Esempio
 
 Un elettrone nel rame si muove di $\frac{1}{10}mm$ al *secondo*.
 
 Se abbiamo $n=\displaystyle{\frac{\text{d}N}{\text{d}V}}$ ***densità volumetrica*** dei portatori di carica, e $q$ carica singola.
-- $n$ è il numero di cariche per unità di volume.
+
+>[!note] Nota
+>Ho "$\text{d}N$" cariche $q$ in ogni pezzo di volume $\text{d}V$.
 
 $\text{d}l=v_{d}\text{d}t$ è la distanza percorsa per ***unità di tempo***.
+- [[Moto Rettilineo|Moto]] di una particella a $v$ costante.
+
 $S\text{d}l=\text{d}V$ quindi $\text{d}N=nS\text{d}l$ è il ***numero di cariche*** che attraversano $S$ in un tempo $\text{d}t$.
 
 $$

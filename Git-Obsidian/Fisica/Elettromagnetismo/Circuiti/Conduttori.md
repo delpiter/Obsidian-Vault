@@ -118,7 +118,7 @@ U=\int _{0}^{Q}V' \, \text{d}Q'
 $$
 - Ma $V'=\displaystyle{\frac{Q'}{C}}$
 $$
-U=\int _{0}^{Q} \frac{Q'}{C} \, \text{d}Q'=\frac{1}{C}U=\int _{0}^{Q}Q' \, \text{d}Q'
+U=\int _{0}^{Q} \frac{Q'}{C} \, \text{d}Q'=\frac{1}{C}\int _{0}^{Q}Q' \, \text{d}Q'
 $$
 > *Quindi*
 
