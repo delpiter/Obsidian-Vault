@@ -165,7 +165,7 @@ $$
 > Detta anche ***legge di Biot e Savart*** per filo rettilineo.
 
 ###### Filo di Lunghezza $\infty$ e diametro $2a$
-> Sia consideriamo una circonferenza $\Gamma$ di raggio $R$ perpendicolare al filo.
+> Consideriamo una circonferenza $\Gamma$ di raggio $R$ perpendicolare al filo.
 
 >[!question] Voglio trovare il valore del ***campo magnetico*** in funzione della distanza dall'asse del filo.
 
