@@ -42,7 +42,8 @@ Il numero dei colori disponibili è $2^{24}=16.777.216$
 
 >[!done] Occupazione di memoria
 
-Un'immagine di dimensioni $W\times H$ occupa $W\times H\times3$ `BYTE`
+Un'immagine di dimensioni $W\times H$ occupa $W\times H\times3$ `BYTE`.
+
 ![[RGBspectrum.png]]
 
 ### Codifica con un numero *arbitrario* di colori

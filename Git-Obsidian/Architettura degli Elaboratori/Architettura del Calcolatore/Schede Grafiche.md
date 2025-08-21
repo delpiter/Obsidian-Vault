@@ -8,6 +8,8 @@
 >La `GPU` può essere utilizzata sia per la grafica `3D` sia per la grafica [[Definizioni_Architettura#Raster Graphics|raster]]
 >La `CPU` del calcolatore non calcola più la posizione e il colore di tutti i `PIXEL`, ma invia un comando alla `GPU` indicandogli cosa ***deve essere disegnato***
 
+^985740
+
 - Quando i Monitor erano basati su ***tubo catodico*** (`CRT`), i loro segnali di ingresso erano analogici
 	- La *scheda grafica* aveva il compito di convertire la rappresentazione digitale dell'immagine in ***segnali analogici***
 	- La traduzione vera e propria del segnale è realizzata dal `RAMDAC`

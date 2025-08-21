@@ -1,11 +1,12 @@
 >*Per potere dire cosa deve fare una [[La CPU|CPU]] sono necessari dei dispositivi di Input/Output*
-## I Monitor LCD
+## I Monitor
 ---
+### I Monitor LCD
 >[!info] *L*iquid *C*rystal *D*siplay
 >I monitor `LCD` sono il sostituto del `CRT` (***C***athode ***R***ay ***T***ube)
 >Forniscono una ***qualità grafica superiore*** rispetto ai `CRT` e hanno un *ingombro e peso inferiore*
 
-### Funzionamento
+#### Funzionamento
 >*I cristalli liquidi sono **molecole organiche vischiose** che scorrono in un liquido, ma come i cristalli sono anche dotate di una struttura spaziale*
 
 >[!tip] Polarizzazione
@@ -13,7 +14,7 @@
 Utilizzando un **campo elettrico** per modificare l'***orientamento delle molecole***
 - Si fanno variare le *proprietà ottiche dei cristalli* e quindi l'***angolo di polarizzazione*** della luce che li attraversa
 
-### Composizione
+#### Composizione
 >*Uno schermo `LCD` è composto da numerose celle nelle quali sono intrappolati i cristalli*
 
 >[!abstract] Contatti Elettrici
@@ -28,13 +29,14 @@ Utilizzando un **campo elettrico** per modificare l'***orientamento delle moleco
 >Una ***luce*** posizionata dietro la lastra posteriore
 
 ![[LCDPanel.png]]
+
 >[!done] RGB
 >In uno schermo `LCD` a colori, ogni cella viene divisa in tre sezioni
 >1. Una con un filtro ***Rosso***
 >2. Una con un filtro ***Verde***
 >3. Una con un filtro ***Blu***
 
-### Matrice Attiva / Passiva
+#### Matrice Attiva / Passiva
 
 >[!info] Matrice Passiva
 >Usata nei primi modelli degli schermi `LCD`
@@ -52,11 +54,18 @@ Utilizzando un **campo elettrico** per modificare l'***orientamento delle moleco
 >[!info] Matrice Attiva
 >A ogni `PIXEL` dello schermo è associato un `TFT` (***T***hin ***F***ilm ***T***ransistor) realizzato con un substrato di materiale *semiconduttore* trasparente depositato sulle superfici interne dei vetri contenenti i **cristalli**
 >Questo dispositivo ***memorizza lo stato elettrico*** di ogni `PIXEL` dello schermo mentre altri `PIXEL` vengono aggiornati
+### Altre Tecnologie
+>[!help] ***O***rganic ***L***ight-***E***mitting ***D***iode
 
-### AMOLED
+- Ogni `pixel` emette luce autonomamente, più sottili e flessibili degli `LCD`.
+
+>[!check] Mini-LED
+- Offre un **contrasto** più elevato e una migliore *gestione delle zone scure*.
+
 >[!info] *A*ctive *M*atrix *O*rganic *LED*
->`AMOLED` è la tecnologia più recente utilizzata.
->È costituita da led organici che *emettono la luce* invece di bloccarla
+
+`AMOLED` è la tecnologia più recente utilizzata.
+- È costituita da led organici che *emettono la luce* invece di bloccarla
 
 ## Il Mouse
 ---
