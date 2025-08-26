@@ -1,4 +1,4 @@
-> Gli errori esistono a causa della [[Floating Point#Numeri Finiti Floating Point|tecnica rappresentazione dei floating point]]
+T> Gli errori esistono a causa della [[Floating Point#Numeri Finiti Floating Point|tecnica rappresentazione dei floating point]]
 
 Poiché in un calcolatore il numero reale $\alpha\neq 0$ è sostituito con $fl(\alpha)$, è fondamentale stabilire una ***stima della differenza*** tra $\alpha$ e $fl(\alpha)$.
 

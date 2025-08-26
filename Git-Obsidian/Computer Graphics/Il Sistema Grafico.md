@@ -148,6 +148,8 @@ Il *color buffer* ha $N$ `bit` (o *piani*) per `pixel`.
 
 >[!abstract] Z-Buffer
 
+Regione di memoria che memorizza la ***distanza da ogni pixel al visualizzatore***.
+
 >[!help] Double Buffer
 
 Composto da ***front $+$ back buffer***.
