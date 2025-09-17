@@ -364,7 +364,7 @@ Sono *linearmente dipendenti* perchè $v_{1} =-2v_{2}$
 >[!info] Definizione
 >Un insieme $v_{1},\dots v_{n}\in V$ è una **base** di $V$ se $v_{1},\dots v_{n}$ sono linearmente indipendenti e generano $V$
 
-### Esempi
+#### Esempi
 >$V=\mathbb{R}^2\ v_{1}=(1,0),v_{2}=(0,1),v_{3}=(2,1)$
 
 I vettori generano $V$ ma non sono *linearmente indipendenti*

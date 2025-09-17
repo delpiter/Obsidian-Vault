@@ -46,8 +46,8 @@ Per ciò, $\beta$ è ***definita positiva***
 ### Prodotto Scalare Standard
 >[!summary] Definizione
 >Sia $V=\mathbb{R}^n \qquad v=(x_{1},\dots,x_{n}),\qquad u=(y_{1},\dots,y_{n})$
->E sia $\beta(v,u)=x_{1}y_{1}+\dots+x_{n}y_{n}$
->>[!done] $\beta$ è un prodotto scalare detto ***prodotto scalare standard***
+>E sia $\beta(v,u)=x_{1}y_{1}+\dots+x_{n}y_{n}=x^{T}y$
+>>[!done] $\beta$ è un prodotto scalare detto ***prodotto scalare standard*** o *canonico*
 
 La sua matrice nella base canonica $e_{1},\dots,e_{n}$ è: ^e3d996
 $$
@@ -223,7 +223,7 @@ $$
 #### Angolo Convesso
 >[!info] Definizione
 >Definisco l'***Angolo Convesso*** tra $v$ e $u$ come:
->$$arcos\left( \displaystyle{\frac{(v,u)}{\mid\mid v \mid\mid\cdot\mid\mid u\mid\mid}} \right) $$
+>$$\arccos\left( \displaystyle{\frac{(v,u)}{\mid\mid v \mid\mid\cdot\mid\mid u\mid\mid}} \right) $$
 
 Quindi un prodotto scalare ci permette di misurare non solo la lunghezza dei vettori, ma anche gli ***angoli che essi formano fra loro***
 

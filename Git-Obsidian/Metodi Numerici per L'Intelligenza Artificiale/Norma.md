@@ -39,7 +39,9 @@ Diventa necessario introdurre uno strumento matematico che estenda l'[[Errore di
 - $S_{1}=\{ x\in\mathbb{R}^2:\mid\mid x \mid\mid_{1}\mid x_{1}\mid + \mid x_{2} \mid = 1\}$
 
 >[!summary] Norma $2$
->$$\mid\mid x \mid\mid_{1} = \left[ \sum_{i=1}^n x_{i}^2\right]^{1/2}$$
+>$$\mid\mid x \mid\mid_{1} =\sqrt{ <x,x> }=\sqrt{ x^{T}x } = \sqrt{ \sum_{i=1}^n x_{i}^2 }$$
+
+^093ca9
 
 ![[Norm_Two.png|400]]
 
