@@ -209,3 +209,7 @@ Alcune ***politiche di sicurezza***:
 	- None
 	- Strict
 	- Lax (Default on chrome)
+
+>[!example] Tipologie di cookies
+>- Cookies di ***sessione***
+>- Cookies di ***profilazione***
