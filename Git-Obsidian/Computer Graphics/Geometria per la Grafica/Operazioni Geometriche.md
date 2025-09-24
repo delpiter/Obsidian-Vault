@@ -26,6 +26,10 @@ Due vettori $x,y\in \mathbb{R}^{n}$ si dicono ***ortogonali*** se il loro *prodo
 >[!important] Importante
 >La norma euclidea fornisce una nozione di lunghezza che rimane *inalterata* per **rotazioni**/**traslazioni** e **riflessioni** del vettore.
 
+$$
+\|a\|_{2}=\sqrt{ a^{T}a }=\sqrt{ a^{T}Q^{T}Qa }=\sqrt{ (Qa)^{T}(Qa) }=\|Qa\|_{2}
+$$
+
 >[!caution] Normalizzazione
 
 Un vettore di lunghezza $1$ è detto ***vettore unitario***.
@@ -33,6 +37,12 @@ Un vettore di lunghezza $1$ è detto ***vettore unitario***.
 $$
 x_{n}=\frac{x}{\|x\|_{2}}
 $$
+> Dimostrazione
+
+$$
+\left\| \frac{a}{\|a\|_{2}} \right\|_{2}=\frac{1}{\|a\|_{2}}\cdot\|a\|_{2}=1
+$$
+
 Un vettore normalizzato si dice ***versore***.
 
 >[!definizione] Prodotto Scalare
@@ -70,7 +80,7 @@ $$
 3. $\|a\times b\|=0$ se $a$ e $b$ sono *paralleli*.
 
 ###### Esempio
-> Vettore [[#^d4f7f8|normale]] ad un triangolo definiti i vertici $(A,B,C)$
+> Vettore [[Sistema di Coordinate#^d4f7f8|normale]] ad un triangolo definiti i vertici $(A,B,C)$
 
 $$
 n^{*}=(B-A)\times(C-A)
@@ -91,7 +101,12 @@ $$
 >>[!done] Coordinate Baricentriche
 >> I coefficienti $\alpha_{0}+\alpha_{1}+\dots+\alpha_{n}$ sono le ***coordinate baricentriche*** di $P$ nello *spazio affine*.
 
-Le *coordinate baricentriche* di un punto permettono di esprimere la posizione di un punto rispetto ad altri punti in modo ***indipendente dal sistema di coordinate***.
+Le *coordinate baricentriche* di un punto permettono di esprimere la posizione di un punto rispetto ai vertici di un triangolo, o più in generale un [[Sistema di Coordinate#Simplesso|simplesso]], in modo ***indipendente dal sistema di coordinate***.
+
+>[!hint] Applicazioni Pratiche
+>- Determinazione della ***posizione relativa***, le coordinate indicano quanto "*peso*" ciascun vertice ha nel determinare la posizione del punto.
+>- Consentono di [[Interpolazione Polinomiale|interpolare]] valori, come colori, temperature e altezze, definiti nei vertici del triangolo, per ottenere *valori continui in ogni punto interno*.
+>- ***Geometria Computazionale***: facilitano il controllo di appartenenza di un punto a un triangolo, e migliorano l'efficienza degli algoritmi di #addLink *rendering*, *collision detection* e *mesh processing*.
 
 La ***combinazione affine*** di due punti distinti descrive la *retta passante per i due punti*.
 
@@ -120,6 +135,7 @@ $$
 Prendiamo un qualsiasi punto $P$ dato dalla combinazione convessa di $A,B,C$.
 
 ![[BarycentricCoordinates.png]]
+
 Le aree risultanti: $APB, BPC$ e $APC$ sono *proporzionali alle coordinate baricentriche della combinazione*.
 $$
 P=\alpha_{0}A+\alpha_{1}B+\alpha_{2}C
@@ -127,12 +143,30 @@ $$
 $$
 \text{Area}_{ABC}=\text{Area}_{APB}+\text{Area}_{BPC}+\text{Area}_{APC}  
 $$
-- Ma sappiamo che $A_{APB}=\alpha_{0}A_{ABC},\quad A_{BPC}=\alpha_{1}A_{ABC},\quad A_{APC}=\alpha_{2}A_{ABC}$
+- Ma sappiamo che $A_{PCB}=\alpha_{0}A_{ABC},\quad A_{PCA}=\alpha_{1}A_{ABC},\quad A_{PAB}=\alpha_{2}A_{ABC}$
 
 **Quindi**:
 $$
-\alpha_{0}=\displaystyle{\frac{\text{Area(APB)}}{\text{Area(ABC)}}}\qquad\alpha_{1}=\displaystyle{\frac{\text{Area(PBC)}}{\text{Area(ABC)}}}\qquad\alpha_{2}=\displaystyle{\frac{\text{Area(APC)}}{\text{Area(ABC)}}}
+\alpha_{0}=\displaystyle{\frac{\text{Area(PCB)}}{\text{Area(ABC)}}}\qquad\alpha_{1}=\displaystyle{\frac{\text{Area(PAC)}}{\text{Area(ABC)}}}\qquad\alpha_{2}=\displaystyle{\frac{\text{Area(PAB)}}{\text{Area(ABC)}}}
 $$
+##### Interpolazione di Colore
+>[!check] Colore in un Triangolo
+>La formula per ***interpolare un colore*** $C_{P}$ in un punto $P$ interno a un triangolo $ABC$ con *colori assegnati ai vertici* è:
+>$$C_{P}=\alpha_{0}C_{A}+\alpha_{1}C_{B}+\alpha_{2}C_{C}$$
+
+> **Dove**
+- $C_{A},C_{B},C_{C}$ sono i *colori associati* ai vertici.
+	- Ogni colore può essere espresso come vettore $RGB$ ($C_{A}=(r_{A},g_{A},b_{A})$).
+- $\alpha_{0},\alpha_{1},\alpha_{2}$ sono le coordinate baricentriche di $P$ rispetto al triangolo $ABC$.
+
+Ogni vertice del triangolo ha un colore specifico
+- Calcolo le coordinate baricentriche per ogni `pixel` o *frammento*.
+- Durante la rasterizzazione, per ogni `pixel` che cade dentro al triangolo vengono calcolate le coordinate $\alpha_{0},\alpha_{1},\alpha_{2}$, *rispetto ai vertici*.
+- Il colore del `pixel` viene calcolato come *combinazione lineare* dei colori dei ***vertici pesati dalle coordinate baricentriche***.
+$$
+\text{colore}(p)=\alpha_{0}\text{colore}(v_{1})+\alpha_{1}\text{colore}(v_{2})+\alpha_{2}\text{colore}(v_{3})
+$$
+![[ColorInterpolation.png]]
 
 #### Convessità
 >[!definizione]
