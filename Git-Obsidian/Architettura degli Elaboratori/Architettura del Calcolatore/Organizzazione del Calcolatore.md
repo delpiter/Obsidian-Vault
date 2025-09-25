@@ -10,8 +10,18 @@
 ## L'architettura di Von Neumann
 ---
 ![[VonNeumannArchitecture.png]]
+
 >[!tldr] Idea
 >La grande intuizione fu quella di utilizzare la **memoria** non solo per i dati ma ***anche per i programmi***
 >- Potevano essere *caricati* in ***memoria*** con un lettore di schede evitando complesse e dispendiose *configurazioni*  con **interruttori e cavi**
 
 ***Programmi*** e ***Dati*** al tempo di esecuzione sono caricati in memoria
+
+> *Componenti*:
+- Un processore
+	- Una `ALU`
+	- Una serie di *registri generali* (contengono **input** e **output**)
+	- *Registri Speciali* (`PC`, `IR`, etc...)
+	- Una ***unità di controllo***
+- Una memoria
+- Un **Bus** che collega memoria e processore

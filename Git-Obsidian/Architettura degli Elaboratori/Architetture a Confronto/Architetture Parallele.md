@@ -183,4 +183,5 @@ La tassonomia più utilizzata è quella proposta da ***Flynn*** che si basa su d
 >Insieme di ***operandi***
 
 ![[Classificazione di sistemi Paralleli.png]]
+
 ![[Flynn Taxonomy.png]]

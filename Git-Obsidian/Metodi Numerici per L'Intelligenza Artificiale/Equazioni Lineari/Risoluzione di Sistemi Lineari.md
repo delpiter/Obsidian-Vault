@@ -332,7 +332,7 @@ $$
 >Usa, per calcolare la ***nuova componente*** $i$-esima di un *iterato* le *componenti già calcolate* dell'iterato stesso.
 
 >[!hint] Osservazione
->Il metodo non si presta ad essere [[Architetture Parallele|parallelizzato]] in quanto ogni nuovo componente dell'iterato *dipende* da tutte le nuove componenti appena calcolate.
+>Il metodo non si presta ad essere [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele|parallelizzato]] in quanto ogni nuovo componente dell'iterato *dipende* da tutte le nuove componenti appena calcolate.
 
 Il metodo suggerisce che la **soluzione** al passo $k$ si *ottiene*:
 - Risolvendo il sistema ***triangolare inferiore*** avente $(D+E)$ come matrici dei coefficienti e termine noto $b-Fx^{(k-1)}$.
