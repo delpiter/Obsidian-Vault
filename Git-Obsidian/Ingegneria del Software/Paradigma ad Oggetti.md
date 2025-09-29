@@ -119,3 +119,22 @@ Tramite il meccanismo di *overload*, è possibile definire all'interno di una cl
 Il polimorfismo, abbinato all'istanziamento dinamico, permette a ciascun oggetto di ***rispondere a uno stesso messaggio*** in modo appropriato a *seconda della classe da cui deriva*.
 
 ### Delegazione
+> Utilizzata per gestire le ***associazioni*** tra classi.
+
+>[!info]
+>Si parla di ***delegazione*** quando un oggetto $A$ contiene al suo interno un riferimento a un altro oggetto $B$, cosicché $A$ (*oggetto complesso*), può delegare alcune funzioni alla classe a cui appartiene $B$.
+
+## Sviluppo di Sistemi a Oggetti
+---
+> L'obbiettivo principale dell'approccio ***Object-Oriented*** è migliorare la **produttività**, aumentando l'**estendibilità** e **riusabilità** del software, controllando *complessità e costi di manutenzione*.
+
+>[!missing] Dll'approccio funzionale...
+
+La *decomposizione funzionale* è un'analisi di tipo ***top-down*** impiegata nel ***paradigma procedurale***.
+- Basata sui concetti di procedura e flusso di dati.
+- Risponde alla domanda: *cosa fa il sistema, qual è la sua funzione?*
+- Ad alto livello il sistema viene caratterizzato tramite un'***unica funzionalità***.
+
+I blocchi di base sono i *task* che durante l'implementazione danno luogo a procedure.
+- I *task* sono legati alla **specifica soluzione proposta**.
+
