@@ -14,3 +14,4 @@ Ogni *processo* elabora una porzione di input ("*dati locali*") per ottenere un 
 - Alla fine **combino** i risultati parziali per ottenere il *risultato finale*.
 
 ![[Scatter-Gather.png]]
+
