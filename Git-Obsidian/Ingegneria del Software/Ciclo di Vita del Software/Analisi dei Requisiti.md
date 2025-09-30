@@ -124,14 +124,14 @@ Si studia la *dinamica* dell'oggetto.
 ```mermaid
 stateDiagram-v2
     [*] --> InCorso: Iscrizione
+    InCorso --> Ritirato: Ritirato
     FuoriCorso --> FuoriCorso: Esame
-    InCorso --> Ritirato
-    InCorso --> FuoriCorso: Esami Insufficienti
-    FuoriCorso--> Ritirato
-    FuoriCorso --> InCorso: Recupera
     InCorso --> InCorso: Esame
+    InCorso --> FuoriCorso: Esami Insufficienti
     InCorso --> Laureato: Esame Laurea
-    FuoriCorso--> Laureato: Esame Laurea
+    FuoriCorso --> Ritirato: Ritirato
+    FuoriCorso --> InCorso: Recupera
+    FuoriCorso --> Laureato: Esame Laurea
 ```
 
 > Usate per applicazioni orientate al controllo

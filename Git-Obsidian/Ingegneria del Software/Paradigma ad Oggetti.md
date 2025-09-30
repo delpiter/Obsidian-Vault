@@ -128,7 +128,7 @@ Il polimorfismo, abbinato all'istanziamento dinamico, permette a ciascun oggetto
 ---
 > L'obbiettivo principale dell'approccio ***Object-Oriented*** è migliorare la **produttività**, aumentando l'**estendibilità** e **riusabilità** del software, controllando *complessità e costi di manutenzione*.
 
->[!missing] Dll'approccio funzionale...
+>[!caution] Dll'approccio funzionale...
 
 La *decomposizione funzionale* è un'analisi di tipo ***top-down*** impiegata nel ***paradigma procedurale***.
 - Basata sui concetti di procedura e flusso di dati.
@@ -137,4 +137,36 @@ La *decomposizione funzionale* è un'analisi di tipo ***top-down*** impiegata ne
 
 I blocchi di base sono i *task* che durante l'implementazione danno luogo a procedure.
 - I *task* sono legati alla **specifica soluzione proposta**.
+>[!fail] Problemi
+
+- Mancanza di *estendibilità*.
+- *Nessun modello unificante* per le diverse fasi.
+- Mancanza di *iterazione* nella progettazione.
+- Poca attenzione alla *riusabilità*.
+- *Progettazione dei dati* trascurata.
+
+>[!abstract] All'approccio a oggetti
+
+L'***analisi*** va dall'inizio del progetto fino all'analisi delle *specifiche utente* e allo [[Definizione Strategica e Pianificazione#Studio di Fattibilità|studio di fattibilità]].
+
+Si definiscono progettazione logica e fisica del sistema (***design***).
+
+***Implementazione***:
+- Scrittura del codice.
+- Test di verifica.
+- Validazione.
+- Manutenzione.
+
+>[!done] Soluzioni
+- I confini tra le fasi non sono più distinti, il centro di interesse è l'***oggetto e le sue interrelazioni***.
+- Processo di sviluppo ***iterativo***.
+
+>La **decomposizione** è orientata alla **modellazione**:
+- I blocchi di base sono entità che interagiscono, modellate come classi di oggetti.
+- I risultati dell'analisi sono ***parte integrante del design***.
+
+I sistemi sviluppati a oggetti risultano ***più stabili nel tempo*** di quelli progettati per decomposizione funzionale.
+
+Alta produttività
+- Fasi diverse dell'analisi e del ciclo di vita possono essere svolte ***contemporaneamente***.
 
