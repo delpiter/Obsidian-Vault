@@ -217,6 +217,13 @@ $$
 (Ax_{1}+By_{1}+C)(Ax_{2}+By_{2}+C)\leq0
 $$
 
+#todo
+>[!hint] Osservazione
+>Il ***semipiano positivo*** è quello verso cui *punta la normale* alla retta.
+
+Data una retta in forma implicita, si definisce il vettore normale come i coefficienti della forma implicita.
+- Anche in 3 dimensioni, il vettore normale è l'insieme dei coefficienti dell'equazione del piano.
+
 #### Equazione di un Piano in 3D
 > Un piano $\pi$ è definito da una normale $n$ ed un punto sul piano $(P_{0})$.
 
