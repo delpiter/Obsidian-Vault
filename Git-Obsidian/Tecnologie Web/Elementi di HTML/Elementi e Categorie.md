@@ -7,6 +7,8 @@
 >[!info] Flow Content
 >La maggior parte degli elementi usati nel *body* del documento e delle applicazione è categorizzato come ***flow content***.
 
+^82988f
+
 >[!tl;dr] Metadati
 >I ***metadati*** sono contenuto che identifica la **presentazione** o il **comportamento** del resto del contenuto, o le relazioni del documento con altri documenti, che fornisce informazioni "*fuori banda*".
 
@@ -15,6 +17,8 @@
 >[!caution] Interactive
 >***Interactive*** è il contenuto che è specificamente inteso per l'interazione con gli utenti.
 >- `{html icon} <form><\form>`, `{html icon} <multimedia><\multimedia>`, etc...
+
+^392e61
 
 >[!bug] Embedded
 >La categoria ***embedded*** è contenuto che *importa un'altra risorsa nel documento*, o contenuto espressi in altri vocabolari e inseriti nel documento.

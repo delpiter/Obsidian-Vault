@@ -62,6 +62,16 @@ Consente di mantenere separata la presentazione (`CSS`) e il contenuto (`HTML`)
 >***Uniform Resource Identifier***
 >- Per l'*identificazione* delle risorse.
 
+Sono una sintassi nota usata in `www` per definire i nomi e indirizzi di oggetti (*risorse*) su **internet**.
+- Risolvono il problema di creare un ***meccanismo di accesso unificato*** alle risorse.
+
+Gli uri sono definiti come:
+- [[URL]]: Sintassi che contiene informazioni immediatamente utilizzabili per accedere alla risorsa (es. *Indirizzo di rete*).
+- ***URN***: *Uniform Resource Name*, una sintassi che permetta una etichettatura permanente e non ripudiabile della risorsa.
+
+
+>[!summary] Risorsa
+>Una ***risorsa*** è qualunque struttura che sia oggetto di scambio tra applicazioni all'interno del `web`.
 #### HTTP
 >[!abstract] [[HTTP]]
 >***HyperText Transfer Protocol***

@@ -49,3 +49,13 @@ Converte le coordinate $x,y$ di ogni vertice, in coordinate espresse in `pixel`.
 6. ***Trasformazione di viewport***, trasforma l'immagine nella window in coordinate `pixel` *viewport*.
 
 ![[GeometryStage.png]]
+
+### Trasformazioni di Modellazione
+> Ogni oggetto è definito in un suo sistema di coordinate, `OCS` (*Object Coordinate System*).
+
+Le [[Sistemi di Riferimento#Trasformazioni Geometriche|trasformazioni di modellazione]] permettono di muovere, orientare e trasformare i modelli all'interno di un sistema di riferimento comune `WCS`.
+
+>[!example] Trasformazioni
+>Le trasformazioni necessarie sono queste:
+>- [[View Transform]]
+>- Projection Transform
