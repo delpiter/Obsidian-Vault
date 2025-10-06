@@ -122,6 +122,8 @@ Un certo **elemento** può comparire in *più diagrammi*, ma è ***univoca*** la
 >Elenca i ***casi d'uso del sistema*** e le loro relazioni.
 >- Normalmente *disegnato per primo*.
 
+^f4a071
+
 Unico diagramma ***abbastanza semplice*** per essere usato con l'**utente**.
 - Rappresenta le *specifiche funzionali*.
 
@@ -161,6 +163,8 @@ Unico diagramma ***abbastanza semplice*** per essere usato con l'**utente**.
 >[!bug] Stereotipo
 >Uno ***stereotipo*** rappresenta una variazione di un elemento di modellazione esistente, con la *stessa forma ma diverso scopo*.
 >- Permette di introdurre nuovi elementi di modellazione a partire da quelli esistenti.
+
+^f653b6
 
 ![[Stereotype.svg]]
 
