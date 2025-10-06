@@ -1,5 +1,5 @@
 >[!summary] Pattern
->Si applica quando la computazione può essere decomposta in ***task indipendenti*** che richiedono *poca o nessuna comunicazione*.
+>[[Parallel Programming Patterns|Pattern di Programmazione parallela]] che si applica quando la computazione può essere decomposta in ***task indipendenti*** che richiedono *poca o nessuna comunicazione*.
 
 > Esempi
 - *Vector Sum*.

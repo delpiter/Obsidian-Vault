@@ -237,7 +237,7 @@ Nasce dalla necessità di avere identificatori all'*interno di una relazione*.
 >[!abstract] Definizione
 >La ***generalizzazione*** è un *legame logico* tra un’entità $E$ (**entità genitore**) e una o più entità $E_{1},E_{2},\dots$ (**entità figlie**), in cui $E$ è il caso *generale* e $E_{1},E_{2},\dots$ sono i casi *particolari*.
 
->Medesimo concetto nell'[[UML#Generalizzazione|UML]]
+>Medesimo concetto nell'[[Linguaggio di Modellazione#Generalizzazione|UML]]
 
 Le proprietà di $E$ sono *ereditate* da $E_{1},E_{2},\dots$
 - Ogni $E_{i}$ **possiede** gli attributi di $E$ e **partecipa** alle associazioni definite per $E$

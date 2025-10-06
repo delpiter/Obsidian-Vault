@@ -1,5 +1,5 @@
 >[!tip] Pattern
->Il ***pattern partition*** consiste nel dividere il *dominio dei dati* in regioni solitamente 
+>Il è un [[Parallel Programming Patterns|pattern]] ***partition*** consiste nel dividere il *dominio dei dati* in regioni solitamente 
 >[[Insiemi Numerici#Insiemi Separati|disgiunte]] (potrebbe essere necessario avere insiemi **non disgiunti**) chiamate ***partizioni*** (*partition*).
 
 Ogni *processore* opera su una singola partizione.
@@ -132,4 +132,12 @@ La superficie di un lago di può approssimare con una ***mesh di triangoli***.
 Il workload è bilanciato se ogni processore esegue più o meno la ***stessa quantità di lavoro***.
 > Modi di realizzare il *load balancing*.
 - Utilizzo di partizionamento [[#In base alla Dimensione|fine-grained]].
-- Utilizzo di ***allocazione dinamica dei task*** ( #addlink master-worker paradigm).
+- Utilizzo di ***allocazione dinamica dei task*** (*master-worker* paradigm).
+
+#### Master-Worker Paradigm
+>[!tldr] Idea
+> Si inseriscono tutti i *task* in una coda, ad ogni unità di esecuzione viene assegnato un *task* secondo la **coda**.
+
+Quando l'esecuzione del *task* termina, si assegna all'unità un nuovo *task*.
+- Ci deve essere un ***meccanismo di coordinamento*** tra i task.
+

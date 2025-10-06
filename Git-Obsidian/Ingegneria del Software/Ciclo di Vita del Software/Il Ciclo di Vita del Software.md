@@ -22,7 +22,7 @@ Viene predisposto un piano di *controllo qualità* per il progetto.
 
 >[!tl;dr] Analisi dei Requisiti
 
-***Formalizza i requisiti*** avvalendosi di tecniche di modellazione della realtà (UML #addLink).
+***Formalizza i requisiti*** avvalendosi di tecniche di modellazione della realtà ([[UML]]).
 - Produce *macro-specifiche* per la fase di progettazione
 - Risponde alla domanda "***Cosa Fare?***"
 
