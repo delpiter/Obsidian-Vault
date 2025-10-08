@@ -12,6 +12,13 @@ Lo stesso contenuto può essere presentato in modi diversi:
 Lo stesso contenuto può essere presentato ***correttamente*** su dispositivi diversi:
 - `PC`, **tablet** e **smartphone**.
 
+Il `{CSS icon} CSS` indica anche il comportamento del [[Posizionamento|posizionamento]] degli *elementi*.
+
+Lo stile può essere applicato:
+- **Direttamente**, con l'attributo `{CSS icon}style` o con *regole*.
+- **Indirettamente**, l'elemento *eredita* lo stile dal padre.
+
+Si può forzare l'ereditarietà usando come valore `inherit`.
 ### Usare CSS con HTML
 > HTML prevede l'uso di stili `{CSS icon} CSS` in quattro modi diversi.
 
