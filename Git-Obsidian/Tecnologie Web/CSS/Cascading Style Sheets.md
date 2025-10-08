@@ -123,3 +123,90 @@ Lo stesso contenuto può essere presentato ***correttamente*** su dispositivi di
 
 > **Valori**
 - Dipendono dalla proprietà.
+
+#### Valori
+>[!info]
+>I valori sono ***numeri*** seguiti da una ***unità di misura***.
+
+I numeri possono essere [[Insiemi Numerici#Numeri Interi|interi]] e [[Insiemi Numerici#Numeri Reali|reali]].
+
+##### Unità di misura
+> Le unità di misura possono essere relative o assolute
+
+>[!caution] Relative
+>`em`
+>- Relativa alla ***dimensione del font*** in uso (es. se il font ha corpo `12pt`, `2em` varrà `24pt`).
+>
+>`px`
+>- Relativi al *dispositivo di output* e alle *impostazioni dell'utente*.
+
+>[!abstract] Assolute
+>- `in`: *Pollici*.
+>- `cm`: *Centimetri*.
+>- `mm`: *Millimetri*.
+>- `pt`: *Punti Tipografici* ($1/72$ di pollice).
+>- `pc`: *Pica* (`12pt`).
+
+>[!info] Percentuali
+>***Percentuale del valore*** che assume la proprietà stessa nell'elemento padre.
+
+>[!help] [[URL]]
+>Assoluti o relativi (*path*).
+
+>[!todo] Stringhe
+
+>[!hint] Colore
+>- [[Rappresentazione di Immagini#Codifica RGB|RGB]] (`#RRGGBB`)
+>- [[Luce e Colori#Spazio di Colori|HSI]] (`hsi(0, 10%, 40%)`)
+
+### Ordinamento Regole
+>[!fail] Conflitti di Stile
+>Nell'applicare `{CSS icon} CSS` possono nascere dei conflitti.
+>- Ad uno stesso elemento sono applicate delle regole i cui valori sono in conflitto.
+
+```html title:esempio
+<style>
+	div#provaID{ background-color: red;}
+	div.provaClasse{ background-color: blue;}
+	div{background-color: green; }
+</style>
+<div id=‘provaID’ class=‘provaClasse’></div>
+```
+
+>[!question] Di che colore sarà il `{html icon} <div>`?
+
+Le dichiarazioni vengono ordinate in base ai seguenti fattori, ordinati dal più *fino* al **meno importante**.
+
+>[!abstract] Media
+
+>[!important] Importanza di una Dichiarazione
+
+È possibile aggiungere ad una dichiarazione la keyword `{css icon} !important`.
+- Una regola con questa keyword avrà precedenza sulle altre.
+
+>[!failure] Origine della Dichiarazione
+>Un foglio di stile può avere $3$ origini differenti.
+
+In *ordine di importanza*:
+1. **Author**: L'autore delle pagine fornisce i fogli di stile del documento.
+2. **User**: L'utente può fornire un ulteriore foglio di stile per indicare regole di proprio piacimento (*funzione tipicamente del browser*).
+3. **User Agent**: Il browser definisce le *regole di default* per gli elementi dei documenti.
+
+>[!hint] Specificità
+>La specificità di un selettore è data da una ***quadrupla*** `xywz` dove:
+
+- `x`: $1$ se la dichiarazione è nell'attributo `style`, $0$ altrimenti.
+- `y`: Il numero di `id` specificati nel [[Selettori|selettore]].
+- `w`: Numero di classi, attributi e pseudo-classi specificati nel **selettore**.
+- `z`: Numero di elementi e di pseudo-elementi specificati nel **selettore**.
+
+A parità di media, importanza e origine, avrà la precedenza la regola con ***specificità più alta***.
+
+```css
+li {}                         /* x=0 y=0 w=0 z=1 */
+nav ul li:first-line {}       /* x=0 y=0 w=0 z=4 */
+nav.menu ul.sec li {}         /* x=0 y=0 w=2 z=3 */
+nav ul li a[href=‘/home’] {}  /* x=0 y=0 w=1 z=4 */
+nav#menu ul.sec li#st a {}    /* x=0 y=2 w=1 z=4 */
+style="li a" {}               /* x=1 y=0 w=0 z=2 */
+```

@@ -117,4 +117,20 @@ p#note1 { font-size: 9 px; }
 - Elemento `E` che è ***vuoto***.
 
 >[!todo] Selettori di Pseudo-Elementi
+>Uno ***pseudo-elemento*** è una *keyword* che può essere aggiunta ad un selettore, per aggiungere stile ad una parte specifica di un elemento.
 
+> `before`, `after`
+- Vero prima e dopo il contenuto dell'elemento `E`.
+
+> `first-line`
+- Vero per la prima riga dell'elemento `E`.
+
+> `first-letter`
+- Vero per la prima lettera di un elemento.
+
+```css
+p:first-letter { 
+	font-size: 300%; 
+	float: left;
+}
+```
