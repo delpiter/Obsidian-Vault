@@ -103,6 +103,11 @@ direzione nomeParametro: tipoParametro=valoreDefault
 - $0$ o più: `*`, abbreviazione di  `0..*`
 
 ```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
 classDiagram
 direction LR
     class Person {
@@ -137,6 +142,11 @@ Si segue il ***flusso grafico*** per la lettura:
 È possibile specificare il ***verso di lettura*** di una associazione, definire ***associazioni monodirezionali*** o *specificare ruoli*.
 - Raramente nella [[Analisi dei Requisiti|fase di analisi]] capita di dovere mettere una direzione all'associazione, mentre nella [[Progettazione|fase di progettazione]] capiterà **sempre**.
 ```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
 classDiagram
 direction LR
 	class webPage{
@@ -148,6 +158,11 @@ direction LR
 - *Associazione monodirezionale*
 
 ```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
 classDiagram
 	class Person {
 	}
@@ -208,3 +223,139 @@ Gli elementi derivati possono essere:
 - ***Associazioni***.
 
 ![[DerivateElement.svg]]
+
+### Aggregazione e Composizione
+>[!help] Aggregazione
+>L'***aggregazione*** è un caso speciale di associazione con semantica "*part-of*".
+>Sia l'aggregazione intera sia le singole parti ***esistono indipendentemente***.
+
+Viene rappresentata con un ***rombo bianco***.
+![[Aggregation.svg]]
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+	class Team{
+	}
+	class Player {
+	}
+	class GoalKeeper{
+	}
+	class Substitute {
+	}
+	Team "1" o-- "10" Player
+	Team "1" o-- "1" GoalKeeper
+	Team "1" o-- "*" Substitute
+	class VideoSequence{
+	}
+	class Scene{
+	}
+	VideoSequence "*" o-- "*" Scene: {ordered}
+```
+
+Informa il progettista che deve ***connettere le due classi per riferimento***.
+
+>[!caution] Composizione
+> Una ***composizione*** è una aggregazione in cui il tutto "*possiede*" le sue parti.
+> - Le parti *esistono* solo in **relazione al tutto**.
+> - Ogni parte appartiene esattamente a *un tutto*.
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+direction LR
+	class Polygon {
+	}
+	class Point {
+	}
+	Polygon "1" *--> "3..*" Point: Contains
+```
+
+In un diagramma di progettazione, indica al programmatore che l'oggetto "`Polygon`" deve contenere un oggetto "`Punto`".
+
+### Generalizzazione
+>[!info]
+>L'***aggregazione*** è un caso speciale di associazione con semantica "*is-a*".
+
+Tutti gli attributi, le operazioni e le relazioni della *superclasse* vengono ***ereditati*** dalle ***sottoclassi***.
+
+```mermaid
+classDiagram
+	class Figure{
+        -Position pos
+        -Color col
+        +display() abstract
+    }
+	class Arch {
+		-radius
+		+display()
+	}
+	class Segment{
+		-extreme
+		+display()
+	}
+	class Rectangle {
+		-vertices
+		+display()
+	}
+	Figure <|-- Arch
+	Figure <|-- Segment
+	Figure <|-- Rectangle
+```
+
+È supportata l'***ereditarietà multipla***.
+Possono essere indicati insiemi di generalizzazione e vincoli (*overlapping*, *disjoint*, *complete*, *incomplete*).
+
+>[!abstract] Classi Astratte
+>Le ***classi astratte*** sono classi che *non possono* essere instanziate da oggetti.
+>- Sono utili come radici di gerarchie di specializzazione
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+	class Figure{
+		<<abstract>>
+	}
+	class Ellipse
+	class Polygone
+	Figure <|-- Ellipse
+	Figure <|-- Polygone
+```
+
+>[!Powertyping]
+>Un ***powertype***  è una (meta)classe le cui istanze sono classi che *specializzano un'altra classe*.
+>- Nel *powertype* c'è una istanza corrispondente a *ciascuna sottoclasse*.
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+	class Article
+	class HiFi
+	class Phone
+	class PC
+	class ArticleType{
+		<<powertype>>
+	}
+	Article <|-- HiFi
+	Article <|-- Phone
+	Article <|-- PC
+	Article "*" -- "1" ArticleType: of
+```
+
+### Dipendenza

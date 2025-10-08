@@ -79,7 +79,7 @@ Un certo **elemento** può comparire in *più diagrammi*, ma è ***univoca*** la
 > Legano tra loro le entità.
 
 - **Dipendenza**
-	- Un'entità $B$ dipende da una entità $A$ se una modifica di $A$ *può* causare modifiche su $B$.
+	- Un'entità $B$ dipende da una entità $A$ se una variazione di $A$ *può* causare una variazione in $B$.
 [[Normalizzazione#Dipendenze Funzionali|Ripasso Dipendenze Funzionali]].
 
 ![[Dependency.svg|150]]

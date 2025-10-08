@@ -16,6 +16,8 @@
 >[!warning] Attenzione
 >Non c'è bisogno di aggiungere attributi "*ID*" aggiuntivi all'oggetto, poiché nel ***paradigma ad oggetti*** è già presente.
 
+>[!check] Metaclasse
+>Una ***metaclasse*** è una classe le cui istanze sono classi.
 ### Operazioni e Interfaccia
 >[!info]
 >Ogni operazione dichiarata da un oggetto specifica il ***nome dell'operazione***, gli oggetti che prende come ***parametri*** e il ***valore restituito***.
