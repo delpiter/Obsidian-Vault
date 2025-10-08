@@ -58,4 +58,4 @@ Le [[Sistemi di Riferimento#Trasformazioni Geometriche|trasformazioni di modella
 >[!example] Trasformazioni
 >Le trasformazioni necessarie sono queste:
 >- [[View Transform]]
->- Projection Transform
+>- [[Projection Transform]]

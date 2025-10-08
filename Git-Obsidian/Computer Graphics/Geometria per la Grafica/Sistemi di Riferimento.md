@@ -264,7 +264,11 @@ $$
 $$
 P'=P+T
 $$
-Nella notazione in ***coordinate omogenee*** possiamo riscrivere la traslazione come:
+- Ma questa operazione è *diversa* rispetto alla **rotazione** e alla **scalatura** (somma vs. prodotto).
+	- Questo causa problemi all'interno della [[Rendering Graphics Pipeline]].
+
+Per risolvere questo problema si sfruttano le *coordinate omogenee*.
+- Nella notazione in ***coordinate omogenee*** possiamo riscrivere la traslazione come:
 $$
 \begin{bmatrix}
 x' \\
@@ -514,6 +518,12 @@ $$
 
 >[!warning] Ordine di Concatenazione
 >L'*ordine di concatenazione* è importante poiché le trasformazioni geometriche sono associative ma ***non sono in generale commutative***.
+
+La matrice della prima trasformazione che si vuole fare, deve essere l'***ultima ad essere moltiplicata***.
+- La corretta sequenza delle trasformazioni $T_{1}$, $T_{2}$, $T_{3}$, $T_{4}$ è: 
+$$
+T=T_{4}\cdot T_{3}\cdot T_{2}\cdot T_{1}
+$$
 
 >[!hint] Non Commutatività
 
