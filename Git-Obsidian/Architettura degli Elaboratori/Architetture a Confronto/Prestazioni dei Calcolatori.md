@@ -113,6 +113,7 @@ $$
 *Dove $A$ è il sistema "nuovo" e $B$ è il sistema "vecchio*
 
 #### Legge di Amdhal
+
 >[!check] Legge di Amdhal
 >La ***Legge di Amdhal*** afferma che il miglioramento delle prestazioni che si ottiene in un sistema di elaborazione accelerando un ***qualsiasi sottoinsieme*** del calcolatore è ***proporzionale*** alla percentuale  di tempo per cui quel sottoinsieme è ***utilizzato***
 >>[!done] Formula

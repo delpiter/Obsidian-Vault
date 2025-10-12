@@ -355,4 +355,3 @@ Gli attributi `cols` e `rows` specificano la dimensione dell'*area*.
 	il valore dello slider è: <output name="x" for="a"></output>
 </form>
 ```
-
