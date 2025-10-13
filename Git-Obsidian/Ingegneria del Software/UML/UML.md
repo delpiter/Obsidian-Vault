@@ -80,7 +80,7 @@ Un certo **elemento** può comparire in *più diagrammi*, ma è ***univoca*** la
 
 - **Dipendenza**
 	- Un'entità $B$ dipende da una entità $A$ se una variazione di $A$ *può* causare una variazione in $B$.
-[[Normalizzazione#Dipendenze Funzionali|Ripasso Dipendenze Funzionali]].
+[[Normalizzazione#Dipendenze Funzionali|Ripasso Dipendenze Funzionali]]. ^46e719
 
 ![[Dependency.svg|150]]
 - **Associazione**: linea *senza punte*.

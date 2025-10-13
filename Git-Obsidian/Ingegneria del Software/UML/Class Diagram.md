@@ -359,3 +359,164 @@ classDiagram
 ```
 
 ### Dipendenza
+![[UML#^46e719]]
+
+>[!tip] Classi
+>Nel caso delle classi, una dipendenza indica che una classe ***cliente*** *dipende da alcuni servizi* di una ***classe fornitore***.
+
+- Lo [[UML#Meccanismi di Estendibilità|stereotipo]] più comunemente usato è `<<use>>`.
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+direction LR
+	class ClassA{
+	}
+	class ClassB{
+	}
+	ClassA ..> ClassB: use
+```
+
+- Più specificamente, si può rappresentare il fatto che un'operazione della classe cliente ha argomenti che appartengono al tipo di un'altra classe (`<<parameter>>`).
+
+### Template
+>[!info]
+>Un ***template*** è utilizzato per descrivere una classe in cui uno o più parametri formali **non sono istanziati**.
+
+Un ***template*** definisce una *famiglia di classi* in cui ogni classe è specificata istanziando i parametri con i valori attuali.
+- **Non** è utilizzabile direttamente.
+
+### Raffinamento
+>[!definizione]
+>Il ***raffinamento*** esprime una relazione tra due descrizioni dello stesso concetto a livelli diversi di astrazione.
+
+- Tra un tipo astratto e una classe che lo realizza (*realizzazione*).
+- Tra una classe di **analisi** e una di **progetto**.
+- Tra una implementazione *semplice* e una *complessa* della stessa cosa.
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+direction LR
+	ArrayStack ..> Stack
+```
+
+### Interfaccia
+>[!definizione]
+>Una ***interfaccia*** è un insieme di funzionalità *pubbliche* identificate da un nome.
+>- Specifica le operazioni pubbliche di una classe, componente, pacchetto o altre entità, *separando le specifiche dall'implementazione*.
+
+L'interfaccia **non** ha alcuna specifica di struttura interna (*attributi*, *stato* o *associazioni*).
+- Solo **operazioni astratte**.
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+direction LR
+	class Stackable{
+		<<interface>>
+		+pop() obj
+		+push(obj)
+		+empty() bool
+	}
+	class ArrayStack{
+		element[]
+		+pop() obj
+		+push(obj)
+		+empty() bool
+	}
+	Calculator ..>  Stackable
+	Stackable <|..  ArrayStack
+```
+
+> ***Lollypop Notation***
+
+```mermaid
+---
+  config:
+    class:
+      hideEmptyMembersBox: true
+---
+classDiagram
+direction LR
+	class ArrayStack{
+		element[]
+		+pop() obj
+		+push(obj)
+		+empty() bool
+	}
+	Calculator ..() Stackable
+	Stackable ()..  ArrayStack
+```
+
+## Analisi vs Progettazione
+---
+>[!note] Classi di Analisi
+>Le ***classi di analisi*** rappresentano un'astrazione nel dominio del problema.
+>Corrispondono chiaramente a *concetti concreti del mondo*.
+>- Indicano gli attributi che *probabilmente* saranno inclusi nelle ***classi di progettazione***.
+
+>[!abstract] Classi di Progettazione
+>Le ***classi di progettazione*** hanno le loro specifiche complete, possono essere direttamente implementate.
+>Nascono dal dominio del problema per *raffinamento delle classi di analisi*.
+
+### Identificare gli Elementi
+>[!note] Classi d'Analisi
+
+Le *classi d'analisi* corrispondono a entità fisiche e a **concetti del dominio applicativo**.
+> Evitare:
+- Soluzioni implementative
+- Classi ridondanti, irrilevanti e vaghe
+- Classi "*onnipotenti*"
+- Gerarchie di specializzazione profonde
+
+>[!caution] Associazioni d'Analisi
+
+Le associazioni sono tipicamente indicate da ***verbi*** che esprimono:
+- Collocazione fisica (*contenuto in*).
+- Azione (*gestisce*).
+- Comunicazioni (*parla a*).
+- Proprietà (*possiede*).
+
+Evitare le associazioni irrilevanti o che esprimono ***soluzioni implementative***.
+Deve descrivere una *proprietà* strutturale del dominio, **non un evento transitorio**.
+
+>[!summary] Attributi
+
+Le *proprietà* di classi e associazioni sono ***attributi***.
+
+> Concetti da fare:
+- **Omettere** o **evidenziare** gli attributi derivati.
+- Se una proprietà *dipende dalla presenza di un'associazione*, rappresentarla con un attributo dell'associazione.
+- **Non** aggiungere agli attributi gli *identificatori degli oggetti*, a meno che non risultino esplicitamente dalle specifiche.
+
+
+>[!tip] Classi di Progettazione
+
+Con le ***classi di progettazione*** si specifica esattamente come le classi assolveranno le loro responsabilità.
+
+Ciascuna classe deve essere:
+- **Completa**: deve fornire ai clienti tutti i servizi.
+- **Sufficiente**: i metodi devono essere esclusivamente finalizzati allo scopo della classe.
+- **Essenziale**: non mettere a disposizione più di un modo per effettuare la stessa operazione.
+
+>[!caution] Associazione di Progettazione
+
+Le associazioni bidirezionali o le classi associative ***non sono direttamente implementabili***.
+> Le associazioni di progettazione *devono* specificare:
+- Nome
+- Verso di navigabilità
+- Molteplicità a entrambi gli estremi
+- Nome del ruolo destinazione
