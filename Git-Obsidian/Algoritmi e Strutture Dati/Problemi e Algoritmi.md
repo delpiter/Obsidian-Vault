@@ -1,7 +1,7 @@
 ## Problemi
 ---
->[!info] Definizione
->In matematica un **problema** è un quesito che richiede la determinazione o la costruzione di uno o più enti che soddisfino alle condizioni specificate nell'enunciato di un problema
+>[!cite] Problema
+>Un ***problema*** è un quesito con cui si chiede di trovare, con un *procedimento di calcolo* uno o più **dati sconosciuti**, partendo dai **dati noti** contenuti nell'*enunciato* del quesito stesso.
 
 Vengono forniti dei **dati in ingresso** (*input*)
 - Con una struttura nota
@@ -21,6 +21,7 @@ Dato un problema una sua risoluzione è un **processo** che trasforma i *dati in
 - Un programma è un algoritmo scritto in un linguaggio che una macchina è in grado di capire
 - Per scrivere un algoritmo non è necessario conoscere un linguaggio di programmazione specifico
 
+Un algoritmo risolve un problema se è in grado di generare una soluzione per ***ogni possibile istanza***.
 ### Proprietà degli Algoritmi
 Un **algoritmo** deve soddisfare le seguenti proprietà:
 >[!done] Input
