@@ -3,6 +3,24 @@
 >
 
 La visualizzazione di un documento [[Cascading Style Sheets|CSS]] avviene identificando lo spazio di visualizzazione di ciascun ***box*** presente nella pagina.
+
+La `box` ha alcune proprietà:
+- `{CSS} box-shadow`
+	- Permette di specificare l'ombra del `box`.
+- `{CSS} resize`
+	- Permette all'utente di ridimensionare i `box`.
+- `{CSS} box-sizing`
+	- Permette di far rientrare le dimensioni di [[#Padding]] e [[#Border]] nel computo di `width` e `height`, di default ha valore `{cSS} content-box`.
+
+```css
+div {
+	border-radius: 0px 30px; 
+	border: 3px blue solid;
+	box-shadow: grey 15px 15px 10px;
+	background-color: rgba(0, 0, 255, 0.2);
+	color: blue;
+}
+```
 ## Componenti
 ---
 >[!abstract] Componenti
@@ -78,5 +96,13 @@ Esistono tre proprietà singole per **ognuno dei quattro bordi** (12 in totale):
 - `{CSS icon} border-pos-style`
 	- *Valori possibili*: `none` o `hidden` (nessun bordo), `solid` (bordo continuo), `dotted` (a puntini), `dashed` (tratteggiato), `double` (doppio), `groove` `ridge` `inset` `outset` (effetti tridimensionali).
 - `{CSS icon} border-pos-color`.
+- `{css icon} border-image`
+	- Permette di specificare una immagine che viene usata come bordo.
+- `{CSS icon} border-radius`
+	- Permette di specificare *bordi arrotondati*, ha delle proprietà estese:
+		- `{css} border-top-left-radius`.
+		- `{css} border-top-right-radius`.
+		- `{css} border-bottom-right-radius`.
+		- `{css} border-bottom-left-radius`.
 
 Dove `pos` può essere `top`, `right`, `bottom`, `left`.

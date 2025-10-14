@@ -25,3 +25,6 @@ Le procedure per calcolare i lower bound sono dette ***procedure di bounding***.
 >Una soluzione ammissibile corrisponde a un valido ***upper bound*** $z_{UP}$ ed è quindi una stima per eccesso del valore della soluzione ottima $z_{p}$ ($z_{UP}\geq z_{p}$).
 
 Le procedure per calcolare soluzioni ammissibili sono dette ***euristici***.
+
+>[!done] Esatti
+>Un ***algoritmo esatto*** è un algoritmo che garantisce la determinazione della soluzione ottima di $P$.

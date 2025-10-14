@@ -112,4 +112,3 @@ Al termine di ogni iterazione si **selezionano** gli individui che faranno parte
 5. *Mutazione*: Modifica casualmente alcune soluzioni in $P_{G}$.
 6. *Selezione della Popolazione*: La nuova popolazione è selezionata sostituendo alcuni individui di $P$ con gli individui di $P_{G}$.
 7. Se la *condizione di terminazione* non è soddisfatta vai allo step $3$.
-
