@@ -61,7 +61,7 @@ Modificabile tramite quattro proprietà singole:
 Esiste una proprietà abbreviata `margin`:
 ```css
 p{margin: 5px 7px 8px 10px} /*top rightbottom left*/
-p{margin: 5px 7px 6px } /*top right-leftbottom*/
+p{margin: 5px 7px 6px } /*top right-left bottom*/
 p{margin: 5px 10%} /*top/bottom right-left*/
 p{margin: 5px } /*all*/
 ```
