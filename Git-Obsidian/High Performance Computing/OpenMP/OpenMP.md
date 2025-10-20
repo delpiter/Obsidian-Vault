@@ -95,6 +95,32 @@ int main( int argc, char* argv[] )
 }
 ```
 
+##### Direttiva For
+>[!failure] `{c icon} #pragma omp parallel`
+>La direttiva `for` è utilizzata in un ***blocco parallelo***.
+>Le iterazioni del `loop` sono assegnate ai *thread del team corrente*.
+
+La variabile del loop è resa ***privata di default***.
+
+```c
+double trap( double a, double b, int n)
+{
+	double result = 0;
+	const double h = (b - a) / n;
+#pragma omp parallel for reduction(+: result)
+	for ( int i = 0; i < n - 1; i++)
+	{
+		result += h * (f (a + i * h)) + f(a + (i + 1) * h) / 2;
+	}
+	return result;
+}
+```
+
+La variabile `index` ***deve*** essere una *variabile intera* (**non** può essere *floating point*).
+- L'*espressione booleana* del `loop` deve avere un tipo **compatibile**.
+- L'*espressione booleana* **non** deve cambiare durante l'esecuzione.
+- La variabile `index` può essere ***solo modificata*** dall'espressione di incremento.
+
 ##### Calcolare i Tempi
 > Per calcolare i tempi `OpenMP` mette a disposizione una funzione.
 
