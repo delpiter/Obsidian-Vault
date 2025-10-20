@@ -520,3 +520,24 @@ Le associazioni bidirezionali o le classi associative ***non sono direttamente i
 - Verso di navigabilità
 - Molteplicità a entrambi gli estremi
 - Nome del ruolo destinazione
+
+## Da Diagramma delle Classi di Analisi a Progettazione
+---
+1. ***Ricopiare le classi***
+	- Possibilmente mantenendo le *posizioni relative*.
+2. Valutare se aggiungere altre classi.
+	- Associazioni $n$-arie.
+3. Controllare la presenza di un ***contenitore***.
+	- Una classe con *una unica istanza*.
+4. ***Ordinare le query*** in ordine di frequenza.
+	- La più frequente **DEVE** essere *ottimizzata*.
+5. Inserire le *associazioni* (tutte "***part-of***") secondo la frequenza delle operazioni.
+	- Ricordarsi sempre di **aggiornare le cardinalità**.
+	- Si parte dal contenitore e si creano associazioni *secondo la query*.
+6. Verificare che tutte le associazioni abbiano un *verso*.
+	- Aggiungerle *coerentemente*.
+7. Verificare che dal contenitore ***tutte le classi siano raggiungibili***.
+
+
+>[!warning] Nota Bene
+>La soluzione dell'esercizio è ***UN*** solo diagramma completo.
