@@ -1,3 +1,4 @@
+![[UML#^2bddc2]]
 ## Diagramma dei Pacchetti
 ---
 >[!info]

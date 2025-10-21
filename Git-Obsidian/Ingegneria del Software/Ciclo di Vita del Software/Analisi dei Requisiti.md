@@ -123,6 +123,7 @@ Si studia la *dinamica* dell'oggetto.
 
 ```mermaid
 stateDiagram-v2
+direction LR
     [*] --> InCorso: Iscrizione
     InCorso --> Ritirato: Ritirato
     FuoriCorso --> FuoriCorso: Esame

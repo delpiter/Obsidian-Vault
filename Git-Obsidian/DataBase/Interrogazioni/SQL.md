@@ -27,4 +27,4 @@ Il linguaggio è "***relazionalmente completo***"
 >Il [[DML]] contiene costrutti per l'**interrogazione**, **eliminazione** e **modifica** dei dati di un *data base*.
 
 >[!help] ***D***ata ***C***ontrol ***L***anguage
->Il #addLink DCL contiene i costrutti necessari per **fornire** o **revocare** agli utenti i *permessi* necessari per usare comandi di **DDL** e **DML**.
+>Il `DCL` contiene i costrutti necessari per **fornire** o **revocare** agli utenti i *permessi* necessari per usare comandi di **DDL** e **DML**.

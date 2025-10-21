@@ -107,8 +107,12 @@ Un certo **elemento** può comparire in *più diagrammi*, ma è ***univoca*** la
 >Mostra un ***insieme di oggetti di interesse*** e le loro relazioni.
 >- È un'**istanza** del diagramma delle classi.
 
+^a4f60f
+
 >[!abstract] Package Diagram
 >Mostra i **package** e le loro *relazioni di dipendenza*, *contenimento* e *specializzazione*.
+
+^2bddc2
 
 >[!summary] Component Diagram
 >Descrive l'***architettura software*** di sistema.
@@ -133,6 +137,8 @@ Unico diagramma ***abbastanza semplice*** per essere usato con l'**utente**.
 >[!failure] State Diagram
 >Usa la notazione degli automi di Harel per ***descrivere gli stati degli oggetti*** di una classe.
 >- Descrive **stati** e **transizioni di stati** (Ambito: *Una sola classe*).
+
+^4004eb
 
 >[!info] Activity Diagram
 >Descrive le ***sequenze eventi-azioni-transazioni*** di una funzione.

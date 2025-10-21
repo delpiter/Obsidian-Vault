@@ -1,3 +1,4 @@
+![[UML#^a4f60f]]
 ## Diagramma degli Oggetti
 ---
 >[!info]
@@ -20,7 +21,7 @@ direction LR
 		color
 		borderColor
 	}
-	class Triangle{
+	class Triangle["Triangle:Polygon"]{
 		center = (0,0)
 		vertices = ((0,0), (0,4), (4,3))
 		color = black
@@ -29,3 +30,4 @@ direction LR
 	Triangle ..> Polygon: Instance
 ```
 
+- Il nome "triangle" deve essere sottolineato per indicare che è una istanza di poligono.
