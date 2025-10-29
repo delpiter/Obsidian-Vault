@@ -146,6 +146,8 @@ Unico diagramma ***abbastanza semplice*** per essere usato con l'**utente**.
 >- Ha caratteristiche sia *funzionali* che *dinamiche*.
 >- Viene usato per rappresentare un "***workflow***".
 
+^8c36fe
+
 >[!check] Sequence Diagram
 >Mostra le ***interazioni tra gli oggetti*** durante *scenari di funzionamento* del sistema.
 

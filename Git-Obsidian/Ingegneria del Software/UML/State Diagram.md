@@ -124,10 +124,12 @@ direction LR
 	    direction LR
 	    [*] --> Incomplete
 	    state Incomplete{
+		    direction LR
 	        [*] --> Lab1
 	        Lab1 --> Lab2: labDone
 	        Lab2 --> [*]: labDone
 	        --
+	        direction LR
 	        [*] --> Project
 	        Project --> [*]: ProjectDone
 	        --
@@ -135,7 +137,7 @@ direction LR
 	        FinalTest --> [*] : TestPassed
 	        FinalTest --> Failed: Failed
         }
-        Failed
         Incomplete --> Done
+        Failed
     }
 ```
