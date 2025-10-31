@@ -25,7 +25,7 @@ Questo pattern è particolarmente utile quanto l'applicazione esibisce la "***lo
 
 #### Differenze
 > ***Fine-Grained***
-- Miglior ***bilanciamento del carico***, soprattutto se combinato con il pattern #addLink master-worker.
+- Miglior ***bilanciamento del carico***, soprattutto se combinato con il pattern  [[#Master-Worker Paradigm|Master-Worker]].
 - Se la granularità è *troppo fine*, la computazione potrebbe diventare lenta.
 
 > ***Coarse-Grained***
@@ -140,4 +140,3 @@ Il workload è bilanciato se ogni processore esegue più o meno la ***stessa qua
 
 Quando l'esecuzione del *task* termina, si assegna all'unità un nuovo *task*.
 - Ci deve essere un ***meccanismo di coordinamento*** tra i task.
-

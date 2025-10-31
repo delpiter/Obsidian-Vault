@@ -214,3 +214,8 @@ for (slice=0; slice < n + m - 1; slice++) {
 >- Scorrendo le iterazioni "*diagonalmente*".
 
 In alcuni casi le dipendenze ***non possono essere rimosse***.
+
+>[!done] "Test" veloce per le dipendenze
+
+Esegui il `loop` all'indietro. `{c icon} for(i=0;i<n; i++)` $\to$ `{c icon} for(i=n-1;i>=0; i--)`
+- Se il programma è ancora corretto il `loop` *potrebbe* essere parallelizzabile.

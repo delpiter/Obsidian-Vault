@@ -57,70 +57,12 @@ La maggior parte delle direttive `OpenMP` viene applicata al ***blocco struttura
 }
 ```
 
-##### Direttiva Parallel
->[!failure] `{c icon} #pragma omp parallel`
->Quando un processo raggiunge la direttiva `{c icon} parallel`, rea un ***team di thread*** e diventa il *master del team*.
-
-Il master ha il `threadID=0`.
-
-La ***dimensione del team*** dipende dall'implementazione.
-
-> Il codice verrà **duplicato** e ogni thread *eseguirà la regione*.
-
->[!summary] Barriera
->C'è una ***barriera implicita*** alla fine di una sezione parallela.
->- Solo il master continua l'esecuzione.
-
-```c title:example
-#include <stdio.h>
-#include <omp.h>
-void say_hello( void )
-{
-	int my_rank = omp_get_thread_num();
-	/* returns the id of the thread executing the code */
-	int thread_count = omp_get_num_threads();
-	/* returns the number of threads in the currently active team */
-	printf("Hello from thread %d of %d\n", 
-	my_rank, thread_count);
-}
-int main( int argc, char* argv[] )
-{
-	int x = omp_get_max_threads()
-	/* returns the default dimension of the thread team */
-	omp_set_num_threads(4);
-	/* Sets the number of threads in the team */
-#pragma omp parallel
-	say_hello();
-	return 0;
-}
-```
-
-##### Direttiva For
->[!failure] `{c icon} #pragma omp parallel`
->La direttiva `for` è utilizzata in un ***blocco parallelo***.
->Le iterazioni del `loop` sono assegnate ai *thread del team corrente*.
-
-La variabile del loop è resa ***privata di default***.
-
-```c
-double trap( double a, double b, int n)
-{
-	double result = 0;
-	const double h = (b - a) / n;
-#pragma omp parallel for reduction(+: result)
-	for ( int i = 0; i < n - 1; i++)
-	{
-		result += h * (f (a + i * h)) + f(a + (i + 1) * h) / 2;
-	}
-	return result;
-}
-```
-
-La variabile `index` ***deve*** essere una *variabile intera* (**non** può essere *floating point*).
-- L'*espressione booleana* del `loop` deve avere un tipo **compatibile**.
-- L'*espressione booleana* **non** deve cambiare durante l'esecuzione.
-- La variabile `index` può essere ***solo modificata*** dall'espressione di incremento.
-
+> Clausole di ***OpenMP***.
+- [[Parallel Directive]]
+- [[For Directive]]
+- [[Reduction Clause]]
+- [[Schedule Clause]]
+- [[Collapse Directive]]
 ##### Calcolare i Tempi
 > Per calcolare i tempi `OpenMP` mette a disposizione una funzione.
 
@@ -190,39 +132,16 @@ Di *default* tutte le variabili visibili all'inizio del blocco parallelo sono **
 >[!danger] Attenzione
 >Le direttive `critical` e `atomic` **non** proteggono contro le [[8 - Concorrenza#Race Condition|race condition]] causate dagli accessi alle *variabili condivise*.
 
-#### Clausola Reduction
->[!info] `{c icon} reduction(<op>: <variable>)`
-> Clausola che ***accumula risultati parziali*** in maniera atomica. 
+#### Costrutti di Sincronizzazione
+>[!summary] `{c icon} #pragma omp barrier`
+>Tutti i thread nel team attivo ***devono raggiungere*** questo punto prima di continuare l'esecuzione.
 
-> `{c icon} <op>`
-- Può essere: `+` `-` `|` `*` `^` `&` `&&` `||` `min` `max`.
+>[!attention] `{c icon} #pragma omp master`
+>Indica che la regione parallela deve essere eseguita dal ***processo master*** (thread con `rank=0`).
+>Gli altri thread salteranno la regione di codice.
+>>[!danger] NON c'è una barriera implicita alla fine
 
-> `{c icon} <variable>`
-- È la variabile dove verrà ***accumulato il risultato finale***.
+>[!info] `{c icon} #pragma omp single`
+>Indica che la regione parallela deve essere ***eseguita una sola volta*** dal *primo thread* che entra nella regione.
+>>[!done] C'è una barriera implicita alla fine del blocco.
 
-```c
-/* omp-reduction.c */
-#include <stdio.h>
-int main( void )
-{
-	int a = 2;
-#pragma omp parallel reduction(*:a)
-	{
-	/* implicit initialization a = 1 */
-		a += 2;
-	}
-	printf("%d\n",a);
-	return 0;
-}
-```
-
-Segue il pattern [[Reduce|reduction]].
-
->[!caution] Funzionamento
-
-Una *copia privata* della **variabile reduction** è creata per ciascun thread.
-- Inizializzata con il *valore neutro dell'operatore*.
-
-> Ogni thread esegue la regione parallela.
-
-Quando i thread finiscono, viene applicato l'operatore con l'ultimo valore di *ogni riduzione locale* e il valore che la variabile aveva prima della ***regione parallela***.
