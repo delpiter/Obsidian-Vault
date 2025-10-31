@@ -114,6 +114,8 @@
 >[!cite] `man [command_name]`
 >È il manuale, fornisce informazioni sul comando specificato
 
+^617056
+
 
 >[!caution] `find [path] [options] [expression]`
 >Serve per cercare dei *files* in una cartella specificata da `[path]`
