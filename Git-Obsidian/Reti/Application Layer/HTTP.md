@@ -190,6 +190,8 @@ packet-beta
 >- **Personalizzazione**.
 >- **Monitoraggio**.
 
+Sono un meccanismo di ***supporto alla gestione delle sessioni***.
+
 I server **HTTP** possono impostare i cookie con il campo di intestazione della risposta *Set-Cookie*.
 - Possono anche essere impostati lato client tramite `{js icon} JavaScript`.
 
@@ -213,3 +215,48 @@ Alcune ***politiche di sicurezza***:
 >[!example] Tipologie di cookies
 >- Cookies di ***sessione***
 >- Cookies di ***profilazione***
+
+#### Funzionamento
+> Alla prima richiesta di uno user, il server fornisce la risposta ed un **header aggiuntivo**.
+
+>[!failure] Cookie
+>Nell'header è presente il ***cookie***, con dati arbitrari e con la specifica di usarlo per **ogni successiva richiesta**.
+
+I *cookies* usano, quindi, due header:
+- Uno per la **risposta** (`set-cookie` *header della risposta*).
+- Uno per le **richieste successive** (`cookie` *header della richiesta*).
+
+>[!missing] Cancellazione
+>L'utente può ***cancellare i cookies*** per varie ragioni:
+>- Sicurezza.
+>- Privacy, si limita il controllo del server sull'**attività dell'utente**.
+>- **Efficienza** e consumo di Spazio.
+
+##### Cookie Law
+>[!info]
+>La ***cookie law*** è un provvedimento a livello comunitario nato per rendere consapevoli gli utenti riguardo ai **rischi** per la *privacy* connessi all'uso dei cookie.
+
+L'informativa all'utente dipende dal **tipo di cookie**, da come viene usato dal server.
+
+>[!caution] Cookie Tecnici
+
+Usati dal gestore del sito per mettere in opera alcune funzioni o *rendere più agile la navigazione*.
+> Consentono di:
+- Memorizzare alcuni criteri preselezionati (*lingua*).
+- Autenticarsi per accedere ad aree private.
+- ...
+
+>[!tl;dr] Cookie Analitici
+
+Usati dal gestore del sito per raccogliere alcune informazioni in forma aggregata sugli utenti.
+
+>[!attention] Attenzione
+>I cookie tecnici e analitici **NON** richiedono consenso dagli utenti.
+>- Molti siti li richiedono comunque per non incorrere in contenziosi.
+
+>[!bug] Cookie di Profilazione
+
+Usati dal gestore del sito per *raccogliere dati personali* sui visitatori.
+- Dati che verranno usati per costruire un ***profilo del consumatore*** che viene usato per proporre prodotti e servizi.
+>[!fail] Sono cookie che necessitano del consenso 
+

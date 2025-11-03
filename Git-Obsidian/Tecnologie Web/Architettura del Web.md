@@ -44,7 +44,7 @@ Un protocollo di comunicazione chiamato [[HTTP]] permette di ***scambiare messag
 ```
 
 ##### CSS
-> Gli aspetti presentazionali della pagina sono gestiti attraverso un linguaggio specifico che ne definisce gli stili
+> Gli aspetti presentazionali della pagina sono gestiti attraverso un linguaggio specifico che ne definisce gli stili. ([[Cascading Style Sheets|CSS]])
 
 >[!abstract] Cascading Style Sheets
 
@@ -147,7 +147,7 @@ Lo stack è completamente ***open source***.
 >Come `LAMP` ma con windows al posto di Linux.
 
 ###### PHP
->[!todo] `PHP`
+>[!todo] [[PHP Hypertext Preprocessor|PHP]]
 >È un ***linguaggio di scripting interpretato***, concepito per la programmazione di pagine `web` *dinamiche* lato server.
 
 L'interprete è un software libero distribuito sotto la `PHP` licence.
