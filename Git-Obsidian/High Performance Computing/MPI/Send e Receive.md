@@ -143,4 +143,3 @@ int MPI_Abort(MPI_Comm comm, int errorcode);
 Utilizzare la funzione `{c} MPI_Abort()`
 - Interrompe "*con grazia*" l'esecuzione di tutti i processi `MPI` nel ***communicator*** `comm`.
 - Ritorna l'errore con il codice `errorcode`.
-- 
