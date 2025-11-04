@@ -14,6 +14,54 @@ $variable = "Hello!";
 /* Correct */
 ```
 
+Le variabili devono iniziare con una lettere o con il carattere `_`.
+- **Non** può iniziare con un numero.
+- Può contenere solo caratteri *alfanumerici* e l'*underscore*.
+- Il nome delle variabili è ***case-sensitive***.
+
+### Scope
+>Le variabili `PHP` possono avere uno di 3 [[Visibilità e Tempo di Vita|scope]].
+
+>[!abstract] Local
+>Una variabile dichiarata in una funzione ha ***visibilità locale*** e può essere usata solo in quella funzione.
+
+>[!help] Global
+>Una variabile dichiarata fuori da una funzione ha ***scopo globale*** e può essere usata solo fuori dalla funzione.
+
+Per accederci da dentro una funzione, deve essere usata la parola chiave `global`.
+```php
+<?php
+function test() {
+	$x = 5; // Local Visibility
+	echo "<p>Local variable x: $x</p>";
+}
+
+$y = 5; // Global Visibility
+echo "<p>Global variable y: $y</p>"; // Correct
+function test2() {
+	global $y;
+	echo "<p>Global variable y, inside a function: $y</p>";
+}
+?>
+```
+
+Per modificare una variabile globale *da dentro una funzione* si deve accedere attraverso l'***array contenente tutte le variabili globali***.
+- `{php icon} $GLOBALS['Variable_Name']`.
+- L'indice dell'array è il **nome della variabile**.
+
+>[!summary] Static
+>Una variabile `static` viene **istanziata una volta sola** all'inizio del programma.
+
+#### Costanti
+>[!missing] Constant
+>Una ***costante*** è un nome per un valore che **non cambierà**.
+>- Sono automaticamente ***globali***.
+
+Per creare una costante bisogna usare:
+- `{php icon} define(name, value, case-insensitive);`
+
+> Dove
+- ***case-insensitive*** è *opzionale* e specifica se il nome della costante dovrà essere case-insensitive, di default è `false`.
 ### Tipi di Dato
 > I [[Tipi di Dati|tipi di dato]] del linguaggio `PHP` sono:
 
@@ -32,6 +80,28 @@ $variable = "Hello!";
 	- Si comporta come le double quote ma senza usarle.
 - **Newdoc**: `{php} $string=<<< 'id' stuff id;`
 	- Si comporta come le single quote ma senza usarle.
+
+```php title:"Espansione Variabili"
+$name = "Batman";
+$string = "I'm $name"; 
+// I'm Batman
+$string = 'I am $name'; 
+// I am $name
+```
+
+```php title:"String Manipulation"
+echo strlen("Hello world!"); // outputs 12
+echo str_word_count("Hello world!"); // outputs 2
+echo strrev("Hello world!"); // outputs !dlrow olleH
+echo strpos("Hello world!", "world"); //outputs 6
+echo str_replace("world", "Batman", "Hello world!"); //outputs Hello Batman!
+
+/* string concat */
+$name = "Bruce";
+$surname = "Ketta";
+echo "Name: ".$name.", Surname: ".$surname;
+// Output Name: Bruce, Surname: Ketta
+```
 
 >[!summary] Array
 
@@ -63,6 +133,15 @@ $strings["three"] = 3;
 - Array che contengono *uno o più array*.
 ```php
 $multidimarray = array(1, array(2,3,4,5), "test", array("hello",true));
+```
+
+```php title:"Arary Ordering"
+sort($array); // Increasing Sort
+rsort($array); // Decreasing Sort
+asort($array); // Increasing Sort associative array based on the value
+ksort($array); // Increasing Sort associative array based on the Key
+arsort($array); // Decreasing Sort associative array based on the value
+krsort($array); // Decreasing Sort associative array based on the Key
 ```
 
 >[!tip] Object
@@ -219,3 +298,88 @@ session_register("name");
 - La funzione `{php} unset()` per rimuovere **una singola variabile**. `{php} unset($_SESSION["name"]);`
 - La funzione `{php} session_unset()` per rimuovere **tutte le variabili**.
 - La funzione `{php} session_destroy()` per rimuovere **tutte le informazioni della sessione** (non solo le variabili).
+
+## Operatori
+---
+> Gli operatori sono gli stessi usati dal linguaggio `{C icon} c`, con qualche differenza.
+
+> ***Identità***
+- `===`: *Triplo Uguale*, ritorna `true` se gli operatori sono uguali in **valore** e **tipo**.
+
+> Non Identità
+- `! ==`: Ritorna `true` se i valori non sono uguale o non sono dello stesso tipo.
+
+```php
+<?php
+$x = 100;
+$y = "100";
+var_dump($x !== $y); 
+// returns true because types are not equal
+?>  
+```
+
+## Strutture di Controllo
+> Anche le strutture di controllo sono identiche a quelle di `C`.
+
+- [[Condizionali]]
+- [[Iterative]]
+
+Con l'aggiunta del `foreach`.
+
+```php
+$colors = array("red", "green", "blue", "yellow");
+foreach ($colors as $color) {
+	echo "$color <br>";
+}
+
+$age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+foreach($age as $key => $value) {
+	echo "Key=".$key.", Value=".$value;
+	echo "<br>";
+}
+```
+
+## Funzioni
+---
+>[!abstract] Function
+>Le ***funzioni*** si definiscono con la parola chiave `{php} function`.
+>Non è necessario definire il tipo di ritorno o il tipo dei parametri.
+
+```php
+function func_name($par1, $par2, $par3){
+	echo "Function Body".$par1." ".$par2." ".$par3;
+}
+
+/* With default values */
+function func_name($par1, $par2, $par3="Last Par"){
+	echo "Function Body".$par1." ".$par2." ".$par3;
+}
+```
+
+## Gestione dei File
+---
+```php
+/* opens a file and reads its content */
+readfile("file.txt");
+
+/* opens a file with some details */
+fopen($myfile, $permissions);
+// r: read only, w: write (create file if not exist)
+// a: append text, x: create a new file (return false if file exists)
+
+/* reads from an open file */
+fread($myfile, filesize("file.txt"));
+
+/* closes an open file */
+fclose($myfile);
+
+/* reads a single line of the file */
+fgets($file);
+
+/* writes blocks of data in the file */
+fwrite($file, "stuff");
+fputs($file, "stuff");
+
+/* returns true when it gets to the end of file */
+feof($file);
+```
