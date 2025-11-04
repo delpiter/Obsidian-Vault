@@ -58,5 +58,3 @@ Le primitive possono essere usate anche per includere:
 
 >[!warning] Attenzione
 >**Non** è possibile includere un file `.php` in un file `.html`, non verrebbe interpretato.
-
-
