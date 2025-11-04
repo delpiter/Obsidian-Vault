@@ -88,7 +88,7 @@ possibile fare anche innestati
 >Asd
 >>Sus
 
-linee separazione (\*\ * \*) (- - -) (\_ \_ \_)
+linee separazione (\*\*\*) (- - -) (\_ \_ \_)
 in una linea da soli 
 
 
