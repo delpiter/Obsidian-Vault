@@ -14,6 +14,8 @@ Per costruire una trasformazione di vista è necessario:
 >- Field of View (`FOV`): ***Angolo di visibilità verticale*** nella scena, espresso in $\text{rad}$.
 >- Depth of Field: **Distanza** tra l'oggetto *più vicino* e quello *più lontano* che appaiono perfettamente a fuoco.
 
+^ba3211
+
 ![[SyntheticCamera.png]]
 
 > Definiamo un [[Sistemi di Riferimento|sistema di riferimento]] `VCS` associato all'osservatore, di origine $C$.

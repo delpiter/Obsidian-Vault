@@ -4,7 +4,7 @@
 >I ***sistemi embedded*** sono sistemi di computazione *special purpose*.
 >- Compiono funzioni o *task specifici* in **dispositivi fisici** o sistemi elettronici di dimensioni diverse e con scopi diversi.
 
-I ***task*** di *sistemi embedded* richiedono una interazione con il mondo fisico tramite **sensori** o **attuatori**.
+I ***task*** di *sistemi embedded* richiedono una interazione con il mondo fisico tramite [[Sensori e Azionatori]].
 
 Tipicamente composti da due parti: [[Definizioni_Architettura#Il Calcolatore|Hardware]] e [[Definizioni_Architettura#Il Calcolatore|Software]].
 - Potrebbe capitare che la parte ***software*** manchi.
@@ -102,8 +102,8 @@ Possono essere:
 - `GPS`
 - Di luminosità
 
->[!abstract] Attuatori
->Gli ***attuatori*** sono dispositivi che producono degli effetti misurabili nell'ambiente.
+>[!abstract] Azionatori
+>Gli ***azionatori*** sono dispositivi che producono degli effetti misurabili nell'ambiente.
 
 >[!caution] [[BUS dei Calcolatori|BUS]]
 >Le *interazioni* tra il processore e i sensori è possibile tramite i `BUS`.
