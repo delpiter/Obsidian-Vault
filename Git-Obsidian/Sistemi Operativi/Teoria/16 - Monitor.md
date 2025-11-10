@@ -36,7 +36,7 @@ monitor name {
 >- Inizializzazione -> ***Costruttore***
 >- Procedure entry -> ***Metodi pubblici***
 >- Procedure -> ***Metodi privati***
->- Variabili locali -> ***Variabili pubbliche*** #wtf
+>- Variabili locali -> ***Variabili pubbliche***
 
 ## Meccanismi di Sincronizzazione
 ---
