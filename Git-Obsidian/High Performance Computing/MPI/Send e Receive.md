@@ -40,15 +40,6 @@ Per evitare i ***deadlock*** si può:
 - Riordinare le *operazioni*.
 - Utilizzare comunicazioni ***non bloccanti***.
 
-```c title:"use later"
-int MPI_Sendrecv(const void *sendbuf, int sendcount, 
-			MPI_Datatype sendtype, int dest, int sendtag,
-			void *recvbuf, int recvcount,
-            MPI_Datatype recvtype, int source, int recvtag,
-            MPI_Comm comm, MPI_Status *status);
-```
-
-
 ### Non Blocking Send
 ```c
 int MPI_Isend(const void *buf, int count, MPI_Datatype datatype, 
@@ -143,3 +134,20 @@ int MPI_Abort(MPI_Comm comm, int errorcode);
 Utilizzare la funzione `{c} MPI_Abort()`
 - Interrompe "*con grazia*" l'esecuzione di tutti i processi `MPI` nel ***communicator*** `comm`.
 - Ritorna l'errore con il codice `errorcode`.
+
+## SendRecv
+```c title:"syntax"
+int MPI_Sendrecv(const void *sendbuf, int sendcount, 
+			MPI_Datatype sendtype, int dest, int sendtag,
+			void *recvbuf, int recvcount,
+            MPI_Datatype recvtype, int source, int recvtag,
+            MPI_Comm comm, MPI_Status *status);
+```
+
+>[!info]
+>Esegue una ***send e una receive bloccanti*** in una singola chiamata.
+>- `MPI` [[7 - Scheduler|schedula]] la comunicazione in modo che non possa verificarsi il [[9 - Condivisione di Risorse#Deadlock|deadlock]].
+
+>[!abstract] Parametri
+
+> I parametri della routine sono tutti i parametri di una `{c}MPI_Send()` seguiti dai parametri di una `{c} MPI_Recv()`.

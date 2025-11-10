@@ -140,4 +140,4 @@ caratteri speciali
 
 ![[Set Notation.png]]
 
-![[Miscellaneous Symbols.png]]
+![[MiscellaneousSymbols.png]]
