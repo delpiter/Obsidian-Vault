@@ -36,6 +36,8 @@ stateDiagram-v2
 >[!cite] Stato
 >Lo ***stato*** di un oggetto in un certo istante è un'astrazione dell'*insieme dei valori* dei suoi **attributi** e dei suoi **collegamenti**.
 
+^8553e8
+
 Le differenti configurazioni di valori e collegamenti vengono ***raggruppate in stati*** a seconda di *come incidono* sul *comportamento* macroscopico dell'oggetto.
 
 >[!failure] Evento
