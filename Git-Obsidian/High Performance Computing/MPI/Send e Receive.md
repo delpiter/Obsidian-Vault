@@ -151,3 +151,11 @@ int MPI_Sendrecv(const void *sendbuf, int sendcount,
 >[!abstract] Parametri
 
 > I parametri della routine sono tutti i parametri di una `{c}MPI_Send()` seguiti dai parametri di una `{c} MPI_Recv()`.
+
+È possibile che uno dei processi che chiamano la *routine* non debba inviare alcun dato.
+- È possibile specificare, in questo caso un ***ricevitore nullo***.
+
+```c
+next = (my_rank < comm_sz - 1 ? my_rank + 1 : MPI_PROC_NULL);
+next = (my_rank > 0 ? my_rank - 1 : MPI_PROC_NULL);
+```

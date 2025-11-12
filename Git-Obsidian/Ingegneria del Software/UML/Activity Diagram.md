@@ -1,8 +1,7 @@
-## Diagrammi di Attività
----
 
 ![[UML#^8c36fe]]
-
+## Diagrammi di Attività
+---
 I diagrammi di attività ***modellano un processo*** come un'attività costituita da un insieme di nodi connessi da archi.
 - Possono essere usati per *modellare efficacemente* processi di business e workflow.
 

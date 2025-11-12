@@ -12,6 +12,7 @@
 - Analisi e progetto [[Paradigma ad Oggetti|object oriented]].
 - **Modellazione** dei *componenti*.
 - **Modellazione** della *struttura* e della configurazione.
+>[!done] UML è la risposta ai problemi legati allo sviluppo di sistemi complessi
 
 Il modello `OOA/OOD` (Object Oriented **Analysis**/**Design**) viene espresso tramite dei ***diagrammi grafici***.
 - Ogni entità del modello può comparire in uno o più diagrammi.
@@ -118,8 +119,12 @@ Un certo **elemento** può comparire in *più diagrammi*, ma è ***univoca*** la
 >Descrive l'***architettura software*** di sistema.
 >- Descrive interfacce esposte e relazioni tra di esse.
 
+^deb25d
+
 >[!missing] Deployment Diagram
 >Descrive la ***struttura del sistema hardware*** e l'allocazione dei vari moduli software.
+
+^8c1477
 
 >[!tip] Composite Structure Diagram
 >Mostra la ***struttura interna*** di classificatori strutturati.
@@ -217,3 +222,14 @@ L'insieme di questi 3 meccanismi è chiamato ***profilo***.
  > Vista di deployment
  
  - Mostra la ***distribuzione fisica del sistema*** software sull'architettura hardware.
+
+### Complessità
+>[!info]
+>Il ***metamodello*** di `UML` è molto complesso.
+>- Ha l'ambizione di poter rappresentare qualunque tipo di sistema software a **livelli di astrazione differenziati**.
+
+Il numero di diagrammi è elevato.
+- `UML` **non suggerisce ne prescrive** una sequenza di utilizzo dei diversi diagrammi.
+
+`UML` è complesso:
+- Va *adattato* in base alle specifiche esigenze dei progettisti e dei progetti, usando solo ciò che serve nello specifico contesto.
