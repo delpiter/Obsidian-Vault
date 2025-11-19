@@ -77,12 +77,12 @@ I trigraph sono sequenze di tre caratteri trattate come singolo carattere che pe
 |     ~     |   ??-    |
 ###### Esempio
 ```c
-??=inclued <stdio.h>
+#include <stdio.h>
 /* Print Hello, World! on the terminal*/
-int main() ??<
+int main() {
 	printf("Hello, World! ??/n");
 	return 0;
-??>
+}
 ```
 
 ### Regole Lessicali
