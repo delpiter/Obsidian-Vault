@@ -70,7 +70,7 @@ $$
 >All'*aumentare* di $M$ e al *diminuire* di $R$ si ottengono valori di via via ***più grandi***.
 >>[!danger] Sappiamo che in natura esiste una ***velocità limite***.
 
-La [[Misurazione#Sistema Internazionale|velocità della luce]] nel vuoto $c\simeq 3\times 10^{8} m/s$
+La [[Git-Obsidian/Fisica/Misurazione#Sistema Internazionale|velocità della luce]] nel vuoto $c\simeq 3\times 10^{8} m/s$
 
 Esistono combinazioni di $M$ e $R$ che producono una velocità di fuga teorica maggiore di $c$, con la conseguenza che ***nessun corpo*** che si *trovi* a $r<R$ può effettivamente **fuggire dal campo gravitazionale**.
 

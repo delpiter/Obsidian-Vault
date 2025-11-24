@@ -73,7 +73,7 @@ Il corpo caricato trasferirà agli atri corpi parte della propria carica elettri
 >[!help] Carica
 >Le **particelle elementari** o sono ***neutre*** o hanno una ***carica*** di modulo pari alla *carica dell'elettrone*.
 >$$e=1.60218\times 10^{-19}\ C$$
->- $C$ è il Coulomb, unità di misura della carica elettrica nel [[Misurazione#Sistema Internazionale|S.I.]]
+>- $C$ è il Coulomb, unità di misura della carica elettrica nel [[Git-Obsidian/Fisica/Misurazione#Sistema Internazionale|S.I.]]
 
 L'***elettrone*** ha carica $-e$, il ***protone*** ha carica $+e$ e il ***neutrone*** *non ha carica*.
 

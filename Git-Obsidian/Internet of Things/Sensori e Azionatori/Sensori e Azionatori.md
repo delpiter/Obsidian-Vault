@@ -35,7 +35,7 @@ Le informazioni associate a quantità fisiche sono chiamate ***segnali***.
 >[!hint] Misurazione di quantità fisiche
 >La ***misurazione*** è un confronto tra due quantità fisiche omogenee.
 
-Per le misurazioni si usa il [[Misurazione#Sistema Internazionale|sistema internazionale]].
+Per le misurazioni si usa il [[Git-Obsidian/Fisica/Misurazione#Sistema Internazionale|sistema internazionale]].
 ##### Errori
 >[!fail] Systematic Errors
 >Un ***errore è sistematico*** se, quando le condizioni sperimentali sono fisse, l'errore ha *sempre lo stesso impatto*.
