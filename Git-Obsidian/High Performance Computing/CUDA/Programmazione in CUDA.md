@@ -50,6 +50,26 @@ Puntatori alla *memoria di device* possono essere passati da/a **codice host**.
 	- Per la sincronizzazione dopo l'uso di una funzione asincrona:
 		- `cudaDeviceSynchronize()`.
 
+```c title:"CUDA memory Management"
+int *buffer, *d_buffer;
+const int SIZE = n * sizeof(buffer);
+
+buffer = (int *) malloc(SIZE);
+cudaMalloc((void **)&d_buffer, SIZE);
+
+cudaMemcpy(buffer, d_buffer, SIZE, cudaMemcpyHostToDevice);
+
+/* Computations */
+
+cudaMemcpy(d_buffer, buffer, SIZE, cudaMemcpyDeviceToHost);
+
+cudaFree(d_buffer);
+
+/* Elaborate Output */
+
+free(buffer);
+```
+
 ### Esecuzione Parallela
 >[!info]
 >Per l'esecuzione in parallelo, si usa la ***chiamata al kernel***.
