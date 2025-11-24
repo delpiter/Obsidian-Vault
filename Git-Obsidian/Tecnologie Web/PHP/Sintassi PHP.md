@@ -76,10 +76,37 @@ Per creare una costante bisogna usare:
 	- Non vengono espanse e ammette pochi ***caratteri di escape***.
 - **Double Quote**: `{php} $string="string"`
 	- Vengono espanse e sono ammesse le *più comuni* sequenze di escape.
-- **Heredoc**: `{php} $string=<<< ID string stuff;`
+- **Heredoc**: `{php} $string=<<< ID string stuff ID;`
+	- La prima stringa (`ID`) indica il *terminatore della variabile*.
 	- Si comporta come le double quote ma senza usarle.
+
+```php title:example
+// no indentation
+echo <<<END
+      a
+     b
+    c
+\n
+END;
+
+// 4 spaces of indentation
+echo <<<END
+      a
+     b
+    c
+    END;
+```
+
 - **Newdoc**: `{php} $string=<<< 'id' stuff id;`
 	- Si comporta come le single quote ma senza usarle.
+
+```php title:example
+echo <<<'EOD'
+Example of string spanning multiple lines
+using nowdoc syntax. Backslashes are always treated literally,
+e.g. \\ and \'.
+EOD;
+```
 
 ```php title:"Espansione Variabili"
 $name = "Batman";
