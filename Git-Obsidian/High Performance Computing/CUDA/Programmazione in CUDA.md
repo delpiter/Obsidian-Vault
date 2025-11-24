@@ -35,41 +35,6 @@ int main(void)
 > `{c} funcName<<<1,1>>>();`
 - Le triple parentesi angolari segnano una chiamata da **host** a **device code**.
 - Anche chiamato "***kernel launch***".
-
-### Gestione della Memoria
->[!info]
->Le memorie di ***device*** e di ***host*** sono entità *completamente separate*.
-
-Puntatori alla *memoria di device* possono essere passati da/a **codice host**.
->[!fail] I puntatori alla **memoria device** ***non*** possono essere dereferenziati dal codice host
-
-`CUDA` mette a disposizione delle `API` per la gestione della ***device memory***:
-- `{c icon} cudaMalloc()`, `{c icon} cudaFree()`, `{c icon} cudaMemcpy()`.
-- Sono simili agli equivalenti di `{C icon} C`: `{c icon} Malloc()`, `{c icon} free()`, `{c icon} memcpy()`.
-- Le chiamate sono bloccanti ma sono presenti delle ***routine asincrone***.
-	- Per la sincronizzazione dopo l'uso di una funzione asincrona:
-		- `cudaDeviceSynchronize()`.
-
-```c title:"CUDA memory Management"
-int *buffer, *d_buffer;
-const int SIZE = n * sizeof(buffer);
-
-buffer = (int *) malloc(SIZE);
-cudaMalloc((void **)&d_buffer, SIZE);
-
-cudaMemcpy(buffer, d_buffer, SIZE, cudaMemcpyHostToDevice);
-
-/* Computations */
-
-cudaMemcpy(d_buffer, buffer, SIZE, cudaMemcpyDeviceToHost);
-
-cudaFree(d_buffer);
-
-/* Elaborate Output */
-
-free(buffer);
-```
-
 ### Esecuzione Parallela
 >[!info]
 >Per l'esecuzione in parallelo, si usa la ***chiamata al kernel***.
@@ -163,46 +128,137 @@ Il codice lancia ***kernel paralleli***.
 - Lancia `{c} (N + BLKDIM - 1)/BLKDIM` *blocchi* di dimensione `{c} BLKDIM`.
 
 ![[CUDAMultithreading.png]]
-### Specifiche dei Thread
->[!question] Perché aggiungere la complessità dei thread?
 
-Al contrario dei *blocchi paralleli* i threads hanno dei meccanismi in più:
+### Esecuzione con Blocchi Multidimensionali
+>[!example] Esempio: Moltiplicazione Matrice $\times$ Matrice
 
->[!done] Meccanismi di sincronizzazione e condivisione di informazioni
+![[MatrixMultiplication.png]]
 
-#### Esempio
-> Consideriamo una applicazione di uno [[Stencil]] ad un array `1D` di elementi.
+Decomponiamo la matrice risultato `r` in blocchi quadrati.
+- Assegniamo ciascun blocco ad un ***blocco di thread***.
 
->[!abstract] Consideriamo un raggio dello stencil di $3$.
->Ogni elemento in output è la somma di $7$ *elementi in input*.
->- Per semplicità non verranno calcolati i primi e gli ultimi *radius* elementi.
+#### Impostare i Blocchi di Thread con più Dimensioni
+>[!abstract] `{c icon} dim3`
+>Il tipo di dato `{c icon} dim3` è usato per definire una struttura a una, due o tre dimensioni, per i [[CUDA#Anatomia di una GPU|blocchi]] o per la [[CUDA#Anatomia di una GPU|griglia]].
 
-Ogni thread processa un elemento dell'**output**.
-- In questo modo ogni elemento in input viene letto $7$ ***volte*** ($2R + 1$).
+```c++ title:"Multidimensional Blocks"
+dim3 grid1(3);
+// Defines a variable "grid" representing a 3x1x1 block.
+dim3 grid2(3,4);
+// Defines a variable "blk" representing a 3x4x1 block.
+dim3 blk(3,4,7);
+// Defines a variable "blk" representing a 3x4x7 block.
 
->[!danger] Gli accessi alla memoria globale sono causa di bottleneck
-- A causa della ***bandwidth limitata***.
+dim block(16);
+myKernel<<<grid1,block>>>();
+// Lanch 3 blocks, 16 threads per block (1D)
 
-#### Condivisione della Memoria
->[!info]
-> All'interno di un *blocco* i thread possono condividere i dati attraverso la ***memoria condivisa***.
+myKernel<<<grid2, blk>>>();
+// Launch 3x4 blocks (3x4x7) threads per block (3D)
+```
 
-La memoria del blocco è ***estremamente veloce*** e *gestita dall'utente*.
-- Tipo una [[Cache]] ma gestita dal programmatore.
+>[!example] Prodotto Matrice $\times$ Matrice
 
-> `{c} __shared__`
-- Le variabili vengono dichiarate tramite il costrutto `{c} __shared__ int var[1024];`
-- Queste variabili non saranno visibili ai ***thread*** in altri ***blocchi***.
+```c++
+#define BLKDIM 32
 
-```c title:"stencil"
-__shared__ int temp[BLKDIM + 2 * RADIUS];
-const int gindex = threadIdx.x + blockIdx.x * blockDim.x + RADIUS;
-const int lindex = threadIdx.x + RADIUS;
-/* ... */
-temp[lindex] = in[gindex]; /* Copies blockDim.x elements in one line */
-if(threadIdx.x < RADIUS){
-	/* Copies the ghost area  */
-	temp[lindex - RADIUS] = in[gindex - RADIUS];
-	temp[lindex + BLKDIM] = in[gindex + BLKDIM];
+int main (void) 
+{
+	...
+	dim3 block(BLKDIM, BLKDIM);
+	dim3 grid((N+BLKDIM-1)/BLKDIM, (N+BLKDIM-1)/BLKDIM);
+	
+	matmul<<<grid, block>>>(d_p, d_q, d_r, N);
+	...
 }
 ```
+
+Ogni thread calcola un elemento $r[i][j]$ della matrice $r$.
+```c
+const int i = blockIdx.y * blockDim.y + threadIdx.y;
+const int j = blockIdx.x * blockDim.x + threadIdx.x;
+```
+
+>[!fail] Inefficienza
+>Un elemento di ciascuna matrice viene letto $N$ volte per calcolare il prodotto.
+
+Per ridurre il numero di letture dalla memoria globale possiamo usare la ***memoria condivisa*** per mantenere i dati necessari alla computazione.
+>[!missing] Problema
+>Questo richiederebbe $2\times BLKDIM \times n$ elementi memorizzati nella memoria condivisa, che potrebbe eccedere il *massimo del device*.
+
+> Soluzione:
+- Possiamo dividere le "*strisce*" di matrice in *piccoli blocchi* di dimensione $BLKDIM \times BLKDIM$ elementi ciascuno.
+
+Si opera su due blocchi alla volta (uno di $q$ e uno di $p$).
+$$
+R = P_{1}\times Q_{1} + P_{2}\times Q_{2} +P_{3} \times Q_{3}
+$$
+>[!done] Per ogni blocco
+>1. Copia gli elementi dei piccoli quadrati da $p$ e $q$ nella *memoria condivisa*.
+>2. Calcola il prodotto matrice per matrice `local_p`$\times$`local_q` in ***parallelo***.
+>3. Passa al blocco successivo.
+
+![[MatrixProductShared.png]]
+
+```c++ title:"Matmul Kernel"
+__global__ void matmul( float *p, float *q, float *r, int n )
+{
+	__shared__ float local_p[BLKDIM][BLKDIM];
+	__shared__ float local_q[BLKDIM][BLKDIM];
+	
+	const int bx = blockIdx.x; const int by = blockIdx.y;
+	const int tx = threadIdx.x; const int ty = threadIdx.y;
+	const int i = by * BLKDIM + ty; 
+	const int j = bx * BLKDIM + tx; 
+	
+	float v = 0.0;
+	
+	for (int m = 0; m < n; m += BLKDIM) { 
+		local_p[ty][tx] = p[i*n + (m + tx)];
+		local_q[ty][tx] = q[(m + ty)*n + j];
+		__syncthreads();
+		
+		for (int k = 0; k < BLKDIM; k++) { 
+			v += local_p[ty][k] * local_q[k][tx];
+		}
+		__syncthreads();
+	}
+	r[i*n + j] = v;
+}
+```
+
+### Chiamate a Funzione
+>[!help] Il qualificatore `{c icon} __device__`
+>Il qualificatore `{c icon} __device__` comunica al compilatore che la funzione definita deve essere compilata per la `GPU`.
+
+La funzione potrà essere chiamata solamente da ***codice device***.
+
+>[!warning] Attenzione
+>In alcune versioni (*vecchie*) di `CUDA` il compilatore non supporta le *chiamate a funzione*.
+
+`{c} __device__` può essere usato anche con le variabili per allocare staticamente delle variabili nel ***device***.
+- Per trasferire informazioni da/a variabili `{c} __device__` bisogna usare:
+	- `{c} cudaMemcpyToSymbol(d_buf, buf, BLKDIM*sizeof(float));`
+	- `{c} cudaMemcpyFromSymbol(buf, d_buf, BLKDIM*sizeof(float));`
+
+Il compilatore si comporta come un preprocessore ***copiando l'intero corpo della funzione***.
+>[!danger] `CUDA` **NON** supporta algoritmi ricorsivi
+
+Analogamente il qualificatore `{c icon} __host__` definisce una funzione che viene eseguita sull'***host***.
+- Può essere solo chiamata da ***codice host***.
+- È il comportamento di default quando nè `{c icon} __global__` nè `{c icon} __device__` è specificato.
+
+>[!done] Si possono usare entrambi `__host__` e `__device__` nella stessa funzione
+
+Il compilatore produrrà *due versioni* della funzione.
+
+### Errori
+>[!bug] Info
+> Tutte le chiamate **API** `CUDA` ritornano un codice di errore (`{c} cudaError_t`) che può indicare:
+> - Un errore nella chiamata **API**.
+> - Un errore in una **operazione asincrona precedente**.
+
+`{c} cudaSuccess` significa che non c'è stato errore.
+
+Per recuperare l'*ultimo error code*, si usa la funzione:
+- `{c icon} cudaError_t cudaGetLastError(void);`

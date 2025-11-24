@@ -72,4 +72,3 @@ Dietro all'***event-loop*** c'è una pool id [[6 - Processi, Schedule e Thread|t
 >[!important] Importante
 >È un ***concetto molto importante*** che non può essere gestito tramite delle librerie.
 >- Alcuni linguaggi aggiungono le *keyword* `async` e `await` per la gestione nativa.
-
