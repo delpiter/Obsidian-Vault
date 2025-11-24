@@ -13,6 +13,8 @@ Le ***reaction*** di un sistema discreto sono innescate dall'ambiente dove il si
 >Un ***evento*** è uno stimolo o un occorrenza esterna che può innescare un cambiamento di stato.
 >- Per definizione un evento *non ha durata*.
 
+^4073b9
+
 ### Valuation
 >[!caution] Valuation degli Input e Output
 >L'esecuzione di una *reaction* porta ad una ***valuation*** degli input e output.

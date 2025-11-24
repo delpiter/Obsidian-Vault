@@ -7,6 +7,7 @@
 >>[!example] Operazioni
 >>***ENQUEUE***:
 >>- *Inserisce* un elemento in $Q$
+>> 
 >>***DEQUEUE***
 >>- *Restituisce* l'elemento da **più tempo presente** e lo *rimuove* da $Q$
 >
@@ -31,13 +32,13 @@ void Enqueue(Q,x)
 
 ### Dequeue
 
-```Java
+```java
 int Dequeue(Q)
 {
 	x = Q[Q.head];
 	if(Q.head == Q.length)
-		Q.head = 1
+		Q.head = 1;
 	else
-		Q.head = Q.head +1
+		Q.head = Q.head + 1;
 }
 ```
