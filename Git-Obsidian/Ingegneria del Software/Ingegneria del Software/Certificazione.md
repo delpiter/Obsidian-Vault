@@ -36,4 +36,3 @@ La concessione della certificazione si basa in gran parte sulla ***correttezza d
 > I documenti del progetto si dividono in:
 - ***Documenti Tecnici***.
 - ***Documenti di Pianificazione***.
-
