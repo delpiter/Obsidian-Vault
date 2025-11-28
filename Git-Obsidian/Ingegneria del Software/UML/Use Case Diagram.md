@@ -55,7 +55,7 @@ Sono espressi in forma testuale, comprensibile anche per i ***non*** "*addetti a
 >Nelle fasi iniziali della progettazione servono per chiarire ***cosa dovrà fare il sistema***.
 
 Ragionare sui *casi d’uso* con il **committente** è uno dei modi più ***efficaci ed efficienti*** per scoprire ed analizzare i requisiti ai quali il sistema dovrà fornire un’implementazione.
-- Spesso si usa come "***milestone***" contrattuale.
+- Spesso si usa come "[[Analisi dei Requisiti#^e7b16b|milestone]]" contrattuale.
 
 > I casi d’uso ***guidano l’intero progetto di sviluppo***.
 - Costituiscono il punto di partenza per la *progettazione del sistema*

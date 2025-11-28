@@ -10,3 +10,9 @@
 >>
 >>>[!cite] Definizione 3
 >>>L'***ingegneria del software*** è un *corpus di teorie*, metodi e strumenti, sia di tipo tecnologico che organizzativo, che *consentono di produrre* applicazioni con le desiderate caratteristiche di qualità.
+
+## Step
+---
+> L'approccio di sviluppo dell'***ingegneria del software*** è un approccio a step.
+
+![[Il Ciclo di Vita del Software#Attività]]

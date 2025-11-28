@@ -136,4 +136,3 @@ I trasferimenti avvengono a partire da indirizzi multipli di $32,64,128$.
 	- Utilizzo del `BUS`: $\displaystyle\frac{128}{N\times128}\%$
 
 ![[CachingLoad5.png]]
-
