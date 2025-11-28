@@ -30,7 +30,7 @@ In un normale funzionamento, il *watch dog timer*, riceve periodicamente un segn
 >Dobbiamo prestare particolare attenzione alle interferenze quando si usano i timer e i `PWM`.
 
 Se usiamo `{c} Timer1` direttamente, non possiamo utilizzare i `PIN` `9` e `10` per `PWM`.
-- Potrebbero andare in conflitto (es. librerie per i servo motori #addLink).
+- Potrebbero andare in conflitto (es. librerie per i servo motori).
 ### Timer e Interrupts
 >[!example] `ATMega328`
 

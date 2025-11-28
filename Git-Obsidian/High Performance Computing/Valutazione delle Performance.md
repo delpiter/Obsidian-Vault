@@ -146,7 +146,7 @@ $$
 > ***Esempio***: Moltiplicazione matrice $\times$ matrice.
 
 Data una dimensione $n_{p}$, la quantità di "*lavoro seriale*" richiesto per calcolare il prodotto matrice $\times$ matrice ($n_{p}\times n_{p}$) è $O(n_{p}^{3})$
-- La versione OpenMP #addLink usa $p$ processori e esegue $f(n_{p},p)=\frac{n_{p}^{3}}{p}$ lavoro per *thread*
+- La versione [[OpenMP]] usa $p$ processori e esegue $f(n_{p},p)=\frac{n_{p}^{3}}{p}$ lavoro per *thread*
 
 <u>Quindi</u>
 $$

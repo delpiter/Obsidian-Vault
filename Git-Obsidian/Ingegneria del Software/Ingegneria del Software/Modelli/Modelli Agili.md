@@ -106,7 +106,7 @@ Si modellano **flussi di lavoro**.
 
 ### Fasi e Milestone
 >[!todo] Info
-> Le fasi sono sequenziali e corrispondono a milestone significativi.
+> Le fasi sono sequenziali e corrispondono a [[Definizioni_Ingegneria-del-Software#Milestone|milestone]] significativi.
 
 > **Inception**
 - È l'***avvio***, definisce gli obbiettivi del progetto, ne analizza la fattibilità, i costi e i prodotti concorrenti.

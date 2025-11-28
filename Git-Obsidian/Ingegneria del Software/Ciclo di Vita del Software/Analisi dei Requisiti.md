@@ -13,14 +13,9 @@ L'oggetto dell'analisi è l'organizzazione nel suo complesso.
 - *Processi*
 - Flussi *informativi*
 
-L'analisi dei requisiti è anche vista come "***milestone***".
+L'analisi dei requisiti è anche vista come [[Definizioni_Ingegneria-del-Software#Milestone|milestone]].
 - Usato come *conferma dei requisiti* da parte del cliente.
 - L'utente finale e il progettista si accordano sulle funzionalità messe a disposizione del software.
-
->[!definizione] Milestone
->Una milestone è il **riconoscimento** di aver conseguito un ***risultato parziale***
-
-^e7b16b
 
 >[!cite] Qualità per la specifica dei requisiti
 

@@ -44,8 +44,6 @@ Contesti più frequenti
 
 Per ogni *messaggio di chiamata* **ricevuto** da una linea di vita, ***deve*** esistere un'*operazione* corrispondente nel classificatore di quella linea di vita.
 
-#todo add arrows
-
 > Modalità di messaggio:
 - **Messaggio sincrono**: Il mittente aspetta che il destinatario ritorni. (*chiamata di procedura*).
 ![[Interaction.svg|150]]

@@ -105,5 +105,5 @@ Questa architettura è molto efficiente perché l'*esecuzione di un numero eleva
 - Ricerche oceanografiche
 - Fisica delle Particelle
 - Chimica quantistica
-- *Crittografia* #addLink
+- *Crittografia*
 - etc...

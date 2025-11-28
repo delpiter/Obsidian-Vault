@@ -2,7 +2,7 @@
 >Il ***modello a spirale*** è un modello *incrementale* e *iterativo* di [[Produzione|produzione del software]].
 >Consiste nel far crescere in modo incrementale il grado di definizione e implementazione del sistema.
 
-***Riduce il livello di rischio*** producendo un insieme di [[Analisi dei Requisiti#^e7b16b|milestone]] per garantire la fattibilità delle soluzioni intraprese.
+***Riduce il livello di rischio*** producendo un insieme di [[Definizioni_Ingegneria-del-Software#Milestone|milestone]] per garantire la fattibilità delle soluzioni intraprese.
 
 ![[spiral_model.png]]
 

@@ -3,7 +3,7 @@
 >[!tldr] Idea
 >Il ***numero ciclomatico*** è una definizione operativa di complessità del flusso di controllo del programma.
 
-È un metodo "***whitebox***", è necessaria la conoscenza dell'implementazione del software.
+È un metodo [[Definizioni_Ingegneria-del-Software#White-Box|white-box]].
 
 >[!definizione]
 > Il ***numero ciclomatico*** di un [[I Grafi#Grafo Connesso|grafo fortemente connesso]] è il numero minimo di archi che occorre eliminare per trasformarlo in un [[Gli Alberi|albero]].

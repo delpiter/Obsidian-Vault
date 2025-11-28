@@ -3,7 +3,7 @@
 >[!definizione]
 > La fase di ***progettazione*** riguarda tutte quelle attività che permettono di passare alla **raccolta ed elaborazione dei requisiti** di un *sistema software*.
 
-È la fase che fa da "***ponte***" tra la fase di [[Analisi dei Requisiti|specifica ]] e quella di codifica #addLink
+È la fase che fa da "***ponte***" tra la fase di [[Analisi dei Requisiti|specifica ]] e quella di [[Produzione|codifica]].
 
 Durante la progettazione si decidono le modalità di passaggio da *che cosa* deve essere realizzato a *come* la realizzazione deve avere luogo.
 

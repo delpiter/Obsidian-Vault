@@ -217,7 +217,6 @@ $$
 (Ax_{1}+By_{1}+C)(Ax_{2}+By_{2}+C)\leq0
 $$
 
-#todo
 >[!hint] Osservazione
 >Il ***semipiano positivo*** è quello verso cui *punta la normale* alla retta.
 
