@@ -33,7 +33,7 @@
 
 > ***Verificabilità*** `I` `P` `PC`
 - Un **sw** è *verificabile* se le sue caratteristiche sono facilmente valutabili.
-- Qualità necessaria per ottenere una certificazione #addLink.
+- Qualità necessaria per ottenere una [[Certificazione]].
 
 > ***Riusabilità*** `I` `P`
 - Un **sw** è *riusabile* se può essere usato, in tutto o in parte per costruire nuovi sistemi.
