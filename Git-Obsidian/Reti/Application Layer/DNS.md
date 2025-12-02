@@ -59,7 +59,7 @@ L'assegnatario di un dominio è ***responsabile*** della gestione di eventuali *
 >Il ***nome di un host*** è una sequenza dei nomi di dominio a partire dal più esteso a destra
 >- `deisnet.deis.unibo.it`
 >
->I nomi dei domini sono assegnati da [[Enti Importanti#^a9b820|IANA]]
+>I nomi dei domini sono assegnati da [[Enti Importanti#IANA|IANA]]
 >>[!danger] **Non** devono esistere due nomi uguali per host *diversi*.
 
 ### Funzionamento

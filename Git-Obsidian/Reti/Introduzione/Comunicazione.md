@@ -68,6 +68,8 @@ Le informazioni di utente sono *strutturate in messaggi* unitamente ad opportune
 >
 >>[!done] Ogni unità di dati viene trasferita in modo **indipendente** dalle altre.
 
+^2e0d0e
+
 ### Modalità di Dialogo
 > 3 Modalità di dialogo:
 

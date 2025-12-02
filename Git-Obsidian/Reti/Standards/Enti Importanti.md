@@ -27,7 +27,8 @@ I vari protocolli sono frutto del lavoro di gruppi di ricerca
 - **Draft Standard**
 - **Standard**
 
-## Altri Enti
+## IANA
+---
 >[!summary] IANA
 >L'***Internet Assigned Number Authority*** ha la responsabilità nell'assegnazione degli indirizzi **IP**.
 >Mantiene i *database* dei numeri che hanno *significati convenzionali* nei protocolli internet.
