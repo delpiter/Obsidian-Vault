@@ -30,7 +30,7 @@ int MPI_Bcast(void *buffer, int count,
 ```
 
 >[!info]
->Invia un ***messaggio broadcast*** #addLink a tutti gli altri processi del gruppo.
+>Invia un ***messaggio*** [[Reti IP#Broadcast|broadcast]] a tutti gli altri processi del gruppo.
 >>[!warning] Tutti i processi eseguono la funzione
 
 >[!abstract] Parametri

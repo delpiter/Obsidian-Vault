@@ -1,7 +1,7 @@
 ## File Transfer Protocol
 ---
 >[!info]
->L'`FTP` \[RFC959\] è un protocollo di rete utilizzato per il ***trasferimento di file*** tra un *client* e un *server* su una *rete*.
+>L'`FTP` [RFC 959](https://www.rfc-editor.org/rfc/rfc959.html) è un protocollo di rete utilizzato per il ***trasferimento di file*** tra un *client* e un *server* su una *rete*.
 >Il protocollo regola la **comunicazione** tra due sistemi terminali dei quali uno agisce da client e uno da server.
 
 Il protocollo consiste in due ***connessioni***:

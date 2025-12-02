@@ -11,7 +11,7 @@ Una **pagina web** è immagazzinata in un server web.
 ## Hypertext Transfer Protocol
 ---
 >[!info] HTTP
->***Hypertext Transfer Protocol*** \[RFC2616\] è il protocolli di [[Protocolli Applicativi|livello applicativo]] che definisce le modalità di interazione tra client e server e il formato dei messaggi che questi si scambiano.
+>***Hypertext Transfer Protocol*** [RFC 2616](https://www.rfc-editor.org/rfc/rfc2616.html) è il protocollo di [[Protocolli Applicativi|livello applicativo]] che definisce le modalità di interazione tra client e server e il formato dei messaggi che questi si scambiano.
 
 *HTTP* è il protocollo utilizzato nell'applicazione **client-server** `WWW`.
 - Utilizza la [[Livello di Trasporto#Numero di Porta|porta]] $80$ o la **porta** $443$ (*HTTPS*)

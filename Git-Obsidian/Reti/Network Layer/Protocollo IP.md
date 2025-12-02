@@ -1,9 +1,8 @@
+#reti_2
 ## Internet Protocol
 ---
-#reti_2
-
 >[!info] Definizione
->Il ***protocollo IP*** (\[RFC791\]) fornisce al livello superiore un servizio di trasferimento di tipo "[[Comunicazione#^2e0d0e|connectionless]]" delle unità informative, denominate ***datagrammi*** (*datagram*).
+>Il ***protocollo IP*** [RFC 791](https://www.rfc-editor.org/rfc/rfc791.html) fornisce al livello superiore un servizio di trasferimento di tipo "[[Comunicazione#^2e0d0e|connectionless]]" delle unità informative, denominate ***datagrammi*** (*datagram*).
 
 Un datagram può essere duplicato dalla rete e le copie possono seguire ***percorsi diversi con frammentazioni diverse***.
 
@@ -43,7 +42,7 @@ Gli indirizzi sono assegnati dalla [[Enti Importanti#IANA|IANA]].
 
 ```mermaid
 ---
-title: "IPv4 Packet Header"
+title: "IPv4 Packet"
 ---
 packet-beta
   0-3: "Version (4 bits)"
@@ -90,7 +89,7 @@ packet-beta
 - Il primo blocco del datagram è $0$.
 
 > ***TTL***
-- *Time to Live*: Campo che viene aggiornato da ogni router #addLink attraversato.
+- *Time to Live*: Campo che viene aggiornato da ogni [[Routing#Router|router]] attraversato.
 - Se un datagram non viene consegnato entro un tempo definito (numero massimo di salti) **viene scartato**.
 
 > ***Protocol***
@@ -131,6 +130,19 @@ I `bit` a $1$ della **netmask** identificano i `bit` dell'indirizzo `IP` che fan
 - Dotted-Decimal: `255.255.255.192`
 - Esadecimale: `ff.ff.ff.c0`
 - Notazione abbreviata: `x.y.z.q/26`.
+
+>[!done] Identificare una Network
+>Prendiamo la network: `137.204.191.0`.
+>- Scrivendola così si perde l'informazione della lunghezza del ***network ID***.
+>
+>Per cui si scrive: `137.204.191.0/26`
+
+> `137.204.191.0` viene usato come nome della network
+- **NON** si può usare per gli host.
+
+La netmask definisce la *lunghezza* del ***network-ID***.
+- Rimarranno per l'***Host-ID*** $H=32-N$ `bit`.
+- Quindi sono disponibili: $I=2^{H}-2$ indirizzi `IP`.
 ### Segmentazione
 > Ogni rete prevede uno **specifico valore massimo** della quantità di informazione che può essere trasportata nel payload.
 
@@ -205,6 +217,7 @@ Procedure:
 >[!warning] Algoritmo non Efficace
 
 ##### RFC 815
+[RFC 815](https://www.rfc-editor.org/rfc/rfc815.html)
 >[!tldr] Idea
 > Utilizza il concetto di "*hole*".
 

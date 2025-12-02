@@ -39,7 +39,7 @@ $2^n-2^k$ sono invece i messaggi che corrispondono a configurazioni non ammesse 
 > Nei protocolli di internet vengono usati codici a blocchi semantici
 - Estensione del `bit` ***di parità***
 
->[!info] \[RFC1071\]
+>[!info] [RFC 1071](https://www.rfc-editor.org/rfc/rfc1071.html)
 >In outline, the Internet checksum algorithm is very simple:
 >1. Adjacent octets to be checksummed are paired to form $16$-`bit` integers, and the *1's complement sum* of these $16$ `bit` integers is formed.
 >2. To generate a ***checksum***, the *checksum* field itself is cleared, the $16$ `bit` 1's complement sum is *computed* over the octets concerned, and the 1's complement of this sum is placed in the **checksum field**.

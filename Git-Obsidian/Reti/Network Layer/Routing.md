@@ -1,3 +1,5 @@
+#reti_2
+
 > Esistono più percorsi per raggiungere una destinazione da una sorgente
 
 >[!todo] Internet
@@ -40,3 +42,117 @@ Il singolo calcolatore terminale sceglie un router come *gateway* verso le altre
 Il *router* ha il compito di decidere **in che direzione** inviare il datagram.
 - Instradamento (*routing*).
 - Il singolo salto viene detto `hop`.
+
+## Routing Diretto e Indiretto
+---
+>[!abstract] Direct Delivery
+>L'[[Protocollo IP|IP]] sorgente e destinatario sono sulla ***stessa network***.
+
+Il datagram viene spedito *direttamente al destinatario*.
+
+>[!caution] Indirect Delivery
+>`IP` sorgente e destinatario **non** sono sulla ***stessa network***.
+
+L'host sorgente invia il datagram ad un **router intermedio**.
+
+### Routing
+>[!definizione]
+>Il ***routing*** è la *scelta del percorso* su cui inviare i dati.
+
+I **router** formano una struttura interconnessa e cooperante.
+- I datagram passano tra router fino a raggiungere il destinatario.
+
+#### Tabella di Routing IP
+>[!summary] Routing Table
+>La tabella di routing è una base di dati contenente:
+>> Righe o *route*
+>- Insieme di informazioni relative alla singola informazione di routing.
+> 
+>> Colonne o *fields*
+>- Informazioni del medesimo tipo relative a opzioni di instradamento.
+
+Il formato della tabella dipende dal [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] e dall'implementazione.
+
+##### Route
+> I campi tipici della singola **route** sono:
+
+>[!help] Destination `D`
+>Un numero `IP` valido.
+
+>[!missing] Netmask `N`
+>Maschera di rete.
+
+>[!abstract] Gateway `G`
+>Numero `IP` a cui consegnare il datagram.
+
+>[!summary] Network Interface `NI`
+>Interfaccia di rete da usare per la consegna del datagram.
+
+>[!todo] Metric `M`
+>Specifica il costo della particolare route.
+
+| Destination  | Netmask       | Gateway       | Interface | Metric |
+| ------------ | ------------- | ------------- | --------- | ------ |
+| 10.0.0.0     | 255.255.255.0 | 192.168.1.1   | ppp0      | 10     |
+| 172.16.5.0   | 255.255.255.0 | 172.16.1.254  | ppp1      | 20     |
+| 192.168.50.0 | 255.255.255.0 | 0.0.0.0       | en0       | 0      |
+| 0.0.0.0      | 0.0.0.0       | 192.168.1.254 | en1       | 100    |
+| 10.10.20.0   | 255.255.255.0 | 172.16.5.1    | en2       | 30     |
+| 224.0.0.0    | 240.0.0.0     | 0.0.0.0       | ppp2      | 1      |
+
+>[!todo] Uso della tabella di Routing
+
+1. Il singolo nodo riceve un datagram.
+2. Estrae l'intestazione `IP_D`
+3. Selezione la route per tale `IP_D` confrontandolo con i campi `D` presenti nella tabella (***table lookup***).
+	- Si confrontano `IP_D` e l'elemento `D` di ciascuna route usando la **netmask**. 
+	- La procedura viene detta "*longest prefix match*".
+		- `{c} R = IP_D & N;`
+	- Se `{c} R== D;`
+		- La *route viene selezionata*, altrimenti si passa al record successivo.
+4. Se la route esiste, esegue l'azione di routing suggerita dai campi `G` e `NI`.
+	1. Se non esiste ***genera un errore*** (`ICMP` - Destination Unreachable).
+
+>[!hint] Ordinamento
+>Le **route** nella tabella sono ordinate in funzione della ***netmask*** decrescente.
+>- *Garantisce di considerare in ordine* i singoli host, le reti piccole e grandi.
+>
+>>[!attention] È possibile implementare eccezioni
+>>
+##### Ruolo del Gateway
+>[!info]
+>Il ***Gateway*** è il responsabile della consegna del datagramma.
+
+>Il routing `IP` è basato sull'*appartenenza alla network*.
+- Host di network diverse comunicano ***tramite gateway***.
+
+Il **table lookup**, dopo aver scelto la `D`-esima riga:
+- La funzione di routing invia il datagram a `NI` con l'obbiettivo di consegnarlo al **gateway**.
+
+>[!hint] Osservazione
+>Serve anche per specificare il tipo di instradamento:
+>> Diretto
+>- Se il gateway è: `IP` locale (*windows*), `0.0.0.0` (*linux*).
+>
+>> Indiretto
+>- Se il gateway è il numero `IP` del router da contattare.
+
+###### Aggregazione
+> Non è necessario che un router **conosca il dettaglio** di come le reti sono connesse ad un altro router.
+
+>[!done] È sufficiente una informazione più riassuntiva
+
+> Esempio
+
+![[Aggregation.png]]
+
+Le reti:
+- `137.204.64.0\24`
+- `137.204.65.0\24`
+- `137.204.66.0\24`
+- `137.204.67.0\24`
+
+Si possono semplificare nel seguente modo:
+- `137.204.64.0\22`
+
+Il router `R2` non serve sapere come sono divise.

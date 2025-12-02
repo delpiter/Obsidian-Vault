@@ -1,7 +1,7 @@
 ## Transmission Control Protocol
 ---
 >[!info] TCP
->Il protocollo **TCP** \[RFC793\] definisce una modalità di trasferimento "*affidabile*" tra applicazioni.
+>Il protocollo **TCP** [RFC 793](https://www.rfc-editor.org/rfc/rfc793.html) definisce una modalità di trasferimento "*affidabile*" tra applicazioni.
 >Protocollo di tipo "*connection-oriented*".
 >Il protocollo svolge le funzioni necessarie a **ricostruire il flusso di dati** originale a fronte di **perdite**, **duplicazioni** o consegna **fuori sequenza**.
 

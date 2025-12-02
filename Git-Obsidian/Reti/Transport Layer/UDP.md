@@ -1,7 +1,7 @@
 ## User Datagram Protocol
 ---
 >[!info] UDP
->Il protocollo **UDP** \[RFC768\] è un protocollo di *livello transport* di tipo "*connectionless*".
+>Il protocollo **UDP** [RFC 768](https://www.rfc-editor.org/rfc/rfc768.html)\[RFC768\] è un protocollo di *livello transport* di tipo "*connectionless*".
 >>[!quote] Cioè
 >>Ogni messaggio è **indipendente** da tutti gli altri.
 >

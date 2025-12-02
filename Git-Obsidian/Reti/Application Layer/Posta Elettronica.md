@@ -32,7 +32,7 @@ Il pacchetto è formato da:
 ## Simple Mail Transfer Protocol
 ---
 >[!info]
-> Il protocollo **SMTP** \[RFC821\] è un protocollo utilizzato per trasmettere messaggi dal *client* al *server* e **tra i server**.
+> Il protocollo **SMTP** [RFC 821](https://www.rfc-editor.org/rfc/rfc821.html) è un protocollo utilizzato per trasmettere messaggi dal *client* al *server* e **tra i server**.
 > Il trasferimento delle informazioni avviene tramite connessione [[TCP]]:
 > - Attraverso la [[Livello di Trasporto#Numero di Porta|porta]] $25$.
 
@@ -47,7 +47,7 @@ Il protocollo si basa sulla disponibilità nella rete di computer dedicati, chia
 ---
 #### POP3
 >[!info]
->Il protocollo **POP3** (***P***ost ***O***ffice ***P***rotocol ***3***) \[RFC1939\] utilizza il protocollo di trasporto [[TCP]] sulla [[Livello di Trasporto#Numero di Porta|porta]] $110$ del server
+>Il protocollo **POP3** (***P***ost ***O***ffice ***P***rotocol ***3***) [RFC 1939](https://www.rfc-editor.org/rfc/rfc1939.html) utilizza il protocollo di trasporto [[TCP]] sulla [[Livello di Trasporto#Numero di Porta|porta]] $110$ del server
 > 
 
 Il protocollo **POP3** presenta diverse *limitazioni*:
@@ -55,7 +55,7 @@ Il protocollo **POP3** presenta diverse *limitazioni*:
 - Dopo la lettura del messaggio , esso viene eliminato dal *server*.
 #### IMAP4
 >[!tip] Info
->Il protocollo **IMAP4** (***I***nternet ***M***essage ***A***ccess ***P***rotocol ***v4***) \[RFC3501\], supera le limitazione poste dal protocollo **POP3**.
+>Il protocollo **IMAP4** (***I***nternet ***M***essage ***A***ccess ***P***rotocol ***v4***) [RFC 3501](https://www.rfc-editor.org/rfc/rfc3501.html), supera le limitazione poste dal protocollo **POP3**.
 >- Le mail possono restare nel *server*, nella quale è possibile definire una **gerachia di cartelle** a discrezione dell'utente.
 
 A differenza di **POP3**, **IMAP** mantiene lo stato della mailbox da un accesso al successivo.
