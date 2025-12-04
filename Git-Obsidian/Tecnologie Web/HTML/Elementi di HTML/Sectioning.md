@@ -6,7 +6,7 @@
 ---
 >[!info] `{html icon} <section>`
 >Tag che definisce una *sezione del documento*.
->- "*A section i a thematic grouping of content, typically with a heading*".
+>- "*A section is a thematic grouping of content, typically with a heading*".
 
 ```html title:example
 <section>

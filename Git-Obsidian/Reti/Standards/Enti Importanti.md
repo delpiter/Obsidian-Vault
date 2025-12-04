@@ -41,6 +41,26 @@ I vari protocolli sono frutto del lavoro di gruppi di ricerca
 
 Tipicamente un `ISP` si registra come [[Routing Globale#Routing Gerarchico|Autonomous System]].
 
+Un `ISP` locale fornisce un servizio a *gruppi di utenti co-localizzato*.
+- Realizza un'infrastruttura con router e switch in un punto della zona detto ***Point of Presence*** (`PoP`).
+
+Un `ISP` collega i propri utenti tramite:
+- ADSL #addLink 
+- Fibra Ottica 
+- Collegamento Radio
+
+### Interconnessione tra ISP
+> Teoricamente ogni `ISP` dovrebbe fare peering con ogni altro `ISP` con cui scambia traffico.
+
+>[!fail] Grande numero di collegamenti dedicati
+
+>[!done] Soluzione
+>Alcuni `ISP` svolgono la funzione di `AS` di ***transito*** per interconnettere con una [[Topologie di Rete|topologia]] a stella gli `ISP`.
+
+Gli `ISP` specializzati nel fornire servizi di transito sono anche detti `NSP` (***N***etwork Service Provider).
+- Gli `NSP` spesso coincidono con gli `ISP` di ***tier 1***.
+- Per la connessione tra `ISP` e `NSP` esistono gli `IXP` (Internet Exchange Point).
+
 ### Classificazione
 
 >[!info] Tier 1
@@ -56,3 +76,9 @@ Un `ISP` che raggiunge l'internet globale acquistando servizi di interconnession
 
 Un `ISP` che serve un'area **abbastanza delimitata**.
 - Per raggiungere l'internet globale acquista servizi di interconnessione da un `ISP` **tier 2**.
+
+### Peering
+>[!important] Relazione di Peering
+> Una ***relazione di peering*** è una interconnessione fra due `AS` (appartenenti a `ISP` *diversi*) stabilita al fine di scambiarsi traffico.
+
+Il peering avviene fra gli `ISP` dello stesso livello.

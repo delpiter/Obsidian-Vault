@@ -1,3 +1,4 @@
+#reti_2
 ## Routing Gerarchico
 ---
 >[!cite] Autonomous System
@@ -14,7 +15,7 @@ Un `AS` può essere ulteriormente diviso in porzioni dette ***routing area*** (`
 
 Gli `AS` decidono autonomamente i ***protocolli*** e le ***politiche di routing*** che adottano all'interno.
 - I protocolli interni ad un `AS` sono detti "***I***nterior ***G***ateway ***P***rotocol" (`IGP`).
-- I protocolli esterni ad un `AS` sono detti "***E***xterior ***G***ateway ***P***rotocol" (`EGP`).
+- I protocolli esterni ad un `AS` sono detti "***E***xterior ***G***ateway ***P***rotocol**s**" (`EGPs`).
 
 Gli `AS` non sono vincolati ad aree geografiche.
 - ***Internet Region***: Porzione di internet contenuta in una area geografica.
@@ -36,4 +37,3 @@ Gli `AS` non sono vincolati ad aree geografiche.
 >[!caution] Un `AS` deve comunicare con gli altri `AS` per implementare routing fra `AS`
 - Attraverso un protocollo `EGP`.
 - BGP.
-
