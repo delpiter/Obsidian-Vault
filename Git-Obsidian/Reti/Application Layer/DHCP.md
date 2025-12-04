@@ -8,29 +8,6 @@
 Il protocollo fornisce un *indirizzo* `IP` ad un **host** interno alla rete che lo richiede.
 - L'indirizzo viene scelto da una ***address pool***.
 - È possibile stabilire degli ***indirizzi fissi*** per un host, inserendo l'indirizzo fisico #addLink.
-
-### Pacchetto
-```mermaid
----
-title: "DHCP Packet (BOOTP Format)"
----
-packet-beta
-    0-7: "op (Message Type)"
-    8-15: "htype (Hardware Type)"
-    16-23: "hlen (Hardware Address Length)"
-    24-31: "hops"
-    32-63: "xid (Transaction ID)"
-    64-79: "secs"
-    80-95: "flags"
-    96-127: "ciaddr (Client IP Address)"
-    128-159: "yiaddr (Your IP Address)"
-    160-191: "siaddr (Server IP Address)"
-    192-223: "giaddr (Gateway IP Address)"
-    224-367: "chaddr (Client Hardware Address)"
-    368-495: "sname (Server Host Name)"
-    496-751: "file (Boot File Name)"
-    752-767: "options (DHCP Options, variable length)"
-```
 ### Funzionamento
 >[!hint] Discovery
 >Il client che deve ricevere l'indirizzo `IP` **manda un messaggio** [[Reti IP#Broadcast|broadcast]] alla rete (`DHCP discover`).
@@ -67,9 +44,27 @@ Una volta finito il **tempo di lease** possono avvenire:
 	- `REBIND`: Rinnovamento *avvenuto con successo*.
 	- `DHCPNACK`: Rinnovamento *rifiutato*.
 
-
-
-
-
-
 ![[DHCP.png]]
+
+### Pacchetto
+```mermaid
+---
+title: "DHCP Packet (BOOTP Format)"
+---
+packet-beta
+    0-7: "op (Message Type)"
+    8-15: "htype (Hardware Type)"
+    16-23: "hlen (Hardware Address Length)"
+    24-31: "hops"
+    32-63: "xid (Transaction ID)"
+    64-79: "secs"
+    80-95: "flags"
+    96-127: "ciaddr (Client IP Address)"
+    128-159: "yiaddr (Your IP Address)"
+    160-191: "siaddr (Server IP Address)"
+    192-223: "giaddr (Gateway IP Address)"
+    224-367: "chaddr (Client Hardware Address)"
+    368-495: "sname (Server Host Name)"
+    496-751: "file (Boot File Name)"
+    752-767: "options (DHCP Options, variable length)"
+```

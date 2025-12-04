@@ -35,7 +35,7 @@ La connessione "**attiva**" avviene con i seguenti passaggi:
 
 >[!done] Il server apre la connessione "**data**".
 ### Connessione Passiva
-> Usata se il *client* è schermato da un apparato #addLink **NAT** o *firewall*.
+> Usata se il *client* è schermato da un apparato [[Network Address Translation|Network Address Translation]] o [[Firewall]].
 
 >[!cite] Passive Mode
 > Nella modalità passiva, è il **client** che apre la connessione data.

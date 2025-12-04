@@ -36,6 +36,8 @@ L'[[ISO-OSI|architettura a strati]] nasconde gli indirizzi fisici e consente all
 >[!definizione]
 >Il ***router*** è un dispositivo elettronico che connette due o più network `IP` inoltrando informazioni.
 >- Ha funzioni dal livello $1$ al livello $3$ [[ISO-OSI|OSI]].
+>
+>È il nodo di commutazione nelle [[Reti IP]] specializzato per l'utilizzo del [[Protocollo IP]].
 
 Il singolo calcolatore terminale sceglie un router come *gateway* verso le altre ***network*** `IP`, instrada il datagram verso il router.
 
@@ -43,6 +45,31 @@ Il *router* ha il compito di decidere **in che direzione** inviare il datagram.
 - Instradamento (*routing*).
 - Il singolo salto viene detto `hop`.
 
+#### Tipologie
+> ***Small Office and HOme*** (`SOHO`) router
+- Di utilizzo domestico, interfaccia sulla LAN #addLink
+
+> ***Access Router***
+- Usato dagli `ISP` per dare *accesso ad un servizio*.
+
+> ***Enterprise Router***
+- *Interconnessione* fra `LAN` per organizzazioni di medie dimensioni.
+
+> ***Backbone Router***
+- Per [[Git-Obsidian/Reti/Introduzione/Introduzione#Rete di Transito|reti di trasporto]] e connessioni *inter-domain*.
+
+#### Funzioni dei Router
+>[!caution] Routing
+
+>[!abstract] Forwarding
+- Con ***forwarding table*** costruita con i contenuti della *tabella di routing*.
+- Usato per *inoltrare il datagram*.
+- Ottimizzata per il *Fast table lookup* (o `FIB` Forward Information Base).
+	- Si ottiene a partire dalle informazioni della *Routing Information Base*.
+
+>[!failure] Switching
+
+>[!missing] Trasmission
 ## Routing Diretto e Indiretto
 ---
 >[!abstract] Direct Delivery
@@ -73,6 +100,7 @@ I **router** formano una struttura interconnessa e cooperante.
 
 Il formato della tabella dipende dal [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] e dall'implementazione.
 
+È una tabella risultato dei ***protocolli di routing***.
 ##### Route
 > I campi tipici della singola **route** sono:
 
@@ -156,3 +184,18 @@ Si possono semplificare nel seguente modo:
 - `137.204.64.0\22`
 
 Il router `R2` non serve sapere come sono divise.
+
+## Rappresentazione della Rete
+---
+>[!info]
+>Ad una generica [[Reti IP|rete]] si può facilmente associare un [[I Grafi#Terminologia|grafo orientato]].
+
+I **nodi** rappresentano i *terminali* e gli **archi** rappresentano i *collegamenti*.
+- L'orientamento dell'arco rappresenta la ***direzione di trasmissione***.
+
+> Il ***peso degli archi*** può essere espresso in termini di:
+- Numero di nodi attraversati.
+- Distanza Geografica.
+- Ritardo introdotto.
+- Capacità del collegamento.
+- Una *combinazione dei precedenti*.

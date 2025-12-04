@@ -33,5 +33,26 @@ I vari protocolli sono frutto del lavoro di gruppi di ricerca
 >L'***Internet Assigned Number Authority*** ha la responsabilità nell'assegnazione degli indirizzi **IP**.
 >Mantiene i *database* dei numeri che hanno *significati convenzionali* nei protocolli internet.
 
-^a9b820
 
+## Internet Service Provider
+---
+>[!definizione]
+>Un `ISP` è un'organizzazione che fornisce servizi per l'utilizzo di 
+
+Tipicamente un `ISP` si registra come [[Routing Globale#Routing Gerarchico|Autonomous System]].
+
+### Classificazione
+
+>[!info] Tier 1
+
+Un `ISP` che all'interno di una ***internet region*** raggiunge tutte le reti senza accedere a servizi a pagamento di altri.
+- Possono essere nazionali (servono una sola `IR`) o globali.
+
+>[!abstract] Tier 2
+
+Un `ISP` che raggiunge l'internet globale acquistando servizi di interconnessione da un `ISP` ***tier 1***.
+
+>[!summary] Tier 3
+
+Un `ISP` che serve un'area **abbastanza delimitata**.
+- Per raggiungere l'internet globale acquista servizi di interconnessione da un `ISP` **tier 2**.

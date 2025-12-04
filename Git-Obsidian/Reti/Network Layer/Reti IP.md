@@ -101,7 +101,7 @@ Si definisce ***indirizzo di broadcast*** l'indirizzo che ha l'[[Protocollo IP#S
 
 ## Reti IP Private
 ---
->[!info]
+>[!hint] Info
 >Alcuni gruppi di [[Protocollo IP|indirizzi]] sono riservati a reti `IP` *private*.
 >- **Non sono raggiungibili** dalla rete pubblica.
 
@@ -109,6 +109,16 @@ I [[Routing#Router|router]] **non** instradano datagram destinati a tali indiriz
 
 Gli indirizzi privati possono essere ***riutilizzati in reti isolate***.
 
+### Indirizzi IP Privati
+>[!example] [RFC 1918](https://www.rfc-editor.org/rfc/rfc1918.html) e [RFC 4193](https://www.rfc-editor.org/rfc/rfc4193.html)
+> Sono `RFC` rispettivamente per `IPv4` e `IPv6` che definiscono degli intervalli di indirizzi `IP` destinati a reti `IP` usate da enti per finalità interne e quindi ***non connesse alla rete globale***.
+
+> `IPv4`
+- Da `10.0.0.0` a `10.255.255.255` (`10.0.0.0/8`)
+- Da `172.16.0.0` a `172.31.255.255` (`172.16.0.0/12`)
+- Da `192.168.0.0` a `192.168.255.255` (`192.168.0.0/16`)
+
+Poiché gli indirizzi privati non hanno significato globale, le informazioni di routing circa le reti private ***non vengono propagate***.
 ### Relazione Indirizzi Fisici e Indirizzi IP
 >[!info]
 >Gli **host** comunicano attraverso una ***rete fisica*** (es. LAN #addLink) quindi devono conoscere reciprocamente gli indirizzi fisici #addLink.
