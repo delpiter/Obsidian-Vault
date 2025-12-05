@@ -99,6 +99,22 @@ Si definisce ***indirizzo di broadcast*** l'indirizzo che ha l'[[Protocollo IP#S
 > Esempio: `137.204.191.0/26`
 - Broadcast: `137.204.191.63`
 
+## Multicast
+---
+>[!summary] Definizione
+>La ***comunicazione multicast*** è un metodo per l'invio di messaggi da *una sorgente* a *multiple destinazioni* (non necessariamente tutte).
+
+Si definiscono gli ***indirizzi multicast***:
+- da `224.0.0.0` a `239.255.255.255`.
+
+I router possono usare diversi protocolli per l'utilizzo del multicast, come:
+- [[Routing Globale#Interior Gateway Protocol|RIP_v2]].
+- [[Open Shortest Path First|OSPF]].
+
+### Internet Group Management Protocol
+> L'`IGMP` serve per dichiarare l'appartenenza ad un ***gruppo di multicast***.
+
+Prevede messaggi per *iscriversi*, *abbandonare* e *valutare l'appartenenza* ad un **gruppo**.
 ## Reti IP Private
 ---
 >[!hint] Info
