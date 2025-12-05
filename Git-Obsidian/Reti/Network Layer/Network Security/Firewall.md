@@ -84,7 +84,7 @@ A questa categoria appartengono i ***proxy***.
 >[!hint] Configurazione Reale
 > In una rete complessa, una rete è divisa in più zone:
 >- ***DMZ***
->- LAN #addLink.
+>- [[LAN]].
 
 ![[FirewallConfiguration.png]]
 

@@ -137,7 +137,7 @@ Gli indirizzi privati possono essere ***riutilizzati in reti isolate***.
 Poiché gli indirizzi privati non hanno significato globale, le informazioni di routing circa le reti private ***non vengono propagate***.
 ### Relazione Indirizzi Fisici e Indirizzi IP
 >[!info]
->Gli **host** comunicano attraverso una ***rete fisica*** (es. LAN #addLink) quindi devono conoscere reciprocamente gli indirizzi fisici #addLink.
+>Gli **host** comunicano attraverso una ***rete fisica*** (es. [[LAN]]) quindi devono conoscere reciprocamente gli [[Struttura del Data Link#Medium Access Control|indirizzi fisici]].
 
 >[!question] Come ricavo l'indirizzo fisico conoscendo solo l'`IP`
 

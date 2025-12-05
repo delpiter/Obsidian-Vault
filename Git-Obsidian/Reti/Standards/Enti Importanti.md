@@ -82,3 +82,19 @@ Un `ISP` che serve un'area **abbastanza delimitata**.
 > Una ***relazione di peering*** è una interconnessione fra due `AS` (appartenenti a `ISP` *diversi*) stabilita al fine di scambiarsi traffico.
 
 Il peering avviene fra gli `ISP` dello stesso livello.
+
+## IEEE
+---
+>[!quote] Institute of Electrical and Electronics Engineers
+>"`IEEE` is an American charitable professional organization for ***electrical engineering***, ***electronics engineering***, and *related disciplines*"
+
+>[!tldr] Institute of Electrical and Electronics Engineers Standards Association
+>L'`IEEESA` è un settore del `IEEE` incaricato dello ***sviluppo di standard*** in un ampio range di discipline.
+
+### Progetto IEEE 802
+>[!info] Idea
+>Progetto creato per *tentare di definire* degli standard [[LAN]].
+
+> [IEEE 802 - Wikipedia](https://en.wikipedia.org/wiki/IEEE_802)
+
+![[IEEE802Project.png]]

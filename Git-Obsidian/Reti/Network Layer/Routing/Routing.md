@@ -22,7 +22,7 @@ Ogni network `IP` può essere implementata con una **tecnologia specifica**.
 >La ***rete Logica*** è la **network** `IP` a cui un `host` appartiene logicamente.
 
 >[!caution] Rete Fisica
->La ***rete Fisica*** è la rete (es LAN #addLink) a cui un `host` è *effettivamente connesso*.
+>La ***rete Fisica*** è la rete (es [[LAN]]) a cui un `host` è *effettivamente connesso*.
 
 L'[[ISO-OSI|architettura a strati]] nasconde gli indirizzi fisici e consente alle applicazioni di lavorare solo con [[Protocollo IP#L'indirizzo IP|indirizzi IP]].
 
@@ -47,7 +47,7 @@ Il *router* ha il compito di decidere **in che direzione** inviare il datagram.
 
 #### Tipologie
 > ***Small Office and HOme*** (`SOHO`) router
-- Di utilizzo domestico, interfaccia sulla LAN #addLink
+- Di utilizzo domestico, interfaccia sulla `LAN`.
 
 > ***Access Router***
 - Usato dagli `ISP` per dare *accesso ad un servizio*.
