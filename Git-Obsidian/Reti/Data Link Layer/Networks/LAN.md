@@ -69,6 +69,8 @@ mindmap
 >[!abstract] Building Distributor
 >Centro stella di **edificio**, contenitore degli apparati attivi della `LAN`.
 - Punto di arrivo del **floor distributor**.
+- ***Patch Cord***: Spezzone di cavo che connette le porte dello switch ai *patch panel*.
+- ***Patch Panel***: Pannello che presenta un insieme di connettori per cavi [[Rete Ethernet#Doppini|UTP]]. 
 
 >[!caution] Floor Distributor
 >Centro stella del **piano** (*cablaggio orizzontale*).
@@ -77,3 +79,31 @@ mindmap
 >[!hint] Telecommunication Outlet
 >***Prese utente***
 - Punto di accesso alla `LAN` per l'utente.
+
+### Interconnessione tra LAN
+>[!info]
+>Per interconnettere più `LAN` servono ***apparati di interconnessione*** che a seconda della funzionalità prendono *nomi diversi*.
+
+>[!example]
+- ***Repeater***
+	- Collega 2 o più *mezzi di trasmissione*, opera a [[Descrizione dei Livelli#Physical Layer|Livello 1]], amplifica il segnale, rigenera i `bit` entranti e li *sincronizza*.
+- ***Bridge***
+	- Opera a [[Descrizione dei Livelli#Data Link Layer|Livello 2]] e può interconnettere `LAN` di **tipo diverso** ([[Rete Ethernet|ethernet]] con *Token Ring*).
+		- Separa i dati di uno standard dal suo header e inserisce l'**header** dello standard dell'altra rete.
+	- Separa i **domini di collisione**.
+- [[Routing#Router|Router]].
+- Gateways
+
+#### Switch
+>[!definizione]
+>Uno ***switch*** è un bridge ad alta densità di porte, ciascuna delle quali è connessa con *una sola stazione*.
+
+È in grado di ***trasferire contemporaneamente*** *frame* da più **porte di ingresso** a più **porte di uscita**.
+- Opera una funzione di commutazione a livello 2 basata sull'indirizzo [[Struttura del Data Link#Medium Access Control|MAC]].
+
+>[!caution] Differenza con l'**hub**
+- Un `hub` è un `bus` collassato, in grado di fare solamente ***broadcast dei frame***.
+- Uno **switch** è in grado di fare una *ritrasmissione selettiva dei frame*.
+
+Internamente uno switch contiene una *tabella*:
+- Per ogni indirizzo `MAC` collegato, assegna una **porta dello switch**.
