@@ -99,6 +99,12 @@ Si definisce ***indirizzo di broadcast*** l'indirizzo che ha l'[[Protocollo IP#S
 > Esempio: `137.204.191.0/26`
 - Broadcast: `137.204.191.63`
 
+
+>[!caution] Dominio di Broadcast
+>Insieme di stazioni **raggiungibili** con l'invio di un frame con *indirizzo di broadcast*.
+>>[!danger] Problematiche
+>>***Prestazioni***: I pacchetti broadcast usano elevata capacità di rete.
+>>***Sicurezza***: I pacchetti broadcast possono essere usati per *studiare la topologia di rete*.
 ## Multicast
 ---
 >[!summary] Definizione
