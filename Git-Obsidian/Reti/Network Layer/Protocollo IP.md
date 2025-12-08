@@ -91,6 +91,7 @@ packet-beta
 > ***TTL***
 - *Time to Live*: Campo che viene aggiornato da ogni [[Routing#Router|router]] attraversato.
 - Se un datagram non viene consegnato entro un tempo definito (numero massimo di salti) **viene scartato**.
+- Il "*contatore*" parte da un valore (default $64$) e viene ***decrementato ad ogni passo***.
 
 > ***Protocol***
 - Specifica il protocollo di livello superiore *che ha originato il datagram*.
