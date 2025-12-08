@@ -92,4 +92,8 @@ Le *reti di accesso* si trovano tra il **punto di distribuzione centrale** e l'*
 Per realizzare un *sistema aperto* è necessario stabilire delle regole comuni
 - Stabilire degli ***standard*** ([[ISO-OSI]])
 
-Tutte le proposte hanno in comune un'***architettura a strati***
+Tutte le proposte hanno in comune un'***architettura a strati***.
+
+### Legge di Edholm
+>[!quote] Legge di Edholm
+>Analoga alla *legge di Moore*, afferma che ogni circa $18$ mesi la banda a disposizione dell'utente **raddoppia** a costo circa **costante**.
