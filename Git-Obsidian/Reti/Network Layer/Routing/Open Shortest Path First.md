@@ -42,7 +42,8 @@ Ciascuna area si comporta come un `AS` dal punto di vista dell'`OSPF`.
 	- I router hanno una "*default route*" verso destinazioni fuori dell'`AS`.
 - ***Totally Stub Area***: Propagati solo le route *intra area* e route di *default*.
 - ***Not so Stubby Area***: Stub Area che importa alcune route esterne.
-
+>[!question] Perché questa suddivisione?
+- Questa ulteriore suddivisione serve a limitare lo scambio di dati eccessivo.
 ### Caratteristiche
 >[!todo] Bilanciamento del Carico
 
@@ -105,10 +106,9 @@ Il pacchetto include:
 #### Funzionamento
 > `OSPF` è un protocollo di tipo ***link state***.
 
-
 > ***Comunicazione***
 1. Ogni nuovo router invia un messaggio di `hello` ai **router vicini** (*Hello Protocol*).
-2. I router adiacenti rispondono un messaggio `LSBD` che fornisce le ***informazioni aggiornate sui collegamenti*** (per sincronizzare i rispettivi *Link State Database*).
+2. I router adiacenti rispondono un messaggio `LSDB` che fornisce le ***informazioni aggiornate sui collegamenti*** (per sincronizzare i rispettivi *Link State Database*).
 3. Il costo dei collegamenti viene aggiornato con ***cadenza periodica*** attraverso `LSU` o attraverso ***richieste esplicite*** (`LSR`).
 4. Ogni ricevimento di un `LSU` è riscontrato con un `LSA` (`ACK`).
 

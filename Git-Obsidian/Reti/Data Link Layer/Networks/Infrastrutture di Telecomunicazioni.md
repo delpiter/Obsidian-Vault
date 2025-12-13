@@ -20,6 +20,6 @@ Ogni tipologia di rete può avere una [[Topologie di Rete|topologia]] diversa.
 >[!hint] Connettività
 >A causa delle grandi differenze in dimensioni, i vari modi per collegare i nodi della rete, in base all'infrastruttura **possono variare**.
 
-> Es. #addLink
+> Es.
 - Per le `LAN` (budget limitato e richieste "custom"), vengono usati cavi in rame.
-- Per le `WAN` e nella rete di accesso, la ***fibra ottica*** sostituisce il rame
+- Per le `WAN` e nella rete di accesso, la ***fibra ottica*** sostituisce il rame.

@@ -83,7 +83,7 @@ Il ricevente è anche il `Rx`.
 Supponiamo che `A` stia trasmettendo a `B`.
 ![[Wifi_hidden_station_problem.svg|400]]
 
->[!fail] Se `C` ascolta il anale, lo troverà libero
+>[!fail] Se `C` ascolta il canale, lo troverà libero
 >Sarà convinto di poter trasmettere a `B`, cosi facendo ***disturberà la trasmissione*** di `A`.
 >>[!failure] Sia `A` che `C` saranno costrette a ritrasmettere
 

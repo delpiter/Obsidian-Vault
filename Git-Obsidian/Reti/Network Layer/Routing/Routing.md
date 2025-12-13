@@ -10,7 +10,7 @@ Le ***network*** `IP` sono interconnesse da apparati che svolgono la funzione di
 - I calcolatori in una **network** `IP` sono connessi dalla medesima **infrastruttura di rete fisica** ([[ISO-OSI#TCP-IP|Livelli]] 1 e 2).
 
 Ogni network `IP` può essere implementata con una **tecnologia specifica**.
-- `Wi-Fi`, `ADSL`, Ethernet, etc... #addLink 
+- [[Rete Wireless|Wi-Fi]], `ADSL`, [[Rete Ethernet|Ethernet]], etc...
 
 >[!important] Ipotesi Fondamentale
 >Tutti gli host appartenenti alla medesima **network** `IP` sono in grado di parlare tra loro grazie alla tecnologia con cui essa viene implementata.
@@ -131,7 +131,7 @@ Il formato della tabella dipende dal [[3 - Livelli del Sistema Operativo#Introdu
 >[!todo] Uso della tabella di Routing
 
 1. Il singolo nodo riceve un datagram.
-2. Estrae l'intestazione `IP_D`
+2. Estrae dall'intestazione il `IP_D`
 3. Selezione la route per tale `IP_D` confrontandolo con i campi `D` presenti nella tabella (***table lookup***).
 	- Si confrontano `IP_D` e l'elemento `D` di ciascuna route usando la **netmask**. 
 	- La procedura viene detta "*longest prefix match*".

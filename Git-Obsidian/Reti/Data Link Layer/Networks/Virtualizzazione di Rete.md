@@ -21,10 +21,10 @@ Si parla di "*reti overlay*":
 ## Tecnologie di Virtualizzazione
 ---
 >[!example] Lista di Tecnologie
-- VLAN #addLink 
+- [[Virtual LAN|VLAN]] 
 - GRE
 - VXLAN
-- VPN
+- [[VPN]]
 - VPWS
 - VPLS
 

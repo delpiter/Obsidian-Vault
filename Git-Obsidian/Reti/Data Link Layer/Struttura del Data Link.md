@@ -16,3 +16,23 @@ I primi $3$ `byte` individuano il costruttore e gli altri $3$ *numerano progress
 - [[Reti IP#Broadcast|Broadcast]] (`ff-ff-ff-ff-ff-ff`).
 
 In condizioni normali una [[LAN]] è anche un singolo dominio di broadcast.
+
+### Efficienza con MAC ideale
+> Un frame tiene impegnata la `LAN` per $T_{0}$
+
+Il canale non può essere usato al $100\%$.
+
+>[!abstract] Efficienza del `MAC`
+>$$\eta=\frac{T}{T_{0}}=\frac{L/C}{L/C+d/v}=\frac{1}{1+a}$$
+
+L'[[Funzionalità e Prestazioni|efficienza]] pone un limite superiore al massimo traffico.
+
+> $A_{0}$: Occupazione media di un sistema ideale.
+
+- $A_{0}<\eta$
+	- Tutti i frame in arrivo vengono trasmessi
+	- $A_{s}=A_{0}$.
+- $A_{0}\geq \eta$
+	- Il `MAC` non permette la trasmissione di tutti i frame.
+	- Parte dei frame vengono accodati: $A_{s}=\eta<A_{0}$
+

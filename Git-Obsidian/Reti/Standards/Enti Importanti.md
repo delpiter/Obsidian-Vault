@@ -37,7 +37,7 @@ I vari protocolli sono frutto del lavoro di gruppi di ricerca
 ## Internet Service Provider
 ---
 >[!definizione]
->Un `ISP` è un'organizzazione che fornisce servizi per l'utilizzo di 
+>Un `ISP` è un'organizzazione che fornisce servizi per l'utilizzo di internet.
 
 Tipicamente un `ISP` si registra come [[Routing Globale#Routing Gerarchico|Autonomous System]].
 
@@ -45,9 +45,9 @@ Un `ISP` locale fornisce un servizio a *gruppi di utenti co-localizzato*.
 - Realizza un'infrastruttura con router e switch in un punto della zona detto ***Point of Presence*** (`PoP`).
 
 Un `ISP` collega i propri utenti tramite:
-- ADSL #addLink 
-- Fibra Ottica 
-- Collegamento Radio
+- ADSL.
+- [[Strato Fisico#Fibra Ottica|Fibra Ottica]]. 
+- [[Radio Comunicazioni|Collegamento Radio]].
 
 ### Interconnessione tra ISP
 > Teoricamente ogni `ISP` dovrebbe fare peering con ogni altro `ISP` con cui scambia traffico.

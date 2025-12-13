@@ -173,7 +173,7 @@ Ma si possono essere usati anche ***altri range***.
 ```css
 @media print{ }
 @media screen and (min-width: 480px) { }
-/* Applicate se il dispositivo è uno schermo di dimensione almento 480px */
+/* Applicate se il dispositivo è uno schermo di dimensione almeno 480px */
 @media screen and (max-width: 699px) and (min-width: 520px) {}
 /* Applicate se il dispositivo è uno schermo, la sua dimensione è almeno 520px ma minore di 700px */
 @media screen and (max-width: 699px) and (min-width: 520px), (min-width: 1151px) { }

@@ -158,3 +158,33 @@ Confronto tra:
 $$
 \eta=\displaystyle{\frac{T_{u}}{T_{0}}}=\displaystyle{\frac{\overline{\vartheta}}{\overline{\vartheta}_{e}}}
 $$
+
+#### Coda a Singolo Servitore
+> Ogni collegamento in uscita viene schematizzato come ***sistema a coda con singolo servitore***.
+
+>[!Ipotesi]
+1. Le perdite di pacchetti in prima approssimazione sono ***trascurabili***.
+	- $\lambda_{p}=0, \lambda_{s}=\lambda$
+2. I pacchetti arrivano casualmente con [[3 - Variabili Aleatorie#Variabili di Poisson|Distribuzione di Poisson]]. ($k$ arrivi al tempo $t$)
+3. La dimensione dei pacchetti è ***casuale*** con [[11 - Variabili Esponenziali|distribuzione esponenziale]] uguale per tutti i pacchetti.
+
+##### Utilizzazione
+>[!tldr] Situazione ideale
+>Idealmente si vorrebbe il ***servitore sempre attivo***, un servitore in pausa è uno *spreco di risorse*.
+
+In un sistema a servitore singolo l'utilizzazione è la ***percentuale di tempo per cui il servitore è impegnato***.
+- In un sistema ergodico questa è anche la probabilità di trovare il *servitore occupato in un istante qualunque*.
+
+>[!definizione] Ergodicità
+>L'***ergodicità*** è il principio fondamentale per cui il comportamento di un sistema nel tempo *è rappresentativo del suo comportamento collettivo*.
+>Se un sistema è ergodico, osservarlo a lungo è come osservare tanti sistemi uguali tutti insieme.
+
+#### Problema nella Progettazione dei Protocolli
+>[!Padding]
+>Pacchetti di ***lunghezza predeterminata*** e tutti uguali *migliorano le prestazioni* in caso di accodamento.
+
+I dati utente arrivano in quantità casuale quindi è necessario il ***padding***.
+
+>[!info]
+>Il padding è una sequenza di `bit` senza significato, solo di **riempimento**.
+

@@ -9,7 +9,7 @@ Il compito del ***firewall*** è quello di filtrare tutti i pacchetti in entrata
 
 Il firewall è un filtro ***software***/***hardware***, può essere:
 - Un semplice programma installato sul proprio `PC`.
-- Una macchina dedicata che filtra tutto il traffico da e per una rete locale #addLink.
+- Una macchina dedicata che filtra tutto il traffico da e per una [[LAN|rete locale]].
 ## Categorie
 ---
 ### Packet Filter Firewall
@@ -90,7 +90,7 @@ A questa categoria appartengono i ***proxy***.
 
 ### Demilitarized Zone
 >[!info]
->La ***demilitarized zone*** è una zona in cui il traffico LAN e WAN #addLink sono fortemente **limitati** e **controllati**.
+>La ***demilitarized zone*** è una zona in cui il traffico [[LAN]] e [[Infrastrutture di Telecomunicazioni|WAN]] sono fortemente **limitati** e **controllati**.
 
 Permettono l'accesso sia da *fuori* (`WAN`) che da *dentro* (`LAN`) per fornire servizi come [[HTTPS]].
 - Con policy *altamente restrittive*.

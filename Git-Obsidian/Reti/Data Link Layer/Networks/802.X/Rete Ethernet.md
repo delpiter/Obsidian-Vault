@@ -14,6 +14,12 @@ Permette un'utilizzazione **molto efficiente della banda disponibile**.
 Per garantire il funzionamento del `CSMA-CD` si devono imporre vincoli alla dimensione massima della [[LAN]].
 - In funzione della **dimensione dei frame**.
 - In funzione della **velocità di trasmissione**.
+
+> ***Intervallo di Vulnerabilità***: $2\tau$
+- Chiamiamo `A` e `Z` le stazioni più distanti sul `bus` e $\tau$ il tempo di propagazione + il tempo di rilevazione.
+- `A` esegue il carrier sensing all'istante $t_{A}$
+	- Se `Z` fa carrier sensing tra $t_{A}$ e $t_{A}+\tau$ **non rileva attività** e può iniziare a trasmettere.
+	- Se `Z` ha trasmesso tra $t_{A}$ e $t_{A}-\tau$ `A` non rileva il segnale di `Z` e ***si ha collisione***.
 #### Slot Time
 >[!info]
 >Lo ***slot time*** è il tempo necessario per trasmettere $512$ `bit` in reti a $10$ e $100$ `Mbit/s`.
