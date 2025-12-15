@@ -58,6 +58,10 @@ Ciascuno nell'intervallo $2.402$ e $2.484GHz$.
 - In presenza di più reti wireless, per evitare sovrapposizioni si usa la ***regola del*** $5$.
 	- Si usano $2$ gruppi di canali distanti $5$: $[1, 6, 11]$ e $[2,7,12]$.
 
+>[!question] Perché?
+- Diverse nazioni possono avere dei canali riservati diversi per comunicazioni di emergenza.
+- Compatibilità.
+- 
 ### Architettura di Rete
 >[!tldr] Infrastructure `BSS`
 >Architettura molto semplice composta da:
@@ -100,7 +104,7 @@ Supponiamo che `S1` stia trasmettendo a `R1` e che `S2` voglia trasmettere a `R2
 >Soluzione per il problema della ***stazione nascosta***.
 
 >[!tldr] Funzionamento
-1. Il mittente invia un frame `RTS` (***R***equest ***T***o ***S***end) al destinatario, contente la *durata della trasmissione*.
+1. Il mittente invia un frame `RTS` (***R***equest ***T***o ***S***end) al destinatario, contente la *durata della trasmissione* (**network allocation vector**, `NAV`).
 2. Il destinatario risponde, se è in grado di ricevere, con un frame `CTS` (***C***lear ***T***o ***S***end).
 3. Alla ricezione del `CTS` il mittente ***inizia la trasmissione***.
 

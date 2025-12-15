@@ -2,6 +2,11 @@
 ---
 >[!tldr] Idea
 >Lo strato `LLC` è indipendente dal mezzo fisico, dalla topologia e dal [[LAN#Accesso al Canale di Collegamento|protocollo di accesso]].
+
+Lo strato `LLC` gestisce:
+- Controllo del [[Controllo del Canale|canale]] e d'[[Controllo dell'Errore|errore]].
+- [[Multiplexing]].
+
 ## Medium Access Control
 ---
 >[!hint] Indirizzo `MAC`
