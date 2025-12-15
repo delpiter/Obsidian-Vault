@@ -2,7 +2,21 @@
 ---
 > Basato sul [[LAN#Con Rilevazione del Canale|protocollo di accesso]].
 
-### Carrier Sense Multiple Access with Collision Detection
+### Carrier Sensing Multiple Access
+>[!info] Carrier Sensing
+> Ogni stazione che debba trasmettere rivela presenza di un segnale sul bus e ***trasmette solo se è libero***.
+
+> ***Tipologie***
+
+$1$-*Persistent*:
+- Si **aspetta la fine** del frame e poi si trasmette.
+
+$0$-*Persistent* o non *Persistent*:
+- Si fa partire l'algoritmo di ***back-off***.
+
+$p$-*Persistent*:
+- Si trasmette con probabilità $p$ e si fa partire l'algoritmo di back off con probabilità $(1-p)$.
+### CSMA with Collision Detection
 >[!tldr] Idea
 >Protocollo che ***limita*** ma ***non elimina*** la possibilità che due stazioni parlino in *contemporanea*.
 

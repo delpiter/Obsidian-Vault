@@ -104,6 +104,8 @@ Supponiamo che `S1` stia trasmettendo a `R1` e che `S2` voglia trasmettere a `R2
 2. Il destinatario risponde, se è in grado di ricevere, con un frame `CTS` (***C***lear ***T***o ***S***end).
 3. Alla ricezione del `CTS` il mittente ***inizia la trasmissione***.
 
+Una stazione che rileva un messaggio `RTS`, legge la durata della trasmissione e 
+
 >[!missing] Stazione Esposta
 >Il problema della stazione esposta è risolvibile *solo* tramite un'***accurata progettazione fisica della rete***.
 
