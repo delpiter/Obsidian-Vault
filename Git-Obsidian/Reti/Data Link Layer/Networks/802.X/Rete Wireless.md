@@ -18,6 +18,8 @@ Il protocollo utilizza la banda `ISM` (***I***ndustrial ***S***cientific ***M***
 
 >[!caution] Frequency Hopping Spread Spectrum
 >Il `FH-SS`  ha la dispersione di spettro a ***salto di frequenza***.
+
+La ***frequenza del carrier*** cambia frequentemente tra numerosi canali in una sequenza pseudo-casuale.
 - Usato per tecnologie come il `Bluetooth`.
 
 ### Frame
@@ -29,7 +31,7 @@ Il protocollo utilizza la banda `ISM` (***I***ndustrial ***S***cientific ***M***
 - Informazioni di controllo del frame (tipo, versione, sottotipo, etc).
 
 > ***Duration***
-- Durata del frame e del relativo `ACK`.
+- Durata della comunicazione del frame e del relativo `ACK`, serve ad evitare *collisioni*.
 
 > ***Address*** (1-4)
 - Indirizzi [[Struttura del Data Link#Medium Access Control|MAC]] di: *mittente*, *destinatario*, *Tx* (trasmettitore) e *Rx* (ricevente) radio.

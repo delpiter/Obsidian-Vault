@@ -34,7 +34,7 @@ Vengono applicati algoritmi di calcolo dello shortest path.
 >[!todo] Algoritmi
 >Degli ***algoritmi*** per il calcolo dei **shortest path** sulla base delle informazioni ottenute.
 
-##### Routing Distance Vector
+#### Routing Distance Vector
 > Algoritmo Basato su [[Algoritmo di Bellman-Ford|Bellman-Ford]] in versione dinamica e distribuita proposta da [[Ford-Fulkersron]].
 
 >[!tldr] Idea
@@ -105,3 +105,16 @@ Tecnica per ***migliorare i tempi di convergenza***.
 	- Step che utilizza il [[Senza Routing Table#Flooding|flooding]].
 2. Una volta ricevuti tutti gli `LSP` ogni router riesce a costruire l'*immagine della rete*.
 3. Ogni router calcola i cammini minimi tramite l'[[Algoritmo di Dijkstra]].
+
+#### Distance Vector vs Link State Routing
+>[!abstract] Distance Vector
+> Il ***distance vector routing*** utilizza un approccio "*routing by rumor*", condividendo informazioni solo ai vicini.
+
+Un router ha solo *conoscenza dei vicini* e delle informazioni ricevute da essi.
+- Consumo più basso di risorse ma lento.
+
+>[!help] Link State
+>Il ***link state routing*** disegna una completa mappa della rete "*inondando*" la rete con **link-state package**.
+
+La route viene poi costruita tramite algoritmi di percorso minimo.
+- Usato per **reti più grandi**.

@@ -37,11 +37,17 @@ Ciascuna area si comporta come un `AS` dal punto di vista dell'`OSPF`.
 - Route ***esterni***: Aggiornamenti delle informazioni di route proveniente da *altri protocolli*.
 
 >[!help] Classificazione di Aree
+
 - ***Area Normale***: Accetta **tutti** i tipi di route.
+
+>[!stub] Stub Area
+> Una ***stub area*** è una area *non-backbone* progettata per *ridurre la grandezza* delle routing table bloccando specifici pacchetti **Link State Advertisement**.
 - ***Stub Area***: Accetta route **intra** e **inter** area.
 	- I router hanno una "*default route*" verso destinazioni fuori dell'`AS`.
 - ***Totally Stub Area***: Propagati solo le route *intra area* e route di *default*.
 - ***Not so Stubby Area***: Stub Area che importa alcune route esterne.
+
+
 >[!question] Perché questa suddivisione?
 - Questa ulteriore suddivisione serve a limitare lo scambio di dati eccessivo.
 ### Caratteristiche

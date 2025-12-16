@@ -75,7 +75,7 @@ Viene ***mascherato*** l'indirizzamento interno reale.
 >- [RFC 2408](https://www.rfc-editor.org/rfc/rfc2408.html)
 
 >[!todo] `IP` Security
->Una ***Security Association*** è una relazione unidirezionale tra il ***mittente e il destinatario***.
+>Una ***Security Association*** è un accordo negoziato tra due dispositivi di rete che definisce i *parametri di sicurezza* specifici per un ***flusso di dati unidirezionale sicuro***.
 
 > Una `SA` è definita da:
 - Security Parameter Index (`SPI`).
@@ -108,9 +108,10 @@ Viene ***mascherato*** l'indirizzamento interno reale.
 > Scambio a $2$ Fasi
 1. ***Negoziazione Preliminare***
 	- Uno dei due nodi (*initiator*) tenta di contattare l'altro.
-	- I due nodi si accordano sui *parametri di sicurezza da usare* per la fase iniziale.
+	- I due nodi si autenticano e creano un canale sicuro criptato.
+		- Si usano **certificati** o "*pre-shared key*"
 2. ***Negoziazione della Connessione***
-	- I due nodi `VPN` si accordano sui *parametri di sicurezza* e sulla *modalità di comunicazione*.
+	- All'interno del canale sicuro creato, i due nodi si accordano su *parametri di sicurezza* che verranno usate per la comunicazione.
 	- Si generano e si rinnovano le **chiavi crittografiche**.
 
 >[!todo] Authentication Header
