@@ -20,7 +20,7 @@ Nasconde gli host interni e **non indirizza** il *traffico generico proveniente 
 >[!info] Basic NAT
 >Il `NAT` può fornire una ***semplice conversione*** di indirizzo `IP`.
 
-- Il router **mantiene la stessa** porta della **sorgente** all'uscita, modificando solo l'`IP` *inserendo quello del gateway*.
+- Il router **mantiene la stessa** porta della **sorgente** all'uscita, modificando solo l'`IP` sorgente *inserendo uno del gateway* (Il gateway potrebbe averne diversi).
 
 >[!tip] Conversione di Indirizzo e Porta
 >Il `NAT` può fornire anche conversione di indirizzo `IP` e porta [[TCP]] o [[UDP]].

@@ -7,7 +7,7 @@
 
 Il protocollo fornisce un *indirizzo* `IP` ad un **host** interno alla rete che lo richiede.
 - L'indirizzo viene scelto da una ***address pool***.
-- È possibile stabilire degli ***indirizzi fissi*** per un host, inserendo l'indirizzo fisico #addLink.
+- È possibile stabilire degli ***indirizzi fissi*** per un host, inserendo l'[[Struttura del Data Link#Medium Access Control|indirizzo fisico]].
 ### Funzionamento
 >[!hint] Discovery
 >Il client che deve ricevere l'indirizzo `IP` **manda un messaggio** [[Reti IP#Broadcast|broadcast]] alla rete (`DHCP discover`).
