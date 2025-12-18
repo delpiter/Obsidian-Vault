@@ -42,6 +42,7 @@ packet-beta
 
 ### Tipi di Errori
 >[!missing] Destination Unreachable
+- `Type=3`
 - Generato da un [[Routing#Ruolo del Gateway|gateway]] quando la sottorete o l'host **non sono raggiungibili**.
 - Generato da un host quando si **presenta un errore sull'indirizzo** dell'entità di livello superiore a cui trasferire il datagram.
 > Codici errore di `DU`
@@ -52,13 +53,16 @@ packet-beta
 5. Frammentazione necessaria e `bit` `DF=1`.
 
 >[!failure] Time Exceeded
+- `Type=11`
 - Generato da un [[Routing#Router|router]] quando il `TTL` di un datagram si azzera e **viene distrutto**.
 - Generato da un host quando un timer si azzera in attesa dei frammenti per **riassemblare un datagram**.
 
 >[!abstract] Source Quench
+- `Type=4`
 - I datagram arrivano ***troppo velocemente*** rispetto alla capacità di essere processati.
 
 >[!caution] Redirect
+- `Type=5`
 - Generato da un router per indicare alla sorgente una **strada più conveniente** per raggiungere la destinazione.
 
 ### Informazioni
@@ -68,7 +72,6 @@ packet-beta
 - La sorgente invia la richiesta ad un altro host/gateway.
 - La destinazione deve rispondere.
 - Usato per determinare lo stato di una rete (*tempo di transito*).
-
 >[!tip] Additional Fields
 - ***Identifier***: Identifica l'insieme degli echo dello stesso test.
 - ***Sequence Number***: Identifica ciascun echo nell'insieme.
@@ -104,7 +107,7 @@ Permette di controllare se l'host destinatario è **raggiungibile o meno dalla s
 
 ### Comando TRACEROUTE
 ```sh
-tracert 8.8.8.8
+traceroute 8.8.8.8
 ```
 
 Permette di ***conoscere il percorso seguito*** dai pacchetti inviati dalla sorgente e diretti verso la destinazione.

@@ -93,3 +93,8 @@ Fissata la dimensione dello **slot time** ogni trama di dimensione minore *viene
 2. Lo stesso host immette sulla rete un pacchetto, diverso da tutti gli altri, noto come ***sequenza di jamming*** (lungo $48$`bit`).
 3. Gli host in ascolto, riconosciuto il *jamming*, interrompono la trasmissione e **scartano i frammenti ricevuti**.
 4. Prima di ricominciare la trasmissione, ogni host attende un tempo *semi casuale* dato dall'***algoritmo di backoff esponenziale binario***.
+
+>[!failure] Algoritmo Backoff Esponenziale Binario
+>Si attende un tempo semi casuale, ogni fallimento di trasmissione (*collisione*), si aumenta il tempo di attesa.
+
+Dopo $16$ collisioni la **trasmissione viene abortita**.

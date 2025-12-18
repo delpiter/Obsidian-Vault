@@ -172,6 +172,27 @@ $$
 >[!tldr] Situazione ideale
 >Idealmente si vorrebbe il ***servitore sempre attivo***, un servitore in pausa è uno *spreco di risorse*.
 
+Definiamo $\rho$ come la percentuale di utilizzazione del servizio data da:
+$$
+\rho=\frac{B(T)}{T}
+$$
+- $B(T)$: Tempo in cui il servizio è usato.
+- $T$: Tempo totale.
+
+![[Utilization.png]]
+
+$\rho$ può anche essere visto come: $\displaystyle{\frac{\lambda}{\mu}}$
+- Rapporto tra il ritmo di arrivo delle richieste quello di servizio.
+
+>[!summary] Tempo medio di Attesa in coda
+>$$T_{A}=\overline{\vartheta} \frac{\rho}{1-\rho}$$
+>>[!done] Se il tempo di servizio ($\rho$) diminuisce, lo fa anche il tempo di attesa in coda
+
+>[!danger] Attenzione
+> Con valori di $\rho$ vicini a $1$ (**occupazione alta**), il tempo di attesa in coda aumenta esponenzialmente.
+
+Se il servizio è deterministico, viene migliorato leggermente:
+$$T_{A}=\overline{\vartheta} \frac{\rho}{2(1-\rho)}$$
 In un sistema a servitore singolo l'utilizzazione è la ***percentuale di tempo per cui il servitore è impegnato***.
 - In un sistema ergodico questa è anche la probabilità di trovare il *servitore occupato in un istante qualunque*.
 

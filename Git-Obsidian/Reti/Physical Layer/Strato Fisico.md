@@ -135,6 +135,9 @@ Si possono avere giunti ***stabili*** e ***contemporanei***.
 >>[!definizione] Riflessione
 >>Il fenomeno della riflessione si presenta quando il *raggio di luce* incide **obliquamente** sull'interfaccia di separazione tra due mezzi.
 
+L'***indice di rifrazione*** è un numero che indica quanto la luce rallenta quando attraversa un materiale
+- Più è alto più *viaggia più lentamente*.
+
 ![[FibreOptic.png]]
 
 Per la fibra ottica i due mezzi diversi sono ***due tipi di pasta vetrosa***:

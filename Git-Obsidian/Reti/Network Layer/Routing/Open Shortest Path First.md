@@ -47,9 +47,6 @@ Ciascuna area si comporta come un `AS` dal punto di vista dell'`OSPF`.
 - ***Totally Stub Area***: Propagati solo le route *intra area* e route di *default*.
 - ***Not so Stubby Area***: Stub Area che importa alcune route esterne.
 
-
->[!question] Perché questa suddivisione?
-- Questa ulteriore suddivisione serve a limitare lo scambio di dati eccessivo.
 ### Caratteristiche
 >[!todo] Bilanciamento del Carico
 
