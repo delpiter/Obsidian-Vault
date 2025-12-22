@@ -147,6 +147,7 @@ Protocollo simile al [[Con Routing Table#Routing Distance Vector|distance vector
 >[!abstract] Path Vector
 - Evoluzione del ***Distance Vector***, risolve il problema dei *percorsi ciclici*.
 	- Quando un *border router* di un `AS` riceve un path vector controlla se il suo `AS` è ***già elencato***.
+	- Nel vettore dei percorsi vengono elencate tutti gli `AS` da attraversare per raggiungere la destinazione.
 
 > ***Attributi***:
 - A ciascun path vector sono associati attributi che ne *specificano la natura*.

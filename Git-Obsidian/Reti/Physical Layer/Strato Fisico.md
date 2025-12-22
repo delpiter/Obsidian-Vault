@@ -111,7 +111,7 @@ La luce si propaga in linea retta all'interno di un *mezzo trasparente omogeneo*
 
 > ***Giuntare la fibra ottica*** significa unire due fibre per estendere una linea o riparare un danno, usando principalmente la tecnica a fusione.
 
-Si possono avere giunti ***stabili*** e ***contemporanei***.
+Si possono avere giunti ***stabili*** e ***temporanei***.
 
 >[!question] Dove usare la fibra ottica?
 - La fibra ottica viene tipicamente usata per i ***collegamenti a lunga distanza***.
@@ -170,6 +170,9 @@ Affinché il raggio luminoso rimanga entro il core (***riflessione totale***), �
 >Una sorgente di luce (*LED* o *Laser*) genera impulsi luminosi che si ***propagano per grandi distanze*** e a grandissima velocità.
 
 Un ricevitore (*fotodiodo*) riceve gli impulsi.
+
+##### Tipologie di Fibra Ottica
+![[FiberOpticTypes.png]]
 
 #### La fibra ottica nella Rete di Accesso
 > Classificate in base alla ***localizzazione dell'interfaccia***

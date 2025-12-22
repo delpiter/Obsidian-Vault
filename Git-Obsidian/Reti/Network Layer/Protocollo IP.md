@@ -118,7 +118,7 @@ packet-beta
 
 > *Network ID*
 - Prefisso che identifica la [[Routing|network IP]] a cui appartiene l'indirizzo.
-- Tutti gli indirizzi du una medesima network `IP` hanno il medesimo prefisso.
+- Tutti gli indirizzi di una medesima network `IP` hanno il medesimo prefisso.
 
 > *Host ID*
 - Identifica l'***host*** vero e proprio di una certa **network**.

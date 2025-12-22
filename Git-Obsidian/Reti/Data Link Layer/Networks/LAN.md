@@ -118,6 +118,8 @@ Tenendo conto delle ritrasmissioni, il numero medio di pacchetti trasmessi al sa
 >Traffico offerto al [[Struttura del Data Link#Medium Access Control|MAC]]: $G=\lambda_{r}T$.
 >>[!hint] Il traffico smaltito è pari al traffico offerto che viene trasmesso senza collidere
 
+Con $T$ tempo di **trasmissione del frame**.
+
 > Si definisce un ***intervallo di vulnerabilità*** $T_{v}$ un intervallo all'interno del quale una trasmissione può dar luogo a una collisione.
 
 Caso `ALOHA`: $T_{v}=2T$
@@ -140,7 +142,7 @@ $$
 Prima di iniziare le trasmissioni la stazione deve acquisire il sincronismo, inviando ***trame di tentativo***.
 - Due frame o si sovrappongono completamente o per nulla.
 - L'***intervallo di vulnerabilità*** si riduce a $T$.
-- 
+
 ### Cablaggio Strutturato
 > Una `LAN` moderna viene cablata secondo una ***struttura gerarchica*** di $4$ livelli.
 

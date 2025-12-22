@@ -23,7 +23,7 @@ Il protocollo fornisce un *indirizzo* `IP` ad un **host** interno alla rete che 
 
 >[!question] Request
 >Al ricevimento di più *offer* (dai vari server `DHCP`) il client **ne sceglie una**.
->Il client dovrà poi ***avvertire il server*** che gli ha inviato l'offerta una messaggio `DHCP request`.
+>Il client dovrà poi ***avvertire il server*** che gli ha inviato l'offerta con un messaggio `DHCP request`.
 
 Analogamente verrà inviato un `DHCP decline` ai server la cui richiesta *è stata rifiutata*.
 
@@ -40,7 +40,7 @@ Il client, ricevuto l'`ACK` configura la ***sua interfaccia network***.
 
 Una volta finito il **tempo di lease** possono avvenire:
 - `DHCP release`: L'`IP` non sarà più valido.
-- `DHCP renew`: Viene **rinnovata la validità**.
+- `DHCP renew`: Viene **rinnovata la validità** (Attraverso una `DHCP Request`).
 	- `REBIND`: Rinnovamento *avvenuto con successo*.
 	- `DHCPNACK`: Rinnovamento *rifiutato*.
 
