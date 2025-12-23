@@ -1,4 +1,3 @@
-#reti_2
 ## NAT
 ---
 >[!cite] Network Address Translation

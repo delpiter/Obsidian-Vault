@@ -1,4 +1,3 @@
-#reti_2
 ## Algoritmi e Protocolli
 ---
 > La scelta del percorso spesso significa la **scelta del prossimo router**.

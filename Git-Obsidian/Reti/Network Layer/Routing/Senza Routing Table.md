@@ -1,4 +1,3 @@
-#reti_2
 ## Algoritmi Senza Routing Table
 ---
 ### Flooding

@@ -1,4 +1,3 @@
-#reti_2 
 >[!info]
 >Il ***firewall*** si interpone fra [[Reti IP|rete]] interna (da *proteggere*) e rete esterna (fonte di *minacce*).
 >>[!done] È una linea di difesa contro le intrusioni di rete

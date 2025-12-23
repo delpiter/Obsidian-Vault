@@ -1,4 +1,3 @@
-#reti_2
 ## Classe delle Reti
 ---
 > Definite diverse *classi di network* differenziate per dimensione.

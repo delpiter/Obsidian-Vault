@@ -1,4 +1,3 @@
-#reti_2
 ## Internet Control Message Protocol
 ---
 > `ICMP` è un protocollo di controllo per la gestione di *situazioni anomale*.

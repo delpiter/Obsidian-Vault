@@ -1,5 +1,3 @@
-#reti_2
-
 > Esistono più percorsi per raggiungere una destinazione da una sorgente
 
 >[!todo] Internet

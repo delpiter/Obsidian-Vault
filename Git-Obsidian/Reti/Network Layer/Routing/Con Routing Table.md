@@ -1,4 +1,3 @@
-#reti_2
 ## Algoritmi con Routing Table
 ---
 ### Store and Forward

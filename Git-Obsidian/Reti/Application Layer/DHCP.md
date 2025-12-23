@@ -1,4 +1,3 @@
-#reti_2 
 ## Dynamic Host Configuration Protocol
 ---
 >[!cite] [RFC 2131](https://www.rfc-editor.org/rfc/rfc2131.html)

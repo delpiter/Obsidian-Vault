@@ -1,4 +1,3 @@
-#reti_2
 ## Routing Gerarchico
 ---
 >[!cite] Autonomous System

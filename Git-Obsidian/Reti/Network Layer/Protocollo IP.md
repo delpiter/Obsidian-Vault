@@ -1,4 +1,3 @@
-#reti_2
 ## Internet Protocol
 ---
 >[!info] Definizione
