@@ -136,3 +136,75 @@ I trasferimenti avvengono a partire da indirizzi multipli di $32,64,128$.
 	- Utilizzo del `BUS`: $\displaystyle\frac{128}{N\times128}\%$
 
 ![[CachingLoad5.png]]
+
+##### Esempi
+>[!example] Esempio 1: Rotazione di un'immagine
+
+> Il riposizionamento di ciascun pixel dell'immagine è fatto accedendo all'array di pixel in maniera poco ottimale.
+
+- Dividendo l'immagine in **piccole matrici** (in modo da mantenerle nella memoria condivisa), si riesce ad avere un aumento delle performance.
+
+>[!example] Esempio 2: Array of Structure
+
+> Ipotizziamo di dover accedere alle coordinate di una serie di punti tridimensionali.
+
+```c
+typedef struct{
+	float x;
+	float y;
+	float z;
+} point3d;
+
+__global__ void compute(point3d *points, int n){
+	int i = threadIdx.x;
+	float x = points[i].x;
+	float y = points[i].y;
+	float z = points[i].z;
+	
+	/* Use x,y & z */
+}
+```
+
+Ogni ***transazione di memoria*** leggerà dei dati che non vengono utilizzati.
+![[ArrayOfStructure.png]]
+
+>[!done] Soluzione
+>Cambiamo la ***struttura dei dati***.
+>- `Array of Structure` -> `Structure of Array`.
+
+```c
+typedef struct{
+	float *x;
+	float *y;
+	float *z;
+} points3d;
+
+__global__ void compute(points3d *points, int n){
+	int i = threadIdx.x;
+	float x = points->x[i];
+	float y = points->y[i];
+	float z = points->z[i];
+	
+	/* Use x,y & z */
+}
+```
+
+- In questo modo si accede alla memoria in **maniera contigua**.
+
+![[StructureOfArray.png]]
+
+Questa tecnica è usata anche nella programmazione [[MPI]].
+
+#### Conclusione
+>[!todo] Guidelines per l'ottimizzazione della memoria
+
+> Cerca di ***raggruppare gli accessi alla memoria*** (dove abbia senso).
+- Allinea gli indirizzi di partenza.
+- Un [[Scheduling in CUDA|warp]] dovrebbe accedere ad area *contigue di memoria*.
+- Ristrutturare i dati come `SoA`.
+
+> Cerca di avere un accesso alla memoria che satura il `bus`.
+
+>[!warning] Operazioni invasive sul Codice
+>Sarebbe opportuno fare misurazioni delle performance ***prima e dopo ai cambiamenti***.
+>`CUDA` offre delle informazioni di basso livello come l'utilizzo del singolo **warp**.

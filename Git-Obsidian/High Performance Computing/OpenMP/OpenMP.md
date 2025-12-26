@@ -22,7 +22,7 @@
 
 >[!fail] `OpenMP` **non**
 - Parallelizza ***automaticamente***.
-- Garantisce [[Valutazione delle Performance#Speedup|speedup]].
+- Garantisce [[Git-Obsidian/High Performance Computing/Valutazione delle Performance#Speedup|speedup]].
 - Evita *data races*.
 
 ### Modello di Esecuzione
