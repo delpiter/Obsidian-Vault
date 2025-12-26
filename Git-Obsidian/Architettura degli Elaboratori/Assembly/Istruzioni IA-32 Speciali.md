@@ -161,7 +161,12 @@ Negli anni successivi sono stati introdotti `SSE3`, `SSE4` e `AVX`
 - Principalmente *istruzioni floating point* per ***accelerazione video e grafica***
 - Introdotti registri a $256$ `BIT` (`YMMn`) e successivamente a $512$ `BIT` (`ZMMn`)
 
+### SIMD per ARM
+>[!abstract] ARM Neon
+>`NEON` è l'estensione `SIMD` per le architetture `ARM`. 
 ## Intrinsics
 ---
 >[!info] Definizione
->Gli ***intrinsics*** sono funzioni che rendono disponibili alcune istruzioni **SIMD** che *non sono supportate* dai ***compilatori*** o *non accessibili* tramite ***assembly in line***
+>Gli ***intrinsics*** sono funzioni che rendono disponibili alcune istruzioni **SIMD** che *non sono supportate* dai ***compilatori*** o *non accessibili* tramite ***assembly in line***.
+
+Sono funzioni in standard `{c icon} C` mappate ***automaticamente in istruzioni assemblu***.
