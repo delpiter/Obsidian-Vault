@@ -1,4 +1,4 @@
-> Secondo stato del [[Il Ciclo di Vita del Software|ciclo di vita del software]].
+> Primo e secondo stato del [[Il Ciclo di Vita del Software|ciclo di vita del software]].
 
 >[!info]
 >In questa fase si stabilisce quale parte del *dominio applicativo* bisogna automatizzare.
@@ -22,7 +22,7 @@ Nasce in presenza di un'***idea progettuale già esistente*** che comprende le p
 - *Ambito* e *Attori* del progetto.
 - *Benefici* attesi.
 - *Caratteristiche generali* della soluzione.
-- Progetto *di massima*.
+- Progetto *di massima* della soluzione.
 - Stima dell'***impegno e dei costi***.
 	- Anche detto stima dell'***Effort*** (*Tempo persona* e *tempo solare*)
 

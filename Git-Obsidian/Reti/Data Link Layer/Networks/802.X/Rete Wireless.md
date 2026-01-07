@@ -1,7 +1,7 @@
 ## 802.11
 ---
 >[!cite] Onde Radio
-> Le ***onde radio*** sono onde [[Elettromagnetismo|elettromagnetiche]] nella banda di frequenza copresa tra $0$ e $300 Ghz$.
+> Le ***onde radio*** sono onde [[Elettromagnetismo|elettromagnetiche]] nella banda di frequenza compresa tra $0$ e $300 Ghz$.
 
 Il protocollo utilizza la banda `ISM` (***I***ndustrial ***S***cientific ***M***edical - da $2.4$ a $2.4835Ghz$) a $2.4Ghz$.
 - Disponibile per applicazioni industriali, scientifiche e mediche ***senza la richiesta di licenze***.
@@ -63,7 +63,7 @@ Ciascuno nell'intervallo $2.402$ e $2.484GHz$.
 >[!question] Perché?
 - Diverse nazioni possono avere dei canali riservati diversi per comunicazioni di emergenza.
 - Compatibilità.
-- 
+
 ### Architettura di Rete
 >[!tldr] Infrastructure `BSS`
 >Architettura molto semplice composta da:

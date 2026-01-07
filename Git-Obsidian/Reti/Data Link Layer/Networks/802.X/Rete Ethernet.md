@@ -90,7 +90,7 @@ Fissata la dimensione dello **slot time** ogni trama di dimensione minore *viene
 >Avvenuta una collisione si mette in moto il seguente procedimento.
 
 1. Un host qualsiasi che si accorge per primo della collisione (*ricevendo pacchetti incompleti*) ***interrompe la trasmissione***.
-2. Lo stesso host immette sulla rete un pacchetto, diverso da tutti gli altri, noto come ***sequenza di jamming*** (lungo $48$`bit`).
+2. Lo stesso host immette sulla rete un pacchetto, diverso da tutti gli altri, noto come ***sequenza di jamming*** (lungo da $32$ a $48$`bit`).
 3. Gli host in ascolto, riconosciuto il *jamming*, interrompono la trasmissione e **scartano i frammenti ricevuti**.
 4. Prima di ricominciare la trasmissione, ogni host attende un tempo *semi casuale* dato dall'***algoritmo di backoff esponenziale binario***.
 

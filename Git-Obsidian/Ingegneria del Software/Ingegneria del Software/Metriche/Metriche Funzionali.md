@@ -103,7 +103,7 @@ Un `EIF` in una applicazione **DEVE** essere un `ILF` in un'altra.
 - Dati sulla sicurezza mantenuti all'esterno dell'applicazione.
 - etc...
 
-#### Funzioni di tipo Dati
+#### Funzioni di tipo Transazione
 >[!important] External Input `EI`
 >È un *processo elementare* dell'applicazione che ***elabora*** dati o informazioni di controllo provenienti dall'***esterno del confine*** dell'applicazione.
 

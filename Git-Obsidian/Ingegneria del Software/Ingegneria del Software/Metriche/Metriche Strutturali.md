@@ -97,7 +97,7 @@ Stima della ***dimensione del software***:
 
 Determinazione della ***classe del software***:
 - I **sw** sono divisi in tre categorie con caratteristiche di difficoltà crescente.
-- Per ogni categoria è stata sviluppata una diversa formula (***empiricamente***) per il calcolo del costo, espresso in ***mesi uomo***.
+- Per ogni categoria è stata sviluppata una diversa formula (***empiricamente***) per il calcolo del costo, espresso in ***mesi nominali*** (mesi uomo).
 
 
 | Category      | Formula                         |
