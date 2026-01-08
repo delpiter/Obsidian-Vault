@@ -44,11 +44,12 @@ Si può realizzare utilizzando:
 >[!info] Concetto
 >Il ***wavelength division multiplexing*** è una modalità di multiplazione di diversi flussi su diversi ambiti di *lunghezze d'onda*.
 
-I flussi di dati diversi vengono trasmessi su [[Luce e Colori|colori]]***diversi*** nella stessa [[Strato Fisico#Fibra Ottica|fibra]].
+I flussi di dati diversi vengono trasmessi su [[Luce e Colori|colori]] ***diversi*** nella stessa [[Strato Fisico#Fibra Ottica|fibra]].
 - Richiede **trasmettitori** e **ricevitori** **selettivi** ma permette un largo aumento della capacità della rete *senza installare nuove fibre*.
 
 > `ROADM` (Reconfigurable Optical Add Drop Multiplexer)
 - Apparato in grado di ***selezionare il colore della luce*** in modo comandato.
+
 > `MEM` 
 - Sposto la luce con piccoli specchi disposti a matrice (`MEMs` switch matrix).
 ## Assegnazione della Banda

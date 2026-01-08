@@ -68,7 +68,8 @@ Ciascuno nell'intervallo $2.402$ e $2.484GHz$.
 >[!tldr] Infrastructure `BSS`
 >Architettura molto semplice composta da:
 >- Uno o più ***wireless terminal***: i dispositivi mobili dotati di *interfaccia wireless*.
->- Uno o più ***access point***: dispositivi che collegano la *parte cablata* della rete con la *parte wireless*.
+>- Un ***access point***: dispositivo che *connette i dispositivi mobili* tra di loro.
+
 - In questo caso l'***access point*** gestisce l'utilizzo del canale tramite il [[Interfacciamento di Periferiche#Polling|polling]], attribuendo a turno le stazioni che devono trasmettere (L'`AP` è il `Rx` iniziale).
 	- L'`AP` trasmette periodicamente un segnale di ***beacon*** che permette:
 		- La **sincronizzazione** delle stazioni.
@@ -81,6 +82,11 @@ Ciascuno nell'intervallo $2.402$ e $2.484GHz$.
 >Independent `BSS`, in questa modalità le stazioni comunicano in modalità ***peer-to-peer***.
 
 Il ricevente è anche il `Rx`.
+
+>[!tldr] Infrastructure `ESS`
+>L'***extended service set*** consiste in più reti `BSS` collegate tra di loro attraverso una backbone comune creando un *unica rete wireless*.
+
+Permette ad un singolo dispositivo di connettersi a diversi access points ***attraverso un unico*** `SSID`.
 #### Problemi di Accesso Multiplo
 > 3 *problemi specifici*
 ##### Stazione Nascosta
@@ -106,7 +112,8 @@ Supponiamo che `S1` stia trasmettendo a `R1` e che `S2` voglia trasmettere a `R2
 >Soluzione per il problema della ***stazione nascosta***.
 
 >[!tldr] Funzionamento
-1. Il mittente invia un frame `RTS` (***R***equest ***T***o ***S***end) al destinatario, contente la *durata della trasmissione* (**network allocation vector**, `NAV`).
+1. Il mittente invia un frame `RTS` (***R***equest ***T***o ***S***end) al destinatario, contente la *durata della trasmissione* 
+	- Il **network allocation vector**, `NAV` mantiene il canale occupato per gli altri trasmettitori.
 2. Il destinatario risponde, se è in grado di ricevere, con un frame `CTS` (***C***lear ***T***o ***S***end).
 3. Alla ricezione del `CTS` il mittente ***inizia la trasmissione***.
 

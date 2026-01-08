@@ -40,6 +40,7 @@ Gli `AS` non sono vincolati ad aree geografiche.
 #### Interior Gateway Protocol
 >[!abstract] RIP
 >Il ***Routing Information Protocol*** è la vecchia implementazione del [[Con Routing Table#Routing Distance Vector|distance vector]].
+>È un protocollo di livello application che utilizza l'[[UDP]].
 
 Utilizza ***due tipologie di messaggi***:
 - `REQUEST`: Per chiedere esplicitamente informazioni ai nodi vicini.

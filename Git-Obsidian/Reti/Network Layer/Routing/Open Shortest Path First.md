@@ -97,7 +97,9 @@ packet-beta
 - $1$ - Autenticazione **Semplice**.
 - $2$ - Autenticazione **Crittografica**.
 
-##### Hello Protocol
+##### Protocolli
+>[!info] Hello Protocol
+
 > I pacchetti `hello` sono inviati ***periodicamente*** secondo il parametro `Hello Interval` ($2$ `byte`).
 
 Il pacchetto include:
@@ -106,13 +108,25 @@ Il pacchetto include:
 - Il *designated router* e il **backup** (per l'elezione).
 - Network Mask
 - Eventuali **Options**.
+
+>[!caution] Exchange Protocol
+
+Usato una volta ***stabilite le adiacenze*** per sincronizzare i *database*.
+- Si sceglie un **master** e uno **slave**.
+	- Il *master* invia pacchetti `LSDB` contenenti gli `LSA` del nodo.
+	- Lo *slave* risponde con gli `LSA` del proprio `DB`.
+
+>[!abstract] Flooding Protocol
+
+Si diffondono gli `LSA` a ***tutti i router della rete***.
 #### Funzionamento
 > `OSPF` è un protocollo di tipo ***link state***.
 
 > ***Comunicazione***
 1. Ogni nuovo router invia un messaggio di `hello` ai **router vicini** (*Hello Protocol*).
+	1. A cadenza periodica viene inviato il packet `hello` per **mantenere la mappa della rete**.
 2. I router adiacenti rispondono un messaggio `LSDB` che fornisce le ***informazioni aggiornate sui collegamenti*** (per sincronizzare i rispettivi *Link State Database*).
-3. Il costo dei collegamenti viene aggiornato con ***cadenza periodica*** attraverso `LSU` o attraverso ***richieste esplicite*** (`LSR`).
+3. Il costo dei collegamenti viene aggiornato con ***cadenza periodica***, attraverso `LSU` o attraverso ***richieste esplicite*** (`LSR`).
 4. Ogni ricevimento di un `LSU` è riscontrato con un `LSA` (`ACK`).
 
 I messaggi `LSU` vengono instradati con la tecnica di [[Senza Routing Table#Flooding|flooding]].

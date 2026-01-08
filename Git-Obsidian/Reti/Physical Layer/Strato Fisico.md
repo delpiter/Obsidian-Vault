@@ -104,8 +104,9 @@ Connettore usato: `RJ45` (*Registered Jack*) o `RJ11`.
 
 La luce si propaga in linea retta all'interno di un *mezzo trasparente omogeneo* (**densità costante**) e *isotropo* (comportamento della luce **uguale in tutte le direzioni**).
 
->[!done] Elevato aumento delle prestazioni con aumento minimo dei costi
-
+>[!bug] Paradosso della Fibra Ottica
+> La ***fibra ottica*** porta un *elevato* aumento delle prestazioni con *aumento minimo* dei costi.
+	
 >[!fail] Problema
 - La fibra ottica è più difficile da giuntare.
 
@@ -135,7 +136,7 @@ Si possono avere giunti ***stabili*** e ***temporanei***.
 >>[!definizione] Riflessione
 >>Il fenomeno della riflessione si presenta quando il *raggio di luce* incide **obliquamente** sull'interfaccia di separazione tra due mezzi.
 
-L'***indice di rifrazione*** è un numero che indica quanto la luce rallenta quando attraversa un materiale
+L'***indice di rifrazione*** è un numero che indica quanto la luce rallenta e rimbalza quando attraversa un materiale
 - Più è alto più *viaggia più lentamente*.
 
 ![[FibreOptic.png]]
