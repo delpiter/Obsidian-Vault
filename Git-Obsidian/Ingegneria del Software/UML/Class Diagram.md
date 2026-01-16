@@ -438,7 +438,7 @@ direction LR
 		+empty() bool
 	}
 	Calculator ..>  Stackable
-	Stackable <|..  ArrayStack
+	Stackable <|--  ArrayStack
 ```
 
 > ***Lollypop Notation***
@@ -458,7 +458,7 @@ direction LR
 		+empty() bool
 	}
 	Calculator ..() Stackable
-	Stackable ()..  ArrayStack
+	Stackable ()--  ArrayStack
 ```
 
 ## Analisi vs Progettazione

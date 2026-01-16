@@ -1,7 +1,7 @@
 ## Unified Modeling Language
 ---
 >[!info]
->`UML` è un **linguaggio** che definisce una *notazione standard* basata su un ***metamodello*** integrato deggli "**oggetti**" che compongono un *sistema software*.
+>`UML` è un **linguaggio** che definisce una *notazione standard* basata su un ***metamodello*** integrato degli "**oggetti**" che compongono un *sistema software*.
 >- **Non** descrive una *sequenza di processo*.
 >- È usato da persone e gruppi che *seguono metodi diversi*.
 

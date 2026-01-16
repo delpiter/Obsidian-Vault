@@ -92,7 +92,7 @@ Nel caso di accesso ***column-wise***, gli elementi non sono contenuti in blocch
 ## Hardware Multithreading
 ---
 >[!tldr] Idea
->Il ***multithreading a livello hardware*** permette alla [[La CPU|CPU]] di cambiare *task* quanto quello corrente è in una *situazione di stallo*.
+>Il ***multithreading a livello hardware*** permette alla [[La CPU|CPU]] di cambiare *task* quando quello corrente è in una *situazione di stallo*.
 
 *Tipologie*:
 > ***Fine-Grained Multithreading***:
@@ -104,7 +104,7 @@ Nel caso di accesso ***column-wise***, gli elementi non sono contenuti in blocch
 - Appropriato per l'attesa di operazioni di *I/O*.
 
 >[!hint] SMT
->Il ***Simultaneous Multithreading*** è una implementazione del ***fine-grained multithreading*** che concede a due flussi di esecuzione di utilizzare le risorse hardware per migliorare l'efficienza.
+>Il ***Simultaneous Multithreading*** è una implementazione del ***fine-grained multithreading*** che concede a due flussi di esecuzione di utilizzare le stesse risorse hardware per migliorare l'efficienza.
 
 L'[**Hyperthreading**](https://www.intel.com/content/www/us/en/gaming/resources/hyper-threading.html) è l'implementazione di ***Intel*** dell'`SMT`.
 - Gli stadi della *pipeline* sono **separati da due buffer**, uno per ciascun thread.

@@ -53,7 +53,7 @@ Nella definizione dello *speedup*:
 Nel caso ideale il programma parallelo richiede $1/p$ unità di tempo **rispetto al programma sequenziale**.
 - $S(p)=p$ è il caso migliore dell'"*optimal speedup*"
 - Realisticamente $S(p)\leq p$
->[!question] È possibile ottenere $S(p)<p$?
+>[!question] È possibile ottenere $S(p)>p$?
 
 Lo ***speedup superlineare*** realisticamente non è possibile.
 - $\displaystyle{\frac{T_{\text{par}}(1)}{p}}$ è un *limite inferiore* dello speedup.
@@ -67,6 +67,7 @@ Ci sono alcuni casi in cui si potrebbe osservare uno ***speedup superlineare***:
 	- Il compilatore potrebbe compilare i codici in maniera differente.
 - Se il problema viene diviso abbastanza per far stare un *sotto problema* interamente nella [[Cache]].
 - Se il processore applica il [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Parallelismo nel Chip|parallelismo eterogeneo]].
+- Tramite l'utilizzo di [[Programmazione SIMD]].
 
 ### Porzioni non Parallelizzabili
 

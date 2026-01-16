@@ -113,8 +113,8 @@ Si definiscono gli ***indirizzi multicast***:
 - da `224.0.0.0` a `239.255.255.255`.
 
 I router possono usare diversi protocolli per l'utilizzo del multicast, come:
-- [[Routing Globale#Interior Gateway Protocol|RIP_v2]].
-- [[Open Shortest Path First|OSPF]].
+- [[Routing Globale#Interior Gateway Protocol|RIP_v2]] `224.0.0.9`.
+- [[Open Shortest Path First|OSPF]] `224.0.0.5` (All router), `224.0.0.6` ([[Open Shortest Path First#Caso Rete Multi Access|Designated Router]]).
 
 ### Internet Group Management Protocol
 > L'`IGMP` serve per dichiarare l'appartenenza ad un ***gruppo di multicast***.

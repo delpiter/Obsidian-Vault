@@ -57,7 +57,7 @@ for ( d=1; d<n/2; d *= 2 ) {
 ![[DownSweep.png]]
 
 ```c title:Down-Sweep
-for ( ; d > 0; d >>= 1 ) {
+for ( ; d > 0; d >>= 1 ) { // d = d/2
 	for (k=0; k<n; k += 2*d ) {
 		float t = x[k+d-1];
 		x[k+d-1] = x[k+2*d-1];

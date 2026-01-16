@@ -1,6 +1,5 @@
 >[!tip] Pattern
->Il è un [[Parallel Programming Patterns|pattern]] ***partition*** consiste nel dividere il *dominio dei dati* in regioni solitamente 
->[[Insiemi Numerici#Insiemi Separati|disgiunte]] (potrebbe essere necessario avere insiemi **non disgiunti**) chiamate ***partizioni*** (*partition*).
+>È un [[Parallel Programming Patterns|pattern]] ***partition*** consiste nel dividere il *dominio dei dati* in regioni solitamente [[Insiemi Numerici#Insiemi Separati|disgiunte]] (potrebbe essere necessario avere insiemi **non disgiunti**) chiamate ***partizioni*** (*partition*).
 
 Ogni *processore* opera su una singola partizione.
 
@@ -64,6 +63,7 @@ La ***dimensione ottimale*** del partizionamento dipende generalmente dal sistem
 ![[BidimensionalVBlockPartition.png]]
 
 > Partizionamento *blocco, blocco*
+
 ![[Block-BlockPartitioning.png]]
 
 > Ciclici

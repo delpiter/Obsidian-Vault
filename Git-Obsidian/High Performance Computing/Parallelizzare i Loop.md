@@ -63,7 +63,7 @@ if(a > 0){
 ```
 
 >[!caution] Control Dependece
->Un'istruzione `S2` ha una ***control dependece*** su `S1` se il risultato di `S1` determina se `S1` deve essere eseguito o no.
+>Un'istruzione `S2` ha una ***control dependece*** su `S1` se il risultato di `S1` determina se `S2` deve essere eseguito o no.
 
 ```c
 if (a > 0){    // S1
@@ -150,7 +150,7 @@ a[n-1] = b[n-2] * c[n-1];
 
 - Utile per aumentare la [[Partition#In base alla Dimensione|granularità del parallelismo]] (se appropriato).
 
-> ***Procediment***
+> ***Procedimento***
 - Fisso l'indice di uno dei due `loop` e controllo le dipendenze parallelizzando l'altro indice.
 
 ```c title:"inner parallelization"

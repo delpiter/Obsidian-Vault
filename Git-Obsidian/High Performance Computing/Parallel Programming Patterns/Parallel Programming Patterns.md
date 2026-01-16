@@ -8,12 +8,12 @@ Un design pattern ***non è*** una soluzione già pronta ad un problema.
 ## Parallel Programming Patterns
 ---
 >[!example] Patterns
-> - *Embarrassingly Parallel*
-> - *Partition*
-> - *Master-Worker*
-> - *Stencil*
-> - *Reduce*
-> - *Scan*
+> - [[Embarrassingly Parallel]]
+> - [[Partition]]
+> - [[Partition#Master-Worker Paradigm|Master-Worker]]
+> - [[Stencil]]
+> - [[Reduce]]
+> - [[Scan]]
 
 Un ***pattern di programmazione parallela*** definisce:
 - Un partizionamento dei dati di `input`.

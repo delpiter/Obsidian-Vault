@@ -42,7 +42,7 @@ Esistono una serie di criteri, sempre più stringenti:
 >[!hint] Complessità
 >Più si complicano i criteri, *più sono difficili* da trovare gli **insiemi di input** per i test.
 ###### Statement Test
->[!quote] Criterio di Copertura delle Istruzioni
+>[!quote] Criterio di Copertura delle Istruzioni (Programmi)
 >Selezionare un insieme di test $T$ tali che, a seguito dell'esecuzione del programma $P$ su tutti i casi di $T$, ***ogni istruzione elementare*** viene eseguita *almeno una volta*.
 
 >[!warning] Non assicura la correttezza del codice

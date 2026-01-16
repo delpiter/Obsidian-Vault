@@ -107,7 +107,7 @@ packet-beta
 - Contiene informazioni aggiuntive opzionali.
 
 > ***Padding***
-- Campo di riempimento che serve per garantire che l'*header* abbia una lunghezza multipla di $32$ `byte`.
+- Campo di riempimento che serve per garantire che l'*header* abbia una lunghezza multipla di $32$ `bit`.
 
 ### Semantica dell'Indirizzo
 >[!tldr] Idea
