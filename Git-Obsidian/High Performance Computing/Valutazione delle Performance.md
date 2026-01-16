@@ -38,6 +38,7 @@ flowchart LR
 
 ## Speedup
 ---
+
 > Siano $p, T_{\text{ser}},T_{\text{par}}(p)$, rispettivamente: il numero di unità esecutive indipendenti, il tempo di esecuzione seriale, il tempo di esecuzione con $p$ unità esecutive.
 
 >[!definizione]

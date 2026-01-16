@@ -49,6 +49,8 @@ int MPI_Scatter(const void *sendbuf, int sendcount,
 				MPI_Datatype recvtype, int root ,MPI_Comm comm);
 ```
 
+![[Scatter.png]]
+
 >[!info]
 >***Distribuisce dati*** a gli altri processi nel gruppo.
 
@@ -68,7 +70,7 @@ int MPI_Scatter(const void *sendbuf, int sendcount,
 - Numero di ***elementi da ricevere*** dal processo mittente, quasi sempre sarà uguale a `sendcount`.
 
 >[!question] A che cosa serve?
-> Serve nel caso si utilizzino i tipi di dato #addLink ***definiti*** dall'utente.
+> Serve nel caso si utilizzino i tipi di dato ***definiti*** dall'utente.
 >>[!example] Esempio
 >>Un array con dei *blocchi vuoti*.
 >
@@ -107,6 +109,7 @@ int MPI_Allgather(const void *sendbuf, int  sendcount,
 >Equivalente a `gather()` seguito da un `scatter()`.
 
 Possiamo assumere sia più efficiente delle due funzioni singole.
+![[Pasted image 20260116171635.png]]
 
 ### Scatterv e Gatherv
 >[!tldr] Idea

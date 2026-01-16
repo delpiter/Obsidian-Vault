@@ -20,7 +20,7 @@ int main( void )
 	/* implicit initialization a = 1 */
 		a += 2;
 	}
-	printf("%d\n",a);
+	printf("%d\n",a); // Prints 18 (2 * 3 * 3)
 	return 0;
 }
 ```

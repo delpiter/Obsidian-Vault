@@ -21,7 +21,7 @@ Ogni nodo della lista è "***processato***" in maniera *diversa*.
 >- ***Codice*** da eseguire.
 >- ***Dati*** da elaborare.
 
-L'unica *garanzia* presente è che al termine della [[Parallel Directive|regione parallela]] tutti i task create all'interno **sono stati eseguiti**.
+L'unica *garanzia* presente è che al termine della [[Parallel Directive|regione parallela]] tutti i task creati all'interno **sono stati eseguiti**.
 - Una volta creati, i ***task*** vengono *eseguiti dal team di thread*, non necessariamente in ordine di creazione.
 >[!failure] Nested Task
 >È possibile *creare* dei **task** all'interno di un **task**.

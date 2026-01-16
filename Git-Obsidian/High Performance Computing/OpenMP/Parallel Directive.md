@@ -1,7 +1,7 @@
 ## Direttiva Parallel
 ---
 >[!failure] `{c icon} #pragma omp parallel`
->Quando un processo raggiunge la direttiva `{c icon} parallel` ([[OpenMP]]), rea un ***team di thread*** e diventa il *master del team*.
+>Quando un processo raggiunge la direttiva `{c icon} parallel` ([[OpenMP]]), crea un ***team di thread*** e diventa il *master del team*.
 
 Il master ha il `threadID=0`.
 

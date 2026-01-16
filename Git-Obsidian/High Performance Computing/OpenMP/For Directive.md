@@ -1,7 +1,7 @@
 ## Direttiva For
 ---
 >[!failure] `{c icon} #pragma omp parallel`
->La direttiva `for`  di [[OpenMP]]è utilizzata in un ***blocco parallelo***.
+>La direttiva `for`  di [[OpenMP]] è utilizzata in un ***blocco parallelo***.
 >Le iterazioni del `loop` sono assegnate ai *thread del team corrente*.
 
 La variabile del loop è resa ***privata di default***.
