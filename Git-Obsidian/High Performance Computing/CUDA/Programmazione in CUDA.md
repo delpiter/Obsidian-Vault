@@ -46,7 +46,7 @@ int main(void)
 
 Ogni thread ha accesso alle seguenti variabili per ***riconoscere la sua posizione***:
 - `{c} blockIdx`: indica in quale blocco il thread si trova (`x`, `y` o `z`).
-- `{c} threadIdx`: indica in quale blocco il thread si trova (`x`, `y` o `z`).
+- `{c} threadIdx`: indica in quale indice del blocco il thread si trova (`x`, `y` o `z`).
 
 >[!summary] Indicizzazione di Array con Blocchi e Thread
 >`{c} int index = threadIdx.x + blockIdx.x * blockDim.x;`
@@ -141,11 +141,11 @@ Decomponiamo la matrice risultato `r` in blocchi quadrati.
 >[!abstract] `{c icon} dim3`
 >Il tipo di dato `{c icon} dim3` è usato per definire una struttura a una, due o tre dimensioni, per i [[CUDA#Anatomia di una GPU|blocchi]] o per la [[CUDA#Anatomia di una GPU|griglia]].
 
-```c++ title:"Multidimensional Blocks"
+```c title:"Multidimensional Blocks"
 dim3 grid1(3);
 // Defines a variable "grid" representing a 3x1x1 block.
 dim3 grid2(3,4);
-// Defines a variable "blk" representing a 3x4x1 block.
+// Defines a variable "grid2" representing a 3x4x1 block.
 dim3 blk(3,4,7);
 // Defines a variable "blk" representing a 3x4x7 block.
 
@@ -200,7 +200,7 @@ $$
 
 ![[MatrixProductShared.png]]
 
-```c++ title:"Matmul Kernel"
+```c title:"Matmul Kernel"
 __global__ void matmul( float *p, float *q, float *r, int n )
 {
 	__shared__ float local_p[BLKDIM][BLKDIM];

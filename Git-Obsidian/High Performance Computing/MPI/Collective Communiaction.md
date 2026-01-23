@@ -109,7 +109,7 @@ int MPI_Allgather(const void *sendbuf, int  sendcount,
 >Equivalente a `gather()` seguito da un `scatter()`.
 
 Possiamo assumere sia più efficiente delle due funzioni singole.
-![[Pasted image 20260116171635.png]]
+![[AllGather.png]]
 
 ### Scatterv e Gatherv
 >[!tldr] Idea

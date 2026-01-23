@@ -44,7 +44,7 @@ Sebbene qualsiasi combinazione di queste caratteristiche sia possibile, si tendo
 >[[Pipelining]], [[Pipelining#Architetture Superscalari|Architetture Superscalari]], [[Istruzioni IA-32 Speciali#Istruzioni MMX|Istruzioni SIMD]]
 
 >[!abstract] *Multi-Threading*
->La `CPU` ***esegue contemporaneamente due thread***[](Istruzioni%20IA-32%20Speciali.md#Istruzioni%20MMX)reading***
+>La `CPU` ***esegue contemporaneamente due thread***.
 >In casi limite il multi-threading su `CPU` può portare a peggioramento delle prestazioni
 
 >[!example] *Multi-Core*

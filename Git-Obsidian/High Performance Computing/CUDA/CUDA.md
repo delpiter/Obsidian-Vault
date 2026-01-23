@@ -23,7 +23,7 @@ Il caso più semplice di interazione tra *host program* e *device program* è la
 >L'***host*** è la `CPU` e la sua memoria (*host memory*).
 
 >[!help] Device 
-> Il ***device*** è la `CPU` e la propria memoria interna (*device memory*).
+> Il ***device*** è la `GPU` e la propria memoria interna (*device memory*).
 
 ### Anatomia di una GPU
 ![[GPUAnatomy.png]]
