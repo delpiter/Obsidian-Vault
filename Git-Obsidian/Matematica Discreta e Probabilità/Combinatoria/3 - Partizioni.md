@@ -162,4 +162,3 @@ Il numero 10 può essere inserito in qualsiasi dei 3 ***blocchi***
 
 >[!done] Questa funzione è $(k!$ a $1)$ e quindi:
 >$$S_{n,k}=\displaystyle{\frac{\# \text{ numero di sequenze lunghe }n\ k\text{-piene}}{k!}}=\displaystyle{\frac{\sum_{i=0}^k(-1)^i\binom{k}{i}(k-i)^n}{k!}}$$
-

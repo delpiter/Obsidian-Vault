@@ -92,7 +92,7 @@ Il `web` si basa su un protocollo internet di [[Protocolli Applicativi|livello a
 
 ##### Javascript
 >[!info] Linguaggio
-> `{js icon} javascript` è un linguaggio di scripting *orientato* agli ***oggetti*** e agli ***eventi***, utilizzato nella programmazione `web` lato client.
+> [[JavaScript]] è un linguaggio di scripting *orientato* agli ***oggetti*** e agli ***eventi***, utilizzato nella programmazione `web` lato client.
 
 È un linguaggio ***interpretato debolmente tipizzato***, debolmente orientato agli oggetti.
 - È possibile usarlo anche *lato server*.
