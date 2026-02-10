@@ -39,7 +39,7 @@ Gli elementi adiacenti sono ***disposti orizzontalmente***.
 >La proprietà `display` determina il tipo di elemento e il *relativo comportamento*.
 
 Oltre a `inline` e `block` questa proprietà può assumere i valori:
-- `none`: L'elemento scompare dal DOM #addLink, e non viene visualizzato.
+- `none`: L'elemento scompare dal [[DOM]], e non viene visualizzato.
 - `inline-block`: L'elemento può assumere *dimensioni esplicite*, ma si disporrà **orizzontalmente** e non **verticalmente**.
 - `list-item`: Per fare in modo che un elemento si comporti come un [[Flow#List|li]].
 - `grid`: Trasforma un elemento in un *grid container*.

@@ -75,4 +75,3 @@ element.removeAttribute();
 element.getElementsByTagName();
 element.getElementById();
 ```
-

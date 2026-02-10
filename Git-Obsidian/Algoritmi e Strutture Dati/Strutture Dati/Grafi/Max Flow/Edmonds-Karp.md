@@ -14,7 +14,7 @@
 
 ### Complessità
 >[!abstract] Lemma
->Se *Edmonds-Karp* è applicato ad una rete $G=(V,E)$ con sorgente $s$ e destinazione $t$, allora *per tutti i vertici*  $v\in V\set[](Algoritmi%20di%20Ricerca%20su%20Grafo.md#Breadth%20First%20Search)$ ***cresce monotonicamante*** ad ogni aumento di flusso
+>Se *Edmonds-Karp* è applicato ad una rete $G=(V,E)$ con sorgente $s$ e destinazione $t$, allora *per tutti i vertici*  $v\in V$ ([BFS](Algoritmi%20di%20Ricerca%20su%20Grafo.md#Breadth%20First%20Search)) ***cresce monotonicamante*** ad ogni aumento di flusso.
 
 >[!Teorema]
 >Se *Edmonds-Karp* è applicato ad una rete $G=(V,E)$ con sorgente $s$ e destinazione $t$, allora il ***numero totale di aumenti di flusso*** effettuati dall'algoritmo è:

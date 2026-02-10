@@ -169,7 +169,7 @@ Gli ***stati*** possono essere descritti a un *elevato livello di astrazione* o 
 >Il ***linguaggio naturale*** è alla base della comunicazione tra *analista* e *utente*, **non** può essere adottato come unico mezzo per produrre **documenti di specifica** a causa delle innumerevoli ambiguità.
 
 >[!attention] Linguaggi Semiformali
->***Notazione grafica***, che presenta una sematica sfumata, accoppiata con descrizioniin *linguaggio naturale*.
+>***Notazione grafica***, che presenta una sematica sfumata, accoppiata con descrizioni in *linguaggio naturale*.
 >- Come [[Modello Entity-Relationship|schemi E/R]].
 
 >[!done] Linguaggi Formali

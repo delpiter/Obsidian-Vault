@@ -283,7 +283,7 @@ In un diagramma di progettazione, indica al programmatore che l'oggetto "`Polygo
 
 ### Generalizzazione
 >[!info]
->L'***aggregazione*** è un caso speciale di associazione con semantica "*is-a*".
+>La ***Generalizzazione*** è un caso speciale di associazione con semantica "*is-a*".
 
 Tutti gli attributi, le operazioni e le relazioni della *superclasse* vengono ***ereditati*** dalle ***sottoclassi***.
 
