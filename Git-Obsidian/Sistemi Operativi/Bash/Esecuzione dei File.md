@@ -46,7 +46,7 @@ Per l'*esecuzione* dello script, in ogni caso [[#Comando `source`|(*)]] viene **
 >Il comando:`var="string" command`
 
 Crea la *variabile* all'interno della nuova `shell` che esegue lo **script** `command`
-- La variabile creata [[Variabili#Le Variabili|d'ambiente]]
+- La variabile creata [[Git-Obsidian/Sistemi Operativi/Bash/Variabili#Le Variabili|d'ambiente]]
 - Se la variabile `var` *esiste già* nella shell corrente, **non viene sovra scritta**, viene invece creata una nuova variabile, che non tocca quella del padre
 
 ### Esecuzione di uno Script

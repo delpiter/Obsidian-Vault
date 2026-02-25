@@ -15,7 +15,7 @@ E mediante delle parentesi tonde pere stabilire l'*ordine di valutazione*
 
 >[!hint] Espressioni Valutate
 >La `bash` effettua solo le seguenti interpretazioni:
->- [[Variabili#Variable Expansion|Variable Expansion]]
+>- [[Git-Obsidian/Sistemi Operativi/Bash/Variabili#Variable Expansion|Variable Expansion]]
 >- [[Valutazioni Aritmetiche|Arithmetic Expansion]] con `$(())`
 >- [[Command Substitution]]
 >- Process Substitution

@@ -13,7 +13,10 @@
 
 Il livello $3$ è il livello di privilegio utilizzato quando viene usata una ***applicazione utente***
 
-La suddivisione in "***rings***" di protezione della `CPU` è un supporto dell'hardware che consente al sistema operativo di realizzare ***politiche di sicurezza***
+La suddivisione in "***rings***" di protezione della `CPU` è un supporto dell'hardware che consente al sistema operativo di realizzare ***politiche di sicurezza***.
+
+>[!hint] [[Virtualizzazione]]
+>Recentemente i sistemi operativi hanno aggiunto un *nuovo livello* "$-1$" usato unicamente per gestire operazioni potenzialmente pericolose da ***parte di macchine virtuali***.
 ### Cambio di Livello di privilegio
 > Nel momento in cui l'applicazione chiama una system call
  

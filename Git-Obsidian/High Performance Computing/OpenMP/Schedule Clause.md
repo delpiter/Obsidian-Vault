@@ -26,7 +26,7 @@ In uno **schedule** `guided`, quando viene completato un *chunk* la dimensione d
 >Il **compilatore** e/o il **sistema runtime** determina la schedule.
 
 >[!failure] `runtime`
->Lo ***schedule*** è determinato a run-time usando la [[Variabili|variabile d'ambiente]]: `{sh icon} OMP_SCHEDULE`.
+>Lo ***schedule*** è determinato a run-time usando la [[Git-Obsidian/Sistemi Operativi/Bash/Variabili|variabile d'ambiente]]: `{sh icon} OMP_SCHEDULE`.
 
 - `{sh icon} OMP_SCHEDULE="static,1" ./my-prog.exe`
 
