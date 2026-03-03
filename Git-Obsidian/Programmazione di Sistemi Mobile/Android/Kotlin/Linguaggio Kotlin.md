@@ -108,3 +108,40 @@ val messages = listOf(
 	Message("Ma", "Please reply. I've lost you!"),
 )
 ```
+
+## Null Safety
+---
+> `{kt icon} Kotlin` offre un supporto sintattico per la gestione dei tipi nullable.
+
+>[!info] Nullable
+>Le [[Variabili in Kotlin]] non consentono l'assegnazione del valore `null` a meno che non siano ***dichiarate come nullable***.
+
+```kt
+var neverNull: String = "This can't be null"
+var nullable: String? = "This can be null"
+```
+
+### Lavorare con variabili nullable
+> Per lavorare con valori nullable, ci sono 2 possibilità.
+
+>[!tldr] Smart cast
+
+```kt
+fun describeString(str: String?) = 
+	if(str != null && str.length > 0){
+		"String of length ${str.length}"
+	} else {
+		"Empty or null string"
+	}
+```
+
+>[!help] Operatori Appositi
+- `{kt icon} ?.` **safe call**.
+- `{kt icon} !!` **non null assertion**.
+- `{kt icon} ?:` **elvis**.
+
+
+```kt
+fun describeString(str: String?) = 
+	"String of length ${str?.length ?: 0}"
+```

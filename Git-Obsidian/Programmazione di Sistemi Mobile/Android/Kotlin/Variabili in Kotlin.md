@@ -22,5 +22,20 @@ val b = 3
 Una proprietà `const` **DEVE** soddisfare i seguenti requisiti:
 - Deve essere inizializzato con valore `String` o un tipo primitivo.
 - Non può essere un getter personalizzato
-- Deve essere una proprietà top-level, un membro di un object o la dichiarazione di un companion object.
+- Deve essere una proprietà top-level, un membro di un object o la dichiarazione di un companion object. #addLink
 
+#### Stringhe
+> `{kt icon} Kotlin` offre alcune funzionalità per la gestione delle stringhe.
+
+>[!abstract] Interpolazione
+>Tramite gli ***string templates*** è possibile interpolare variabili e espressioni direttamente in una stringa.
+
+```kt
+val greeting = "World"
+println("Hello, $greeting !")
+println("Hello, ${greeting.uppercase()}!")
+println("""
+		Hello,
+		$greeting
+		""".trimIndent())
+```
