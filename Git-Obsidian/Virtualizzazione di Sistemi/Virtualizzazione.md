@@ -68,7 +68,7 @@ Il codice della ***macchina virtuale*** viene eseguito direttamente dall'***host
 
 >[!danger] Prestazioni
 >In un sistema emulato, senza accelerazione, le prestazioni calano fino a solo il $5-10\%$
-### Modalità di Virtualizzazione
+### Tassionomia di Virtualizzazione
 > Diverse possibilità di ***virtualizzazione***, basate su due macro categorie.
 
 ![[Virtualization.png]]
@@ -80,7 +80,7 @@ Il codice della ***macchina virtuale*** viene eseguito direttamente dall'***host
 >>- Deve passare numerosi "*step*" prima di essere eseguita dall'hardware reale.
 
 >[!tldr] OS Level
->Nel caso dei ***container*** all'utente viene presentata una partizione del *sistema operativo corrente*, su cui installare ed eseguire applicazioni che *rimangono isolate* nella partizione
+>Nel caso dei [[Container]] all'utente viene presentata una partizione del *sistema operativo corrente*, su cui installare ed eseguire applicazioni che *rimangono isolate* nella partizione
 >>[!info] Specifiche
 >>Il singolo container ***non ha un kernel*** proprio
 >>- Questo rende il container più veloce di una *macchina virtuale*
@@ -116,38 +116,6 @@ Il sistema ***guest non può identificare che si trova su una macchina virtuale*
 >[!warning] La full-virtualization è generalmente meno performante
 
 ![[Full&ParaVirtualization.png]]
-
-
-### Containerizzazione
->[!info]
->La ***tecnologia dei container*** sposta il focus dalla virtualizzazione del server verso la *virtualizzazione dell'applicazione*, creando per l'applicazione un contesto di esecuzione virtualizzato che **non è più tutto un server**.
-
-La virtualizzazione a ***livello del sistema operativo*** è composta da:
-- Un ***solo*** [[3 - Livelli del Sistema Operativo#Kernel|kernel]], quello del sistema host.
-- Multiple *istanze isolate di user-space*.
-
->[!help] User-Space
->Lo ***user-space*** consiste in un *file system* del container su cui si possono scaricare librerie e installare applicazioni senza interferire con gli altri container.
->Sono presenti delle interfacce di rete virtuali usate per comunicare con: 
-> - La [[Reti IP|rete]] **esterna**.
-> - La **macchina host**.
-> - Altri **container**.
-
->[!warning] Limitazione
->Il *sistema operativo* del ***container*** è deve essere lo stesso della macchina ***host***.
->- Le [[3 - Livelli del Sistema Operativo#System Call|system call]] chiamate dal ***container*** sono le stesse del sistema operativo ***host***.
-
-#### Software per Container
-> Ricordiamo solo i Principali
-
->[!abstract] Docker
->Si appoggia sul *sistema operativo* ***linux*** che fornisce a livello kernel un supporto per container detto `LXC` (***L***inu***X*** ***C***ontainer)
-
->[!summary] Hyper-V
->Software di *Microsoft*, fornisce unità di isolamento chiamate *container* ma in realtà sono ***macchine virtuali***
-
->[!example] Container di Windows Server
->Sono effettivamente dei *container*
 
 ## Cloud e Servizi
 ---

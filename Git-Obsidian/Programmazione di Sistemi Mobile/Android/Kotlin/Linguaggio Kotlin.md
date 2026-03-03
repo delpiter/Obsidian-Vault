@@ -17,6 +17,12 @@ Linguaggio preferito da Google come **linguaggio per sviluppo di app android** d
 - Facilità di apprendimento.
 - Community.
 
+>[!tl;dr] Naming Conventions
+>I ***nomi dei package*** vanno interamente in minuscolo e senza underscore.
+>I nomi delle [[Classi in Kotlin|classi]] e degli object usano il `PascalCase`.
+>I nomi di [[Funzioni in Kotlin|funzioni]], proprietà, [[Variabili in Kotlin|variabili]] locali e oggetti mutabili usano il `camelCase`.
+>I nomi delle costanti usano lo `SCREAMING_SNAKE_CASE`.
+>Se una classe ha due proprietà concettualmente uguali, ma una fa parte di un'API pubblica e l'altra è un dettaglio di implementazione, allora la proprietà privata si segna con un underscore (***backing property***).
 ## Linguaggio
 ---
 > Kotlin è un linguaggio molto semplice...
@@ -144,4 +150,32 @@ fun describeString(str: String?) =
 ```kt
 fun describeString(str: String?) = 
 	"String of length ${str?.length ?: 0}"
+```
+
+### Generici
+>[!info] Generics
+>I ***Generics*** sono un meccanismo diventato standard nei linguaggi moderni.
+
+Le classi e le funzioni generiche aumentano la riusabilità del codice incapsulando la logica comune e indipendente da un particolare tipo generico.
+
+```kt
+class MutableStack<E>(vararg items: E) {
+	private val elements = items.toMutableList()
+	
+	fun push(element: E) = elements.add(element)
+	
+	fun peek(): E = elements.last()
+	
+	fun pop(): E = elements.removeAt(elements.size- 1)
+	
+	fun isEmpty() = elements.isEmpty()
+	
+	fun size() = elements.size
+	
+	override fun toString() =
+		"MutableStack(${elements.joinToString()})"
+}
+
+fun <E> mutableStackOf(vararg elements: E) =
+	MutableStack(*elements)
 ```
