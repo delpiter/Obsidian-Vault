@@ -41,13 +41,19 @@ Le activity possono avviare activity appartenenti ad altre app.
 
 ### Intent Filter
 >[!info]
->Gli intent filter permettono di eseguire un'acivity sfruttando richieste sia `explicit` che `implicit`.
+>Gli [[Intent]] ***filter*** permettono di eseguire un'acivity sfruttando richieste sia `explicit` che `implicit`.
 
 > Esempio:
 - `explicit`: Richiesta al sistema di aprire l'attività ***send-email con gmail***.
 - `implicit`: Richiesta al sistema di aprire l'attività ***send-email con una qualsiasi activity che può svolgere il lavoro***.
 
+>[!danger] Se non si dichiarano intent filter per un'activity, l'activity può essere avviata **solo** con *explicit intent*.
+
 Questi *filter* si dichiarano nel manifest, all'***interno dell'elemento activity***.
+Un componente dell'app deve dichiarare filtri separati per *ogni processo univoco che può svolgere*.
+- Es: Un'attività di un'app della galleria può avere due filtri:
+	- Visualizzazione dell'immagine
+	- Modifica dell'immagine
 
 ```xml
 <activity android:name=".ExampleActivity" android:icon="@drawable/app_icon">
@@ -73,6 +79,71 @@ Nell'esempio, dichiariamo che l'app può ricevere richieste di ***invio di dati 
 - Si usano i tag `{xml icon} <activity>` del *manifest* per controllare quali app **possono avviare una determinata activity**.
 
 >[!important] Un'activity non può avviare un'altra activity a meno che entrambe le attività non dispongano delle ***stesse autorizzazioni***.
+
+#### Package Visibility
+>[!important] Importante
+> Con android `11` sono state introdotte ***nuove restrizioni relative alla visibilità***.
+
+Non è più possibile interagire direttamente con la maggior parte di package esterni.
+
+> Soluzione
+- Utilizzare un element `{xml icon} query` nel `manifest.xml`
+
+```xml
+<queries> 
+	<intent> 
+		<action android:name="android.intent.action.VIEW" /> 
+		<category android:name="android.intent.category.BROWSABLE"/> 
+		<data android:scheme="https" />
+	</intent>
+</queries>
+```
+
+L'elemento queries permette di filtrare i risultati dei metodi del `PackageManager` che restituiscono risultati relativi ad altre app.
+#### Test
+>[!todo] Test di Action
+
+> Un intent filter può dichiarare ***zero o più elementi azione***.
+
+Per **superare il filtro**, l'azione specificata nell'oggetto *intent* deve fare match con almeno una azione.
+
+>[!summary] Test di Category
+
+> Un intent filter può dichiarare ***zero o più elementi category***.
+
+Per superare il filtro, ogni categoria nell'oggetto, deve corrispondere a una categoria nel filtro.
+
+>[!Test di Data]
+
+> Un intent filter può dichiarare ***zero o più elementi data***.
+
+Ogni elemento può specificare una struttura `URI` e un [[Posta Elettronica#MIME|MIME Type]].
+Ogni parte dell'`URI` è un attributo separato:
+- `<scheme>://<host>:<port>/<path>`
+- Es. `content://com.example.project:200/folder/subfolder/etc`
+
+> ***Regole***
+1. Un intent che non contiene né `URI` né un `MIME` *supera il test solo se* il filtro non specifica `URI` o `MIME`.
+2. Un intent che contiene solo un `URI` *supera il test solo se* corrisponde al formato `URI` del filtro *e se* allo stesso modo il filtro **non** specifica un `MIME`.
+3. Un intent che contiene solo un `MIME` *supera il test solo se* il filtro elenca lo stesso tipo `MIME` *e* **non** specifica un formato `URI`. 
+4. Se un intent contiene sia un `URI` che un `MIME` (esplicito o inferibile dall'`URI`) passa la parte del tipo `MIME` solo se quel tipo corrisponde a un tipo elencato nel filtro, passa la parte `URI` se il suo `URI` corrisponde a un `URI` nel filtro.
+>[!example] Esempi
+
+```xml
+<intent-filter>
+  <data android:mimeType="image/*" />
+  ...
+</intent-filter>
+```
+- Dice ad android che il componente può ricevere image data da un content provider e visualizzarlo.
+
+```xml
+<intent-filter>
+  <data android:scheme="http" android:mimeType="video/*" />
+  ...
+</intent-filter>
+```
+- Dice ad android che il componente può recuperare i dati video dalla rete per eseguire l'azione.
 
 ### Permission
 > Il manifest deve contenere le autorizzazioni necessarie all'esecuzione di un'activity.

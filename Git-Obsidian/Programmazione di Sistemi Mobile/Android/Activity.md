@@ -62,3 +62,22 @@ Le callback permettono di gestire i casi in cui avviene un evento che interrompe
 - Operazione opposta all'`{kt icon} onCreate()`.
 - Implementanto, generalmente per garantire che ***tutte le risorse di un'attività vengano rilasciate***.
 - Chiamata quando: l'*attività sta finendo* o il sistema sta temporaneamente distruggendo l'attività a causa di una *modifica di configurazione*.
+
+## Main Activity
+---
+>[!help] Info
+>La ***main activity*** è l'entry point principale, l'activity che si apre quando l'utente esegue l'app attraverso l'icona.
+
+```xml title:manifest
+<activity android:name="MainActivity" android:exported="true">
+	<intent-filter>
+		<action android:name="android.intent.action.MAIN" />
+		<category android:name="android.intent.category.LAUNCHER" />
+	</intent-filter>
+</activity>
+```
+
+L'`action_main` è l'azione che indica che è l'entry point principale e che ***non si aspetta intent data***.
+
+`Category_Launcher` è la categoria è la categoria che indica che activity icon dovrebbe essere posizionata nel ***system app launcher***.
+- Se l'elemento `{xml icon} <activity>` non specifica un'icona `icon`, il sistema usa l'icona dall'elemento `{xml icon} <application>`.
