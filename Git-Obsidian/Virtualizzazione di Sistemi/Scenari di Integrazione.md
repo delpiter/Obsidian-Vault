@@ -104,7 +104,7 @@ Si richiede di:
 - Se le applicazioni sono **base web** o *no*. (Nel caso web esistono [[HTTP#Cookie|cookie e sessioni]]).
 >[!help] Approccio RESTful
 >Ogni richiesta ad un server ***non fa affidamento*** ad uno stato di una comunicazione precedente.
->- Il *server non mantiene traccia* dello stato, l'utente deve mandare ***tutte le informazioni necessarie*** per fruire il servizio.
+>- Il *server non mantiene traccia* dello stato, l'utente deve mandare ***tutte le informazioni necessarie*** per fruire il servizio. ^8d35e7
 
 #### SSO all'interno di un dominio
 > Vengono usati due protocolli:

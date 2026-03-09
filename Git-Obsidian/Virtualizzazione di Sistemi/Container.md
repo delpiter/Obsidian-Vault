@@ -67,7 +67,7 @@ Quando si mette in esecuzione un container è possibile assegnare o negare alcun
 >Si appoggia sul *sistema operativo* ***linux*** che fornisce a livello kernel un supporto per container detto `LXC` (***L***inu***X*** ***C***ontainer).
 
 Al giorno d'oggi il *daemon* runc non si appoggia più sui container `LXC` ma usa una propria implementazione.
-- Un daemon è un processo in background di lunga durata che viene eseguito dal sistema operativo, senza l'interazione dell'utente.
+- Un daemon è un processo in background di lunga durata che viene eseguito dal sistema operativo, senza l'interazione dell'utente. ^f4ae14
 
 ![[ContainerEcosystemLinux.png]]
 

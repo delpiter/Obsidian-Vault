@@ -1,7 +1,69 @@
+## Architettura
+---
+>[!abstract] Architettura di Docker
+>`{dockerfile icon} Docker` utilizza una ***architettura client- server***.
+>Il client parla al **docker** [[Container#^f4ae14|daemon]], che gestisce il building, l'esecuzione e la distribuzione dei [[Container]].
+
+Il client e il daemon di docker comunicano attraverso [[Scenari di Integrazione#^8d35e7|REST API]] con socket `UNIX` o una network intrerface.
+
 ![[DockerArchitecture.png]]
 
+>[!failure] Daemon
+>Il `{docker icon} Docker` ***daemon*** (`dockerd`) ascolta per richieste `API` e gestisce oggetti come immagini docker, container e network.
+
+Un *daemon* è in grado di comunicare con altri *daemon* per gestire servizi **Docker**.
+
+>[!hint] Client
+> Il `{docker icon} Docker` ***client*** (`docker`) è la modalità principale con cui gli utenti docker interagiscono con *docker*.
+
+Quando si eseguono comandi come `{docker icon} docker run` il client invia questi comandi al daemon, che dovrà gestirli.
+
+Un client può comunicare con più di un **daemon**.
+
+>[!example] Registry
+>Un `{docker icon} Docker` ***registry*** immagazzina le *immagini docker*.
+
+**Docker Hub** è un registry pubblico che può essere usato da chiunque.
+- Docker cerca le immagini su docker hub di *default*.
+
+### Docker Objects
+> Quando si usa docker, vengono create e usate immagini, container, plugin e altri oggetti.
+
+>[!todo] Images
+>Un ***immagine*** è un template **read-only** con l'infrastruttura per creare un container.
+
+Spesso le immagini sono basate su altre immagini con in aggiunta delle personalizzazioni.
+
+Puoi creare le **tue immagini** o usare quelle **create dagli altri**.
+- Per creare la tua immagine si deve creare un `{docker icon} Dockerfile` attraverso una semplice sintassi per *definire gli step* necessari per **creare** l'immagine e **eseguirla**.
+
+>[!tldr] Containers
+>Un ***container*** è un'istanza eseguibile di un'immagine.
+>Puoi *creare*, *iniziare*, *fermare*, *spostare* o *eliminare* un container, usando le `API` o attraverso la linea di comando.
+
+È possibile collegare un container a uno o più [[Reti IP|reti]], attaccare uno starage, o creare una nuova immagine basata sullo [[#Stati di un Container|stato]] corrente.
+Di default un container è ben isolato da altri container e l'[[Virtualizzazione|host]].
+
+Un container è definito dalla sua ***immagine*** e da una ***configurazione*** fornita in all'avvio.
+- Quando un container è eliminato, un qualsiasi cambiamento che non è salvato in una memoria persistente è persa.
+### Esempio
+> Analizziamo quello che avviene all'esecuzione del seguente comando:
+
+```docker
+docker run -i -t ubuntu /bin/bash
+```
+
+Assumendo che si utilizza la configurazione di default:
+1. Se non si ha l'immagine `ubuntu` in locale, **docker** la scarica automaticamente dai ***registry*** configurati, come se avessi eseguito `docker pull ubuntu`.
+2. Docker crea un nuovo container, come se avessi eseguito `docker container create`.
+3. Docker alloca un ***filesystem*** al container. Questo permette al container in esecuzione di *creare* e/o *modificare* files e directories nel filesystem ***locale***.
+4. Docker crea un'interfaccia network per connettere il container alla rete. Questo include un assegnamento di un [[Protocollo IP#L'indirizzo IP|indirizzo IP]] al container.
+5. Docker fa partire il container ed esegue `/bin/bash`. Poiché il container è eseguito **interattivamente** (`-i`) e **attaccato al terminale** (`-t`), è possibile fornire input da tastiera e l'output verrà visualizzato sul terminale.
+6. Quando viene eseguito `exit` per terminare il comando `/bin/bash` il container è fermato ***ma non viene rimosso***.
 
 ### Stati di un Container
+> I container possono assumere diversi stati durante la loro esistenza:
+
 ```mermaid
 stateDiagram-v2
     direction LR
@@ -14,8 +76,22 @@ stateDiagram-v2
     Removed --> [*]
 ```
 
-```sh
-docker ps
-# CONTAINER ID  | IMAGE | COMMAND | CREATED | STATUS | PORTS | NAMES
-```
-Lo status se è exit, mostra l'exit code del container, che molto spesso corrisponde all'[[Exit Status|Exit Code]] del processo principale.
+>[!status] Un container può trovarsi in 4 stati:
+
+> ***Created***
+- Il container è **creato** ma **non** è in esecuzione.
+- Può essere fatto partire o può essere **eliminato**.
+
+> ***Up*** (***running***)
+- Il container è in esecuzione
+- Può essere **fermato**, diventando *exited*, oppure direttamente essere eliminato.
+
+> ***Exited***
+- Il container ha terminato l'esecuzione ma non è stato rimosso dal sistema.
+- La terminazione dell'esecuzione restituisce un ***exit status***.
+	- Exit status ***del container*** che molto spesso corrisponde all'[[Exit Status|Exit Code]] del processo principale.
+- La terminazione non elimina il container, può essere fatto ripartire, tornando in stato **running**.
+- Il riavvio di un container terminato avvia il *processo principale*, il container rimane lo stesso,
+
+> ***Removed***
+- Non è un vero stato, il container a questo punto ***non esiste più***.
