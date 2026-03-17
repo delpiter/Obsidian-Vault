@@ -95,3 +95,4 @@ stateDiagram-v2
 
 > ***Removed***
 - Non è un vero stato, il container a questo punto ***non esiste più***.
+
