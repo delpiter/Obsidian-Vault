@@ -103,3 +103,64 @@ Docker assegna un [[Funzione di Hash|hash]] casuale come nome.
 Sono difficili da gestire manualmente, non se ne conosce il nome.
 - Difficili da condividere o riutilizzare tra più container.
 - Tendono ad accumularsi come **zombie** se non si usa il flag `--rm` nel comando `docker run`.
+
+#### Driver per i Mounted Volumes
+>[!info]
+>Ogni volume viene creato e gestito per tramite di un ***driver*** che serve come interfaccia tra il daemon con lo storage che contiene il volume.
+
+Esistono due principali categorie di ***driver***:
+- Local
+- Volume Plugins
+
+Supponiamo che nell'host ci sia un disco `/dev/sdb` con una partizione `/dev/sdb1` formattata con un file system di tipo `btrfs`.
+
+```sh title:syntax
+docker volume create --driver local \ #back slash just for new line
+	--opt type=btrfs \
+	--opt device=/dev/sdb1 \
+	volumeName
+```
+I parametri preceduti da `--opt` sono passati al driver del volume.
+
+Sarà poi necessario ***montare il volume*** nel file system del container.
+```docker
+docker run --rm -it -v volumeName:/root/my_storage ubuntu
+```
+
+##### Driver Local
+>[!help] Info
+>Il ***driver local*** è il driver predefinito di docker, usa le funzionalità del kernel linux e dei suoi moduli.
+
+Usa internamente il comando `{sh} mount` di linux per montare e accedere alle partizioni e ai file system di tipo standard.
+- Tutto ciò che può fare il `{sh} mount`  nell'host lo può fare il driver dei volumi local.
+
+Il *driver local* normalmente non consente di limitare la dimensione di un volume.
+- I file system sottostanti **non** supportano la ***gestione delle quote***.
+- Si può montare una partizione con un tipo di file system che le supporta e creare un volume di dimensione specificata.
+
+> Per usare uno storage esterno:
+- Occorre sempre montare la partizione esterna sull'host.
+- Questo mount può essere fatto manualmente dall'utente sull'host o in automatico dal daemon docker stesso.
+##### Volume Plugins
+>[!help] Info
+>I ***volume plugins*** sono driver esterni, che non fanno parte di Linux, che devono essere installati.
+>>[!hint] Per far funzionare questi driver occorre abilitare alcuni moduli aggiuntivi del ***kernel Linux***
+
+Mirano principalmente a due scopi:
+1. **Accedere** a file system di tipologia non nativamente gestita dal Kernel Linux.
+2. Consentire di **interagire** con i volumi secondo modalità aggiuntive che il driver local non implementa.
+
+> Esempio
+- Se voglio usare volumi che si appoggiano su storage raggiungibili con `SSHFS` devo installare un driver dei volumi per `SSHFS`, poiché il comando `mount` **non** gestisce direttamente storage remoti con `SSHFS`.
+- Se voglio montare un disco `EBS` o `EFS` (Entrambi forniti da *amazon* `AWS`), il driver ***local*** non basta, serve un driver che parli con le `API` di amazon.
+
+>[!question] Quando vengono utilizzati?
+
+Si usano solitamente quando occorre che docker ***crei dinamicamente il volume sul file system distribuito remoto*** senza che l'utente debba montare la partizione prima.
+
+> Questi driver aggiuntivi funzionano così:
+
+Quando deve essere creato un container con un volume in un `FS` distribuiti remotoç
+1. Il daemon docker sfrutta il driver e fa automaticamente il mount del file system distribuito in un [[Container#Namespaces|namespace]] di mount separato.
+2. Il daemon crea il volume sopra la partizione montata e lo rende disponibile al container.
+3. Quando il container termina, il daemon ***smonta automaticamente*** la partizione.
