@@ -20,6 +20,9 @@ Il daemon docker definisce una dimensione massima occupabile dal file system di 
 ---
 > Docker di default supporta i seguenti tipi di ***mount***, per memorizzare dei dati al di fuori del layer scrivibile dal container.
 
+>[!danger] Attenzione
+>I container sono effimeri, ciò significa che ***ogni cosa salvata dentro al file system*** del container **sarà persa** quando il container verrà terminato e rimosso.
+
 >[!question] Motivazioni dell'aggiunta di mount al file system dei container
 
 > 1. ***Persistenza dei dati***
@@ -58,15 +61,45 @@ Si può dare un nome al mount o si può mantenere anonimo.
 Sono utilizzati per file di appoggio, consentono un accesso veloce ad astrazioni di files (es. [[Cache]]).
 ### Bind Mounts
 >[!definizione]
-> I ***bind mounts*** sono directory in *percorsi qualunque del file system* dell'host che vengono fatti vedere al container come partizioni, **formattate con un file system**.
+> I ***bind mounts*** sono directory in *percorsi qualunque del file system* dell'host (o di un host remoto) che vengono fatti vedere al container come partizioni, **formattate con un file system**.
 
 Sono identificati dal percorso assoluto nel file system dell'host.
 - La partizione vista dal container ha lo ***stesso formato del file system*** dell'host.
+
+Nel comando `{docker icon} docker run` l'opzione `-v` specifica il percorso della directory dell'host che deve essere condivisa e il percorso del del container in cui il volume sarà montato.
+```docker
+docker run -v /home/user/htdocs:/usr/local/apache2/htdocs
+```
+
+>[!important] Nota Bene
+>Quando un container termina o viene fermato (con `docker stop`) i suoi bind mounts ***non vengono eliminati***.
+>
+
+Se faccio ripartire il container, quel container si ritrova montati gli **stessi bind mounts** che aveva in precedenza.
+- Se qualcuno sposta la directory esterna o ha cambiato i permessi a cui il container si collegava, il container potrebbe *non avere più il bind*. 
 ### Volume Mounts
 >[!definizione]
 > I ***volume mounts*** sono *spazi di disco creati da docker* e salvati in una directory predefinita della ***docker area*** dell'host.
 
-Si può assegnare al volume un nome (*named volume*) per poter fare usare il volume a più container.
-- Si può mantenere un volume anonimo (*anonymous volume*).
+#### Categorie
+>[!hint] Named volumes
+>I ***named volumes*** vengono creati assegnando un nome esplicito, sono facili da individuare, riusare tra più container e gestire tramite `CLI`.
+
+```docker
+docker run -d -v myVolume:/app/data myImage
+```
+
 >[!warning] Non possono esistere due volumi con lo stesso nome
 
+>[!missing] Unnamed Volumes
+>I ***volumi anonimi*** vengono creati senza che l'utente assegni loro un nome.
+
+```docker
+docker run --rm -d -v /app/data myimage
+```
+
+Docker assegna un [[Funzione di Hash|hash]] casuale come nome.
+
+Sono difficili da gestire manualmente, non se ne conosce il nome.
+- Difficili da condividere o riutilizzare tra più container.
+- Tendono ad accumularsi come **zombie** se non si usa il flag `--rm` nel comando `docker run`.
