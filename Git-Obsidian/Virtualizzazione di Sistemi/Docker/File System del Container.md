@@ -51,14 +51,6 @@ Se il container sa che le modifiche apportate al file system dovranno essere
 
 Può essere necessario configurare più repliche di uno stesso servizio, che devono perciò ***accedere agli stessi file***.
 - Un modo è quello di sfruttare i volumi appoggiandosi ad uno **storage remoto**.
-### TMPFS Mounts
->[!definizione]
->I `TMPFS` ***mounts*** sono file system creati in memoria [[RAM]].
-
-Si può dare un nome al mount o si può mantenere anonimo.
->[!warning] Questi mount vengono svuotati quando il container termina e distrutti alla rimozione.
-
-Sono utilizzati per file di appoggio, consentono un accesso veloce ad astrazioni di files (es. [[Cache]]).
 ### Bind Mounts
 >[!definizione]
 > I ***bind mounts*** sono directory in *percorsi qualunque del file system* dell'host (o di un host remoto) che vengono fatti vedere al container come partizioni, **formattate con un file system**.
@@ -153,6 +145,7 @@ Mirano principalmente a due scopi:
 > Esempio
 - Se voglio usare volumi che si appoggiano su storage raggiungibili con `SSHFS` devo installare un driver dei volumi per `SSHFS`, poiché il comando `mount` **non** gestisce direttamente storage remoti con `SSHFS`.
 - Se voglio montare un disco `EBS` o `EFS` (Entrambi forniti da *amazon* `AWS`), il driver ***local*** non basta, serve un driver che parli con le `API` di amazon.
+- Se voglio usare uno "***storage a blocchi esterni***" come `Longhorn`, devo usare dei driver specifici.
 
 >[!question] Quando vengono utilizzati?
 
@@ -164,3 +157,65 @@ Quando deve essere creato un container con un volume in un `FS` distribuiti remo
 1. Il daemon docker sfrutta il driver e fa automaticamente il mount del file system distribuito in un [[Container#Namespaces|namespace]] di mount separato.
 2. Il daemon crea il volume sopra la partizione montata e lo rende disponibile al container.
 3. Quando il container termina, il daemon ***smonta automaticamente*** la partizione.
+
+### TMPFS Mounts
+>[!definizione]
+>I `TMPFS` ***mounts*** sono file system creati in memoria [[RAM]].
+
+Si può dare un nome al mount o si può mantenere anonimo.
+>[!warning] Questi mount vengono svuotati quando il container termina e distrutti alla rimozione.
+
+Sono utilizzati per file di appoggio, consentono un accesso veloce ad astrazioni di files (es. [[Cache]]).
+
+```docker title:syntax
+docker volume create --driver local /
+  --opt type=tmpfs /
+  --opt device=tmpfs /
+  --opt o=size=100m,uid=1000 /
+  volumeName
+```
+
+In questo caso l'opzione che specifica la dimensione della partizione può essere usata.
+Con l'opzione `uid=1000` indico che il mount è di proprietà dell'utente con `uid=1000`.
+- Se nel container non esiste uno *user id* `1000` allora durante la creazione del container avviene un **errore nel mount**.
+
+## File System Distribuiti
+---
+>[!definizione]
+>Un ***file system distribuito*** è un file system tale che:
+>- Dati e metadati sono *memorizzati su più server* a scopo di efficienza e robustezza.
+>- Viene montato e usato mediante *protocolli* su client.
+>- Realizza qualche forma di atomicità delle operazioni sui file.
+>- Acceduto da client mediante ***protocolli standard***.
+
+>[!example] Esempi
+
+> `SSHFS`:
+- **Non** un vero file system distribuito, è un protocollo di accesso a file system remoto su un unico server. **NON** fornisce alcun meccanismo di atomicità.
+
+> `NFS`:
+- **Non** un vero file system distribuito.
+- Protocollo di accesso remoto a un file system che risiede su un unico server.
+- Fornisce un ***meccanismo di*** [[13 - Semafori|lock]] sui file, avviato quando un file viene aperto da un client.
+- Molto ***efficiente***.
+
+> `GlusterFS`:
+- File system distribuito vero e proprio.
+- I files sono ***copiati su più server***, i server si sincronizzano tra loro.
+	- Se un server *fallisce*, i file sono disponibili sugli altri.
+- Gestisce ***lock*** sui file in maniera **trasparente**.
+- **Non** molto *efficiente* e *scalabile*.
+
+> `MooseFS`:
+- File system distribuito con una ***gestione centralizzata in un master*** che mantiene metadati.
+- Altri server replicati **mantengono i files** veri e propri.
+- Il server master *può essere replicato*.
+
+> `Ceph`
+- File system distribuito.
+- Ci sono molti server che dividono e replicano i dati.
+- Usa meccanismi per garantire ***atomicità***.
+- Ha ***prestazioni eccellenti*** per velocità di accesso e per scalabilità e robustezza.
+	- **Molto complesso** da configurare bene.
+- Adatto per grandi *datacenter*.
+

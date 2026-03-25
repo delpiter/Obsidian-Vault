@@ -25,6 +25,19 @@ Un client può comunicare con più di un **daemon**.
 
 **Docker Hub** è un registry pubblico che può essere usato da chiunque.
 - Docker cerca le immagini su docker hub di *default*.
+#### Daemon di Docker
+>[!failure] Daemon Docker
+> In un host linux, in cui è installato docker esistono due servizi di docker che nel loro complesso costituiscono il ***daemon docker***.
+
+> `docker.service`
+- Il primo servizio è l'effettivo daemon di docker, effettua le operazioni di gestione dei container come *creazione*, [[File System del Container#Mounts|mount]], terminazione, etc...
+
+> `docker.socket`
+- Riceve le richieste `API` e le inoltra al `docker.service`.
+- Accetta richieste `API` di docker engine che sono `API HTTP RESTful`.
+
+>[!warning] Attenzione
+>Se si termina il servizio `docker.service`, il `docker.socket` rimane attivo e potrebbe risvegliare il servizio docker.
 
 ### Docker Objects
 > Quando si usa docker, vengono create e usate immagini, container, plugin e altri oggetti.
@@ -95,4 +108,3 @@ stateDiagram-v2
 
 > ***Removed***
 - Non è un vero stato, il container a questo punto ***non esiste più***.
-
