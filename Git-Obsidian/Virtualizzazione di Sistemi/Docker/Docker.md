@@ -39,6 +39,8 @@ Un client può comunicare con più di un **daemon**.
 >[!warning] Attenzione
 >Se si termina il servizio `docker.service`, il `docker.socket` rimane attivo e potrebbe risvegliare il servizio docker.
 
+La configurazione del daemon di docker è nel file in formato `{json icon} json`: `/etc/docker/daemon.json`
+- [Docker Daemon Configuration](https://docs.docker.com/reference/cli/dockerd/#daemon-configuration-file)
 ### Docker Objects
 > Quando si usa docker, vengono create e usate immagini, container, plugin e altri oggetti.
 
@@ -108,3 +110,30 @@ stateDiagram-v2
 
 > ***Removed***
 - Non è un vero stato, il container a questo punto ***non esiste più***.
+
+#### Terminazione dei Container
+> La terminazione del container determina un `exit status`
+
+| Exit Code | Significato                                                                                                               |
+| --------- | ------------------------------------------------------------------------------------------------------------------------- |
+| $0$       | Il processo si è concluso con successo.                                                                                   |
+| $125$     | Il processo ha riscontrato un errore interno o un'uscita forzata.                                                         |
+| $126$     | Indica che il comando specificato è stato trovato ma non può essere eseguito.                                             |
+| $127$     | Indica che il comando non è stato trovato.                                                                                |
+| $128$     | Il processo è stato terminato a causa di un errore fatale di docker stesso.                                               |
+| $128+N$   | Il processo è stato interrotto da un segnale unix, dove $N$ è il numero del segnale ($130 = 128+2$, dove $2$ è `SIGINT`). |
+#### Policy di Restart dei Container
+> Il modo con cui docker reagisce alla terminazione di un container è stabilito dalla ***restart policy***.
+
+La restart policy è definita nel momento in cui faccio partire il container.
+```docker
+docker run -d --restart <policy_name> myImage
+```
+
+Se non specificata, si usa la policy di default: `no-restart` che ***non fa ripartire il container***.
+
+> Policy possibili:
+- `always`: Il container viene riavviato sempre, a prescindere dal codice di uscita.
+- `on-failure`: Il container viene riavviato solo se l'exit code è diverso da $0$ quindi anche se è stato fermato manualmente.
+- `unless-stopped`: Il container si riavvia solo se non è stato fermato manualmente.
+- `no`: Il container non si riavvia, indipendentemente dal codice di uscita.
