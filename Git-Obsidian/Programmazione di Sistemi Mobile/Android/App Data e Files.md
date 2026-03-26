@@ -144,5 +144,89 @@ Il media store include anche una raccolta chiamata `MediaStore.Files`.
 >[!hint] Info
 >Archivia ***dati primitivi***, privati in coppie *chiave-valore*.
 
+### Data Store
+> `DataStore` è una soluzione di archiviazione dati nuova, fortemente basata su `{kt icon} Kotlin` e `Flow`.
+
+Fornisce due diverse implementazioni:
+- ***Proto DataStore***, memorizza oggetti tipizzati.
+- ***Preferences DataStore***, memorizza coppie chiave-valore in modo asincrono.
+
+>[!summary] Regole
+- ***Non creare mai*** più di un'istanza di `DataStore` per un determinato file nello stesso processo.
+- Il tipo generico di `DataStore` ***deve essere immutabile***.
+- ***Non mescolare*** mai gli utilizzi di `SingleProcessDataStore` e `MultiProcessDataStore` per lo stesso file.
+
+>[!help] Creazione
+
+```kt
+val Context.dataStore: DataStore<Preferences> by preferencesDataStore(name = "settings")
+```
+
+>[!hint] Lettura
+
+```kt
+val EXAMPLE_COUNTER = intPreferenceKey("example_counter")
+
+val exampleCounterFlow: Flow<Int> = context.dataStore.data.map{
+	preferences ->
+	preferences[EXAMPLE_COUNTER] ?: 0
+}
+```
+
 ## Database
 ---
+
+### View Model
+>[!info]
+> La classe `ViewModel` è ***business logic*** o ***screen level state holder***.
+> Espone lo stato all'interfaccia utente e incapsula la logica di business.
+
+Il suo vantaggio principale è che memorizza nella cache lo stato e lo "*persiste*" attraverso le modifiche alla configurazione.
+- L'interfaccia utente non deve recuperare nuovamente i dati durante la navigazione tra le [[Activity]].
+
+![[ViewModelLogic.png]]
+
+>[!abstract] Principi di Architettura
+>Una ***architettura dell'app ben progettata*** ti aiuta a scalare l'app.
+>I principi architetturali più comuni sono:
+>- ***Separation of Concerns***, afferma che l'app è suddivisa in classi di funzioni, ciascuna con responsabilità separate.
+>- ***Driving*** `UI` ***from a Model***, afferma che dovresti guidare l'interfaccia da un modello, preferibilmente persistente.
+
+> L'architettura consigliata è la seguente:
+
+```mermaid
+flowchart TD
+    A(UI Layer) --> B(Domain Layer)
+    B --> C(Data Layer)
+```
+Dove:
+- Il ***livello UI*** è un livello che visualizza i dati dell'app sullo schermo, ma è indipendente dai dati.
+- Il ***livello dati*** è un livello che archivia, recupera ed espone i dati dell'app.
+
+Il livello dell'interfaccia utente è costituito dai seguenti componenti:
+- `UI` **elements**: Componenti che visualizzano i dati sullo schermo (***composables***).
+- **State Holders**: Componenti che contengono i dati, li espongono all'interfaccia e gestiscono la logica dell'app (`ViewModel`).
+
+>[!definizione] View Model
+>Il componente `ViewModel` contiene ed espone lo stato utilizzato dall'interfaccia utente.
+>- Archivia i dati relativi all'app che **non vengono distrutti** quando l'attività viene distrutta e ricreata dal framework android.
+
+Lo stato dell'interfaccia è costituito dai dati dell'applicazione trasformati dal `ViewModel`.
+- Consente all'app di seguire il principio di "Driving `UI` from a Model".
+- Fornisce una comoda `API` per la **persistenza dei dati**.
+
+#### Persistenza
+> Quando crei un'istanza di `ViewModel`, gli passi un oggetto che implementa l'interfaccia `ViewModelStateOwner`.
+
+Può trattarsi di una *destinazione di Navigation*, di un *grafico di Navigazione* o di una [[Activity]].
+- Il View Model viene limitato al ciclo di vita del `ViewModelStoreOwner`.
+
+>[!failure] ViewModel Life Cycle
+>Il ***ciclo di vita*** di un `ViewModel` è legato direttamente al suo **scope**.
+>Un view model rimane in memoria fino a quando il `ViewModelStoreOwner` a cui è limitato scompare.
+
+![[ViewModelPersistent.png]]
+
+#### View Model e Jetpack Compose
+> Quando si usa Jetpack Compose, `ViewModel` è il mezzo principale per esporre lo stato dell'interfaccia utente ai composable.
+
