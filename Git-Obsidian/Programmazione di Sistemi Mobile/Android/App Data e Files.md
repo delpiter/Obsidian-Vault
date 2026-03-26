@@ -175,8 +175,19 @@ val exampleCounterFlow: Flow<Int> = context.dataStore.data.map{
 
 ## Database
 ---
+>[!hint] Info
+>Android fornisce la possibilità di ***archiviare i dati strutturati*** in un [[Git-Obsidian/DataBase/Introduzione|database]] privato utilizzando la libreria di persistenza `Room`.
 
-### View Model
+`Room` offre uno strato di *astrazione* su `{sqlite icon} SQLite` per consentire un accesso fluido al database sfruttando la sua piena potenza.
+
+>[!question] Utilizzo possibile
+
+Il database interno potrebbe essere sfruttato come [[Cache]] quando il dispositivo non è in grado di accedere alla rete.
+- In questo modo, l'utente è in grado di navigare i contenuti della app anche se *offline*.
+
+	
+## View Model
+---
 >[!info]
 > La classe `ViewModel` è ***business logic*** o ***screen level state holder***.
 > Espone lo stato all'interfaccia utente e incapsula la logica di business.
@@ -185,6 +196,11 @@ Il suo vantaggio principale è che memorizza nella cache lo stato e lo "*persist
 - L'interfaccia utente non deve recuperare nuovamente i dati durante la navigazione tra le [[Activity]].
 
 ![[ViewModelLogic.png]]
+
+La ***repository*** è utilizzata per gestire *più data source*.
+- Una classe `Repository` astrae l'accesso a più data source.
+- `Repository` non fa parte delle librerie di **Architecture Components** ma il suo utilizzo è consigliato per la separazione del codice.
+- Una classe `Repository` fornisce una `API` pulita per l'***accesso ai dati al resto dell'applicazione***.
 
 >[!abstract] Principi di Architettura
 >Una ***architettura dell'app ben progettata*** ti aiuta a scalare l'app.
@@ -215,7 +231,7 @@ Lo stato dell'interfaccia è costituito dai dati dell'applicazione trasformati d
 - Consente all'app di seguire il principio di "Driving `UI` from a Model".
 - Fornisce una comoda `API` per la **persistenza dei dati**.
 
-#### Persistenza
+### Persistenza
 > Quando crei un'istanza di `ViewModel`, gli passi un oggetto che implementa l'interfaccia `ViewModelStateOwner`.
 
 Può trattarsi di una *destinazione di Navigation*, di un *grafico di Navigazione* o di una [[Activity]].
@@ -227,6 +243,40 @@ Può trattarsi di una *destinazione di Navigation*, di un *grafico di Navigazion
 
 ![[ViewModelPersistent.png]]
 
-#### View Model e Jetpack Compose
+### View Model e Jetpack Compose
 > Quando si usa Jetpack Compose, `ViewModel` è il mezzo principale per esporre lo stato dell'interfaccia utente ai composable.
 
+>[!important] Importante
+>***Non è possibile*** definire un `ViewModel` come Composable.
+
+Per aggiungere un view model:
+
+```kt
+// create a class that extends ViewModel
+import androidx.lifecycle.ViewModel
+
+class MyClassViewModel:ViewModel(){}
+
+// In the UI package, add a model class for the UI State
+data class MyClassUIState{
+	val currentValue: String=""
+}
+```
+
+### State Flow
+>[!definizione]
+> `StateFlow` è un data holder ***observable flow*** che emette gli aggiornamenti di stato correnti e nuovi.
+
+La sua proprietà `value` riflette il *valore dello stato corrente*.
+- Uno `StateFlow` può essere esposto da `MyClassUIState` in modo che i componenti `@composable` possano ascoltare gli aggiornamenti dello stato della `UI`.
+
+```kt
+import kotlinx.coroutines.flow.MutableStateFlow
+
+// MyClass UI State
+private val _uiState = MutableStateFlow(MyClassUiState())
+
+// Backing propriety to avoid state updates from other classes
+
+val uiState: StateFlow<MyClassUIState>
+```
