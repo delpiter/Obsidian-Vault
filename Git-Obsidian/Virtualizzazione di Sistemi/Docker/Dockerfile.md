@@ -4,8 +4,8 @@
 > Un ***Dockerfile*** è un documento di testo che contiene tutti i comandi che un utente può invocare dalla riga di comando per ***assemblare un'immagine***.
 
 L'esecuzione è divisa in più fasi:
-- Fase di build-time, dove viene costruita l'immagine.
-- Fase di run-time dove viene eseguito il container, a partire da quello assemblato.
+- Fase di ***build-time***, dove viene *costruita l'immagine*.
+- Fase di ***run-time*** dove viene *eseguito il container*, a partire da quello assemblato.
 
 Si può ispezionare il contenuto di una immagine docker tramite il comando:
 ```sh
@@ -396,6 +396,8 @@ ENV MY_DOG=Rex\ Il\ Cane
 
 Se una variabile d'ambiente serve *solo durante la build*, usa `ARG` (non persiste nell'immagine finale) o imposta la variabile inline nel `RUN`.
 
+>[!warning] Attenzione
+>Eventuali variabili di ambiente passate a riga di comando a `run-time` (attraverso il comando `{sh icon} docker run` mediante ripetute opzioni `--env`) sovrascrivono le inizializzazioni fatte con `{dockerfile icon} ENV` nel **dockerfile**. 
 ### ADD
 
 ```dockerfile
@@ -530,6 +532,7 @@ ARG <nome>[=<valore_predefinito>]
 >Definisce una ***variabile*** passabile al momento della build con `--build-arg <name>=<value>`.
 
 A differenza di `ENV`, **non persiste** nell'immagine finale.
+- Definisce variabili utilizzabili solamente all'interno del ***dockerfile***
 
 >[!warning] Attenzione
 >Non usare `ARG` per passare segreti, i valori sono visibili in `docker history`.
