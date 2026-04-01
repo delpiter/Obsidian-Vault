@@ -165,10 +165,25 @@ Le istruzioni che supportano la sostituzione di variabili sono: `ADD`, `COPY`, `
 La forma `exec` è preferita per `ENTRYPOINT`.
 - **Non esegue elaborazione shell** né sostituzioni di variabili (usa `sh -c` se le vuoi).
 
+```dockerfile
+ENTRYPOINT ["./program.exe", "one", "two", "three"]
+```
+
+>[!todo] Nota Bene
+>Usando la forma exec, il processo principale (processo `init`) è il ***processo specificato***.
 ### Forma shell
 
-> Usa automaticamente la shell di comando e supporta continuazioni di riga e heredoc:
+> ***Usa automaticamente la shell di comando***.
 
+```dockerfile
+ENTRYPOINT ./hello.sh one two three
+```
+
+In questo caso *viene lanciata una shell* dentro cui ***viene eseguito il comando*** specificato.
+- In sostanza viene eseguito il comando:
+	- `{sh icon} /bin/sh -c ./hello.sh one two three`
+
+Supporta continuazioni di riga e **heredoc**:
 ```dockerfile
 RUN source $HOME/.bashrc && \
 echo $HOME
@@ -178,6 +193,15 @@ RUN <<EOF
   echo $HOME
 EOF
 ```
+
+>[!todo] Nota Bene
+>Usando la forma shell, il processo principale (processo `init`) è una ***shell bash***.
+>>[!warning] Attenzione
+>>La shell non si occupa di eliminare i [[CheatSheet#Processi Zombie & Orfani|processi zombie]].
+
+Se nel mio container so che verranno generati dei *processi zombie*, allora è meglio mettere come processo con `PID=1` o processo `init` un processo che è in grado di gestire i processi zombie.
+- Ci sono diversi processi (pacchetti installabili) progettati per lavorare nei container in grado di gestire i processi zombie.
+	- Es. `tini`.
 
 ---
 ## Comandi
@@ -231,6 +255,25 @@ Le opzioni disponibili sono:
 - `--mount`
 - `--network`
 - `--security`
+
+>[!caution] Ottimizzazione
+>Ogni comando `{dockerfile icon} RUN`, crea un nuovo livello per l'immagine finale, usata come "**cache**" dal daemon docker per quando il dockerfile viene eseguito molte volte.
+>- Se possibile è meglio concatenare comandi in un solo comando `{dockerfile icon} RUN`
+
+```dockerfile
+FROM ubuntu:latest
+RUN apt-get update
+RUN apt-get install -y apache
+# the docker daemon creates two "cache layers"
+ENTRYPOINT ["/usr/bin/apache", "..."]
+```
+
+```dockerfile
+FROM ubuntu:latest
+RUN apt-get update && apt-get install -y apache
+# the docker daemon creates only one layer
+ENTRYPOINT ["/usr/bin/apache", "..."]
+```
 #### RUN --mount
 
 > Crea [[File System del Container#Mounts|mount del filesystem]] accessibili durante la build:
@@ -425,6 +468,19 @@ Gli argomenti di `docker run` vengono aggiunti dopo `ENTRYPOINT` (forma exec) e 
       <td><code>exec_entry p1_entry /bin/sh -c exec_cmd p1_cmd</code></td>
     </tr>
 </table>
+
+>[!example] Esempio
+
+```dockerfile
+ENTRYPOINT ["/bin/bash", "-c"]
+CMD ["./hello.sh", "alpha", "beta", "gamma"]
+```
+
+Se eseguo il comando `docker run myImage` senza specificare un comando, allora verrà eseguito nel container la seguente riga di comando:
+`{sh icon} /bin/bash -c ./hello.sh alfa beta gamma`.
+- Ordino alla bash di eseguire il comando `./hello.sh alfa beta gamma`.
+
+Se invece, dopo `myImage` inserisco altri argomenti a run-time, ciò che è stato inserito verrà sostituito al posto di `CMD`. 
 ### VOLUME
 
 ```dockerfile
@@ -534,4 +590,4 @@ HEALTHCHECK --interval=5m --timeout=3s \
 
 ---
 
-Traduzione con integrazioni della documentazione ufficiale Docker: https://docs.docker.com/reference/dockerfile/.
+Traduzione della documentazione ufficiale Docker: https://docs.docker.com/reference/dockerfile/.
