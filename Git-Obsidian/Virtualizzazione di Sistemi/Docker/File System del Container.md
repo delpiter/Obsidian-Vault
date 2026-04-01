@@ -8,10 +8,16 @@ Quando viene creato, un container possiede un *file system iniziale* che è quel
 
 Durante l'esecuzione il container può **modificare** il contenuto del proprio file system. Le modifiche verranno salvate in uno ***strato superiore*** rispetto all'immagine originale del container.
 
+>[!info]
+>I container che eseguono a *partire da una stessa immagine* condividono in ***sola lettura*** il file system dell'immagine nella docker area.
+
+![[DifferentialLayer.png]]
+
 >[!check] Copy-on-Write
 > Questo ***layer differenziale*** viene salvato sul file system dell'host, nella **docker area**. Questo tipo di immagine si dice ***Copy-on-Write***.
 
 Ciò è *efficiente* perché esisterà **solo una istanza dell'immagine originale** (***read only***), ogni container avrà poi una propria copia con le sole modifiche, risparmiando memoria sul disco.
+- Ogni layer è identificato da un digest univoco, calcolato con una [[Funzione di Hash]] partendo dal contenuto del layer stesso.
 
 Il daemon docker definisce una dimensione massima occupabile dal file system di ciascun container pari a $10Gb$ .
 - Configurazione modificabile tramite il file di configurazione del daemon docker (`/etc/docker/daemon.json`).

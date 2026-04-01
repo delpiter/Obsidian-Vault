@@ -25,7 +25,7 @@ Un client può comunicare con più di un **daemon**.
 
 **Docker Hub** è un registry pubblico che può essere usato da chiunque.
 - Docker cerca le immagini su docker hub di *default*.
-#### Daemon di Docker
+### Daemon di Docker
 >[!failure] Daemon Docker
 > In un host linux, in cui è installato docker esistono due servizi di docker che nel loro complesso costituiscono il ***daemon docker***.
 
@@ -76,6 +76,20 @@ Assumendo che si utilizza la configurazione di default:
 5. Docker fa partire il container ed esegue `/bin/bash`. Poiché il container è eseguito **interattivamente** (`-i`) e **attaccato al terminale** (`-t`), è possibile fornire input da tastiera e l'output verrà visualizzato sul terminale.
 6. Quando viene eseguito `exit` per terminare il comando `/bin/bash` il container è fermato ***ma non viene rimosso***.
 
+#### Nome di una Immagine Docker
+>[!hint] Nome Completo
+>Il nome completo di un'immagine docker è composta da quattro parti:
+>`[REGISTRY_HOST]/[NAMESPACE]/REPOSITORY:[TAG]`
+
+> Dove:
+- Il ***registry host***, facoltativo, indica l'host del registry, deve avere almeno un punto, come i [[DNS|domain names]] (`docker.io`, `my-registry.com:5000`).
+- Il ***namespace***, facoltativo, indica l'utente o l'organizzazione proprietaria dell'immagine.
+- La ***repository***, indica il nome logico dell'immagine.
+- Il ***tag***, facoltativo, specifica la versione dell'immagine (es. `:latest`, `:1.0`).
+
+Per le immagini sul registry *docker hub*, se nella richiesta:
+- Viene omesso il namespace, viene messo di default `library`.
+- Viene omesso il tag, viene messo di default `:latest`.
 ### Stati di un Container
 > I container possono assumere diversi stati durante la loro esistenza:
 
