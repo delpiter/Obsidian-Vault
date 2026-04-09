@@ -25,4 +25,4 @@ I linguaggi di *alto livello* sono spesso molto complessi e la definizione di pr
 
 L'ottimizzazione di piccole porzioni di codice, detta ***tuning*** è un'ottima tecnica per *migliorare radicalmente* le prestazioni di programmi con uno **sforzo** **contenuto**
 
-![[TuningASM.png]]
+![[attachements/TuningASM.png]]

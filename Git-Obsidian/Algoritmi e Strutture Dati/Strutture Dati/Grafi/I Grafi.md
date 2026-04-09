@@ -1,6 +1,6 @@
 ## Grafo: Definizione
 ---
-I *Grafi* sono la struttura fondamentale negli [[Problemi e Algoritmi#Algoritmo|algoritmi]]
+I *Grafi* sono la struttura fondamentale negli [[../../Problemi e Algoritmi#Algoritmo|algoritmi]]
 >[!info] Definizione
 >Un ***grafo*** è una coppia di insiemi $(V,E)$ dove
 >- $V$ è un insieme di *vertici*
@@ -22,7 +22,7 @@ $$
 E=\{ \{ a,b \},\{ a,c \},\{ a,d \},\{ b,e \},\{ c,d \},\{ c,e \}, \{ d,e \} \}
 \end{array}
 $$
-![[graph 3.png]]
+![[attachements/graph 3.png]]
 >[!example] Grafo Diretto (Orientato)
 >Se ogni coppia del grafo $(u,v)$ è ordinata allora il Grafo si dice *diretto o ordinato*
 
@@ -32,7 +32,7 @@ $$
 E=\{ ( a,b ),( a,c ),( a,d ),( b,e ),( c,d ),( c,e ), ( d,e ) \}
 \end{array}
 $$
-![[graph (1).png]]
+![[1)](attachements/graph (1|graph (1)]].png)
 ## Terminologia
 ---
 ### Vertici Adiacenti
@@ -56,7 +56,7 @@ $$
 >>[!tip] Cammino Elementare
 >>Un *cammino* si dice elementare quando non ci sono vertici ripetuti
 
- ![[Git-Obsidian/Algoritmi e Strutture Dati/Strutture Dati/Grafi/attachements/image-removebg-preview.png]]
+ ![[attachements/image-removebg-preview.png]]
 *Grafo 1: Cammino non Elementare, Grafi 2-3: Cammini Elementari*
 
 >[!example] Ciclo
@@ -72,14 +72,14 @@ $$
 >[!info] Definizione
 >Un grafo si dice *connesso* quando qualsiasi coppia di vertici è unita da almeno un cammino
 
-![[grafo connesso.png]]
+![[attachements/grafo connesso.png]]
 *Grafo 1: Grafo connesso - Grafo 2: Grafo non Connesso*
 
 ### Grafo Completo
 >[!info] Definizione
 >Un *grafo completo* ha un arco fra ogni coppia di nodi
 
-![[graphedges.png]]
+![[attachements/graphedges.png]]
 
 ### Componente Connessa e Sottografo
 >[!info] Sottografo
@@ -90,7 +90,7 @@ $$
 >>[!done] Definizione Massimale
 >>Non posso prendere altri elementi del grafo senza perdere la proprietà di connessione
 
-![[Componente connessa.png]]
+![[attachements/Componente connessa.png]]
 
 ### Grafo Trasposto
 >[!info] Definizione
@@ -98,7 +98,7 @@ $$
 >$$E^T=\{ (u,v):(v,u)\in E \}$$
 >$G$ e $G^T$ hanno le stesse componenti fortemente connesse
 
-![[grafotrasposto.png]]
+![[attachements/grafotrasposto.png]]
 ### Grafo Pesato
 >[!info] Definizione
 >Gli *archi* possono avere un *peso* associato
@@ -107,4 +107,4 @@ $$
 >>[!tip] Cardinalità 
 >>L'insieme dei *pesi* ha la cardinalità uguale all'insieme degli *archi*
 
-![[grafo Pesato.png]]
+![[attachements/grafo Pesato.png]]

@@ -2,7 +2,7 @@
 
 ## Categorie
 ---
-![[HTMLCategory.png]]
+![[attachements/HTMLCategory.png]]
 
 >[!info] Flow Content
 >La maggior parte degli elementi usati nel *body* del documento e delle applicazione è categorizzato come ***flow content***.

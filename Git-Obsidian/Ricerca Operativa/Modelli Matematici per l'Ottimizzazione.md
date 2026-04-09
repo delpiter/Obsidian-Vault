@@ -1,4 +1,4 @@
-> Il primo passo per determinare l'[[Definizioni_Algoritmi#Problema di Ottimizzazione|algoritmo di ottimizzazione]] per un problema consiste nel definire il ***modello matematico***.
+> Il primo passo per determinare l'[[../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|algoritmo di ottimizzazione]] per un problema consiste nel definire il ***modello matematico***.
 
 >[!attention] Modello Matematico
 >Un ***modello matematico*** si rappresenta come segue:

@@ -41,7 +41,7 @@ Le app vengono archiviate nella ***memoria interna*** per impostazione *predefin
 
 Per ogni app, android, fornisce due directory interne accessibili solo dall'app stessa:
 - Una per contenere file persistenti (`filesDir`).
-- Una per contenere l'app [[Cache]] (`cacheDir`).
+- Una per contenere l'app [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Cache]] (`cacheDir`).
 
 >[!done] Pro
 - Altre app non possono accedere a queste directory.
@@ -176,13 +176,13 @@ val exampleCounterFlow: Flow<Int> = context.dataStore.data.map{
 ## Database
 ---
 >[!hint] Info
->Android fornisce la possibilità di ***archiviare i dati strutturati*** in un [[Git-Obsidian/DataBase/Introduzione|database]] privato utilizzando la libreria di persistenza `Room`.
+>Android fornisce la possibilità di ***archiviare i dati strutturati*** in un [[../../DataBase/Introduzione|database]] privato utilizzando la libreria di persistenza `Room`.
 
 `Room` offre uno strato di *astrazione* su `{sqlite icon} SQLite` per consentire un accesso fluido al database sfruttando la sua piena potenza.
 
 >[!question] Utilizzo possibile
 
-Il database interno potrebbe essere sfruttato come [[Cache]] quando il dispositivo non è in grado di accedere alla rete.
+Il database interno potrebbe essere sfruttato come [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Cache]] quando il dispositivo non è in grado di accedere alla rete.
 - In questo modo, l'utente è in grado di navigare i contenuti della app anche se *offline*.
 
 	
@@ -195,7 +195,7 @@ Il database interno potrebbe essere sfruttato come [[Cache]] quando il dispositi
 Il suo vantaggio principale è che memorizza nella cache lo stato e lo "*persiste*" attraverso le modifiche alla configurazione.
 - L'interfaccia utente non deve recuperare nuovamente i dati durante la navigazione tra le [[Activity]].
 
-![[ViewModelLogic.png]]
+![[attachements/ViewModelLogic.png]]
 
 La ***repository*** è utilizzata per gestire *più data source*.
 - Una classe `Repository` astrae l'accesso a più data source.
@@ -241,7 +241,7 @@ Può trattarsi di una *destinazione di Navigation*, di un *grafico di Navigazion
 >Il ***ciclo di vita*** di un `ViewModel` è legato direttamente al suo **scope**.
 >Un view model rimane in memoria fino a quando il `ViewModelStoreOwner` a cui è limitato scompare.
 
-![[ViewModelPersistent.png]]
+![[attachements/ViewModelPersistent.png]]
 
 ### View Model e Jetpack Compose
 > Quando si usa Jetpack Compose, `ViewModel` è il mezzo principale per esporre lo stato dell'interfaccia utente ai composable.

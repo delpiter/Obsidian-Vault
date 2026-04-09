@@ -2,14 +2,14 @@
 ---
 >L'utilizzo in parallelo di più unità di calcolo è una soluzione progettuale che, sebbene già utilizzata da molti anni, offre ancora enormi possibilità di sviluppo
 
-![[TypesOfParallelism.png]]
+![[attachements/TypesOfParallelism.png]]
 >*La figura distingue diversi tipi di parallelismo*
 
 ### Notazione
 >*I fattori che caratterizzano, dal punto di vista hardware, un sistema parallelo sono i seguenti:*
 
 >[!example] Natura e numero degli elementi di Calcolo
->Il parallelismo può essere stabilito tra semplici [[Arithmetic Logic Unit|ALU]] oppure tra potenti `CPU` complete
+>Il parallelismo può essere stabilito tra semplici [[../Algebra di Bool e Logica Digitale/Arithmetic Logic Unit|ALU]] oppure tra potenti `CPU` complete
 
 >[!abstract] Natura e numero degli elementi di Memoria
 >Normalmente la memoria è suddivisa in ***moduli indipendenti*** al fine di permettervi l'accesso da più `CPU` contemporaneamente
@@ -41,7 +41,7 @@ Sebbene qualsiasi combinazione di queste caratteristiche sia possibile, si tendo
 >*Distinguiamo diverse possibilità, già in parte discusse*
 
 >[!info] Parallelismo a livello di *istruzioni*
->[[Pipelining]], [[Pipelining#Architetture Superscalari|Architetture Superscalari]], [[Istruzioni IA-32 Speciali#Istruzioni MMX|Istruzioni SIMD]]
+>[[Pipelining]], [[Pipelining#Architetture Superscalari|Architetture Superscalari]], [[../Assembly/Istruzioni IA-32 Speciali#Istruzioni MMX|Istruzioni SIMD]]
 
 >[!abstract] *Multi-Threading*
 >La `CPU` ***esegue contemporaneamente due thread***.
@@ -68,7 +68,7 @@ Consentono di cifrare/decifrare molto velocemente flussi di dati con "***state-o
 - ***Advanced Encryption Standard***, ***RSA***
 
 #### Processori Grafici
-Processori che vengono montate nelle [[Schede Grafiche|GPU]] per consentire di ***processare grandi quantità di dati video*** e grafica 3D
+Processori che vengono montate nelle [[../Architettura del Calcolatore/Schede Grafiche|GPU]] per consentire di ***processare grandi quantità di dati video*** e grafica 3D
 - Una `GPU` può contenere fino ad alcune ***migliaia di core che operano in parallelo***
 
 #### GPGPU Computing
@@ -81,7 +81,7 @@ Grazie all'introduzione di linguaggi e modelli di programmazione come `CUDA` e `
 >[!info] Definizione
 >I multiprocessori sono ***sistemi a memoria condivisa***, ossia sistemi in cui tutte le `CPU` condividono una ***memoria fisica comune***
 
-![[Multiprocessor.png]]
+![[attachements/Multiprocessor.png]]
 - Qualsiasi processo può ***leggere o scrivere su tutta la memoria***
 - Due o più processori comunicano ***leggendo o scrivendo in una opportuna cella di memoria***
 - Presentano ***un'elevata capacità di interazioni*** tra i processori (*strongly coupled*)
@@ -92,7 +92,7 @@ Grazie all'introduzione di linguaggi e modelli di programmazione come `CUDA` e `
 >I ***multicomputer*** hanno più `CPU` ognuna dotata di una ***propria memoria***
 >Dato che ogni `CPU` può accedere solo alla propria memoria è necessario un meccanismo basato su messaggi che permetta lo ***scambio di informazioni***
 
-![[Multicomputer.png]]
+![[attachements/Multicomputer.png]]
 - I *multicomputer* sono normalmente sistemi ***loosley coupled***
 - Richiedono un complesso sistema di routing dei messaggi lungo una ***rete di interconnessione***
 - L'allocazione dei processori e dei dati è un fattore fondamentale per l'***ottimizzazione delle prestazioni***
@@ -115,33 +115,33 @@ Sono possibile svariate soluzioni caratterizzabili in base alle caratteristiche 
 >Rappresenta il ***numero di archi collegati ad un nodo***
 >Determina la ***fault tollerance*** della rete, ossia la capacità di continuare a funzionare anche se il link fallisce nella sua *operazione di routing*
 
-![[Fanout.png]]
+![[attachements/Fanout.png]]
 
 >[!info] Diametro
 >Rappresenta la ***distanza tra i due nodi più distanti del grafo***, espressa come *numero di archi da percorrere* per passare da un nodo all'altro
 >Da informazioni sul tempo di comunicazione (***caso peggiore***)
 
-![[Diameter.png]]
+![[attachements/Diameter.png]]
 
 ##### Topologie di Rete
-![[Topology1.png]]
+![[attachements/Topology1.png]]
 >*a) Topologia a stella, b) Topologia a interconnessione completa (maglia)*
 
-![[Topology2.png]]
+![[attachements/Topology2.png]]
 >*c) Topologia ad albero o stella estesa, d) Topologia ad anello*
 
-![[Topology3.png]]
+![[attachements/Topology3.png]]
 >*e) Topologia a griglia, f) Topologia a toroide 2D*
 
-![[Topology4.png]]
+![[attachements/Topology4.png]]
 >*g) Topologia a cubo, h) Topologia a Ipercubo*
 
-![[Toroide3D.png]]
+![[attachements/Toroide3D.png]]
 >*Topologia toroide 3D*
 
 Una delle topologie di rete ***più utilizzata nei supercomputer*** con decine di migliaia di nodi
 - È un buon compromesso tra ***diametro e numero di interconnessioni***
-![[FatTree.png]]
+![[attachements/FatTree.png]]
 >*Topologia "Fat Tree"*
 
 I rami più vicini alla radice sono più "*grassi*", offrono una maggiore ***larghezza di banda***
@@ -163,10 +163,10 @@ Ottenere l'accelerazione ottima è ***praticamente impossibile***:
 >- $T$ è il tempo di esecuzione su un ***sistema monoprocessore***
 >- $n$ è il numero delle `CPU`
 
-![[Speed-up.png]]
+![[attachements/Speed-up.png]]
 
 Per raggiungere prestazioni elevate non è sufficiente aumentare il numero delle `CPU`
-- È necessario utilizzare ***architetture [[Definizioni_Architettura#Scalabilità|scalabili]]***
+- È necessario utilizzare ***architetture [[../../Definizioni/Definizioni_Architettura#Scalabilità|scalabili]]***
 
 >[!fail] Il parallelismo perfetto non può essere raggiunto a causa dell'aumento del *diametro della rete*
 >L'ipercubo rappresenta la soluzione ottimale poiché il diametro ***aumenta logaritmicamente*** rispetto al numero dei nodi
@@ -182,6 +182,6 @@ La tassonomia più utilizzata è quella proposta da ***Flynn*** che si basa su d
 >[!tip] Sequenza di Dati
 >Insieme di ***operandi***
 
-![[Classificazione di sistemi Paralleli.png]]
+![[attachements/Classificazione di sistemi Paralleli.png]]
 
-![[Flynn Taxonomy.png]]
+![[attachements/Flynn Taxonomy.png]]

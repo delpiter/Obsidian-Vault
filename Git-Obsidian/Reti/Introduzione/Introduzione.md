@@ -90,7 +90,7 @@ Le *reti di accesso* si trovano tra il **punto di distribuzione centrale** e l'*
 >L'*obbiettivo* dei ***sistemi aperti*** è quello di realizzare una rete di calcolatori in cui **qualunque** terminale comunica con **qualunque** fornitore di servizi mediante **qualunque** rete.
 
 Per realizzare un *sistema aperto* è necessario stabilire delle regole comuni
-- Stabilire degli ***standard*** ([[ISO-OSI]])
+- Stabilire degli ***standard*** ([[../Standards/ISO-OSI|ISO-OSI]])
 
 Tutte le proposte hanno in comune un'***architettura a strati***.
 

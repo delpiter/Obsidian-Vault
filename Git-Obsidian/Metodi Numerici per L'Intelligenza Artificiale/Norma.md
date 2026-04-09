@@ -4,7 +4,7 @@ Possono essere:
 - **Vettori** di $\mathbb{R}^n$
 - **Matrici** di $\mathbb{R}^{m\times n}$
 
-Diventa necessario introdurre uno strumento matematico che estenda l'[[Errore di Rappresentazione|errore relativo]] (definito per scalari in $\mathbb{R}$), al caso più generale di *vettori* e *matrici*
+Diventa necessario introdurre uno strumento matematico che estenda l'[[Numeri Finiti/Errore di Rappresentazione|errore relativo]] (definito per scalari in $\mathbb{R}$), al caso più generale di *vettori* e *matrici*
 ## Norma Vettoriale
 ---
 >La ***norma di un vettore*** è una funzione che *associa* ad ogni *vettore* una lunghezza non negativa.
@@ -27,14 +27,14 @@ Diventa necessario introdurre uno strumento matematico che estenda l'[[Errore di
 >[!help] Norma Infinito
 >$$\mid\mid x \mid\mid_{\infty}=\max\limits_{ i }\mid x_{i}\mid$$
 
-![[InfinityNorm.png|400]]
+![[attachements/InfinityNorm.png|400]]
 
 - $S_{\infty}=\{ x\in\mathbb{R}^2 :\mid\mid x \mid\mid_{\infty}=max\{ \mid x_{1}\mid ,\mid x_{2}\mid\}=1\}$
 
 >[!quote] Norma $1$
 >$$\mid\mid x \mid\mid_{1} = \sum_{i=1}^n \mid x_{i}\mid$$
 
-![[Norm_One.png|400]]
+![[attachements/Norm_One.png|400]]
 
 - $S_{1}=\{ x\in\mathbb{R}^2:\mid\mid x \mid\mid_{1}\mid x_{1}\mid + \mid x_{2} \mid = 1\}$
 
@@ -43,7 +43,7 @@ Diventa necessario introdurre uno strumento matematico che estenda l'[[Errore di
 
 ^093ca9
 
-![[Norm_Two.png|400]]
+![[attachements/Norm_Two.png|400]]
 
 - $S_{2}=\{ x\in\mathbb{R}^2:\mid\mid x \mid\mid_{2}=\sqrt{ x_{1}^2+x_{2}^2 }=1 \}$
 
@@ -93,7 +93,7 @@ $$
 ## Norma di Matrici
 ---
 >[!definizione] Definizione
->Sia $\mathbb{R}^{m\times n}$ lo [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] delle ***matrici*** $m\times n$ su $\mathbb{R}$, si dice che l'applicazione $\|A\|$ da $\mathbb{R}^{m\times n}$ a $\mathbb{R}_{+}\cup \{ 0 \}$ è norma della matrice $A$ se gode delle *seguenti proprietà*:
+>Sia $\mathbb{R}^{m\times n}$ lo [[../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] delle ***matrici*** $m\times n$ su $\mathbb{R}$, si dice che l'applicazione $\|A\|$ da $\mathbb{R}^{m\times n}$ a $\mathbb{R}_{+}\cup \{ 0 \}$ è norma della matrice $A$ se gode delle *seguenti proprietà*:
 >1. $\mid\mid A \mid\mid >0 \quad \forall A\neq 0$ e $\mid\mid A \mid\mid=0\iff A=0$
 >>[!hint] La norma di una matrice è sempre non negativa e nulla solo se la matrice è nulla.
 >
@@ -167,9 +167,9 @@ Dove $\rho$ è il ***raggio spettrale***, cioè l'autovalore di modulo massimo d
 >[!question] Calcolo
 >Il calcolo del *raggio spettrale* è ***piuttosto oneroso***
 #### Richiami
-- [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|Matrici Simmetriche]]
-- [[9 - Matrici Diagonali#Autovettore e Autovalore|Autovalore e Autovettore]]
-- [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|Tipi di Forme Quadratiche]]
+- [[../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|Matrici Simmetriche]]
+- [[../Algebra e Geometria/Applicazioni/9 - Matrici Diagonali#Autovettore e Autovalore|Autovalore e Autovettore]]
+- [[../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche#Tipi di Forme Quadratiche|Tipi di Forme Quadratiche]]
 
 ### Teorema
 > Anche per le matrici vale il concetto di norme equivalenti

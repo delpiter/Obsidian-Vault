@@ -21,7 +21,7 @@ I metadati sono inclusi nell'head del documento.
 >[!info] `{html icon} <base>`
 >L'elemento `{html icon} <base>` deve essere l'***unico*** all'interno del documento.
 
-Lo scopo principale dell'elemento `{html icon} <base>` è quello di indicare il ***path base*** del documento che servirà per risolvere gli [[URL]] relativi, sia in termini di `href`  che di `target`.
+Lo scopo principale dell'elemento `{html icon} <base>` è quello di indicare il ***path base*** del documento che servirà per risolvere gli [[../../../Reti/Introduzione/URL|URL]] relativi, sia in termini di `href`  che di `target`.
 
 ```html title:base
 <head>

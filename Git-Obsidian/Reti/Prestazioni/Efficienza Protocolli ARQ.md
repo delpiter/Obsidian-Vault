@@ -1,6 +1,6 @@
 ## Prestazioni Stop-and-Wait
 ---
->Il protocollo [[ARQ]] ***Stop and wait*** equivale ad un protocollo a finestra scorrevole con finestra unitaria.
+>Il protocollo [[../Data Link Layer/ARQ]] ***Stop and wait*** equivale ad un protocollo a finestra scorrevole con finestra unitaria.
 
 >[!info]
 >Siano:
@@ -13,7 +13,7 @@
 >- $I=E+R\qquad I'=E'+R'$
 >- $C,\ C'$: Velocità dei canali di trasmissione.
 
-![[StopAndWait.png|400]]
+![[attachements/StopAndWait.png|400]]
 
 ### Efficienza
 >Chiamiamo $T_{0}$ il tempo intercorso fra l'***invio di due frame successivi***.
@@ -65,17 +65,17 @@ $$
 >Se $P_{k}$ è la probabilità di avere $k$ errori, il tempo medio per trasmettere un frame vale:
 >$$E[T_{k}]=\sum_{k=0}^{\infty}T_{k}p_{k}=\sum_{k=0}^{\infty}(kT_{e}+T_{0})P_{k}$$
 
-![[TransmissionWithError.png|300]]
+![[attachements/TransmissionWithError.png|300]]
 
 >[!check] Determinare $P_{k}$
 >> Ipotesi
 >
->Gli errori sui ***frame*** sono *indipendenti* e *identicamente distribuiti* (di uguale [[3 - Variabili Aleatorie#Schema Successo-Insuccesso a Prove Indipendenti Consecutive|probabilità]]).
+>Gli errori sui ***frame*** sono *indipendenti* e *identicamente distribuiti* (di uguale [[../../Matematica Discreta e Probabilità/Probabilità/3 - Variabili Aleatorie#Schema Successo-Insuccesso a Prove Indipendenti Consecutive|probabilità]]).
 >- $P_{F}=$ Probabilità di errore per *ciascun frame*. 
 >$$P_{k}=P\{ k \text{ frame errati seguiti da uno corretto} \}=P_{F}^{k}(1-P_{F})$$
 
 Il numero medio di errori consecutivi risulta $E[k]=\frac{P_{F}}{1-P_{F}}$
-- ([[6 - Valore Atteso#Valore Atteso di una Variabile Geometrica|Valore Atteso]])
+- ([[../../Matematica Discreta e Probabilità/Probabilità/6 - Valore Atteso#Valore Atteso di una Variabile Geometrica|Valore Atteso]])
 
 Sia $P_{e}$ la probabilità di un errore per `bit`.
 $$P_{F}=1-P_{\text{frame corretto}}=1-(1-P_{e})^{F}\approx FP_{e}$$

@@ -4,7 +4,7 @@
 - Il tempo di esecuzione si divide per il numero di unità di esecuzione.
 
 > I task *non sono bilanciati*.
-- Il tempo di esecuzione è limitato dalla lunghezza del ***processo più lungo*** ([[Partition#Differenze|load imbalance]]).
+- Il tempo di esecuzione è limitato dalla lunghezza del ***processo più lungo*** ([[Parallel Programming Patterns/Partition#Differenze|load imbalance]]).
 
 > I task hanno una *dipendenza l'un l'altro*.
 - Il tempo di esecuzione è determinato dal ***cammino critico***.
@@ -66,8 +66,8 @@ $$
 Ci sono alcuni casi in cui si potrebbe osservare uno ***speedup superlineare***:
 - Se vengono usati due **programmi diversi** per l'esecuzione seriale e parallela.
 	- Il compilatore potrebbe compilare i codici in maniera differente.
-- Se il problema viene diviso abbastanza per far stare un *sotto problema* interamente nella [[Cache]].
-- Se il processore applica il [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Parallelismo nel Chip|parallelismo eterogeneo]].
+- Se il problema viene diviso abbastanza per far stare un *sotto problema* interamente nella [[../Architettura degli Elaboratori/Architettura del Calcolatore/Cache|cache]].
+- Se il processore applica il [[../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Parallelismo nel Chip|parallelismo eterogeneo]].
 - Tramite l'utilizzo di [[Programmazione SIMD]].
 
 ### Porzioni non Parallelizzabili
@@ -92,7 +92,7 @@ $$
 
 Lo speedup massimo che può essere raggiunto è: $\displaystyle{\frac{T_{\text{ser}}}{\alpha\cdot T_{\text{ser}}}}$
 
->[!check] [[Prestazioni dei Calcolatori#Legge di Amdhal|Legge di Amdhal]]
+>[[../Architettura degli Elaboratori/Architetture a Confronto/Prestazioni dei Calcolatori#Legge di Amdhal|Legge di Amdhal]]
 >La ***legge di Amdhal*** indica qual è il *massimo speedup*.
 >$$S(p)=\displaystyle{\frac{1}{\alpha+\displaystyle{\frac{1-\alpha}{p}}}}$$
 
@@ -148,7 +148,7 @@ $$
 > ***Esempio***: Moltiplicazione matrice $\times$ matrice.
 
 Data una dimensione $n_{p}$, la quantità di "*lavoro seriale*" richiesto per calcolare il prodotto matrice $\times$ matrice ($n_{p}\times n_{p}$) è $O(n_{p}^{3})$
-- La versione [[OpenMP]] usa $p$ processori e esegue $f(n_{p},p)=\frac{n_{p}^{3}}{p}$ lavoro per *thread*
+- La versione [[OpenMP/OpenMP|OpenMP]] usa $p$ processori e esegue $f(n_{p},p)=\frac{n_{p}^{3}}{p}$ lavoro per *thread*
 
 <u>Quindi</u>
 $$
@@ -163,16 +163,16 @@ $$
 >[!important] Importante
 >Quando si mostrano dei risultati di performance, è buona prassi fornire le ***specifiche hardware del sistema*** su cui è stata fatta la misurazione.
 
-> Per la [[La CPU|CPU]]
+> Per la [[../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU|CPU]]
 - Tipo di *processore* (fornitore, nome del modello, ecc.).
 - Numero di *core*.
 - Se la `CPU` utilizza il **multithreading simmetrico** (es. HyperThreading).
 - *Frequenza* di clock.
 - Quantità di `RAM`.
-- [[3 - Livelli del Sistema Operativo#Introduzione|Sistema operativo]].
+- [[../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|Sistema operativo]].
 - Versione del compilatore e, possibilmente, flag di compilazione.
 
->Per la [[Schede Grafiche|GPU]]
+>Per la [[../Architettura degli Elaboratori/Architettura del Calcolatore/Schede Grafiche|GPU]]
 - Tipo di `GPU` (fornitore, nome del modello, ecc.).
 - Numero di *core*.
 - *Frequenza* di clock.

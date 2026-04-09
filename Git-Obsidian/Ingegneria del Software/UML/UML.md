@@ -8,8 +8,8 @@
 `UML` è uno *standard* [OMG](https://www.omg.org/about/omg-standards-introduction.htm).
 
 > L'`UML` fornisce i costrutti per le seguenti fasi dello sviluppo dei sistemi software.
-- [[Analisi dei Requisiti]] tramite i ***casi d'uso***.
-- Analisi e progetto [[Paradigma ad Oggetti|object oriented]].
+- [[../Ciclo di Vita del Software/Analisi dei Requisiti]] tramite i ***casi d'uso***.
+- Analisi e progetto [[../Paradigma ad Oggetti|object oriented]].
 - **Modellazione** dei *componenti*.
 - **Modellazione** della *struttura* e della configurazione.
 >[!done] UML è la risposta ai problemi legati allo sviluppo di sistemi complessi
@@ -47,54 +47,54 @@ Un certo **elemento** può comparire in *più diagrammi*, ma è ***univoca*** la
 >[!abstract] Strutture
 
 - **Classe**
-![[Class.svg]]
+![[attachements/Class.svg]]
 - **Interfaccia**
-![[Interface.svg]]
+![[attachements/Interface.svg]]
 - **Collaborazione**
-![[Collaboration.svg]]
+![[attachements/Collaboration.svg]]
 - **Caso d'uso**
-![[UseCase.svg]]
+![[attachements/UseCase.svg]]
 - **Componente**
-![[Component.svg]]
+![[attachements/Component.svg]]
 - **Nodo**
-![[Node.svg]]
+![[attachements/Node.svg]]
 
 >[!failure] Comportamenti
 
 - **Interazione**
-![[Interaction.svg|150]]
+![[attachements/Interaction.svg|150]]
 - **Stato**
-![[State.svg|150]]
+![[attachements/State.svg|150]]
 
 >[!help] Raggruppamenti
 
 - **Package**
-![[Package.svg|150]]
+![[attachements/Package.svg|150]]
 
 >[!info] Informazioni
 
 - **Annotazione**
-![[Annotation.svg|150]]
+![[attachements/Annotation.svg|150]]
 
 ##### Relazioni
 > Legano tra loro le entità.
 
 - **Dipendenza**
 	- Un'entità $B$ dipende da una entità $A$ se una variazione di $A$ *può* causare una variazione in $B$.
-[[Normalizzazione#Dipendenze Funzionali|Ripasso Dipendenze Funzionali]]. ^46e719
+[[../../DataBase/Progettazione Logica/Normalizzazione#Dipendenze Funzionali|Ripasso Dipendenze Funzionali]]. ^46e719
 
-![[Dependency.svg|150]]
+![[attachements/Dependency.svg|150]]
 - **Associazione**: linea *senza punte*.
 - **Aggregazione**
-![[Aggregation.svg|150]]
+![[attachements/Aggregation.svg|150]]
 - **Contenimento**
-![[Containment.svg|150]]
+![[attachements/Containment.svg|150]]
 - **Generalizzazione**
-![[Generalization.svg|150]]
+![[attachements/Generalization.svg|150]]
 - **Realizzazione**
-![[Implementation.svg|150]]
+![[attachements/Implementation.svg|150]]
 - **Composizione**
-![[Composition.svg|150]]
+![[attachements/Composition.svg|150]]
 
 ##### Diagrammi
 > Sono viste sul modello `UML`
@@ -160,12 +160,12 @@ Unico diagramma ***abbastanza semplice*** per essere usato con l'**utente**.
 ##### Specifiche
 > Sono la descrizione testuale della semantica di un elemento.
 
-![[Specifics.svg]]
+![[attachements/Specifics.svg]]
 
 ##### Ornamenti
 > Rendono visibili gli aspetti particolari della specifica dell'elemento.
 
-![[Ornaments.svg]]
+![[attachements/Ornaments.svg]]
 ##### Distinzioni Comuni
 >[!hint] Classificatore e Istanza
 >Separa la ***notazione astratta*** di un'entità dalle sue ***concrete istanze***.
@@ -182,7 +182,7 @@ Unico diagramma ***abbastanza semplice*** per essere usato con l'**utente**.
 
 ^f653b6
 
-![[Stereotype.svg]]
+![[attachements/Stereotype.svg]]
 
 >[!proprietà]
 >Una ***proprietà*** è un valore associato a un elemento del modello, espresso da una stringa associata all'elemento.

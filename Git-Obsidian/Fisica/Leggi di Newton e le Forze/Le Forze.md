@@ -7,7 +7,7 @@
 
 Il diagramma consente di "*visualizzare*" le **interazioni dell'ambiente esterno** con il **corpo** e di determinare il modo in cui si calcolerà la somma delle forze esterne.
 
-![[DiagrammaCorpoLibero.png|400]]
+![[attachements/DiagrammaCorpoLibero.png|400]]
 
 ## Forza Peso
 ---
@@ -16,7 +16,7 @@ Il diagramma consente di "*visualizzare*" le **interazioni dell'ambiente esterno
 >In termini di [[Leggi di Newton#Seconda Legge di Newton|forza]], possiamo dire il corpo è soggetto ad una **forza** di modulo $mg$, *diretta verso il basso*.
 >Chiameremo tale forza: ***Forza Peso***.
 
-Prendendo come [[Trasformazioni di Galileo|sistema di riferimento]] l'asse $y$ verticale verso l'alto:
+Prendendo come [[../Trasformazioni di Galileo|sistema di riferimento]] l'asse $y$ verticale verso l'alto:
 $$
 \vec{P}=m\vec{g} \implies \vec{g}=-g\hat{j}
 $$
@@ -26,7 +26,7 @@ $$
 >[!abstract] Fune Ideale
 >Chiamiamo ***fune ideale*** una fune molto sottile di *massa* $m\approx 0$ *trascurabile*, *perfettamente flessibile* e *intensibile*.
 
-![[ForzaTensione.png]]
+![[attachements/ForzaTensione.png]]
  
 >[!question] Posto un asse $x$ diretto verso destra, cosa possiamo dire sulla somma delle forze sulla fune?
 
@@ -48,7 +48,7 @@ Possiamo dire ciò perché:
 
 In base alla [[Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]] la somma delle forze agenti su di esso sarà anch'essa nulla.
 
-![[ForzaNormale.png|500]]
+![[attachements/ForzaNormale.png|500]]
 $$
 \vec{a}=0\implies \sum \vec{F}=0
 $$
@@ -71,7 +71,7 @@ Il peso $\vec{P}=-mg\hat{j}$ sarà dunque bilanciato da una forza che il ***tavo
 
 Scelgo un asse $x$ lungo il *piano*, con verso nella salita, e un asse $y$ perpendicolare, diretto verso l'alto.
 
-![[PianoInclinato.png]]
+![[attachements/PianoInclinato.png]]
 
 La forza può essere scomposta nelle sue ***componenti cartesiane***.
 $$
@@ -121,7 +121,7 @@ $$
 >[!example] Ulteriore Esempio
 >Per i due corpi connessi da una fune come nella figura seguente si calcoli l'**accelerazione** e la **tensione** della fune.
 
-![[PianoInlcinato2.png]]
+![[attachements/PianoInlcinato2.png]]
 
 > Scegliamo ***sistemi di riferimento diversi*** per ciascun blocco.
 
@@ -190,7 +190,7 @@ All'improvviso, superato un certo valore della forza applicata, ***il corpo si m
 >
 >$$F_{k}=\mu_{k}N$$
 
-![[Attrito.png]]
+![[attachements/Attrito.png]]
 
 > Nella maggioranza dei casi si ha $\mu_{s}> \mu_{k}$
 
@@ -201,7 +201,7 @@ All'improvviso, superato un certo valore della forza applicata, ***il corpo si m
 
 > Risolvendo il problema è possibile determinare il ***coefficiente di attrito statico*** $\mu_{s}$
 
-![[AttritoStatico.png]]
+![[attachements/AttritoStatico.png]]
 
 Un attimo prima che il corpo scivoli abbiamo: $\sum F=0$
 - Detto $x$ un asse parallelo al piano, avremo: $\sum F_{x}=-mg\sin\theta+F_{s}=0$
@@ -271,7 +271,7 @@ Vediamo che la $x(t)$ scelta soddisfa l'equazione differenziale quando $\omega^2
 >[!info]
 >Un sistema che soddisfa l'equazione differenziale della forza elastica, e ha soluzioni armoniche è detto ***oscillatore armonico***.
 
-![[MotoArmonico.png]]
+![[attachements/MotoArmonico.png]]
 
 Vediamo che il periodo della funzione è:
 $$
@@ -286,7 +286,7 @@ Dove  $\omega$ è detta ***pulsazione***, $T$ è detto ***periodo***, $\nu$ è d
 $$
 \sum F_{x}=-mg\sin\theta=ma\implies a=-g\sin\theta
 $$
-![[Pendolo.png]]
+![[attachements/Pendolo.png]]
 
 Dato che la massa $m$ si muove su un arco di circonferenza di raggio $l$, la sua *accelerazione tangenziale* sarà pari al **raggio** per l'**accelerazione angolare**.
 $$
@@ -306,4 +306,4 @@ $$
 \omega=\sqrt{ \frac{g}{l} }\qquad T=\frac{2\pi}{\omega}=2\pi\sqrt{  \frac{l}{g}}
 $$
 
-> Concetto usato per ricavare misure precise dell' [[Legge di Gravitazione|accelerazione gravitazionale]].
+> Concetto usato per ricavare misure precise dell' [[../Gravitazione/Legge di Gravitazione|accelerazione gravitazionale]].

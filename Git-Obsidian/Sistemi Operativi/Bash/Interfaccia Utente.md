@@ -16,10 +16,10 @@
 >>Interfaccia che sfrutta ***finestre*** sparate e un ***mouse*** per controllare la posizione dell'utente
 >>- Nei sistemi più moderni, la `GUI` implementa un terminale a caratteri
 
-![[GUI.png|400]]
+![[attachements/GUI.png|400]]
 >*Esempio di finestra (window) in una interfaccia grafica*
 
-![[CLI.png]]
+![[attachements/CLI.png]]
 >*Esempio di interfaccia a caratteri*
 
 
@@ -63,7 +63,7 @@ Separati in 3 gruppi
 > 
 > Cerca di *eseguire* i seguenti file:
 >- `/etc/profile`
->	- Viene eseguito dalla `bash` tramite il comando `source` [[Esecuzione dei File#Comando `source`|(*)]]
+>	- Viene eseguito dalla `bash` tramite il comando `source` [[Esecuzione dei File#Comando `source`|(*]])
 >		- Il comando imposta le ***variabili di default*** della `shell`
 >- *Uno solo* (il primo trovato) tra: `.bash_profile`,`.bash_login`, `-profile`
 >- Il *file* `.bashrc` nella home directory dell'utente

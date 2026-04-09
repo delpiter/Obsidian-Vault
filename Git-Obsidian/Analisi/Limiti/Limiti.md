@@ -2,7 +2,7 @@
 ---
 ### Intorni
 >[!info] Definizione
->Dato $c\in\mathbb{R}$, chiamiamo intorno del punto $c$ un qualsiasi [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] della forma
+>Dato $c\in\mathbb{R}$, chiamiamo intorno del punto $c$ un qualsiasi [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] della forma
 >$$(c-r,c+r)$$
 >Chiamiamo invece intorno di $+\infty$ un qualsiasi intervallo della forma 
 >$$(a,+\infty)$$
@@ -22,9 +22,9 @@
 ### Definizione Limite
 >[!info] Definizioni
 >Elenchiamo di seguito 2 definizioni uguali di limite
->>[!example] Definizione con definizione di [[Limiti di Successioni#Definizioni|successione]]
->>Sia $I$ un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
->>Sia $f:I\to \mathbb{R},c\in[inf(I),sup(I)]$ ([[Insiemi Numerici#Insiemi Limitati|limitazioni]]),$l\in\overline{\mathbb{R}}$
+>>[[../Successioni/Limiti di Successioni#Definizioni|successione]]
+>>Sia $I$ un [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[../Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
+>>Sia $f:I\to \mathbb{R},c\in[[../Insiemi/Insiemi Numerici#Insiemi Limitati|limitazioni]]),$l\in\overline{\mathbb{R}}$
 >>Diciamo che $\exists\lim\limits_{x\to+c}f(x)=l$ se:
 >>$$\forall(a_{n})_{n\in\mathbb{N}}\text{ successione in }I\setminus\{ c \}:\lim\limits_{n\to+\infty}a_{n}=c$$
 >>Si ha
@@ -33,8 +33,8 @@
 >>>Comunque io scelga una successione di punti che tende a $c$, quando ad $a_{n}$ applico la funzione il valore deve tendere a $l$
 >
 >>[!example] Definizione 2
->>Sia $I$ un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
->>Sia $f:I\to \mathbb{R},c\in[inf(I),sup(I)]$ ([[Insiemi Numerici#Insiemi Limitati|limitazioni]]),$l\in\overline{\mathbb{R}}$
+>>Sia $I$ un [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[../Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
+>>Sia $f:I\to \mathbb{R},c\in[[../Insiemi/Insiemi Numerici#Insiemi Limitati|limitazioni]]),$l\in\overline{\mathbb{R}}$
 >>Diciamo che $\exists\lim\limits_{x\to+c}f(x)=l$ se:
 >>$$\forall \mathrm{V} \text{ intorno di } l, \exists \mathrm{U}_{\mathrm{V}}\text{ intorno di }c: \forall x\in\mathrm{U}_{\mathrm{V}}\setminus\{c\}$$
 >>Si ha: $f(x)\in\mathrm{V}$
@@ -50,7 +50,7 @@ $$
 \forall\mathcal{E}>0,\exists \delta_{\mathcal{E}}>0:\text{ se }|x-c|<\delta_{\mathcal{E}} \text{ si ha }|f(x)-l|<\mathcal{E}, x\neq c
 $$
 ###### Spiegazione grafica
-![[definizioneLimite.png]]
+![[attatchements/definizioneLimite.png]]
 
 >[!done] In Breve
 >Fissato un $\mathcal{E} >0$, esiste un $\delta>0$
@@ -65,7 +65,7 @@ $$
 - Le proprietà dei limiti di funzione sono analoghe a quelle per le successioni
 ### Unicità del limite
 >[!info] Definizione
->Sia $I$ un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
+>Sia $I$ un [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[../Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
 >Sia $f:I\to \mathbb{R},c\in[inf(I),sup(I)]$ ,$m,l\in\overline{\mathbb{R}}$
 >Se $$\lim\limits_{x\to c}f(x)=l \text{ e } \lim\limits_{x\to c}f(x)=m$$
 ><u>Allora</u>
@@ -73,7 +73,7 @@ $$
 
 ### Teorema della permanenza del segno
 >[!info] Definizione
->Sia $I$ un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
+>Sia $I$ un [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[../Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
 >Sia $f:I\to \mathbb{R},c\in[inf(I),sup(I)]$ ,$l\in\overline{\mathbb{R}}$
 >Supponiamo che $$\lim\limits_{x\to c}f(x)=l$$
 ><u>Allora</u>
@@ -84,7 +84,7 @@ $$
 
 ### Teorema dei due Carabinieri
 >[!info] Definizione
->Sia $I$ un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
+>Sia $I$ un [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[../Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
 >Sia $f,g,h:I\to \mathbb{R},c\in[inf(I),sup(I)]$ ,$l\in\mathbb{R}$
 >Se $$\lim\limits_{x\to c}f(x)=l,\ \ \lim\limits_{x\to c}=h(x)=l$$
 >E $$\exists \text{ un intorno } \mathrm{U}\text{ di c }:f(x)\leq g(x) \leq h(x), \forall x \in \mathrm{U}\cap\setminus\{ c \}$$
@@ -93,10 +93,10 @@ $$
 
 ### Limiti unilateri
 >[!info] Definizione
->Sia $I$ un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
+>Sia $I$ un [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] o un [[../Funzioni/Introduzione Funzioni#Intervallo Forato|intervallo forato]]
 >Sia $f:I\to \mathbb{R},c\in[inf(I),sup(I)]\cap\mathbb{R}$ ,$l\in\overline{\mathbb{R}}$
 >Diciamo che $f$ ha limite per $x\to c$ da sinistra (scriviamo $x\to c^-$)
->Se ([[Definizioni_Analisi#Notazione Restrizione del dominio|notazione]]) $$\lim\limits_{x\to c}f(x)_{\displaystyle{|_{I\cap(-\infty,c)}}}=l$$
+>Se ([[../../Definizioni/Definizioni_Analisi#Notazione Restrizione del dominio|notazione]]) $$\lim\limits_{x\to c}f(x)_{\displaystyle{|_{I\cap(-\infty,c)}}}=l$$
 
 >[!example] Osservazione
 >$$\exists \lim\limits_{x\to c}f(x)\Leftrightarrow \begin{cases}\exists \lim\limits_{x\to c^-}f(x)\\ \lim\limits_{x\to c^+}f(x)\end{cases}$$
@@ -114,7 +114,7 @@ $$
 
 ## Teorema degli Zeri
 >[!info] Teorema
->Sia $f:[a,b]\to \mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]]
+>Sia $f:[[../Funzioni/Introduzione Funzioni#Continuità|continua]]
 >e supponiamo: $f(a)\cdot f(b)<0$
 ><u>Allora</u>
 >$$\exists c\in(a,b):f(c)=0$$
@@ -154,14 +154,14 @@ Iterando il ragionamento (Metodo di Bisezione) si hanno 2 possibilità
 >>La funzione nei punti delle successioni è concorde (stesso segno) rispetto al punto nel suo estremo
 
 - Date queste proprietà:
-	- Dalle proprietà 2,3 segue che per il [[Successioni#Limiti di Successioni Monotone|teorema del limite di successioni monotone]] $\exists\lim\limits_{n\to +\infty} a_{n},b_{n}$ inoltre dalla proprietà numero 1 segue che tali limiti sono numeri reali
+	- Dalle proprietà 2,3 segue che per il [[../Successioni/Successioni#Limiti di Successioni Monotone|teorema del limite di successioni monotone]] $\exists\lim\limits_{n\to +\infty} a_{n},b_{n}$ inoltre dalla proprietà numero 1 segue che tali limiti sono numeri reali
 	- Dalla proprietà numero 4 ho che $\lim\limits_{n\to +\infty}b_{n}-a_{n} = 0$ quindi per forza i due limiti sono uguali
 		- $\lim\limits_{n\to +\infty}a_{n} = \lim\limits_{n\to +\infty}b_{n} = c$
-	- Infine dalla proprietà 5, usando il [[Limiti di Successioni#Teorema del Confronto|teorema del confronto]] ho che
+	- Infine dalla proprietà 5, usando il [[../Successioni/Limiti di Successioni#Teorema del Confronto|teorema del confronto]] ho che
 		- $\lim\limits_{n\to +\infty}f(a_{n})\leq0$
 		- E analogamente
 		- $\lim\limits_{n\to +\infty}f(b_{n})\geq0$
-- Poichè $f$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]] si ha che:
+- Poichè $f$ è [[../Funzioni/Introduzione Funzioni#Continuità|continua]] si ha che:
 	- $\lim\limits_{n\to +\infty}f(a_{n})=f(c)\leq0$
 	- $\lim\limits_{n\to +\infty}f(b_{n})=f(c)\geq0$
 - Ne deduciamo quindi che $f(c) = 0\ \ \ \ \ \ \ \ \  \#$
@@ -169,9 +169,9 @@ Iterando il ragionamento (Metodo di Bisezione) si hanno 2 possibilità
 ## Teorema dei valori Intermedi
 ---
 >[!info] Teorema
->Sia $I$ intervallo di $\mathbb{R}$, sia $f:I\to\mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]] 
+>Sia $I$ intervallo di $\mathbb{R}$, sia $f:I\to\mathbb{R}$ [[../Funzioni/Introduzione Funzioni#Continuità|continua]] 
 ><u>Allora</u>
->$f(I)$ è a sua volta un intervallo (o [[Definizioni_Analisi#Intervallo degenere|intervallo degenere]])
+>$f(I)$ è a sua volta un intervallo (o [[../../Definizioni/Definizioni_Analisi#Intervallo degenere|intervallo degenere]])
 >
 >>[!done] In Breve
 >>Se una funzione è continua, la sua immagine assume tutti i valori fra il massimo e il minimo della funzione

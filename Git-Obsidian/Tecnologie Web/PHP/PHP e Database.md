@@ -4,9 +4,9 @@
 
 - È ***open source***.
 - **Cross Platform**.
-- Usa lo standard [[SQL]].
+- Usa lo standard [[../../DataBase/Interrogazioni/SQL|SQL]].
 
->[!caution] Connessione a [[PHP Hypertext Preprocessor|PHP]]
+>[!caution] PHP Hypertext Preprocessor
 >`{PHP icon} PHP` 5 e successivi possono lavorare con `{sql icon} mySQL` usando:
 >- `MySqliAPI`
 >- `PDO`: `PHP` Data to Object.
@@ -15,7 +15,7 @@
 
 ### MySqli
 >[!info] `API`
->`MySqli` mette a disposizione `API` sia [[Paradigma ad Oggetti|object-oriented]] che **procedurali**.
+>`MySqli` mette a disposizione `API` sia [[../../Ingegneria del Software/Paradigma ad Oggetti|object-oriented]] che **procedurali**.
 
 ```php
 $servername = "localhost";
@@ -50,8 +50,8 @@ $conn->close();
 >È possibile eseguire una *query* di `SQL` di qualsiasi tipo **usando il metodo** `{php icon} query()`.
 
 Il risultato sarà diverso in base al tipo di query eseguito.
-- La query [[DDL]] restituendo semplicemente `true` o `false`.
-- Le query [[DML]] restituiranno i dati.
+- La query [[../../DataBase/Interrogazioni/DDL|DDL]] restituendo semplicemente `true` o `false`.
+- Le query [[../../DataBase/Interrogazioni/DML|DML]] restituiranno i dati.
 
 ##### Prepared Statement
 >[!definizione]

@@ -1,7 +1,7 @@
 ## Dijkstra
 ---
 >[!info] Informazioni
->Algoritmo di ricerca di [[Cammini Minimi con Sorgente Singola|cammini minimi]] di tipo [[Gli Algoritmi Greedy|Greedy]]
+>Algoritmo di ricerca di [[Cammini Minimi con Sorgente Singola|cammini minimi]] di tipo [[../../../Greedy/Gli Algoritmi Greedy|Greedy]]
 >L'algoritmo di basa su un *rilassamento*
 >>[!caution] Struttura della soluzione
 >>Ogni nodo $v$ nel grafo $G$ contiene:
@@ -67,7 +67,7 @@ Se $d[v]\leq d[u]+W(u,v)$ *prima del rilassamento*
 ### Algoritmo di Dijkstra
 >[!info] Strutture‎ 
 >L'algoritmo mantiene un insieme $S$ che contiene i vertici $v$ *il cui peso* del cammino minimo da $s$, $\delta(s,v)$, è già *stato determinato*
->In oltre, l'algoritmo utilizza una [[Queue|coda di priorità]] contenente tutti i nodi in ***ordine di distanza dalla sorgente***, il cui *cammino minimo* non è ancora stato identificato
+>In oltre, l'algoritmo utilizza una [[../../Queue|coda di priorità]] contenente tutti i nodi in ***ordine di distanza dalla sorgente***, il cui *cammino minimo* non è ancora stato identificato
 
 >[!warning] Attenzione
 >L'algoritmo non ***assicura una soluzione ottima*** se il grafo contiene degli ***archi negativi***
@@ -100,7 +100,7 @@ Se $d[v]\leq d[u]+W(u,v)$ *prima del rilassamento*
 ```
 
 ##### Esempio
-![[Dijkstra Example.png]]
+![[attachements/Dijkstra Example.png]]
 
 ### Correttezza
 >[!Teorema] 
@@ -132,7 +132,7 @@ Quindi $d(u)\leq d(v)+d_{P}\qquad \forall v\in Q$
 >[!done] Quindi $d(u)$ è la distanza minima da $s$ a $u$, $\delta(s,u)$
 
 ### Complessità
->*Molto simile alla complessità dell'algoritmo di [[Minimum Spanning Tree#Algoritmo di Prim|Prim]]*
+>*Molto simile alla complessità dell'algoritmo di [[../Minimum Spanning Tree#Algoritmo di Prim|Prim]]*
 
 >[!info] Initialize Single Source
 

@@ -1,6 +1,6 @@
 >*Con le porte `NAND` è possibile realizzare qualsivoglia circuito*
 >*Sarebbe logico creare [[Circuiti Digitali#Circuiti Integrati|circuiti integrati]] con una grande quantità di porte `NAND` indipendenti*
->[[Definizioni_Architettura#Economy|Problema]]
+>[[../../Definizioni/Definizioni_Architettura#Economy|Problema]]
 
 Allo scopo di ***aumentare il rapporto porte/piedini***
 - I chip vengono realizzati *implementando internamente* circuiti più complessi collegando in uscita solo i ***piedini "rilevanti"***
@@ -11,9 +11,9 @@ Allo scopo di ***aumentare il rapporto porte/piedini***
 >Un ***multiplexer*** è un circuito con $2^n$ ***input di dati*** e $n$ ***input di controllo***
 >- Gli *input di controllo* selezionano **quale** fra i $2^n$ *input dati* deve essere ***portato in uscita***
 
-![[Multiplexer.png]]
+![[attachements/Multiplexer.png]]
 #### Esempio
-![[Multiplexer Circuit.png]]
+![[attachements/Multiplexer Circuit.png]]
 *Multiplexer con $8$ input*
 
 ## Demultiplexer
@@ -23,7 +23,7 @@ Allo scopo di ***aumentare il rapporto porte/piedini***
 >In questo caso $1$ ***input dati*** viene "*smistato*" su una delle $2^n$ ***linee di output***
 >- Sempre in base alla selezione degli ***input di controllo***
 
-![[Demultiplexer.png]]
+![[attachements/Demultiplexer.png]]
 
 
 > Un circuito costituito da un ***multiplexer*** $+$ una ***linea dati*** $+$ un ***demultiplexer***
@@ -36,7 +36,7 @@ Allo scopo di ***aumentare il rapporto porte/piedini***
 >Il *decoder* ha $2^n$ ***linee di output*** di cui ***una sola*** viene impostata a $1$
 >- Sarà la linea **selezionata** dal *numero binario in input*
 
-![[Decoder Circuit.png]]
+![[attachements/Decoder Circuit.png]]
 
 >[!done] Ovviamente esiste anche il circuito inverso, chiamato *encoder*
 
@@ -55,7 +55,7 @@ Ogni porta `XOR` confronta una coppia di `BIT`
 - Se almeno una delle coppie è diversa uno degli input della porta `NOR` vale $1$
 	- L'output del comparatore vale $0$
 
-![[Comparator.png]]
+![[attachements/Comparator.png]]
 
 ## Circuiti Aritmetici
 ---
@@ -68,7 +68,7 @@ Ogni porta `XOR` confronta una coppia di `BIT`
 >I `BIT` in *output* sono esattamente la copia di quelli in input traslati tutti di una posizione a destra o a sinistra
 >- La direzione è impostata da un `BIT` di controllo $C$
 
-![[Shifter Circuit.png]]
+![[attachements/Shifter Circuit.png]]
 
 >*Shifter a `8-BIT`*
 
@@ -79,7 +79,7 @@ Ogni porta `XOR` confronta una coppia di `BIT`
 >- Realizzati a loro volta realizzati a partire da ***half-adder*** a $1$ `BIT`
 
 #### Half-Adder
-![[Half Adder.png]]
+![[attachements/Half Adder.png]]
 
 - La **somma** (*sum*) vale $1$ solo se i 2 `BIT` di input sono diversi (`XOR`, $\oplus$)
 - Il **riporto** (*carry*) vale $1$ solo se entrambi gli input sono $1$ (`AND`)
@@ -92,7 +92,7 @@ L'*half-adder* a $1$ `BIT` funziona solo per i `BIT` ***meno significativi*** di
 Per fare una somma con il riporto è necessario utilizzare un ***full-adder*** a $1$ `BIT`
 
 #### Full-Adder
-![[Full Adder.png]]
+![[attachements/Full Adder.png]]
 
 - La **somma** (*sum*) vale $1$ quando un ***numero dispari di input***, compreso il riporto in ingresso vale $1$
 - Il **riporto in uscita** (*carry out*) vale $1$ se il ***numero di input*** a $1$, compreso il riporto in ingresso è maggiore o uguale a $2$

@@ -32,18 +32,18 @@ b(x) = 1
 >$$log(n)^M<n^{\epsilon}<n^M<a{\epsilon n}<a{Mn}<\epsilon n!<Mn!<n^{\epsilon n}$$
 
 >[!done] Trattabile 
-Un [[Problemi e Algoritmi#Problemi|problema]] con una soluzione algoritmica di complessità polinomiale si dice ***trattabile***
+Un [[../Problemi e Algoritmi#Problemi|problema]] con una soluzione algoritmica di complessità polinomiale si dice ***trattabile***
 
 >[!warning] Intrattabile
->Un [[Problemi e Algoritmi#Problemi|problema]] con una soluzione algoritmica  maggiore di una polinomiale si dice ***intrattabile***
+>Un [[../Problemi e Algoritmi#Problemi|problema]] con una soluzione algoritmica  maggiore di una polinomiale si dice ***intrattabile***
 
 >[!danger] Insolubile
-> Un [[Problemi e Algoritmi#Problemi|problema]] di cui non si conosce algoritmo che lo risolva si dice ***insolubile***
+> Un [[../Problemi e Algoritmi#Problemi|problema]] di cui non si conosce algoritmo che lo risolva si dice ***insolubile***
 
 
 ## $O$-Notation
 ---
-Concetto simile a quello di [[Resto di Peano|o piccolo]] in matematica
+Concetto simile a quello di [[../../Analisi/Taylor/Resto di Peano|o piccolo]] in matematica
 La dimensione del [[Complessità di Algoritmi#Tempo di Esecuzione|problema]] per $\text{Example 1}$ è il numero di interi in input
 - Una istanza con $100000$ interi è più grande di una con $1000$
 - E' ovvio che il tempo di esecuzione cresce con la dimensione dell'istanza

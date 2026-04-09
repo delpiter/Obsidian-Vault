@@ -1,4 +1,4 @@
->Descriviamo il moto di un *grave nello spazio*, di un proiettile che **non** avrà un moto **puramente verticale**. Nel seguito trascureremo l’[[Le Forze#Forze di Attrito|attrito]] con l’aria.
+>Descriviamo il moto di un *grave nello spazio*, di un proiettile che **non** avrà un moto **puramente verticale**. Nel seguito trascureremo l’[[../Leggi di Newton e le Forze/Le Forze#Forze di Attrito|attrito]] con l’aria.
 
 >[!tldr] Idea
 >Il proiettile ha un'[[Moto Rettilineo#Accelerazione|accelerazione]] **costante**, di modulo $g$ *diretta verso il basso*.
@@ -15,7 +15,7 @@ $$
 $$
 Con $v_{0}=|\vec{v}_{0}|$
 
-![[MotoProiettile.png]]
+![[attachements/MotoProiettile.png]]
 
 Dato che $a_{x}=0$, avremo:
 $$
@@ -48,4 +48,4 @@ $$
 
 >[!caution] L'accelerazione di gravità agisce solamente sulla componente del vettore $\hat{j}$
 
-![[Accelerazioneg.png]]
+![[attachements/Accelerazioneg.png]]

@@ -6,7 +6,7 @@
 
 - $\omega=\displaystyle\frac{2\pi}{T}\simeq 2.59\times 10^{-6}s^{-1}$
 
-Dalla cinematica del [[Moto Circolare|moto circolare uniforme]], sappiamo che è presente una ***accelerazione centripeta*** di modulo:
+Dalla cinematica del [[../Cinematica/Moto Circolare|moto circolare uniforme]], sappiamo che è presente una ***accelerazione centripeta*** di modulo:
 $$
 a_{L}=\omega^2D_{TL}\simeq 2.6\times 10^{-3} m/s^{2}
 $$
@@ -57,7 +57,7 @@ $$
 ---
 >[!quote] Legge
 >Ogni *particella* nell'universo ***attrae*** ogni altra particella con una forza che è *direttamente proporzionale* al prodotto delle loro **masse** e *inversamente proporzionale* al quadrato della loro **distanza**.
->La [[Leggi di Newton#Seconda Legge di Newton|forza]] è diretta lungo la linea **congiungente** le due particelle.
+>La [[../Leggi di Newton e le Forze/Leggi di Newton#Seconda Legge di Newton|forza]] è diretta lungo la linea **congiungente** le due particelle.
 
 In termini vettoriali possiamo scrivere:
 $$
@@ -94,7 +94,7 @@ $$
 >Un **filo** sottile sostiene un **manubrio** leggero, alle cui estremità sono attaccate due ***piccole masse***.
 >A *terra*, due **grandi masse** uguali sono posizionate in modo da provocare la *torsione* del filo per effetto dell’***attrazione gravitazionale*** esercitata sulle masse sospese.
 
-![[EsperimentoCavendish.png]]
+![[attachements/EsperimentoCavendish.png]]
 
 > *Cavendish* dichiarò che con la sua bilancia era stato in grado di ***pesare la terra***.
 

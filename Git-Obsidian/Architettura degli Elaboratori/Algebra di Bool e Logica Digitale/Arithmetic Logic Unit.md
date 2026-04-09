@@ -11,7 +11,7 @@
 ### ALU a $1$ `BIT`
 >*La figura a seguito mostra una `ALU` a $1$ `BIT`. Nel circuito sono evidenziati i diversi blocchi strutturali*
 
-![[1Bit ALU.png]]
+![[attachements/1Bit ALU.png]]
 - *Gli input `ENA` e `ENB` possono essere utilizzati per forzare a $0$ gli input $A$ e $B$*
 - *È possibile avere come input $\overline{A}$ al posto di $A$ semplicemente impostando a $1$ l'input `INVA`*
 
@@ -30,7 +30,7 @@
 ### ALU a $n$ `BIT`
 >*Il seguente circuito consente di eseguire le operazioni aritmetiche e logiche di base su due parole $A$ e $B$ di lunghezza $8$ `BIT` e di produrre il risultato nella parola $O$, anche essa da $8$ `BIT`*
 
-![[8Bit ALU.png]]
+![[attachements/8Bit ALU.png]]
 
 >[!done] Il circuito è realizzato concatenando $8$ `ALU` a $1$ `BIT`
 

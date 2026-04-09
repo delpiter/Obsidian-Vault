@@ -1,7 +1,7 @@
 ## Sottospazio Ortogonale
 ---
 >[!info] Definizione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{R}$, sia $U$ un suo [[2 - Campi e Spazi Vettoriali#Sottospazio Vettoriale|sottospazio vettoriale]] e consideriamo un prodotto scalare su $V$
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{R}$, sia $U$ un suo [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Sottospazio Vettoriale|sottospazio vettoriale]] e consideriamo un prodotto scalare su $V$
 >Definiamo un ***sottospazio ortogonale*** come:
 >$$U^{\perp} =\{ v\in V:(v,u)=0 \quad\forall u\in U \}$$
 
@@ -46,7 +46,7 @@ $$
 
 ### Altri Sottospazi
 >[!info] Definizione
->Definiamo [[2 - Campi e Spazi Vettoriali#Sottospazio Affine|sottospazio affine]] ***perpendicolare*** a $U$ passante per $p$ il ***sottospazio affine parallelo*** a $U^\perp$ e passante per $p$
+>Definiamo [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Sottospazio Affine|sottospazio affine]] ***perpendicolare*** a $U$ passante per $p$ il ***sottospazio affine parallelo*** a $U^\perp$ e passante per $p$
 
 
 #### Esempio

@@ -39,15 +39,15 @@ I vari protocolli sono frutto del lavoro di gruppi di ricerca
 >[!definizione]
 >Un `ISP` è un'organizzazione che fornisce servizi per l'utilizzo di internet.
 
-Tipicamente un `ISP` si registra come [[Routing Globale#Routing Gerarchico|Autonomous System]].
+Tipicamente un `ISP` si registra come [[../Network Layer/Routing/Routing Globale#Routing Gerarchico|Autonomous System]].
 
 Un `ISP` locale fornisce un servizio a *gruppi di utenti co-localizzato*.
 - Realizza un'infrastruttura con router e switch in un punto della zona detto ***Point of Presence*** (`PoP`).
 
 Un `ISP` collega i propri utenti tramite:
 - ADSL.
-- [[Strato Fisico#Fibra Ottica|Fibra Ottica]]. 
-- [[Radio Comunicazioni|Collegamento Radio]].
+- [[../Physical Layer/Strato Fisico#Fibra Ottica|Fibra Ottica]]. 
+- [[../Physical Layer/Radio Comunicazioni|Collegamento Radio]].
 
 ### Interconnessione tra ISP
 > Teoricamente ogni `ISP` dovrebbe fare peering con ogni altro `ISP` con cui scambia traffico.
@@ -55,7 +55,7 @@ Un `ISP` collega i propri utenti tramite:
 >[!fail] Grande numero di collegamenti dedicati
 
 >[!done] Soluzione
->Alcuni `ISP` svolgono la funzione di `AS` di ***transito*** per interconnettere con una [[Topologie di Rete|topologia]] a stella gli `ISP`.
+>Alcuni `ISP` svolgono la funzione di `AS` di ***transito*** per interconnettere con una [[../Introduzione/Topologie di Rete|topologia]] a stella gli `ISP`.
 
 Gli `ISP` specializzati nel fornire servizi di transito sono anche detti `NSP` (***N***etwork Service Provider).
 - Gli `NSP` spesso coincidono con gli `ISP` di ***tier 1***.
@@ -93,8 +93,8 @@ Il peering avviene fra gli `ISP` dello stesso livello.
 
 ### Progetto IEEE 802
 >[!info] Idea
->Progetto creato per *tentare di definire* degli standard [[LAN]].
+>Progetto creato per *tentare di definire* degli standard [[../Data Link Layer/Networks/LAN]].
 
 > [IEEE 802 - Wikipedia](https://en.wikipedia.org/wiki/IEEE_802)
 
-![[IEEE802Project.png]]
+![[attachements/IEEE802Project.png]]

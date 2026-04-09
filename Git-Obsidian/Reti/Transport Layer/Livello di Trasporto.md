@@ -1,4 +1,4 @@
-> Layer che sta al di sopra del [[Descrizione dei Livelli#Network Layer|network layer]] è lo strato che si occupa di creare un dialogo ***end-to-end***.
+> Layer che sta al di sopra del [[../Standards/Descrizione dei Livelli#Network Layer|network layer]] è lo strato che si occupa di creare un dialogo ***end-to-end***.
 
 >[!hint] Obbiettivo
 >L'**obbiettivo** del *livello transport* è quello di garantire il dialogo affidabile fra le applicazioni finali.
@@ -8,7 +8,7 @@
 >- [[TCP]]: *Connection Oriented*.
 >- [[UDP]]: *Connectionless*.
 
-Il ***network layer*** consente di applicare una strategia di [[Multiplexing]] nella comunicazione.
+Il ***network layer*** consente di applicare una strategia di [[../Introduzione/Multiplexing|multiplexing]] nella comunicazione.
 - Permette a più processi applicativi di usare le *funzioni di comunicazione in contemporanea*.
 
 Questo layer ha il compito di controllare il *comportamento del canale di comunicazione* ***end-to-end***.

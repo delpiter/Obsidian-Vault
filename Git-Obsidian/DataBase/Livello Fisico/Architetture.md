@@ -2,7 +2,7 @@
 ---
 >[!info] Architettura $1$-Tier
 >Nell'***architettura $1$-Tier*** è eseguito tutto sullo stesso livello, solitamente su una singola macchina.
->L'utente interagisce direttamente con il [[Git-Obsidian/DataBase/Introduzione#Database|DB]].
+>L'utente interagisce direttamente con il [[../Introduzione#Database|DB]].
 
 >[!done] Vantaggi
 
@@ -17,7 +17,7 @@
 ## A due Livelli
 ---
 >[!info] Architettura $2$-Tier
->Separazione tra ***client e server***, il client gestisce l'interfaccia utente e la logica applicativa base, il server gestisce il [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] e i dati.
+>Separazione tra ***client e server***, il client gestisce l'interfaccia utente e la logica applicativa base, il server gestisce il [[../Introduzione#DBMS|DBMS]] e i dati.
 >La comunicazione avviene tramite driver (***ODBC*** o ***JDBC***).
 
 

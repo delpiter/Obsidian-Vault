@@ -6,7 +6,7 @@
 ---
 >*Tramite due semplici porte [[Logica Digitale#NOR|NOR]] è possibile realizzare un circuito bistabile denominato* ***latch SR***
 
-![[LatchSR.png]]
+![[attachements/LatchSR.png]]
 
 >[!warning] Differenze da circuito Combinatorio
 >A differenza dal ***circuito combinatorio***, il ***Latch SR***, o altri circuiti sequenziali in generale, l'*output* non è determinato univocamente dai valori in input
@@ -22,10 +22,10 @@
 >- $Q$ vale $1$ (**stato stabile $1$**), la porta `NOR` superiore continua ad avere *output* $0$ e quella inferiore *output* $1$
 
 >[!done] In Definitiva
->Un ***latch SR*** ricorda, fino a che è alimentato elettricamente, qual è stato l'ultimo valore impostato e pertanto può essere utilizzato come elemento di base per la realizzazione di memorie [[Organizzazione della Memoria#Memoria Principale|RAM]] 
+>Un ***latch SR*** ricorda, fino a che è alimentato elettricamente, qual è stato l'ultimo valore impostato e pertanto può essere utilizzato come elemento di base per la realizzazione di memorie [[../Architettura del Calcolatore/Organizzazione della Memoria#Memoria Principale|RAM]] 
 
 Nei circuiti più complessi, il *latch* è rappresentato nel modo seguente
-![[Latch-Circuit-Symbol.png]]
+![[attachements/Latch-Circuit-Symbol.png]]
 *Rispettivamente: Latch attivato con **clock alto** e latch attivato con* ***clock basso***
 ### Set
 >[!info] `SET` *state*
@@ -54,7 +54,7 @@ Questa situazione il cui output è *indeterminato*, ***dovrebbe essere evitata**
 - La figura mostra un ***Latch di tipo D sincronizzato*** che risolve il problema di avere $S$ e $R$ contemporaneamente a $1$
 - Il circuito ha un *input* (**trigger**) che permette di ***sincronizzare*** la scrittura con un evento
 
-![[Sync-Latch.png]]
+![[attachements/Sync-Latch.png]]
 *Impostare $D$ a $1$ esegue un `SET`, mentre impostare $D$ a $0$ esegue un `RESET`*
 ## Flip-Flop
 ---
@@ -68,11 +68,11 @@ Questa situazione il cui output è *indeterminato*, ***dovrebbe essere evitata**
 >>Il cambiamento di stato è determinato dal ***livello*** (*alto/basso*) del **clock**
 
 Nei circuiti più complessi, il *flip-flop* è rappresentato nel modo seguente
-![[Flip-Flop-Circuit-Symbol.png]]
+![[attachements/Flip-Flop-Circuit-Symbol.png]]
 *Rispettivamente: flip-flop attivato con **clock alto** e flip-flop attivato con* ***clock basso***
 
 ## Tipi di Memoria con Circuiti Sequenziali
 ---
->*Come mostrato in tabella esistono diversi tipi di memoria, di cui le più comuni sono: [[Organizzazione della Memoria#Memoria Principale|RAM]] e `ROM`*
+>*Come mostrato in tabella esistono diversi tipi di memoria, di cui le più comuni sono: [[../Architettura del Calcolatore/Organizzazione della Memoria#Memoria Principale|RAM]] e `ROM`*
 
-![[Sequential Memories.png]]
+![[attachements/Sequential Memories.png]]

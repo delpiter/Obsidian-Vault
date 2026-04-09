@@ -1,11 +1,11 @@
 >*Il compito della scheda grafica è quello di tradurre la rappresentazione dell'immagine prodotta dal processore in un formato visualizzabile dal monitor*
 
 
-![[gpu.png]]
+![[attachements/gpu.png]]
 >[!info] GPU
 >***G***raphical ***P***rocessing ***U***nit
 >Processore *secondario*, inserito nelle *schede grafiche*, creato per ***limitare lo spreco di tempo*** di [[La CPU|CPU]]
->La `GPU` può essere utilizzata sia per la grafica `3D` sia per la grafica [[Definizioni_Architettura#Raster Graphics|raster]]
+>La `GPU` può essere utilizzata sia per la grafica `3D` sia per la grafica [[../../Definizioni/Definizioni_Architettura#Raster Graphics|raster]]
 >La `CPU` del calcolatore non calcola più la posizione e il colore di tutti i `PIXEL`, ma invia un comando alla `GPU` indicandogli cosa ***deve essere disegnato***
 
 ^985740
@@ -83,7 +83,7 @@
 | $16$-`BIT` | $65.536$     | $2$    | High Color         |
 | $24$-`BIT` | $16.777.216$ | $3$    | True Color (`RGB`) |
 
-![[Resolutions.png]]
+![[attachements/Resolutions.png]]
 
 ### Interfaccia
 

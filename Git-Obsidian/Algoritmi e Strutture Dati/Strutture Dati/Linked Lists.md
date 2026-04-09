@@ -13,7 +13,7 @@ struct node{
 	struct node *next;
 };
 ```
- ![[Linked-List.webp]]
+ ![[attachements/Linked-List.webp]]
  
  >[!warning] Problema
  
@@ -39,7 +39,7 @@ struct node{
 	struct node *prev;
 };
 ```
-![[Doubly-Linked-List.png]]
+![[attachements/Doubly-Linked-List.png]]
 
 ## Operazioni
 ---
@@ -74,8 +74,8 @@ static void NodeInsert(struct node *L, int elem){
 >[!info] Cancellazione
 >La **rimozione di un nodo**, come per l'inserimento, è critica in termini di *perdita di informazione*
 
-![[Doubly Linked List-Delete-1.png]]
-![[Doubly Linked List-Delete-2.png]]
+![[attachements/Doubly Linked List-Delete-1.png]]
+![[attachements/Doubly Linked List-Delete-2.png]]
 
 ```c
 static void NodeDelete(struct node *L){
@@ -127,7 +127,7 @@ struct BinaryTreeNode{
 	BinaryTreeNode* rChild;
 }
 ```
-![[Binary-Tree.png]]
+![[attachements/Binary-Tree.png]]
 
 >[!warning] Problema
 
@@ -150,4 +150,4 @@ struct TreeNode{
 }
 ```
 
-![[Linked-List-Tree.png]]
+![[attachements/Linked-List-Tree.png]]

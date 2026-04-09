@@ -5,23 +5,23 @@
 >Chiamiamo sottografico di $f$, l'insieme:
 >$$ \large \Gamma f = \{ (x,y) \in \mathbb{R} \times \mathbb{R} \mid x \in [a,b], y \in [0, f(x)] \} $$
 
-![[Pasted image 20231115133900.png]]
+![[attachements/Pasted image 20231115133900.png]]
 
 ### Osservazione
 $$
 (b-a)\cdot \inf\limits_{[a,b]}f\leq Area(\Gamma_{f})\leq (b-a)\cdot \sup\limits_{[a,b]}f
 $$
-![[ossSottografo.png]]
+![[attachements/ossSottografo.png]]
 
 Analogamente, se suddivido $[a,b]$ in $n$ parti uguali $[x_{i-1},x_{i}]$, posso dire che:
 $$
 \sum^n_{i=1}(x_{i}-x_{i-1})\cdot \inf\limits_{[x_{i-1},x_{i}]}f\leq Area(\Gamma_{f})\leq \sum^n_{i=1}(x_{i}-x_{i-1})\cdot \sup\limits_{[x_{i-1},x_{i}]}f
 $$
-![[limSottografo.png]]
+![[attachements/limSottografo.png]]
 ## Integrale di Funzioni Continue
 ---
 >[!info] Definizione
->Sia $f:[a,b]\to\mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]]
+>Sia $f:[[../Funzioni/Introduzione Funzioni#Continuità|continua]]
 >Suddivido $[a,b]$ in $n$ intervalli della forma $[x_{i-1},x_{i}]$ dove:
 >$$
 \begin{cases}
@@ -38,7 +38,7 @@ x_{i}-x_{i-1} = \displaystyle{\frac{b-a}{n}}
 >$$S_{R}(f,c_{1},c_{2},\dots,c_{n})=\sum^n_{i=1}f(c_{i})\cdot \displaystyle{\frac{b-a}{n}}$$
 
 >[!info] Teorema
->Sia $f:[a,b]\to\mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]]
+>Sia $f:[[../Funzioni/Introduzione Funzioni#Continuità|continua]]
 ><u>Allora</u>
 >$$\exists \lim\limits_{n\to +\infty}S_{R}(f,c_{1},c_{2},\dots,c_{n})\in\mathbb{R}$$
 >E non dipende dalla scelta di $c_{i}$
@@ -60,7 +60,7 @@ $$
 \int _{a}^b f(x)\, dx = \int _{a}^b f^+(x)\, dx - \int _{a}^b f^-(x)\, dx 
 $$
 ### Dimostrazione Grafica
-![[integraleNegativo.jpg]]
+![[attachements/integraleNegativo.jpg]]
 ## Teorema della Media Integrale
 ---
 >[!info] Teorema
@@ -76,7 +76,7 @@ $$
 >>$c$ può essere considerato come "altezza media" della funzione
 
 ### Dimostrazione
-Il $\max\limits_{[a,b]}$ e il $\min\limits_{[a,b]}$ esistono in $f$ per il [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Teorema di Weierstruss|teorema di Weierstruss]]
+Il $\max\limits_{[[../Funzioni/Introduzione Funzioni#Teorema di Weierstruss|teorema di Weierstruss]]
 - Si ha:
 $$
 \min\limits_{[a,b]}\leq f(x) \leq \max\limits_{[a,b]}, \forall x \in[a,b]
@@ -90,7 +90,7 @@ $$
 \min\limits_{[a,b]}(b-a) \leq \int _{a}^b f(x)\, dx \leq \max\limits_{[a,b]}(b-a)$$
 - Divido entrambi i membri per $(b-a)$ e ottengo il punto $1$
 Dalla dimostrazione del punto $1$ so che il valore della media integrale è compresa fra il minimo e il massimo di $f$
-- Per il [[Limiti#Teorema dei valori Intermedi |teorema dei valori intermedi]], che posso applicare ad $f$ poichè funzione continua, e ho che:
+- Per il [[../Limiti/Limiti#Teorema dei valori Intermedi |teorema dei valori intermedi]], che posso applicare ad $f$ poichè funzione continua, e ho che:
 $$
 \displaystyle{\frac{1}{b-a}} \int _{a}^b f(x)\, dx \in f([a,b])
 $$

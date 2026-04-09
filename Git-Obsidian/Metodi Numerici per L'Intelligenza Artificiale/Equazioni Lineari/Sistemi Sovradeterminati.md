@@ -16,7 +16,7 @@ $$
 $$
 
 >[!danger] Attenzione
->La risoluzione di un sistema lineare sovradeterminato risulta essere un problema [[Condizionamento#Condizionamento di un Problema|mal posto]].
+>La risoluzione di un sistema lineare sovradeterminato risulta essere un problema [[../Condizionamento e Stabilità/Condizionamento#Condizionamento di un Problema|mal posto]].
 
 ## Least Squares
 ---
@@ -27,7 +27,7 @@ $$
 >- Definito il vettore residuo come:
 >$$r(x):=Ax-b$$
 >
->Cerchiamo il vettore $x^* \in \mathbb{R}^n$ che rende minima la [[Norma|norma 2]] al ***quadrato del residuo***.
+>Cerchiamo il vettore $x^* \in \mathbb{R}^n$ che rende minima la [[../Norma|norma 2]] al ***quadrato del residuo***.
 
 $$
 x^*=\arg\min\limits_{x\in\mathbb{R}^n }\|r(x)\|_{2}^2=\arg\min\limits_{x\in\mathbb{R}^n }\|Ax-b\|_{2}^2
@@ -40,12 +40,12 @@ F(x)=\|Ax-b\|_{2}^2=(Ax-b)^T(Ax-b)=x^TA^TAx-x^TA^Tb-b^TAx+b^Tb= \\
 $$
 - Poniamo $G=A^TA$
 
-> Si ha che $G$ è [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]].
+> Si ha che $G$ è [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]].
 
 $$
 F(x)=x^TGx-2x^TA^Tb+b^Tb
 $$
-Per *calcolare* il valore di $x^*\in\mathbb{R}^n$ che ***rende minimo*** $F(x)$, calcoliamo il [[Calcolo Differenziale#Gradiente|gradiente]] della funzione $F(x)$ e **imponiamo che si annulli**.
+Per *calcolare* il valore di $x^*\in\mathbb{R}^n$ che ***rende minimo*** $F(x)$, calcoliamo il [[../../Analisi/Funzioni a due Variabili/Calcolo Differenziale#Gradiente|gradiente]] della funzione $F(x)$ e **imponiamo che si annulli**.
 
 >[!tip] Ricorda
 >Il gradiente rispetto ad $x$ della forma quadratica $x^TGx$ con $G$ ***simmetrica*** è:
@@ -60,7 +60,7 @@ Gx=A^Tb
 $$
 - Equazioni note come ***equazioni normali***.
 
-> Ora dobbiamo verificare che il [[7 - Determinante di una Matrice|determinante]] della matrice $G$ sia ***diverso da zero***.
+> Ora dobbiamo verificare che il [[../../Algebra e Geometria/Applicazioni/7 - Determinante di una Matrice|determinante]] della matrice $G$ sia ***diverso da zero***.
 
 - È inoltre necessario che la matrice Hessiana valutata nella soluzione sia definita positiva.
 $$
@@ -68,7 +68,7 @@ $$
 $$
 
 >[!help] Pre Requisiti
->La matrice $G$ deve essere [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]].
+>La matrice $G$ deve essere [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]].
 
 - Verifichiamo che sia ***definita positiva***.
 
@@ -89,7 +89,7 @@ $$
 >Dato il ***sistema lineare sovradeterminato*** $Ax=b$ dove $A\in\mathbb{R}^{m\times n},\quad x\in\mathbb{R}^n, \quad b\in\mathbb{R}^m,\quad m>n$
 >$\arg\min\limits_{x\in\mathbb{R}^n }\|Ax-b\|_{2}^2\iff$ è la *soluzione* di $A^TAx=A^Tb$
 >>[!quote]
->>La soluzione è unica se e solo se la matrice $A$ ha [[6 - Cambiamenti di Base#Rango di una Matrice|rango massimo]].
+>>La soluzione è unica se e solo se la matrice $A$ ha [[../../Algebra e Geometria/Applicazioni/6 - Cambiamenti di Base#Rango di una Matrice|rango massimo]].
 
 Se questa condizione è verificata, il vettore $x^*$ tale che:
 $$

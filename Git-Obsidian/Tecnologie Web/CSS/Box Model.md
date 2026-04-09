@@ -30,7 +30,7 @@ div {
 >- *Border*.
 >- *Margin*.
 
-![[BoxModel.png]]
+![[attachements/BoxModel.png]]
 
 ### Content
 >[!tldr] Idea

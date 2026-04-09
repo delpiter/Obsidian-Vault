@@ -31,15 +31,15 @@
 >Un ***evento*** è un sottoinsieme di $\Omega$ di cui vorremo calcolare la *probabilità*
 
 #### Esempio
-[[#1)]]
+[[#1|#1)]])
 Esce $5$ o $6$
 - $E=\{ 5,6 \}$
 
-[[#2)]]
+[[#2|#2)]])
 "Pareggio"
 - $E=\{ (n,n),n \in \mathbb{N} \}$
 
-[[#3)]]
+[[#3|#3)]])
 Il bambino è alto almeno un metro
 - $E=[100,300]$
 

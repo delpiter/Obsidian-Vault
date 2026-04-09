@@ -1,10 +1,10 @@
 ## Forma Bilineare
 ---
 >[!info] Definizione
->Sia $\mathbb{K}$ un [[2 - Campi e Spazi Vettoriali#Campo|campo]] e $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$
+>Sia $\mathbb{K}$ un [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Campo|campo]] e $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$
 >Una ***forma bilineare*** su $V$ è un'applicazione $\beta$:
 >$$\begin{array}\ V\times V \to \mathbb{K} \\ (v,u)\mapsto \beta(v,u) \end{array}$$
->Che è [[1 - Applicazioni Lineari#Applicazione Lineare|lineare]] in ciascuno degli argomenti
+>Che è [[../Applicazioni/1 - Applicazioni Lineari#Applicazione Lineare|lineare]] in ciascuno degli argomenti
 >>[!done] In Breve
 >>$\forall v,v',u,u'\in V, \forall a\in\mathbb{K}$
 >>1. $\beta(v+v',u)=\beta(v,u)+\beta(v',u)$
@@ -222,7 +222,7 @@ $$
 >[!info] Definizione
 >Due matrici $A,M$ sono ***congruenti*** se
 >$\exists$ una matrice invertibile $B:M=B^TAB$
->>[!done] Essere congruenti è una [[1 - Introduzione#Relazione di Equivalenza|relazione di equivalenza]]
+>>[[../Basi dell'algebra/1 - Introduzione#Relazione di Equivalenza|relazione di equivalenza]]
 
 >[!Teorema]
 >Due matrici $A,M$ sono congruenti $\iff$ rappresentano la ***stessa forma bilineare*** in basi diverse

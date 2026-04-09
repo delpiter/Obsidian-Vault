@@ -1,10 +1,10 @@
 > I protocolli sono progettati per garantire:
 
 >[!summary] Funzionalità
->La *trasmissione* dei dati deve poter avvenire ***risolvendo i problemi*** che si riscontrano nell'accesso e nell'uso del [[Git-Obsidian/Reti/Introduzione/Introduzione#Canale|canale]].
+>La *trasmissione* dei dati deve poter avvenire ***risolvendo i problemi*** che si riscontrano nell'accesso e nell'uso del [[../Introduzione/Introduzione#Canale|canale]].
 >>[!example] Esempi
->>- [[Controllo dell'Errore]] ed eventuale *recupero*.
->>- [[ARQ|Controllo di Flusso e Sequenza]].
+>>- [[../Data Link Layer/Controllo dell'Errore]] ed eventuale *recupero*.
+>>- [[../Data Link Layer/ARQ|Controllo di Flusso e Sequenza]].
 
 
 >[!caution] Prestazioni
@@ -20,7 +20,7 @@
 >- $p(t)$: Numero di *partenze* dal sistema al tempo $t$.
 >- - $k(t)$: Numero di *richieste* accettate in **attesa di essere soddisfatte**.
 
-![[Performance.png|500]]
+![[attachements/Performance.png|500]]
 
 > Richieste offerte e smaltite:
 
@@ -113,7 +113,7 @@ Da una valutazione della ***capacità del servizio*** del sistema considerato.
 
 Il sistema ha una ***capacità massima finita*** $\lambda_{s}^{\max}$di smaltire richieste.
 - Se le richieste offerte sono eccessive una parte *non può essere soddisfatta*.
-![[IdealSystem.png|500]]
+![[attachements/IdealSystem.png|500]]
 
 >[!caution] In un sistema reale
 
@@ -122,10 +122,10 @@ La riduzione di capacità si interpreta come ***perdita di efficienza***.
 $$
 \eta=\displaystyle{\frac{\lambda_{s}^{e}}{\lambda_{s}^{\max}}}\leq 1
 $$
-![[RealSystem.png|500]]
+![[attachements/RealSystem.png|500]]
 
 ##### Capacità Massima e Efficienza
->[!question] Quali sono le prestazioni ideali per un protocollo [[ISO-OSI#Stack ISO-OSI|Data Link]]?
+>[[../Standards/ISO-OSI#Stack ISO-OSI|Data Link]]?
 
 Il protocollo invia `bit` dello strato $3$ sul canale.
 - La sua ***capacità massima teorica*** è la velocità del canale $C$.
@@ -165,8 +165,8 @@ $$
 >[!Ipotesi]
 1. Le perdite di pacchetti in prima approssimazione sono ***trascurabili***.
 	- $\lambda_{p}=0, \lambda_{s}=\lambda$
-2. I pacchetti arrivano casualmente con [[3 - Variabili Aleatorie#Variabili di Poisson|Distribuzione di Poisson]]. ($k$ arrivi al tempo $t$)
-3. La dimensione dei pacchetti è ***casuale*** con [[11 - Variabili Esponenziali|distribuzione esponenziale]] uguale per tutti i pacchetti.
+2. I pacchetti arrivano casualmente con [[../../Matematica Discreta e Probabilità/Probabilità/3 - Variabili Aleatorie#Variabili di Poisson|Distribuzione di Poisson]]. ($k$ arrivi al tempo $t$)
+3. La dimensione dei pacchetti è ***casuale*** con [[../../Matematica Discreta e Probabilità/Probabilità/Variabili Continue/11 - Variabili Esponenziali|distribuzione esponenziale]] uguale per tutti i pacchetti.
 
 ##### Utilizzazione
 >[!tldr] Situazione ideale
@@ -179,7 +179,7 @@ $$
 - $B(T)$: Tempo in cui il servizio è usato.
 - $T$: Tempo totale.
 
-![[Utilization.png]]
+![[attachements/Utilization.png]]
 
 $\rho$ può anche essere visto come: $\displaystyle{\frac{\lambda}{\mu}}$
 - Rapporto tra il ritmo di arrivo delle richieste quello di servizio.

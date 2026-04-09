@@ -1,11 +1,11 @@
 ## CPU Eterogenee
 ---
->L'esecuzione di un programma in una [[La CPU|CPU]] [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Parallelismo nel Chip|eterogenea]] potrebbe essere altamente alterata in base a dove viene eseguita.
+>L'esecuzione di un programma in una [[../../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU|CPU]] [[../../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Parallelismo nel Chip|eterogenea]] potrebbe essere altamente alterata in base a dove viene eseguita.
 
 >[!info] Processori Omogenei
 >Per ***processori omogenei*** l'opzione di default va bene.
 
-Anche se è presente l'[[Git-Obsidian/High Performance Computing/Architetture Parallele#Hardware Multithreading|hyperthreading]]:
+Anche se è presente l'[[../Architetture Parallele#Hardware Multithreading|hyperthreading]]:
 - I threads sono spalmati prima sui core fisici e poi sui *core virtuali*.
 
 >[!warning] Processori Eterogenei
@@ -29,7 +29,7 @@ Per *processori eterogenei* è necessario specificare quali `CPU` il programma d
 
 
 `{sh icon} OMP_PROC_BIND`
-- Previene che lo [[7 - Scheduler|scheduler]] del *sistema operativo* **migri** i threads a una `CPU` diversa.
+- Previene che lo [[../../Sistemi Operativi/Teoria/7 - Scheduler|scheduler]] del *sistema operativo* **migri** i threads a una `CPU` diversa.
 
 `{sh icon} OMP_DISPLAY_ENV=true`
 - Stampa tutti i valori delle variabili d'ambiente di ***OpenMP***.

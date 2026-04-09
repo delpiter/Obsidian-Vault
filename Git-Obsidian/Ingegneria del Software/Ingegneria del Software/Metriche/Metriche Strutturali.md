@@ -3,10 +3,10 @@
 >[!tldr] Idea
 >Il ***numero ciclomatico*** è una definizione operativa di complessità del flusso di controllo del programma.
 
-È un metodo [[Definizioni_Ingegneria-del-Software#White-Box|white-box]].
+È un metodo [[../../../Definizioni/Definizioni_Ingegneria-del-Software#White-Box|white-box]].
 
 >[!definizione]
-> Il ***numero ciclomatico*** di un [[I Grafi#Grafo Connesso|grafo fortemente connesso]] è il numero minimo di archi che occorre eliminare per trasformarlo in un [[Gli Alberi|albero]].
+> Il ***numero ciclomatico*** di un [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi#Grafo Connesso|grafo fortemente connesso]] è il numero minimo di archi che occorre eliminare per trasformarlo in un [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Alberi/Gli Alberi|albero]].
 
 > Esempio
 
@@ -120,4 +120,4 @@ M=M_{Nom}\times\prod_{i=1}^{15}c_{i}
 $$
 #### Advanced/Detailed COCOMO
 >[!important] Advanced
->Incorpora tutte le caratteristiche del `COCOMO` intermedio con una **valutazione dell'impatto dei vari costi per** [[Il Ciclo di Vita del Software|ogni passo]] del processo di ingegneria del software.
+>Incorpora tutte le caratteristiche del `COCOMO` intermedio con una **valutazione dell'impatto dei vari costi per** [[../../Ciclo di Vita del Software/Il Ciclo di Vita del Software|ogni passo]] del processo di ingegneria del software.

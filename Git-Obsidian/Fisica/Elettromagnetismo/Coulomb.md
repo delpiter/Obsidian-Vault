@@ -3,7 +3,7 @@
 > Condotti esperimenti con una bilancia di torsione.
 
 >[!summary] Concetto
->Simile all'[[Legge di Gravitazione#Esperimento di Cavendish|Esperimento di Cavendish]].
+>Simile all'[[../Gravitazione/Legge di Gravitazione#Esperimento di Cavendish|Esperimento di Cavendish]].
 >Se $q_{1}$ e $q_{2}$ sono cariche, la [[Elettromagnetismo#Elettrostatica|forza elettrostatica]] fa ruotare il pendolo di torsione.
 >All'equilibrio il *momento meccanico* dovuto alla torsione del filo **bilancia** il momento dovuto alla ***forza elettrostatica***.
 
@@ -12,7 +12,7 @@
 $$
 |\vec{F}|\propto \displaystyle{\frac{|q_{1}||q_{2}|}{r^2}}
 $$
-![[EsperimentoCoulomb.jpg|500]]
+![[attachements/EsperimentoCoulomb.jpg|500]]
 
 >[!check] Legge di Coulomb nel Vuoto
 >Nel sistema internazionale si scrive:
@@ -23,7 +23,7 @@ $$
 - La forza è *proporzionale* a $\frac{1}{r^2}$
 - Cariche **opposte** si *attraggono* ($q_{a}q_{b}<0\implies \vec{F}_{ab}=F_{ab}(-\hat{r})$)
 - Cariche dello **stesso segno** si *respingono* ($q_{a}q_{b}>0\implies \vec{F}_{ab}=F_{ab}(+\hat{r})$)
-- Per la [[Leggi di Newton#Terza Legge di Newton|terza legge di Newton]] $\vec{F}_{ab}=-\vec{F}_{ba}$
+- Per la [[../Leggi di Newton e le Forze/Leggi di Newton#Terza Legge di Newton|terza legge di Newton]] $\vec{F}_{ab}=-\vec{F}_{ba}$
 - $\varepsilon_{0}=8.854\times 10^{-12}\ \  C^2 /Nm^2$ è la ***costante dielettrica del vuoto***.
 
 $$
@@ -70,7 +70,7 @@ $$
 Equivalente alla forza peso di $50$ *tonnellate*.
 - L'intera terra attira $1g$ di protoni con $F_{a}\simeq10^{-2}N$
 
-Confrontiamo: [[Elettromagnetismo#Elettrostatica|Forza elettrostatica]] e [[Legge di Gravitazione#Legge di Gravitazione Universale|gravitazionale]].
+Confrontiamo: [[Elettromagnetismo#Elettrostatica|Forza elettrostatica]] e [[../Gravitazione/Legge di Gravitazione#Legge di Gravitazione Universale|gravitazionale]].
 $$
 \frac{F_{g}}{F_{em}}=\frac{Gm_{p}^2}{ke^2}\simeq 0.8\times 10^{-36}
 $$

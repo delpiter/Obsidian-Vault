@@ -6,7 +6,7 @@ La modalità di accesso a un elemento nel web viene specificata mediante un'espr
 >[!definizione] Definizione
 >L'`URL` è un indirizzo web che *identifica univocamente* una risorsa su internet.
 
-![[URL.png]]
+![[attachements/URL.png]]
 
 >L'`URL` è diviso in ***diverse parti***
 
@@ -24,7 +24,7 @@ Viene scritto l'***identificatore del protocollo*** utilizzato per accedere alla
 >[!help] http\:\/\/***www\.azienda\.com***/news/
 
 L'***host*** è il sistema terminale dove la risorsa web è ***immagazzinata***.
-- Espresso attraverso il nome del dominio nella gerarchia [[DNS]], oppure come [[Protocollo IP|Indirizzo IP]] numerico.
+- Espresso attraverso il nome del dominio nella gerarchia [[../Application Layer/DNS]], oppure come [[../Network Layer/Protocollo IP|Indirizzo IP]] numerico.
 
 ### Percorso
 >[!help] http\:\/\/www\.azienda\.com***/news/***

@@ -3,7 +3,7 @@
 
 Per costruire una trasformazione di vista è necessario:
 - Posizionare la camera nel `WCS` e *orientarla opportunamente*.
-	- Permette di generare la [[Sistemi di Riferimento#Cambio di Sistema di Riferimento|matrice del cambiamento di sistema di riferimento]].
+	- Permette di generare la [[../../Geometria per la Grafica/Sistemi di Riferimento#Cambio di Sistema di Riferimento|matrice del cambiamento di sistema di riferimento]].
 	- Matrice usata per trasformare ***ogni vertice degli oggetti in scena*** dal `WCS` al `VCS`.
 
 
@@ -16,9 +16,9 @@ Per costruire una trasformazione di vista è necessario:
 
 ^ba3211
 
-![[SyntheticCamera.png]]
+![[../attachements/SyntheticCamera.png]]
 
-> Definiamo un [[Sistemi di Riferimento|sistema di riferimento]] `VCS` associato all'osservatore, di origine $C$.
+> Definiamo un [[../../Geometria per la Grafica/Sistemi di Riferimento|sistema di riferimento]] `VCS` associato all'osservatore, di origine $C$.
 
 $$
 F(C,u,v,w)
@@ -54,7 +54,7 @@ $$
 
 ## Costruzione della Matrice di Trasformazione
 ---
-> Dati i [[Sistemi di Riferimento#Frame|frame]] `WCS` e `VCS`, calcoliamo ora la ***matrice di trasformazione di vista*** $T_{v}$.
+> Dati i [[../../Geometria per la Grafica/Sistemi di Riferimento#Frame|frame]] `WCS` e `VCS`, calcoliamo ora la ***matrice di trasformazione di vista*** $T_{v}$.
 
 >[!failure] Cambiamento di Base
 >Esprimiamo il sistema di riferimento `VCS` in termini del `WCS`: $(O,x,y,z)$.

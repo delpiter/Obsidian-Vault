@@ -12,7 +12,7 @@
 4. Le **sinapsi**.
 > - *Collegano il neurone ad altri neuroni* per trasmettere il segnale in uscita.
 
-![[BiologicalNeuron.png|400]]
+![[attachements/BiologicalNeuron.png|400]]
 
 ## Neurone Artificiale
 ---

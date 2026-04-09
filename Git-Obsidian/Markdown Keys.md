@@ -35,7 +35,7 @@ globalspeed
 
 \[\[Analisi]]
 Links
-Doppia quadra  => [[README]]
+Doppia quadra  => [[../README]]
 
 The tag.
 
@@ -124,20 +124,20 @@ nun se sa mai
 ><font color="green">$f(x)= x$</font>
 
 caratteri speciali
-![[GreekLetters.png]]
+![[Attachments/GreekLetters.png]]
 
-![[Arrows.png]]
+![[Attachments/Arrows.png]]
 
-![[Relation operators.png]]
+![[Attachments/Relation operators.png]]
 
-![[Relation Operators 2.png]]
+![[Attachments/Relation Operators 2.png]]
 
-![[Binary Operators.png]]
+![[Attachments/Binary Operators.png]]
 
-![[Negated Binary Relations.png]]
+![[Attachments/Negated Binary Relations.png]]
 
-![[Geometry.png]]
+![[Attachments/Geometry.png]]
 
-![[Set Notation.png]]
+![[Attachments/Set Notation.png]]
 
-![[MiscellaneousSymbols.png]]
+![[Attachments/MiscellaneousSymbols.png]]

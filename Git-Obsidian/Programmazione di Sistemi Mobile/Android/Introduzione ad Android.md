@@ -1,5 +1,5 @@
 >[!help] Perché Android?
->***Android*** è il principale [[3 - Livelli del Sistema Operativo#Introduzione|Sistema Operativo]] per il mobile al mondo.
+>***Android*** è il principale [[../../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|Sistema Operativo]] per il mobile al mondo.
 
 Non solo per smartphone e tablet a anche per:
 - Dispositivi indossabili come orologi (`Wear OS`).
@@ -29,7 +29,7 @@ A partire dalla versione $1.5$ *Google* ha deciso di abbinare il nome di un dolc
 >[!abstract] Novità
 >Android 10 aggiunge il supporto per:
 >- Dispositivi foldables, con il supporto multi-finestra e miglioramenti alle funzioni `onResume` e `onPause`.
->- `5G` [[Rete Wireless|network]].
+>- `5G` [[../../Reti/Data Link Layer/Networks/802.X/Rete Wireless|network]].
 
 Viene spostato il focus sulla ***privacy*** e la ***security***.
 - Maggiore controllo su *dati di posizione*.
@@ -55,7 +55,7 @@ Aggiunte le feature di ***One-time Permissions*** e ***permission auto-reset***.
 #### Android 12
 > Viene ***reinventata completamente l'interfaccia***.
 
-![[Android12.jpg]]
+![[attachements/Android12.jpg]]
 
 Migliorata, inoltre, l'***accessibilità***, attraverso:
 - Area Magnification.

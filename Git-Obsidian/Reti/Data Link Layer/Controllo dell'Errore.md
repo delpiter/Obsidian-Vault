@@ -13,7 +13,7 @@ I messaggi possibili sono $2^k$ `bit`.
 >$2^k$ sono i messaggi che fra i $2^n$ corrispondono ai ***messaggi originali leciti***.
 
 $2^n-2^k$ sono invece i messaggi che corrispondono a configurazioni non ammesse e permettono di *rilevare* e/o *correggere* gli errori.
-- [[Correzione di Errori]]
+- [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Correzione di Errori]]
 
 
 ##### Codici a rilevazione di Errore
@@ -24,7 +24,7 @@ $2^n-2^k$ sono invece i messaggi che corrispondono a configurazioni non ammesse 
 >Richiede un ***numero limitato*** di `bit` aggiuntivi.
 
 ###### Uso del Codice
-![[ErrorCorrection.png]]
+![[attachements/ErrorCorrection.png]]
 
 >Il messaggio viene "*passato*" in una funzione che genera la sequenza di `bit` di ***ridondanza***.
 - Il destinatario *ricalcola* con la stessa funzione i `bit` ridondanti
@@ -33,7 +33,7 @@ $2^n-2^k$ sono invece i messaggi che corrispondono a configurazioni non ammesse 
 
 >[!fail] Se sono diversi è accaduto un errore
 
-[[Definizioni_Architettura#Parity Bit|Esempio più facile]].
+[[../../Definizioni/Definizioni_Architettura#Parity Bit|Esempio più facile]].
 
 ###### Internet Checksum
 > Nei protocolli di internet vengono usati codici a blocchi semantici
@@ -49,7 +49,7 @@ $2^n-2^k$ sono invece i messaggi che corrispondono a configurazioni non ammesse 
 - Una somma `bit` a `bit`, se l'ultimo `bit` provoca un riporto, si *somma al numero finale*.
 
 >[!hint] Proprietà
->L'internet checksum è indipendente dalla rappresentazione [[Definizioni_Architettura#Ordinamento dei `BYTE`|Little-Big Endian]]
+>L'internet checksum è indipendente dalla rappresentazione [[../../Definizioni/Definizioni_Architettura#Ordinamento dei `BYTE`|Little-Big Endian]]
 ##### Codici a correzione di Errore
 >Una parola di codice invalida indica la presenza di ***errori di trasmissione***.
 - Permette di individuare la ***parola di codice*** *valida* corrispondente.

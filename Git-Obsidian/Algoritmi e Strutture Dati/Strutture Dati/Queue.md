@@ -15,7 +15,7 @@
 >>Una ***queue*** ha una politica ***FIFO***
 >>- ***F***irst ***I***n ***F***irst ***O***ut
 
-![[Queue.webp]]
+![[attachements/Queue.webp]]
 
 ### Enqueue
 

@@ -59,9 +59,9 @@ Le reti ***MLP*** sono computazionalmente troppo pesanti per essere impiegate ne
 - Applicata con un meccanismo di ***sliding window***.
 
 Un filtro (*kernel*) $h$ (piccola maschera $2D$ di pesi di dimensione $F\times F$)  viene fatto scorrere su ogni pixel $(x,y)$ di un'immagine input.
-- Per ogni posizione, viene generato un valore output eseguendo il [[4 - Prodotto Scalare|prodotto scalare ]] tra la *maschera* e la *porzione di input coperta*.
+- Per ogni posizione, viene generato un valore output eseguendo il [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare|prodotto scalare ]] tra la *maschera* e la *porzione di input coperta*.
 
-![[Convolution.png|500]]
+![[attachements/Convolution.png|500]]
 
 >[!summary] Composizione
 

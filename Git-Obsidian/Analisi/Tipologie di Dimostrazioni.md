@@ -77,4 +77,4 @@ $$
 
 Esempio
 
-![[Limiti#Teorema degli Zeri]]
+![[Limiti/Limiti#Teorema degli Zeri]]

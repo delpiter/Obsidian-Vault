@@ -1,7 +1,7 @@
 ## Forma Quadratica
 ---
 >[!info] Definizione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$ e $\beta$ una [[1 - Forme Bilineari#Forma Bilineare|forma bilineare]] [[1 - Forme Bilineari#Tipi di Forme Bilineari|simmetrica]] su $V$
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$ e $\beta$ una [[1 - Forme Bilineari#Forma Bilineare|forma bilineare]] [[1 - Forme Bilineari#Tipi di Forme Bilineari|simmetrica]] su $V$
 >La ***forma quadratica*** associata a $\beta$ è $q:V\to\mathbb{K}$
 >$$q(v)=\beta(v,v) \qquad \forall v \in V$$
 >>[!tip] Osservazione
@@ -33,7 +33,7 @@ $$
 ## Tipi di Forme Quadratiche
 ---
 >[!info] Definizione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{R}$, $\beta$ una [[1 - Forme Bilineari#Forma Bilineare|forma bilineare]] [[1 - Forme Bilineari#Tipi di Forme Bilineari|simmetrica]] su $V$ e sia $q$ la ***forma quadratica*** associata a $\beta$
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{R}$, $\beta$ una [[1 - Forme Bilineari#Forma Bilineare|forma bilineare]] [[1 - Forme Bilineari#Tipi di Forme Bilineari|simmetrica]] su $V$ e sia $q$ la ***forma quadratica*** associata a $\beta$
 >>[!abstract] $1.$
 >>$q$ è ***definita positiva*** se $q(v)>0 \qquad \forall v\neq \underline{0}, v\in V$
 >

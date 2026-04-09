@@ -42,18 +42,18 @@ packet-beta
 ### Tipi di Errori
 >[!missing] Destination Unreachable
 - `Type=3`
-- Generato da un [[Routing#Ruolo del Gateway|gateway]] quando la sottorete o l'host **non sono raggiungibili**.
+- Generato da un [[Routing/Routing#Ruolo del Gateway|gateway]] quando la sottorete o l'host **non sono raggiungibili**.
 - Generato da un host quando si **presenta un errore sull'indirizzo** dell'entità di livello superiore a cui trasferire il datagram.
 > Codici errore di `DU`
 1. Sottorete *non raggiungibile*.
 2. Host *non raggiungibile*.
 3. Protocollo *non disponibile*.
-4. [[Livello di Trasporto#Numero di Porta|Porta]] *non disponibile*.
+4. [[../Transport Layer/Livello di Trasporto#Numero di Porta|Porta]] *non disponibile*.
 5. Frammentazione necessaria e `bit` `DF=1`.
 
 >[!failure] Time Exceeded
 - `Type=11`
-- Generato da un [[Routing#Router|router]] quando il `TTL` di un datagram si azzera e **viene distrutto**.
+- Generato da un [[Routing/Routing#Router|router]] quando il `TTL` di un datagram si azzera e **viene distrutto**.
 - Generato da un host quando un timer si azzera in attesa dei frammenti per **riassemblare un datagram**.
 
 >[!abstract] Source Quench

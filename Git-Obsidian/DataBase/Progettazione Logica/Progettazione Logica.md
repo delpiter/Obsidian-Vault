@@ -1,4 +1,4 @@
-![[ProgettazioneLogica.png|400]]
+![[attachements/ProgettazioneLogica.png|400]]
 
 >[!hint] Obbiettivo
 >L'obbiettivo della fase di *progettazione logica* è pervenire a uno schema logico che rappresenti ***in modo fedele*** i *concetti* e i *requisiti* analizzati e che sia, allo stesso tempo, "***efficiente***".
@@ -20,13 +20,13 @@ Questa attività di progettazione può essere vista, come la definizione di un m
 >- ***Preserva l'informazione***.
 >- Per ogni stato legale $db_{rel}$ di $DB_{rel}$ esiste uno stato legale $db_{conc}$ di $DB_{conc}$ tale che $M(db_{conc})=db_{rel}$
 
-La definizione intuitivamente asserisce che esiste una [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biiezione]] tra gli insiemi di stati legali.
+La definizione intuitivamente asserisce che esiste una [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biiezione]] tra gli insiemi di stati legali.
 
-![[FunzioniBiunivoche.png]]
+![[attachements/FunzioniBiunivoche.png]]
 
 #### Fasi della Progettazione Logica
 >La *progettazione logica* può essere articolata in ***due fasi*** principali
 
->[!tip] [[Ristrutturazione]]
+>[[Ristrutturazione|!tip]]
 
->[!cite] [[Traduzione]]
+>[[Traduzione|!cite]]

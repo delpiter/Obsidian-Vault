@@ -21,7 +21,7 @@ Si parla di "*reti overlay*":
 ## Tecnologie di Virtualizzazione
 ---
 >[!example] Lista di Tecnologie
-- [[Virtual LAN|VLAN]] 
+- [[802.X/Virtual LAN|VLAN]] 
 - GRE
 - VXLAN
 - [[VPN]]
@@ -34,10 +34,10 @@ Si parla di "*reti overlay*":
 
 In particolare permette l'incapsulamento di **pacchetti** `IP` su **reti** `IP`.
 
-![[GRETunnel.png]]
+![[attachements/GRETunnel.png]]
 
 >[!hint] Overlay a Livello di routing
-> Incapsulando il [[Protocollo IP|pacchetto IP]], si viene a creare una rete logica ***indipendente da quella fisica***.
+> Incapsulando il [[../../Network Layer/Protocollo IP|pacchetto IP]], si viene a creare una rete logica ***indipendente da quella fisica***.
 >>[!done] Una modifica del percorso non viene percepita nel dominio logico
 #### Pacchetto
 ```mermaid
@@ -67,19 +67,19 @@ packet-beta
 - Indica che tipo di protocollo *viene incapsulato*.
 
 >***Checksum***
-- [[Controllo dell'Errore#Internet Checksum|Internet Checksum]]
+- [[../Controllo dell'Errore#Internet Checksum|Internet Checksum]]
 
 > ***Key***
 - Usato per **autenticare** la sorgente del pacchetto incapsulato.
 
 > ***Routing***
-- Determina la politica di [[Routing]] del tunnel.
+- Determina la politica di [[../../Network Layer/Routing/Routing]] del tunnel.
 
 ### Virtual Extensible LAN
 >[!info] `VXLAN`
 > La `VXLAN` è una *rete di overlay* altamente ***scalabile*** e distribuita per isolare il traffico in **ambienti di cloud computing**.
 
-Viene incapsulato il traffico di [[ISO-OSI|livello 2]] in pacchetti [[UDP]] (*porta* $4789$).
+Viene incapsulato il traffico di [[../../Standards/ISO-OSI|livello 2]] in pacchetti [[../../Transport Layer/UDP]] (*porta* $4789$).
 
 >[!tldr] Concetto
 - Una sola network `IP` viene ***estesa sulla rete globale***.

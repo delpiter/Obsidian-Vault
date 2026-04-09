@@ -15,7 +15,7 @@
 >>[!question] Come sistemare un processo in stato di Deadlock?
 >>Nei sistemi reali, se ne può uscire sono con metodi "**distruttivi**", ***terminando i processi***
 
-![[Starvation&Deadlock.png]]
+![[attachements/Starvation&Deadlock.png]]
 >Immagine $b$: Autisti in un incrocio
 >- Nessuno da la precedenza e finiscono tutti per bloccarsi
 ### Starvation
@@ -34,7 +34,7 @@
 Le singole azioni del linguaggio macchina sono *atomiche*
 
 >[!tldr] Caso: Interrupt
->Nel caso degli [[Interfacciamento di Periferiche#Interrupt|interrupt]], il meccanismo di interruzione garantisce che un interrupt venga eseguito **prima** o **dopo** un'istruzione
+>Nel caso degli [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Interfacciamento di Periferiche#Interrupt|interrupt]], il meccanismo di interruzione garantisce che un interrupt venga eseguito **prima** o **dopo** un'istruzione
 
 >Assumiamo che in ogni istante vi possa essere al *massimo* un accesso alla memoria alla volta
 

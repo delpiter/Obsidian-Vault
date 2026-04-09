@@ -32,7 +32,7 @@ $$
 
 
 >[!info] Gradiente
->Il [[Calcolo Differenziale#Gradiente|gradiente]] di una funzione $f:\mathbb{R}^n\to\mathbb{R}$ differenziabile è dato da:
+>Il [[../../Analisi/Funzioni a due Variabili/Calcolo Differenziale#Gradiente|gradiente]] di una funzione $f:\mathbb{R}^n\to\mathbb{R}$ differenziabile è dato da:
 >$$\nabla f(X) = \begin{bmatrix}\displaystyle\frac{\partial f(X)}{\partial x_1} \\\displaystyle\frac{\partial f(X)}{\partial x_2} \\\vdots \\\displaystyle\frac{\partial f(X)}{\partial x_n}\end{bmatrix}$$
 
 ### Matrice Jacobiana
@@ -209,7 +209,7 @@ $$
 
 >[!caution] Metodo delle Corde
 >Si utilizza lo stesso *Jacobiano* $J(X_{0})$ o una sua approssimazione $A(X_{0})$ per tutte le iterazioni $k$.
->Si potrebbe quindi [[Risoluzione di Sistemi Lineari#Fattorizzazione|fattorizzare]] $J(X_{0})=LU$ e utilizzare i medesimi $L$ e $U$ ***per ogni iterazione***.
+>Si potrebbe quindi [[../Equazioni Lineari/Risoluzione di Sistemi Lineari#Fattorizzazione|fattorizzare]] $J(X_{0})=LU$ e utilizzare i medesimi $L$ e $U$ ***per ogni iterazione***.
 
 >[!abstract] Metodo di Shamanskii
 >Si valuta lo *Jacobiano* ogni $m$ iterazioni e quindi lo si utilizza per le $m$ iterazioni successive.
@@ -229,7 +229,7 @@ $$x_{3}=f_{1}(x_{1},x_{2}),\quad x_{3}=f_{2}(x_{1},x_{2})$$
 Le soluzioni corrispondono ai punti in cui entrambe le superfici assumono il valore $x_{3}=0$.
 
 >[!help] Curve di Livello
->Le [[Funzioni di due Variabili Reali#Curva di Livello|curve di livello]] a quota zero di queste superfici sono date da:
+>Le [[../../Analisi/Funzioni a due Variabili/Funzioni di due Variabili Reali#Curva di Livello|curve di livello]] a quota zero di queste superfici sono date da:
 >- $f_{1}(x_{1},x_{2})=0$
 >- $f_{2}(x_{1},x_{2})=0$
 
@@ -246,13 +246,13 @@ f_{2}(x_{1},x_{2})=x^2_{1}-x^2_{2}-1=0
 \end{cases}
 $$
 
-![[FirstIterateGraphicalMethood.png|500]]
+![[attachements/FirstIterateGraphicalMethood.png|500]]
 
 
-![[FirstItearte.png|500]]
+![[attachements/FirstItearte.png|500]]
 
 ### Metodo di Newton-Rapshon per il calcolo del Minimo
->[[Punti Critici|Masismi e Minimi di una funzione a due variabili]].
+>[[../../Analisi/Funzioni a due Variabili/Punti Critici|Masismi e Minimi di una funzione a due variabili]].
 
 >[!info]
 >Data $f:\mathbb{R}^n\mapsto \mathbb{R},\quad f\in C^2$ (*differenziabile due volte con continuità*), trovare $X^*\in\mathbb{R}^n$ tale che $X^*=\arg\min\limits_{X\in\mathbb{R}^2}f(x)$.
@@ -275,7 +275,7 @@ $$
 $$
 Con $X=\begin{bmatrix}x_{1}\\x_{2}\\\dots\\x_{n}\end{bmatrix}\in\mathbb{R}^n$
 
-Per verificare se tale punto è un massimo, minimo o sella occorrerà esaminare la ***matrice*** [[Differenziabilità#Matrice Hessiana|Hessiana]] $H(X)$.
+Per verificare se tale punto è un massimo, minimo o sella occorrerà esaminare la ***matrice*** [[../../Analisi/Funzioni a due Variabili/Differenziabilità#Matrice Hessiana|Hessiana]] $H(X)$.
 
 $$
 H(X) =

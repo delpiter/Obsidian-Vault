@@ -44,7 +44,7 @@ Costituito da $18000$ valvole e $3000$ relè
 - Basato su aritmetica decimale, era programmabile tramite interruttori multi-posizione
 - L'input/output era possibile attraverso schede perforate
 
-Queste macchine sono tutte [[Definizioni_Architettura#Macchine Turing Complete|Turing Complete]]
+Queste macchine sono tutte [[../Definizioni/Definizioni_Architettura#Macchine Turing Complete|Turing Complete]]
 
 ### IAS - 1952
 Denominata macchina di **Von Neumann** rappresenta uno dei più importanti punti di riferimento dell'ingegneria informatica

@@ -1,12 +1,12 @@
 >[!info]
->I ***modelli agili*** sono modelli prescrittivi per la [[Produzione|produzione del software]], basati su una ferrea disciplina.
+>I ***modelli agili*** sono modelli prescrittivi per la [[../Produzione|produzione del software]], basati su una ferrea disciplina.
 >- Trascurano la fragilità delle persone che realizzano il software.
 
 >[!abstract] Caratteristiche
 
 - Incoraggiano la **soddisfazione del cliente** e una consegna incrementale anticipata.
 - Impiegano team di progettazione **compatti** e **motivati**.
-- Scoraggiano l'utilizzo di *modelli formali* ([[UML]]).
+- Scoraggiano l'utilizzo di *modelli formali* ([[../../UML/UML|UML]]).
 - Incoraggiano la **semplicità di sviluppo**.
 - Richiedono comunicazione continua tra sviluppatori e utenti.
 - Incoraggiano il continuo [[Modelli Evolutivi#^f6e995|refactoring]].
@@ -49,9 +49,9 @@ In questa fase vengono implementati tutti gli unit test con uno strumento di sup
 ## Unified Process
 ---
 >[!info] `UP`
->***Unified Process*** è un processo di sviluppo del software *iterativo* e *incrementale*, guidato dai [[Use Case Diagram|casi d'uso]].
+>***Unified Process*** è un processo di sviluppo del software *iterativo* e *incrementale*, guidato dai [[../../UML/Use Case Diagram|casi d'uso]].
 
-È ***component-based***, ***model-based*** e [[Paradigma ad Oggetti|object oriented]].
+È ***component-based***, ***model-based*** e [[../../Paradigma ad Oggetti|object oriented]].
 
 Un modello di `UP` si basa su tre concetti fondamentali:
 
@@ -106,7 +106,7 @@ Si modellano **flussi di lavoro**.
 
 ### Fasi e Milestone
 >[!todo] Info
-> Le fasi sono sequenziali e corrispondono a [[Definizioni_Ingegneria-del-Software#Milestone|milestone]] significativi.
+> Le fasi sono sequenziali e corrispondono a [[../../../Definizioni/Definizioni_Ingegneria-del-Software#Milestone|milestone]] significativi.
 
 > **Inception**
 - È l'***avvio***, definisce gli obbiettivi del progetto, ne analizza la fattibilità, i costi e i prodotti concorrenti.
@@ -126,5 +126,5 @@ Si modellano **flussi di lavoro**.
 
 >[!summary] Ogni fase può essere composta da una o più iterazioni
 
-![[WorkFlow.png]]
+![[attachements/WorkFlow.png]]
 

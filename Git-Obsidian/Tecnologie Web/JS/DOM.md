@@ -5,7 +5,7 @@
 
 Ogni documento caricato dal browser genera un `DOM` che specifica, sotto forma di gerarchia di oggetti tutti gli elementi del documenti.
 
-Il `DOM` definisce un'`API` per documenti [[Markup Language|HTML e XML]].
+Il `DOM` definisce un'`API` per documenti [[../HTML/Markup Language|HTML e XML]].
 - Utilizzando il `DOM` i programmatori possono costruire, navigare, aggiungere, modificare o cancellare elementi.
 - Ogni componente di un documento può essere letto, modificato, cancellato o aggiunto usando il `DOM`.
 
@@ -16,7 +16,7 @@ Il `DOM` definisce un'`API` per documenti [[Markup Language|HTML e XML]].
 > Per [[JavaScript]] Il `DOM HTML` è una `API`.
 - Permette la aggiunta, rimozione e modifica di:
 	- Elementi e Attributi `{html icon} HTML`.
-	- Stili [[Cascading Style Sheets|CSS]].
+	- Stili [[../CSS/Cascading Style Sheets|CSS]].
 	- Eventi `{html icon} HTML`
 - Può reagire a eventi `{html icon} HTML`
 
@@ -62,7 +62,7 @@ node.hasAttributes();
 >[!summary] Info
 >Un `{js icon} DOMElement` specifica i metodi e i membri per accedere a qualunque elemento del documento.
 
-Un elemento è ***specifico*** [[Elementi e Categorie|elemento]] `{html icon} HTML` del documento.
+Un elemento è ***specifico*** [[../HTML/Elementi di HTML/Elementi e Categorie|elemento]] `{html icon} HTML` del documento.
 
 ```js title:Example
 // elements

@@ -2,7 +2,7 @@
 ---
 >[!abstract] Ricordo
 
-![[I Tre Usi delle Matrici#Sistemi Lineari]]
+![[../../Algebra e Geometria/I Tre Usi delle Matrici#Sistemi Lineari]]
 
 
 > Consideriamo un sistema lineare:
@@ -117,7 +117,7 @@ g(x)=-3/2x+5/2
 
 ## Risoluzione Sistemi
 ---
-![[Risoluzione di Sistemi#Ruchè-Capelli]]
+![[../../Algebra e Geometria/Risoluzione di Sistemi#Ruchè-Capelli]]
 
 #### Casi
 > Se $m<n$
@@ -140,12 +140,12 @@ g(x)=-3/2x+5/2
 >[!definizione]
 >Sia $A\in\mathbb{R}^{n\times m}$, la matrice è detta ***non singolare*** se soddisfa una delle seguenti *condizioni equivalenti*:
 >1. $\det(A)\neq 0$
->2. Esiste la [[8 - Matrici Invertibili#Matrice Inversa|matrice inversa]] $A^{-1}$ di $A$
+>2. Esiste la [[../../Algebra e Geometria/Applicazioni/8 - Matrici Invertibili#Matrice Inversa|matrice inversa]] $A^{-1}$ di $A$
 >3. $\text{rank}(A)=n$
 >
 ><u>Altrimenti $A$ è singolare</u>
 
-![[Risoluzione di Sistemi#Insieme delle Soluzioni]]
+![[../../Algebra e Geometria/Risoluzione di Sistemi#Insieme delle Soluzioni]]
 
 >[!warning] Nota
 >Il metodo dell'inversa risulta ***poco efficiente*** e anche ***poco accurato***
@@ -158,7 +158,7 @@ x=7^{-1}\cdot21=0.142857\cdot 21=2.99997
 $$
 
 #### Soluzione Basata sul Metodo di Cramer
-> Un metodo ben noto è basato sul [[Risoluzione di Sistemi#Metodo di Cramer|metodo di Cramer]].
+> Un metodo ben noto è basato sul [[../../Algebra e Geometria/Risoluzione di Sistemi#Metodo di Cramer|metodo di Cramer]].
 
 $$
 x_{1}=
@@ -191,12 +191,12 @@ $$
 - $\dots$
 
 >[!danger] Metodo ad alta complessità computazionale
->Questo metodo comporta una [[Complessità di Algoritmi|complessità computazionale]] di circa $O((n+1)!)$.
+>Questo metodo comporta una [[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità computazionale]] di circa $O((n+1)!)$.
 
 ## Mappa Concettuale
 ---
 
-![[LinearSystems.jpg]]
+![[attachements/LinearSystems.jpg]]
 
 ```mermaid
 mindmap

@@ -67,7 +67,7 @@ Prendiamo $n$ come numero di nodi $+1$ di un albero binario
 >[!question] Quanti *binary search tree* esistono con $n$ nodi?
 
 Il numero di *binary search tree* possibili con $n$ nodi è rappresentato con la seguente funzione dei ***Numeri di Catalan***
-- [[Definizioni_Analisi#Coefficiente Binomiale|Coefficiente binomiale]]
+- [[../../../../Definizioni/Definizioni_Analisi#Coefficiente Binomiale|Coefficiente binomiale]]
 $$
 C_{n}=\displaystyle{\frac{1}{n+1}}\binom{2n}{n}
 $$
@@ -86,15 +86,15 @@ $$
 >[!warning] Nota Bene
 
 Un albero di ricerca binaria non è sempre ***ben bilanciato***:
-![[Pasted image 20240323114207.png]]
+![[attatchements/Pasted image 20240323114207.png]]
 - Potrebbe accadere che i nodi siano *prevalentemente* da un *lato dell'albero*
-![[Pasted image 20240323114233.png]]
-- In questo caso il [[Complessità di Algoritmi#Analisi di Complessità|costo computazionale]] delle *operazioni è più alto*
+![[attatchements/Pasted image 20240323114233.png]]
+- In questo caso il [[../../../Confronto fra Algoritmi/Complessità di Algoritmi#Analisi di Complessità|costo computazionale]] delle *operazioni è più alto*
 
 
 ### Rappresentazione con Array
 >[!info] Convenzione
->Anche gli alberi binari come lo [[Heap]] possono essere rappresentati con un vettore.
+>Anche gli alberi binari come lo [[../../Heap|Heap]] possono essere rappresentati con un vettore.
 >Con la convenzione sugli **indici dei figli**.
 >I *binary search tree* non sono alberi binari *quasi* completi
 >- Ciò porta ad avere delle ***celle vuote*** all'interno dell'*array*
@@ -238,7 +238,7 @@ Un albero di ricerca binaria non è sempre ***ben bilanciato***:
 - Si collega l'unico *nodo figlio* con il *nodo padre*
 	- Una specie di "***cortocircuito***" o "***transplant***" in *inglese*
 
-![[Pasted image 20240324172622.png]]
+![[attatchements/Pasted image 20240324172622.png]]
 
 >[!abstract] Il nodo $z$ ha *due figli*
 
@@ -248,7 +248,7 @@ Per la cancellazione di un nodo $z$ con *due figli*:
 2. Sostituisci $z$ con $y$
 3. Rimuovi $z$
 
-![[Pasted image 20240324172647.png]]
+![[attatchements/Pasted image 20240324172647.png]]
 
 ##### Pseudocodice
 

@@ -10,10 +10,10 @@ $$
 - $n$ anche detto l'indice della successione
 ##### Es
 - $a_{n}=k, \ k\in\mathbb{R}$
-![[successione costante.png]]
+![[attatchements/successione costante.png]]
 
 - $a_{n}=(-1)^n$
-![[succesioneOscillante.png]]
+![[attatchements/succesioneOscillante.png]]
 
 ## Successioni infinitesime
 - - -
@@ -25,7 +25,7 @@ $$
 >>[!done] In Breve
 >>Fissato un numero $\mathcal{E}\in\mathbb{R}$ esiste una soglia $m_{\mathcal{E}}\in\mathbb{N}$ tale che, qualsiasi $n$ io prenda che sia più grande di $m_{\mathcal{E}}$, $a_{n}$ è più piccola di $\mathcal{E}$
 
-![[successioneInfinitesima.png]]
+![[attatchements/successioneInfinitesima.png]]
 ### Es
 - $a_{n}=\displaystyle{\frac{1}{n}}$
 - Verifichiamo che $\lim\limits_{n\to+\infty} \displaystyle{\frac{1}{n}} =0$
@@ -40,11 +40,11 @@ $$
 ## Successione Monotona
 - - -
 >[!info] Definizione
->Sia $(a_{n})_{n\in\mathbb{N}}$ una successione in $\mathbb{R}$ diciamo che $(a_{n})$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Crescente|crescente]] se
+>Sia $(a_{n})_{n\in\mathbb{N}}$ una successione in $\mathbb{R}$ diciamo che $(a_{n})$ è [[../Funzioni/Introduzione Funzioni#Crescente|crescente]] se
 > $$
 a_{n}\leq a_{n+1}, \,\,\,\ \forall n\in\mathbb{N}
 >$$
->Sia $(a_{n})_{n\in\mathbb{N}}$ una successione in $\mathbb{R}$ diciamo che $(a_{n})$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Decrescente|decrescente]] se
+>Sia $(a_{n})_{n\in\mathbb{N}}$ una successione in $\mathbb{R}$ diciamo che $(a_{n})$ è [[../Funzioni/Introduzione Funzioni#Decrescente|decrescente]] se
 > $$
 a_{n} \geq a_{n+1}, \,\,\,\ \forall n\in\mathbb{N}
 >$$

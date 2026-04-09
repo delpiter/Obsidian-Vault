@@ -45,7 +45,7 @@ I dati vengono salvati nella memoria `RAM` più è veloce meno durerà l'esecuzi
 
 >[!tip] Numero di processori
 
->[!tip] Ottimizzazione del [[Definizioni_Architettura#Compilazione|compilatore]]/[[Definizioni_Architettura#Linker|linker]]
+>[[../../Definizioni/Definizioni_Architettura#Compilazione|compilatore]]/[[../../Definizioni/Definizioni_Architettura#Linker|linker]]
 
 
 ### Tempo di Esecuzione
@@ -158,4 +158,4 @@ Non abbiamo informazione sulla *probabilità con cui si presentano i valori* nel
 >[!done] Possiamo quindi concludere che
 >$$T_{\{ Avj \}}(n)=\sum_{i=1}^np_{i}T(i)=\frac{1}{n}\sum_{i=0}^ni=\frac{1}{\cancel{ n }} \displaystyle{\frac{\cancel{ n }(n+1)}{2}}=\Theta(n)$$
 
-![[Recursive Functions]]
+![[../../Programmazione/Funzioni/Recursive Functions]]

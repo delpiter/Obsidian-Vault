@@ -39,7 +39,7 @@ Se ci focalizziamo su *ampiezza*, *fase* e *frequenza*, descrivere il segnale è
 
 La funzione: $1.2\sin(2\pi3t)+0.7\sin(2\pi4t +1.4)$
 - ***Diventa***:
-![[Spectrum.png]]
+![[attachements/Spectrum.png]]
 
 - Questo grafico è chiamato lo ***spettro del segnale***
 
@@ -64,7 +64,7 @@ Nella ***telefonia analogica*** *tradizionale* il segnale sonoro prodotto dall�
 #### Conversione Analogico-Digitale
 >La conversione analogico-digitale è caratterizzata da due fasi distinte:
 
-![[Rappresentazione dei Suoni#Campionamento]]
+![[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione dei Suoni#Campionamento]]
 
 >[!note] Teorema Shannon-Nyquist
 >Il ***teorema Shannon-Nyquist*** permette di determinare il *minimo intervallo di campionamento* che permette di **ricostruire** il segnale analogico in modo integrale
@@ -76,4 +76,4 @@ T_{s}=\displaystyle\frac{1}{f_{s}} < \frac{1}{2f_{M}}
 \end{array}
 $$
 
-![[Rappresentazione dei Suoni#Quantizzazione]]
+![[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione dei Suoni#Quantizzazione]]

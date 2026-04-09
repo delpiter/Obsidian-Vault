@@ -28,7 +28,7 @@
 >[!info] Struttura a livelli
 >Il *sistema operativo* è strutturato con 3 porzioni, divise come l'immagine che segue
 
-![[OS-Levels.png]]
+![[../Bash/attachements/OS-Levels.png]]
 
 >Ogni livello mette a disposizione un ***livello di astrazione*** di servizio che può essere utilizzata dagli altri livelli
 ### Kernel

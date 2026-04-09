@@ -1,4 +1,4 @@
-![[Definizioni_Programmazione#Classificazione dei Tipi di Dati in C]] 
+![[../../Definizioni/Definizioni_Programmazione#Classificazione dei Tipi di Dati in C]] 
 
 
 Il Tipo `enum`
@@ -127,7 +127,7 @@ struct line {
 	} line1 , line2 ;
 ```
 
-- Limiti dello standard [[Definizioni_Programmazione#ISO|ISO C89]]
+- Limiti dello standard [[../../Definizioni/Definizioni_Programmazione#ISO|ISO C89]]
 	- Massimo 15 i **livelli di annidamento** in una singola dichiarazione di struttura;
 	- Massimo 127 **membri** in una singola dichiarazione di struttura.
 
@@ -140,10 +140,10 @@ struct point p1; // forward declaration
 struct point { int x; int y; }; // struct declaration
 ```
 
-- Concetto simile ai [[Funzioni in C#Dichiarazione|prototipi]] per le funzioni
+- Concetto simile ai [[../Funzioni/Funzioni in C#Dichiarazione|prototipi]] per le funzioni
 - Permette anche di definire strutture ***autoreferenziali***
 	- Strutture che contengono campi il cui **tipo è la struttura stessa**
-	- La *limitazione* che ci impone il linguaggio C è che tali campi debbano essere di tipo [[Introduzione Puntatori|puntatore]] ***alla struttura***
+	- La *limitazione* che ci impone il linguaggio C è che tali campi debbano essere di tipo [[../Puntatori/Introduzione Puntatori|puntatore]] ***alla struttura***
 ### Spazio di Allineamento del tipo `struct`
 >[!example] Memoria
 >In memoria i campi di una struttura sono allocati in **modo contiguo** e nello **stesso ordine** definito dalla dichiarazione.

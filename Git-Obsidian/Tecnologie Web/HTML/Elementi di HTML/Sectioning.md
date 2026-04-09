@@ -1,6 +1,6 @@
 ![[Elementi e Categorie#^6f6250]]
 
-![[Sectioning.png]]
+![[attachements/Sectioning.png]]
 
 ## Section
 ---

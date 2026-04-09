@@ -9,7 +9,7 @@ y=y(t_{i})
 \end{pmatrix}
 $$
 >[!todo] Curve Interpolanti 
->Vogliamo costruire la curva [[Interpolazione Polinomiale|interpolante]] i punti $P_{i}$: $C(t_{i})=P_{i}$
+>Vogliamo costruire la curva [[../../Metodi Numerici per L'Intelligenza Artificiale/Interpolazione/Interpolazione Polinomiale|interpolante]] i punti $P_{i}$: $C(t_{i})=P_{i}$
 
 >[!hint] Osservazione
 >Questo equivale a risolvere due problemi di interpolazione, uno per la funzione $x$ e uno per la funzione $y$.
@@ -25,7 +25,7 @@ $$
 $$
 ### Interpolazione di Hermite
 >[!question] Problema
->Dati $n+1$ punti da *interpolare* $p_{i}$, $i=0,\dots,n$, costruiamo $n$ segmenti di curve costruite a partire da polinomi cubici, tali che nei ***punti di giunzione*** abbiano lo stesso valore e la stessa [[Derivate|derivata]] prima.
+>Dati $n+1$ punti da *interpolare* $p_{i}$, $i=0,\dots,n$, costruiamo $n$ segmenti di curve costruite a partire da polinomi cubici, tali che nei ***punti di giunzione*** abbiano lo stesso valore e la stessa [[../../Analisi/Calcolo Differenziale/Derivate|derivata]] prima.
 
 > ***Esempio***:
 
@@ -258,7 +258,7 @@ $$
 ### Metodi Numerici per il Calcolo delle Derivate
 > Dati $n+1$ punti da interpolare, per ogni curva abbiamo un punto iniziale $p_{i}$ e uno filale $p_{i+1}$ con tangenti $d_{i}$ e $d_{i+1}$
 
->[!abstract] [[Derivate|Rapporto Incrementale]]
+>[[../../Analisi/Calcolo Differenziale/Derivate|!abstract]]
 >$$d_{i}=\displaystyle{\frac{p_{i+1}-p_{i}}{t_{i+1}-t_{i}}}$$
 
 >[!summary] Differenze Finite

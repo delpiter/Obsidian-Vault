@@ -16,7 +16,7 @@ Ogni carattere `ASCII` utilizza 7 `BIT`
 >[!tip] CheckSum
 
 Dato che  i dati vengono trasmessi in `BYTE` l'ottavo `BIT` viene utilizzato per verificare la correttezza del dato inviato
-- Questo ottavo `BIT` viene chiamato **check `BIT`** o [[Definizioni_Architettura#Parity Bit|parity]] `BIT`
+- Questo ottavo `BIT` viene chiamato **check `BIT`** o [[../../Definizioni/Definizioni_Architettura#Parity Bit|parity]] `BIT`
 - Il formato `ASCII` non viene ormai più utilizzato come protocollo di trasmissione
 	- Ne consegue il fatto che l'ottavo `BIT` viene normalmente utilizzato per codificare caratteri *non-standard*
 ### Caratteri di Controllo
@@ -37,7 +37,7 @@ Molti dei caratteri di controllo servivano alla trasmissione dei dati, ma con l'
 Inizialemente pensato come codifica a `16 BIT`, quindi con $65.536$ simboli
 - Molto presto `16 BIT` diventarono insufficienti per rappresentare tutti i caratteri
 - Fu prevista la possibilità di avere caratteri codificati con un numero di `BIT` maggiore di 16
-- Nella versione $v10.0$ sono presenti più di $136.000$ [[Definizioni_Architettura#Code Point|code points]] con codifica fino a `21 BIT`
+- Nella versione $v10.0$ sono presenti più di $136.000$ [[../../Definizioni/Definizioni_Architettura#Code Point|code points]] con codifica fino a `21 BIT`
 
 ### Codifiche Possibili
 >[!tip] `UTF-8`

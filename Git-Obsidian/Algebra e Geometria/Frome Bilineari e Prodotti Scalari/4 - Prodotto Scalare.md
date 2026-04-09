@@ -1,7 +1,7 @@
 ## I Prodotti Scalari
 ---
 >[!info] Definizione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$
 >Un ***prodotto scalare*** è una [[1 - Forme Bilineari#Forma Bilineare|forma bilineare]] [[1 - Forme Bilineari#Tipi di Forme Bilineari|simmetrica]] e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]]
 
 #### Esempio
@@ -61,7 +61,7 @@ $$
 
 ### Notazione
 >[!info] Semplificazione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K=\mathbb{R}}$ e sia $\beta$ un [[#I Prodotti Scalari|prodotto scalare]] su $V$
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K=\mathbb{R}}$ e sia $\beta$ un [[#I Prodotti Scalari|prodotto scalare]] su $V$
 >Invece di $\beta(v,u)$ scriveremo semplicemente $(v,u)$ o $<v,u>$ o $v\cdot u$
 >Invece di $q(v)$ scriveremo $\mid\mid v \mid\mid^2$ cioè, definiamo la ***norma*** di $v$ o la ***lunghezza***
 >$\mid\mid v\mid\mid=\sqrt{ (v,v) }$
@@ -78,7 +78,7 @@ $$
 
 #### Base Ortonormale
 >[!Teorema] 
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$ con un prodotto scalare
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$ con un prodotto scalare
 ><u>Allora</u>
 >$\exists$ una base ***ortonormale*** rispetto a tale prodotto scalare
 
@@ -107,7 +107,7 @@ Sappiamo che se $\beta$ è una forma bilineare e $A$ è la sua matrice rispetto 
 - $v=x_{1}v_{1}+\dots+x_{n}v_{n}$
 - $u=y_{1}v_{1}+\dots+y_{n}v_{n}$
 
-Dove $x_{i}$ e $y_{i}$ sono le [[3 - Teoremi su Spazi Vettoriali#Teorema delle Coordinate|coordinate]]
+Dove $x_{i}$ e $y_{i}$ sono le [[../Basi dell'algebra/3 - Teoremi su Spazi Vettoriali#Teorema delle Coordinate|coordinate]]
 
 <u>Allora</u>
 
@@ -140,7 +140,7 @@ $$
 >[!abstract] Indipendenza Lineare
 >Se $v_{1},\dots,v_{k}$ sono tra loro ***ortogonali***
 ><u>Allora</u>
->Sono [[2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]
+>Sono [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]
 
 >[!caution] Dimostrazione
 
@@ -207,7 +207,7 @@ $$
 
 ### Disuguaglianza di Cauchy-Schwarts
 >[!info] Definizione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$ e consideriamo un prodotto scalare su $V$
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$ e consideriamo un prodotto scalare su $V$
 >>[!abstract] Proposizione
 >>$$\mid (v,u)\mid\leq\mid\mid v\mid\mid \cdot \mid\mid u \mid\mid$$
 >>- $\forall v,u\in V$

@@ -18,8 +18,8 @@ $$
 f(v_{1})=\underline{0},\dots,f(v_{d})=\underline{0}
 $$
 
-Ora basta mostrare che i vettori $f(v_{d+1}),\dots,f(v_{n})$ ($u_{d+1},\dots,u_{n}$) sono una [[2 - Campi e Spazi Vettoriali#Base|base]] di $\mathrm{Im}f$
-- Poiché $v_{1},\dots,v_{n}$ sono una base di $V$ per il [[3 - Teoremi su Spazi Vettoriali#Teorema delle Coordinate|teorema delle Coordinate]]
+Ora basta mostrare che i vettori $f(v_{d+1}),\dots,f(v_{n})$ ($u_{d+1},\dots,u_{n}$) sono una [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] di $\mathrm{Im}f$
+- Poiché $v_{1},\dots,v_{n}$ sono una base di $V$ per il [[../Basi dell'algebra/3 - Teoremi su Spazi Vettoriali#Teorema delle Coordinate|teorema delle Coordinate]]
 
 $$
 \exists!a_{1},\dots,a_{n}\in\mathbb{K}:V =a_{1}v_{1}+\dots+a_{n}v_{n}
@@ -34,7 +34,7 @@ Dunque
 $$
 \forall u\in\mathrm{Im}f, \exists! a_{d+1},\dots,a_{n}\in\mathbb{K}:u=f(v)=a_{d+1}f(v_{d+1})+\dots+a_{n}f(v_{n})
 $$
-Di conseguenza, per il [[3 - Teoremi su Spazi Vettoriali#Teorema delle Coordinate|teorema delle Coordinate]]
+Di conseguenza, per il [[../Basi dell'algebra/3 - Teoremi su Spazi Vettoriali#Teorema delle Coordinate|teorema delle Coordinate]]
 - $f(v_{d+1}),\dots,f(v_{n})$ è una ***base dell'immagine***
 
 >[!done] Quindi $\text{dim}(\mathrm{ker}f)=d,\quad\text{dim}(V)=n,\quad\text{dim}(\mathrm{Im}f)=n-d$
@@ -69,19 +69,19 @@ Quindi $\mathrm{Im}f=\mathbb{R}^2\implies f$ è suriettiva
 ## Conseguenze del Teorema del Rango
 ---
 >[!info] 1
->Se $f:V\to U$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Iniettiva|iniettiva]], allora
+>Se $f:V\to U$ è [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Iniettiva|iniettiva]], allora
 >$$\text{dim}(U)\geq \text{dim}(V)$$
 ><u>Infatti</u>
 >$$\text{dim}(U) \underbrace{ \geq }_{ \mathrm{Im}f\subseteq U } \text{dim}(\mathrm{Im}f)= \text{dim}(V)-\underbrace{ \text{dim}(\mathrm{ker}f) }_{ 0 }$$
 
 >[!info] 2
->Se $f:V\to U$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Surriettiva|suriettiva]], allora
+>Se $f:V\to U$ è [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Surriettiva|suriettiva]], allora
 >$$\text{dim}(U)\leq \text{dim}(V)$$
 ><u>Infatti</u>
 >$$\text{dim}(U) = \text{dim}(\mathrm{Im}f) = \text{dim}(V)-\text{dim}(\mathrm{ker}f)\leq\text{dim} (V)$$
 
 >[!info] 2
->Se $f:V\to U$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biunivoca]], allora
+>Se $f:V\to U$ è [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biunivoca]], allora
 >$$\text{dim}(U) = \text{dim}(V)$$
 ><u>Infatti</u>
 >In fatti per i due punti precedenti valgono $\geq$ e $\leq$

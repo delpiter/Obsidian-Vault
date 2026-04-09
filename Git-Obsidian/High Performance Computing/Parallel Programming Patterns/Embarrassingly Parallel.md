@@ -4,7 +4,7 @@
 > Esempi
 - *Vector Sum*.
 - *Mandelbrot Set*.
-- [[Rendering Graphics Pipeline|3D Rendering]].
+- [[../../Computer Graphics/Rendering Pipeline/Rendering Graphics Pipeline|3D Rendering]].
 - ***Brute Force*** password cracking.
 
 >[!abstract] Scatter-Gather
@@ -13,5 +13,5 @@
 Ogni *processo* elabora una porzione di input ("*dati locali*") per ottenere un risultato parziale.
 - Alla fine **combino** i risultati parziali per ottenere il *risultato finale*.
 
-![[Scatter-Gather.png]]
+![[attachements/Scatter-Gather.png]]
 

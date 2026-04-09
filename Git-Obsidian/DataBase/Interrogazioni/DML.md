@@ -69,7 +69,7 @@ Sono possibili anche:  
 Le tuple vengono selezionate attraverso una **espressione booleana** o una *combinazione di espressioni*.
 
 >[!missing] Valori nulli
->Il trattamento dei [[Informazione Incompleta#Null|valori nulli]] si basa su quanto già visto in [[Algebra Relazionale]].
+>Il trattamento dei [[../Progettazione Logica/Modello Relazionale/Informazione Incompleta#Null|valori nulli]] si basa su quanto già visto in [[Algebra Relazionale]].
 >- Logica a tre valori: **Vero**, **Falso** e **Sconosciuto**.
 
 ```sql
@@ -330,7 +330,7 @@ AS
 >L'***aggiornamento di una vista*** che trasforma $y$ in $y'$, può essere eseguito se e solo se è univocamente definita la nuova istanza $r'$ tale che $V(r')=y'$.
 
 Ciò corrisponde a dire che la vista è "***invertibile***", $V^{-1}(y')=r'$
-- I [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] pongono dei limiti sulle tipologie di viste che possono essere aggiornate.
+- I [[../Introduzione#DBMS|DBMS]] pongono dei limiti sulle tipologie di viste che possono essere aggiornate.
 
 >[!summary] Restrizioni Comuni
 >- `{sql icon} GROUP BY`

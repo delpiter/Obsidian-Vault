@@ -5,7 +5,7 @@
 >- Proteggersi dagli ***attacchi passivi***.
 >- Accorgersi degli ***attacchi attivi***.
 
-La [[Crittografia#Asimmetrica|chiave pubblica]] diventa *certificato*.
+La [[../Crittografia#Asimmetrica|chiave pubblica]] diventa *certificato*.
 
 ## Autenticazione e Confidenzialità
 ---
@@ -63,8 +63,8 @@ La ***certification authority*** deve essere al di sopra di ogni *sospetto*, com
 
 #### Firma Digitale
 >[!tldr] Idea
->La ***firma digitale*** consiste nel passare il messaggio in una [[Funzione di Hash]], cifrare il risultato ottenuto con la propria chiave privata e infine "*appendere*" al messaggio originale la **cifratura del messaggio hash**.
+>La ***firma digitale*** consiste nel passare il messaggio in una [[../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash]], cifrare il risultato ottenuto con la propria chiave privata e infine "*appendere*" al messaggio originale la **cifratura del messaggio hash**.
 
 Così facendo, *chiunque* abbia la **chiave pubblica** dell'ente che firma il messaggio è in grado di **verificare** l'**autenticità** dello stesso.
 
-![[DigitalSignature.png]]
+![[attachements/DigitalSignature.png]]

@@ -6,7 +6,7 @@
 
 >[!warning] Un algoritmo *Greedy* non sempre conduce ad una soluzione ottimale
 
-Cerchiamo la soluzione di un [[Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]]
+Cerchiamo la soluzione di un [[../../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]]
 - La ***ricerca esaustiva è impraticabile***
 
 Si cerca di costruire una soluzione o di migliorare una esistente facendo una ***serie di aggiustamenti successivi***
@@ -24,9 +24,9 @@ Si cerca di costruire una soluzione o di migliorare una esistente facendo una **
 >La ***struttura del problema*** è tale per cui *nessun algoritmo greedy* può **garantire** di trovare sempre la ***soluzione ottima***
 
 D'altro canto, algoritmi *non greedy* che garantiscono di trovarla hanno un ***costo computazionale proibitivo***
-- In questi casi è necessario utilizzare [[Definizioni_Algoritmi#Algoritmi Euristici|Algoritmi Euristici]]
+- In questi casi è necessario utilizzare [[../../Definizioni/Definizioni_Algoritmi#Algoritmi Euristici|Algoritmi Euristici]]
 
-Esempio: [[Definizioni_Algoritmi#Traveling Salesman Problem|TSP]]
+Esempio: [[../../Definizioni/Definizioni_Algoritmi#Traveling Salesman Problem|TSP]]
 
 ### Scelte Greedy
 >[!Proprietà della Scelta Greedy]

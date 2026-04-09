@@ -3,11 +3,11 @@
 >Può essere descritto tramite una unica **coordinata scalare**: $x(t)$
 >- Chiamata ***legge oraria***
 
-![[LeggeOraria.png]]
+![[attachements/LeggeOraria.png]]
 
 >Chiameremo diagramma orario un grafico che riporta il tempo ($t$) in ascissa e la posizione ($x$) in ordinata
 
-![[DiagrammaOrario.png]]
+![[attachements/DiagrammaOrario.png]]
 ## Velocità
 ---
 >[!info] Definizione

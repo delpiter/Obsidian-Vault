@@ -13,7 +13,7 @@ I *componenti* possono avere attributi e operazioni o possono **partecipare ad a
 I componenti sono connessi tra loro mediante [[UML#Relazioni|dipendenze]], possibilmente tramite [[UML#Distinzioni Comuni|interfaccie]].
 - Indica che un componente usa i servizi di un altro componente.
 
-![[ComponentDiagram.svg]]
+![[attachements/ComponentDiagram.svg]]
 - "*Lo scheduler offre l'interfaccia reservations*"
 
 I componenti *possono contenere oggetti*.

@@ -84,15 +84,15 @@ Le informazioni di utente sono *strutturate in messaggi* unitamente ad opportune
 >[!question] Parzialmente Confermato
 >La *richiesta* viene **confermata** dal service-provider.
 
-![[DialogMode.png|300]]
+![[attachements/DialogMode.png|300]]
 ## Flussi di Comunicazione
 ---
-![[CommunicationFlow.png]]
+![[attachements/CommunicationFlow.png]]
 
 >[!Regola Generale]
 >Il singolo ***flusso informativo*** è identificato da:
->- [[Protocollo IP|IP]] **sorgente** e **destinatario**.
->- [[Livello di Trasporto#Numero di Porta|Numero di Porta]] **sorgente** e **destinatario**.
+>- [[../Network Layer/Protocollo IP|IP]] **sorgente** e **destinatario**.
+>- [[../Transport Layer/Livello di Trasporto#Numero di Porta|Numero di Porta]] **sorgente** e **destinatario**.
 
 ## Server e Client
 ---
@@ -108,11 +108,11 @@ Le informazioni di utente sono *strutturate in messaggi* unitamente ad opportune
 >>Il processo *client* è colui che fa partire un **software in modo attivo** per comunicare con qualcun altro.
 
 >[!warning] Problema
->Il Client deve conoscere [[Protocollo IP|IP]] e [[Livello di Trasporto#Numero di Porta|numero di porta]] del server
+>Il Client deve conoscere [[../Network Layer/Protocollo IP|IP]] e [[../Transport Layer/Livello di Trasporto#Numero di Porta|numero di porta]] del server
 >>[!question] Come fa il client a conoscerli?
 
 Per il ***livello transport***:
-- [[Livello di Trasporto#Well Known Port|Well Known Ports]]
+- [[../Transport Layer/Livello di Trasporto#Well Known Port|Well Known Ports]]
 
 ## Peer to Peer
 ---

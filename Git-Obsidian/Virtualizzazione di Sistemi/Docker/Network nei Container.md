@@ -1,10 +1,10 @@
 ## Container Networking
 ---
 >[!caution] Container Networking
->Con il termine ***container*** [[Reti IP|networking]], si riferisce all'abilità di un container di connettersi e comunicare con altri [[Container]] e altri servizi **non-docker**.
+>Con il termine ***container*** [[../../Reti/Network Layer/Reti IP|networking]], si riferisce all'abilità di un container di connettersi e comunicare con altri [[Container]] e altri servizi **non-docker**.
 
 I container hanno il *networking* abilitato di default, e sono in grado di creare connessioni all'esterno.
-- Un container ***non ha conoscenza*** su che tipo di rete è connesso o se i suoi [[Comunicazione#Peer to Peer|peer]] sono altri container, vede solo un'interfaccia con un [[Protocollo IP|indirizzo IP]], un **gateway**, una [[Routing#Tabella di Routing IP|routing table]] e altri dettagli della rete.
+- Un container ***non ha conoscenza*** su che tipo di rete è connesso o se i suoi [[../../Reti/Introduzione/Comunicazione#Peer to Peer|peer]] sono altri container, vede solo un'interfaccia con un [[../../Reti/Network Layer/Protocollo IP|indirizzo IP]], un **gateway**, una [[../../Reti/Network Layer/Routing/Routing#Tabella di Routing IP|routing table]] e altri dettagli della rete.
 
 ### User-defined networks
 > Può essere utile separare gruppi di container che dovrebbero avere completo accesso tra di loro, ma accesso ristretto ad altri gruppi.
@@ -27,7 +27,7 @@ Esistono diversi *driver di default* che forniscono funzionalità di rete di bas
 | [[#IPVlan]]  | Connect containers to external VLANs.                               |
 | [[#MACVlan]] | Containers appear as devices on the host's network.                 |
 Il tipo di rete che un container utilizza è indifferente dal punto di vista del container.
-- Il container vede: [[Protocollo IP|indirizzo IP]], un **gateway**, una [[Routing#Tabella di Routing IP|routing table]], i servizi [[DNS]] e altri servizi.
+- Il container vede: [[../../Reti/Network Layer/Protocollo IP|indirizzo IP]], un **gateway**, una [[../../Reti/Network Layer/Routing/Routing#Tabella di Routing IP|routing table]], i servizi [[../../Reti/Application Layer/DNS]] e altri servizi.
 
 #### Bridge
 > Quando docker engine inizia per la prima volta ha una singola rete chiamata "***default bridge***".
@@ -51,7 +51,7 @@ Permettono la **connessione a servizi esterni**.
 - Supporta la pubblicazione di porte dove il traffico è inoltrato tra i container.
 
 >[!warning]
->Il default bridge è considerato un dettaglio ***legacy*** di *docker*, è consigliato utilizzare una **user-defined network** per utilizzo in [[Il Ciclo di Vita del Software#Attività|esercizio]]. 
+>Il default bridge è considerato un dettaglio ***legacy*** di *docker*, è consigliato utilizzare una **user-defined network** per utilizzo in [[../../Ingegneria del Software/Ciclo di Vita del Software/Il Ciclo di Vita del Software#Attività|esercizio]]. 
 #### Host
 >[!info]
 >***Rimuove l'isolazione*** di rete tra il container e l'host docker, il container utilizzerà direttamente la rete dell'host.
@@ -60,11 +60,11 @@ Permettono la **connessione a servizi esterni**.
 >[!info]
 >Gli ***overlay network*** connettono diversi [[Docker#Architettura|Docker daemon]] insieme e abilitano servizi di gruppo per comunicare con gli uni gli altri.
 
-Questa strategia rimuove la necessità di fare ***routing*** a livello del [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] tra i container.
+Questa strategia rimuove la necessità di fare ***routing*** a livello del [[../../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] tra i container.
 
 #### MacVlan
 >[!info]
->Le ***macVlan*** permettono di assegnare indirizzi [[Struttura del Data Link#Medium Access Control|MAC]] al container, rendendolo un dispositivo fisico nella rete.
+>Le ***macVlan*** permettono di assegnare indirizzi [[../../Reti/Data Link Layer/Struttura del Data Link#Medium Access Control|MAC]] al container, rendendolo un dispositivo fisico nella rete.
 
 Il ***docker daemon*** indirizza il traffico ai container attraverso gli indirizzi `MAC`.
 - I driver ***macVlan*** è la miglior scelta quando si parla di applicazioni legacy che si aspettano di essere connessi direttamente alla rete fisica.
@@ -74,11 +74,11 @@ Il ***docker daemon*** indirizza il traffico ai container attraverso gli indiriz
 >Di default un container **non** ha nessuna porta aperta al mondo esterno, per aprirla si deve usare il comando `--publish` o `-p`, con la seguente sintassi:
 >- `{sh} -p hostPort:containerPort`
 
-- Questo crea una regola del [[Firewall]] che ***mappa*** una porta del container a una porta dell'host docker.
+- Questo crea una regola del [[../../Reti/Network Layer/Network Security/Firewall]] che ***mappa*** una porta del container a una porta dell'host docker.
 
 | Flag Value                            | Description                                                                                                                                               |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `{sh} -p 8080:80`                     | Map a [[TCP]] port `80` in the container to the port `8080` in the host                                                                                   |
+| `{sh} -p 8080:80`                     | Map a [[../../Reti/Transport Layer/TCP]] port `80` in the container to the port `8080` in the host                                                                                   |
 | `{sh} -p 192.168.10.100:8080:80`      | Map a `TCP` port `80` in the container to port `8080` on the docker host for connections to `IP` `192.168.10.100` of the host.                            |
 | `{sh} -p 8080:80/tcp -p 8080:80/udp ` | Maps a `TCP` port `80` in the container to `TCP` port `8080` in the host and map an `UDP` port `80` in the container to the `UDP` port `8080` in the host |
 
@@ -90,7 +90,7 @@ Per vedere tutte le porte definite in un container, esegui il comando:  `{docker
 L'indirizzo è assegnato da una ***pool di indirizzi*** assegnata alla rete.
 
 >[!note] DHCP
-> Il ***docker daemon*** agisce come un server [[DHCP]] per ogni container.
+> Il ***docker daemon*** agisce come un server [[../../Reti/Application Layer/DHCP]] per ogni container.
 > Ogni rete ha una **subnet mask** e un **gateway** di default.
 
 Quando un container viene inizializzato può essere connesso ad una singola rete usando il flag `--network`.
@@ -102,7 +102,7 @@ Quando un container viene inizializzato può essere connesso ad una singola rete
 
 Per potere aggiungere collegamenti di rete a *container in esecuzione*, si deve usare il comando `docker network connect`.
 ### DNS
-> Di default il container eredita la **configurazione** [[DNS]] dell'host.
+> Di default il container eredita la **configurazione** [[../../Reti/Application Layer/DNS]] dell'host.
 
 >[!help] Docker DNS
 >Il ***DNS embedded*** di docker, oltre a mappare i nomi dei container agli indirizzi `IP`, mappa anche l'indirizzo `IP` del container con il servizio #addLink che il container implementa.

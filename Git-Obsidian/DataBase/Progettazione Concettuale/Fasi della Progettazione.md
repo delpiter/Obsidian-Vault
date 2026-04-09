@@ -87,7 +87,7 @@
 
 ### Strategia Top-Down
 >[!abstract] Concetto
->Nella ***strategia top-down*** si parte da uno schema iniziale molto *astratto ma completo*, che viene raffinato successivamente, fino ad arrivare allo [[Definizioni Importanti#Schema|schema]] ***finale***
+>Nella ***strategia top-down*** si parte da uno schema iniziale molto *astratto ma completo*, che viene raffinato successivamente, fino ad arrivare allo [[../Definizioni Importanti#Schema|schema]] ***finale***
 
 ```mermaid
 ---

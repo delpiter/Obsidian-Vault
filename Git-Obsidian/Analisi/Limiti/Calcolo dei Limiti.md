@@ -1,7 +1,7 @@
 ## Polinomi
 ---
 ### Limite per $x\to\pm\infty$
-- Calcolo analogo a quello delle [[Operazioni con i Limiti#Operazioni|successioni]]
+- Calcolo analogo a quello delle [[../Successioni/Operazioni con i Limiti#Operazioni|successioni]]
 	- Bisogna solo stare attenti al caso $-\infty$, vale la regola dei segni
 	- Es $\lim\limits_{x\to-\infty }x^3=-\infty$
 	- Es $\lim\limits_{x\to-\infty }x^2=+\infty$
@@ -11,7 +11,7 @@
 ## Funzioni Razionali con $\displaystyle{\frac{p(x)}{q(x)}}$ con $p,q$ polinomi
 ---
 ### Limite per $x\to \pm\infty$
-- Calcolo analogo a quello delle [[Operazioni con i Limiti#Operazioni|successioni]]
+- Calcolo analogo a quello delle [[../Successioni/Operazioni con i Limiti#Operazioni|successioni]]
 	- Bisogna solo stare attenti al caso $-\infty$, vale la regola dei segni
 ### Limite per $x\to c$
 #### Con $c\in \text{Dominio}$ ($q(c)\neq0$)
@@ -106,7 +106,7 @@ $$
 >E $1+x=e^y \implies x=e^y-1$
 >$$\lim\limits_{y\to 0} \displaystyle{\frac{e^y-1}{y}}=1$$
 
-![[Resto di Peano#Funzioni Trascurabili]]
+![[../Taylor/Resto di Peano#Funzioni Trascurabili]]
 ### Riscriviamo i Limiti
 $$
 \begin{array}
@@ -149,7 +149,7 @@ $$
 >Dimostriamo che
 >$$\lim\limits_{x\to 0} \displaystyle{\frac{\sin(x)}{x}}=1$$
 
-![[limiteNotevoleSeno.png]]
+![[attatchements/limiteNotevoleSeno.png]]
 - Osservo nell'immagine sovrastante che appaiono 3 figure
 	1. Triangolo $\overset{\triangle}{OAP}$
 	2. Settore Circolare $OAP$
@@ -162,7 +162,7 @@ $$
 = \displaystyle{\frac{\sin(x)}{2}\leq \displaystyle{\frac{x}{2}}}\leq \displaystyle{\frac{\tan(x)}{2}}, x\in\left[ 0, \displaystyle{\frac{\pi}{2}} \right]
 \end{array}
 $$
-- Poichè tutte le funzioni sono [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzioni Pari e Dispari|dispari]]
+- Poichè tutte le funzioni sono [[../Funzioni/Introduzione Funzioni#Funzioni Pari e Dispari|dispari]]
 $$
 |\sin(x)| \leq |x| \leq |\tan(x)|
 $$

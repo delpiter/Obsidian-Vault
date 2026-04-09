@@ -75,20 +75,20 @@ direzione nomeParametro: tipoParametro=valoreDefault
 
 ### Relazioni tra Classi
 - **Dipendenza**: 
-![[Dependency.svg|150]]
+![[attachements/Dependency.svg|150]]
 
 - **Associazione**: linea *senza punte*.
 - **Aggregazione**: Relazione "***part-of***" (*debole*).
-![[Aggregation.svg|150]]
+![[attachements/Aggregation.svg|150]]
 
 - **Generalizzazione**: Per gerarchie "*is-a*".
-![[Generalization.svg|150]]
+![[attachements/Generalization.svg|150]]
 
 - **Raffinamento**
-![[Implementation.svg|150]]
+![[attachements/Implementation.svg|150]]
 
 - **Composizione**: Relazione "***part-of***" (*forte*).
-![[Composition.svg|150]]
+![[attachements/Composition.svg|150]]
 
 ### Associazione
 >[!definizione]
@@ -140,7 +140,7 @@ Si segue il ***flusso grafico*** per la lettura:
 
 
 È possibile specificare il ***verso di lettura*** di una associazione, definire ***associazioni monodirezionali*** o *specificare ruoli*.
-- Raramente nella [[Analisi dei Requisiti|fase di analisi]] capita di dovere mettere una direzione all'associazione, mentre nella [[Progettazione|fase di progettazione]] capiterà **sempre**.
+- Raramente nella [[../Ciclo di Vita del Software/Analisi dei Requisiti|fase di analisi]] capita di dovere mettere una direzione all'associazione, mentre nella [[../Ciclo di Vita del Software/Progettazione|fase di progettazione]] capiterà **sempre**.
 ```mermaid
 ---
   config:
@@ -178,21 +178,21 @@ Nelle ***associazioni unarie***, è importante inserire i ***ruoli***, insieme a
 
 >[!fail] Vincolo di Esclusività
 
-![[OrConstraint.svg]]
+![[attachements/OrConstraint.svg]]
 
 >[!check] Vincolo di Propriety
 
-![[ProprietyConstraint.svg]]
+![[attachements/ProprietyConstraint.svg]]
 
 >[!note] Vincolo Annotazione
 >Serve per esprimere ***vincoli tra relazioni*** altrimenti non esprimibili
 
-![[AnnotationConstraint.svg]]
+![[attachements/AnnotationConstraint.svg]]
 
 >[!summary] Vincolo di Classe Associativa
 >L'identità delle istanze della ***classe associativa*** è stabilita solo dalle identità degli oggetti alle sue estremità.
 
-![[AttributeConstraint.svg]]
+![[attachements/AttributeConstraint.svg]]
 
 Una associazione in `UML` può avere delle *istanze duplicate* tranne nel caso che sia presente una ***classe associativa***.
 - La classe associativa, inserisce un ***vincolo di unicità*** dell'istanza.
@@ -201,7 +201,7 @@ Una associazione in `UML` può avere delle *istanze duplicate* tranne nel caso c
 >[!info]
 >Le ***associazioni qualificate*** *riducono* un’associazione **molti-a-molti** a una del tipo **uno-a-uno**, specificando un attributo che permette di selezionare un unico oggetto destinazione svolgendo il ruolo di identificatore.
 
-![[QualifiedAssociation.svg]]
+![[attachements/QualifiedAssociation.svg]]
 
 #### Associazioni n-arie
 >È possibile definire ***associazioni*** $n$-*arie*.
@@ -222,7 +222,7 @@ Gli elementi derivati possono essere:
 - ***Attributi***.
 - ***Associazioni***.
 
-![[DerivateElement.svg]]
+![[attachements/DerivateElement.svg]]
 
 ### Aggregazione e Composizione
 >[!help] Aggregazione
@@ -230,7 +230,7 @@ Gli elementi derivati possono essere:
 >Sia l'aggregazione intera sia le singole parti ***esistono indipendentemente***.
 
 Viene rappresentata con un ***rombo bianco***.
-![[Aggregation.svg]]
+![[attachements/Aggregation.svg]]
 
 ```mermaid
 ---

@@ -1,5 +1,5 @@
 ## Le Memorie
 ---
-![[Organizzazione della Memoria#Memoria Principale]]
+![[../../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione della Memoria#Memoria Principale]]
 
-![[Organizzazione della Memoria#ROM]]
+![[../../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione della Memoria#ROM]]

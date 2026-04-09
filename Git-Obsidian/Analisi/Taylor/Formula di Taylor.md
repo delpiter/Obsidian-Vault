@@ -2,7 +2,7 @@
 ## Formula di Taylor con Resto di Peano
 ---
 >[!info] Teorema
->Sia $I$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] di $\mathbb{R}$, $f:I\to\mathbb{R},c\in I,n \in\mathbb{N}$
+>Sia $I$ [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] di $\mathbb{R}$, $f:I\to\mathbb{R},c\in I,n \in\mathbb{N}$
 >Se $f$ è derivabile $n$ volte,
 ><u>Allora</u>
 >$$f(x)=\underbrace{ \sum^n_{k=0} \displaystyle{\frac{f^{(k)(c)}}{k!}}(x-c)^k }_{\displaystyle T_{c,n}(x) } + \circ(x-c)^n \text{ per }x\to c$$
@@ -22,7 +22,7 @@ Consideriamo la funzione Resto:
 $$
 R'(x)=f'(x)-f'(0)-f''(0)x
 $$
-- Poichè $f$ è derivabile 2 volte possiamo affermare che $f'$ è derivabile una volta e dunque posso applicare il [[Derivate#Teorema di Caratterizzazione delle Funzioni Derivabili|teorema di caratterizzazione delle funzioni derivabili]]
+- Poichè $f$ è derivabile 2 volte possiamo affermare che $f'$ è derivabile una volta e dunque posso applicare il [[../Calcolo Differenziale/Derivate#Teorema di Caratterizzazione delle Funzioni Derivabili|teorema di caratterizzazione delle funzioni derivabili]]
 - $f'(x)=f'(0)+f''(0)x+\circ(x)$
 Sostituisco in $R'(x)$ e ottengo:
 $$
@@ -30,7 +30,7 @@ R'(x) = \cancel{ f'(0) }+\cancel{ f''(0)x }+\circ(x)-\cancel{ f'(0) }-\cancel{ f
 $$
 - Quindi $R'(x) = \circ(x)\text{ per }x\to0$
 ##### Applico il teorema di Lagrange
-Ora applico il [[Teoremi basati sulle Derivate#Teorema di Lagrange|teorema di Lagrange]] alla funzione Resto nell'intervallo $[0,x]$ (o $[x,0]$, dipende se $x>0$ o $x<0$)
+Ora applico il [[../Calcolo Differenziale/Teoremi basati sulle Derivate#Teorema di Lagrange|teorema di Lagrange]] alla funzione Resto nell'intervallo $[0,x]$ (o $[x,0]$, dipende se $x>0$ o $x<0$)
 - Quindi:
 $$
 \exists d_{x}\in(0,x)\text{ t.c. } \displaystyle{\frac{R(x)-R(0)}{x}=R'(d_{x})}
@@ -47,7 +47,7 @@ $$
 \end{array}
 $$
 - Dato che $d_{x}$ è compreso tra $x$ e $-x$ se $x\to 0$ anche $d_{x}\to0$
-Per il [[Limiti di Successioni#Teorema dei due Carabinieri|teorema dei due carabinieri]] deduco che:
+Per il [[../Successioni/Limiti di Successioni#Teorema dei due Carabinieri|teorema dei due carabinieri]] deduco che:
 $$
 \displaystyle{\frac{R(x)}{x^2}} \to 0 \text{ per } x\to0
 $$

@@ -1,4 +1,4 @@
-> La [[Legge di Gravitazione|forza gravitazionale]] è una [[Lavoro di una Forza#Forze Conservative e Non Conservative|forza conservativa]]. 
+> La [[Legge di Gravitazione|forza gravitazionale]] è una [[../Lavoro e Energia/Lavoro di una Forza#Forze Conservative e Non Conservative|forza conservativa]]. 
 
 Si dimostra che ***qualsiasi traiettoria*** chiusa può essere *suddivisa* in spostamenti infinitesimi che sono sempre o *radiali* o *perpendicolari* alla **direzione radiale**.
 $$
@@ -60,7 +60,7 @@ Dato che la forza di gravità ha un ***raggio d'azione infinito***, singnifica r
 
 >[!question] Qual è la velocità minima per cui tale corpo non ricadrà sulla terra?
 
-È sufficiente che il corpo abbia un'[[Energia#Energia Meccanica|energia meccanica]] ***positiva o uguale a zero***.
+È sufficiente che il corpo abbia un'[[../Lavoro e Energia/Energia#Energia Meccanica|energia meccanica]] ***positiva o uguale a zero***.
 $$
 \frac{1}{2}mv_{f}^2-G \frac{mM_{T}}{R_{T}}=0\quad\implies\quad v_{f}=\sqrt{  2G \frac{M_{T}}{R_{T}}}
 $$
@@ -70,7 +70,7 @@ $$
 >All'*aumentare* di $M$ e al *diminuire* di $R$ si ottengono valori di via via ***più grandi***.
 >>[!danger] Sappiamo che in natura esiste una ***velocità limite***.
 
-La [[Git-Obsidian/Fisica/Misurazione#Sistema Internazionale|velocità della luce]] nel vuoto $c\simeq 3\times 10^{8} m/s$
+La [[../Misurazione#Sistema Internazionale|velocità della luce]] nel vuoto $c\simeq 3\times 10^{8} m/s$
 
 Esistono combinazioni di $M$ e $R$ che producono una velocità di fuga teorica maggiore di $c$, con la conseguenza che ***nessun corpo*** che si *trovi* a $r<R$ può effettivamente **fuggire dal campo gravitazionale**.
 
@@ -92,7 +92,7 @@ Se un oggetto di massa $M$ si trasforma in un *buco nero*, l'***orizzonte degli 
 - Il *Raggio di Schwartzchild* è pari a circa $10^-25 \ m$
 
 ## Massa Inerziale e Massa Gravitazionale
->La ***massa gravitazionale***, $mg$ , può essere *diversa* dalla ***massa inerziale*** che compare nella [[Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]].
+>La ***massa gravitazionale***, $mg$ , può essere *diversa* dalla ***massa inerziale*** che compare nella [[../Leggi di Newton e le Forze/Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]].
 
 >[!summary] Massa Inerziale
 >La *massa* $m_{i}$ usata nella ***legge di Newton***.
@@ -130,7 +130,7 @@ In generale, potrebbe essere che:
 $$
 \frac{m_{g}^{Fe}}{m_{i}^{Fe}}\neq \frac{m_{g}^{Pl}}{m_{i}^{Pl}}
 $$
-Quindi il [[Le Forze#Il Pendolo Semplice|periodo di oscillazione]] di un ***pendolo di ferro sarebbe***:
+Quindi il [[../Leggi di Newton e le Forze/Le Forze#Il Pendolo Semplice|periodo di oscillazione]] di un ***pendolo di ferro sarebbe***:
 $$
 T^{Fe}=2\pi\sqrt{ \frac{m_{i}^{Fe}}{m_{g}^{Fe}}\cdot \displaystyle{\frac{l}{g}} }\neq T^{Pl}
 $$

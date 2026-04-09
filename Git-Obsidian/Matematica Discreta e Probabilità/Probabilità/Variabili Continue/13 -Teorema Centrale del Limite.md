@@ -1,6 +1,6 @@
 >Sia $X\sim U([-1,1])$
 
-![[TeoremaCentrale1.png]]
+![[attachements/TeoremaCentrale1.png]]
 
 Il "***centro***" della funzione è composto da *un segmento di grado* $0$
 
@@ -15,7 +15,7 @@ Come già detto prima, ***non*** abbiamo strumenti adatti per fare la *somma di 
 >Sappiamo che assumerà valori compresi tra $-2$ e $2$
 >Sappiamo, inoltre che sarà *più probabile* che assumerà valori vicini allo $0$
 
-![[TeoremaCentrale2.png]]
+![[attachements/TeoremaCentrale2.png]]
 
 Funzione composta da $2$ *segmenti di grado* $1$
 
@@ -29,7 +29,7 @@ Funzione composta da $2$ *segmenti di grado* $1$
 >- $[-3,-1],\quad [-1,1]\quad [1,3]$
 
 >[!hint] Osservazione
->La ***densità*** della somma $X_{1}+\dots+X_{n}$ di $n$ variabili $U([-1,1])$ è *ben approssimata* dalla [[12 - Variabile Normale o Gaussiana|Densità Normale]] $N(\mu,\sigma^2)$, dove:
+>La ***densità*** della somma $X_{1}+\dots+X_{n}$ di $n$ variabili $U([[12 - Variabile Normale o Gaussiana|-1,1]] $N(\mu,\sigma^2)$, dove:
 >- $\mu=E[X_{1}+\dots+X_{n}]=0$
 >- $\sigma^2=Var(X_{1}+\dots+X_{n})=n\cdot Var(X_{1})=n\cdot \frac{2^2}{12}=\frac{n}{3}$
 >
@@ -58,7 +58,7 @@ $\mathcal{P}(\zeta>7)=\mathcal{P}\left( \zeta_{0}> \displaystyle\frac{7}{\sqrt{ 
 ## Teorema Centrale del Limite
 ---
 >[!definizione] Definizione
->Siano $X_{1},\dots,X_{n}$ [[3 - Variabili Aleatorie|Variabili aleatorie]] ($n\geq20$) *indipendenti*, aventi tutte la ***stessa densità***
+>Siano $X_{1},\dots,X_{n}$ [[../3 - Variabili Aleatorie|Variabili aleatorie]] ($n\geq20$) *indipendenti*, aventi tutte la ***stessa densità***
 >Sia $\mu=E[X_{1}]$ e $\sigma^2=Var(X_{1})$
 ><u>Allora</u>
 >$$X_{1}+X_{2}+\dots+X_{n}\sim N(n\mu,n\sigma^2)$$
@@ -103,7 +103,7 @@ $\mathcal{P}\left( \zeta_{0}> \displaystyle{\frac{365-10n}{10\sqrt{ n }}} \right
 
 Cerchiamo dentro la ***tabella*** il valore $0.9$:
 - $\Phi(1,28)=0,9$
-![[InversoTCL.png]]
+![[attachements/InversoTCL.png]]
 
 Quindi:
 $$
@@ -131,7 +131,7 @@ d_{X}(k)=\begin{cases}
 $$
 >Dobbiamo "*estendere*" la densità in modo che risulti come continua
 
-![[TeoremaCentraleDiscreto.png]]
+![[attachements/TeoremaCentraleDiscreto.png]]
 
 La nuova densità "*estende*" ogni punto di $d_{X}$, tenendolo come centro.
 
@@ -173,7 +173,7 @@ $$
 >[!hint] Osservazione
 >$X_{1}+\dots+X_{100}\sim B(100, 0.55)$
 >
->Si ***potrebbe*** calcolare come una [[3 - Variabili Aleatorie#Variabili Binomiali|variabile binomiale]] ma verrebbe un calcolo *inutilmente complesso*
+>Si ***potrebbe*** calcolare come una [[../3 - Variabili Aleatorie#Variabili Binomiali|variabile binomiale]] ma verrebbe un calcolo *inutilmente complesso*
 
 >Approssimiamo con il ***teorema centrale del limite***
 
@@ -204,7 +204,7 @@ $$
 $\mathcal{P}(S_{n}>24)\leq0.1$
 - $\mathcal{P}\left( \zeta_{0}> \displaystyle{\frac{24.5-n\cdot 0.7}{\sqrt{ n\cdot 0.7\cdot 0.3 }}} \right)\leq 0.1$
 
-![[EsercizioVacanze.png]]
+![[attachements/EsercizioVacanze.png]]
 
 $$
 \begin{array}

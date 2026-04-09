@@ -1,6 +1,6 @@
 ## Puntatori
 ---
-Una dichiarazione di [[Introduzione Variabili|variabile]] comporta l'allocazione di un certo numero di **celle contigue di memoria RAM**
+Una dichiarazione di [[../Variabili/Introduzione Variabili|variabile]] comporta l'allocazione di un certo numero di **celle contigue di memoria RAM**
 - Ad ogni cella è associato un **indirizzo di memoria univoco**
 
 >[!info] Puntatore
@@ -29,15 +29,15 @@ int *j; //pointer to int type variable
 ```
 
 - È possibile dichiarare puntatori *generici*, senza specificare il tipo puntato
-	- Utilizzando la [[Linguaggio C#Keywords|keyword]] `void`
+	- Utilizzando la [[../Introduzione Programmazione/Linguaggio C#Keywords|keyword]] `void`
 - Per poterlo utilizzare è necessario un cast al tipo specifico
 
 ### Assegnamento
 >[!tldr]
 >Una variabile di tipo puntatore può contenere solo **indirizzi di memoria** o il valore costante `NULL`
->![[Pointers.png]]
+>![[attachements/Pointers.png]]
 
-- Gli indirizzi di memoria ottenuti tramite [[Intro Espressioni e Operatori#Operatori|l'operatore]] `&` possono essere assegnati ad una variabile di tipo puntatore
+- Gli indirizzi di memoria ottenuti tramite [[../Espressioni e Operatori/Intro Espressioni e Operatori#Operatori|l'operatore]] `&` possono essere assegnati ad una variabile di tipo puntatore
 
 ```c
 int x = 1;
@@ -79,7 +79,7 @@ I puntatori contengono solamente indirizzi di memoria, è necessario quindi forn
 
 
 ### Dimensione di Memoria
-Esattamente come per gli altri [[Tipi di Dati|tipi di dato]] la dimensione in `byte` di un puntatore può essere determinata utilizzando l'operatore `sizeof()`
+Esattamente come per gli altri [[../Variabili/Tipi di Dati|tipi di dato]] la dimensione in `byte` di un puntatore può essere determinata utilizzando l'operatore `sizeof()`
 
 >[!tldr]
 >Lo standard non impone vincoli sulla dimensione del tipo di dato puntatore

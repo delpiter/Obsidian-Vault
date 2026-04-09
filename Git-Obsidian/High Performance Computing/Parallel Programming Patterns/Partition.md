@@ -1,5 +1,5 @@
 >[!tip] Pattern
->È un [[Parallel Programming Patterns|pattern]] ***partition*** consiste nel dividere il *dominio dei dati* in regioni solitamente [[Insiemi Numerici#Insiemi Separati|disgiunte]] (potrebbe essere necessario avere insiemi **non disgiunti**) chiamate ***partizioni*** (*partition*).
+>È un [[Parallel Programming Patterns|pattern]] ***partition*** consiste nel dividere il *dominio dei dati* in regioni solitamente [[../../Analisi/Insiemi/Insiemi Numerici#Insiemi Separati|disgiunte]] (potrebbe essere necessario avere insiemi **non disgiunti**) chiamate ***partizioni*** (*partition*).
 
 Ogni *processore* opera su una singola partizione.
 
@@ -47,34 +47,34 @@ La ***dimensione ottimale*** del partizionamento dipende generalmente dal sistem
 #### Partizionamento a una Dimensione
 > A blocchi
 
-![[UnidimentionalBlockPartition.png]]
+![[attachements/UnidimentionalBlockPartition.png]]
 
 > Ciclico
 
-![[UnidimentionalCyclicPartition.png]]
+![[attachements/UnidimentionalCyclicPartition.png]]
 
 #### Partizionamento Bidimensionale
 > A blocchi *orizzontali*.
 
-![[BidimensionalHBlockPartitioning.png]]
+![[attachements/BidimensionalHBlockPartitioning.png]]
 
 > A blocchi *verticali*.
 
-![[BidimensionalVBlockPartition.png]]
+![[attachements/BidimensionalVBlockPartition.png]]
 
 > Partizionamento *blocco, blocco*
 
-![[Block-BlockPartitioning.png]]
+![[attachements/Block-BlockPartitioning.png]]
 
 > Ciclici
 
-![[BidimensionalCyclicPartition.png]]
+![[attachements/BidimensionalCyclicPartition.png]]
 
-![[Cyclic-CyclicPartition.png]]
+![[attachements/Cyclic-CyclicPartition.png]]
 
 ##### Esempio: Mandelbrot Set
 >[!definizione]
->Il ***Mandelbrot Set*** è l'insieme di punti $c$ nel piano dei [[Numeri Complessi]] tale che la sequenza $z_{n}(c)$ definita come:
+>Il ***Mandelbrot Set*** è l'insieme di punti $c$ nel piano dei [[../../Analisi/Insiemi/Numeri Complessi]] tale che la sequenza $z_{n}(c)$ definita come:
 >$$z_{n}(c)=\begin{cases} 0\qquad \qquad \ \ \ \text{ if } n=0\\ z_{n-1}^{2}(c)+c \ \text{ Otherwise} \end{cases}$$
 >Non *diverge* quando $n\to +\infty$.
 
@@ -108,7 +108,7 @@ Necessità di [[#Load Balancing]]
 #### Partizionamento Irregolare
 > Esempio
 
-![[IrregularPartitioning.png]]
+![[attachements/IrregularPartitioning.png]]
 
 La superficie di un lago di può approssimare con una ***mesh di triangoli***.
 - I colori indicano le *partizioni* date a ciascun processore.
@@ -125,7 +125,7 @@ La superficie di un lago di può approssimare con una ***mesh di triangoli***.
 >Idealmente ogni processore dovrebbe eseguire la ***stessa quantità di lavoro***.
 >- Se i *task* si sincronizzano alla fine della computazione, il *tempo di esecuzione* sarà quello del ***task più lento***.
 
-![[LoadBalancing.png]]
+![[attachements/LoadBalancing.png]]
 
 >[!done] Come Risolvere il Problema
 

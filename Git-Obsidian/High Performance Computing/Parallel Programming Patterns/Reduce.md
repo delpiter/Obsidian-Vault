@@ -6,7 +6,7 @@
 
 Una **reduction** può essere fatta in $O(\log_{2}n)$ *step paralleli*.
 
-![[SumReduce.png]]
+![[attachements/SumReduce.png]]
 
 ```c
 int n2;
@@ -28,7 +28,7 @@ return x[0];
 >[!definizione]
 >***Work efficiency*** indica il grado in cui il lavoro viene svolto in *modo efficace*, utilizzando le **risorse** (tempo, energia, materiali) nel modo migliore per ottenere un certo risultato.
 
-> Quante somme sono calcolate dall'algoritmo di [[Reduce|parallel reduction]]?
+> Quante somme sono calcolate dall'algoritmo di [[.md|parallel reduction]]?
 
 - $\displaystyle\frac{n}{2}$ somme al primo livello.
 - $\displaystyle\frac{n}{4}$ somme al secondo livello.

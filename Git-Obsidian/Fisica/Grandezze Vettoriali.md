@@ -1,4 +1,4 @@
-> Ci sono grandezze per le quali un numero non basta. Ad esempio, lo [[Moto Rettilineo|spostamento]].
+> Ci sono grandezze per le quali un numero non basta. Ad esempio, lo [[Cinematica/Moto Rettilineo|spostamento]].
 
 Per lo spostamento nello spazio tridimensionale occorrono tre grandezze:
 - **Modulo**
@@ -21,7 +21,7 @@ Dato un generico vettore $\vec{a}$, il "***suo***" versore può essere espresso 
 $$
 \vec{u}_{a}=\frac{\vec{a}}{a}=\frac{\vec{a}}{\mid\vec{a}\mid}
 $$
-[[Elementi di Algebra Lineare e Geometria Analitica#Vettori nel Piano e nello Spazio|Somma, Differenza e prodotto per uno scalare]].
+[[../Analisi/Funzioni a due Variabili/Elementi di Algebra Lineare e Geometria Analitica#Vettori nel Piano e nello Spazio|Somma, Differenza e prodotto per uno scalare]].
 
 ## Scomposizione di un Vettore
 ---
@@ -30,7 +30,7 @@ $$
 >$$\vec{v}=\vec{v}_{r}+\vec{v}_{s}=v_{r}\hat{r}+v_{s}\hat{s}$$
 > Dove $\hat{r}$ e $\hat{s}$ sono i versori che definiscono le direzioni $r$ e $s$.
 
-Per comodità, solitamente si utilizzano i [[3 - Teoremi su Spazi Vettoriali#Base Canonica|versori allineati con gli assi]].
+Per comodità, solitamente si utilizzano i [[../Algebra e Geometria/Basi dell'algebra/3 - Teoremi su Spazi Vettoriali#Base Canonica|versori allineati con gli assi]].
 
 > Nello spazio servono almeno tre direzioni orientate, la scelta più ovvia è la ***terna cartesiana***.
 

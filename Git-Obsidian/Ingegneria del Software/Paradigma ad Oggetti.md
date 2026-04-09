@@ -149,7 +149,7 @@ I blocchi di base sono i *task* che durante l'implementazione danno luogo a proc
 
 >[!abstract] All'approccio a oggetti
 
-L'***analisi*** va dall'inizio del progetto fino all'analisi delle *specifiche utente* e allo [[Definizione Strategica e Pianificazione#Studio di Fattibilità|studio di fattibilità]].
+L'***analisi*** va dall'inizio del progetto fino all'analisi delle *specifiche utente* e allo [[Ciclo di Vita del Software/Definizione Strategica e Pianificazione#Studio di Fattibilità|studio di fattibilità]].
 
 Si definiscono progettazione logica e fisica del sistema (***design***).
 

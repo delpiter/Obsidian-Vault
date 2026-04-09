@@ -45,14 +45,14 @@
 	\end{algorithmic}
 	\end{algorithm}
 ```
-![Merge Sort (youtube.com)](https://www.youtube.com/watch?v=ZRPoEKHXTJg)
+![[youtube.com)](https://www.youtube.com/watch?v=ZRPoEKHXTJg|Merge Sort (youtube.com)]]
 ## Concetto
 ---
-> Algoritmo di ordinamento basato sulla tecnica [[Divide et Impera]]
+> Algoritmo di ordinamento basato sulla tecnica [[../Divide et Impera]]
 
 Ideato da *John Von Neumann* nel 1945
 - Implementato come algoritmo di *ordinamento standard* nelle librerie di alcuni linguaggi
-- Algoritmo di tipo [[Recursive Functions|ricorsivo]]
+- Algoritmo di tipo [[../../Programmazione/Funzioni/Recursive Functions|ricorsivo]]
 
 >[!info] Dividi
 
@@ -69,7 +69,7 @@ Ordina gli elementi in $S_{1},S_{2}$ utilizzando il metodo `MergeSort` (ricorsio
 
 Metti insieme gli elementi di $S_{1},S_{2}$ ottenendo un unico vettore $S$ *ordinato*
 
-![[MergeSort.png]]
+![[attachements/MergeSort.png]]
 
 ### Operazione di Merge
 > L'operazione di Merge è quella che effettivamente va a ordinare i singoli elementi
@@ -86,6 +86,6 @@ $$
 La *complessità* del **Merge Sort** non dipende dalla *configurazione iniziale* dell'array
 - Di conseguenza la complessità è la stessa nei casi *ottimo*, *pessimo* e *medio*
 
-> *Caso speciale dell'[[Recursive Functions#Albero della Ricorsione|albero della ricorsione]]*
+> *Caso speciale dell'[[../../Programmazione/Funzioni/Recursive Functions#Albero della Ricorsione|albero della ricorsione]]*
 
-![[MergeSortProof.png]]
+![[attachements/MergeSortProof.png]]

@@ -5,7 +5,7 @@
 >[!cite] Legge delle Orbite
 >Tutti i pianeti si muovono su orbite *piane*, *ellittiche* e aventi il ***sole in uno dei fuochi***.
 
-![[ILeggeDiKeplero.jpg|500]]
+![[attachements/ILeggeDiKeplero.jpg|500]]
 
 
 ## Seconda Legge
@@ -14,9 +14,9 @@
 >Il *segmento* che congiunge un pianeta al sole descrive ***aree uguali*** in ***tempi uguali***:
 >$$\frac{\Delta A}{\Delta t}=\text{const.}$$
 
-![[IILeggeDiKeplero.jpg|450]]
+![[attachements/IILeggeDiKeplero.jpg|450]]
 
-![[IILeggeDiKeplero2.jpg|450]]
+![[attachements/IILeggeDiKeplero2.jpg|450]]
 ## Terza Legge
 ---
 >[!cite] Legge dei Periodi
@@ -27,7 +27,7 @@
 > Mostriamo che la forza centripeta che causa l'orbita circolare è la [[Legge di Gravitazione#Legge di Gravitazione Universale|forza di Gravitazione]].
 
 La terra compie un'orbita "*circolare*".
-- Sappiamo quindi che la sua [[Moto Circolare|accelerazione centripeta]] è:
+- Sappiamo quindi che la sua [[../Cinematica/Moto Circolare|accelerazione centripeta]] è:
 
 $$
 a_{c}=\omega^{2}R=\frac{4\pi^{2}}{T^{2}}R
@@ -40,7 +40,7 @@ Dove:
 
 > La forza di gravitazione di newton
 
-- Per la [[Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]] questa forza è uguale a $m\cdot a$.
+- Per la [[../Leggi di Newton e le Forze/Leggi di Newton#Seconda Legge di Newton|seconda legge di Newton]] questa forza è uguale a $m\cdot a$.
 
 $$
 G \frac{M_{S}M_{T}}{R^{2}}=M_{T}\underbrace{ \frac{4\pi^{2}}{T^{2}}R }_{ a_{c} }

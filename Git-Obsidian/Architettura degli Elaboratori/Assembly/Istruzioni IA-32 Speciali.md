@@ -4,10 +4,10 @@
 >La ***Floating Point Unit***, incorporata all'interno del chip della `CPU`, utilizza una serie di *registri aggiuntivi* rispetto a quelli fino ad ora introdotti
 
 
-![[FloatingPointUnit.png]]
+![[attachements/FloatingPointUnit.png]]
 
 Gli 8 registri `R0,...,R7`, benchè accessibili senza nessuna restrizione sull'ordine
-- ***Vengono trattati*** come uno [[Stack]]
+- ***Vengono trattati*** come uno [[../../Algoritmi e Strutture Dati/Strutture Dati/Stack]]
 - Operazioni di ***caricamento e prelevamento*** aggiungono o rimuovono valori rispetto alla *cima dello stack*
 	- La cima è memorizzata in un registro, `Status Register`
  
@@ -66,7 +66,7 @@ FMUL            // R0 = R0 * R1
 
 ### Nuovi tipi di Dato
 Le istruzioni `MMX` introducono 3 nuovi tipi di dati
-![[MMXdataType.png]]
+![[attachements/MMXdataType.png]]
 
 Tutti e tre memorizzati in registri da $64$ `BIT`
 - ***Packed Byte Integer***

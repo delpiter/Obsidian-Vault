@@ -101,7 +101,7 @@ Linea guida per il [[Disabilità#Daltonismo|Daltonismo]].
 > $G183$
 - Tecnica generale ($G$) legata alla definizione di ***relative luminance***
 	- La luminosità in un qualsiasi punto normalizzata a $0$ per il **nero più scuro** e $1$ per il *bianco più chiaro*.
-- Suggerisce di usare un rapporto di contrasto $3:1$ per il testo e usare indizi visuali in aggiunta per [[Link]] e controlli, dove è usato solo il colore per identificarlo.
+- Suggerisce di usare un rapporto di contrasto $3:1$ per il testo e usare indizi visuali in aggiunta per [[HTML/Elementi di HTML/Link]] e controlli, dove è usato solo il colore per identificarlo.
 
 >[!info] Principio: Percepibile
 >>[!caution] Linea Guida: Alternative testuali
@@ -111,7 +111,7 @@ Linea guida per il [[Disabilità#Daltonismo|Daltonismo]].
 
 Il testo è l'unico media multi sensoriale.
 - L'alternativa testuale deve fornire lo stesso messaggio intrinseco del contenuto non testuale.
-- Le immagini possono avere l'alternativa testuale tramite l'attributo `alt` ([[Embedded#Figure|Immagini]]).
+- Le immagini possono avere l'alternativa testuale tramite l'attributo `alt` ([[HTML/Elementi di HTML/Embedded#Figure|Immagini]]).
 - Per gli altri media non testuali, bisogna introdurre una alternativa ***sincrona rispetto a un flusso multimediale***.
 
 >[!info] Principio: Percepibile

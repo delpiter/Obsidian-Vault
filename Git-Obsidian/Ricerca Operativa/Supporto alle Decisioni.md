@@ -2,23 +2,23 @@
 >Il ***supporto alle decisioni*** consiste nel realizzare soluzioni software che aiutano manager, operatori finanziari, medici, etc. ad **individuare la miglior decisione** nell'ambito.
 
 I metodi usati per il supporto alle decisioni spaziano da:
-- [[Definizioni_Algoritmi#Problema di Ottimizzazione|Ottimizzazione]]
+- [[../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|Ottimizzazione]]
 - **Intelligenza artificiale**.
 
 > Per sviluppare una soluzione per il supporto alle decisioni sono necessari:
 - Modellare matematicamente il problema.
-- Identificare la sua [[Complessità di Algoritmi|complessità]].
+- Identificare la sua [[../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità]].
 - Progettare l'algoritmo più adatto, usando le tecniche di soluzione in relazione al modello e alla complessità.
 
 ## Problema, Modello e Algoritmo
 ---
-![[Problemi e Algoritmi#Problemi]]
+![[../Algoritmi e Strutture Dati/Problemi e Algoritmi#Problemi]]
 
 Una *istanza* rappresenta i dati noti del problema.
 - Calcolare l'area di un triangolo è il **problema**.
 - Il triangolo di altezza $20cm$ e base $30cm$ è l'**istanza**.
 
-![[Problemi e Algoritmi#Algoritmo]]
+![[../Algoritmi e Strutture Dati/Problemi e Algoritmi#Algoritmo]]
 
 ### Modelli
 >[!definizione] 
@@ -41,7 +41,7 @@ Nel caso in cui i parametri possono essere definiti con esattezza a priori parle
 - Altrimenti *modelli stocastici*.
 
 Nella definizione e nell'uso dei modelli non bisogna dimenticarsi dell'***aspetto numerico***.
-- L'[[Errore di Rappresentazione|approssimazione]] dei parametri e gli errori nel calcolo possono inficiare la **validità dell'output** ([[Condizionamento]] di una istanza).
+- L'[[../Metodi Numerici per L'Intelligenza Artificiale/Numeri Finiti/Errore di Rappresentazione|approssimazione]] dei parametri e gli errori nel calcolo possono inficiare la **validità dell'output** ([[../Metodi Numerici per L'Intelligenza Artificiale/Condizionamento e Stabilità/Condizionamento]] di una istanza).
 
 ## Tipologie di Problemi
 ---
@@ -56,18 +56,18 @@ Nella definizione e nell'uso dei modelli non bisogna dimenticarsi dell'***aspett
 >[!example] Problemi di ***Enumerazione***
 - Data un'*istanza* si vuole determinare tutte le possibili soluzioni.
 
->[!abstract] Problemi di [[Definizioni_Algoritmi#Problema di Ottimizzazione|Ottimizzazione]]
+>[[../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|Ottimizzazione]]
 -  Data un'*istanza* si vuole determinare la *migliore soluzione possibile* rispetto a una misura fissata.
 ### Complessità Computazionale
 >[!info]
->La teoria della [[Complessità di Algoritmi|complessità computazionale]] è un ambito di ricerca della matematica spesso denotato come "*informatica teorica*".
+>La teoria della [[../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità computazionale]] è un ambito di ricerca della matematica spesso denotato come "*informatica teorica*".
 >Ha l'obbiettivo di classificare i problemi secondo la loro **intrinseca complessità**.
 
 *Banalizzando*:
 - Ci consente di determinare se un problema è **facile** o **difficile**.
 
 >[!fail] Problema difficile
->Un ***problema è difficile*** se in una sola istanza **non** sempre si trova una *soluzione ottima* ([[Classi P e NP]]).
+>Un ***problema è difficile*** se in una sola istanza **non** sempre si trova una *soluzione ottima* ([[../Algoritmi e Strutture Dati/Complessità/Classi P e NP]]).
 
 ## Ricerca Operativa
 ---

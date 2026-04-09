@@ -1,6 +1,6 @@
 ## 802.3
 ---
-> Basato sul [[LAN#Con Rilevazione del Canale|protocollo di accesso]].
+> Basato sul [[../LAN#Con Rilevazione del Canale|protocollo di accesso]].
 
 ### Carrier Sensing Multiple Access
 >[!info] Carrier Sensing
@@ -25,7 +25,7 @@ Permette un'utilizzazione **molto efficiente della banda disponibile**.
 >[!todo] Collision Domain
 >Il ***collision domain*** è l'insieme delle stazioni connesse alla medesima rete ethernet che *possono collidere in trasmissione*.
 
-Per garantire il funzionamento del `CSMA-CD` si devono imporre vincoli alla dimensione massima della [[LAN]].
+Per garantire il funzionamento del `CSMA-CD` si devono imporre vincoli alla dimensione massima della [[../LAN|LAN]].
 - In funzione della **dimensione dei frame**.
 - In funzione della **velocità di trasmissione**.
 
@@ -39,7 +39,7 @@ Per garantire il funzionamento del `CSMA-CD` si devono imporre vincoli alla dime
 >Lo ***slot time*** è il tempo necessario per trasmettere $512$ `bit` in reti a $10$ e $100$ `Mbit/s`.
 >- $4096$ `bit` in reti a $1$`Gbit/s`
 
-Il [[Controllo del Canale#Canale di Comunicazione|frame]] deve avere una dimensione minima uguale allo slot time.
+Il [[../../Controllo del Canale#Canale di Comunicazione|frame]] deve avere una dimensione minima uguale allo slot time.
 
 Lo **slot time** deve essere superiore alla somma:
 - Del tempo di *andata e ritorno del segnale*
@@ -51,7 +51,7 @@ Fissata la dimensione dello **slot time** ogni trama di dimensione minore *viene
 >La ***sequenza di  jamming*** deve essere abbastanza lunga da garantire il *riconoscimento di una collisione* nel circuito di collision detection ($33$ `bit`).
 
 #### Formato del Frame
-![[FrameEthernet.png]]
+![[attachements/FrameEthernet.png]]
 
 >[!abstract] Campi del Frame
 
@@ -65,7 +65,7 @@ Fissata la dimensione dello **slot time** ogni trama di dimensione minore *viene
 
 > **Lunghezza**/**Tipo**
 - Per `IEEE 802.3` la lunghezza indica quanti `byte` ci sono nel **campo dati**.
-	- Il **tipo del payload** è dato dall'[[Struttura del Data Link#Logical Link Control|LLC]], i primi $4$`bit` sono sempre a $0$.
+	- Il **tipo del payload** è dato dall'[[../../Struttura del Data Link#Logical Link Control|LLC]], i primi $4$`bit` sono sempre a $0$.
 - Per *ethernet* indica il **tipo di payload** contenuto nel campo dati.
 	- Uno dei primi $4$ `bit` è $\neq$ da $0$.
 	- Gli altri `bit` rappresentano la lunghezza.
@@ -75,10 +75,10 @@ Fissata la dimensione dello **slot time** ogni trama di dimensione minore *viene
 - Il *padding* porta il frame alla lunghezza minima di $64$ `byte` nel caso il campo dati **non fosse abbastanza lungo**.
 
 > ***Frame Checking Sequence***
-- Contiene `bit` di *ridondanza* ([[Controllo dell'Errore#Codici Polimoniali|Codice polinomiale di grado 32]]).
+- Contiene `bit` di *ridondanza* ([[../../Controllo dell'Errore#Codici Polimoniali|Codice polinomiale di grado 32]]).
 
 > ***Indirizzi***
-- [[Struttura del Data Link#Medium Access Control|MAC]].
+- [[../../Struttura del Data Link#Medium Access Control|MAC]].
 
 >[!caution] Delimitazione dei Frame
 >Due frame devono essere separati almeno da un ***Inter-Frame Gap***.

@@ -17,7 +17,7 @@
 ## Le Qualità
 ---
 >***Correttezza*** `E` `P`
-- Un **sw** è *corretto* se rispetta le [[Il Ciclo di Vita del Software|specifiche del progetto]].
+- Un **sw** è *corretto* se rispetta le [[../Ciclo di Vita del Software/Il Ciclo di Vita del Software|specifiche del progetto]].
 
 > ***Affidabilità*** `E` `P`
 - Un **sw** è *affidabile* se l'utente può dipendere da esso.

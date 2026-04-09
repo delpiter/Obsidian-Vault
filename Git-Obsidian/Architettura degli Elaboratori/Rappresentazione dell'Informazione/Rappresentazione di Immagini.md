@@ -2,7 +2,7 @@
 > (***PI***cture ***EL***ement) di ognuno dei quali è memorizzata l'intensità luminosa e/o il colore
 
 
-![[pixelGrid.png]]
+![[attachements/pixelGrid.png]]
 ##### Parametri importanti
 - ***Dimensione*** (*Risoluzione*)
 - ***Profondità***
@@ -44,7 +44,7 @@ Il numero dei colori disponibili è $2^{24}=16.777.216$
 
 Un'immagine di dimensioni $W\times H$ occupa $W\times H\times3$ `BYTE`.
 
-![[RGBspectrum.png]]
+![[attachements/RGBspectrum.png]]
 
 ### Codifica con un numero *arbitrario* di colori
 >[!info] Sia $N$ il numero di `BIT` per pixel

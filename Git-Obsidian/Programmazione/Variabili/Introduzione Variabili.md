@@ -43,7 +43,7 @@ double temperature = 100, pressure = 1.5;
 ```
 
 ### Dichiarazione vs Definizione
-Citiamo direttamente lo standard [[Definizioni_Programmazione#ISO|ISO C89]] per la differenza nel linguaggio C
+Citiamo direttamente lo standard [[../../Definizioni/Definizioni_Programmazione#ISO|ISO C89]] per la differenza nel linguaggio C
 >[!quote]
 >*A declaration specifies the interpretation and attributes of a set of identifiers.*
 >*A declaration that also causes storage to be reserved for an object or function named by an identifier is a definition*

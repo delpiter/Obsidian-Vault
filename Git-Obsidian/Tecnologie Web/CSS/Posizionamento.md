@@ -3,7 +3,7 @@
 ## Comportamento 1
 ---
 >[!tldr] Idea
->Comportamento relativo agli *elementi*, [[Heading#H1-6|h1]], [[Phrasing#P|p]] e [[Phrasing#Div|div]].
+>Comportamento relativo agli *elementi*, [[../HTML/Elementi di HTML/Heading#H1-6|h1]], [[../HTML/Elementi di HTML/Phrasing#P|p]] e [[../HTML/Elementi di HTML/Phrasing#Div|div]].
 
 > ***Larghezza***
 - Se non specificata occupano il `100%` di quella del padre.
@@ -19,7 +19,7 @@ A prescindere dalla larghezza, gli eventi sono disposti ***verticalmente***, *fo
 ## Comportamento 2
 ---
 >[!tldr] Idea
->Comportamento relativo agli *elementi*, [[Link|a]], [[Phrasing#Ruolo del Testo|strong]], [[Phrasing#Ruolo del Testo|em]] e [[Phrasing#Ruolo del Testo|span]].
+>Comportamento relativo agli *elementi*, [[../HTML/Elementi di HTML/Link|a]], [[../HTML/Elementi di HTML/Phrasing#Ruolo del Testo|strong]], [[../HTML/Elementi di HTML/Phrasing#Ruolo del Testo|em]] e [[../HTML/Elementi di HTML/Phrasing#Ruolo del Testo|span]].
 
 > ***Larghezza***
 - Dipende dal *contenuto* dell'elemento.
@@ -39,13 +39,13 @@ Gli elementi adiacenti sono ***disposti orizzontalmente***.
 >La proprietà `display` determina il tipo di elemento e il *relativo comportamento*.
 
 Oltre a `inline` e `block` questa proprietà può assumere i valori:
-- `none`: L'elemento scompare dal [[DOM]], e non viene visualizzato.
+- `none`: L'elemento scompare dal [[../JS/DOM|DOM]], e non viene visualizzato.
 - `inline-block`: L'elemento può assumere *dimensioni esplicite*, ma si disporrà **orizzontalmente** e non **verticalmente**.
-- `list-item`: Per fare in modo che un elemento si comporti come un [[Flow#List|li]].
+- `list-item`: Per fare in modo che un elemento si comporti come un [[../HTML/Elementi di HTML/Flow#List|li]].
 - `grid`: Trasforma un elemento in un *grid container*.
 - `flex`: Trasforma un elemento in un *flex container*.
 
-Esistono anche valori per trasformare elementi in parti di una [[Flow#Table|tabella]].
+Esistono anche valori per trasformare elementi in parti di una [[../HTML/Elementi di HTML/Flow#Table|tabella]].
 
 ### Float
 >[!info] `{CSS icon} float`
@@ -116,7 +116,7 @@ Oltre a questo punto è necessario ***cambiare la disposizione degli elementi***
 >Le ***media query*** permettono di applicare delle regole `{CSS icon} CSS` in base al tipo e alle caratteristiche del **dispositivo su cui si visualizza**.
 
 Si può specificare in due modi:
-- Direttamente nell'attributo `{css icon} media` nel tag [[Metadati#Link|link]] che [[Cascading Style Sheets#Usare CSS con HTML|importa il foglio di stile]].
+- Direttamente nell'attributo `{css icon} media` nel tag [[../HTML/Elementi di HTML/Metadati#Link|link]] che [[Cascading Style Sheets#Usare CSS con HTML|importa il foglio di stile]].
 - Con il costrutto `{CSS icon} @media`, direttamente nel `{CSS icon} CSS`.
 
 ```html
@@ -157,7 +157,7 @@ Si può specificare in due modi:
 - Indica l'***orientamento*** del dispositivo.
 
 > `{CSS icon} resolution`
-- Indica la [[Il Sistema Grafico#Raster Devices|risoluzione dello schermo]] in `DPI` o `DPCM`.
+- Indica la [[../../Computer Graphics/Il Sistema Grafico#Raster Devices|risoluzione dello schermo]] in `DPI` o `DPCM`.
 
 #### Breakpoints
 >[!info]
@@ -188,7 +188,7 @@ Ma si possono essere usati anche ***altri range***.
 
 In alcuni casi, i dispositivi con schermo piccolo renderizzano la pagina in una ***viewport più grande*** dello schermo e poi *restringono il risultato*.
 
-> Il [[Metadati#Meta|meta tag]] `viewport` risolve questo problema.
+> Il [[../HTML/Elementi di HTML/Metadati#Meta|meta tag]] `viewport` risolve questo problema.
 - Un sito ottimizzato per mobile, ha solitamente il seguente contenuto:
 
 ```html

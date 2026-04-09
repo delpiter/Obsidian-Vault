@@ -24,16 +24,16 @@ $$
 - Il **tipo** di operazioni eseguite.
 ### Accuratezza della Soluzione Numerica
 >[!missing] Errore Inerente
->Definiamo ***Errore Inerente***, quello che deriva dalla [[Floating Point|rappresentazione finita]] dei numeri nel sistema di calcolo ed è legato al [[#Condizionamento di un Problema|condizionamento]] del problema.
+>Definiamo ***Errore Inerente***, quello che deriva dalla [[../Numeri Finiti/Floating Point|rappresentazione finita]] dei numeri nel sistema di calcolo ed è legato al [[#Condizionamento di un Problema|condizionamento]] del problema.
 >$$E_{in}=\displaystyle{\frac{f(\tilde{x})-f(x)}{f(x)}}$$
 
 >[!help] Errore Algoritmico
->Definiamo ***Errore Algoritmico***, l'errore introdotto dalle [[Aritmetica in Virgola Mobile|operazioni aritmetiche in aritmetica finita]] durante l'esecuzione di un algoritmo.
+>Definiamo ***Errore Algoritmico***, l'errore introdotto dalle [[../Numeri Finiti/Aritmetica in Virgola Mobile|operazioni aritmetiche in aritmetica finita]] durante l'esecuzione di un algoritmo.
 >$$E_{alg}=\displaystyle{\frac{\Psi(\tilde{x})-f(\tilde{x})}{f(\tilde{x})}}$$
 
 Nel calcolo di una funzione ***dati-risultato*** $f(x)$, l'*accuratezza della soluzione numerica*:
 
->[!done] Dipende sia dal [[Condizionamento]] del problema che dalla ***stabilità algoritmica***
+>[[Condizionamento|!done]] del problema che dalla ***stabilità algoritmica***
 
 $$
 E_{tot}=\displaystyle{\frac{\Psi(\tilde{x})-f(x)}{f(x)}}
@@ -92,16 +92,16 @@ $$\mid E_{alg}\mid\approx g(n)\cdot\varepsilon\quad \mid \varepsilon\mid \leq u$
 >[!info]
 > Un algoritmo per essere definito "***buono***" oltre ad essere *generale*, *robusto* e *stabile*, deve anche richiedere il ***numero di operazioni minimo*** possibile per ottenere il risultato e allocare la ***quantità di memoria minima*** possibile.
 
-Si definisce [[Complessità di Algoritmi|complessità computazionale]] di un *algoritmo*, il numero di operazioni aritmetiche floating point richieste per la sua esecuzione.
-- Unità di misura: [[Prestazioni dei Calcolatori#Benchmark|FLOP]]-> $1$ *FLOP* ($1$ operazione elementare $+,-,*,/$)
+Si definisce [[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità computazionale]] di un *algoritmo*, il numero di operazioni aritmetiche floating point richieste per la sua esecuzione.
+- Unità di misura: [[../../Architettura degli Elaboratori/Architetture a Confronto/Prestazioni dei Calcolatori#Benchmark|FLOP]]-> $1$ *FLOP* ($1$ operazione elementare $+,-,*,/$)
 
 ### Esempio
 >La soluzione di un sistema lineare di ordine $n$.
 
->[!caution] [[Risoluzione di Sistemi#Metodo di Cramer|Metodo di Cramer]]
+>[[../../Algebra e Geometria/Risoluzione di Sistemi#Metodo di Cramer|Metodo di Cramer]]
 >L'algoritmo ha una complessità dell'ordine di $O((n+1)!)$
 
->[!abstract] [[Risoluzione di Sistemi#Metodo di Gauss|Metodo di Gauss]]
+>[[../../Algebra e Geometria/Risoluzione di Sistemi#Metodo di Gauss|Metodo di Gauss]]
 >L'algoritmo ha una complessità dell'ordine di $O(n^3)$.
 
 

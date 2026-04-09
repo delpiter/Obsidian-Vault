@@ -6,9 +6,9 @@ $Y$, tale che ad ogni elemento di $X$ corrisponda uno ed un solo elemento di $Y$
 
 ## Seno e Coseno
 ---
-![[Seno e Coseno.png]]
+![[attachements/Seno e Coseno.png]]
 ## Tangente
-![[Tangente.png]]
+![[attachements/Tangente.png]]
 ## Valori Notevoli
 ---
 |     | 0   |    $\displaystyle{\frac{\pi}{6}}$     |    $\displaystyle{\frac{\pi}{4}}$     |    $\displaystyle{\frac{\pi}{3}}$     | $\displaystyle{\frac{\pi}{2}}$ |
@@ -55,7 +55,7 @@ $e^{i\pi}=-1\Leftrightarrow e^{i\pi}+1 = 0$
 ## Punto interno in un Intervallo
 ---
 >[!info] Definizione
->Un punto interno ad un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] $I$ qualsiasi è un punto che sta dentro all'intervallo $I$ tranne gli estremi dell'intervallo
+>Un punto interno ad un [[../Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] $I$ qualsiasi è un punto che sta dentro all'intervallo $I$ tranne gli estremi dell'intervallo
 >$$c\in I\setminus \{ inf(f),sup(f) \}$$
 
 ## Rette Sghembe
@@ -105,7 +105,7 @@ M=\begin{pmatrix}
 \end{pmatrix}
 $$
 ### Osservazione
->*Per come è definito il [[Elementi di Algebra Lineare e Geometria Analitica#Prodotto tra Matrici (Riga $ times$ Colonna)|prodotto riga per colonna]]*
+>*Per come è definito il [[../Analisi/Funzioni a due Variabili/Elementi di Algebra Lineare e Geometria Analitica#Prodotto tra Matrici (Riga $ times$ Colonna]]|prodotto%20riga%20per%20colonna)*
 >
 $$
 (A\times B)^T = A^T \times B^T
@@ -116,12 +116,12 @@ $$
 >[!abstract] Regola
 >Scorciatoia per calcolare il ***determinante*** di una *matrice* $3\times 3$
 
-![[Sarrus Rule.png]]
+![[attachements/Sarrus Rule.png]]
 
 ## Prodotto Vettoriale
 ---
 >[!info] Definizione
->Il [[7 - Determinante di una Matrice#Determinante|determinante]] permette di formulare la regola per calcolare il ***prodotto vettoriale***
+>Il [[../Algebra e Geometria/Applicazioni/7 - Determinante di una Matrice#Determinante|determinante]] permette di formulare la regola per calcolare il ***prodotto vettoriale***
 >- Una *operazione* che associa ad una ***coppia di vettori*** un ***vettore***
 >$$\mathbb{R}^3\times \mathbb{R}^3\to\mathbb{R}^3$$
 >$$(v,u)\mapsto v\wedge u$$

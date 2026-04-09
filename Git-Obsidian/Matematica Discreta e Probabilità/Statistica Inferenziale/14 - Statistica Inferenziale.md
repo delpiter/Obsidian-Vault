@@ -2,8 +2,8 @@
 ---
 > Consideriamo una popolazione
 
-Sia $X$ una [[3 - Variabili Aleatorie|Variabile Aleatoria]] definita sulla *popolazione*
-- Supponiamo di conoscere [[1 - Indagine Statistica#Media|media]] e [[3 - Varianza|varianza]] di $X$ ($\mu_{X}$ e $\sigma^2_{X}$)
+Sia $X$ una [[../Probabilità/3 - Variabili Aleatorie|Variabile Aleatoria]] definita sulla *popolazione*
+- Supponiamo di conoscere [[../Statistica Descrittiva/1 - Indagine Statistica#Media|media]] e [[../Statistica Descrittiva/3 - Varianza|varianza]] di $X$ ($\mu_{X}$ e $\sigma^2_{X}$)
 
 >[!caution] Consideriamo un campione casuale di $n$ elementi della popolazione su cui calcolare la variabile $X$
 
@@ -12,7 +12,7 @@ $X_{1},\dots,X_{n}$
 $$
 \overline{X_{n}}=\displaystyle{\frac{X_{1}+\dots+X_{n}}{n}}\sim N\left( \mu_{X}, \frac{\sigma^2_{X}}{n} \right)
 $$
-- Come visto [[13 -Teorema Centrale del Limite#Alternativa|qui]]
+- Come visto [[../Probabilità/Variabili Continue/13 -Teorema Centrale del Limite#Alternativa|qui]]
 
 $$
 \displaystyle{\frac{\overline{X_{n}}-\mu_{X}}{\sigma_{X}/n}}=\zeta_{0}\sim N(0,1)
@@ -28,7 +28,7 @@ Deduciamo quindi che:
 $$
 \Phi(z_{c})= \displaystyle{\frac{1+c}{2}}
 $$
-![[NotazioneZ_c.png]]
+![[attachements/NotazioneZ_c.png]]
 
 ###### Esempi
 >$c=0.9$
@@ -105,7 +105,7 @@ $\mathcal{P}(-z_{c}<\zeta_{0}<z_{c})=c$
 - $2\Phi(1)=(2\cdot 0.8413)-1 = 0.683$
 
 #### Caso Speciale Importante
->[!abstract] $X$ è una [[3 - Variabili Aleatorie#Variabili e Densità di Bernoulli|Variabile di Bernoulli]]
+>[[../Probabilità/3 - Variabili Aleatorie#Variabili e Densità di Bernoulli|Variabile di Bernoulli]]
 >$$\overline{\sigma}_{X}^2 =\overline{X}_{n}-\overline{X}_{n}^2$$
 
 ##### Esempio

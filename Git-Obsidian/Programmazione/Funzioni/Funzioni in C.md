@@ -1,6 +1,6 @@
 ### Le Funzioni in C
 >[!tldr]
->Un programma in C è costituito da un insieme di [[Git-Obsidian/Programmazione/Funzioni/Introduzione Funzioni|Introduzione Funzioni]]
+>Un programma in C è costituito da un insieme di [[Introduzione Funzioni]]
 >>[!done] Main
 >>Il `main()` è una funzione, ogni programma deve contenere esattamente una funzione `main()`
 >>In particolare, la funzione `main()` è il punto di ingresso di ogni programma C
@@ -10,7 +10,7 @@
 #### Dichiarazione
 >[!tldr]
 >Una ***dichiarazione*** di una funzione, detta anche **prototipo**, specifica:
->1. Il [[Tipi di Dati#Tipizzazione|tipo di dato]] *restituito* dalla funzione
+>1. Il [[../Variabili/Tipi di Dati#Tipizzazione|tipo di dato]] *restituito* dalla funzione
 >2. Il *nome* (identificatore) della funzione
 >3. I tipi e i nomi degli eventuali *argomenti* della funzione
 >`<type> <func name>(<type1> [<Arg1>],...,<typeN> [<ArgN>]);`
@@ -90,8 +90,8 @@ La **Visibilità** di una funzione dipende dal punto in cui è dichiarata/defini
 Una funzione può fare uso di **parametri** (o **argomenti**) per svolgere il proprio compito
 1. **Parametri Formali**: Parametri dichiarati nella definizione/dichiarazione
 2. **Parametri Attuali**: Parametri passati al momento della chiamata
-- In C il **passagio dei parametri** avviene secondo la modalità del [[Definizioni_Programmazione#Passaggio per Valore e per Riferimento|passaggio per valore]]
+- In C il **passagio dei parametri** avviene secondo la modalità del [[../../Definizioni/Definizioni_Programmazione#Passaggio per Valore e per Riferimento|passaggio per valore]]
 
 ##### Ordine di Valutazione
-Lo standard [[Definizioni_Programmazione#ISO|ISO]] non impone nessuna regola sull'ordine di valutazione dei parametri attuali di una funzione
+Lo standard [[../../Definizioni/Definizioni_Programmazione#ISO|ISO]] non impone nessuna regola sull'ordine di valutazione dei parametri attuali di una funzione
 - L'ordine di valutazione degli argomenti **non è specificato**

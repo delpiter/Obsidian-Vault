@@ -54,7 +54,7 @@ Poiché ogni algoritmo di sort "***corretto***" deve essere in grado di produrre
 #### Dimostrazione
 > $n = 3 \implies \{ a_{1},a_{2},a_{3} \}$
 
-![[Lower Bound for Comparison Sort.png]]
+![[attachements/Lower Bound for Comparison Sort.png]]
 >*Rappresentato tramite un albero binario*
 
 Consideriamo un albero decisionale di altezza $h$ con $l$ foglie *raggiungibili*
@@ -66,7 +66,7 @@ $$
 
 >[!question] Quanto deve essere alto un albero per avere $n!$ foglie?
 
-Un [[Gli Alberi Binari#Albero Binario|albero binario]] alto $h$ ha al massimo $2^h$ foglie
+Un [[../Strutture Dati/Grafi/Alberi/Gli Alberi Binari#Albero Binario|albero binario]] alto $h$ ha al massimo $2^h$ foglie
 Quindi per quanto detto prima:
 
 $$

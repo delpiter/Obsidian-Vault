@@ -41,7 +41,7 @@ $$(\text{Voto}=30) \text{ or not }(\text{Lode}=true) $$
 - Avere *accesso* a ciascuna **tupla** della base di dati.
 - **Correlazione** dei dati tra *relazioni diverse*.
 
-![[NamesAndID.png]]
+![[attachements/NamesAndID.png]]
 
 ###### Superchiave
 >Dato uno [[Modello Relazionale#Relazione|schema]] $R(X)$:
@@ -90,7 +90,7 @@ Poiché ogni istanza $r$ su $R(X)$ è un insieme, ne consegue che:
 >L'insieme $Y$ viene detto ***foreign key***.
 >**Impone** che i valori, diversi da `NULL`, su un attributo $X$ in $R_{1}$ compaiano come valori della *chiave primaria* di $R_{2}$.
 
-Nei [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] un ***vincolo di integrità referenziale*** può anche esprimersi con riferimento a una generica chiave (anche *non primaria*)
+Nei [[../../Introduzione#DBMS|DBMS]] un ***vincolo di integrità referenziale*** può anche esprimersi con riferimento a una generica chiave (anche *non primaria*)
 ### Errori
 
 - Un’operazione di modifica su una relazione causa una violazione di VIR su altre relazioni.

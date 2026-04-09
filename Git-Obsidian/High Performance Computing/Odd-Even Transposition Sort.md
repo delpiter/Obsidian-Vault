@@ -1,3 +1,3 @@
 ## Algoritmo
 ---
->[[Problema dell'Ordinamento|Algoritmo di Ordinamento]].
+>[[../Algoritmi e Strutture Dati/Ordinamento/Problema dell'Ordinamento|Algoritmo di Ordinamento]].

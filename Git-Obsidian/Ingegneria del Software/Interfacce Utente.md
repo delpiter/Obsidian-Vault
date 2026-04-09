@@ -123,7 +123,7 @@ L'obbiettivo prioritario è l'***autoesplicazione***.
 
 - Fornisce all'utente una visione migliore delle possibilità offerte e **facilita la navigazione**.
 
-![[GUIStructure.png]]
+![[attachements/GUIStructure.png]]
 
 ### Strutture di Riferimento
 #### Multi-Window
@@ -161,7 +161,7 @@ Modello adatto per `GUI` speciali in applicazioni self service.
 
 >[!example] Esempio: Bottone con testo troppo lungo
 
-![[ProjectStandardExample.png]]
+![[attachements/ProjectStandardExample.png]]
 
 > Soluzioni possibili (in ordine di priorità consigliata):
 1. Testo più corto compreso e approvato dall'utente (`Stampa Bolla`).

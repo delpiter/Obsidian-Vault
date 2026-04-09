@@ -12,13 +12,13 @@ Le computazioni ***stencil*** utilizzano, solitamente, *due domini*.
 ---
 >[!hint] `2D` Stencils
 
-![[2DStencils.png]]
+![[attachements/2DStencils.png]]
 
 - Solitamente gli *stencil* sono forme **regolari**, ma nulla vieta di avere forme **irregolari**.
 
 >[!tip] `3D` Stencils
 
-![[3DStencils.png]]
+![[attachements/3DStencils.png]]
 
 ## Ghost Cells
 ---
@@ -78,7 +78,7 @@ La soluzione appena descritta funziona, ma ha un ***problema di efficienza***.
 	- Vengono copiati i quattro lati nella ***ghost area opposta***.
 	- Successivamente bisogna impostare i *quattro angoli*.
 
-![[PeriodicBoundaryCondition.png]]
+![[attachements/PeriodicBoundaryCondition.png]]
 
 
 >***Seconda Modalità***
@@ -86,7 +86,7 @@ La soluzione appena descritta funziona, ma ha un ***problema di efficienza***.
 	- Partendo da qualsiasi lato del dominio, si copia l'intera riga nel lato opposto, considerando anche la ***ghost area*** (*anche se vuota*).
 	- Ripetere il procedimento per tutti e quattro i lati.
 
-![[PeriodicBoundaryConditionAlternative.png]]
+![[attachements/PeriodicBoundaryConditionAlternative.png]]
 
 ## Parallelizzare gli Stencil
 ---
@@ -107,6 +107,6 @@ La soluzione appena descritta funziona, ma ha un ***problema di efficienza***.
 ```
 
 >[!check] Architettura a Memoria Distribuita
->Le ***ghost cells*** sono essenziali per implementare efficientemente gli algoritmi *stencil* su un sistema a [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multicomputer|memoria distribuita]].
+>Le ***ghost cells*** sono essenziali per implementare efficientemente gli algoritmi *stencil* su un sistema a [[../../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multicomputer|memoria distribuita]].
 
 Dopo la partizione dei blocchi è necessaria una fase di *scambio di informazione* in modo tale che ciascuno abbia la ***propria ghost area completa***.

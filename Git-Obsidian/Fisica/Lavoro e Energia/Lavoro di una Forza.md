@@ -1,7 +1,7 @@
 >[!info]
-> C'è una differenza nell'effetto *prodotto da una* [[Leggi di Newton#Legge|forza]] dello **stesso modulo** applicato ad un oggetto nelle seguenti situazioni.
+> C'è una differenza nell'effetto *prodotto da una* [[../Leggi di Newton e le Forze/Leggi di Newton#Legge|forza]] dello **stesso modulo** applicato ad un oggetto nelle seguenti situazioni.
 
-![[Lavoro.png]]
+![[attachements/Lavoro.png]]
 
 La differenza sta nell'***angolo*** che la forza forma con lo spostamento del corpo.
 
@@ -10,9 +10,9 @@ La differenza sta nell'***angolo*** che la forza forma con lo spostamento del co
 >[!definizione]
 >Definiamo allora la quantità ***lavoro per una forza costante*** nel modo seguente:
 >$$\mathscr{L}=\vec{F}\cdot\Delta\vec{r}=|\vec{F}|\cdot|\Delta\vec{r}|\cos\theta$$
->[[4 - Prodotto Scalare|Prodotto Scalare]].
+>[[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare|Prodotto Scalare]].
 
-![[Lavoro2.png]]
+![[attachements/Lavoro2.png]]
 
 >[!hint] Alcuni Commenti
 
@@ -43,7 +43,7 @@ Considerando la **somma** dei valori infinitesimi corrispondenti a *spostamenti 
 ---
 > Consideriamo un corpo che possa passare da una quota $h$ ad una quota $0$ in due modi:
 
-![[ForzeConservative.png]]
+![[attachements/ForzeConservative.png]]
 
 - Piano inclinato in *assenza di attrito*.
 
@@ -57,7 +57,7 @@ $$
 \mathscr{L}_{\text{vert}}=mgh\cos(0)=mgh
 $$
 
->[!abstract] Caso [[Le Forze#Piano Inclinato|piano inclinato]]
+>[[../Leggi di Newton e le Forze/Le Forze#Piano Inclinato|piano inclinato]]
 >Avremo:
 >- Uno spostamento di modulo $\displaystyle\Delta r=\frac{h}{\sin\theta}$
 >- L'angolo formato dalla forza peso e il vettore spostamento: $\displaystyle{\frac{\pi}{2}}-\theta$
@@ -94,12 +94,12 @@ $$
 
 ---
 
-> Consideriamo la forza di [[Le Forze#Forze di Attrito|attrito dinamico]].
+> Consideriamo la forza di [[../Leggi di Newton e le Forze/Le Forze#Forze di Attrito|attrito dinamico]].
 
 >[!note] Problema
 >Un *punto materiale* poggiato sul piano che si sposta dalla posizione $A$ alla posizione $B$.
 
-![[ForzeNonConservative.png]]
+![[attachements/ForzeNonConservative.png]]
 
 La *forza di attrito* è sempre opposta alla direzione del moto e ha ***modulo costante***.
 - Il lavoro fatto da essa sulle due traiettorie $S_{1}$ e $S_{2}$ sarà diverso.

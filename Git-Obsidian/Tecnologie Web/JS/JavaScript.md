@@ -4,7 +4,7 @@
 > `{js icon} JavaScript` è un linguaggio di scripting interpretato dal browser *orientato* agli ***oggetti*** e agli ***eventi***, utilizzato nella programmazione `web` lato client.
 
 È un linguaggio basato su una logica ***weakly typed*** e ***prototype-based***.
-- È una delle core Technologies nella produzione di contenuti web (Insieme a [[Markup Language|HTML]] e [[Cascading Style Sheets|CSS]]).
+- È una delle core Technologies nella produzione di contenuti web (Insieme a [[../HTML/Markup Language|HTML]] e [[../CSS/Cascading Style Sheets|CSS]]).
 
 >[!fail] Differenze da Java
 >- È **interpretato** e non compilato.
@@ -34,7 +34,7 @@ foo.welcome(); // Logs: "Welcome, Name!"
 
 ### Stack Javascript
 >[!summary] MEAN
->`{js icon} MEAN` è un [[Architettura del Web#Web Solution Stack|solution stack]] con struttura tutta basata su `{JS icon} JS`.
+>`{js icon} MEAN` è un [[../Architettura del Web#Web Solution Stack|solution stack]] con struttura tutta basata su `{JS icon} JS`.
 
 > `M`
 - ***MongoDB*** come database (NoSQL).

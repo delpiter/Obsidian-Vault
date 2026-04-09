@@ -1,10 +1,10 @@
 ## Generalità sui Metodi
 ---
 >[!info]
->Per la risoluzione di un [[Sistemi Lineari|sistema lineare]] $Ax=b$ con matrice $A$ *reale*, [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], un'altra famiglia di [[Risoluzione di Sistemi Lineari#Metodi Iterativi|metodi iterativi]] è data dai cosi detti ***metodi di discesa***.
+>Per la risoluzione di un [[../Equazioni Lineari/Sistemi Lineari|sistema lineare]] $Ax=b$ con matrice $A$ *reale*, [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], un'altra famiglia di [[../Equazioni Lineari/Risoluzione di Sistemi Lineari#Metodi Iterativi|metodi iterativi]] è data dai cosi detti ***metodi di discesa***.
 
 >[!check] Notazione
->Dati due vettori colonna $x,y\in\mathbb{R}^n$ con la notazione $<x,y>$ si intende il [[4 - Prodotto Scalare|prodotto scalare]] $x^Ty$.
+>Dati due vettori colonna $x,y\in\mathbb{R}^n$ con la notazione $<x,y>$ si intende il [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare|prodotto scalare]] $x^Ty$.
 
 ### Teorema 1
 >[!cite]
@@ -168,7 +168,7 @@ $$
 >$$\alpha^{(k)}=-\displaystyle{\frac{<r^{(k)},p^{(k)}>}{<Ap^{(k)},p^{(k)}>}}$$
 >Si può affermare che $p^{(k)}$ **non** deve essere *ortogonale al residuo* $r^{(k)}$ o **non** deve essere *ortogonale al gradiente* $\nabla F(x^{(k)})$  perché porterebbe a $\alpha^{(k)}=0$.
 
-Consideriamo lo [[Formula di Taylor|sviluppo in serie di Taylor]] della $F(x^{(k)}+\alpha^{(k)}p^{(k)})$ in un intorno di $x^{(k)}$:
+Consideriamo lo [[../../Analisi/Taylor/Formula di Taylor|sviluppo in serie di Taylor]] della $F(x^{(k)}+\alpha^{(k)}p^{(k)})$ in un intorno di $x^{(k)}$:
 $$
 F(x^{(k+1)})=F(x^{(k)}+\alpha^{(k)}p^{(k)})=F(x^{(k)})+\underbrace{ \alpha^{(k)}\nabla F(x^{(k)})^Tp^{(k)} }_{ <\nabla F(x^{(k)}),p^{(k)}> }+\dots+\circ(\mid\alpha^{(k)}\mid)
 $$
@@ -231,14 +231,14 @@ Si considera che il procedimento iterativo ha ***raggiunto la convergenza*** qua
 $$ A=\begin{bmatrix} 8 & 4 \\ 4 & 3 \end{bmatrix}\quad b=\begin{bmatrix} 8 \\ 10 \end{bmatrix}\quad x=\begin{bmatrix} -2 \\ 6\end{bmatrix}$$
 > Iterato iniziale $x^{(0)}=\begin{bmatrix}0 \\ 0\end{bmatrix}$
 
-![[SteepestDescent.png|550]]
+![[attachements/SteepestDescent.png|550]]
 
 >[!caution] Concetto
 >La direzione $p^{(0)}$ è **opposta** alla *direzione del gradiente* alla curva di livello $F(x^{(0)})=\text{const}$ nel punto $x^{(0)}$
 
 ### Velocità di Convergenza
 >[!info]
->Nel caso del metodo del gradiente applicato alla minimizzazione di una forma quadratica $F(x)=\frac{1}{2}<Ax,x>-<b,x>$ con $A$ matrice [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], il metodo ha  [[Ordine di Convergenza#Ordini|ordine di convergenza lineare]].
+>Nel caso del metodo del gradiente applicato alla minimizzazione di una forma quadratica $F(x)=\frac{1}{2}<Ax,x>-<b,x>$ con $A$ matrice [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], il metodo ha  [[../Equazioni non Lineari/Ordine di Convergenza#Ordini|ordine di convergenza lineare]].
 
 ##### Misurare l'Errore
 >Definiamo la *Norma Indotta* dalla matrice simmetrica e definita positiva $A$ su $x$.
@@ -254,11 +254,11 @@ Si ha, quindi:
 $$
 \displaystyle{\frac{\|e^{(k+1)}\|_{A}}{\|e^{(k)}\|_{A}}}\approx\rho
 $$
-Il ***fattore di convergenza*** dipende dall'[[Condizionamento#Quantificare il Condizionamento|indice di condizionamento della matrice]].
+Il ***fattore di convergenza*** dipende dall'[[../Condizionamento e Stabilità/Condizionamento#Quantificare il Condizionamento|indice di condizionamento della matrice]].
 $$
 \rho=\displaystyle{\frac{K(A)-1}{K(A)+1}}
 $$
-- Dove $K(A)$ è l'[[Condizionamento di un Sistema Lineare|indice di condizionamento]] di $A$.
+- Dove $K(A)$ è l'[[../Equazioni Lineari/Condizionamento di un Sistema Lineare|indice di condizionamento]] di $A$.
 
 >[!done] Condizionamento
 >Tanto più $K(A)$ è alto, tanto più il rapporto si approssima a $1$.

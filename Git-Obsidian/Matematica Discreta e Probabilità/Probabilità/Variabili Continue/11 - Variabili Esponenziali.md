@@ -10,7 +10,7 @@ ae^{ -as }\quad \ \text{se } s>0 \\
 0\qquad\quad\text{se } s<0
 \end{cases}$$
 
-![[Densita Esponenziale.png]]
+![[attachements/Densita Esponenziale.png]]
 
 >Verifichiamo la Correttezza
 
@@ -26,10 +26,10 @@ $$
 F_{X}(t)=\int_{0}^t f(s)\, ds=[-e^{ -as }]_{0}^t =-e^{ -at }+1 = 1-e^{ -at }
 $$
 
-![[F di Ripartizione Esponenziale.png]]
+![[attachements/F di Ripartizione Esponenziale.png]]
 
 ### Mancanza di Memoria
->Ricordiamo la [[3 - Variabili Aleatorie#Mancanza di Memoria|mancanza di memoria]] fatta in precedenza
+>Ricordiamo la [[../3 - Variabili Aleatorie#Mancanza di Memoria|mancanza di memoria]] fatta in precedenza
 
 >[!info] Controlliamo se vale
 >$$\mathcal{P}(X\geq t+m|X\geq m)=\mathcal{P}(X\geq t)$$
@@ -57,7 +57,7 @@ Tipicamente viene usata per ***tempi di attesa*** che per la loro natura hanno *
 >[!abstract] Formula
 >$$E[X]=\int_{-\infty}^\infty sf_{X}(s) \, ds =\int_{0}^\infty sae^{ -as } \, ds$$
 
->Utilizziamo l'[[Calcolo Integrale#Integrazione per Parti|Integrazione per Parti]]
+>Utilizziamo l'[[../../../Analisi/Calcolo Integrale/Calcolo Integrale#Integrazione per Parti|Integrazione per Parti]]
 
 - $s=f\quad ae^{ -as }=g'$
 	- $g=-e^{ -as }$
@@ -84,7 +84,7 @@ $$
 $$
 E[X^2]=\int_{0}^\infty s^2ae^{ -as } \, ds
 $$
->Utilizziamo l'[[Calcolo Integrale#Integrazione per Parti|Integrazione per Parti]]
+>Utilizziamo l'[[../../../Analisi/Calcolo Integrale/Calcolo Integrale#Integrazione per Parti|Integrazione per Parti]]
 
 - $s=f\quad ae^{ -as }=g'$
 	- $g=-e^{ -as }$

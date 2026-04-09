@@ -44,7 +44,7 @@ x = x + 1;
 >3. Operatori Logici
 >4. Operatori di Assegnamento
 >5. Operatori _Bitwise_
->6. Operatori di Accesso e [[Introduzione Puntatori|puntatori]]
+>6. Operatori di Accesso e [[../Puntatori/Introduzione Puntatori|puntatori]]
 
 - Gli operatori in C possono essere:
 	- **Unari**, solo un operando
@@ -52,4 +52,4 @@ x = x + 1;
 	- **Ternari**, tre operandi
 - Gli operatori sono soggetti a regole, precedenze e ordini di valutazione
 
-![[Definizioni_Programmazione#Precedenze e Associatività]]
+![[../../Definizioni/Definizioni_Programmazione#Precedenze e Associatività]]

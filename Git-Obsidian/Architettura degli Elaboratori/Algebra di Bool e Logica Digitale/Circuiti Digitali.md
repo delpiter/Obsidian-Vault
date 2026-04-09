@@ -3,10 +3,10 @@
 $$
 M=\overline{A}BC+A\overline{B}C+ABC
 $$
-![[Truth Table.png]]
+![[attachements/Truth Table.png]]
 *Tabella di verità $\nearrow$*
 
-![[Truth-Table-Circuit.png]]
+![[attachements/Truth-Table-Circuit.png]]
 *Circuito associato alla tabella di verità e funzione booleana*
 
 >[!done] Da funzione booleana a circuito digitale
@@ -46,22 +46,22 @@ $$
 >Utilizzato dai circuiti più semplici
 >- I contatti di uscita sono realizzati in ***due file parallele***
 
-![[Dual Inline Package.png]]
+![[attachements/Dual Inline Package.png]]
 
 >[!tldr] *P*in *G*rid *A*rray
 >`PGA`
 >Utilizzato per circuiti più complessi
 >- I contatti di uscita sono posizionati ***sotto forma di matrice*** nella parte *inferiore* del circuito
 
-![[Pin Grid Array.png]]
+![[attachements/Pin Grid Array.png]]
 
 >[!abstract] *L*and *G*rid *A*rray
 >`LGA`
->Il tipo di package ***più utilizzato*** nelle moderne [[La CPU|CPU]]
+>Il tipo di package ***più utilizzato*** nelle moderne [[../Architettura del Calcolatore/La CPU|CPU]]
 >Si tratta di un ***package*** che non fa fuoriuscire *alcun pin* dal chip, ma presenta dei ***contatti piatti*** nella parte inferiore del circuito
 >- I *pin* si troveranno nella scheda su cui attaccare il ***chip***
 
-![[Land Grid Array.png]]
+![[attachements/Land Grid Array.png]]
 
 >[!tldr] *B*all *G*rid *A*rray
 >`BGA`
@@ -120,7 +120,7 @@ Dato che *centinaia di chip* sono fabbricati nello stesso ***wafer***
 >>[!done] In Breve
 >>L'***output*** è determinato solamente dall'***input***
 
-![[Combinational Circuit.png]]
+![[attachements/Combinational Circuit.png]]
 
 >[!info] Circuito Sequenziale
 >In un [[Circuiti Sequenziali|Circuito Sequenziale]] il valore istantaneo delle uscite dipende, oltre che dai valori di ingresso anche dalla ***storia passata dal circuito***
@@ -128,7 +128,7 @@ Dato che *centinaia di chip* sono fabbricati nello stesso ***wafer***
 >- Possono essere ***sincroni*** o ***asincroni***
 >- Analisi circuitale più complessa.
 
-![[Sequential Circuit.png]]
+![[attachements/Sequential Circuit.png]]
 ## Porte Logiche Programmabili
 ---
 >[!info] *P*rogrammable *L*ogic *A*rray
@@ -167,7 +167,7 @@ Il chip contiene $m$ porte `OR` a $k$ input
 
 #### Esempio
 >*$n=12, m=6,k=50$*
-![[Programmable Logic Array.png]]
+![[attachements/Programmable Logic Array.png]]
 
 >[!info] `FPGA`
 >***F***ield ***P***rogrammable ***G***ate ***A***rray

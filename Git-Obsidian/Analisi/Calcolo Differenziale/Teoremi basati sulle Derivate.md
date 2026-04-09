@@ -15,13 +15,13 @@
 >>E si ha $f(c)\geq f(x)$
 
 ### Dimostrazione Grafica
-![[Pasted Image 202304523.jpg]]
+![[attachements/Pasted Image 202304523.jpg]]
 
 ## Teorema di Fermat
 ---
 >[!info] Teorema
 >Sia $I$ intervallo di $\mathbb{R}$, $f:I \to\mathbb{R}$
->Sia $c$ [[Definizioni_Analisi#Punto interno in un Intervallo|punto interno]] di $I$
+>Sia $c$ [[../../Definizioni/Definizioni_Analisi#Punto interno in un Intervallo|punto interno]] di $I$
 >Supponiamo che $f$ sia derivabile in $c$ e $c$ è [[#Estremante Locale]]
 ><u>Allora</u>
 >$f'(c)=0$
@@ -66,13 +66,13 @@ Prendiamo $f(x)=x$ nell'intervallo $[0,1]$
 ---
 
 >[!info] Teorema
->Sia $f:[a,b]\to\mathbb{R}$, una funzione [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]] in $[a,b]$ e derivabile in $(a,b)$
+>Sia $f:[[../Funzioni/Introduzione Funzioni#Continuità|continua]] in $[a,b]$ e derivabile in $(a,b)$
 >Supponiamo che $f(a)=f(b)$
 ><u>Allora</u>
 >$$\exists c\in (a,b):f'(c)=0$$
 
 ### Dimostrazione
-Dato che $f$ è derivabile su $[a,b]$, per il [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Teorema di Weierstruss|teorema di Weierstruss]] esistono $max$ e $min$ di $f$
+Dato che $f$ è derivabile su $[[../Funzioni/Introduzione Funzioni#Teorema di Weierstruss|teorema di Weierstruss]] esistono $max$ e $min$ di $f$
 - Ho due possibilità:
 #### $max$ e $min$ negli estremi
 Se $max(f)$ e $min(f)$ sono entrambe assunti negli estremi
@@ -86,12 +86,12 @@ $$
 f'(c)=0
 $$
 ### Visualizzazione Grafica
-![[Pasted image 20231106151817.png]]
+![[attachements/Pasted image 20231106151817.png]]
 
 ## Teorema di Lagrange
 ---
 >[!info] Teorema
->Sia $f:[a,b]\to\mathbb{R}$, una funzione [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]] in $[a,b]$ e derivabile in $(a,b)$
+>Sia $f:[[../Funzioni/Introduzione Funzioni#Continuità|continua]] in $[a,b]$ e derivabile in $(a,b)$
 ><u>Allora</u>
 >$$\exists c\in(a,b):f'(c)= \displaystyle{\frac{f(b)-f(a)}{b-a}}$$
 >
@@ -106,7 +106,7 @@ $g(x)=f(x)-f(a)- \displaystyle{\frac{f(b)-f(a)}{b-a}}(x-a)$
 >$g(x)$ è la differenza fra la funzione originale $f(x)$ e la funzione della retta secante passante per gli estremi. La formula viene da qui:
 >$y−y1​=m⋅(x−x1​) \Leftrightarrow y =f(a) +\displaystyle{\frac{f(b)-f(a)}{b-a}}(x-a)$
 
-- $g$ è derivabile in $(a,b)$ e [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]] in $[a,b]$ per somma e differenza di funzioni continue e derivabili
+- $g$ è derivabile in $(a,b)$ e [[../Funzioni/Introduzione Funzioni#Continuità|continua]] in $[a,b]$ per somma e differenza di funzioni continue e derivabili
 Inoltre
 - $g(a)=\cancel{ f(a)-f(a) }- \cancel{ \displaystyle{\frac{f(b)-f(a)}{b-a}}(a-a) }=0$
 - $g(b)=f(b)-f(a)- \displaystyle{\frac{f(b)-f(a)}{\cancel{ b-a }}}\cancel{ (b-a) }=0$
@@ -128,7 +128,7 @@ $$
 
 
 ### Visualizzazione Grafica
-![[Pasted image 20231106151842.png]]
+![[attachements/Pasted image 20231106151842.png]]
 
 ## Teorema test di Monotonia
 ---
@@ -142,12 +142,12 @@ $$
 È necessario dimostrare l'implicazione reciproca
 #### Supponiamo $f \nearrow$ in $I$
 - Siano $x,c \in I, x\neq c$
-	- Si ha che per definizione di funzione [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Crescente|crescente]]
+	- Si ha che per definizione di funzione [[../Funzioni/Introduzione Funzioni#Crescente|crescente]]
 
 $$
 \displaystyle{\frac{f(x)-f(c)}{x-c}}\geq 0
 $$
-Passando al limite per $x\to c$, deduco che, per il [[Limiti di Successioni#Teorema del Confronto|teorema del confronto]]:
+Passando al limite per $x\to c$, deduco che, per il [[../Successioni/Limiti di Successioni#Teorema del Confronto|teorema del confronto]]:
 $$
 f'(c)=\lim\limits_{x\to c} \displaystyle{\frac{f(x)-f(c)}{x-c}}\geq 0
 $$
@@ -175,7 +175,7 @@ $$
 	- $f'(x)>0, \forall x \in I  \implies f \nearrow \text{strettamente}$
 	- Invece non è vero
 	- $f \nearrow \text{strettamente}   \implies f'(x)>0, \forall x \in I$
-		- Poichè per il [[Limiti di Successioni#Teorema del Confronto|teorema del confronto]] 
+		- Poichè per il [[../Successioni/Limiti di Successioni#Teorema del Confronto|teorema del confronto]] 
 
 $$
 f'(c)=\lim\limits_{x\to c} \displaystyle{\frac{f(x)-f(c)}{x-c}}> 0
@@ -185,14 +185,14 @@ $$f'(c)\geq 0$$
 ## Test di convessità 1
 ---
 >[!info] Teorema
->Sia $f:I\to\mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] di $\mathbb{R}$, con $f$ derivabile
+>Sia $f:I\to\mathbb{R}$ [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] di $\mathbb{R}$, con $f$ derivabile
 ><u>Allora</u>
->$f$ [[Studio di Funzioni#Concavità di Funzioni|convessa]] su $I\Leftrightarrow f' \nearrow$ su $I$
->$f$ [[Studio di Funzioni#Concavità di Funzioni|concava]] su $I\Leftrightarrow f' \searrow$ su $I$
+>$f$ [[../Funzioni/Studio di Funzioni#Concavità di Funzioni|convessa]] su $I\Leftrightarrow f' \nearrow$ su $I$
+>$f$ [[../Funzioni/Studio di Funzioni#Concavità di Funzioni|concava]] su $I\Leftrightarrow f' \searrow$ su $I$
 
 ### Dimostrazione
 
-#### Assumo $f$ [[Studio di Funzioni#Concavità di Funzioni|convessa]] su $I$
+#### Assumo $f$ [[../Funzioni/Studio di Funzioni#Concavità di Funzioni|convessa]] su $I$
 $$
 \forall x,y \in I \begin{cases}
 f(x)\geq f(y)+f'(y)(x-y) \\

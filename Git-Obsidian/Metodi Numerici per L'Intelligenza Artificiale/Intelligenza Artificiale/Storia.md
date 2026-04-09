@@ -1,7 +1,7 @@
 ## 1940 La nascita e gli Anni d'Oro
 ---
 >[!check] Calcolatori
->Nascono i primi calcolatori elettronici ([[Storia dei Calcolatori#Generazione $I$|valvole termoioniche e Relè]]), insieme ad essi la ***teoria della computazione di Turing***.
+>Nascono i primi calcolatori elettronici ([[../../Architettura degli Elaboratori/Storia dei Calcolatori#Generazione $I$|valvole termoioniche e Relè]]), insieme ad essi la ***teoria della computazione di Turing***.
 
 Il primo *modello di neurone artificiale* nasce nel 1943:
 - ***McCulloch e Pitts***.
@@ -36,7 +36,7 @@ La *scarsa capacità computazionale* e i *dataset di piccole dimensioni* sono il
 >[!info] Tempi Moderni
 >Riprende lo studio dell'intelligenza artificiale, grazie a:
 
-- **Hardware** sempre più potente (Prima [[Schede Grafiche|GPU]] *Nvidia*).
+- **Hardware** sempre più potente (Prima [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Schede Grafiche|GPU]] *Nvidia*).
 - Raccolta di grandi quantità di dati (***big data***), sempre più semplice e meno costosa.
 - Recupero delle formulazioni matematiche degli anni precedenti.
 

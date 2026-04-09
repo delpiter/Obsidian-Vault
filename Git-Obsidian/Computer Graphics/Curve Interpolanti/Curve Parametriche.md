@@ -1,7 +1,7 @@
 ## Geometria delle Curve
 ---
 >[!definizione]
->Una ***curva parametrizzata*** in $\mathbb{R}^{3}$ è un'[[1 - Applicazioni Lineari|applicazione]]
+>Una ***curva parametrizzata*** in $\mathbb{R}^{3}$ è un'[[../../Algebra e Geometria/Applicazioni/1 - Applicazioni Lineari|applicazione]]
 >$$C(t): I=[a,b]\subseteq \mathbb{R} \to \mathbb{R}^{3}$$
 >- Con
 >
@@ -43,9 +43,9 @@ Con $t\in[0,1]$
 > L'immagine in $\mathbb{R}^{2}$ tramite $C$ dell'intervallo $I$ ($C(I)$), prende il nome di **supporto**, **sostegno** o **traiettoria** della curva.
 
 >[!definizione] Curva Regolare
->Una curva si dice ***regolare*** se è [[Differenziabilità|differenziabile]] per ogni valore di $t\in I$ e se la norma del vettore derivata **non è nulla** in alcun punto di $I$.
+>Una curva si dice ***regolare*** se è [[../../Analisi/Funzioni a due Variabili/Differenziabilità|differenziabile]] per ogni valore di $t\in I$ e se la norma del vettore derivata **non è nulla** in alcun punto di $I$.
 
-Nel "*modello fisico*" del [[Moto Rettilineo|moto del punto]], ad ogni istante $t_{0}$, le coordinate $(x(t_{0}),y(t_{0}))$ individuano un punto che si sposta sulla curva con ***velocità*** data dalla tangente alla curva parametrica in $t_{0}$.
+Nel "*modello fisico*" del [[../../Fisica/Cinematica/Moto Rettilineo|moto del punto]], ad ogni istante $t_{0}$, le coordinate $(x(t_{0}),y(t_{0}))$ individuano un punto che si sposta sulla curva con ***velocità*** data dalla tangente alla curva parametrica in $t_{0}$.
 $$
 v(t_{0})=\displaystyle{\frac{\text{d}C(t)}{\text{dt}}} = C'(t_{0})=\begin{bmatrix}
 \displaystyle{\frac{\text{d}x(t_{0})}{\text{dt}}} \\
@@ -71,11 +71,11 @@ Consideriamo una suddivisione dell'intervallo $[a,b]$, mediante un insieme di pu
 >La ***lunghezza della poligonale*** è data dalla somma delle lunghezze dei suoi lati.
 >$$L(P_{n})=\sum_{i=1}^{n-1}\|C(t_{i+1}-C(t_{i}))\|$$
 
-Aggiungendo un punto alla suddivisione dell'intervallo, si determina la poligonale $P_{n+1}$ di lunghezza $L(P_{n+1})\geq L(P_{n})$ ([[Proprietà degli Integrali#Disugualianza Triangolare|Disugualianza Triangolare]]).
+Aggiungendo un punto alla suddivisione dell'intervallo, si determina la poligonale $P_{n+1}$ di lunghezza $L(P_{n+1})\geq L(P_{n})$ ([[../../Analisi/Calcolo Integrale/Proprietà degli Integrali#Disugualianza Triangolare|Disugualianza Triangolare]]).
 - $L(P_{n+1})$ si avvicina alla ***lunghezza della traiettoria della curva***.
 
 >[!help] Lunghezza della Curva
->Al tendere all'***infinito*** del numero dei punti delle suddivisioni di $[a.b]$, le lunghezze delle poligonali associate formano una [[Successioni#Successione Monotona|successione monotona]] **crescente** che converge all'integrale:
+>Al tendere all'***infinito*** del numero dei punti delle suddivisioni di $[[../../Analisi/Successioni/Successioni#Successione Monotona|successione monotona]] **crescente** che converge all'integrale:
 >$$L(C)=\lim\limits_{n\to \infty} L(P_{n})=\lim\limits_{n\to \infty}\sum_{i=1}^{n-1}\|C(t_{i+1}-C(t_{i}))\|=\int_{a}^{b} \,\|C'(t)\| \text{d}t $$
 
 Siano $x'(t)$ e $y'(t)$ continue in $[a,b]$, allora la lunghezza di $C$ tra $C(a)$ e $C(b)$ è definita dalla seguente formula.
@@ -180,7 +180,7 @@ $$
 
 >[!summary] Relazione di Equivalenza
 >Una ***relazione di equivalenza*** delle curve parametriche è una relazione che raggruppa tutte le curve che tracciano lo *stesso oggetto geometrico*.
->- Tutte le parametrizzazioni che hanno la stessa [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Dominio e Codominio e Immagine|immagine]].
+>- Tutte le parametrizzazioni che hanno la stessa [[../../Analisi/Funzioni/Introduzione Funzioni#Dominio e Codominio e Immagine|immagine]].
 
 Due curve sono nella stessa ***classe di equivalenza*** se descrivono lo stesso oggetto.
 - Questa relazione **raggruppa le curve** che descrivono lo *stesso insieme di punti*, ***indipendentemente*** dal modo in cui vengono percorse o dal parametro usato.
@@ -205,7 +205,7 @@ $$
 >[!definizione]
 >Una funzione $g:[a,b]\to[c,d]$ è un ***diffeomorfismo*** tra gli intervalli $[a,b]$ e $[c,d]$
 ><u>se</u>
->$g$  è una funzione [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biunivoca]], [[Differenziabilità|differenziabile]] con [[Derivate|derivata]] ***prima mai nulla***.
+>$g$  è una funzione [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biunivoca]], [[../../Analisi/Funzioni a due Variabili/Differenziabilità|differenziabile]] con [[../../Analisi/Calcolo Differenziale/Derivate|derivata]] ***prima mai nulla***.
 
 $g$ ammette un'unica funzione inversa $g^{-1}$ che risulta anch'essa un ***diffeomorfismo***.
 
@@ -248,7 +248,7 @@ $$
 >$$s(t)=\int _{a}^{t} \,\|C'(\tau)\| \text{d}\tau $$
 
 $s$ *mappa* i valori di $t$ della curva nella ***lunghezza della curva*** fra due punti.
-- Per il [[Calcolo Integrale#Teorema Fondamentale del Calcolo Integrale $II$|Teorema Fondamentale del Calcolo Integrale]]:
+- Per il [[../../Analisi/Calcolo Integrale/Calcolo Integrale#Teorema Fondamentale del Calcolo Integrale $II$|Teorema Fondamentale del Calcolo Integrale]]:
 $$
 s'(t)=\|C'(t)\| >0
 $$
@@ -283,11 +283,11 @@ $$
 
 > Verifichiamo che con questa scelta la curva sarà percorsa con ***velocità unitaria costante***:
 
-Usando la [[Derivate di Funzioni Elementari#Derivate di Funzioni Composte|regola della catena]]:
+Usando la [[../../Analisi/Calcolo Differenziale/Derivate di Funzioni Elementari#Derivate di Funzioni Composte|regola della catena]]:
 $$
 C_{2}'(s)=C'(s^{-1}(s))\cdot\displaystyle{\frac{\text{d}}{\text{d}s}}s^{-1}(s)
 $$
-E per la [[Derivate di Funzioni Elementari#Derivata della Funzione Inversa|regola sulle derivate di funzioni inverse]]:
+E per la [[../../Analisi/Calcolo Differenziale/Derivate di Funzioni Elementari#Derivata della Funzione Inversa|regola sulle derivate di funzioni inverse]]:
 $$
 \displaystyle{\frac{\text{d}}{\text{d}s}}s^{-1}(s)=\displaystyle{\frac{1}{s'(s^{-1}(s))}}=\frac{1}{\|C'(s^{-1}(s))\|}
 $$
@@ -327,7 +327,7 @@ Successivamente si ***normalizzano*** i valori dividendo per $t_{n}$ (**lunghezz
 
 
 #### Applicazione alla Computer Graphics
-In molte applicazioni, come il controllo del movimento di una [[View Transform|telecamera]] o di un oggetto animato, è importante che la velocità lungo la curva $C(t)$ sia *costante*.
+In molte applicazioni, come il controllo del movimento di una [[../Rendering Pipeline/Geometry Stage/View Transform|telecamera]] o di un oggetto animato, è importante che la velocità lungo la curva $C(t)$ sia *costante*.
 - Se la ***parametrizzazione originale*** non garantisce una velocità costante è necessario ***riparametrizzare*** la curva rispetto all'arco.
 
 >[!important] Importante

@@ -1,7 +1,7 @@
 ## Introduzione
 ---
 >[!definizione]
->`OpenMP` è un modello per ***programmazione parallela*** su architetture a [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multiprocessori|architetture a memoria condivisa]].
+>`OpenMP` è un modello per ***programmazione parallela*** su architetture a [[../../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multiprocessori|architetture a memoria condivisa]].
 
 È un modello portabile su **tutte** le architetture a *memoria condivisa*.
 
@@ -22,7 +22,7 @@
 
 >[!fail] `OpenMP` **non**
 - Parallelizza ***automaticamente***.
-- Garantisce [[Git-Obsidian/High Performance Computing/Valutazione delle Performance#Speedup|speedup]].
+- Garantisce [[../Valutazione delle Performance#Speedup|speedup]].
 - Evita *data races*.
 
 ### Modello di Esecuzione
@@ -33,10 +33,10 @@
 
 Alla termine della regione parallela il team di thread "collassa" (join).
 
-![[OMPExecutionModel.png]]
+![[attachements/OMPExecutionModel.png]]
 #### Pragmas
 >[!note] `{c icon} #pragma`
->I `{c icon} #pragma` sono ***direttive del preprocessore*** che permettono comportamenti che non sono parte delle specifiche del [[Linguaggio C]].
+>I `{c icon} #pragma` sono ***direttive del preprocessore*** che permettono comportamenti che non sono parte delle specifiche del [[../../Programmazione/Introduzione Programmazione/Linguaggio C]].
 
 ```c
 #pragma omp construct [clause [clause ...]]
@@ -78,7 +78,7 @@ printf("Elapsed time: %f\n", tstop - tstart);
 ```
 
 ### Scope
-> Nella Programmazione seriale lo [[Visibilità e Tempo di Vita|scope]] di una variabile consiste nella sezione di un programma dove la variabile può essere usata.
+> Nella Programmazione seriale lo [[../../Programmazione/Variabili/Visibilità e Tempo di Vita|scope]] di una variabile consiste nella sezione di un programma dove la variabile può essere usata.
 
 >[!hint] Scope
 > In `OpenMP` lo ***scope*** di una variabile si riferisce al **set di thread** che può accedere alla variabile.
@@ -120,17 +120,17 @@ Di *default* tutte le variabili visibili all'inizio del blocco parallelo sono **
 - `b` viene clonato il ***puntatore all'array*** (array condiviso, puntatore privato).
 
 #### Istruzioni Atomiche
-> È possibile definire delle regioni di codice che verranno eseguiti in maniera [[9 - Condivisione di Risorse#Azioni Atomiche|atomica]].
+> È possibile definire delle regioni di codice che verranno eseguiti in maniera [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Azioni Atomiche|atomica]].
 
 > `omp atomic`
 - Protegge gli ***aggiornamenti*** a una *variabile condivisa*.
 
 > `omp critical`
-- Protegge gli accessi a una [[10 - Sezioni Critiche|sezione critica]].
+- Protegge gli accessi a una [[../../Sistemi Operativi/Teoria/10 - Sezioni Critiche|sezione critica]].
 - Tutti i thread prima o poi eseguiranno la ***sezione critica***.
 
 >[!danger] Attenzione
->Le direttive `critical` e `atomic` **non** proteggono contro le [[8 - Concorrenza#Race Condition|race condition]] causate dagli accessi alle *variabili condivise*.
+>Le direttive `critical` e `atomic` **non** proteggono contro le [[../../Sistemi Operativi/Teoria/8 - Concorrenza#Race Condition|race condition]] causate dagli accessi alle *variabili condivise*.
 
 #### Costrutti di Sincronizzazione
 >[!summary] `{c icon} #pragma omp barrier`

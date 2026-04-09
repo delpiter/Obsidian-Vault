@@ -8,9 +8,9 @@ La *ISO* ha dato il via a lavori per giungere ad una serie di standard unificati
 ### Stack ISO-OSI
 >[!hint] OSI
 >L'***Open System Interconnection*** reference model è uno standard architetturale per **reti di calcolatori interoperabili** 
->Stabilisce una *struttura a strati* composta da uno [[Stack]] di ***protocolli di comunicazione*** di reti suddiviso in *7 livelli*.
+>Stabilisce una *struttura a strati* composta da uno [[../../Algoritmi e Strutture Dati/Strutture Dati/Stack]] di ***protocolli di comunicazione*** di reti suddiviso in *7 livelli*.
 
-![[StackIso-Osi.png]]
+![[attachements/StackIso-Osi.png]]
 
 >[!done] Vantaggi
 
@@ -66,4 +66,4 @@ Stesso concetto dello stack ***ISO-OSI***
 >Alcuni layer nello stack **ISO-OSI** sono raggruppati in un unico layer nello stack **TCP-IP**
 
 
-![[TCP-IP.png|300]]
+![[attachements/TCP-IP.png|300]]

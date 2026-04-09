@@ -76,7 +76,7 @@ Molto spesso l'hardware della `CPU` non è in grado da solo di anticipare istruz
 >*A inizio 2018 sono stati resi pubblici da ricercatori, importanti bug di sicurezza, noti come **Meltdown** e **Spectre**, che coinvolgono la maggior parte delle `CPU` moderne*
 >*Questi attacchi fanno uso di Cache e Esecuzione fuori ordine*
 
-![[Meldtown-Spectre.png]]
+![[attachements/Meldtown-Spectre.png]]
 
 Dopo la pubblicazione di queste vulnerabilità le `CPU` che uscirono successivamente furono più lente di circa $30$% rispetto a quelle precedenti 
 ### Meltdown

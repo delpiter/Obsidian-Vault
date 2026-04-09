@@ -16,7 +16,7 @@ $$
 
 - Anche chiamata "Somma Telescopica".
 
-Per il [[Teoremi basati sulle Derivate#Teorema di Lagrange|teorema di Lagrange]] ad ogni intervallo $[x_{i},x_{i-1}]$
+Per il [[../Calcolo Differenziale/Teoremi basati sulle Derivate#Teorema di Lagrange|teorema di Lagrange]] ad ogni intervallo $[x_{i},x_{i-1}]$
 $\exists c_{i}\in[x_{i},x_{i-1}]:$
 $$
 \begin{array}
@@ -82,7 +82,7 @@ $$
 ## Integrazione per Sostituzione
 ---
 >[!info] Teorema
->Siano $I,J$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervalli]] di $\mathbb{R}$
+>Siano $I,J$ [[../Funzioni/Introduzione Funzioni#Intervallo|intervalli]] di $\mathbb{R}$
 >Siano $f\in C(I,\mathbb{R}),\varphi\in C^1(J,I)$
 ><u>Allora</u>
 >1) Se $\alpha,\beta\in J$$$\int _{\alpha}^\beta f(\varphi(t))\varphi'(t)\, dt = \int _{\varphi(\alpha)}^{\varphi(\beta)} f(x)\, dx  $$

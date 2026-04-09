@@ -20,7 +20,7 @@ $$
 #### Resistenze in Serie
 > La stessa corrente $I$ in ciascuna $R$.
 
-![[ResistenzeSerie.svg]]
+![[attachements/ResistenzeSerie.svg]]
 
 >[!caution] Resistenza Equivalente
 
@@ -34,7 +34,7 @@ $$
 
 #### Resistenze in Parallelo
 > Stesso potenziale $V$ per le due *resistenze*.
-![[ResistenzeParallelo.svg]]
+![[attachements/ResistenzeParallelo.svg]]
 
 >[!caution] Resistenza Equivalente
 
@@ -69,7 +69,7 @@ $$
 $$
 - Negativo perché il potenziale *cala*.
 
-![[PotenzaDissipata.png|550]]
+![[attachements/PotenzaDissipata.png|550]]
 
 >La *rapidità* con cui sarà dissipata l'energia sarà:
 
@@ -90,7 +90,7 @@ $$
 > Sia $l$ la lunghezza di un conduttore e $S$ l'area della sezione dello stesso. 
 
 >[!info]
->Data una [[Potenziale Elettrico#Differenza di Potenziale|differenza di potenziale]] $V$, si osserva:
+>Data una [[../Potenziale Elettrico#Differenza di Potenziale|differenza di potenziale]] $V$, si osserva:
 >- Se raddoppio $l$, $I$ si dimezza. $\implies R\propto l$
 >- Se raddoppio $S$, $I$ raddoppia. $\implies R\propto \frac{1}{S}$
 

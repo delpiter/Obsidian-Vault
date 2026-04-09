@@ -1,7 +1,7 @@
 
 >[!definizione] Definizione
 > L'***algebra relazionale*** è un linguaggio procedurale di tipo algebrico i cui *operandi sono relazioni*.
->È un linguaggio formale per [[Linguaggi di Manipolazione|interrogare]] un [[Modello Relazionale]].
+>È un linguaggio formale per [[Linguaggi di Manipolazione|interrogare]] un [[../Progettazione Logica/Modello Relazionale/Modello Relazionale]].
 
 
 >[!tip] Curiosità
@@ -39,7 +39,7 @@ Ogni predicato è del tipo $A\ \theta \ c$ oppure $A\ \theta\  B$ dove:
 - $\theta$ è un ***operatore di confronto***: $\theta\in\{ =,\neq, <,>,\leq, \geq\}$
 
 >[!caution] Valutazione della formula $F$
->Per gli ***operatori booleani*** $\vee, \wedge, \neg$ valgono le regole dell'[[Algebra di Bool]].
+>Per gli ***operatori booleani*** $\vee, \wedge, \neg$ valgono le regole dell'[[../../Architettura degli Elaboratori/Algebra di Bool e Logica Digitale/Algebra di Bool]].
 
 ##### Esempio
 > **ESAMI**(<u>Matricola</u>,<u>CodCorso</u>, Voto, Lode)
@@ -64,7 +64,7 @@ $$
 >In generale la cardinalità di $\pi_{Y}(r)$ è minore o uguale della cardinalità di $r$
 >>[!missing] La proiezione "elimina i duplicati".
 >
->L'uguaglianza è garantita se e solo se $Y$ è una [[Vincoli di Integrità#Superchiave|superchiave]] di $R(X)$
+>L'uguaglianza è garantita se e solo se $Y$ è una [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Superchiave|superchiave]] di $R(X)$
 
 Si noti che il risultato ammette la possibilità che "*per caso*" la cardinalità non vari anche se $Y$ **non** è superchiave.
 ##### Esempio
@@ -92,7 +92,7 @@ $$
 >[!tl;dr] Idea
 >L'operatore di ***join naturale*** $\bowtie$, combina le tuple di due relazioni sulla base dell'*uguaglianza* dei valori negli **attributi comuni** alle due relazioni (quelli *presenti* in $X_{1}\cap X_{2}$)
 
-***Ogni tupla*** che compare nel risultato del *join naturale* di $r_{1}$ e $r_{2}$, ([[Modello Entity-Relationship#Estensione di un'entità|estensioni]] rispettivamente di $R_{1}(X_{1})$ e $R_{2}(X_{2})$) è ottenuta come combinazione di una tupla di $r_{1}$ con una tupla di $r_{2}$.
+***Ogni tupla*** che compare nel risultato del *join naturale* di $r_{1}$ e $r_{2}$, ([[../Progettazione Concettuale/Modello Entity-Relationship#Estensione di un'entità|estensioni]] rispettivamente di $R_{1}(X_{1})$ e $R_{2}(X_{2})$) è ottenuta come combinazione di una tupla di $r_{1}$ con una tupla di $r_{2}$.
 
 >**Sintassi:**
 
@@ -150,7 +150,7 @@ $$
 0\leq |r_{1}\bowtie r_{2}|\leq|r_{1}|\cdot |r_{2}|
 $$
 >[!hint] Osservazione
->Se $X_{1}\cap X_{2}$ è una [[Vincoli di Integrità#Chiave|chiave]] di $R_{1}(X_{1})$, e *foreign key* in $R_{2}(X_{2})$ allora $|r_{1}\bowtie r_{2}|=|r_{2}|$
+>Se $X_{1}\cap X_{2}$ è una [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Chiave|chiave]] di $R_{1}(X_{1})$, e *foreign key* in $R_{2}(X_{2})$ allora $|r_{1}\bowtie r_{2}|=|r_{2}|$
 >>[!missing] Vera in assenza di valori nulli
 
 >[!hint] Osservazione
@@ -221,7 +221,7 @@ $$
 $$
 >[!example] Esempio
 
-![[DivisionExample.jpg]]
+![[attachements/DivisionExample.jpg]]
 
 ### Theta Join
 >[!tldr] Idea
@@ -258,7 +258,7 @@ Si definisce anche il ***right semijoin*** $R\rtimes S$ che equivale a $R\ltimes
 
 ### Outer Join
 >[!tldr] Idea
-> L'operatore di ***outer-join*** mantiene le [[#^2163ac|tuple dangling]] aggiungendo i valori mancanti sotto forma di [[Informazione Incompleta#Null|null]].
+> L'operatore di ***outer-join*** mantiene le [[#^2163ac|tuple dangling]] aggiungendo i valori mancanti sotto forma di [[../Progettazione Logica/Modello Relazionale/Informazione Incompleta#Null|null]].
 
 > **Sottotipi**:
 - **Left Outer Join** ($=\bowtie$)
@@ -276,7 +276,7 @@ Si definisce anche il ***right semijoin*** $R\rtimes S$ che equivale a $R\ltimes
 >Le ***viste*** sono espressioni a cui viene *assegnato un nome* che è possibile **riutilizzare** in altre espressioni.
 ## Algebra con Valori Nulli
 ---
-> La presenza di valori [[Informazione Incompleta#Null|nulli]] nelle relazioni richiede un'estensione della semantica degli operatori.
+> La presenza di valori [[../Progettazione Logica/Modello Relazionale/Informazione Incompleta#Null|nulli]] nelle relazioni richiede un'estensione della semantica degli operatori.
 
 >[!info] $\pi, \cup, -$
 >Negli operatori di *proiezione*, *unione* e *differenza* due tuple sono uguali anche in ***presenza di valori nulli***.
@@ -284,7 +284,7 @@ Si definisce anche il ***right semijoin*** $R\rtimes S$ che equivale a $R\ltimes
 >[!warning] $\sigma$
 >Una ***selezione*** produce le sole tuple per cui l'espressione di predicati *risulta vera*.
 
-![[NullLogic.png]]
+![[attachements/NullLogic.png]]
 
 >[!abstract] $\bowtie$
 >Il ***join naturale*** *non* combina due tuple se queste hanno entrambe valore **nullo** su un attributo in comune.

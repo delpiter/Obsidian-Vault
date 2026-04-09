@@ -1,4 +1,4 @@
->[[3 - Variabili Aleatorie#Variabili Discrete e Densità Uniforme|Variabile Uniforme]]
+>[[../3 - Variabili Aleatorie#Variabili Discrete e Densità Uniforme|Variabile Uniforme]]
 ---
 
 >[!definizione] Concetto
@@ -12,7 +12,7 @@ f_{X}(s)=\begin{cases}
 \end{cases}
 $$
 
-![[Var Continua Uniforme.png]]
+![[attachements/Var Continua Uniforme.png]]
 #### Esempio
 >Un tram passa ogni $10$ minuti
 
@@ -29,7 +29,7 @@ $$
 \end{array}
 $$
 
-![[Densità Uniforme Esempio.png]]
+![[attachements/Densità Uniforme Esempio.png]]
 
 >[!question] $F_{X}(t)$ ?
 
@@ -42,7 +42,7 @@ $$
 >
 >$$\mathcal{P}(X\leq t)= \displaystyle{\frac{(t-a)}{(b-a)}}$$
 
-![[VariabileUniforme-CasoGenerale.png]]
+![[attachements/VariabileUniforme-CasoGenerale.png]]
 
 ### Valore Atteso
 >[!info] Valore Atteso di Variabili Uniformi

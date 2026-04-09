@@ -23,7 +23,7 @@ Introduciamo ora alcune definizioni che ci serviranno per risolvere il problema
 >>[!tldr] Capacità
 >>La ***capacità di un taglio***, $c(A,B)$ è pari alla somma delle capacità degli archi con il primo estremo in $A$ e il secondo estremo in $B$
 
-![[Cut.png|500]]
+![[attachements/Cut.png|500]]
 
 ### Legame Max Flow - Min Cut
 >[!info] Lemma
@@ -35,7 +35,7 @@ Introduciamo ora alcune definizioni che ci serviranno per risolvere il problema
 >[!tldr] Teorema
 >Il ***flusso massimo di una rete*** $G=(V,A)$ è pari alla capacità del taglio di $G$ di ***capacità minima***
 
-![[Screenshot 2024-06-10 111745.png]]
+![[attachements/Screenshot 2024-06-10 111745.png]]
 
 ### Grafo Residuo
 >[!info] Definizione
@@ -54,7 +54,7 @@ Introduciamo ora alcune definizioni che ci serviranno per risolvere il problema
 >>[!abstract] Incremento Limite
 >>Il flusso lungo un *cammino aumentante* può essere aumentato al massimo di un quantitativo pari alla ***minima capacità residua*** $c_{f}$ degli archi del cammino
 
-![[Grafo Residuo.png|450]]
+![[attachements/Grafo Residuo.png|450]]
 ### Casi diversi del Problema
 >*Poiché il problema ha una vasta applicazione nella realtà, possono esistere diversi casi dove ci si deve ricondurre al caso base prima di potere procedere con la risoluzione*
 

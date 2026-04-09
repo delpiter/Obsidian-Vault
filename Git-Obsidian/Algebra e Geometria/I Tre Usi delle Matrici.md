@@ -19,7 +19,7 @@ Applicando ad esse l'[[Risoluzione di Sistemi#Metodo di Gauss|algoritmo di Gauss
 
 Due matrici $A,M$ rappresentano la stessa ***applicazione***
 $\iff$
-Sono [[6 - Cambiamenti di Base#Matrici Simili|simili]], cioè $\exists B$ ***invertibile*** tale che $M=B^{-1}AB$
+Sono [[Applicazioni/6 - Cambiamenti di Base#Matrici Simili|simili]], cioè $\exists B$ ***invertibile*** tale che $M=B^{-1}AB$
 
 ## Forme Bilineari
 ---
@@ -30,5 +30,5 @@ Sono [[6 - Cambiamenti di Base#Matrici Simili|simili]], cioè $\exists B$ ***inv
 
 Due matrici $A,M$ rappresentano la stessa ***forma bilineare***
 $\iff$
-Sono [[1 - Forme Bilineari#Matrici Congruenti|congruenti]], cioè $\exists B$ invertibile: $M=B^TAB$
+Sono [[Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Congruenti|congruenti]], cioè $\exists B$ invertibile: $M=B^TAB$
 

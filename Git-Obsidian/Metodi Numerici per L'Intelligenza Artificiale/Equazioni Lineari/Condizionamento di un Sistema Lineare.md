@@ -1,6 +1,6 @@
 >[!question] Come influiscono delle perturbazioni sugli elementi della matrice $A$ e sugli elementi del termine noto $b$?
 
-> Sia $\| \ \|$ una qualunque [[Norma]] naturale, sia $A\in\mathbb{R}^{n\times m}$ matrice a [[2 - Teorema del Rango|rango]] massimo
+> Sia $\| \ \|$ una qualunque [[../Norma|norma]] naturale, sia $A\in\mathbb{R}^{n\times m}$ matrice a [[../../Algebra e Geometria/Applicazioni/2 - Teorema del Rango|rango]] massimo
 
 - Sia $\delta A$ una matrice di perturbazione e $\delta b$ un vettore di perturbazione
 
@@ -35,7 +35,7 @@ $$
 \displaystyle{\frac{\| \delta x\| }{\| x \| }}\leq \| A^{-1} \|\| A \|  \displaystyle{\frac{\| \delta b\| }{\| b \| }}
 $$
 >[!hint] Condizionamento
->$K(A)=\| A^{-1} \|\| A \|$ rappresenta [[Condizionamento#Quantificare il Condizionamento|indice di condizionamento]] del problema del calcolo della ***soluzione di un sistema lineare***.
+>$K(A)=\| A^{-1} \|\| A \|$ rappresenta [[../Condizionamento e Stabilità/Condizionamento#Quantificare il Condizionamento|indice di condizionamento]] del problema del calcolo della ***soluzione di un sistema lineare***.
 
 ##### Caso 2
 >[!abstract] Perturbazione sulla matrice e termine noto.
@@ -46,12 +46,12 @@ $$
 \displaystyle{\frac{\| \delta x \| }{\| x \| }}\leq \| A^{-1} \|\| A \| \displaystyle{\frac{\displaystyle{\frac{\| \delta A \| }{\| A \| }+\frac{\| \delta b \| }{\| b \| }}}{1-\| A^{-1} \|\| A \|\frac{\| \delta A \| }{\| A \| }  }}  
 $$
 >[!hint] Osservazione
->L'***indice di condizionamento*** della [[5 - Matrici di Applicazioni Lineari#Matrice Identità|matrice identità]] è uguale a $1$, $K(I)=1$
+>L'***indice di condizionamento*** della [[../../Algebra e Geometria/Applicazioni/5 - Matrici di Applicazioni Lineari#Matrice Identità|matrice identità]] è uguale a $1$, $K(I)=1$
 >L'***indice di condizionamento*** di una matrice qualunque è in generale $\geq 1$
 >>[!abstract] Nota Bene
->>Se $A$ è [[1 - Introduzione Isometrie#Matrice Ortogonale|ortogonale]] allora: 
+>>Se $A$ è [[../../Algebra e Geometria/Isometrie/1 - Introduzione Isometrie#Matrice Ortogonale|ortogonale]] allora: 
 >>$$K_{2}(A)=\| A \|_{2}\| A^{-1} \|_{2}=1  $$
->>>[!done] Se $A$ è **ortogonale** il problema è [[Condizionamento#Condizionamento di un Problema|ben condizionato]].
+>>>[[../Condizionamento e Stabilità/Condizionamento#Condizionamento di un Problema|ben condizionato]].
 
 > In generale:
 

@@ -58,7 +58,7 @@ I valori sulla diagonale di $\Sigma$ sono detti valori singolari di $A$ e soddis
 $$
 \sigma_{1}\geq \sigma_{2}\geq\dots\geq\sigma_{k}\geq0
 $$
-- Se la matrice $A$ ha [[6 - Cambiamenti di Base#Rango di una Matrice|rango]] $k=n$ avremo $\sigma_{n}>0$
+- Se la matrice $A$ ha [[../../Algebra e Geometria/Applicazioni/6 - Cambiamenti di Base#Rango di una Matrice|rango]] $k=n$ avremo $\sigma_{n}>0$
 
 $$
 \Sigma=\begin{bmatrix}
@@ -89,7 +89,7 @@ I valori singolari di una matrice hanno le *seguenti proprietà*:
 - $\sigma_{i}$ sono sempre ***reali*** e $\geq 0$.
 - $\sigma_{1}$ è il *massimo valore singolare* (indicato con $\sigma_{\max}$).
 - Il $\sigma_{i}>0$ più *piccolo* è detto $\sigma_{\min}$.
-- Il rapporto $\displaystyle\frac{\sigma_{\max}}{\sigma_{\min}}$ ci fornisce l'[[Condizionamento#Quantificare il Condizionamento|indice di condizionamento]] della *matrice* $A$.
+- Il rapporto $\displaystyle\frac{\sigma_{\max}}{\sigma_{\min}}$ ci fornisce l'[[../Condizionamento e Stabilità/Condizionamento#Quantificare il Condizionamento|indice di condizionamento]] della *matrice* $A$.
 - Il numero di valori singolari non nulli rappresenta il ***rango della matrice*** $A$.
 - $\sigma_{i}(A)=\sqrt{ \lambda_{i}(A^TA) }\quad i=1,\dots,n$.
 
@@ -131,7 +131,7 @@ $$
 - Si ha: $c_{i}=\displaystyle{\frac{d_{i}}{\sigma_{i}}},\quad i=1,\dots,k$
 
 >[!help] Minima Norma
->Ora poniamo $c_{i}=0$ per $i=k+1,\dots,n$ che rappresenta una condizione aggiuntiva per ottenere fra le *infinite soluzioni*, quella di ***minima*** [[Norma]].
+>Ora poniamo $c_{i}=0$ per $i=k+1,\dots,n$ che rappresenta una condizione aggiuntiva per ottenere fra le *infinite soluzioni*, quella di ***minima*** [[../Norma|norma]].
 
 Ricaviamo ora
 $$
@@ -156,7 +156,7 @@ $$
 >$$P_{n}(x_{i})=y_{i}$$
 
 Indichiamo:
-- Con $\alpha$ il vettore di dimensione $n+1$ dei coefficienti della [[2 - Campi e Spazi Vettoriali#Combinazioni Lineari|combinazione lineare]]:
+- Con $\alpha$ il vettore di dimensione $n+1$ dei coefficienti della [[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Combinazioni Lineari|combinazione lineare]]:
 $$
 \alpha=\begin{bmatrix}
 \alpha_{0} \\

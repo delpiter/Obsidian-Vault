@@ -22,7 +22,7 @@ G_{f}=\{ (x,y,z)\in\mathbb{R}^2 :z=f(x,y)\}
 >Chiamiamo ***linea o curva di livello*** di $f$ l'insieme:
 >$$\{ (x,y)\in\mathbb{R}^2 : f(x,y)=c\}$$
 
-![[funzioneGransasso.png]]
+![[attachements/funzioneGransasso.png]]
 
 ### Dominio
 >[!tip] Rappresentazione
@@ -36,7 +36,7 @@ $$
 D:\{ (x,y)\in\mathbb{R}^2 :\underbrace{ 1-x^2-y^2\geq 0 }_{\displaystyle x^2+y^2\leq 1 }\}
 $$
 - Rappresentazione Grafica:
-![[Pasted image 20231204153447.png|400]]
+![[attachements/Pasted image 20231204153447.png|400]]
 ##### Es
 $$
 f(x,y)=\sqrt{ x^2 y^2 -4 }
@@ -46,7 +46,7 @@ $$
 D:\{ (x,y)\in\mathbb{R}^2 :\underbrace{ x^2+y^2 -4\geq 0 }_{\displaystyle x^2+y^2\geq 2 }\}
 $$
 - Rappresentazione Grafica:
-![[Pasted image 20231213145237.png|400]]
+![[attachements/Pasted image 20231213145237.png|400]]
 
 ## Estremanti Locali
 ---
@@ -81,7 +81,7 @@ Sia $g(x)=f(x,y_{0})$
 Inoltre $g$ è derivabile in $x_{0}$ 
 - Poichè $f$ è derivabile in $(x_{0},y_{0})$ e $x_{0}$ è punto interno ($A$ insieme aperto)
 
-Quindi applicando il [[Teoremi basati sulle Derivate#Teorema di Fermat|teorema di Fermat]] a $g$ deduco:
+Quindi applicando il [[../Calcolo Differenziale/Teoremi basati sulle Derivate#Teorema di Fermat|teorema di Fermat]] a $g$ deduco:
 $$
 g'(x_{0})=\displaystyle\frac{ \partial f }{ \partial x } (x_{0},y_{0})=0
 $$

@@ -1,7 +1,7 @@
 ## Bellman-Ford
 ---
 >[!informazioni]
->Algoritmo di ricerca di [[Cammini Minimi con Sorgente Singola|cammini minimi]] tramite [[Algoritmi di Programmazione Dinamica|programmazione dinamica]]
+>Algoritmo di ricerca di [[Cammini Minimi con Sorgente Singola|cammini minimi]] tramite [[../../../Programmazione Dinamica/Algoritmi di Programmazione Dinamica|programmazione dinamica]]
 >Risolve lo stesso problema dell'algoritmo di [[Algoritmo di Dijkstra|Dijkstra]]
 >>[!caution] Basato sulla seguente Equazione Ricorsiva
 >>$$d^k[v]=\begin{cases} v=s\ ?\ 0:\infty \qquad \qquad \qquad k=0\\ min\{ d^{k-1}[u]+w(u,v) \}\ \ \ \  1\leq k\leq n \end{cases}$$
@@ -59,7 +59,7 @@ A differenza di Dijkstra:
 ```
 
 ##### Esempio
-![[Bellman-Ford Example.png]]
+![[attachements/Bellman-Ford Example.png]]
 ### Correttezza
 >[!Teorema]
 >Si esegua *Bellman-Ford* su un grafo orientato e pesato $G=(V,E)$ con sorgente $s$ e funzione di peso $w:E\to\mathbb{R}$
@@ -106,7 +106,7 @@ $$
 ```
 
 #### Esempio
-![[DAG Shortest Path.png]]
+![[attachements/DAG Shortest Path.png]]
 
 ### Complessità
 $$

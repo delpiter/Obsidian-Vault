@@ -11,7 +11,7 @@ $$
 ## Ordini
 ---
 >[!help] $p=1$
->Se $p=1$ occorre che $c<1$ affinché la successione sia [[Limiti di Successioni#Definizioni|convergente]].
+>Se $p=1$ occorre che $c<1$ affinché la successione sia [[../../Analisi/Successioni/Limiti di Successioni#Definizioni|convergente]].
 >In tal caso si dice convergente ***linearmente***.
 
 $$
@@ -57,7 +57,7 @@ Se il metodo iterativo ha ordine di convergenza $p$, allora
 >- Se $x\in I$ allora la successione di Newton $\{ x_{i} \}_{i\geq1}$ converge ad $\alpha$
 
 >[!cite] Teorema di Convergenza Globale del metodo di Newton
->Sia $f(x)\in C^2[a,b]$, con $[a,b]$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] chiuso e limitato, ***sono verificate*** le seguenti condizioni:
+>Sia $f(x)\in C^2[[../../Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] chiuso e limitato, ***sono verificate*** le seguenti condizioni:
 >1. $f(a)f(b) < 0$
 >2. $f'(x) \ne 0 \quad \forall x \in [a,b]$
 >3. $f''(x) > 0 \quad \textit{oppure} \quad f''(x) < 0 \quad \forall x \in [a,b]$

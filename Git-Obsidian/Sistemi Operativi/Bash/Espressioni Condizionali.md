@@ -15,7 +15,7 @@ E mediante delle parentesi tonde pere stabilire l'*ordine di valutazione*
 
 >[!hint] Espressioni Valutate
 >La `bash` effettua solo le seguenti interpretazioni:
->- [[Git-Obsidian/Sistemi Operativi/Bash/Variabili#Variable Expansion|Variable Expansion]]
+>- [[Variabili#Variable Expansion|Variable Expansion]]
 >- [[Valutazioni Aritmetiche|Arithmetic Expansion]] con `$(())`
 >- [[Command Substitution]]
 >- Process Substitution
@@ -85,7 +85,7 @@ Usando l’operatore `[[...]]`
 - `-t [fd]` returns ***True*** if file *descriptor* `fd` is *open* and refers to a terminal
 - `-w [file]` returns ***True*** if file *exists* and is *writable*
 - `-x [file]` returns ***True*** if file *exists* and is *executable*
-- `-O [file]` returns ***True*** if file *exists* and is *owned* by the [[Utenti e Permessi#Utenti e Gruppi|effective user]] id
+- `-O [[Utenti e Permessi#Utenti e Gruppi|effective user]] id
 - `-G [file]` returns ***True*** if file *exists* and is *owned* by the *effective group* id
 - `-L [file]` returns ***True*** if file *exists* and is a *symbolic link* (deprecated, see -h)
 - `[file1] -nt [file2]` True if `file1` is *newer* (last modification date) than `file2`, or if `file1` *exists* and `file2` *does not*

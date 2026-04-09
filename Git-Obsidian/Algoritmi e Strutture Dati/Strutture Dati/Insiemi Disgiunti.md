@@ -22,22 +22,22 @@
 
 ### Strutture Dati per Insiemi Disgiunti
 >[!info] Disjoint-Set Forests
->Una delle implementazioni per gli *insiemi disgiunti* è rappresentata da [[Gli Alberi|alberi]] ***radicati***
+>Una delle implementazioni per gli *insiemi disgiunti* è rappresentata da [[Grafi/Alberi/Gli Alberi|alberi]] ***radicati***
 >Dove ***ogni nodo*** contiene un ***elemento***, e ***ogni albero*** rappresenta un ***insieme***
 >- In una ***Disjoint-Set Forests*** ogni elemento ha solo un *puntatore al padre*
 >- La *radice* di ciascun albero contiene il ***rappresentante dell'insieme*** ed è il ***padre di se stessa***
 
-![[Pasted image 20240330100435.png]]
+![[attachements/Pasted image 20240330100435.png]]
 *Una foresta di insiemi disgiunti*
 
 #### Up-Tree Make-Set
 >*Inizializza un nuovo Up-Tree contenente solo il nodo $x\implies \Theta(1)$*
 
-![[Screenshot 2024-03-30 10asd5.png]]
+![[attachements/Screenshot 2024-03-30 10asd5.png]]
 #### Up-Tree Find-Set
 >*Percorre la catena dei puntatori fino a trovare il rappresentante di $x\implies O(h)$*
 
-![[findset2024-03-30 100721.png]]
+![[attachements/findset2024-03-30 100721.png]]
 ```pseudo
 	\begin{algorithm}
 	\caption{Find Set}
@@ -60,7 +60,7 @@
 
 - La radice di ***rango inferiore*** avrà come padre la radice di ***rango superiore***
 
-![[Pasted image 20240330101911.png]]
+![[attachements/Pasted image 20240330101911.png]]
 ```pseudo
 	\begin{algorithm}
 	\caption{Link}
@@ -93,7 +93,7 @@
 >*Serve nel corso della $\text{Find-Set}$, fa puntare direttamente alla radice ogni nodo del cammino d'accesso al nodo dato*
 >*Migliora la complessità asintotica se si eseguono più $\text{Find-Set}$ che $\text{Union}$*
 
-![[Pasted image 20240330102722.png]]
+![[attachements/Pasted image 20240330102722.png]]
 
 
 #### Complessità Up-Tree
@@ -103,7 +103,7 @@
 >>Un albero con radice in $x$ ha un numero di nodi minimo di $2^{\text{ rango di x}}$
 
 ##### Dimostrazione
->*Dimostrazione per [[Tipologie di Dimostrazioni#Principio di induzione|induzione]], se è vero per un rango più piccolo è vero per un rango più grande*
+>*Dimostrazione per [[../../Analisi/Tipologie di Dimostrazioni#Principio di induzione|induzione]], se è vero per un rango più piccolo è vero per un rango più grande*
 
 >[!abstract] Passo 0
 

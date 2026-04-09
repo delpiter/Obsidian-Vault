@@ -51,7 +51,7 @@
 
 Le ossa sono **collegate alla mesh del modello** attraverso dei pesi che definiscono quanto ogni parte della mesh sarà influenzata dal movimento di un osso.
 
-![[Rigging.png]]
+![[attachements/Rigging.png]]
 
 ### Scena e Camera
 >[!info]
@@ -73,8 +73,8 @@ L'animazione avviene *muovendo le ossa* dello [[#Rigging|scheletro virtuale]].
 
 > ***Keyframing***
 
-- Definizione dei ***punti chiave*** di un'animazione e [[Interpolazione Polinomiale|interpolazione]] tra di essi.
+- Definizione dei ***punti chiave*** di un'animazione e [[../Metodi Numerici per L'Intelligenza Artificiale/Interpolazione/Interpolazione Polinomiale|interpolazione]] tra di essi.
 
 > ***Fisica***
 
-- Simulazione di *movimenti realistici* sotto l'azione di [[Leggi di Newton#Seconda Legge di Newton|forze]].
+- Simulazione di *movimenti realistici* sotto l'azione di [[../Fisica/Leggi di Newton e le Forze/Leggi di Newton#Seconda Legge di Newton|forze]].

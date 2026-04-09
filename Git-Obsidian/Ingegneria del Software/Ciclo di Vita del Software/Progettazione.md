@@ -3,7 +3,7 @@
 >[!definizione]
 > La fase di ***progettazione*** riguarda tutte quelle attività che permettono di passare alla **raccolta ed elaborazione dei requisiti** di un *sistema software*.
 
-È la fase che fa da "***ponte***" tra la fase di [[Analisi dei Requisiti|specifica ]] e quella di [[Produzione|codifica]].
+È la fase che fa da "***ponte***" tra la fase di [[Analisi dei Requisiti|specifica ]] e quella di [[../Ingegneria del Software/Produzione|codifica]].
 
 Durante la progettazione si decidono le modalità di passaggio da *che cosa* deve essere realizzato a *come* la realizzazione deve avere luogo.
 
@@ -91,7 +91,7 @@ La suddivisione di un sistema in moduli rende necessario tener traccia delle int
 - Di *composizione* (***PART OF***), descrive la struttura del sistema a diversi livelli di astrazione, permettendo di realizzare una documentazione più chiara.
 - *Temporale*, descrive la sequenza con cui vengono realizzati i moduli.
 
-Lo strumento più adatto per queste rappresentazioni è il [[I Grafi|grafo]].
+Lo strumento più adatto per queste rappresentazioni è il [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi|grafo]].
 
 >[!abstract] Astrazione
 >L'***astrazione*** è lo strumento per capire e analizzare problemi complessi.

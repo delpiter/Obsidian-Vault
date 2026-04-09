@@ -85,7 +85,7 @@ p#note1 { font-size: 9 px; }
 - Vero se l'elemento `E` è un `{html icon} <a>` (*link*) non ancora visitato o un link già visitato.
 
 > `hover`, `active`, `focus`
-- Vero se sull'elemento `E` passa sopra il mouse, il mouse è premuto o il [[Interactive|controllo]] è selezionato per accettare *input*.
+- Vero se sull'elemento `E` passa sopra il mouse, il mouse è premuto o il [[../HTML/Elementi di HTML/Interactive|controllo]] è selezionato per accettare *input*.
 
 > `enabled`, `checked`
 - Vero se elemento `E` è *abilitato* o *checked*

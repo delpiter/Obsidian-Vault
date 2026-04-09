@@ -32,30 +32,30 @@ Sono espressi in forma testuale, comprensibile anche per i ***non*** "*addetti a
 ### Graficamente
 > Graficamente gli attori e i casi d'uso sono rappresentati nel seguente modo.
 
-![[UseCaseComponents.svg]]
+![[attachements/UseCaseComponents.svg]]
 #### Relazioni nel Diagramma
 > Generalizzazione tra Attori
 
-![[ActorGeneralization.svg]]
+![[attachements/ActorGeneralization.svg]]
 
 > Comunicazione Unidirezionale
 
-![[UnilateralCommunication.svg]]
+![[attachements/UnilateralCommunication.svg]]
 
 > Inclusione e Generalizzazione tra Casi d'Uso
 
-![[UseCaseInclusionGeneralization.svg]]
+![[attachements/UseCaseInclusionGeneralization.svg]]
 
 > Estensione di Casi d'Uso
 
-![[UseCaseExtention.svg]]
+![[attachements/UseCaseExtention.svg]]
 
 ### Ruolo dei Casi d'Uso
 >[!abstract] Fasi iniziali
 >Nelle fasi iniziali della progettazione servono per chiarire ***cosa dovrà fare il sistema***.
 
 Ragionare sui *casi d’uso* con il **committente** è uno dei modi più ***efficaci ed efficienti*** per scoprire ed analizzare i requisiti ai quali il sistema dovrà fornire un’implementazione.
-- Spesso si usa come "[[Definizioni_Ingegneria-del-Software#Milestone|milestone]]" contrattuale.
+- Spesso si usa come "[[../../Definizioni/Definizioni_Ingegneria-del-Software#Milestone|milestone]]" contrattuale.
 
 > I casi d’uso ***guidano l’intero progetto di sviluppo***.
 - Costituiscono il punto di partenza per la *progettazione del sistema*

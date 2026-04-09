@@ -18,7 +18,7 @@
 
 ### Breadth First Search
 >[!info] Descrizione
->Una ricerca per ampiezza percorre una [[I Grafi#Componente Connessa e Sottografo|componente connessa]] di un grafo e facendolo definisce un [[Gli Alberi#Alberi Definizione|albero]] di copertura con molte proprietà utili
+>Una ricerca per ampiezza percorre una [[I Grafi#Componente Connessa e Sottografo|componente connessa]] di un grafo e facendolo definisce un [[Alberi/Gli Alberi#Alberi Definizione|albero]] di copertura con molte proprietà utili
 
 Dato un **vertice** ***sorgente*** $s$, `BFS` calcola la distanza (*minimo numero di archi*) da $s$ a ogni vertice *raggiungibile*
 - Al vertice $s$ viene associata una distanza di $0$
@@ -101,8 +101,8 @@ Ogni vertice $v$
 	\end{algorithm}
 ```
 #### Esempio
-![[BFS-1.png]]
-![[BFS-2.png]]
+![[attachements/BFS-1.png]]
+![[attachements/BFS-2.png]]
 
 #### Analisi della Complessità
 >*Dato un grafo* $G=(V,E)$
@@ -225,8 +225,8 @@ Algoritmo ricorsivo diviso in due funzioni
 ```
 
 #### Esempio
-![[DFS-1.png]]
-![[DFS-2.png]]
+![[attachements/DFS-1.png]]
+![[attachements/DFS-2.png]]
 #### Complessità Computazionale
 >[!tldr] Tempo di `CPU`
 >Il ciclo in $DFS$ richiede un tempo $\Theta(V)$, *escludendo* il tempo per eseguire $DFS-Visit$ 
@@ -249,7 +249,7 @@ E_{\pi}=\{ (\pi[v],v)\in E:v\in V \text{ and } \pi[v]\neq \text{NULL}\}
 \end{array}
 $$
 
-- Il sottografo in questo caso forma una [[Gli Alberi#Definizioni sugli Alberi|foresta]] ***depth-first*** composta da vari *alberi* ***depth-first***
+- Il sottografo in questo caso forma una [[Alberi/Gli Alberi#Definizioni sugli Alberi|foresta]] ***depth-first*** composta da vari *alberi* ***depth-first***
 
 #### Tempi di Visita
 >*L'algoritmo `DFS` mantiene un orologio globale su:*
@@ -280,16 +280,16 @@ $$
 
 >[!abstract] Teorema
 >In ogni `DFS` di un grafo $G=(V,E)$, per ogni coppia di vertici $u$ e $v$, ***una e una sola*** delle seguenti condizioni è ***soddisfatta***
->- Gli intervalli $[d[u],f[u]]$ e $[d[v],f[v]]$ sono interamente [[Insiemi Numerici#Insiemi Separati|disgiunti]]
+>- Gli intervalli $[[../../../Analisi/Insiemi/Insiemi Numerici#Insiemi Separati|disgiunti]]
 >	- Ne $u$ è *discendente* di $v$, ne $v$ è *discendente* di $u$
 >- L'intervallo $[d[u],f[u]]$ è ***contenuto interamente*** in $[d[v],f[v]]$
 >	- $u$ è un *discendente* di $v$ nell'albero `DFS`
 >- L'intervallo $[d[v],f[v]]$ è ***contenuto interamente*** in $[d[u],f[u]]$
 >	- $v$ è un *discendente* di $u$ nell'albero `DFS`
 
-![[Pasted image 20240413185236.png]]
+![[attachements/Pasted image 20240413185236.png]]
 
-![[Pasted image 20240413185322.png]]
+![[attachements/Pasted image 20240413185322.png]]
 
 ###### Corollario
 >[!abstract] Annidamento di nodi discendenti

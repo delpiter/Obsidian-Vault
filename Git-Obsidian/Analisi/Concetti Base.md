@@ -8,7 +8,7 @@
  - Oggetti dell'insieme
 	- Rappresentati con le lettere minuscole
 		- $a, b, c,...$
-- Gli [[Insiemi Numerici]] sono particolari insiemi infiniti
+- Gli [[Insiemi/Insiemi Numerici]] sono particolari insiemi infiniti
 #### Modi per identificare insiemi
 ###### Se è finito...
 È possibile scriverlo tutto

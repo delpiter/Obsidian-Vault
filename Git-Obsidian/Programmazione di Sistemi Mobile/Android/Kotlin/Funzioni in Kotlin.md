@@ -65,7 +65,7 @@ println(str[0..14]) // Always Forgive
 ```
 
 #### Funzioni Variadiche
-> È possibile avere un numero arbitrario di parametri di input ([[Funzioni in C#Funzioni variadiche|Funzioni variadiche]])
+> È possibile avere un numero arbitrario di parametri di input ([[../../../Programmazione/Funzioni/Funzioni in C#Funzioni variadiche|Funzioni variadiche]])
 
 Funzioni con parametri definiti con la keyword `vararg`.
 

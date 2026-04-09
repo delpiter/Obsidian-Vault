@@ -1,7 +1,7 @@
 ## PHP
 ---
 >[!info]
->`{php icon} PHP` è un ***linguaggio di scripting***, [[Definizioni_Architettura#Interpretazione|interpretato]], originariamente concepito per la programmazione di pagine web dinamiche *lato server*.
+>`{php icon} PHP` è un ***linguaggio di scripting***, [[../../Definizioni/Definizioni_Architettura#Interpretazione|interpretato]], originariamente concepito per la programmazione di pagine web dinamiche *lato server*.
 
 L'interprete `PHP` è un software *open source*, sotto la `PHP License`.
 ### Architettura e Sintassi
@@ -26,7 +26,7 @@ La *sintassi* di `PHP` è `C`-like con differenze legate allo scopo specifico de
 #### Uso di più File PHP
 >[!question] Come posso risolvere la ripetizione di codice `{php icon} PHP`?
 
-È possibile realizzare un ***file separato*** con estensione `.php` che contiene il codice più articolato e di uso più *frequente* (es. gestione del [[Git-Obsidian/DataBase/Introduzione#Database|Database]]).
+È possibile realizzare un ***file separato*** con estensione `.php` che contiene il codice più articolato e di uso più *frequente* (es. gestione del [[../../DataBase/Introduzione#Database|Database]]).
 - Sarà poi necessario includere il codice nel file `PHP` principale usando `require` e `include`.
 
 >[!example] Esempio
@@ -53,7 +53,7 @@ I due costrutti sono ***equivalenti*** eccetto per come trattano gli errori:
 - `{php} include` produce un *Warning*, mentre `{php} require` restituisce un ***Fatal Error***.
 
 Le primitive possono essere usate anche per includere:
-- Librerie `{php icon} PHP` (con attenzione allo [[Visibilità e Tempo di Vita|scope]] delle variabili).
+- Librerie `{php icon} PHP` (con attenzione allo [[../../Programmazione/Variabili/Visibilità e Tempo di Vita|scope]] delle variabili).
 - File `{html icon} HTML`.
 
 >[!warning] Attenzione

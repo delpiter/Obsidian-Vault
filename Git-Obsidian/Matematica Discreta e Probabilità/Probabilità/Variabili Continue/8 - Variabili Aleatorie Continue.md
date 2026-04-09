@@ -1,5 +1,5 @@
 >[!info] Concetto
->Le [[3 - Variabili Aleatorie|Variabili Aleatorie]] ***Continue*** assumono valori *reali* e non semplicemente *interi* ( o *numerabili*)
+>Le [[../3 - Variabili Aleatorie|Variabili Aleatorie]] ***Continue*** assumono valori *reali* e non semplicemente *interi* ( o *numerabili*)
 >Tipicamente si usano in ***caso di misurazioni***
 >>[!example] Esempi
 >>Peso, Lunghezza, Tempo, Soldi, etc...
@@ -23,10 +23,10 @@ $Z=$ Valore tra un anno
 
 ## Funzione di Ripartizione
 ---
->Riprendiamo il concetto di [[5 - Trasformazioni di Variabili Aleatorie#Caso Speciale|Funzione di Ripartizione]] fatto in *precedenza*
+>Riprendiamo il concetto di [[../5 - Trasformazioni di Variabili Aleatorie#Caso Speciale|Funzione di Ripartizione]] fatto in *precedenza*
 
 >[!definizione] Definizione
->Sia $X$ una [[3 - Variabili Aleatorie|Variabile Aleatoria]] qualunque
+>Sia $X$ una [[../3 - Variabili Aleatorie|Variabile Aleatoria]] qualunque
 >$$\begin{array}\ F_{X}:\mathbb{R}\to[0,1] \\F_{X}(t)=\mathcal{P}(X\leq t)\end{array}$$
 
 #### Esempio Discreto
@@ -35,16 +35,16 @@ $Z=$ Valore tra un anno
 - $\displaystyle\mathcal{P}(X=0)=\frac{1}{4}\quad \mathcal{P}(X=1)=\frac{1}{2}\quad \mathcal{P}(X=2)=\frac{1}{4}$
 >[!question] Chi è la funzione di ripartizione?
 
-![[FxDiscreta.png]]
+![[../attachements/FxDiscreta.png]]
 
 - $F_{X}(1.1)=\mathcal{P}(X\leq 1.1)=\mathcal{P}(X=0)+\mathcal{P}(X= 1)=\displaystyle \frac{1}{4}+\frac{1}{2} = \frac{3}{4}$
 
 ## Variabile Aleatoria Continua
 ---
 >[!definizione] Definizione
->Una [[3 - Variabili Aleatorie|Variabile Aleatoria]] $X$ si dice ***Continua*** se $F_{X}(t)$ è *continua*
+>Una [[../3 - Variabili Aleatorie|Variabile Aleatoria]] $X$ si dice ***Continua*** se $F_{X}(t)$ è *continua*
 
-![[Funzione di Ripartizione Continua.png]]
+![[../attachements/Funzione di Ripartizione Continua.png]]
 
 - $\mathcal{P}(X\leq -1)=F_{X}(-1) = 0$
 - $\mathcal{P}\left( X> \frac{3}{2} \right)=1-\mathcal{P}\left( X\leq \frac{3}{2} \right)=1-F_{X}\left( \frac{3}{2} \right)=1-\frac{3}{4}=\frac{1}{4}$
@@ -90,7 +90,7 @@ $\mathcal{P}(a<X<b)=F_{X}(b)-F_{X}(a)$
 
 
 #### Esempio
-![[DensitaContinua.png]]
+![[../attachements/DensitaContinua.png]]
 
 $\displaystyle\mathcal{P}\left( \frac{1}{3}<X<1 \right)=\int_{1}^{1/3} f_{X}(s)\, ds=\frac{2}{3}$
 $\displaystyle\mathcal{P}\left( \frac{1}{2}<X<2 \right)=\int_{1}^{1/2} f_{X}(s)\, ds+\underbrace{ \int_{2}^{1} f_{X}(s) }_{ 0 }\, ds=\frac{1}{2}$
@@ -127,7 +127,7 @@ t \quad \text{se } 0\leq t \leq 1 \\
 1 \quad \text{se } t\geq 1
 \end{cases}
 $$
-![[FX data la Densità.png]]
+![[../attachements/FX data la Densità.png]]
 
 ### Legame fra i due Concetti
 >Calcoliamo la Probabilità che $a\leq X\leq b$
@@ -156,7 +156,7 @@ s^2 \quad \text{se } 0\leq s \leq 1 \\
 \end{cases}
 $$
 
-![[EsempioRelazione.png]]
+![[../attachements/EsempioRelazione.png]]
 
 >[!question] È una ***densità continua***?
 
@@ -193,7 +193,7 @@ $$
 F_{X}(t)=\mathcal{P}(X\leq t)=\int_{-\infty}^t f(s)\, ds =\underbrace{ \int_{0}^1 f(s)\, ds }_{ \frac{1}{3} }+\underbrace{ \int_{1}^t f(s)\, ds }_{ (t-1) \frac{2}{3} }  = \frac{2}{3}t-\frac{1}{3}
 $$
 
-![[FunzioneRipartizioneEsercizio.png]]
+![[../attachements/FunzioneRipartizioneEsercizio.png]]
 
 
 ## Trasformazione di Variabile Continua
@@ -223,7 +223,7 @@ $$
 
 $X^2$ assume valori in $[0,4]$
 
-![[Esempio Trasformazione.png]]
+![[attachements/Esempio Trasformazione.png]]
 
 >[!tl;dr] Sia $t$ tra $0$ e $4$
 
@@ -262,7 +262,7 @@ F_{X^2}(t)=\begin{cases}
 \end{cases}
 $$
 
-![[Esempio Fine Trasformazione.png]]
+![[attachements/Esempio Fine Trasformazione.png]]
 
 #### Esempio
 >[!caution] $X\sim U([1,2])$
@@ -276,7 +276,7 @@ $Z=log(x)$
 $$
 F_{log_{X}}(t)=\mathcal{P}(log(X)\leq t) = \mathcal{P}(X\leq e^{ t })=\displaystyle{\frac{e^{ t -1}}{2-1}}=e^{ t }-1
 $$
-![[Esempio Trasformazione 2.png]]
+![[attachements/Esempio Trasformazione 2.png]]
 ### Massimo e Minimo
 >[!info] Massimo
 >Siano $X$ e $Y$ variabili aleatorie ***indipendenti***

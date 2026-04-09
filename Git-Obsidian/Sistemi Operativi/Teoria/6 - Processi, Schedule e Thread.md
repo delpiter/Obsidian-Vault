@@ -27,8 +27,8 @@
 >[!done] Questo insieme di attributi prende il nome di Process Control Block
 
 
-![[ProcessInMemory.png|150]]
-![[MemoryExample.png]]
+![[attachements/ProcessInMemory.png|150]]
+![[attachements/MemoryExample.png]]
 
 
 - Ogni processo ha un ***descrittore associato***
@@ -101,7 +101,7 @@ Se lo *scheduler* decide di eseguire un altro processo il sistema è soggetto ad
 - Lo stato del ***processo attuale*** viene salvato nel `PCB` corrispondente
 - Lo stato del ***processo selezionato*** per l'esecuzione viene caricato dal `PCB` nel processore
 
-![[ContextSwitch.png]]
+![[attachements/ContextSwitch.png]]
 
 #### Stati dei Processi
 
@@ -114,7 +114,7 @@ Se lo *scheduler* decide di eseguire un altro processo il sistema è soggetto ad
 >[!done] Ready
 >Il processo può ***essere eseguito***, ma attualmente il processore è ***impegnato in altre attività***
 
-![[Process_States.png]]
+![[attachements/Process_States.png]]
 
 ##### Caratteristiche dei Processi
 >Durante l'esecuzione di un processo, la `CPU` alterna periodi di
@@ -127,7 +127,7 @@ Se lo *scheduler* decide di eseguire un altro processo il sistema è soggetto ad
 ##### Code dei Processi
 >Tutte le volte che un processo entra nel sistema, viene inserito in una delle code gestite dallo [[#Scheduler]]
 
-![[Code dei Processi.png]]![[CodeProcessi2.png]]
+![[attachements/Code dei Processi.png]]![[attachements/CodeProcessi2.png]]
 
 #### Gerarchia dei processi
 >[!struttura]
@@ -136,7 +136,7 @@ Se lo *scheduler* decide di eseguire un altro processo il sistema è soggetto ad
 >
 >>[!done] Si viene a creare una struttura ad albero di processi
 
-![[ProcessTreeStructure.png]]
+![[attachements/ProcessTreeStructure.png]]
 ### Thread
 >[!info] Introduzione
 >Tutti i [[3 - Livelli del Sistema Operativo#Introduzione|sistemi operativi]] odierni supportano l'esistenza di processi ***multithread***
@@ -151,7 +151,7 @@ Se lo *scheduler* decide di eseguire un altro processo il sistema è soggetto ad
 
 > I thread appartenenti allo stesso processo condividono:
 - Codice, dati e risorse `I/O`
-![[Threads.png]]
+![[attachements/Threads.png]]
 
 >[!done] Thread: Pro
 >I *thread* sono meno costosi in termini di:
@@ -180,18 +180,18 @@ Se lo *scheduler* decide di eseguire un altro processo il sistema è soggetto ad
 >Un certo numero di **user thread** vengono mappati su un unico **kernel thread**
 >- Modello utilizzato da *sistemi operativi* che non supportano kernel thread multipli (nessuno)
 
-![[Many-to-One.png]]
+![[attachements/Many-to-One.png]]
 
 >[!note] One-to-One
 >Ogni **user thread** viene mappato su un **kernel thread**
 >- Soluzione *poco scalabile*
 
-![[One-to-One.png]]
+![[attachements/One-to-One.png]]
 
 >[!cite] Many-to-Many
 >Più **thread kernel** a cui associare più thread **livello user**
 
-![[Many-to-Many.png]]
+![[attachements/Many-to-Many.png]]
 ##### I Processi in Linux
 >Di seguito alcune funzioni utilizzate per la gestione di un *programma multiprocessing*
 

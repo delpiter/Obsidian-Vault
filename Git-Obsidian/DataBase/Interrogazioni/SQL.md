@@ -1,7 +1,7 @@
 ## Structured Query Language
 ---
 >[!definizione]
->**SQL** è il *linguaggio* per un [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] basato sul [[Modello Relazionale]] che riunisce funzionalità di:
+>**SQL** è il *linguaggio* per un [[../Introduzione#DBMS|DBMS]] basato sul [[../Progettazione Logica/Modello Relazionale/Modello Relazionale]] che riunisce funzionalità di:
 >- *Creazione*
 >- *Manipolazione*
 >- *Controllo*

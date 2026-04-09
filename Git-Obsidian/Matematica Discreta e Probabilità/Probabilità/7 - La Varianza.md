@@ -1,4 +1,4 @@
->Molto simile alla [[3 - Varianza|Varianza]] in ***statistica***
+>Molto simile alla [[../Statistica Descrittiva/3 - Varianza|Varianza]] in ***statistica***
 
 ## Varianza
 ---

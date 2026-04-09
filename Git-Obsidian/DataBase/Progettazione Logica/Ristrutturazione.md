@@ -1,13 +1,13 @@
 ## Fase di Ristrutturazione
 ---
 >[!definizione] Definizione
->La ***ristrutturazione*** è una fase della [[Progettazione Logica]] che consiste nell'eliminazione dallo [[Modello Entity-Relationship|schema E/R]] dei *costrutti* che **non possono** essere direttamente rappresentati nel ***modello logico target*** ([[Modello Relazionale]]).
+>La ***ristrutturazione*** è una fase della [[Progettazione Logica]] che consiste nell'eliminazione dallo [[../Progettazione Concettuale/Modello Entity-Relationship|schema E/R]] dei *costrutti* che **non possono** essere direttamente rappresentati nel ***modello logico target*** ([[Modello Relazionale/Modello Relazionale]]).
 
-Si pone l'obbiettivo di *semplificare* la traduzione e [[Analisi dell'Efficienza|ottimizzare le prestazioni]]
+Si pone l'obbiettivo di *semplificare* la traduzione e [[Modello Relazionale/Analisi dell'Efficienza|ottimizzare le prestazioni]]
 
 ## Eliminazione delle Generalizzazioni
 ---
->Il modello relazionale non può rappresentare direttamente le [[Modello Entity-Relationship#Generalizzazione|gerarchie di generalizzazione]].
+>Il modello relazionale non può rappresentare direttamente le [[../Progettazione Concettuale/Modello Entity-Relationship#Generalizzazione|gerarchie di generalizzazione]].
 
 >[!done] Soluzione
 >Si eliminano le **gerarchie**, sostituendole con entità *e* *relazioni*.
@@ -17,13 +17,13 @@ Ci sono 3 possibilità:
 - **Collasso** sui *figli*.
 - **Sostituzione** con *relazioni*.
 
-![[HirearchyElimination.png]]
+![[attachements/HirearchyElimination.png]]
 
 ### Collasso sull’entità padre
 >[!info] Concetto
 >Il ***collasso sull'entità padre*** consiste nell'*eliminazione delle entità figlie*, "spostando" gli attributi e le relazioni delle entità figlie sull'**entità padre**.
 
-![[BottomUpCollapse.png]]
+![[attachements/BottomUpCollapse.png]]
 
 >Attributo "***Tipo***":
 - Viene introdotto un attributo "**selettore**" aggiuntivo che indica di quale entità figlia si tratta
@@ -47,17 +47,17 @@ Accesso contestuale agli attributi del padre e della figlia.
 
 >[!fail] Contro
 
-**Spreco di memoria** per valori [[Informazione Incompleta#Null|Null]].
+**Spreco di memoria** per valori [[Modello Relazionale/Informazione Incompleta#Null|Null]].
 
 ### Collasso sulle entità figlie
 >[!info] Concetto
 >Il ***collasso sulle entità figlie*** consiste nell'*eliminazione dell'entità padre*, "**duplicando**" gli attributi e le relazioni dell'entità padre sulle **entità figlie**.
 
-![[TopDownCollapse.png]]
+![[attachements/TopDownCollapse.png]]
 
 >[!done] Pro
 - ***Conveniente*** quando si fanno operazioni che coinvolgono le *singole entità figlie*.
-- **Non** introduce valori [[Informazione Incompleta#Null|Null]].
+- **Non** introduce valori [[Modello Relazionale/Informazione Incompleta#Null|Null]].
 
 >[!fail] Contro
 
@@ -66,7 +66,7 @@ Accesso contestuale agli attributi del padre e della figlia.
 
 ### Sostituzione con Relazioni
 
-![[SubstitutionWithRelation.png]]
+![[attachements/SubstitutionWithRelation.png]]
 
 >Tutte le **entità** vengono mantenute
 - Instaurate relazioni tra la entità **padre** e le entità **figlie**
@@ -77,7 +77,7 @@ La sostituzione con associazioni è ***sempre possibile***, indipendentemente da
 >[!done] Pro
 
 - Conviene se gli *accessi* alle **entità figlie** sono **separati** dagli accessi al **padre**.
-- **Non** si introducono valori [[Informazione Incompleta#Null|null]].
+- **Non** si introducono valori [[Modello Relazionale/Informazione Incompleta#Null|null]].
 - Genera entità con pochi attributi.
 
 >[!fail] Contro
@@ -87,7 +87,7 @@ La sostituzione con associazioni è ***sempre possibile***, indipendentemente da
 ## Attributi Multi-Valore
 ---
 >[!hint] Obbiettivo
->***Eliminazione*** degli *attributi multivalore*, che non sono presenti nel [[Modello Relazionale|Modello Logico]].
+>***Eliminazione*** degli *attributi multivalore*, che non sono presenti nel [[Modello Relazionale/Modello Relazionale|Modello Logico]].
 
 > **Possibilità**:
 
@@ -120,11 +120,11 @@ Generalmente riguarda associazioni **uno a uno**.
 ## Scelta degli identificatori
 ---
 >[!important] Concetto
->La ***scelta degli identificatori*** è un'operazione indispensabile per la traduzione nel [[Modello Relazionale]].
->Corrisponde alla scelta della [[Vincoli di Integrità#Chiave|chiave primaria]]
+>La ***scelta degli identificatori*** è un'operazione indispensabile per la traduzione nel [[Modello Relazionale/Modello Relazionale]].
+>Corrisponde alla scelta della [[Modello Relazionale/Vincoli di Integrità#Chiave|chiave primaria]]
 
 > ***Criteri*** da rispettare:
-- Assenza di [[Informazione Incompleta#Null|opzionalità]].
+- Assenza di [[Modello Relazionale/Informazione Incompleta#Null|opzionalità]].
 - *Semplicità*.
 - Utilizzo nelle operazioni più *frequenti* o *importanti*.
 

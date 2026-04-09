@@ -16,14 +16,14 @@ $$
 >[!done] Tramite calcoli fatti da ***Gauss***
 >$$\sqrt{ 2\pi }$$
 
-![[NormalDistribution.png]]
+![[attachements/NormalDistribution.png]]
 
 >[!info] Densità Normale Standard
 >$$f(s)=\frac{1}{\sqrt{ 2\pi }}\cdot e^{ -s^2/2 }$$
 
 ### Variabile Normale Standard
 >[!abstract] Definizione
->Una [[3 - Variabili Aleatorie|Variabile Aleatoria]] con questa densità 
+>Una [[../3 - Variabili Aleatorie|Variabile Aleatoria]] con questa densità 
 >$$\zeta_{0}\sim N(0,1)$$
 
 ##### Valore Atteso e Varianza
@@ -37,7 +37,7 @@ $$
 $$
 E[\zeta_{0}^2] = \int _{-\infty}^\infty s\cdot s\cdot \displaystyle{\frac{1}{\sqrt{ 2\pi }}}\cdot e^{ -s^2/2 }\, ds 
 $$
->Utilizziamo l'[[Calcolo Integrale#Integrazione per Parti|Integrazione per Parti]]
+>Utilizziamo l'[[../../../Analisi/Calcolo Integrale/Calcolo Integrale#Integrazione per Parti|Integrazione per Parti]]
 
 - $s=f\qquad s\cdot \displaystyle{\frac{1}{\sqrt{ 2\pi }}}\cdot e^{ -s^2/2 }=g'$
 	- $g=\displaystyle\frac{e^{ -s^2/2 }}{\sqrt{ 2\pi }}$

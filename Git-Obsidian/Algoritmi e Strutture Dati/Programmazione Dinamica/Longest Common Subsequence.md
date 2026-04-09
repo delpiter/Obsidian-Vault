@@ -36,7 +36,7 @@
 >>>- $X_{0}$ è una ***sequenza vuota***
 ### Problema
 >[!info] Definizione del Problema
->Il problema della ***massima sotto-sequenza comune*** è un [[Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]], risolvibile tramite [[Algoritmi di Programmazione Dinamica#Programmazione Dinamica|programmazione dinamica]].
+>Il problema della ***massima sotto-sequenza comune*** è un [[../../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]], risolvibile tramite [[Algoritmi di Programmazione Dinamica#Programmazione Dinamica|programmazione dinamica]].
 >Consiste nel trovare la ***più lunga sotto-sequenza comune*** fra due sequenze di caratteri
 >>[!abstract] Input
 >>In input sono date *due sequenze*: $X= <x_{1},x_{2},\dots,x_{n}>$ e $Y= <y_{1},y_{2},\dots,y_{m}>$
@@ -97,7 +97,7 @@ max(c_{i,j-1},c_{i-1},j) \ \ \ \text{se }i,j>0\text{ e }x_{i}\neq y_{j}
 \end{cases}
 $$
 ##### Esempio
-![[LCS_Example.png]]
+![[attachements/LCS_Example.png]]
 
 #### Pseudocodice
 ```pseudo

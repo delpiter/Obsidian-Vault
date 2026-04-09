@@ -1,12 +1,12 @@
 ## Conduttori in Condizioni Elettrostatiche
 ---
-> Le [[Elettromagnetismo#Cariche Elettriche|cariche]] stanno solo sulla ***superficie esterna***.
+> Le [[../Elettromagnetismo#Cariche Elettriche|cariche]] stanno solo sulla ***superficie esterna***.
 
 >[!info]
-> Il [[Campi Elettrostatici#Campo Elettrostatico|campo elettrico]] è **nullo** all'*interno*, mentre all'*esterno* vicino alla superficie è **ortogonale** alla stessa e **proporzionale** alla densità locale di carica.
+> Il [[../Campi Elettrostatici#Campo Elettrostatico|campo elettrico]] è **nullo** all'*interno*, mentre all'*esterno* vicino alla superficie è **ortogonale** alla stessa e **proporzionale** alla densità locale di carica.
 > $$\vec{E}=\frac{\sigma}{\varepsilon_{0}}\hat{n}$$
 
-Il [[Potenziale Elettrico|potenziale]] assume lo stesso valore su ***tutto il conduttore***, sulla *superficie* e all'*interno*.
+Il [[../Potenziale Elettrico|potenziale]] assume lo stesso valore su ***tutto il conduttore***, sulla *superficie* e all'*interno*.
 
 Messa una carica su un conduttore qualunque, questo va ad un potenziale definito
 - Rispetto a $V=0$ a distanza $\infty$
@@ -26,17 +26,17 @@ $$
 
 ### Condensatore
 >[!info] Induzione Totale
->Due [[Induzione Elettrostatica#^dc307d|conduttori]] in configurazione tale per cui ***tutte le linee di forza*** partono da uno e finiscono sull'altro.
+>Due [[../Induzione Elettrostatica#^dc307d|conduttori]] in configurazione tale per cui ***tutte le linee di forza*** partono da uno e finiscono sull'altro.
 
 >[!definizione]
 >Un ***condensatore*** sono *due conduttori* isolati tra loro posti in configurazione per cui vi sia *induzione totale*.
 
-![[Condensatore.png]]
+![[attachements/Condensatore.png]]
 
 - Le due "***armature***" posseggono sempre carica di *uguale modulo e segno opposto*.
 
 Posso "*caricare*" il condensatore con una batteria
-![[Condensatore.svg]]
+![[attachements/Condensatore.svg]]
 - Chiamo $V$ la $\Delta V$ tra le armature.
 - Chiamo $Q$ la *carica*.
 
@@ -51,7 +51,7 @@ Posso "*caricare*" il condensatore con una batteria
 2. $\displaystyle E=\frac{\mid\sigma\mid}{\varepsilon_{0}}=\frac{Q}{\varepsilon_{0}A}$
 3. $V$ lineare in $x$
 
-![[CondensatorePiano.png|550]]
+![[attachements/CondensatorePiano.png|550]]
 
 $$
 V=Ed=\frac{Qd}{\varepsilon_{0}A}
@@ -60,14 +60,14 @@ $$
 C=\frac{Q}{V}=\frac{Q\varepsilon_{0}A}{Qd}\implies C=\frac{\varepsilon_{0}A}{d}
 $$
 ##### Condensatori in Serie
-![[Condensatori in Serie.svg]]
+![[attachements/Condensatori in Serie.svg]]
 
 >[!info]
 >- $V=V_{b}-V_{a}=V_{1}+V_{2}$.
 >- Tutti i condensatori hanno la ***stessa carica***.
 >- $Q_{1}=Q_{2}=Q$.
 
-![[CondensatoriSerie.png|550]]
+![[attachements/CondensatoriSerie.png|550]]
 
 > Troviamo la ***Capacità equivalente*** del sistema di due condensatori:
 
@@ -86,9 +86,9 @@ $$
 $$
 
 ##### Condensatori in Parallelo
-> La [[Potenziale Elettrico#Differenza di Potenziale|differenza di potenziale]] ai **capi dei condensatori** è la stessa.
+> La [[../Potenziale Elettrico#Differenza di Potenziale|differenza di potenziale]] ai **capi dei condensatori** è la stessa.
 
-![[CondensatoriParalleli.svg]]
+![[attachements/CondensatoriParalleli.svg]]
 
 >[!caution] Capacità Equivalente
 
@@ -151,12 +151,12 @@ $$
 ##### Carica
 > Siano $R,S,C$ rispettivamente: resistenza, interruttore e condensatore.
  
-![[CaricaCondensatore.svg]]
+![[attachements/CaricaCondensatore.svg]]
 
 >[!hint]
 >Quando chiudo l'interruttore $S$, la ***corrente circola*** e *carica* $C$.
 
-Se in un dato istante su $C$ c'è carica $Q$, la sua [[Potenziale Elettrico#Differenza di Potenziale|differenza di potenziale]] è: $V_{c}=\frac{Q}{C}$.
+Se in un dato istante su $C$ c'è carica $Q$, la sua [[../Potenziale Elettrico#Differenza di Potenziale|differenza di potenziale]] è: $V_{c}=\frac{Q}{C}$.
 
 > La [[Leggi di Kirchhoff#Seconda Legge di Kirchhoff|seconda legge di Kirchhoff]] per il circuito allora:
 
@@ -193,7 +193,7 @@ h(x)=4
 ##### Scarica
 > Siano $R,S,C$ rispettivamente: resistenza, interruttore e condensatore.
 
-![[ScaricaCondensatore.svg]]
+![[attachements/ScaricaCondensatore.svg]]
 
 >[!hint]
 >Quando chiudo l'interruttore $S$, la ***corrente circola*** e *scarica* $C$.

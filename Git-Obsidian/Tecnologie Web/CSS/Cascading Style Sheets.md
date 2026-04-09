@@ -2,7 +2,7 @@
 ---
 >[!tldr] Idea
 >Il `{css icon} CSS` risponde all'esigenza di una ***tecnologia per la resa grafica***.
->Hanno lo scopo di *separare contenuto* ([[Markup Language|HTML]]) e *presentazione* nelle pagine `web`.
+>Hanno lo scopo di *separare contenuto* ([[../HTML/Markup Language|HTML]]) e *presentazione* nelle pagine `web`.
 >- Indica come il contenuto **deve essere presentato**.
 
 Lo stesso contenuto può essere presentato in modi diversi:
@@ -135,7 +135,7 @@ Si può forzare l'ereditarietà usando come valore `inherit`.
 >[!info]
 >I valori sono ***numeri*** seguiti da una ***unità di misura***.
 
-I numeri possono essere [[Insiemi Numerici#Numeri Interi|interi]] e [[Insiemi Numerici#Numeri Reali|reali]].
+I numeri possono essere [[../../Analisi/Insiemi/Insiemi Numerici#Numeri Interi|interi]] e [[../../Analisi/Insiemi/Insiemi Numerici#Numeri Reali|reali]].
 
 ##### Unità di misura
 > Le unità di misura possono essere relative o assolute
@@ -157,14 +157,14 @@ I numeri possono essere [[Insiemi Numerici#Numeri Interi|interi]] e [[Insiemi Nu
 >[!info] Percentuali
 >***Percentuale del valore*** che assume la proprietà stessa nell'elemento padre.
 
->[!help] [[URL]]
+>[[../../Reti/Introduzione/URL|!help]]
 >Assoluti o relativi (*path*).
 
 >[!todo] Stringhe
 
 >[!hint] Colore
->- [[Rappresentazione di Immagini#Codifica RGB|RGB]] (`#RRGGBB`)
->- [[Luce e Colori#Spazio di Colori|HSI]] (`hsi(0, 10%, 40%)`)
+>- [[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione di Immagini#Codifica RGB|RGB]] (`#RRGGBB`)
+>- [[../../Computer Graphics/Luce e Colori#Spazio di Colori|HSI]] (`hsi(0, 10%, 40%)`)
 
 ### Ordinamento Regole
 >[!fail] Conflitti di Stile

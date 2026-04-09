@@ -3,7 +3,7 @@
 >[!info] `{c icon} #pragma omp parallel for collapse(x)`
 >La direttiva `collapse` di [[OpenMP]] specifica quanti `loop` in un ***loop innestato*** possono essere collassati  in uno unico loop e diviso secondo la [[Schedule Clause]].
 
-`collapse` offre un ulteriore modo di controllare la [[Partition#In base alla Dimensione|granularità del problema]].
+`collapse` offre un ulteriore modo di controllare la [[../Parallel Programming Patterns/Partition#In base alla Dimensione|granularità del problema]].
 
 ```c title:example
 #pragma omp parallel for num_threads(5) collapse(2)
@@ -18,7 +18,7 @@ for (int i=0; i<4; i++)
 
 La clausola `collapse(2)` rende entrambi le variabili $i$ e $j$ **private**.
 
-![[CollapseClause.png]]
+![[attachements/CollapseClause.png]]
 
 >[!warning] Attenzione
 >La direttiva `collapse` potrebbe introdurre un ***grande overhead***.

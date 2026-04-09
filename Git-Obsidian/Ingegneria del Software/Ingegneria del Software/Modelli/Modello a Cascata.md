@@ -1,7 +1,7 @@
 >[!info]
->L'***approccio a cascata*** suggerisce un approccio **sistematico**, **sequenziale** e **lineare** di [[Produzione|produzione del software]], in cui l'*output* di ogni fase rappresenta l'*input* della successiva.
+>L'***approccio a cascata*** suggerisce un approccio **sistematico**, **sequenziale** e **lineare** di [[../Produzione|produzione del software]], in cui l'*output* di ogni fase rappresenta l'*input* della successiva.
 
-![[waterfall_model.png]]
+![[attachements/waterfall_model.png]]
 
 >[!fail] Contro
 

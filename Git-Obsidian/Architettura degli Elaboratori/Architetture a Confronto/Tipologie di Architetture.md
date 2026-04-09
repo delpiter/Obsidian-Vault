@@ -1,4 +1,4 @@
->*La velocità di esecuzione di una istruzione all'interno della [[La CPU|CPU]] determina in larga misura la velocità della `CPU` ed è sempre oggetto di discussione tra due correnti di pensiero*
+>*La velocità di esecuzione di una istruzione all'interno della [[../Architettura del Calcolatore/La CPU|CPU]] determina in larga misura la velocità della `CPU` ed è sempre oggetto di discussione tra due correnti di pensiero*
 
 ## CISC
 ---
@@ -6,23 +6,23 @@
 >L'architettura `CISC` è un tipo di ***design*** per processori che include un ***insieme vasto*** di ***istruzioni macchina***
 >>[!abstract] Istruzioni
 >>Le istruzioni possono ***variare in lunghezza***, da 1-2 `BYTE` a decine di `BYTE`
->>Le istruzioni possono ***variare in tempo di esecuzione***, da semplici operazioni che usano ***1-2 cicli di [[La CPU#Data Path|data path]]***, a istruzioni molto complesse che occupano la `CPU` per ***diversi cicli di data path*** (*30-40*)
+>>Le istruzioni possono ***variare in tempo di esecuzione***, da semplici operazioni che usano ***1-2 cicli di [[../Architettura del Calcolatore/La CPU#Data Path|data path]]***, a istruzioni molto complesse che occupano la `CPU` per ***diversi cicli di data path*** (*30-40*)
 ## RISC
 ---
 >[!info] *R*educed *I*nstruction *S*et *C*omputer
 >L'architettura `RISC` è un tipo di ***design*** per processori che include un ***insieme ristretto*** di ***istruzioni macchina***
 >>[!abstract] Istruzioni
 >>Le istruzioni hanno circa tutte la ***stessa lunghezza***
->>Le istruzioni vengono eseguite in pochi cicli di [[La CPU#Data Path|data path]]
+>>Le istruzioni vengono eseguite in pochi cicli di [[../Architettura del Calcolatore/La CPU#Data Path|data path]]
 >
 >Saranno necessarie più istruzioni `RISC` per farne una `CISC` ma il sistema risulterà comunque più veloce poiché non sarà necessario ***interpretare le istruzioni***
 
 ### Principi di Progettazione RISC
->*Tutte le istruzioni del livello [[Il Livello ISA|ISA]] vengono eseguite direttamente dall'hardware*
+>*Tutte le istruzioni del livello [[../Assembly/Il Livello ISA|ISA]] vengono eseguite direttamente dall'hardware*
 
 >[!abstract] L'unità di controllo all'interno della `CPU` è ***cablata*** 
 
-La `CPU` è realizzata con un [[Circuiti Sequenziali#|circuito digitale sequenziale]]
+La `CPU` è realizzata con un [[../Algebra di Bool e Logica Digitale/Circuiti Sequenziali#|circuito digitale sequenziale]]
 - Una ***macchina a stati***
 
 >[!warning] La `CPU` non è microprogrammata
@@ -92,7 +92,7 @@ Nel futuro la frequenza di clock ***non potrà aumentare significativamente***
 
 - Le alte frequenze ***creano disturbi*** e aumentano il ***calore da dissipare***
 - Sono presenti dei ***ritardi nella propagazione*** del segnale
-- I segnali sui [[BUS dei Calcolatori|BUS]] viaggiano a ***velocità diverse***
+- I segnali sui [[../Architettura del Calcolatore/BUS dei Calcolatori|BUS]] viaggiano a ***velocità diverse***
 
 >[!example] Limiti Fisici
 
@@ -100,5 +100,5 @@ Nel futuro la frequenza di clock ***non potrà aumentare significativamente***
 
 Anche se il segnale viaggiasse ipoteticamente alla ***velocità della luce*** ($300.000Km/sec$)
 - Il segnale potrebbe propagarsi in un $ns$ di soli $3\cdot 10^8\cdot10^{-9}$ ovvero circa $30cm$
-	- Che è più o meno la lunghezza di una [[Motherboard|scheda madre]]
+	- Che è più o meno la lunghezza di una [[../Architettura del Calcolatore/Motherboard|scheda madre]]
 

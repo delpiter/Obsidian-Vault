@@ -1,7 +1,7 @@
 >Di seguito le istruzioni usate nello standard [[IA-32]]
 ## Copia e Spostamento di Valori
 ---
-![[AssemblyEditOperators.png]]
+![[attachements/AssemblyEditOperators.png]]
 ### MOV
 >[!info] Descrizione
 >`MOV DST, SRC`
@@ -17,7 +17,7 @@
 
 ### PUSH e POP
 >[!info] Descrizione
->`PUSH` e `POP` *mettono e tolgono* [[I Tipi di Dati|word]] dalla **cima** dello [[Definizioni_Architettura#Stack|stack]]
+>`PUSH` e `POP` *mettono e tolgono* [[I Tipi di Dati|word]] dalla **cima** dello [[../../Definizioni/Definizioni_Architettura#Stack|stack]]
 >>[!warning] Attenzione
 >>Lo **stack** cresce verso il basso, ovvero verso indirizzi più piccoli, pertanto una `PUSH` causa causa, oltre alla copia, anche il decremento di `ESP` e una `POP` l'incremento di `ESP` (***E***xtended ***S***tack ***P***ointer)
 >
@@ -87,7 +87,7 @@ Questa istruzione risulta molto utile per evitare di usare ***salti condizionali
 
 ## Aritmetica Intera
 ---
-![[AssemblyArithmeticOperators.png]]
+![[attachements/AssemblyArithmeticOperators.png]]
 
 
 ### Complemento a 2
@@ -135,7 +135,7 @@ SUB EAX, 20 // EAX = -5 (in complemento a 2)
 >>[!warning] Nota
 >>Non è possibile usare un operando immediato per `SRC`
 
-![[MUL.png]]
+![[attachements/MUL.png]]
 Nel caso in cui il valore più grande ottenibile si rappresenta con un numero più alto di `BIT` del registro, il risultato viene memorizzato in due registri differenti
 
 ##### Esempio
@@ -150,7 +150,7 @@ MUL EBX             // EDX:EAX = EAX * EBX = 100000000h
 #### Moltiplicazione con Segno
 >[!question] Perchè la somma non ha bisogno di una istruzione apposita per le operazioni con e senza segno?
 
-La somma in [[Il Calcolatore e i Numeri Binari#Complemento a due|complemento a due]] si fa nello stesso identico modo di una somma fra due numeri binari
+La somma in [[../Rappresentazione dell'Informazione/Il Calcolatore e i Numeri Binari#Complemento a due|complemento a due]] si fa nello stesso identico modo di una somma fra due numeri binari
 - Di conseguenza la somma necessita di un unico circuito per essere eseguita
 
 D'altra parte il prodotto deve tenere conto del segno separatamente
@@ -192,7 +192,7 @@ IMUL EBX, EAX, 16   // Risultato = 100000000h, EBX = 0, OF = 1!
 >Analogamente alla `MUL` la `DIV` si *comporta in modo diverso* in base alla **dimensione** dell'operando `SRC` (***divisore***)
 >In particolare il *divisore*, il *quoziente* e il *resto* sono **prelevati/scritti** differentemente in base alla dimensione in `BIT` di `SRC`
 
-![[DIV.png]]
+![[attachements/DIV.png]]
 >[!warning] Attenzione
 
 L'operazione può causare *overflow* (es. $\frac{256}{1} =256 \implies$ overflow)
@@ -270,14 +270,14 @@ DEC pippo  // pippo = pippo - 1
 
 ## Operazioni sui BIT
 ---
-![[AssemblyBitwiseOperations.png]]
+![[attachements/AssemblyBitwiseOperations.png]]
 ### AND, OR, XOR
 >[!info] Descrizione
 >`AND/OR/XOR DST, SRC`
 >Sono le istruzioni per ***AND***, ***OR*** e ***XOR*** logici `BIT` a `BIT`
 >Il risultato viene *sovrascritto* su `DST`
 
-***AND*** e ***OR*** sono ampiamente usati per le operazioni di [[Mascherature dei Bit|mascheratura e impostazioni]] di `BIT`
+***AND*** e ***OR*** sono ampiamente usati per le operazioni di [[../Rappresentazione dell'Informazione/Mascherature dei Bit|mascheratura e impostazioni]] di `BIT`
 ***XOR*** molto utilizzato per *crittografia*
 #### Esempi
 ```assembly
@@ -344,9 +344,9 @@ ROR AL, 1          // AL = 10101010b
 
 ## Istruzioni di Salto
 ---
-![[AssemblyJumpOperators.png]]
+![[attachements/AssemblyJumpOperators.png]]
 ### Codici Mnemonici e Significato dei Condition Codes
-![[ConditionCodes.png]]
+![[attachements/ConditionCodes.png]]
 
 ### Test
 >[!info] Descrizione
@@ -509,7 +509,7 @@ Fine:
 >Consiste nell'insieme di operazioni:
 >- `PUSH EIP` $\to$ Push del ***program counter***, per avere l'istruzione da *eseguire* alla fine del *sottoprogramma*
 >- `JUMP Addr` $\to$ Salto all'indirizzo del *sottoprogramma*
->Sullo [[Stack]] viene caricata una `DWORD` equivalente a `EIP`
+>Sullo [[../../Algoritmi e Strutture Dati/Strutture Dati/Stack]] viene caricata una `DWORD` equivalente a `EIP`
 
 Il sottoprogramma termina con un'istruzione `RET`
 >[!info] Descrizione
@@ -518,12 +518,12 @@ Il sottoprogramma termina con un'istruzione `RET`
 >Consiste nell'*operazione*:
 >- `POP EIP` $\to$ Riprendo l'indirizzo **precedentemente salvato** e lo inserisco nell'*instruction* *pointer*
 
-![[CallRetAssembly.png]]
+![[attachements/CallRetAssembly.png]]
 
 >[!done] Vantaggi
 
 1. Se la funzione deve essere chiamata *più volte*, non è *necessario* ***replicare il codice***
-2. È possibile creare delle *funzioni* [[Recursive Functions|ricorsive]]
+2. È possibile creare delle *funzioni* [[../../Programmazione/Funzioni/Recursive Functions|ricorsive]]
 3. Utilizzo di *parametri*, sia per ***valore*** che per ***riferimento*** (*indirizzo*)
 4. I ***sottoprogrammi*** possono essere raccolti in **librerie** e utilizzati in *applicazioni diverse*
 
@@ -562,10 +562,10 @@ Ciclo: MOV AX, Vettore[ECX*2]
 2. La funzione *chiamata* sa dove ***andare a reperire i parametri***
 3. Il valore di ***ritorno*** è sempre `EAX`
 4. La funzione ***chiamante*** ripristina lo ***stato originale dello stack*** (pulizia)
-	- Poiché in C è possibile avere funzioni con [[Funzioni in C#Funzioni variadiche|parametri variabili]]
+	- Poiché in C è possibile avere funzioni con [[../../Programmazione/Funzioni/Funzioni in C#Funzioni variadiche|parametri variabili]]
 	- La funzione non sa quanti parametri andare a "pulire"
 
-![[FunctionCallExample.png]]
+![[attachements/FunctionCallExample.png]]
 
 >[!question] Perché i parametri nella funzione sono presi con `+8` e `+12`??
 
@@ -583,7 +583,7 @@ Quindi il primo parametro sarà esattamente `8 BYTE` "*indietro*" nello stack
 ---
 >Per quanto possa ingannare il titolo, non si lavora veramente con stringhe ma con ***buffer di byte***
 
-![[AssemblyStringOperators.png]]
+![[attachements/AssemblyStringOperators.png]]
 >[!info] Stringhe
 >Le **stringhe** sono sequenze contigue di caratteri (`BYTE`), molto utilizzate.
 >Risulta spesso necessario eseguire operazioni su stringhe, come:
@@ -595,7 +595,7 @@ Quindi il primo parametro sarà esattamente `8 BYTE` "*indietro*" nello stack
 >- Etc$\dots$
 
 - Sono disponibili ***istruzioni ottimizzate*** per la manipolazione di stringhe
-	- Tuttavia queste operazioni operano indipendentemente dalla rappresentazione [[Rappresentazione dei Caratteri#ASCII|ASCII]] dei caratteri e trattano gli elementi come `BYTE`
+	- Tuttavia queste operazioni operano indipendentemente dalla rappresentazione [[../Rappresentazione dell'Informazione/Rappresentazione dei Caratteri#ASCII|ASCII]] dei caratteri e trattano gli elementi come `BYTE`
 	- Sarebbe opportuno parlare di ***Manipolazione di blocchi contigui di memoria***
 
 >[!abstract] Registri Dedicati

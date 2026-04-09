@@ -7,7 +7,7 @@ I costi per la manutenzione sono solitamente quelli più alti:
 Ci sono $4$ tipologie di manutenzione:
 
 > ***Correttiva***:
-- Rimedia ai malfunzionamenti provocati dai difetti derivati da errori di [[Analisi dei Requisiti|Analisi]], [[Progettazione]], [[Produzione]] e ***test***.
+- Rimedia ai malfunzionamenti provocati dai difetti derivati da errori di [[../Ciclo di Vita del Software/Analisi dei Requisiti|Analisi]], [[../Ciclo di Vita del Software/Progettazione]], [[Produzione]] e ***test***.
 - Ha costi altissimi ($40\%$)
 >[!summary] Risultati
 >Aumento dell'entropia e del degrado del programma.
@@ -30,7 +30,7 @@ Ci sono $4$ tipologie di manutenzione:
 >C'è anche un *aumento della qualità* ma solo se progettate bene.
 
 >[!bug] Errori
->Gli errori sono commessi dall'uomo e interessano tutte le fasi del [[Il Ciclo di Vita del Software|ciclo di sviluppo]].
+>Gli errori sono commessi dall'uomo e interessano tutte le fasi del [[../Ciclo di Vita del Software/Il Ciclo di Vita del Software|ciclo di sviluppo]].
 
 >[!missing] Difetti
 >Si riscontrano nei programmi e si manifestano nella produzione di ***risultati sbagliati***.

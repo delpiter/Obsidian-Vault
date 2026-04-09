@@ -1,11 +1,11 @@
 >[!info] Sensore di Prossimità
->Un [[Sensori e Azionatori#Sensori|sensore]] di ***prossimità*** è in grado di rilevare la presenza di un oggetto ad una certa distanza.
+>Un [[../Sensori e Azionatori#Sensori|sensore]] di ***prossimità*** è in grado di rilevare la presenza di un oggetto ad una certa distanza.
 
 Si può basare su ***diverse tecnologie***:
 - Sensori ultrasonici (*sonar*).
 - Sensori ottici
-- Sensori di [[Induzione]].
-- Sensori [[Magnetismo|magnetici]].
+- Sensori di [[../../../Fisica/Elettromagnetismo/Induzione|Induttivi]].
+- Sensori [[../../../Fisica/Elettromagnetismo/Magnetismo|magnetici]].
 - ...
 
 Tipicamente usati per rilevare un oggetto ***senza misurare la distanza***.
@@ -14,7 +14,7 @@ Tipicamente usati per rilevare un oggetto ***senza misurare la distanza***.
 > Emittono un impulso *sonar* ($240KHz$) e rilevano l'***echo***.
 
 >[!done] Pros
-- Non sono disturbati dalle interferenze [[Elettromagnetismo|elettromagnetiche]].
+- Non sono disturbati dalle interferenze [[../../../Fisica/Elettromagnetismo/Elettromagnetismo|elettromagnetiche]].
 - Può rilevare oggetti di materiale differente.
 - Rileva oggetti *senza uno specifico setup*.
 

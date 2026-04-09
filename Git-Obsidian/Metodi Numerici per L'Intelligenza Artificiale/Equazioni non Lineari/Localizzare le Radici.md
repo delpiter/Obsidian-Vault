@@ -3,7 +3,7 @@
 
 ## Teorema degli Zeri
 ---
-![[Limiti#Teorema degli Zeri]]
+![[../../Analisi/Limiti/Limiti#Teorema degli Zeri]]
 
 >[!hint] Ordine di Convergenza
 >La relazione $b_{n}-a_{n} = \displaystyle{\frac{b_{0}-a_{0}}{2^n}}$ può essere usata per dimostrare che il metodo [[Ordine di Convergenza|converge con ordine di convergenza]] $p=1$ e $x=\frac{1}{2}$ 
@@ -207,7 +207,7 @@ $$
 
 La convergenza del metodo è garantita se le approssimazioni $x_{0}$ e $x_{1}$ si scelgono abbastanza vicine alla soluzione.
 
->[!hint] Metodo a [[Ordine di Convergenza#Convergenza Locale e Globale|convergenza locale]]
+>[[Ordine di Convergenza#Convergenza Locale e Globale|convergenza locale]]
 
 - In tal caso la convergenza è ***superlineare*** ($p=\frac{1+\sqrt{ 5 }}{2}\approx1.618$)
 

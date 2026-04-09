@@ -31,7 +31,7 @@ Dove:
 > In alternativa è possibile utilizzare il principio di inclusione-esclusione
 
 
->[!note] [[2 - Principio di inclusione-esclusione]]
+>[[../Combinatoria/2 - Principio di inclusione-esclusione|!note]]
 >$$\mathcal{P}(E_{1}\cup E_{2})=\mathcal{P}(E_{1})+\mathcal{P}(E_{2})-\mathcal{P}(E_{1}\cap E_{2})$$
 
 
@@ -80,7 +80,7 @@ $$
 
 ## Formula delle Probabilità-Totali
 ---
->Siano $\{ A_{1},A_{2},\dots \}$ delle [[3 - Partizioni|partizioni]] di $\Omega$ e sia $B\subseteq \Omega$
+>Siano $\{ A_{1},A_{2},\dots \}$ delle [[../Combinatoria/3 - Partizioni|partizioni]] di $\Omega$ e sia $B\subseteq \Omega$
 
 >[!note] Formula
 >$$\mathcal{P}(B\cap A_{1})+\mathcal{P}(B\cap A_{2})+\dots=$$

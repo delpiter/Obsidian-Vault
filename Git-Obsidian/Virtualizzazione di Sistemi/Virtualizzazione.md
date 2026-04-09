@@ -3,11 +3,11 @@
 >[!definizione]
 >In informatica il termine ***virtualizzazione*** si riferisce alla possibilità di astrarre le componenti hardware degli elaboratori al fine di renderle disponibili al software **in forma di risorsa virtuale**.
 >>[!todo] In pratica.
->La ***virtualizzazione*** è una tecnologia in cui si esegue un [[3 - Livelli del Sistema Operativo|sistema operativo]] ospitato isolandolo all'interno di una macchina ***che non è fisica*** ottenuta da uno strato software (*Virtual Machine Monitor* o *Hypervisor*).
+>La ***virtualizzazione*** è una tecnologia in cui si esegue un [[../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo|sistema operativo]] ospitato isolandolo all'interno di una macchina ***che non è fisica*** ottenuta da uno strato software (*Virtual Machine Monitor* o *Hypervisor*).
 
 Si possono virtualizzare applicazioni, server, storage, reti, etc...
 
->Tramite ***virtualizzazione*** è possibile eseguire uno o più [[3 - Livelli del Sistema Operativo#^9f2787|sistemi operativi]] su un ***unico dispositivo***.
+>Tramite ***virtualizzazione*** è possibile eseguire uno o più [[../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#^9f2787|sistemi operativi]] su un ***unico dispositivo***.
 - Ciò avviene in un ambiente *protetto* e *monitorato* che prende il nome di **macchina virtuale**.
 
 Il ***sistema host*** è la macchina fisica su cui gira il sistema il sistema operativo.
@@ -71,7 +71,7 @@ Il codice della ***macchina virtuale*** viene eseguito direttamente dall'***host
 ### Tassionomia di Virtualizzazione
 > Diverse possibilità di ***virtualizzazione***, basate su due macro categorie.
 
-![[Virtualization.png]]
+![[attachements/Virtualization.png]]
 
 >[!caution] Hardware Level
 >Nel caso delle ***macchine virtuali***, all'utente del *sistema di virtualizzazione* viene presentata un'interfaccia su cui installare un *sistema operativo*.
@@ -80,7 +80,7 @@ Il codice della ***macchina virtuale*** viene eseguito direttamente dall'***host
 >>- Deve passare numerosi "*step*" prima di essere eseguita dall'hardware reale.
 
 >[!tldr] OS Level
->Nel caso dei [[Container]] all'utente viene presentata una partizione del *sistema operativo corrente*, su cui installare ed eseguire applicazioni che *rimangono isolate* nella partizione
+>Nel caso dei [[Docker/Container|Container]] all'utente viene presentata una partizione del *sistema operativo corrente*, su cui installare ed eseguire applicazioni che *rimangono isolate* nella partizione
 >>[!info] Specifiche
 >>Il singolo container ***non ha un kernel*** proprio
 >>- Questo rende il container più veloce di una *macchina virtuale*
@@ -89,7 +89,7 @@ Il codice della ***macchina virtuale*** viene eseguito direttamente dall'***host
 
 Ha un basso overhead per il context-switch.
 
-![[TypesOfVirtualizzation.png]]
+![[attachements/TypesOfVirtualizzation.png]]
 
 #### Full e Para Virtualization
 > La virtualizzazione hardware fornisce una interfaccia, su cui installare un sistema operativo, questo può essere distinto in ***Para virtualization*** e ***Full virtualization***.
@@ -115,7 +115,7 @@ Il sistema ***guest non può identificare che si trova su una macchina virtuale*
 3. Restituisce alla macchina guest il risultato voluto senza eseguire l'operazione pericolosa.
 >[!warning] La full-virtualization è generalmente meno performante
 
-![[Full&ParaVirtualization.png]]
+![[attachements/Full&ParaVirtualization.png]]
 
 ## Cloud e Servizi
 ---

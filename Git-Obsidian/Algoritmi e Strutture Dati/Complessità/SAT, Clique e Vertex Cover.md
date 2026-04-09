@@ -15,7 +15,7 @@
 
 >[!caution] Prova di $NP$-*Completezza*
 
-Si parte da [[Definizioni_Algoritmi#Conjunctive Normal Form|SAT]] e si assume di sapere già che ***SAT*** è $NP$-***Completo***
+Si parte da [[../../Definizioni/Definizioni_Algoritmi#Conjunctive Normal Form|SAT]] e si assume di sapere già che ***SAT*** è $NP$-***Completo***
 ##### Clique
 >[!info] Problema
 >Dato un grafo $G=(V,E)$, un sottoinsieme $S$ dei suoi vertici forma una ***clique*** se ogni coppia di vertici $S$ è connessa
@@ -30,7 +30,7 @@ Si parte da [[Definizioni_Algoritmi#Conjunctive Normal Form|SAT]] e si assume di
 >	- Letterali di ***clausole diverse***
 >	- Variabili ***Compatibili***
 
-![[3sat-Clique.png]]
+![[attachements/3sat-Clique.png]]
 >[!Teorema]
 >$\phi$ è soddisfacibile $\iff G$ ha una clique di $k$ vertici
 >>[!abstract] Dimostrazione
@@ -73,18 +73,18 @@ Si parte da [[Definizioni_Algoritmi#Conjunctive Normal Form|SAT]] e si assume di
 Dato un grafo non orientato $G=(V,E)$ e un intero $k$:
 >[!question] C'è un sotto insieme di vertici $S\subseteq V$ tale che $|S|\leq k$ e per cui se $(v,w)\in E$ allora $v\in S$ oppure $w\in S$ oppure entrambi?
 
-![[VertexCover1.png|500]]
+![[attachements/VertexCover1.png|500]]
 >*C'è un vertex cover di dimensione 4?*
 >- *Si*
 
-![[VertexCover2.png|500]]
+![[attachements/VertexCover2.png|500]]
 
 ##### Riduzione a Clique
 >[!abstract] Clique $\leq_{p}$ Vertex Cover
 >Dato un grafo non orientato $G=(V,E)$, e il suo complemento $G'=(V',E')$, dove $E'=\{ (v,w):(v,w)\notin E \}$
 >>[!done] $G$ ha una clique di dimensione $k\iff G'$ ha un vertex cover di dimensione $|V|-k$
 
-![[Clique-VertexCover.png]]
+![[attachements/Clique-VertexCover.png]]
 
 ###### Dimostrazione
 >$\implies$

@@ -42,7 +42,7 @@ void exclusive_scan(int *x, int *s, int n) // n must be > 0
 #### Implementazione Parallela
 >[!caution] Up-Sweep
 
-![[UpSweep.png]]
+![[attachements/UpSweep.png]]
 
 ```c title:Up-Sweep
 for ( d=1; d<n/2; d *= 2 ) {
@@ -54,7 +54,7 @@ for ( d=1; d<n/2; d *= 2 ) {
 
 >[!abstract] Down-Sweep
 
-![[DownSweep.png]]
+![[attachements/DownSweep.png]]
 
 ```c title:Down-Sweep
 for ( ; d > 0; d >>= 1 ) { // d = d/2

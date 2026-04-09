@@ -34,8 +34,8 @@ ciao
 Le **subshell** ereditano una *copia* di tutte le *variabili d'ambiente* e i *file aperti*
 - **NON** eredita le variabili locali del padre
 
-Per l'*esecuzione* dello script, in ogni caso [[#Comando `source`|(*)]] viene **creato un nuovo processo figlio** (una nuova `shell`)
- - Lo *script* viene ***quasi*** sempre [[#Comando `source`|(*)]] eseguito dal *processo figlio*
+Per l'*esecuzione* dello script, in ogni caso [[*)](#Comando `source`|(*)]] viene **creato un nuovo processo figlio** (una nuova `shell`)
+ - Lo *script* viene ***quasi*** sempre [[*)](#Comando `source`|(*)]] eseguito dal *processo figlio*
  - Quando il processo figlio inizia l'esecuzione, il *processo padre ferma la propria esecuzione*
 	 - Si mette in **attesa** che il processo figlio finisca
  - Quando il processo figlio *termina*, il padre **riprende il controllo**
@@ -46,7 +46,7 @@ Per l'*esecuzione* dello script, in ogni caso [[#Comando `source`|(*)]] viene **
 >Il comando:`var="string" command`
 
 Crea la *variabile* all'interno della nuova `shell` che esegue lo **script** `command`
-- La variabile creata [[Git-Obsidian/Sistemi Operativi/Bash/Variabili#Le Variabili|d'ambiente]]
+- La variabile creata [[Variabili#Le Variabili|d'ambiente]]
 - Se la variabile `var` *esiste già* nella shell corrente, **non viene sovra scritta**, viene invece creata una nuova variabile, che non tocca quella del padre
 
 ### Esecuzione di uno Script

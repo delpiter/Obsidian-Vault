@@ -24,14 +24,14 @@ docker run -it -w / ubuntu echo I am in `pwd`
 
 >[!question] Chi interpreta questa espressione?
 
-Il comando `{docker icon} docker run` viene eseguito in una [[Interfaccia Utente|shell]] interattiva o in uno [[Esecuzione dei File|script bash]].
+Il comando `{docker icon} docker run` viene eseguito in una [[../../Sistemi Operativi/Bash/Interfaccia Utente|shell]] interattiva o in uno [[../../Sistemi Operativi/Bash/Esecuzione dei File|script bash]].
 In entrambi i casi viene eseguito in una bash in esecuzione sull'host.
 - Questa ***bash dell'host*** interpreta le espansioni del comando principale.
 
 >[!danger] Se non quotate le espansioni del comando principale, queste vengono interpretate dalla `shell` dell'host, **non** del container.
 
 L'output del comando iniziale sarà:
-- `{sh icon} I am in /home/user`, la [[Command Substitution]] è stata effettuata dall'host.
+- `{sh icon} I am in /home/user`, la [[../../Sistemi Operativi/Bash/Command Substitution]] è stata effettuata dall'host.
 
 Per produrre l'output corretto, è necessario utilizzare le quote (`''`).
 

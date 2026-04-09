@@ -10,15 +10,15 @@
 >>4. *Ripeti 2-4 finché possibile*
 >
 >>[!done] In breve
->>Il flusso aumentante non è più scelto in modo "*casuale*" ma viene preso sempre un cammino aumentante con il numero minimo di archi, lo si può sempre trovare tramite [[Algoritmi di Ricerca su Grafo#Breadth First Search|Breadth First Search]]
+>>Il flusso aumentante non è più scelto in modo "*casuale*" ma viene preso sempre un cammino aumentante con il numero minimo di archi, lo si può sempre trovare tramite [[../Algoritmi di Ricerca su Grafo#Breadth First Search|Breadth First Search]]
 
 ### Complessità
 >[!abstract] Lemma
->Se *Edmonds-Karp* è applicato ad una rete $G=(V,E)$ con sorgente $s$ e destinazione $t$, allora *per tutti i vertici*  $v\in V$ ([BFS](Algoritmi%20di%20Ricerca%20su%20Grafo.md#Breadth%20First%20Search)) ***cresce monotonicamante*** ad ogni aumento di flusso.
+>Se *Edmonds-Karp* è applicato ad una rete $G=(V,E)$ con sorgente $s$ e destinazione $t$, allora *per tutti i vertici*  $v\in V$ ([[../Algoritmi di Ricerca su Grafo#Breadth First Search]]) ***cresce monotonicamante*** ad ogni aumento di flusso.
 
 >[!Teorema]
 >Se *Edmonds-Karp* è applicato ad una rete $G=(V,E)$ con sorgente $s$ e destinazione $t$, allora il ***numero totale di aumenti di flusso*** effettuati dall'algoritmo è:
 >$$O(VE)$$
 
-Dato che una [[Algoritmi di Ricerca su Grafo#Breadth First Search|BFS]] può essere implementata con complessità $O(E)$, la complessità dell'algoritmo è complessivamente:
+Dato che una [[../Algoritmi di Ricerca su Grafo#Breadth First Search|BFS]] può essere implementata con complessità $O(E)$, la complessità dell'algoritmo è complessivamente:
 $$O(VE \cdot E)=O(VE^2)$$

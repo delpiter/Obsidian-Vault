@@ -16,10 +16,10 @@ In `{html icon} HTML5` la *form* può avere anche campi per l'***output***.
 > Gli attributi di `{html icon} <form>` sono:
 
 >[!failure] `action`
->Specifica l'[[URL]] dell'applicazione ***server-side*** che riceverà i dati.
+>Specifica l'[[../../../Reti/Introduzione/URL|URL]] dell'applicazione ***server-side*** che riceverà i dati.
 
 >[!caution] `method`
->Specifica il metodo [[HTTP]] che deve essere usato per i dati.
+>Specifica il metodo [[../../../Reti/Application Layer/HTTP|HTTP]] che deve essere usato per i dati.
 >- `GET` o `POST`.
 
 ```html

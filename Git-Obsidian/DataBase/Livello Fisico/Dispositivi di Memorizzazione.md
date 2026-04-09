@@ -1,7 +1,7 @@
 >[!info] 
->Un DBMS "*convenzionale*" gestisce i dati facendo riscorso principalmente a [[Organizzazione della Memoria#Dischi Magnetici|dischi magnetici]] e [[Organizzazione della Memoria#Solid State Drive|solid-state drive]] (spesso organizzati in configurazioni [[Organizzazione della Memoria#RAID|RAID]]).
+>Un DBMS "*convenzionale*" gestisce i dati facendo riscorso principalmente a [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione della Memoria#Dischi Magnetici|dischi magnetici]] e [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione della Memoria#Solid State Drive|solid-state drive]] (spesso organizzati in configurazioni [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione della Memoria#RAID|RAID]]).
 
-Per essere elaborati, i dati devono essere **trasferiti** in [[RAM|memoria centrale]].
+Per essere elaborati, i dati devono essere **trasferiti** in [[../../Architettura degli Elaboratori/Architettura del Calcolatore/RAM|memoria centrale]].
 - Il trasferimento avviene in termini di ***data block*** (*pagine*).
 	- Piccole pagine -> Più operazioni *I*/*O*.
 
@@ -11,7 +11,7 @@ Per ottimizzare l'implementazione fisica del **DB**:
 - Opportune *organizzazioni delle tuple* sui dispositivi fisici.
 - Strutture di accesso *efficienti*.
 - Idonee politiche di *gestione dei buffer*.
-- Strategie per l'esecuzione delle [[SQL|query]].
+- Strategie per l'esecuzione delle [[../Interrogazioni/SQL|query]].
 
 ## Livelli di Astrazione
 ---
@@ -23,13 +23,13 @@ Per ottimizzare l'implementazione fisica del **DB**:
 
 ### Il DataBase Fisico
 >[!tldr] Idea
->A livello fisico un [[Git-Obsidian/DataBase/Introduzione#Database|Database]] consiste in un insieme di file, ognuno dei quali viene visto come una ***collezione di pagine*** di dimensione fissa.
+>A livello fisico un [[../Introduzione#Database|Database]] consiste in un insieme di file, ognuno dei quali viene visto come una ***collezione di pagine*** di dimensione fissa.
 
-Ogni pagina memorizza ***più record*** (corrispondenti alle [[Modello Relazionale#Relazione|tuple logiche]]).
+Ogni pagina memorizza ***più record*** (corrispondenti alle [[../Progettazione Logica/Modello Relazionale/Modello Relazionale#Relazione|tuple logiche]]).
 - Un record consiste di più campi (*attributi*), di ***lunghezza fissa o variabile***.
 
 >[!note] Nota Bene
->I "*file*" del **DBMS** non corrispondono necessariamente a quelli del ***file system*** del [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]].
+>I "*file*" del **DBMS** non corrispondono necessariamente a quelli del ***file system*** del [[../../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]].
 
 >[!question] Perché non usare il File System?
 
@@ -41,7 +41,7 @@ Le prestazioni di un **DBMS** dipendono fortemente dall’*organizzazione fisica
 > Il ***File System*** non conosce queste informazioni.
 
 #### Rappresentazione dei Valori
-> Per ogni tipo di dati di [[SQL]] è definito un formato di rappresentazione specifico nel contesto di un **DBMS**.
+> Per ogni tipo di dati di [[../Interrogazioni/SQL|SQL]] è definito un formato di rappresentazione specifico nel contesto di un **DBMS**.
 
 > `{sql icon} CHAR(n)`
 - Si allocano $n$ `byte`, usando un eventuale carattere speciale per stringhe lunghe meno di $n$.
@@ -68,7 +68,7 @@ Possibile *soluzione*:
 - Memorizzare prima ***tutti i campi a lunghezza fissa***, e poi tutti quelli a ***lunghezza variabile***
 - Per ogni campo a lunghezza variabile si ha un "*prefix pointer*" che riporta l'indirizzo del primo `byte` del campo.
 
-![[VariableLenghtRecord.png]]
+![[attachements/VariableLenghtRecord.png]]
 
 Ogni record include un header che, può contenere informazioni tra cui:
 - ***Identificatore della relazione*** a cui appartiene.
@@ -82,4 +82,4 @@ Ogni record include un header che, può contenere informazioni tra cui:
 >- *Identificatore della pagina* e *posizione nella directory*.
 
 Il ***buffer manager*** ha il compito di gestire le *richieste di una pagina*.
-- Lavora in maniera simile alla [[19 - Gestione della Memoria#Paginazione|paginazione]] nei ***sistemi operativi***.
+- Lavora in maniera simile alla [[../../Sistemi Operativi/Teoria/19 - Gestione della Memoria#Paginazione|paginazione]] nei ***sistemi operativi***.

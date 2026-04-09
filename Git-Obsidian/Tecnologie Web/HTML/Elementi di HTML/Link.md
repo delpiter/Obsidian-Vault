@@ -2,7 +2,7 @@
 >Elemento che consente di inserire ***ancore*** nel documento.
 >- Le ancore sono punti di partenza di un *link*.
 
-La destinazione si specifica con un [[Architettura del Web#URI|URI]] attraverso l'attributo `href`.
+La destinazione si specifica con un [[../../Architettura del Web#URI|URI]] attraverso l'attributo `href`.
 - È possibile collegare un altro pezzo del documento, tramite l'uso dell'`ID`.
 
 ```html

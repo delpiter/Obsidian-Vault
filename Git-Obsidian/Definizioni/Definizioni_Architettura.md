@@ -8,7 +8,7 @@ Il **software** è l’insieme delle istruzioni e delle informazioni necessarie 
 
 - Il software **richiede** un apposito hardware per essere eseguito, **viceversa** l’hardware è pressoché inutile se non si dispone di un apposito software che ne sfrutti le potenzialità
 
-- Programmare un calcolatore significa scrivere la sequenza di istruzioni ([[Problemi e Algoritmi#Algoritmo|Algoritmo]]) necessaria a risolvere un problema. 
+- Programmare un calcolatore significa scrivere la sequenza di istruzioni ([[../Algoritmi e Strutture Dati/Problemi e Algoritmi#Algoritmo|Algoritmo]]) necessaria a risolvere un problema. 
 >[!info] Firmware
 Il **firmware** è un software integrato in un componente elettronico in grado di **avviare** il componente stesso e di farlo **interagire** con altri componenti.
 
@@ -88,7 +88,7 @@ Il **firmware** è un software integrato in un componente elettronico in grado d
 >>- Nel numero di `BIT` a `1` viene contato anche il `BIT` di parità
 >>- Di conseguenza il `BIT` di parità viene impostato a `1` solo quando il numero di `BIT` impostati a `1` (escluso il `BIT` di parità) è dispari
 
-La [[Correzione di Errori#Distanza di Hamming|distanza di Hamming]] di questa tecnica è $2$ quindi ***non permetterà di correggere nessun errore*** e permetterà di ***identificare errori*** di $1$ `BIT`
+La [[../Architettura degli Elaboratori/Architettura del Calcolatore/Correzione di Errori#Distanza di Hamming|distanza di Hamming]] di questa tecnica è $2$ quindi ***non permetterà di correggere nessun errore*** e permetterà di ***identificare errori*** di $1$ `BIT`
 
 > Dati $k$ `bit` di informazione $b_{0},b_{1},b_{2},\dots,b_{k-1}$
 - $b_{k}=b_{0}\oplus b_{1}\oplus\dots\oplus b_{k-1}$: parità ***pari***
@@ -129,7 +129,7 @@ I termini "*code point*" e "*carattere*" non sono sinonimi
 ## Stack
 ---
 >[!info] Definizione
->Lo [[Spazio di Indirizzamento Virtuale#Stack|stack]] è una parte della memoria utilizzata in genere per 
+>Lo [[../Programmazione/Introduzione Programmazione/Spazio di Indirizzamento Virtuale#Stack|stack]] è una parte della memoria utilizzata in genere per 
 >- Valutazione di *espressioni aritmetiche*
 >- Memorizzazione di *variabili locali*
 >- Chiamata di *sottoprogrammi*
@@ -143,7 +143,7 @@ I termini "*code point*" e "*carattere*" non sono sinonimi
 
 ## Economy
 ---
-![[Economy.png]]
+![[attachements/Economy.png]]
 *"Might have a negative effect"*
 >*Structured Computer Organization, Andrew S. Tanenbaum, Todd Austin*
 
@@ -158,7 +158,7 @@ I termini "*code point*" e "*carattere*" non sono sinonimi
 >[!info] Definizione
 >I ***buffer tri-state*** agiscono come *interruttori elettronici* capaci di ***collegare/scollegare elettricamente*** due parti di un circuito
 
-![[Tri-State-Buffer.png]]
+![[attachements/Tri-State-Buffer.png]]
 >$a)\to$ *buffer tri-state*
 >$b)\to$ *effetto di un* $a)$ *quando il controllo ha uno stato alto*
 >$c)\to$ *effetto di un* $a)$ *quando il controllo ha uno stato basso*

@@ -1,10 +1,10 @@
-## Registri [[IA-32|IA-32]]
+## Registri [[IA-32]]
 ---
-![[IA32Registry.png]]
+![[attachements/IA32Registry.png]]
 
 ## Registi di Base
 ---
-![[CommonRegistry.png]]
+![[attachements/CommonRegistry.png]]
 
 >[!info] $8$ registri di utilizzo **più o meno generale**
 - Fra questi i primi *4 registri* possono essere utilizzati in 3 *modalità*
@@ -65,7 +65,7 @@ L'*indirizzo* a `20 BIT` viene determinato come nella ***modalità real***
 Un registro di segmento a `16 BIT` è combinato con un indirizzo a `32 BIT`
 - Supporta il modello di ***memoria segmentato*** o **flat** con *paginazione*
 
-![[MemoryAddressing.png]]
+![[attachements/MemoryAddressing.png]]
 ### $\text{x}64$ Compatibility Mode
 L'indirizzo a `32 BIT` viene determinato come nella modalità *protected*
 - Convertito poi a `64 BIT` considerando i 32 `BIT` alti pari a zero
@@ -76,4 +76,4 @@ I principali registri di segmento (`CS`,`DS`,`ES`,`SS`) sono sostanzialmente ign
 - Il modello di memoria è **flat** 
 - Gli indirizzi virtuali a `64 BIT` sono convertiti in indirizzi fisici mediante paginazione
 
-![[MemoryAddressingx64.png]]
+![[attachements/MemoryAddressingx64.png]]

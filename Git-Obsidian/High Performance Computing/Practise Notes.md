@@ -248,7 +248,7 @@ int MPI_Allgather(
 );
 ```
 
-![[AllGather.png]]
+![[MPI/attachements/AllGather.png]]
 
 ```c
 /* Come scatter ma permette:
@@ -272,7 +272,7 @@ int MPI_Scatterv(
  	);
 ```
 
-![[Scatterv.png]]
+![[MPI/attachements/Scatterv.png]]
 
 ```c
 int MPI_Reduce(
@@ -286,7 +286,7 @@ int MPI_Reduce(
 );
 ```
 
-![[MPIReduce.png]]
+![[MPI/attachements/MPIReduce.png]]
 - $\text{count}=3$
 
 ```c

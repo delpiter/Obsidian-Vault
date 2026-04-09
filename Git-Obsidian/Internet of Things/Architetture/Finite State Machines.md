@@ -24,7 +24,7 @@ Una ***variabile*** è associata ad ogni segnale di input.
 - Lo stesso si applica per i *segnali in output*.
 
 ### State
-![[State Diagram#^8553e8]]
+![[../../Ingegneria del Software/UML/State Diagram#^8553e8]]
 
 Formalmente definiamo lo stato come una "***codifica di tutto ciò che è accaduto che ha un effetto sulle reazioni degli input correnti o futuri***".
 
@@ -36,9 +36,9 @@ Formalmente definiamo lo stato come una "***codifica di tutto ciò che è accadu
 - La mappa può dipendere dallo stato corrente.
 
 >[!definizione] Finite State Machine
->Una ***macchina a stati finiti*** è una macchina dove l'insieme degli [[#State|stati]] possibili è un [[Concetti Base#Modi per identificare insiemi|insieme finito]].
+>Una ***macchina a stati finiti*** è una macchina dove l'insieme degli [[#State|stati]] possibili è un [[../../Analisi/Concetti Base#Modi per identificare insiemi|insieme finito]].
 
-Se il numero di stati è *ragionevolmente piccolo*, le macchine a stati finiti possono essere rappresentate usando lo [[State Diagram]].
+Se il numero di stati è *ragionevolmente piccolo*, le macchine a stati finiti possono essere rappresentate usando lo [[../../Ingegneria del Software/UML/State Diagram]].
 
 ```mermaid
 stateDiagram
@@ -54,13 +54,13 @@ direction LR
 >[!info]
 >Le ***transizioni*** tra stati governano le dinamiche discrete di una macchina a stati e la mappatura di *input valuation* a *output valuation*.
 
-Una [[State Diagram#Transazioni|transizione]] è rappresentata da una freccia curva che *collega due stati*.
+Una [[../../Ingegneria del Software/UML/State Diagram#Transazioni|transizione]] è rappresentata da una freccia curva che *collega due stati*.
 
 Le transizioni sono caratterizzate da una **condizione** e una **azione**.
 
 > *Condizione*:
 - Condizione (*guard*) determina **se** una transizione può essere fatta su una reazione.
-- Rappresentata da un **predicato** ([[Algebra di Bool|espressione booleana]]), che valuta se la transizione deve avvenire o meno.
+- Rappresentata da un **predicato** ([[../../Architettura degli Elaboratori/Algebra di Bool e Logica Digitale/Algebra di Bool|espressione booleana]]), che valuta se la transizione deve avvenire o meno.
 
 > *Azione*:
 - Una azione specifica quali **output** sono prodotti ad ogni reazione.
@@ -80,16 +80,16 @@ Il periodo determina la **frequenza di lavoro** della macchina.
 > ***Non è possibile***
 - Lo schema non fornisce informazioni riguardo l'implementazione, potrebbe essere o *asincrono* o *sincrono*.
 
-Il comportamento di un [[Sistemi Embedded|sistema embedded]] è tipicamente ***time-oriented***.
+Il comportamento di un [[../Sistemi Embedded|sistema embedded]] è tipicamente ***time-oriented***.
 - Il tempo è spesso presente nelle condizioni e nelle azioni.
 - Viene spesso definito un **comportamento periodico**.
 
 Le `FSM` sono state introdotte per fornire un modo efficace per gestire il tempo.
 - Semplificando i comportamenti ***time-oriented***.
 
-I [[Timers|timer programmabili]] sono tipicamente usati per implementare ***time-triggered*** `FSM`.
+I [[../Elementi del Microcontroller/Timers|timer programmabili]] sono tipicamente usati per implementare ***time-triggered*** `FSM`.
 #### Input Sampling
-> [[Rappresentazione dei Suoni#Campionamento|Sampling]].
+> [[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione dei Suoni#Campionamento|Sampling]].
 
 >[!warning] Attenzione
 >Scegliere il *periodo* è una scelta **critica** nel design di una `FSM` ***sincrona***.

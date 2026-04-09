@@ -92,7 +92,7 @@ $$
 >4. La $n$-*esima* coordinata di un elemento di $S$ si può scegliere in $a_{n}$
  modi
 
->Osserviamo che se $S$ è un prodotto condizionato di tipo $(m,n,r)$ allora la [[Git-Obsidian/Matematica Discreta e Probabilità/0 - Introduzione#Cardinalità|cardinalità]] di $S$: $\mid S\mid = m\cdot n\cdot r$
+>Osserviamo che se $S$ è un prodotto condizionato di tipo $(m,n,r)$ allora la [[../0 - Introduzione#Cardinalità|cardinalità]] di $S$: $\mid S\mid = m\cdot n\cdot r$
 
 #### Esempio
 >Consideriamo $S=\{ (a,b,c):a,b,c\in \mathbb{N},\quad a\leq 10 ,\ 0\leq b-a\leq 10,\ 0\leq c-a-b\leq 10\}$
@@ -200,7 +200,7 @@ $$
 
 >[!caution] Coefficiente Binomiale
 >Questo numero: $\displaystyle{\frac{(n)_{a}}{a!}}=\displaystyle{\frac{(n)_{b}}{b!}}=\displaystyle{\frac{n!}{a!b!}}$ si indica con: $\displaystyle\binom{n}{a}=\displaystyle\binom{n}{b}=\displaystyle\binom{n}{a\ b}$
->[[Definizioni_Analisi#Coefficiente Binomiale|Coefficiente Binomiale]]
+>[[../../Definizioni/Definizioni_Analisi#Coefficiente Binomiale|Coefficiente Binomiale]]
 >>[!done] Interpretazione Letterale
 >>$\displaystyle\binom{n}{m}$ sarebbe come dire, scelgo $m$ elementi, scelti da un insieme di $n$ elementi
 

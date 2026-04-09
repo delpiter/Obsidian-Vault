@@ -9,13 +9,13 @@
 ## Le Proiezioni
 ---
 >[!definizione]
->Si dice ***proiezione*** una [[Sistemi di Riferimento#Trasformazioni Geometriche|trasformazione geometrica]] con il dominio in uno spazio di dimensione $n$ e il codominio in uno spazio di dimensione $n-1$ (*o minore*).
+>Si dice ***proiezione*** una [[../../Geometria per la Grafica/Sistemi di Riferimento#Trasformazioni Geometriche|trasformazione geometrica]] con il dominio in uno spazio di dimensione $n$ e il codominio in uno spazio di dimensione $n-1$ (*o minore*).
 
 La proiezione di un oggetto `3D` è definita da un insieme di rette di proiezione, dette *proiettori*.
 - I proiettori hanno un origine comune, il ***centro di proiezione***.
 - I proiettori passano per tutti i punti dell'oggetto e intersecano un ***piano di proiezione*** per formare la *proiezione*.
 
-![[Projection.png]]
+![[attachements/Projection.png]]
 
 Questo tipo di proiezione (***proiezioni geometriche piane***) sono caratterizzate dal fatto che:
 - I *proiettori* sono ***rette***.
@@ -32,7 +32,7 @@ I proiettori sono quindi tutti *paralleli*.
 - Le linee *parallele nel modello tridimensionale,* **rimangono tali** nella proiezione.
 
 ##### Classificazione
-> Le proiezioni parallele si classificano in base alla relazione che c'è tra la direzione di proiezione e la [[Sistema di Coordinate#^d4f7f8|normale]] al piano di proiezione.
+> Le proiezioni parallele si classificano in base alla relazione che c'è tra la direzione di proiezione e la [[../../Geometria per la Grafica/Sistema di Coordinate#^d4f7f8|normale]] al piano di proiezione.
 
 >[!abstract] Proiezione Ortografica
 

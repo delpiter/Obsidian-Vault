@@ -1,17 +1,17 @@
 ## Message Passing Interface
 ---
 >[!info] Message Passing
->Il [[14 - Message Passing|message passing]] è il modello di programmazione predominante per [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multicomputer|supercomputer e cluster]].
+>Il [[../../Sistemi Operativi/Teoria/14 - Message Passing|message passing]] è il modello di programmazione predominante per [[../../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multicomputer|supercomputer e cluster]].
 
 >[!tldr] `MPI`
 >`MPI` è una libreria usata nei linguaggi sequenziali convenzionali `{c icon} C`, `{fortran icon} fortran`, `{cpp icon} C++`.
 
-È basata sul paradigma [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Classificazione di sistemi Paralleli|SPMD]] (***S***ingle ***P***rogram ***M***ultiple ***D***ata).
+È basata sul paradigma [[../../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Classificazione di sistemi Paralleli|SPMD]] (***S***ingle ***P***rogram ***M***ultiple ***D***ata).
 - Lo stesso programma è eseguito da `P` processi.
 - Ogni processo potrebbe seguire un **percorso di esecuzione diverso** in base al suo `ID` (*rank*).
 
 > Avviene una ***isolazione di spazi di indirizzi separati***.
-- Non ci sono [[8 - Concorrenza#Race Condition|race condition]].
+- Non ci sono [[../../Sistemi Operativi/Teoria/8 - Concorrenza#Race Condition|race condition]].
 - Sono possibili ***errori di comunicazione***.
 
 ### Comunicazione

@@ -3,9 +3,9 @@
 >[!info] Definizione
 >Il tipo di dato `FILE` è una struttura che contiene una lista di campi che permettono di gestire le operazioni di **apertura**, **chiusura**, **lettura** e **scrittura** del [[Introduzione ai Files|file]]
 
-- Il programmatore dovrebbe utilizzare il [[Tipi di Dati|tipo di dato]] `FILE` soltatnto tramite le [[Funzioni in C|funzioni]]  di libreria fornite, senza accedere direttamente ai campi interni della struttura
+- Il programmatore dovrebbe utilizzare il [[../Variabili/Tipi di Dati|tipo di dato]] `FILE` soltatnto tramite le [[../Funzioni/Funzioni in C|funzioni]]  di libreria fornite, senza accedere direttamente ai campi interni della struttura
 - La cosa importante da capire è che non si lavora realmente su un file, ma sul suo puntatore
-	- Il [[Introduzione Puntatori|puntatore]] è riferito al file preso in considerazione
+	- Il [[../Puntatori/Introduzione Puntatori|puntatore]] è riferito al file preso in considerazione
 
 ### I File *standard*
 Il C gestisce tutti i *device* tramite l'interfaccia unica `FILE`

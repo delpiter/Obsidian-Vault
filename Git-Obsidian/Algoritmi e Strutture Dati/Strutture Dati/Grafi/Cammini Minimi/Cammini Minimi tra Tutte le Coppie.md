@@ -1,7 +1,7 @@
 ## All Pair Shortest Paths
 ---
 >[!info] Problema
->Dato un [[I Grafi|grafo]] ***orientato o non orientato e pesato***, trovare per ogni coppia di vertici $u,v\in V$ il ***minimo peso di un cammino*** da $u$ a $v$
+>Dato un [[../I Grafi|grafo]] ***orientato o non orientato e pesato***, trovare per ogni coppia di vertici $u,v\in V$ il ***minimo peso di un cammino*** da $u$ a $v$
 >>[!abstract] Input
 >>Un grafo orientato o non orientato $G=(V,E,W)$, con *funzione di peso* $w: E\to\mathbb{R}$ di cui si vogliono trovare i [[Cammini Minimi con Sorgente Singola#Cammini Minimi|cammini minimi]] fra ogni coppia di vertici $u,v$
 >
@@ -13,7 +13,7 @@ Il sottografo indotto dall'$i$-esima riga della matrice $\Pi$ sarà un ***albero
 
 ### Algoritmo di Floyd-Warshall
 >[!info] Floyd-Warshall
->È un [[Algoritmi di Programmazione Dinamica|algoritmo di programmazione dinamica]], può gestire ***archi di peso negativo***, ma si assume che ***non ci siano cicli negativi***
+>È un [[../../../Programmazione Dinamica/Algoritmi di Programmazione Dinamica|algoritmo di programmazione dinamica]], può gestire ***archi di peso negativo***, ma si assume che ***non ci siano cicli negativi***
 >>[!tldr] Idea
 >>$d_{s,t}(i)$: cammino minimo da $s$ a $t$ contenente solo i vertici intermeti $v_{1},\dots,v_{i}$
 >>- $d_{s,t}(0)=w(s,t)$

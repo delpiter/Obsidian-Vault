@@ -1,8 +1,8 @@
 >[!check] Introduzione
->Definiamo $\mathbb{P}_{n}[x]$ lo [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] dei polinomi nella variabile $x$ di **grado** minore o uguale a $n$ e a ***coefficienti reali***.
+>Definiamo $\mathbb{P}_{n}[[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] dei polinomi nella variabile $x$ di **grado** minore o uguale a $n$ e a ***coefficienti reali***.
 >$$\mathbb{P}_{n}[x]:=\{ \alpha_{0}+\alpha_{1}x+\alpha_{2}x^2+\dots+\alpha_{n}x^n|\alpha_{i}\in\mathbb{R} \}$$
 
-La [[3 - Teoremi su Spazi Vettoriali#Base Canonica|base canonica]] dello spazio appena descritto è ***rappresentata dalle funzioni base***:
+La [[../../Algebra e Geometria/Basi dell'algebra/3 - Teoremi su Spazi Vettoriali#Base Canonica|base canonica]] dello spazio appena descritto è ***rappresentata dalle funzioni base***:
 $$
 \phi_{0}(x)=1,\quad \phi_{1}(x)=x,\quad\phi_{2}=(x)x^2,\quad \phi_{3}(x)=x^3,\ \dots\ , \phi_n(x)=x^n
 $$
@@ -32,7 +32,7 @@ Una volta individuati, avremo la formula analitica del ***polinomio interpolator
 $$
 P_{n}(x_{i})= \alpha_{0}+\alpha_{1}x_{i}+\alpha_{2}x_{i}^2+\dots+\alpha_{n}x_{i}^n=y_{i}
 $$
-Se scriviamo questa relazione per ogni $i$, ricaviamo il seguente [[Sistemi Lineari|sistema lineare]]:
+Se scriviamo questa relazione per ogni $i$, ricaviamo il seguente [[../Equazioni Lineari/Sistemi Lineari|sistema lineare]]:
 $$
 \begin{cases}
 \alpha_{0}+\alpha_{1}x_{0}+\alpha_{2}x_{0}+\dots+\alpha_{n}x_{0}^n=y_{0} \\
@@ -55,13 +55,13 @@ A=\begin{bmatrix}
 1 & x_{n} & x_{n}^2 & \dots & x_{n}^n \\
 \end{bmatrix}
 $$
-- Che è la [[Condizionamento di un Sistema Lineare#Esempi|matrice di Vandermonde]]. 
+- Che è la [[../Equazioni Lineari/Condizionamento di un Sistema Lineare#Esempi|matrice di Vandermonde]]. 
 Il vettore $y=\begin{bmatrix}y_{0}\\y_{1}\\\dots\\y_{n}\end{bmatrix}$ è il vettore di ordine $n+1$ la cui $i$-*esima* componente è rappresentata dalla $i$-esima ***valutazione*** $y_{i}$.
 
 Il vettore $\alpha$ è il ***vettore delle incognite***.
 
 >[!info]
->Il sistema ammette ***una ed una sola soluzione*** *se e solo se* la matrice dei coefficienti è quadrata e a [[6 - Cambiamenti di Base#Rango di una Matrice|rango massimo]].
+>Il sistema ammette ***una ed una sola soluzione*** *se e solo se* la matrice dei coefficienti è quadrata e a [[../../Algebra e Geometria/Applicazioni/6 - Cambiamenti di Base#Rango di una Matrice|rango massimo]].
 
 - Sappiamo che è quadrata.
 - È sempre a rango massime poiché $x_{i}\neq x_{k},\quad i\neq k$
@@ -70,14 +70,14 @@ Il vettore $\alpha$ è il ***vettore delle incognite***.
 
 #### Problema
 >[!danger] Attenzione
->Come visto in [[Condizionamento di un Sistema Lineare#Esempi|precedenza]] la matrice di Vandermonde, è una matrice ***molto mal condizionata***.
->- La soluzione del sistema lineare è un problema [[Condizionamento#Condizionamento di un Problema|molto mal condizionato]], molto sensibile alle *perturbazioni sui dati*.
+>Come visto in [[../Equazioni Lineari/Condizionamento di un Sistema Lineare#Esempi|precedenza]] la matrice di Vandermonde, è una matrice ***molto mal condizionata***.
+>- La soluzione del sistema lineare è un problema [[../Condizionamento e Stabilità/Condizionamento#Condizionamento di un Problema|molto mal condizionato]], molto sensibile alle *perturbazioni sui dati*.
 
 Occorre cambiare approccio
 ### Polinomi di Lagrange
 >[!definizione] Base di Lagrange
 > È necessario ***cambiare la base*** per lo spazio $\mathbb{P}_{n}[x]$
-> Una base che fa sì che la *matrice del sistema lineare* che nasce dall'imposizione delle **condizioni di interpolazione** coincida con la [[5 - Matrici di Applicazioni Lineari#Matrice Identità|matrice Identità]] è la ***base di Lagrange***.
+> Una base che fa sì che la *matrice del sistema lineare* che nasce dall'imposizione delle **condizioni di interpolazione** coincida con la [[../../Algebra e Geometria/Applicazioni/5 - Matrici di Applicazioni Lineari#Matrice Identità|matrice Identità]] è la ***base di Lagrange***.
 
 Gli $n+1$ ***polinomi di Lagrange***, $L_{j}^{(n)}$ sono polinomi di grado $n$ che rappresentano una base per lo spazio dei polinomi $\mathbb{P}_{n}[x]$ e *soddisfano le condizioni*:
 $$
@@ -145,7 +145,7 @@ $$
 E quindi il vettore soluzione $\alpha$ coincide con il vettore termine noto $y$.
 
 #### Ricavare la Base di Lagrange
-> Ricaviamo le funzioni [[2 - Campi e Spazi Vettoriali#Base|base]] $L_{j}^{(n)}\quad j=0,\dots,n$
+> Ricaviamo le funzioni [[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] $L_{j}^{(n)}\quad j=0,\dots,n$
 
 $L_{j}^{(n)}$ è un polinomio che soddisfa le condizioni:
 ![[#^71e316]]
@@ -214,7 +214,7 @@ $$
 >>In totale il numero di moltiplicazioni da effettuare sono $2n(n+1)$.
 >>A queste bisogna aggiungere $n+1$ moltiplicazioni per ***eseguire la sommatoria***.
 >
->Quindi la [[Complessità di Algoritmi|complessità computazionale]] della ***valutazione del polinomio interpolatore di Lagrange*** in un punto è $O(2n^{2})$
+>Quindi la [[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità computazionale]] della ***valutazione del polinomio interpolatore di Lagrange*** in un punto è $O(2n^{2})$
 
 Se dobbiamo effettuare la *valutazione* in $M>n$ punti avremo una complessità computazionale dell'ordine di $O(2n^{2}\cdot M)$
 - In generale $M$ è ***molto maggiore*** di $n$.

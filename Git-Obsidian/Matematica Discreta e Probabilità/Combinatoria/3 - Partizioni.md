@@ -7,7 +7,7 @@
 >- $A_{i}\ \cap A_{j} = \varnothing \quad \forall i\neq j$
 >- $A_{1}\cup A_{2} \cup\dots = A$
 
-![[Pasted image 20241002184937.png]]
+![[attachements/Pasted image 20241002184937.png]]
 >[!warning] L'ordine dei blocchi non è rilevante
 
 #### Esempio

@@ -219,7 +219,7 @@ Un blocco libero viene ***selezionato e suddiviso*** in due parti:
 > Deallocazione
 
 4 Casi possibili
-![[MemoryDeallocationPointerList.png]]
+![[attachements/MemoryDeallocationPointerList.png]]
 
 ##### Selezione del Blocco Libero
 >[!info] First Fit
@@ -249,7 +249,7 @@ Un blocco libero viene ***selezionato e suddiviso*** in due parti:
 
 Serve un meccanismo che mappa una *pagina* ad un *frame* nella memoria fisica
 
-![[Paging.png]]
+![[attachements/Paging.png]]
 
 ### Dimensione delle Pagine
 >[!question] Come scegliere la dimensione della pagina?
@@ -281,7 +281,7 @@ La dimensione delle pagine deve essere una ***potenza di due*** per *semplificar
 >> - Se è presente, ritorna il valore corrispondente (`TLB` ***hit***)
 >> - Se non è presente (`TLB` ***miss***) si utilizza la tabella in memoria
 
-![[TraslationLookasideBuffer.jpg]]
+![[attachements/TraslationLookasideBuffer.jpg]]
 
 ## Segmentazione
 ---
@@ -399,7 +399,7 @@ Il processore genera un *trap* (***page fault***)
 >[!definizione] Descrizione
 >Selezione come pagina "*vittima*" una pagina che è stata usata ***meno recentemente*** in passato (***least recently used***)
 
-[[Cache#Tecniche di Gestione|Least Recently Used]]
+[[../../Architettura degli Elaboratori/Architettura del Calcolatore/Cache#Tecniche di Gestione|Least Recently Used]]
 
 >[!warning] Necessario uno specifico supporto hardware 
 

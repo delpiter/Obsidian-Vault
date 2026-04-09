@@ -12,7 +12,7 @@ Due convenzioni opposte:
 - Si elimina il problema delle *lunghe sequenze di* `bit` con **uguale valore**.
 
 ### Attenuazione
-> Qualunque mezzo trasmissivo degrada il segnale [[Elettromagnetismo|elettromagnetico]] durante lo spostamento.
+> Qualunque mezzo trasmissivo degrada il segnale [[../../Fisica/Elettromagnetismo/Elettromagnetismo|elettromagnetico]] durante lo spostamento.
 
 >[!cite] Definizione
 >L'***attenuazione*** misura il degrado, misurando la perdita di potenza nel segnale.
@@ -41,7 +41,7 @@ L'*attenuazione* cresce esponenzialmente con:
 - A sua volta avvolta in un *foglio metallico* (***calza***).
 - Ulteriormente rivestito da una **guaina isolante**.
 
-![[Coax.png]]
+![[attachements/Coax.png]]
 
 - Più è grande $D$ più il cavo è ***costoso e performante***.
 
@@ -50,7 +50,7 @@ L'*attenuazione* cresce esponenzialmente con:
 >[!caution] Thick Coax
 >$10 \text{ Base }5$
 > Cavo coassiale a $50\ohm$.
-- Serviva per connettere le [[Routing Globale|backbone]].
+- Serviva per connettere le [[../Network Layer/Routing/Routing Globale|backbone]].
 
 >[!summary] Thin Coax
 >$10 \text{ Base }2$
@@ -122,7 +122,7 @@ Si possono avere giunti ***stabili*** e ***temporanei***.
 
 >[!hint] Info
 >L'amplificatore mantiene il segnale a livello ottico.
->In un segnale [[Multiplexing#Wavelength Division Multiplexing|WDM]] *tutti i canali vengono amplificati*.
+>In un segnale [[../Introduzione/Multiplexing#Wavelength Division Multiplexing|WDM]] *tutti i canali vengono amplificati*.
 
 È comunque necessario combattere gli effetti di ***dispersione e non linearità***.
 >[!EDFA] EDFA
@@ -139,7 +139,7 @@ Si possono avere giunti ***stabili*** e ***temporanei***.
 L'***indice di rifrazione*** è un numero che indica quanto la luce rallenta e rimbalza quando attraversa un materiale
 - Più è alto più *viaggia più lentamente*.
 
-![[FibreOptic.png]]
+![[attachements/FibreOptic.png]]
 
 Per la fibra ottica i due mezzi diversi sono ***due tipi di pasta vetrosa***:
 - Uno interno (*core*) con un indice di rifrazione $n_{1}$.
@@ -153,7 +153,7 @@ Per la fibra ottica i due mezzi diversi sono ***due tipi di pasta vetrosa***:
 - Fibra ottica di media qualità ($15km$).
 
 ##### Funzionamento
-![[FibreOpticReflection.png]]
+![[attachements/FibreOpticReflection.png]]
 
 Affinché il raggio luminoso rimanga entro il core (***riflessione totale***), è necessario che venga introdotto con un certo angolo
 - L'insieme di questi angoli forma una **superficie tridimensionale** detta *acceptance cone*.
@@ -173,7 +173,7 @@ Affinché il raggio luminoso rimanga entro il core (***riflessione totale***), �
 Un ricevitore (*fotodiodo*) riceve gli impulsi.
 
 ##### Tipologie di Fibra Ottica
-![[FiberOpticTypes.png]]
+![[attachements/FiberOpticTypes.png]]
 
 #### La fibra ottica nella Rete di Accesso
 > Classificate in base alla ***localizzazione dell'interfaccia***

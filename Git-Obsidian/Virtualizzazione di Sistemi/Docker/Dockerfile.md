@@ -130,7 +130,7 @@ Configura come vengono valutati i controlli di build.
 ## Sostituzione di variabili d'ambiente
 > Le variabili d'ambiente (dichiarate con `ENV`) possono essere usate in certe istruzioni nella forma `$variable_name` o `${variable_name}`.
 
-La sintassi `{sh icon} ${variable_name}` supporta anche alcune modifiche stile [[CheatSheet#Manipolare il contenuto della variabile|bash]]:
+La sintassi `{sh icon} ${variable_name}` supporta anche alcune modifiche stile [[../../Sistemi Operativi/Bash/CheatSheet#Manipolare il contenuto della variabile|bash]]:
 - `${variable:-word}` — usa `word` se la variabile non è impostata
 - `${variable:+word}` — usa `word` se la variabile è impostata, altrimenti stringa vuota
 
@@ -197,7 +197,7 @@ EOF
 >[!todo] Nota Bene
 >Usando la forma shell, il processo principale (processo `init`) è una ***shell bash***.
 >>[!warning] Attenzione
->>La shell non si occupa di eliminare i [[CheatSheet#Processi Zombie & Orfani|processi zombie]].
+>>La shell non si occupa di eliminare i [[../../Sistemi Operativi/Bash/CheatSheet#Processi Zombie & Orfani|processi zombie]].
 
 Se nel mio container so che verranno generati dei *processi zombie*, allora è meglio mettere come processo con `PID=1` o processo `init` un processo che è in grado di gestire i processi zombie.
 - Ci sono diversi processi (pacchetti installabili) progettati per lavorare nei container in grado di gestire i processi zombie.
@@ -387,7 +387,7 @@ ENV <key>=<value> [<key>=<value>...]
 ```
 
 >[!hint] `{docker icon} ENV`
-> Imposta [[Variabili|variabili d'ambiente]] che persistono nell'immagine risultante e sono disponibili per le istruzioni successive e a runtime.
+> Imposta [[../../Sistemi Operativi/Bash/Variabili|variabili d'ambiente]] che persistono nell'immagine risultante e sono disponibili per le istruzioni successive e a runtime.
 
 ```dockerfile
 ENV MY_NAME="Mario Rossi"
@@ -589,7 +589,7 @@ HEALTHCHECK --interval=5m --timeout=3s \
 ```
 
 >[!todo] In altre parole
->Come una sorta di [[ICMP#Comando PING|PING]] di livello applicativo.
+>Come una sorta di [[../../Reti/Network Layer/ICMP#Comando PING|PING]] di livello applicativo.
 
 ---
 

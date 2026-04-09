@@ -1,5 +1,5 @@
 >[!definizione] Definizione
->Il ***multiplexing*** è il meccanismo per cui più *canali trasmissivi in ingresso* condividono lo stesso [[Git-Obsidian/Reti/Introduzione/Introduzione#Canale|canale]] per trasferire più flussi di informazione in **un solo segnale** (detto _multiplato_).
+>Il ***multiplexing*** è il meccanismo per cui più *canali trasmissivi in ingresso* condividono lo stesso [[Introduzione#Canale|canale]] per trasferire più flussi di informazione in **un solo segnale** (detto _multiplato_).
 
 Più canali sono trasportati dallo stesso ***mezzo di trasmissione***.
 
@@ -23,13 +23,13 @@ Si può realizzare utilizzando:
 >Si possono adottare unità informative di *lunghezza variabile*.
 >- È necessario un ***sistema esplicito di delimitazione*** delle unità informative
 
-![[TDMUnslotted.png]]
+![[attachements/TDMUnslotted.png]]
 
 >[!example] TDM Slotted
 >Nel *Time Division Multiplexing* di tipo ***Slotted***, l'asse dei tempi è *suddiviso* in intervalli di durata prefissata (**slot**)
 >- Le *unità informative* hanno tutte la **stessa lunghezza** commisurata al singolo ***slot***
 
-![[TDMSlotted.png]]
+![[attachements/TDMSlotted.png]]
 
 ##### Framed/Unframed
 >[!caution] Framed
@@ -44,7 +44,7 @@ Si può realizzare utilizzando:
 >[!info] Concetto
 >Il ***wavelength division multiplexing*** è una modalità di multiplazione di diversi flussi su diversi ambiti di *lunghezze d'onda*.
 
-I flussi di dati diversi vengono trasmessi su [[Luce e Colori|colori]] ***diversi*** nella stessa [[Strato Fisico#Fibra Ottica|fibra]].
+I flussi di dati diversi vengono trasmessi su [[../../Computer Graphics/Luce e Colori|colori]] ***diversi*** nella stessa [[../Physical Layer/Strato Fisico#Fibra Ottica|fibra]].
 - Richiede **trasmettitori** e **ricevitori** **selettivi** ma permette un largo aumento della capacità della rete *senza installare nuove fibre*.
 
 > `ROADM` (Reconfigurable Optical Add Drop Multiplexer)

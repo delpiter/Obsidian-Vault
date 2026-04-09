@@ -15,13 +15,13 @@ $$
 >[!done] In breve
 >Il rapporto incrementale è il coefficiente angolare della retta secante passante per i due punti $(c,f(c))$ e $(d,f(d))$ 
 
-![[Pasted image 20231027100008.png]]
+![[attachements/Pasted image 20231027100008.png]]
 ## Derivata
 ---
 >[!info] Definizione
 >Sia $f:(a,b)\to\mathbb{R}$, sia $c\in(a,b)$ diciamo che $f$ è derivabile in $c$ se
 >$$\exists \lim\limits_{x\to c} \displaystyle{\frac{f(x)-f(c)}{x-c}} \in \mathbb{R}$$
->E in tal caso indichiamo tale [[Limiti#Definizione Limite|limite]] con $f'(c)$ come  derivata di $f$ in $c$
+>E in tal caso indichiamo tale [[../Limiti/Limiti#Definizione Limite|limite]] con $f'(c)$ come  derivata di $f$ in $c$
 >>[!done] Significato Geometrico
 >>La derivata è il coefficente angolare della retta tangente al grafico di $f$ nel punto $(c,f(c))$
 ### Alternativa
@@ -31,7 +31,7 @@ $$
 
 ### Osservazione sul grafico
 - Con $c$ che tende sempre di più al valore di $x$ la retta secante fra i due punti tenderà sempre di più a diventare la tangente
-![[Pasted image 20231027102103.png]]
+![[attachements/Pasted image 20231027102103.png]]
 
 ### Teorema di Caratterizzazione delle Funzioni Derivabili
 >[!info] Teorema

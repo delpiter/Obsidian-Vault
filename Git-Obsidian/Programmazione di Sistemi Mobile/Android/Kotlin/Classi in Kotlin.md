@@ -20,7 +20,7 @@ fun main() {
 ```
 
 ### Ereditarietà
-> `{kt icon} Kotlin` supporta pienamente il tradizionale meccanismo di [[Paradigma ad Oggetti#Ereditarietà|ereditarietà]] object-oriented.
+> `{kt icon} Kotlin` supporta pienamente il tradizionale meccanismo di [[../../../Ingegneria del Software/Paradigma ad Oggetti#Ereditarietà|ereditarietà]] object-oriented.
 
 >[!info] `open`
 >Le classi e i metodi in **Kotlin** sono `final` di default, se si desidera consentire l'ereditarietà e l'override, è necessario contrassegnare la classe/metodo con `open`.

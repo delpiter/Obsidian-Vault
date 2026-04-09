@@ -15,10 +15,10 @@
 >>- La cardinalità di $S'$ è ***massima***
 
 
-![[Activity Selection Table.png]]
+![[attachements/Activity Selection Table.png]]
 >*Esempio di input*
 
-![[Activity Selection Table Solution.png]]
+![[attachements/Activity Selection Table Solution.png]]
 >*Esempio di output*
 ### Pseudocodice
 ```pseudo

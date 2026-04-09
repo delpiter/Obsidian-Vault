@@ -4,7 +4,7 @@
 Tutto diventa interpretabile in termini di ***interazioni di cariche elettriche***, ferme o in moto relativo.
 
 >[!check] Forza Elettromagnetica
->La forza elettromagnetica è una delle ***quattro forze fondamentali*** ([[Legge di Gravitazione|Gravitazione]], *Nucleare Debole*, *Elettromagnetica*, *Nucleare Forte*).
+>La forza elettromagnetica è una delle ***quattro forze fondamentali*** ([[../Gravitazione/Legge di Gravitazione|Gravitazione]], *Nucleare Debole*, *Elettromagnetica*, *Nucleare Forte*).
 
 ```mermaid
 mindmap
@@ -31,11 +31,11 @@ mindmap
 ## Elettrostatica
 ---
 >[!example] Esperimento
->Utilizzo bacchette di *vetro* ($v$) e *plastica* ($p$), con un **pendolo di torsione** verifico la presenza o meno di [[Leggi di Newton#Seconda Legge di Newton|forze]].
+>Utilizzo bacchette di *vetro* ($v$) e *plastica* ($p$), con un **pendolo di torsione** verifico la presenza o meno di [[../Leggi di Newton e le Forze/Leggi di Newton#Seconda Legge di Newton|forze]].
 >>[!done] Le forze si manifestano dopo uno strofino
 >>Seta con il vetro e coniglio con la plastica.
 
-![[EsperimentoElettrostatica.png]]
+![[attachements/EsperimentoElettrostatica.png]]
 
 >[!hint] Osservazioni
 
@@ -66,14 +66,14 @@ Il corpo caricato trasferirà agli atri corpi parte della propria carica elettri
 >[!check] Trasferimento
 >Se i corpi sono uguali la carica si *suddivide* in ***parti uguali***.
 
-![[ElettrizzazioneContatto.png]]
+![[attachements/ElettrizzazioneContatto.png]]
 
 ## Quantizzazione della Carica
 ---
 >[!help] Carica
 >Le **particelle elementari** o sono ***neutre*** o hanno una ***carica*** di modulo pari alla *carica dell'elettrone*.
 >$$e=1.60218\times 10^{-19}\ C$$
->- $C$ è il Coulomb, unità di misura della carica elettrica nel [[Git-Obsidian/Fisica/Misurazione#Sistema Internazionale|S.I.]]
+>- $C$ è il Coulomb, unità di misura della carica elettrica nel [[../Misurazione#Sistema Internazionale|S.I.]]
 
 L'***elettrone*** ha carica $-e$, il ***protone*** ha carica $+e$ e il ***neutrone*** *non ha carica*.
 
@@ -87,6 +87,6 @@ Dato che $e$ è una quantità piccolissima, possiamo considerare la carica elett
 ## Legge di Conservazione della Carica
 ---
 >[!quote]
->In un **sistema isolato** la [[Elettromagnetismo#Cariche Elettriche|carica elettrica]] totale è *costante nel tempo*.
+>In un **sistema isolato** la [[.md#Cariche Elettriche|carica elettrica]] totale è *costante nel tempo*.
 
 La conservazione vale anche nelle interazioni tra particelle elementari.

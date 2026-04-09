@@ -1,7 +1,7 @@
 >[!definizione] Definizione
->La ***topologia di*** [[Git-Obsidian/Reti/Introduzione/Introduzione|rete]] è il modello geometrico finalizzato a rappresentare le *relazioni di connettività*.
+>La ***topologia di*** [[Introduzione|rete]] è il modello geometrico finalizzato a rappresentare le *relazioni di connettività*.
 
-È possibile descrivere una rete utilizzando un [[I Grafi|grafo]] 
+È possibile descrivere una rete utilizzando un [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi|grafo]] 
 
 ***Componenti***:
 - ***Rami*** (*archi*): **Linee di collegamento** fra due nodi della rete
@@ -13,7 +13,7 @@
 >[!info] Definizione
 >Nella ***topologia a bus*** tutti nodi sono *collegati* tra di loro per mezzo di un **unico ramo condiviso**
 
-![[BusTopology.png]]
+![[attachements/BusTopology.png]]
 
 
 >[!fail] Contro
@@ -26,7 +26,7 @@
 >
 
 
-![[RingTopology.png]]
+![[attachements/RingTopology.png]]
 
 ***Anelli Monodirezionali***:
 - L'informazione si propaga solamente in ***una direzione***
@@ -48,7 +48,7 @@
 - **Minimizza** i collegamenti
 - **Bassa** resistenza ai *guasti*
 
-![[StarTopology.png]]
+![[attachements/StarTopology.png]]
 
 ### Topologia a Maglia
 >[!definizione] Definizione
@@ -76,7 +76,7 @@ $n$ nodi implicano: $(n-1)<R< \displaystyle\frac{n(n-1)}{2}$
 
 - Minore *fault tollerance*
 
-![[Mesh.png]]
+![[attachements/Mesh.png]]
 ## Rete Gerarchica
 ---
 >[!info]

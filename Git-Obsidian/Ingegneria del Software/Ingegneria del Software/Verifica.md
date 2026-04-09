@@ -17,7 +17,7 @@ Basato su prove sperimentali che ne verificano il comportamento in un ***insieme
 ### Testing
 >[!quote] Testing
 >Le operazioni di testing possono individuare la presenza di errori nel software ma ***non possono dimostrarne la correttezza***.
->- [[Algoritmo di Dijkstra|Dijkstra 1972]].
+>- [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Cammini Minimi/Algoritmo di Dijkstra|Dijkstra 1972]].
 
 Lo ***scopo del testing*** è quello di verificare il comportamento del sistema in un insieme di casi sufficientemente ampio da rendere plausibile che il suo comportamento sia analogo anche nelle restanti situazioni.
 
@@ -28,13 +28,13 @@ Lo ***scopo del testing*** è quello di verificare il comportamento del sistema 
 >I test dovrebbero essere fatti da ***utenti esterni*** a quelli che hanno scritto il codice.
 #### Testing in the Small
 >[!info]
->La tecnica di "***testing in the small***" è una tecnica [[Definizioni_Ingegneria-del-Software#White-Box|white-box]], valuta il corretto funzionamento di una porzione di codice analizzando in modo approfondito il suo comportamento in relazione all'input.
+>La tecnica di "***testing in the small***" è una tecnica [[../../Definizioni/Definizioni_Ingegneria-del-Software#White-Box|white-box]], valuta il corretto funzionamento di una porzione di codice analizzando in modo approfondito il suo comportamento in relazione all'input.
 
 ##### Grafi di Controllo
-![[ControlGraph.png]]
+![[attachements/ControlGraph.png]]
 
 ##### Criteri di Copertura
-> Guardando il [[I Grafi|grafo]] di controllo del codice analizzato, uso i ***criteri di copertura*** per eseguire una ***serie di test***.
+> Guardando il [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi|grafo]] di controllo del codice analizzato, uso i ***criteri di copertura*** per eseguire una ***serie di test***.
 
 Esistono una serie di criteri, sempre più stringenti:
 - *Statement Test* $\subseteq$ *Branch Test* $\subseteq$ *Decision Test*
@@ -78,10 +78,10 @@ Il criterio richiede che per ***ogni porzione di condizione composta*** presente
 
 #### Testing in the Large
 >[!info]
->La tecnica di "***testing in the large***" è una tecnica [[Definizioni_Ingegneria-del-Software#Black-Box|black-box]], valuta il corretto funzionamento del sistema sulla base delle corrispondenze *input-output*.
+>La tecnica di "***testing in the large***" è una tecnica [[../../Definizioni/Definizioni_Ingegneria-del-Software#Black-Box|black-box]], valuta il corretto funzionamento del sistema sulla base delle corrispondenze *input-output*.
 
 L'insieme di test da utilizzare viene selezionato sulla base delle specifiche di progetto che permettono di definire i diversi valori di input e i corrispondenti valori di output.
-- Molto legato allo [[State Diagram]].
+- Molto legato allo [[../UML/State Diagram]].
 
 ##### Tipi di Test
 >[!tip] Test di Modulo

@@ -1,8 +1,8 @@
 ## Teorema dell'Estensione Lineare
 ---
 >[!Teorema]
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$
->Sia $v_{1},\dots,v_{n}$ una sua [[2 - Campi e Spazi Vettoriali#Base|base]]
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$
+>Sia $v_{1},\dots,v_{n}$ una sua [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]]
 >Sia $U$ uno *spazio vettoriale* su $\mathbb{K}$ 
 >Sia $u_{1},\dots,u_{n}$ un insieme di vettori di $U$
 ><u>Allora</u>
@@ -48,7 +48,7 @@ Osserviamo subito che $v_{2} = 2v_{1}$, quindi se $f$ è *lineare* $f(v_{2})=2f(
 
 Osserviamo che $v_{2}=2v_{1}$ e $f(v_{2})=2f(v_{1})$ quindi la condizione richiesta è *compatibile* con la ***linearità***
 
-Completiamo $v_{1}$ a una [[2 - Campi e Spazi Vettoriali#Base|base]] di $\mathbb{R}^2$, ad esempio $\underbrace{ v_{1} }_{ (2,-1) },\underbrace{ e_{1} }_{ (1,0) }$
+Completiamo $v_{1}$ a una [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] di $\mathbb{R}^2$, ad esempio $\underbrace{ v_{1} }_{ (2,-1) },\underbrace{ e_{1} }_{ (1,0) }$
 Per ogni scelta di $u_{2}\in\mathbb{R}^2$ per il teorema precedente
 - Esiste una $f$ lineare tale che $f(v_{1})=(1,1),f(e_{1})=u_{2}$
 

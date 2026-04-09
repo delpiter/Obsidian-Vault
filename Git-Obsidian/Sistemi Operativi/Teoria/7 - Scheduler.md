@@ -2,7 +2,7 @@
 ---
 >Per rappresentare uno [[6 - Processi, Schedule e Thread#Schedule|schedule]] si utilizzano i diagrammi di Gantt
 
-![[GanttDiagram.png]]
+![[attachements/GanttDiagram.png]]
 - Ogni *linea* rappresenta una *risorsa diversa*, in questo caso sarebbe un **processore con due core**
 
 ### Politiche di Scheduling
@@ -163,7 +163,7 @@ Le priorità possono essere:
 >Non definite dal sistema operativo, ma ***imposte dal livello utente***
 
 
-![[Process_Priority_Queues.png]]
+![[attachements/Process_Priority_Queues.png]]
 > Divisione dei processi con *diversa priorità* in *diverse code*
 
 ### Priorità Statica

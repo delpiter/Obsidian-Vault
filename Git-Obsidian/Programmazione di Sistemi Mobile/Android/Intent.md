@@ -94,7 +94,7 @@ Determina la struttura del resto dell'intent, in particolare le informazioni con
 >`{kt icon} const val ACTION_TIMETRAVEL = "com.example.action.TIMETRAVEL"`
 
 ### Data
->[!tldr] Rappresenta l'[[Architettura del Web#URI|URI]] che fa riferimento ai dati su cui agire e/o al [[Posta Elettronica#MIME|MIME Type]] del dato
+>[[../../Tecnologie Web/Architettura del Web#URI|URI]] che fa riferimento ai dati su cui agire e/o al [[../../Reti/Application Layer/Posta Elettronica#MIME|MIME Type]] del dato
 
 Il tipo di dato fornito è solitamente **dettato dall'azione dell'intent**.
 - Se l'azione è `ACTION_EDIT` i dati devono contenere l'`URI` del documento da modificare.
@@ -122,7 +122,7 @@ I flag possono indicare al sistema android ***come avviare un'attività*** e com
 ### Esempio
 >[!abstract] Implicit Intent
 
-> Supponiamo di aver creato un service denominato `DownloadService` per scaricare un file dal [[Architettura del Web|web]].
+> Supponiamo di aver creato un service denominato `DownloadService` per scaricare un file dal [[../../Tecnologie Web/Architettura del Web|web]].
 
 Può essere avviato dal seguente codice
 ```kt

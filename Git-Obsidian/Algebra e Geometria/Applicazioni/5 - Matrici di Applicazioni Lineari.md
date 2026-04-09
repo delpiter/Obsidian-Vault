@@ -5,7 +5,7 @@
 ## Prodotto Riga $\times$ Colonna
 ---
 >[!info] Introduzione
->Siano $V,U,W$ spazi vettoriali su $\mathbb{K}$ con [[2 - Campi e Spazi Vettoriali#Base|basi]]:
+>Siano $V,U,W$ spazi vettoriali su $\mathbb{K}$ con [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|basi]]:
 >$(v_{1},\dots,v_{n}),(u_{1},\dots,u_{m}),(w_{1},\dots,w_{l})$
 >E siano $f:V\to U$ e $g:U\to W$ [[1 - Applicazioni Lineari#Applicazione Lineare|applicazioni lineari]]
 >Sia $A$ la matrice di $f$ e $B$ la matrice di $g$ in tali basi
@@ -90,7 +90,7 @@ $$
 
 >[!question] Qual è la sua matrice?
 
-Fissiamo una [[2 - Campi e Spazi Vettoriali#Base|base]] $v_{1},\dots,v_{n}$ di $V$
+Fissiamo una [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] $v_{1},\dots,v_{n}$ di $V$
 - $id(v_{1})=v_{1}=1v_{1}+0v_{2}+\dots+0v_{n}$
 - $id(v_{2})=v_{2}=0v_{1}+1v_{2}+\dots+0v_{n}$
 - $\dots$

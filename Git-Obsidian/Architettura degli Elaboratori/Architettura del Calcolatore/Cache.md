@@ -15,7 +15,7 @@
 >>D'altro canto, se la parola non è presente, è necessario trasferirla da `DRAM` a ***cache*** e poi *leggerla*
 >>In questo caso il tempo totale è *sostanzialmente maggiore* rispetto alla lettura della `DRAM`
 
-![[CachePosition.png]]
+![[attachements/CachePosition.png]]
 *L'utilizzo di cache è **vantaggioso** solo quando la percentuale di hit è sufficientemente alta*
 
 ### Caricamento del Dato

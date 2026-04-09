@@ -58,10 +58,10 @@ $$
 > In Generale
 - Un simplesso di dimensione $k$ è il più piccolo insieme convesso che contiene $k+1$ punti indipendenti, detti ***vertici del simplesso***.
 #### Spazi
-![[2 - Campi e Spazi Vettoriali#Spazio Vettoriale]]
+![[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale]]
 
-![[2 - Campi e Spazi Vettoriali#Sottospazio Affine]]
+![[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Sottospazio Affine]]
 
-![[2 - Campi e Spazi Vettoriali#Combinazioni Lineari]]
+![[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Combinazioni Lineari]]
 
-![[2 - Campi e Spazi Vettoriali#Base]]
+![[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base]]

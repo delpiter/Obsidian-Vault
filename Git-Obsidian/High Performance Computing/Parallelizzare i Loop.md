@@ -5,7 +5,7 @@
 >- Principalmente nei *loop*.
 
 L'obbiettivo dell'ottimizzazione dei loop è nel trasformare il `loop`, rendendolo parallelizzabile, ma ***mantenendo la stessa semantica***.
-- Nei sistemi [[6 - Processi, Schedule e Thread|single-threaded]], si ottimizza per migliore accesso alla [[Le Memorie|gerarchia di memoria]].
+- Nei sistemi [[../Sistemi Operativi/Teoria/6 - Processi, Schedule e Thread|single-threaded]], si ottimizza per migliore accesso alla [[../Architettura degli Elaboratori/Architettura del Calcolatore/Le Memorie|gerarchia di memoria]].
 
 ### Eseguire i Loop in Parallelo
 ```c title:example
@@ -115,7 +115,7 @@ for(i = 0; i < n; i++){
 ```
 
 - C'è una ***loop-carried dependence*** su `{c} s` che non può essere rimossa con trasformazioni banali.
-	- Il `loop` deve essere completamente *ri-scritto* ([[Reduce]]).
+	- Il `loop` deve essere completamente *ri-scritto* ([[Parallel Programming Patterns/Reduce]]).
 
 ### Rimozione delle Dipendenze
 #### Loop Aligning
@@ -130,7 +130,7 @@ for (i=1; i<n; i++) {
 }
 ```
 
-![[LoopAligningBefore.png]]
+![[attachements/LoopAligningBefore.png]]
 
 ```c title:after
 a[0] = 0;
@@ -142,13 +142,13 @@ for (i=1; i<n-1; i++) {
 a[n-1] = b[n-2] * c[n-1];
 ```
 
-![[LoopAligningAfter.png]]
+![[attachements/LoopAligningAfter.png]]
 
 #### Loop Intergchange
 >[!tldr] Idea
 >Scambiando gli **indici** del `loop` potrebbe permettere di parallelizzare il `loop` *esterno*.
 
-- Utile per aumentare la [[Partition#In base alla Dimensione|granularità del parallelismo]] (se appropriato).
+- Utile per aumentare la [[Parallel Programming Patterns/Partition#In base alla Dimensione|granularità del parallelismo]] (se appropriato).
 
 > ***Procedimento***
 - Fisso l'indice di uno dei due `loop` e controllo le dipendenze parallelizzando l'altro indice.
@@ -183,9 +183,9 @@ for (i=1; i<n; i++) {
 }
 ```
 
-![[DifficultDependece.png]]
+![[attachements/DifficultDependece.png]]
 
-![[DifficultDependece1.png]]
+![[attachements/DifficultDependece1.png]]
 
 >[!done] Soluzione
 
@@ -210,7 +210,7 @@ for (slice=0; slice < n + m - 1; slice++) {
 >[!fail] Eliminazione delle Dipendenze
 >Alcune dipendenze si possono "*eliminare*" attraverso:
 >- Applicando delle ***trasformazioni*** al codice (*Reordering*, *Aligning*).
->- Utilizzando i [[Parallel Programming Patterns]].
+>- Utilizzando i [[Parallel Programming Patterns/Parallel Programming Patterns]].
 >- Scorrendo le iterazioni "*diagonalmente*".
 
 In alcuni casi le dipendenze ***non possono essere rimosse***.

@@ -15,7 +15,7 @@
 >>Lo *stack* ha una politica **LIFO**
 >>- ***L***ast ***I***n ***F***irst ***O***ut
 
-![[Stack.webp]]
+![[attachements/Stack.webp]]
 ### Push
 ```java
 void Push(S,o)

@@ -1,6 +1,6 @@
 ## Richiamo
 ---
-![[Derivate#Teorema di Caratterizzazione delle Funzioni Derivabili]]
+![[../Calcolo Differenziale/Derivate#Teorema di Caratterizzazione delle Funzioni Derivabili]]
 
 - Il concetto è equivalente anche per funzioni a due variabili reali
 >[!question] Qual è l'unico oggetto che è tangente ad una funzione a due variabili in un punto?
@@ -21,7 +21,7 @@
 >>Ottenendo così la curva descritta da:
 >>$$z=f(x_{0},y)$$
 >
->![[pianoTangente.png]]
+>![[attachements/pianoTangente.png]]
 
 #### Passo 2
 Mi scrivo le equazioni delle rette tangenti:
@@ -43,7 +43,7 @@ z=f(x_{0},y_{0})+ \displaystyle{\frac{df}{dy}}(x_{0},y_{0})(y-y_{0}) \\
 x=x_{0}
 \end{cases}
 $$
-![[derivataR3.png|500]]
+![[attachements/derivataR3.png|500]]
 #### Il Piano
 Esiste un piano che contiene entrambe le rette:
 
@@ -85,7 +85,7 @@ $$
 
 ### Matrice Hessiana
 >[!info] Definizione
->Chiamiamo [[Elementi di Algebra Lineare e Geometria Analitica#Matrici su $ mathbb{R}$ di tipo $(m,n)$|matrice]] Hessiana di $f$ in $(x_{0},y_{0})$ la matrice:
+>Chiamiamo [[Elementi di Algebra Lineare e Geometria Analitica#Matrici su $ mathbb{R}$ di tipo $(m,n]]$|matrice) Hessiana di $f$ in $(x_{0},y_{0})$ la matrice:
 >$$H_{f}(x_{0},y_{0})\begin{pmatrix}
 \displaystyle\frac{ \partial^2 f }{ \partial x^2 }(x_{0},y_{0})  & \displaystyle\frac{ \partial^2 f }{ \partial x \partial y }(x_{0},y_{0}) \\
 \displaystyle\frac{ \partial^2 f }{ \partial y^2 }(x_{0},y_{0})  & \displaystyle\frac{ \partial^2 f }{ \partial y \partial x }(x_{0},y_{0})

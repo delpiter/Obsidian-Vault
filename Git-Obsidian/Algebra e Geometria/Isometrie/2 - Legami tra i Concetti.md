@@ -2,9 +2,9 @@
 ## Teorema 1
 ---
 >[!inf] Teorema $T_{1}$
->Sia $v_{1},\dots,v_{n}$ un [[4 - Prodotto Scalare#Base Ortonormale|BON]] di $V$
+>Sia $v_{1},\dots,v_{n}$ un [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Base Ortonormale|BON]] di $V$
 ><u>Allora</u>
->Una base $w_{1},\dots,w_{n}$ di $V$ è ***ortonormale*** $\iff$ la [[1 - Forme Bilineari#Matrici Congruenti|matrice del cambiamento di base]] è [[1 - Introduzione Isometrie#Matrice Ortogonale|Ortogonale]]
+>Una base $w_{1},\dots,w_{n}$ di $V$ è ***ortonormale*** $\iff$ la [[../Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Congruenti|matrice del cambiamento di base]] è [[1 - Introduzione Isometrie#Matrice Ortogonale|Ortogonale]]
 
 ^b26be9
 
@@ -31,11 +31,11 @@ $$
 
 ## Teorema 2
 ---
->*Stesso concetto del [[4 - Isomorfismo#Teorema Isomorfismo-Basi|Teorema Isomorfismo-Basi]]*
+>*Stesso concetto del [[../Applicazioni/4 - Isomorfismo#Teorema Isomorfismo-Basi|Teorema Isomorfismo-Basi]]*
 
 
 >[!inf] Teorema $T_{2}$
->Una applicazione $f:V\to V$ è una [[1 - Introduzione Isometrie#Isometria|Isometria]] $\iff$ manda *[[4 - Prodotto Scalare#Base Ortonormale|BON]]* in *BON*
+>Una applicazione $f:V\to V$ è una [[1 - Introduzione Isometrie#Isometria|Isometria]] $\iff$ manda *[[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Base Ortonormale|BON]]* in *BON*
 
 ### Dimostrazione
 >$\implies$
@@ -66,7 +66,7 @@ f(v)=a_{1}f(v_{1})+\dots+a_{n}f(v_{n})\qquad
 f(u)=b_{1}f(v_{1})+\dots+b_{n}f(v_{n})
 $$
 
->Ma abbiamo [[4 - Prodotto Scalare#Legame tra Prodotto Scalare e Prodotto Scalare Standard|dimostrato]] che in una ***BON*** il ***prodotto scalare di due vettori*** è uguale al ***prodotto scalare standard*** delle loro coordinate
+>Ma abbiamo [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Legame tra Prodotto Scalare e Prodotto Scalare Standard|dimostrato]] che in una ***BON*** il ***prodotto scalare di due vettori*** è uguale al ***prodotto scalare standard*** delle loro coordinate
 
 Quindi:
 $$
@@ -82,7 +82,7 @@ $$
 ## Teorema 3
 ---
 >[!inf] Teorema $T_{3}$
->Una *applicazione lineare* $f:V\to V$ è una [[1 - Introduzione Isometrie#Isometria|isometria]] $\iff$ la sua matrice in una qualsiasi [[4 - Prodotto Scalare#Base Ortonormale|BON]] è una matrice [[1 - Introduzione Isometrie#Matrice Ortogonale|ortogonale]]
+>Una *applicazione lineare* $f:V\to V$ è una [[1 - Introduzione Isometrie#Isometria|isometria]] $\iff$ la sua matrice in una qualsiasi [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Base Ortonormale|BON]] è una matrice [[1 - Introduzione Isometrie#Matrice Ortogonale|ortogonale]]
 
 ### Dimostrazione
 
@@ -148,7 +148,7 @@ $$
 $$
 ### Autovalori di Isometrie
 >[!info] Proposizione
->Sia $f:V\to V$ una ***isometria*** e $\lambda$ un suo [[9 - Matrici Diagonali#Autovettore e Autovalore|autovalore]]
+>Sia $f:V\to V$ una ***isometria*** e $\lambda$ un suo [[../Applicazioni/9 - Matrici Diagonali#Autovettore e Autovalore|autovalore]]
 >Se $\lambda\in\mathbb{R}$
 ><u>Allora</u>
 >$\lambda=1$ o $\lambda=-1$

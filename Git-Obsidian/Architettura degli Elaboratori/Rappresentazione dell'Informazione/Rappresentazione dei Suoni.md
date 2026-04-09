@@ -25,7 +25,7 @@ g(x) = floor(4sin(x))
 ```
 
 
-![[SamplingQuantification.png]]
+![[attachements/SamplingQuantification.png]]
 ### Campionamento
 >[!tip] Definizione
 >Il ***campionamento*** (*sampling*) è il processo che consente una riduzione di un ***segnale continuo*** nel tempo per ottenere un ***segnale discreto*** 
@@ -37,7 +37,7 @@ Per digitalizzare un segnale il più simile a quello originale si cerca di campi
 - Circa il doppio dei $22\ KHz$ che rappresentano la banda udibile dall'uomo
 ### Quantizzazione
 >[!tip] Definizione
->La ***quantizzazione*** in matematica e nel *digital sound processing* è il processo di *costrizione di un input* da un insieme di valori **continuo** o molto grande (come i [[Insiemi Numerici#Numeri Reali|numeri reali]]) a un insieme **discreto** di valori.
+>La ***quantizzazione*** in matematica e nel *digital sound processing* è il processo di *costrizione di un input* da un insieme di valori **continuo** o molto grande (come i [[../../Analisi/Insiemi/Insiemi Numerici#Numeri Reali|numeri reali]]) a un insieme **discreto** di valori.
 
 Per digitalizzare un segnale il più fedele possibile a quello originale ci vuole un minimo di:
 - `16 BIT` per canale (Stereo $=$ 2 Canali)

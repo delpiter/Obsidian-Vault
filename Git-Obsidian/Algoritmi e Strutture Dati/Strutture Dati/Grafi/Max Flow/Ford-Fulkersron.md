@@ -1,7 +1,7 @@
 ## Algoritmo di Ford-Fulkerson
 ---
 >[!info] Algoritmo
->L'algoritmo di ***Ford-Fulkerson*** è un [[Gli Algoritmi Greedy|algoritmo greedy]] che risolve il problema dei [[Problema|flussi massimi]]
+>L'algoritmo di ***Ford-Fulkerson*** è un [[../../../Greedy/Gli Algoritmi Greedy|algoritmo greedy]] che risolve il problema dei [[Problema|flussi massimi]]
 >>[!example] Funzionamento
 >>1. *Set* $f(u,v)=0\qquad \forall (u,v)\in A$
 >>2. Trova un ***cammino aumentante*** $P$ nel grafo residuo $G_{f}$
@@ -50,8 +50,8 @@
 	\end{algorithm}
 ```
 #### Esempio
-![[Ford-Fulkerson1.png]]
-![[Ford-Fulkerson2.png]]
+![[attachements/Ford-Fulkerson1.png]]
+![[attachements/Ford-Fulkerson2.png]]
 
 ### Complessità
 >[!tldr] Se ogni capacità è intera
@@ -65,6 +65,6 @@
 #### Inefficienza
 >*Senza alcun criterio per la scelta del cammino aumentante si potrebbero avere delle situazioni sgradevoli*
 
-![[Revisited.png]]
+![[attachements/Revisited.png]]
 - *$+1.000.000$ di iterazioni per un grafo di 4 vertici!*
 

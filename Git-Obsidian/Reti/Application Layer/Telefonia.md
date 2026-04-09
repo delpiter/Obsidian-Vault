@@ -1,6 +1,6 @@
 ## VoIP
 ---
->[!info] Voice over [[Protocollo IP|IP]]
+>[[../Network Layer/Protocollo IP|!info]]
 >Il protocollo ***VoIP*** è un protocollo di telefonia *digitale* su rete **IP**.
 
 >Rispetto alla telefonia tradizionale:
@@ -13,7 +13,7 @@ Per funzionare il protocollo richiede:
 - *Terminale* e *segnalazione* connessi a rete **IP**.
 - Rete **IP** per il trasporto.
 
-![[VoIP.png]]
+![[attachements/VoIP.png]]
 
 >[!abstract] IP Trunking
 >L'**IP trunking** è una tecnologia **IP** basata su collegamenti della rete di trasporto, usata per trasmettere suoni (*voce*) su una *rete* **IP** piuttosto che una rete dedicata alla telefonia.
@@ -44,11 +44,11 @@ Per funzionare il protocollo richiede:
 #### Session Initiation Protocol
 > Il ***SIP*** è un protocollo di segnalazione progettato per *inizializzare*, *modificare* e *terminare* sessioni multimediali interattive.
 
->[!quote] Protocollo testuale simile all'[[HTTP]]
+>[[HTTP|!quote]]
 
 ##### Componenti Principali
 
-![[SIP.png|500]]
+![[attachements/SIP.png|500]]
 
 >[!help] User Agent
 
@@ -75,18 +75,18 @@ Per funzionare il protocollo richiede:
 >
 >>[!hint] I messaggi sono correlati tra di loro tramite un **ID**
 
-![[StatefulSIP.png]]
+![[attachements/StatefulSIP.png]]
 
 >[!abstract] Dialogo
 >Il dialogo si compone di ***diverse transazioni***.
 
-![[Dialog.png|400]]
+![[attachements/Dialog.png|400]]
 
 >[!caso particolare]
 >Le transaction "**INVITE**" richiedono un ***three way handshake***.
 
 ##### Indirizzamento in SIP
-> Gli *indirizzamenti* in **SIP** seguono lo schema base per gli [[Indirizzamento#In Internet|URI]].
+> Gli *indirizzamenti* in **SIP** seguono lo schema base per gli [[../Introduzione/Indirizzamento#In Internet|URI]].
 
 >[!info] Ruoli del SIP URI
 >Definire nominalmente un utente (***naming***)
@@ -166,7 +166,7 @@ packet-beta
 >1. *Method*
 >	- `INVITE`, `ACK`, `BYE`, `CANCEL`, ...
 >
->2. [[Indirizzamento#In Internet|URI]].
+>2. [[../Introduzione/Indirizzamento#In Internet|URI]].
 >
 >3. Versione `SIP`.
 
@@ -254,7 +254,7 @@ packet-beta
 
 ### Call Flow
 
-![[CallFlow.png]]
+![[attachements/CallFlow.png]]
 
 > ***Fasi Principali***
 - Il *Proxy Server* elabora l'`INVITE` e coinvolge l'***UAS***
@@ -262,7 +262,7 @@ packet-beta
 
 >[!Help] User Registration
 >Il client invia `REGISTER` al *server*.
->Il "*Registrar*" salva le informazioni di **registrazione** in un [[Git-Obsidian/DataBase/Introduzione|Database]].
+>Il "*Registrar*" salva le informazioni di **registrazione** in un [[../../DataBase/Introduzione|Database]].
 
 >[!abstract] User Location
 >Il ***SIP*** *server* chiede al **Location** server dove trovare il chiamato.
@@ -278,7 +278,7 @@ Originariamente formulata per ***3GPP Rel-5***.
 
 >[!tip] Architettura
 
-![[IPMultimediaSubSystem.png|500]]
+![[attachements/IPMultimediaSubSystem.png|500]]
 
 ##### VoLTE Terminal
 >[!info] ISIM

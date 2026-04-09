@@ -1,10 +1,10 @@
 >[!info]
->Il ***modello a spirale*** è un modello *incrementale* e *iterativo* di [[Produzione|produzione del software]].
+>Il ***modello a spirale*** è un modello *incrementale* e *iterativo* di [[../Produzione|produzione del software]].
 >Consiste nel far crescere in modo incrementale il grado di definizione e implementazione del sistema.
 
-***Riduce il livello di rischio*** producendo un insieme di [[Definizioni_Ingegneria-del-Software#Milestone|milestone]] per garantire la fattibilità delle soluzioni intraprese.
+***Riduce il livello di rischio*** producendo un insieme di [[../../../Definizioni/Definizioni_Ingegneria-del-Software#Milestone|milestone]] per garantire la fattibilità delle soluzioni intraprese.
 
-![[spiral_model.png]]
+![[attachements/spiral_model.png]]
 
 > 1. ***Liaiason***
 - Colloquio tra cliente e team di sviluppo.
@@ -27,7 +27,7 @@
 ## Model Driven Development
 ---
 >[!tldr] Idea
->Il `MDD` è un tipo di sviluppo in cui si creano [[UML|modelli formali]] del software che vengono poi fatti evolvere mentre il sistema viene progettato e implementato.
+>Il `MDD` è un tipo di sviluppo in cui si creano [[../../UML/UML|modelli formali]] del software che vengono poi fatti evolvere mentre il sistema viene progettato e implementato.
 
 I modelli diventano la ***guida del processo di sviluppo***.
 - Prevede la ***generazione automatica*** del codice e dei test case a *partire dai modelli*.

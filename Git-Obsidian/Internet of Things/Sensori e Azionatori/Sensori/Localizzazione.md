@@ -6,7 +6,7 @@
 I satelliti inviano ai ricevitori `GPS` informazioni come ***coordinate*** e tempo in qualunque punto nella terra.
 - Per ricevere l'informazione $4$ satelliti ***devono essere visibili***.
 
-L'[[Sensori e Azionatori#Accuratezza|accuratezza]] è di *qualche metro*.
+L'[[../Sensori e Azionatori#Accuratezza|accuratezza]] è di *qualche metro*.
 > Dipende da:
 - Condizioni meteo.
 - Disponibilità dei satelliti.
@@ -21,7 +21,7 @@ I `GPS` si basano sul concetto di ***trilaterazione***.
 ## Localizzazione Locale
 ---
 >[!help] RFID
->Piccoli [[Sensori e Azionatori#Sensori|sensori]] (***tag***) che contengono dei *dati leggibili a distanza* (qualche centimetro) dal lettore.
+>Piccoli [[../Sensori e Azionatori#Sensori|sensori]] (***tag***) che contengono dei *dati leggibili a distanza* (qualche centimetro) dal lettore.
 
 >[!abstract] NFC
 >Simile all'**RFID** ma con funzionamento a *distanze molto ravvicinate*.

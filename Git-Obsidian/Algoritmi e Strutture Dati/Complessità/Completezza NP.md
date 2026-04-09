@@ -29,11 +29,11 @@ Un algoritmo risolve un problema in tempo $O(T(n))$ se
 #### Esempi
 >[!tip] Problema del sottografo Completo
 
-Dati un [[I Grafi|grafo]] $G$ e un intero $n$, stabilire se il grafo $G$ contiene un sottografo completo con $n$ vertici
+Dati un [[../Strutture Dati/Grafi/I Grafi|grafo]] $G$ e un intero $n$, stabilire se il grafo $G$ contiene un sottografo completo con $n$ vertici
 
 >[!tip] Problema del cammino hamiltoniano
 
-Dato un [[I Grafi|grafo]] $G$ stabilire se esiste un cammino che tocchi tutti i vertici di $G$ una e una sola volta
+Dato un [[../Strutture Dati/Grafi/I Grafi|grafo]] $G$ stabilire se esiste un cammino che tocchi tutti i vertici di $G$ una e una sola volta
 
 >[!tip] Problema del cammino euleriano
 
@@ -43,17 +43,17 @@ Dato un grafo $G$ stabilire se esiste un cammino che percorra tutti gli archi di
 
 ^969e0e
 
-Data una [[Definizioni_Algoritmi#Conjunctive Normal Form|CNF]] $F$ stabilire se $F$ è ***soddisfacibile*** (***SAT***-*isfiability*):
+Data una [[../../Definizioni/Definizioni_Algoritmi#Conjunctive Normal Form|CNF]] $F$ stabilire se $F$ è ***soddisfacibile*** (***SAT***-*isfiability*):
 - Cioè, se esiste un assegnamento di valori $0$ e $1$ alle variabili in $F$ tale per cui il valore di $F$ per quell'assegnamento è $1$
 
 >[!tip] Problema $k$-SAT
 
-Data una [[Definizioni_Algoritmi#K-CNF|k-CNF]] $F$ stabilire se $F$ è ***soddisfacibile***
+Data una [[../../Definizioni/Definizioni_Algoritmi#K-CNF|k-CNF]] $F$ stabilire se $F$ è ***soddisfacibile***
 
 #### Problemi di Ottimizzazione
 >*Spesso il problema non richiede di rispondere si o no ma di trovare il massimo o il minimo di una funzione*
 
-Questi sono [[Definizioni_Algoritmi#Problema di Ottimizzazione|Problemi di Ottimizzazione]]
+Questi sono [[../../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|Problemi di Ottimizzazione]]
 - Sono comunque ***riconducibili a problemi decisionali***
 
 >[!caution] Riduzione
@@ -69,7 +69,7 @@ Questi sono [[Definizioni_Algoritmi#Problema di Ottimizzazione|Problemi di Ottim
 >>[!done] Notazione
 >>$g\leq_{p} f$
 
-![[Reduction.png]]
+![[attachements/Reduction.png]]
 
 ### Riduzione: Metodologia
 >*Riducendo a $Q$ un qualunque problema $P'$ noto essere in $NPC$, implicitamente si riducono a $Q$ tutti i problemi in $NP$*

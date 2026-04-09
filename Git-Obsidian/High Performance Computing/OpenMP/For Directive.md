@@ -26,7 +26,7 @@ La variabile `index` ***deve*** essere una *variabile intera* (**non** può esse
 - La variabile `index` può essere ***solo modificata*** dall'espressione di incremento.
 
 ### Transposition Sort Example
-> Il transposition sort è una variante del bubble [[Problema dell'Ordinamento|sort]].
+> Il transposition sort è una variante del bubble [[../../Algoritmi e Strutture Dati/Ordinamento/Problema dell'Ordinamento|sort]].
 
 >[!tldr] Idea
 >Consiste nel *confrontare* tutte le coppie (***pari-dispari***) di elementi adiacenti, e scambiarli se nell'ordine sbagliato.

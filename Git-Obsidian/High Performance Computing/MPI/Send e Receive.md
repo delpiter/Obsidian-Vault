@@ -30,11 +30,11 @@ int MPI_Send(const void *buf, int count, MPI_Datatype datatype,
 - Indica il [[MPI#Concetti di Base|communicator]] del messaggio.
 
 >[!attention] Nota bene
-> Non è la classica [[14 - Message Passing#Tassonomia|send bloccante]], il processo si sblocca quando il sottosistema `MPI` del nodo locale *prende in carico il messaggio*.
+> Non è la classica [[../../Sistemi Operativi/Teoria/14 - Message Passing#Tassonomia|send bloccante]], il processo si sblocca quando il sottosistema `MPI` del nodo locale *prende in carico il messaggio*.
 >>[!danger] **NON** quando il messaggio è arrivato al destinatario.
 
 >[!bug] Attenzione
->Utilizzando `send` e `receive` ***bloccanti*** è possibile che accada un [[9 - Condivisione di Risorse#Deadlock|deadlock]].
+>Utilizzando `send` e `receive` ***bloccanti*** è possibile che accada un [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]].
 
 Per evitare i ***deadlock*** si può:
 - Riordinare le *operazioni*.
@@ -52,7 +52,7 @@ int MPI_Isend(const void *buf, int count, MPI_Datatype datatype,
 >[!abstract] Parametri
 
 I parametri sono gli stessi della `send` bloccante, a meno del parametro `{c} MPI_Request *request`.
-- Parametro che permette di esaminare lo **stato delle operazioni** ([[Interfacciamento di Periferiche#Polling|polling]]) tramite delle funzioni.
+- Parametro che permette di esaminare lo **stato delle operazioni** ([[../../Architettura degli Elaboratori/Architettura del Calcolatore/Interfacciamento di Periferiche#Polling|polling]]) tramite delle funzioni.
 #### Controllo dello Stato
 ```c title:Test
 int MPI_Test(MPI_Request *request, int *flag, MPI_Status *status);
@@ -62,7 +62,7 @@ int MPI_Test(MPI_Request *request, int *flag, MPI_Status *status);
 - L'intero `flag` indica se l'operazione è completata o no (`1` = **completata**).
 - Per il controllo di multiple operazioni, si possono usare `{c} MPI_Testany()`, `{c} MPI_Testall()` e `{c} MPI_Testsome()`.
 - Serve per fare ***polling***.
-- Vedi il [[Comandi#^617056|manuale]] per i dettagli.
+- Vedi il [[../../Sistemi Operativi/Bash/Comandi#^617056|manuale]] per i dettagli.
 
 ```c title:Wait
 int MPI_Wait(MPI_Request *request, MPI_Status *status);
@@ -120,7 +120,7 @@ int MPI_Irecv(void *buf, int count, MPI_Datatype datatype,
 >[!abstract] Parametri
 
 I parametri sono gli stessi della `receive` bloccante, a meno del parametro `{c} MPI_Request *request`.
-- Parametro che permette di esaminare lo **stato delle operazioni** ([[Interfacciamento di Periferiche#Polling|polling]]).
+- Parametro che permette di esaminare lo **stato delle operazioni** ([[../../Architettura degli Elaboratori/Architettura del Calcolatore/Interfacciamento di Periferiche#Polling|polling]]).
 
 ## Abortire L'operazione
 ---
@@ -146,7 +146,7 @@ int MPI_Sendrecv(const void *sendbuf, int sendcount,
 
 >[!info]
 >Esegue una ***send e una receive bloccanti*** in una singola chiamata.
->- `MPI` [[7 - Scheduler|schedula]] la comunicazione in modo che non possa verificarsi il [[9 - Condivisione di Risorse#Deadlock|deadlock]].
+>- `MPI` [[../../Sistemi Operativi/Teoria/7 - Scheduler|schedula]] la comunicazione in modo che non possa verificarsi il [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]].
 
 >[!abstract] Parametri
 

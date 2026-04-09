@@ -12,7 +12,7 @@
 
 Ciascun ***utente*** appartiene ad ***uno o più gruppi***
 
-Ciascun ***file*** e ***directory*** del [[1 - Concetti Preliminali#File System|file system]] appartiene ad un ***utente***, detto *proprietario* del file ("***owner***")
+Ciascun ***file*** e ***directory*** del [[../Teoria/1 - Concetti Preliminali#File System|file system]] appartiene ad un ***utente***, detto *proprietario* del file ("***owner***")
 - Normalmente è l'utente che ha creato il ***file/directory***
 
 Ciascun ***file*** e ***directory*** è associata ad un ***gruppo***

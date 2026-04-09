@@ -4,7 +4,7 @@
 >Un ***autonomous system*** è un insieme di router gestiti da un'unica amministrazione che usa un solo protocollo i routing e una logica per definire le metriche.
 >
 >>[!definizione] Definizione Moderna [RFC 1930](https://www.rfc-editor.org/rfc/rfc1930.html)
->>Un `AS` è un insieme di [[Protocollo IP#Semantica dell'Indirizzo|prefissi di rete]] `IP`, definite secondo la logica [[Reti IP#CIDR|CIDR]].
+>>Un `AS` è un insieme di [[../Protocollo IP#Semantica dell'Indirizzo|prefissi di rete]] `IP`, definite secondo la logica [[../Reti IP#CIDR|CIDR]].
 >> - Un `AS` può avere uno o più enti gestori che utilizzano una o più tecnologie.
 
 È una area di [[Routing]] in un sistema di *routing gerarchico*.
@@ -18,14 +18,14 @@ Gli `AS` decidono autonomamente i ***protocolli*** e le ***politiche di routing*
 
 Gli `AS` non sono vincolati ad aree geografiche.
 - ***Internet Region***: Porzione di internet contenuta in una area geografica.
-	- Una *internet region* può essere servita da più [[Enti Importanti#Internet Service Provider|ISP]] un `ISP` può servire più `IR`.
+	- Una *internet region* può essere servita da più [[../../Standards/Enti Importanti#Internet Service Provider|ISP]] un `ISP` può servire più `IR`.
 
 >[!tldr] Concetto
 >I ***routing gerarchico*** è l'identificazione di sottoinsiemi di rete *autonomi per l'instradamento* e di *punti di contatto fra sotto sistemi*.
 ### Routing a  livello Globale
-> Tipologie di [[I Grafi|grafo]]:
+> Tipologie di [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi|grafo]]:
 
-- [[Topologie di Rete|Topologia]] dei sottoinsiemi della rete (*grafi di dettaglio*).
+- [[../../Introduzione/Topologie di Rete|Topologia]] dei sottoinsiemi della rete (*grafi di dettaglio*).
 - Topologie dei sottoinsiemi interconnessi (*grafo semplificato*).
 >[!hint] A ciascun livello non si ha conoscenza dell'altro
 
@@ -40,14 +40,14 @@ Gli `AS` non sono vincolati ad aree geografiche.
 #### Interior Gateway Protocol
 >[!abstract] RIP
 >Il ***Routing Information Protocol*** è la vecchia implementazione del [[Con Routing Table#Routing Distance Vector|distance vector]].
->È un protocollo di livello application che utilizza l'[[UDP]].
+>È un protocollo di livello application che utilizza l'[[../../Transport Layer/UDP]].
 
 Utilizza ***due tipologie di messaggi***:
 - `REQUEST`: Per chiedere esplicitamente informazioni ai nodi vicini.
 - `RESPONSE`: Per inviare informazioni di routing (*distance vector*).
 	- Inviato periodicamente, come risposta ad una richiesta o a seguito di un cambiamento (*triggered update*).
 
-I messaggi `RIP` sono trasportati da [[UDP]] e usano la [[Livello di Trasporto#Numero di Porta|porta]] $520$.
+I messaggi `RIP` sono trasportati da [[../../Transport Layer/UDP]] e usano la [[../../Transport Layer/Livello di Trasporto#Numero di Porta|porta]] $520$.
 
 Il `RIP` usa una tabella di routing con:
 - ***Indirizzo*** di destinazione.
@@ -60,7 +60,7 @@ Il `RIP` usa una tabella di routing con:
 La tabella viene aggiornata alla ricezione di ciascuna `RESPONSE`.
 
 >[!fail] Problemi
-- Non supporta [[Reti IP#CIDR|CIDR]].
+- Non supporta [[../Reti IP#CIDR|CIDR]].
 - Protocollo insicuro.
 
 >[!failure] RIP versione 2
@@ -125,7 +125,7 @@ Protocollo simile al [[Con Routing Table#Routing Distance Vector|distance vector
 >[!missing] Limitazioni
 
 - Progettato per una ***topologia specifica*** (Una dorsale con vari domini connessi ad un solo router: `ARPAnet`).
-- Funziona per una [[Topologie di Rete|topologia ad albero]].
+- Funziona per una [[../../Introduzione/Topologie di Rete|topologia ad albero]].
 	-  Fatica in **presenza di cicli**.
 - Non si adatta velocemente alle modifiche.
 - Poca sicurezza.
@@ -134,7 +134,7 @@ Protocollo simile al [[Con Routing Table#Routing Distance Vector|distance vector
 > Sostituto di `EGP`
 
 >[!info] [RFC 1771](https://www.rfc-editor.org/rfc/rfc1771.html)
->I router scambiano informazioni tramite connessioni [[TCP]] (porta $179$) chiamate ***sessioni*** `BGP`.
+>I router scambiano informazioni tramite connessioni [[../../Transport Layer/TCP]] (porta $179$) chiamate ***sessioni*** `BGP`.
 
 >[!example] Tipologie di Sessioni
 

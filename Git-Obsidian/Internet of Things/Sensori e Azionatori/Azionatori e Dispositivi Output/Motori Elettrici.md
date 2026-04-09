@@ -9,7 +9,7 @@ Ogni motore ha due parti principali:
 
 >[!caution] Funzionamento
 
-I due componenti generano un [[Magnetismo#Campo Magnetico e Quantità di Moto|campo magnetico]] che causa il ***movimento del rotore***.
+I due componenti generano un [[../../../Fisica/Elettromagnetismo/Magnetismo#Campo Magnetico e Quantità di Moto|campo magnetico]] che causa il ***movimento del rotore***.
 
 > Tipologie di Motori Elettrici
 - ***Direct Current Motors***.
@@ -18,7 +18,7 @@ I due componenti generano un [[Magnetismo#Campo Magnetico e Quantità di Moto|ca
 		- Movimento di $360^{\circ}$
 		- Alta velocità
 		- Controllo di velocità angolare
-	- [[Campo Magnetico e Correnti Elettriche#Spira percorsa da Corrente|Funzionamento]].
+	- [[../../../Fisica/Elettromagnetismo/Campo Magnetico e Correnti Elettriche#Spira percorsa da Corrente|Funzionamento]].
 - ***Stepper Motors***.
 	- Motore "*senza spazzole*" dove la rotazione è divisa in un **grande numero di step**. 
 - ***Servo Motors***.
@@ -33,4 +33,4 @@ Il controllo è fatto inviando un ***flusso di impulsi digitali*** ad una freque
 - La durata del pulso determina l'***angolo di rotazione***.
 	- Tipicamente vanno da $1ms$ ($-90^{\circ}$) a $2ms$ ($90^{\circ}$).
 	- Più è largo l'impulso più è largo l'angolo di movimento
-	- In [[Sensori e Azionatori#Caratteristiche Statiche|scala lineare]].
+	- In [[../Sensori e Azionatori#Caratteristiche Statiche|scala lineare]].

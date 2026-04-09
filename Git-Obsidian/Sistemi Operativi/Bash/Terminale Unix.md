@@ -16,7 +16,7 @@
 - `../` -> indica la directory padre nel percorso relativo
 
 #### Esempio
-![[Unix-Like_fileSystem.png|450]]
+![[attachements/Unix-Like_fileSystem.png|450]]
 > Supponendo che siamo nella directory: `mthomas`, per andare nella cartella `bin`:
 
 ```bash

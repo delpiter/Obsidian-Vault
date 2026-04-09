@@ -19,10 +19,10 @@
 
 Utilizzando il controllo del valore della funzione nel punto $x_{k}$ come criterio di arresto si possono presentare due situazioni problematiche.
 
-![[RestrictiveCase.png|500]]
+![[attachements/RestrictiveCase.png|500]]
 - L'iterato $x_{k}$ è **vicino** a $x*$ anche se $|f(x_{k})|$ è *grande*.
 
-![[OptimisticCase.png|500]]
+![[attachements/OptimisticCase.png|500]]
 - Il valore di $x_{k}$ è lontano da $x*$ ma $|f(x_{k})|$ è *piccolo*.
 
 >[!done] Soluzione

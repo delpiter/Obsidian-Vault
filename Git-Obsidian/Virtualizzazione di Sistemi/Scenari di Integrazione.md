@@ -4,7 +4,7 @@
 
 Il ***system integrator*** è la figura che si occupa di progettare e realizzare sistemi complessi, costituiti da multipli componenti che *interagiscono con la rete*.
 - Necessita di competenze che spaziano in **molti ambiti dell'informatica**.
-	- [[ISO-OSI|Protocolli di rete]], sicurezza nei sistemi di rete, [[Linguaggi|programmazione]], ***virtualizzazione***, etc...
+	- [[../Reti/Standards/ISO-OSI|Protocolli di rete]], sicurezza nei sistemi di rete, [[../Programmazione/Introduzione Programmazione/Linguaggi|programmazione]], ***virtualizzazione***, etc...
 
 ## L'integrazione nel mondo dell'Automazione
 ---
@@ -12,9 +12,9 @@ Il ***system integrator*** è la figura che si occupa di progettare e realizzare
 >L'integrazione con il resto del mondo concerne spesso l'***esportazione real-time di dati*** di sensori della macchina, su cui si opera con vari sistemi.
 
 L'integrazione richiede la conoscenza di protocolli di comunicazione specifici per l'ambiente dell'automazione ed i meccanismi di sicurezza.
-- Protocolli STUN e TURN cercano di capire se c'è modo di istanziare una comunicazione attraverso il [[Network Address Translation|NAT]].
+- Protocolli STUN e TURN cercano di capire se c'è modo di istanziare una comunicazione attraverso il [[../Reti/Network Layer/Network Security/Network Address Translation|NAT]].
 
-![[IntegrationOfRealSystems.png]]
+![[attachements/IntegrationOfRealSystems.png]]
 
 ## Sistemi a Micro-Servizi
 ---
@@ -25,19 +25,19 @@ Se un sistema monolitico aveva bisogno di due librerie (possibilmente in conflit
 - I ***componenti sono detti micro-servizi***.
 - Possono essere in esecuzione su uno stesso host o su *macchine diverse*.
 
-![[MicroServices.png]]
+![[attachements/MicroServices.png]]
 
 >[!example] Esempi di micro-servizi
-- *Macchine virtuali* con [[3 - Livelli del Sistema Operativo#Introduzione|Sistema Operativo]] a scelta.
+- *Macchine virtuali* con [[../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|Sistema Operativo]] a scelta.
 - *Disco virtuale* accedibile dalle macchine virtuali.
 - *Archive Storage*, per archiviazione a basso costo per accessi rari.
 - *Distributore di carico web* e istanziatore a runtime di nuove `VM` per sopperire a picchi di carico (**kubernetes**).
-- [[VPN]], [[DNS]].
+- [[../Reti/Data Link Layer/Networks/VPN]], [[../Reti/Application Layer/DNS]].
 - *Multi factor authentication*.
 - etc...
 
 > Esempio reale:
-- Il server web [[Architettura del Web#Web Solution Stack|Apache]] è solitamente creato come micro-servizio.
+- Il server web [[../Tecnologie Web/Architettura del Web#Web Solution Stack|Apache]] è solitamente creato come micro-servizio.
 
 >[!question] Perché sviluppare un sistema a micro-servizi
 
@@ -87,7 +87,7 @@ Si richiede di:
 	- Canali wireless.
 	- Comunicazioni Applicative.
 - Autenticazione delle entità:
-	- [[Crittografia|Certificati]].
+	- [[../Reti/Crittografia|Certificati]].
 - Autenticazione degli Utenti:
 	- Autenticazione **multi-fattore**.
 
@@ -101,7 +101,7 @@ Si richiede di:
 >Un computer si trova nello stesso dominio se nel file system del `OS` sono presenti le chiavi di cifratura univoche mediante le quali il `PC` riesce a comunicare con il server del ***Directory Service***.
 >- L'aggiunta di un `PC` si dice **Join**.
 - Quale **sistema operativo** opera sul computer.
-- Se le applicazioni sono **base web** o *no*. (Nel caso web esistono [[HTTP#Cookie|cookie e sessioni]]).
+- Se le applicazioni sono **base web** o *no*. (Nel caso web esistono [[../Reti/Application Layer/HTTP#Cookie|cookie e sessioni]]).
 >[!help] Approccio RESTful
 >Ogni richiesta ad un server ***non fa affidamento*** ad uno stato di una comunicazione precedente.
 >- Il *server non mantiene traccia* dello stato, l'utente deve mandare ***tutte le informazioni necessarie*** per fruire il servizio. ^8d35e7
@@ -127,7 +127,7 @@ Composto da due server:
 >
 
 
-![[Shibboleth.png]]
+![[attachements/Shibboleth.png]]
 
 > 3 Casi:
 - Il ***server esegue le operazioni*** e ritorna solo informazioni da visualizzare (classico paradigma client-server per applicazioni web).

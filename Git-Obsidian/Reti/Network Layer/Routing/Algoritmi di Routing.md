@@ -6,7 +6,7 @@
 >Un ***algoritmo di instradamento*** è una metodologia di scelta del ***next hop***.
 
 > Ha obbiettivi di *ottimalità*:
-- **Semplicità**: In termini di [[Complessità di Algoritmi|complessità computazionale]].
+- **Semplicità**: In termini di [[../../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità computazionale]].
 - **Robustezza**.
 - **Stabilità**.
 - **Efficienza**.

@@ -1,7 +1,7 @@
 > Consideriamo il **moto** dei portatori di carica nei [[Conduttori]].
 
 >[!info] Intensità di Corrente Elettrica
->Se mantengo un $\Delta V$ ho un campo $\vec{E}\neq 0$, ciò vuol dire che le [[Elettromagnetismo#Cariche Elettriche|cariche]] si muovono.
+>Se mantengo un $\Delta V$ ho un campo $\vec{E}\neq 0$, ciò vuol dire che le [[../Elettromagnetismo#Cariche Elettriche|cariche]] si muovono.
 >Chiamiamo questo "*movimento*" ***corrente elettrica***.
 >Consideriamo una sezione di area $S$ di un conduttore.
 >- Attraverso $S$ passa carica $\text{d}Q$ in un tempo $\text{d}t$
@@ -35,7 +35,7 @@ Se abbiamo $n=\displaystyle{\frac{\text{d}N}{\text{d}V}}$ ***densità volumetric
 >Ho "$\text{d}N$" cariche $q$ in ogni pezzo di volume $\text{d}V$.
 
 $\text{d}l=v_{d}\text{d}t$ è la distanza percorsa per ***unità di tempo***.
-- [[Moto Rettilineo|Moto]] di una particella a $v$ costante.
+- [[../../Cinematica/Moto Rettilineo|Moto]] di una particella a $v$ costante.
 
 $S\text{d}l=\text{d}V$ quindi $\text{d}N=nS\text{d}l$ è il ***numero di cariche*** che attraversano $S$ in un tempo $\text{d}t$.
 

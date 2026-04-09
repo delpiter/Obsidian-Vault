@@ -1,7 +1,7 @@
 ## Label Switching
 ---
 >[!definizione]
->Il ***label switching*** consiste nella scomposizione della [[Routing|funzione di instradamento]] in due componenti: *controllo* e *trasferimento*.
+>Il ***label switching*** consiste nella scomposizione della [[Routing/Routing|funzione di instradamento]] in due componenti: *controllo* e *trasferimento*.
 
 > ***Controllo***
 - La componente di controllo si basa su *protocolli di rete convenzionali* e meccanismi di associazione delle etichette.
@@ -10,11 +10,11 @@
 - La componente di trasferimento si basa su *hardware veloce* e *identificazione* basata su etichette dei flussi informativi.
 
 >[!done] Vantaggi
-- Mantenimento dei protocolli di routing [[Protocollo IP|IP]] standard ([[Open Shortest Path First|OSPF]], [[Routing Globale#Border Gateway Protocol|BGP]]).
+- Mantenimento dei protocolli di routing [[Protocollo IP|IP]] standard ([[Routing/Open Shortest Path First|OSPF]], [[Routing/Routing Globale#Border Gateway Protocol|BGP]]).
 - Trasferimento veloce dei pacchetti.
 
 ### Modalità di Trasferimento
-> Si adotta un modo di trasferimento con [[Comunicazione#Commutazione|commutazione]] orientata alla connessione.
+> Si adotta un modo di trasferimento con [[../Introduzione/Comunicazione#Commutazione|commutazione]] orientata alla connessione.
 
 >[!tldr] Idea
 >La **commutazione** si basa sul riconoscimento di un'***etichetta*** (*label*) associata al [[Protocollo IP#Datagram|datagram]].
@@ -35,17 +35,17 @@ La label è trasportata dal pacchetto usando parte dell'***header di livello 2**
 
 ## Multi Protocol Label Switching
 ---
-> Protocollo definito dall'[[Enti Importanti#Internet Engineering Task Force|IETF]] per implementare il label switching.
+> Protocollo definito dall'[[../Standards/Enti Importanti#Internet Engineering Task Force|IETF]] per implementare il label switching.
 
 La label viene usata sia per il ***trasferimento*** sia per la ***gestione delle risorse***.
 
 >[!cite] [RFC3031](https://www.rfc-editor.org/rfc/rfc3031.html) [RFC3032](https://www.rfc-editor.org/rfc/rfc3032.html)
->L'`MPLS` è stato concepito per poter trasferire *flussi di unità informative* in una rete a [[Comunicazione#Commutazione|commutazione di pacchetto]] ***garantendo parametri di qualità di servizio analoghi a quelli di reti a commutazione di circuito***.
+>L'`MPLS` è stato concepito per poter trasferire *flussi di unità informative* in una rete a [[../Introduzione/Comunicazione#Commutazione|commutazione di pacchetto]] ***garantendo parametri di qualità di servizio analoghi a quelli di reti a commutazione di circuito***.
 
 Ciò si realizza rendendo possibile l’***individuazione di percorsi attraverso la rete IP*** (percorsi `MPLS` o *Label-Switched Path* `LSP`).
 - Nei percorsi vengono trasferiti tutti i *datagram* di un **dato flusso** ingresso-uscita.
 - L’inoltro lungo il percorso è reso possibile dalla definizione di ***etichette*** (*label*)
-	- Usate per identificare lo specifico **circuito virtuale** su un collegamento fisico tra [[Routing#Router|router]].
+	- Usate per identificare lo specifico **circuito virtuale** su un collegamento fisico tra [[Routing/Routing#Router|router]].
 
 >[!tldr] Idea del Funzionamento
 
@@ -76,7 +76,7 @@ L'`LSP` è definito dal percorso attraverso uno o più `LSR` seguito dai pacchet
 >[!concept] Posizionamento delle Label
 >È *trasportata assieme al pacchetto*, inserita tra l'intestazione del **protocollo di linea** e l'intestazione del **protocollo di rete**.
 
-![[MPLS.png]]
+![[attachements/MPLS.png]]
 
 >[!abstract] Parametri
 
@@ -133,7 +133,7 @@ L'`LSP` è definito dal percorso attraverso uno o più `LSR` seguito dai pacchet
 
 #### Forwarding Equivalence Classes
 >[!info]
->Una `FEC` è un ***gruppo di pacchetti*** che condividono *caratteristiche identiche* (`IP` di destinazione, porte, [[VPN]]) e che quindi vengono **instradati nello stesso modo**, assegnati alla stessa etichetta `MPLS` e inviati lungo lo **stesso percorso** attraverso la rete.
+>Una `FEC` è un ***gruppo di pacchetti*** che condividono *caratteristiche identiche* (`IP` di destinazione, porte, [[../Data Link Layer/Networks/VPN]]) e che quindi vengono **instradati nello stesso modo**, assegnati alla stessa etichetta `MPLS` e inviati lungo lo **stesso percorso** attraverso la rete.
 
 Durante l'instradamento, tradizionalmente si valuta ad ogni "**hop**" il contenuto della `FEC`.
 

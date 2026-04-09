@@ -1,5 +1,5 @@
 >[!info] Sistema Grafico
->Il ***sistema grafico*** è l'insieme di *dispositivi hardware*, e *programmi software* che concorrono alla creazione, manipolazione e visualizzazione di [[Git-Obsidian/Computer Graphics/Introduzione|immagini digitali]].
+>Il ***sistema grafico*** è l'insieme di *dispositivi hardware*, e *programmi software* che concorrono alla creazione, manipolazione e visualizzazione di [[Introduzione|immagini digitali]].
 
 I ***dispositivi hardware***:
 - Rappresentano la *potenzialità del sistema grafico*, forniscono la potenza di calcolo e le interfacce necessarie per produrre immagini.
@@ -11,12 +11,12 @@ Il ***software***:
 ### Interazione tra Software e Hardware
 >[!caution] Application Model
 
-È la parte del software che contiene i *dati e le informazioni* necessarie per creare le immagini o [[Git-Obsidian/Computer Graphics/Introduzione#Animazione|animazioni]].
+È la parte del software che contiene i *dati e le informazioni* necessarie per creare le immagini o [[Introduzione#Animazione|animazioni]].
 - Potrebbe essere un modello `3D`, un'immagine, un video, etc...
 
 >[!abstract] Application Program
 
-È il **programma** che utilizza i dati presenti nel [[Git-Obsidian/DataBase/Introduzione#Database|database]] per creare le istruzioni che verranno inviate alla [[Schede Grafiche|scheda grafica]].
+È il **programma** che utilizza i dati presenti nel [[../DataBase/Introduzione#Database|database]] per creare le istruzioni che verranno inviate alla [[../Architettura degli Elaboratori/Architettura del Calcolatore/Schede Grafiche|scheda grafica]].
 
 >[!tl;dr] Graphics Library
 
@@ -32,7 +32,7 @@ Le librerie più comuni sono:
 
 >[!failure] Driver della Scheda Video
 
-Software che permettono al [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] di comunicare con la scheda.
+Software che permettono al [[../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] di comunicare con la scheda.
 - Interpretano l'output delle ***API*** e lo convertono in una forma che è riconoscibile per la scheda.
 
 >[!example] Graphics System
@@ -41,11 +41,11 @@ Software che permettono al [[3 - Livelli del Sistema Operativo#Introduzione|sist
 
 >[!caution] Monitor e Tastiera
 
-[[Le Periferiche|Dispositivi di input/output]] che permettono all'utente di *interagire con il sistema*.
+[[../Architettura degli Elaboratori/Architettura del Calcolatore/Le Periferiche|Dispositivi di input/output]] che permettono all'utente di *interagire con il sistema*.
 
 ### Raster Devices
 >[!definizione]
->Un ***raster device*** è composto da una matrice rettangolare di [[Rappresentazione di Immagini|pixel]].
+>Un ***raster device*** è composto da una matrice rettangolare di [[../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione di Immagini|pixel]].
 
 La ***risoluzione*** di un dispositivo raster misura la densità dei `pixel`:
 - È il numero di pixel su unità di distanza o area (`ppi` - *inch*, `ppc` - *centimeter*)
@@ -69,7 +69,7 @@ $$
 Per riprodurre l'immagine di un *oggetto vettoriale* su un *dispositivo raster*, questo va trasformato in `pixel`.
 - Questa operazione si dice #addLink rasterizzazione (o ***scan conversion***).
 
-Ogni oggetto del disegno viene memorizzato in un [[Git-Obsidian/DataBase/Introduzione#Database|database]] interno di oggetti grafici.
+Ogni oggetto del disegno viene memorizzato in un [[../DataBase/Introduzione#Database|database]] interno di oggetti grafici.
 
 > Gli oggetti si possono **ingrandire**, **rimpicciolire**, **ruotare**, **ridimensionare**, **colorare**, senza nessuna *perdita di qualità*.
 
@@ -88,14 +88,14 @@ L'immagine si può ingrandire solo ***ingrandendo la dimensione del*** `pixel`.
 - Si possono creare effetti sgradevoli (***pixelizzazione***).
 - Operazioni come spostamento o rotazione di aree dell'immagine possono portare a perdite di qualità
 
-![[Raster-Vector.png]]
+![[attachements/Raster-Vector.png]]
 
 #### Raster Scan Display System
 > I sistemi grafici a ***display raster*** consistono in *tre* componenti.
 
->[!hint] [[Schede Grafiche|Scheda Grafica]]
+>[[../Architettura degli Elaboratori/Architettura del Calcolatore/Schede Grafiche|!hint]]
 
->[!caution] [[Schede Grafiche#^985740|GPU]]
+>[[../Architettura degli Elaboratori/Architettura del Calcolatore/Schede Grafiche#^985740|GPU]]
 
 - Un ***microprocessore specializzato*** nel calcolo ad alta velocità di *operazioni grafiche*, come il rendering #addLink di immagini `3D`.
 
@@ -105,7 +105,7 @@ L'immagine si può ingrandire solo ***ingrandendo la dimensione del*** `pixel`.
 - Ogni `pixel` ha una corrispondente posizione nel *Frame Buffer*.
 
 > *Per la visualizzazione*:
-- Un [[Le Periferiche#I Monitor LCD|Monitor]] (*display raster*) connesso alla scheda grafica.
+- Un [[../Architettura degli Elaboratori/Architettura del Calcolatore/Le Periferiche#I Monitor LCD|Monitor]] (*display raster*) connesso alla scheda grafica.
 - Un ***device driver*** che funge da ponte tra il sistema operativo e la scheda grafica.
 
 ##### Generazione dell'Immagine
@@ -138,7 +138,7 @@ Questo processo viene ripetuto circa sessanta volte al secondo (film, video).
 
 Il *principale* tra i buffer
 - Contiene le ***componenti del colore*** per ogni `pixel`.
-- Ogni cella del buffer è divisa in 3 *zone*, per i tre [[Rappresentazione di Immagini#Codifica RGB|colori in sintesi additiva]].
+- Ogni cella del buffer è divisa in 3 *zone*, per i tre [[../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione di Immagini#Codifica RGB|colori in sintesi additiva]].
 
 Il *color buffer* ha $N$ `bit` (o *piani*) per `pixel`.
 - Tipicamente si fa uso di $24$ piani di `bit` per le tre componenti colore e un quarto `byte` per il ***canale alfa***.

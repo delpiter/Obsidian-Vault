@@ -1,4 +1,4 @@
-[[UML]]
+[[../../Ingegneria del Software/UML/UML]]
 ## Analisi Orientata agli Oggetti
 ---
 >[!info] Idea

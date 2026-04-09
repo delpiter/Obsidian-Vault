@@ -1,6 +1,6 @@
 >Scelto un sistema di riferimento con origine nel centro della traiettoria circolare e piano $xy$ nel piano della circonferenza, si avrà
 
-![[MotoCircolare.png|400]]
+![[attachements/MotoCircolare.png|400]]
 
 $$
 \begin{cases}

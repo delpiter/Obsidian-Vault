@@ -490,7 +490,7 @@ $d(k)\neq 0$ Per una ***quantità discreta*** di valori
 
 > 3. $\displaystyle\sum_{k=0}^\infty e^{ -\lambda }\cdot \displaystyle{\frac{\lambda^k}{k!}}=1$? 
 
-- Per la [[Formule di Taylor di Funzioni Elementari|formula di Taylor]]:
+- Per la [[../../Analisi/Taylor/Formule di Taylor di Funzioni Elementari|formula di Taylor]]:
 $e^x=\displaystyle\sum_{k=0}^\infty \frac{x^k}{k!}$
 
 Quindi:

@@ -22,6 +22,6 @@ Negli isolanti **tutti gli elettroni** sono *legati* agli **atomi** e possono su
 
 >Esistono materiali dalle *proprietà intermedie*.
 
-![[Sfere.png]]
+![[attachements/Sfere.png]]
 
-![[Sfere2.png]]
+![[attachements/Sfere2.png]]

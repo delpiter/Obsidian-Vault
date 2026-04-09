@@ -149,7 +149,7 @@ A(v_{1},v_{2})=\begin{pmatrix}
 $$
 
 >[!tldr] Osservazione
->Se $f$ è un ***endomorfismo*** e $v_{1},\dots,v_{n}$ è una [[2 - Campi e Spazi Vettoriali#Base|base]] di $V$ composta da ***autovettori*** 
+>Se $f$ è un ***endomorfismo*** e $v_{1},\dots,v_{n}$ è una [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] di $V$ composta da ***autovettori*** 
 ><u>Allora</u>
 >- $f(v_{1})=\lambda_{1}v_{1}+0v_{2}+\dots+0v_{n}$
 >- $f(v_{2})=0v_{1}+\lambda_{2}v_{2}+\dots+0v_{n}$
@@ -399,7 +399,7 @@ Come abbiamo visto in precedenza:
 ## Autospazio
 ---
 >[!info] Definizione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$, sia $f$ un [[4 - Isomorfismo#Endomorfismo|endomorfismo]] e sia $\lambda_{i}$ un suo autovalore
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}$, sia $f$ un [[4 - Isomorfismo#Endomorfismo|endomorfismo]] e sia $\lambda_{i}$ un suo autovalore
 >L'***autospazio*** relativo a $\lambda_{i}$ è
 >$$V\lambda_{i}=\{ v\in V:f(v)=\lambda_{i}v \}=\{ \text{tutti gli autovettori }\cup\{ \underline{0} \} \}$$
 

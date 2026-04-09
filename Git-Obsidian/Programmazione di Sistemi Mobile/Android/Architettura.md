@@ -1,4 +1,4 @@
-![[Android.png]]
+![[attachements/Android.png]]
 
 ## Linux Kernel
 ---

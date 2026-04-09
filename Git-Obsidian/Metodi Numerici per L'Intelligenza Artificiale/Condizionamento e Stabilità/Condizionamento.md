@@ -11,7 +11,7 @@ Un problema si dice ***ben posto*** se la sua soluzione soddisfa tre condizioni:
 3. ***Dipende*** in modo continuo dai dati del problema
 
 >[!hint] Osservazione
->Se un problema ammette ***una ed una sola soluzione***, la funzione *dato-risultato* è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biettiva]]
+>Se un problema ammette ***una ed una sola soluzione***, la funzione *dato-risultato* è [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca|biettiva]]
 
 ### Condizionamento di un Problema
 >[!info]
@@ -45,7 +45,7 @@ Uno stesso problema può essere *mal condizionato* per certi dati ma **non** per
 
 #### Quantificare il Condizionamento
 >[!cite] Indice di Condizionamento
->Sia $\displaystyle{\frac{\mid\mid f(x)-f(\tilde{x})\mid\mid}{\mid\mid f(x)\mid\mid}}$ la misura dell'[[Errore di Rappresentazione|errore relativo]] sui *risultati* e $\displaystyle{\frac{\mid\mid x -\tilde{x}\mid\mid}{\mid\mid x \mid\mid}}$ la misura dell'errore relativo sui *dati*.
+>Sia $\displaystyle{\frac{\mid\mid f(x)-f(\tilde{x})\mid\mid}{\mid\mid f(x)\mid\mid}}$ la misura dell'[[../Numeri Finiti/Errore di Rappresentazione|errore relativo]] sui *risultati* e $\displaystyle{\frac{\mid\mid x -\tilde{x}\mid\mid}{\mid\mid x \mid\mid}}$ la misura dell'errore relativo sui *dati*.
 >
 >L'***indice di condizionamento*** $K$ mette in relazione i due errori:
 >$$\displaystyle{\frac{\mid\mid f(x)-f(\tilde{x})\mid\mid}{\mid\mid f(x)\mid\mid}}\leq K\cdot\displaystyle{\frac{\mid\mid x -\tilde{x}\mid\mid}{\mid\mid x \mid\mid}}$$

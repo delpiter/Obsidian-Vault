@@ -1,6 +1,6 @@
 ## Operazioni Macchina
 ---
->[!example] Operazioni sui [[Floating Point]]
+>[[Floating Point|!example]]
 >$fl(x)\oplus fl(y)=fl(fl(x)+fl(y))$
 >$fl(x)\ominus fl(y)=fl(fl(x)-fl(y))$
 >$fl(x)\otimes fl(y)=fl(fl(x)\cdot fl(y))$
@@ -15,16 +15,16 @@
 >$y \to fl(y)=y(1+\mathcal{E}_{y})\in F$
 >
 >I due numeri di $F$ vengono quindi ***sommati***, ottenendo:
->$$fl((fl(x))\oplus(fl(y)))=[x(1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})](1+\mathcal{E}_{s})$$
+>$$fl((fl(x))\oplus(fl(y)))=[[1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})](1+\mathcal{E}_{s}|x(1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})]]$$
 >
 >Con:
 >- $\mid\mathcal{E}_{x}\mid,\mid\mathcal{E}_{y}\mid,\mid\mathcal{E}_{s}\mid \leq u$
 
 #### Errore Relativo
->Il risultato finale sarà $[x(1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})](1+\mathcal{E}_{s})$ da confrontare con il vero risultato $x+y$.
+>Il risultato finale sarà $[[1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})](1+\mathcal{E}_{s}|x(1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})]]$ da confrontare con il vero risultato $x+y$.
 
 $$
-Err_{rel_{s}}=\displaystyle{\frac{\mid[x(1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})](1+\mathcal{E}_{s})-(x+y)\mid}{\mid x+y\mid}}=
+Err_{rel_{s}}=\displaystyle{\frac{\mid[[1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})](1+\mathcal{E}_{s}|x(1+\mathcal{E}_{x})+y(1+\mathcal{E}_{y})]]-(x+y)\mid}{\mid x+y\mid}}=
 $$
 $$
 =\displaystyle{\frac{\mid \cancel{ x }+x\mathcal{E}_{s}+x\mathcal{E}_{x}\mathcal{E}_{s}\cancel{ +y }+y\mathcal{E}_{s}+y\mathcal{E}_{y}\mathcal{E}_{s}\cancel{ -(x+y) }\mid}{\mid x+y\mid}}
@@ -56,13 +56,13 @@ Le quantità $\left|\displaystyle{\frac{x}{x+y}}\right|$ e $\left|\displaystyle{
 >$y \to fl(y)=y(1+\mathcal{E}_{y})\in F$
 >
 >I due numeri di $F$ vengono quindi ***sommati***, ottenendo:
->$$fl((fl(x))\otimes(fl(y)))=[x(1+\mathcal{E}_{x})\cdot y(1+\mathcal{E}_{y})](1+\mathcal{E}_{p})$$
+>$$fl((fl(x))\otimes(fl(y)))=[[1+\mathcal{E}_{x})\cdot y(1+\mathcal{E}_{y})](1+\mathcal{E}_{p}|x(1+\mathcal{E}_{x})\cdot y(1+\mathcal{E}_{y})]]$$
 >
 >Con:
 >- $\mid\mathcal{E}_{x}\mid,\mid\mathcal{E}_{y}\mid,\mid\mathcal{E}_{p}\mid \leq u$
 
 #### Errore Relativo
->Il risultato finale sarà $[x(1+\mathcal{E}_{x})\cdot y(1+\mathcal{E}_{y})](1+\mathcal{E}_{p})$ da confrontare con il vero risultato $x\cdot y$.
+>Il risultato finale sarà $[[1+\mathcal{E}_{x})\cdot y(1+\mathcal{E}_{y})](1+\mathcal{E}_{p}|x(1+\mathcal{E}_{x})\cdot y(1+\mathcal{E}_{y})]]$ da confrontare con il vero risultato $x\cdot y$.
 
 $$
 Err_{rel_{p}}=\displaystyle{\frac{\mid xy(1+\mathcal{E}_{x})(1+\mathcal{E}_{y})(1+\mathcal{E}_{p})-xy\mid}{\mid xy\mid}}=

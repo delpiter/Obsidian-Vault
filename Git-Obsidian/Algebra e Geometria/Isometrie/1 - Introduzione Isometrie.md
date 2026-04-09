@@ -1,8 +1,8 @@
 ## Isometria
 ---
 >[!info] Definizione
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$ con un [[4 - Prodotto Scalare#I Prodotti Scalari|prodotto scalare]]
->Una ***Isometria*** è una [[1 - Applicazioni Lineari#Applicazione Lineare|applicazione lineare]]: $f:V\to V$
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su $\mathbb{K}=\mathbb{R}$ con un [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#I Prodotti Scalari|prodotto scalare]]
+>Una ***Isometria*** è una [[../Applicazioni/1 - Applicazioni Lineari#Applicazione Lineare|applicazione lineare]]: $f:V\to V$
 >$$\forall v,u \in V\quad (f(v),f(u))=(v,u)$$
 
 ### Osservazione Significato
@@ -39,7 +39,7 @@ $$
 $$
 
 ##### Esempio
->*Sia $V=\mathbb{R}^2$ con il [[4 - Prodotto Scalare#Prodotto Scalare Standard|prodotto scalare standard]]*
+>*Sia $V=\mathbb{R}^2$ con il [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Prodotto Scalare Standard|prodotto scalare standard]]*
 
 Dato $v=(x,y),\quad f:V\to V \quad f(x,y)=\left( \frac{\sqrt{ 3 }}{2}x+\frac{1}{2}y, -\frac{1}{2}x\frac{\sqrt{ 3 }}{2}y \right)$
 
@@ -59,7 +59,7 @@ Dato $v=(x,y),\quad f:V\to V \quad f(x,y)=\left( \frac{\sqrt{ 3 }}{2}x+\frac{1}{
 
 ### Osservazione Distanza Euclidea
 >[!tldr] Osservazione
->Poiché abbiamo definito la [[4 - Prodotto Scalare#Distanza Euclidea|distanza euclidea]] come $d(P,Q)=\mid\mid\overrightarrow{PQ}\mid\mid$
+>Poiché abbiamo definito la [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Distanza Euclidea|distanza euclidea]] come $d(P,Q)=\mid\mid\overrightarrow{PQ}\mid\mid$
 >La precedente proprietà ci dice che una isometria ***conserva le distanze***
 >>[!info] Proposizione
 >> Se $f$ è una ***isometria***
@@ -67,7 +67,7 @@ Dato $v=(x,y),\quad f:V\to V \quad f(x,y)=\left( \frac{\sqrt{ 3 }}{2}x+\frac{1}{
 >>$f$ ***conserva gli angoli***
 
 #### Dimostrazione
-In effetti [[4 - Prodotto Scalare#Angolo Convesso|l'angolo convesso]] tra $u$ e $v$ è definito come:
+In effetti [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Angolo Convesso|l'angolo convesso]] tra $u$ e $v$ è definito come:
 
 $$arcos\left( \displaystyle{\frac{(v,u)}{\mid\mid v \mid\mid\cdot\mid\mid u\mid\mid}} \right)=arcos \left( \displaystyle{\frac{(f(v),f(u))}{\mid\mid f(v)\mid\mid\cdot\mid\mid f(u)\mid\mid}} \right)  $$
 
@@ -92,7 +92,7 @@ $$
 $$
 
 ### Isomorfismi e Isometrie
->[!question] Che legame c'è tra [[4 - Isomorfismo#Isomorfismo|isomorfismi]] e ***isometrie***?
+>[[../Applicazioni/4 - Isomorfismo#Isomorfismo|isomorfismi]] e ***isometrie***?
 
 >[!Teorema]
 >Ogni ***isometria*** è un ***isomorfismo***
@@ -102,7 +102,7 @@ $$
 
 >[!abstract] Mostriamo che $f$ è iniettiva
 
-Poiché un prodotto scalare è [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definito positivo]]:
+Poiché un prodotto scalare è [[../Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche#Tipi di Forme Quadratiche|definito positivo]]:
 $$
 \mid\mid v \mid\mid = 0 \iff v = \underline{0}
 $$
@@ -116,7 +116,7 @@ $$
 $$
 - Cioè $v=\underline{0}\implies\mathrm{ker}(f)=\{ \underline{0} \}\implies f$ è ***iniettiva***
 
-Per il [[2 - Teorema del Rango#Teorema|Teorema del Rango]]:
+Per il [[../Applicazioni/2 - Teorema del Rango#Teorema|Teorema del Rango]]:
 $$
 \text{dim}(\mathrm{Im}(f))=\text{dim}(V)-0
 $$
@@ -162,4 +162,4 @@ $$
 
 #### Osservazione Matrice Ortogonale
 >[!tldr] Osservazione
->$A$ è ***ortogonale*** $\iff$ le sue colonne rispetto al [[4 - Prodotto Scalare#Prodotto Scalare Standard|prodotto scalare standard]] formano una [[4 - Prodotto Scalare#Base Ortonormale|base ortonormale]]
+>$A$ è ***ortogonale*** $\iff$ le sue colonne rispetto al [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Prodotto Scalare Standard|prodotto scalare standard]] formano una [[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Base Ortonormale|base ortonormale]]

@@ -13,7 +13,7 @@ Per questo motivo sono state introdotte delle interfacce di comunicazione specif
 > ***Parallelo***:
 - Permette il trasferimento di più `bit` allo stesso momento tramite più canali.
 
-![[BUS dei Calcolatori#BUS Sincroni e Asincroni]]
+![[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#BUS Sincroni e Asincroni]]
 
 >[!abstract] BAUD Rate
 >La velocità di trasmissione in `bit`$/\sec$ 
@@ -23,7 +23,7 @@ A livello hardware, un `BUS` seriale è composto da due *linee*:
 - Una per ricevere i `bit`.
 
 Uno dei componenti principali di un sistema seriale è `UART` (***U***niversal ***A***synchronous ***R***eceiver ***T***ransmitter).
-	- Ha il compito di [[BUS dei Calcolatori#Arbitraggio del BUS|arbitrare]] i dati che arrivano e che partono dalle interfacce seriali.
+	- Ha il compito di [[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#Arbitraggio del BUS|arbitrare]] i dati che arrivano e che partono dalle interfacce seriali.
 #### Data Frame
 > Ogni blocco di dato è trasmesso in un pacchetto chiamato ***frame***.
 
@@ -40,7 +40,7 @@ title: "Data Frame"
 	12-13: "Stop"
 ```
 >[!warning] Attenzione
->Prestare attenzione all'"[[Definizioni_Architettura#Ordinamento dei `BYTE`|endianess]]".
+>Prestare attenzione all'"[[../../Definizioni/Definizioni_Architettura#Ordinamento dei `BYTE`|endianess]]".
 
 #### Libreria Seriale
 > `Serial`class is an extension of `Stream` and includes methods such as:
@@ -77,7 +77,7 @@ void loop()
 Buone velocità, minimizzando il numero di `PIN` richiesti.
 - Anche detto `TW` (Two Wire) poiché usa solo $2$ linee per la comunicazione (**data** e **clock**).
 
-Ha una architettura di tipo [[BUS dei Calcolatori#Master e Slave|master e slave]].
+Ha una architettura di tipo [[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#Master e Slave|master e slave]].
 - La comunicazione è sempre iniziata dal **master**.
 - Il messaggio è ricevuto da tutti gli **slave**, solo il *target slave* reagisce al messaggio.
 

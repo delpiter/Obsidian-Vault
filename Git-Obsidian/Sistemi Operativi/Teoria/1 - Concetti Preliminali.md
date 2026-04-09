@@ -36,7 +36,7 @@ Esiste una ***partizione principale***: `/`
 
 
 
-![[Unix-Like_fileSystem.png|350]]
+![[../Bash/attachements/Unix-Like_fileSystem.png|350]]
 >*Esempio di strutturazione in directories e files delle partizioni di un file system Linux*
 
 

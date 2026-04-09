@@ -77,7 +77,7 @@ $$
 
 ### Esempi
 1. Vettori **Geometrici**
-![[Pasted image 20240219172214.png]]
+![[attachements/Pasted image 20240219172214.png]]
 
 2. Dato un campo $\mathbb{K}$, $n\geq 1$
 $$
@@ -165,7 +165,7 @@ v_{1}+v_{2} = (-1,1) \cancel{ \in }S
 \end{array}
 $$
 
-![[Pasted image 20240220175558.png]]
+![[attachements/Pasted image 20240220175558.png]]
 >[!error] No, $S$ non è un sottospazio vettoriale di $V$
 
 #### Esempio 3

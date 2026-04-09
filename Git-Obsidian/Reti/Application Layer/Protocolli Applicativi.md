@@ -1,10 +1,10 @@
 >[!info] Concetto
->I [[ISO-OSI#TCP-IP|protocolli applicativi]] sono utilizzati dalle applicazioni per *scambiare informazioni* in **rete**.
+>I [[../Standards/ISO-OSI#TCP-IP|protocolli applicativi]] sono utilizzati dalle applicazioni per *scambiare informazioni* in **rete**.
 >>[!example] Esempi
 >>- [[HTTP]] per il *web*.
 >>- `SMTP`, `POP3`, `IMAP` per la [[Posta Elettronica|posta elettronica]].
 >>- [[FTP]] per il *trasferimento dei file*.
->>- [[DNS|DNS]] per la *risoluzione dei nomi di dominio* in indirizzi.
+>>- [[DNS]] per la *risoluzione dei nomi di dominio* in indirizzi.
 >>- **SSH** per l'*accesso remoto sicuro* ad un calcolatore.
 >>- ...
 
@@ -17,17 +17,17 @@ I protocolli applicativi devono definire:
 ## API dello Transport Layer
 ---
 >[!abstract] Socket
->Il ***socket*** è l'interfaccia che le applicazioni usano per interagire con i protocolli del [[Livello di Trasporto|transport layer]].
+>Il ***socket*** è l'interfaccia che le applicazioni usano per interagire con i protocolli del [[../Transport Layer/Livello di Trasporto|transport layer]].
 
 Sono forniti dal sistema operativo in esecuzione sull'**host** e accessibile tramite primitive.
 
 >[!important] Il socket è una *quintupla*:
 >Il ***socket*** è composto da:
->- [[Protocollo IP|Indirizzo]] *Sorgente*.
+>- [[../Network Layer/Protocollo IP|Indirizzo]] *Sorgente*.
 >- Indirizzo *Destinatario*.
->- [[Livello di Trasporto#Numero di Porta|Porta]] *Sorgente*.
+>- [[../Transport Layer/Livello di Trasporto#Numero di Porta|Porta]] *Sorgente*.
 >- Porta *Destinatario*.
->- *Protocollo Utilizzato* ([[TCP]]/[[UDP]]).
+>- *Protocollo Utilizzato* ([[../Transport Layer/TCP]]/[[../Transport Layer/UDP]]).
 
 ### Primitive Berkeley Socket
 #### Stream Socket
@@ -35,7 +35,7 @@ Sono forniti dal sistema operativo in esecuzione sull'**host** e accessibile tra
 
 >[!abstract] Primitive processo "*server*".
 >**Socket**:
->- *Crea* una nuova entità [[ISO-OSI#Trasferimento dei Dati|T-SAP]].
+>- *Crea* una nuova entità [[../Standards/ISO-OSI#Trasferimento dei Dati|T-SAP]].
 >
 >**Bind**:
 >- Associa l'*indirizzo* al socket creato-
@@ -65,7 +65,7 @@ Sono forniti dal sistema operativo in esecuzione sull'**host** e accessibile tra
 >**Close**:
 >- *Chiude* la connessione e rilascia l'indirizzo del socket.
 
-![[StreamSocket.png|500]]
+![[attachements/StreamSocket.png|500]]
 
 >[!question] Come può un server gestire più richieste contemporanee?
 ##### Server Iterativo
@@ -78,7 +78,7 @@ Una ***nuova*** connessione **non** viene servita finché non *termina* il servi
 >[!tldr] Idea
 >In un ***server concorrente*** un *ciclo infinito* permette al server di rispondere a più richieste di connessione **successive in parallelo**.
 
-Si genera un nuovo [[6 - Processi, Schedule e Thread#Processi|processo]] o [[6 - Processi, Schedule e Thread#Thread|thread]] separato che **gestisce ogni nuova connessione**, tornando in ascolto di altre richieste.
+Si genera un nuovo [[../../Sistemi Operativi/Teoria/6 - Processi, Schedule e Thread#Processi|processo]] o [[../../Sistemi Operativi/Teoria/6 - Processi, Schedule e Thread#Thread|thread]] separato che **gestisce ogni nuova connessione**, tornando in ascolto di altre richieste.
 #### Datagram Socket
 > Primitive utilizzate per instaurare una comunicazione ***non affidabile***.
 
@@ -92,4 +92,4 @@ Funzioni `socket()`, `bind()` e `close()` *invariate*.
 >**Sendto**/**Recievefrom**:
 >- *Trasmette*/*Riceve* dati a/da un socket remoto specifico.
 
-![[DatagramSocket.png|500]]
+![[attachements/DatagramSocket.png|500]]

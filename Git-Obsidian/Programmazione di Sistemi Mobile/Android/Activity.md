@@ -19,7 +19,7 @@ Si utilizzano delle **callback** per gestire le ***transizioni tra gli stati***.
 
 Il flusso è gestito interamente dal sistema operativo, il programmatore, semplicemente si "***aggancia***" alle callback per gestire i cambiamenti di stati.
 
-![[ActivityLifeCycle.png]]
+![[attachements/ActivityLifeCycle.png]]
 
 Le callback permettono di gestire i casi in cui avviene un evento che interrompe il normale flusso di utilizzo.
 

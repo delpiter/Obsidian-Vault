@@ -2,9 +2,9 @@
 
 Consideriamo 3 punti $A,B,P$ con $\overline{AP}=5$ e m$\overline{BA}=4$
 
-![[TrasformazioneGalileo.png]]
+![[attachements/TrasformazioneGalileo.png]]
 - Sistema di riferimento "$A$"
-![[TrasformazioneGalileo2.png]]
+![[attachements/TrasformazioneGalileo2.png]]
 - Sistema di riferimento "$B$"
 
 La posizione misurata nei due sistemi ***dipende dalla posizione dell'origine***.

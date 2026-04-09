@@ -15,7 +15,7 @@ Vengono usati nel ***data link layer*** e ***transport layer***.
 >[!caution] Meccanismo
 >Il meccanismo usato è quello della ***numerazione a finestra scorrevole***.
 >>[!cite] Numerazione
->>I protocolli **ARQ** *numerano sequenzialmente le unità informative* ([[ISO-OSI#Trasferimento dei Dati|PDU]] o `bit`) da consegnare ai protocolli superiori.
+>>I protocolli **ARQ** *numerano sequenzialmente le unità informative* ([[../Standards/ISO-OSI#Trasferimento dei Dati|PDU]] o `bit`) da consegnare ai protocolli superiori.
 
 Trasmettitore e ricevitore mantengono *due contatori*:
 - $S$ conta in modo sequenziale le unità informative ***inviate***.
@@ -23,7 +23,7 @@ Trasmettitore e ricevitore mantengono *due contatori*:
 - $R$ conta le unità informative ***ricevute***.
 	- Permette la *conferma di ricezione*.
 
-![[SlidingWindow.png|600]]
+![[attachements/SlidingWindow.png|600]]
 
 >[!missing] Controllo degli Errori
 >Alle **PDU** viene applicata una codifica di canale
@@ -65,7 +65,7 @@ Il ricevitore invia al trasmettitore il proprio valore di $R$
 >- Tempo trascorso fra la partenza dell'ultimo `bit` di un frame e la ricezione dell'**ACK**.
 
 #### Time Out
-> Il protocollo può entrare in uno strato di [[9 - Condivisione di Risorse#Deadlock|deadlock]]. 
+> Il protocollo può entrare in uno strato di [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]]. 
 
 >[!danger] Se sia i frame che gli **ACK** sono perduti
 
@@ -73,7 +73,7 @@ Il ricevitore invia al trasmettitore il proprio valore di $R$
 - Un clock parte al termine della trasmissione di ciascun frame.
 - Se si raggiunge il ***time out*** senza avere conferma si *ritrasmette il frame*.
 
-![[TimeOut.png|500]]
+![[attachements/TimeOut.png|500]]
 
 > Problemi della dimensione del Time Out
 - ***Troppo Breve***
@@ -89,7 +89,7 @@ Il ricevitore invia al trasmettitore il proprio valore di $R$
 >Il **trasmettitore** ritrasmette tutti i ***frame*** a partire dal numero $N$.
 
 Concetto molto ***semplice*** ma ***inefficiente***.
-![[ErrorRecover.png|600]]
+![[attachements/ErrorRecover.png|600]]
 
 >[!hint] Recupero dell'errore (*Selective Repeat ARQ*)
 >Viene rinviato solamente il frame $N$.

@@ -9,7 +9,7 @@ Necessità:
 - Deve essere possibile saperli confrontare $\to$ **Notazione O grande**
 ## Pseudocodice
 ---
-Un [[Problemi e Algoritmi#Algoritmo|algoritmo]] è espresso come una sequenza di azioni elementari (*passi*) da eseguire per risolvere il [[Problemi e Algoritmi#Problemi|problema]]
+Un [[../Problemi e Algoritmi#Algoritmo|algoritmo]] è espresso come una sequenza di azioni elementari (*passi*) da eseguire per risolvere il [[../Problemi e Algoritmi#Problemi|problema]]
 
 >[!info] Pseudocodice
 >I passi di un algoritmo vengono rappresentati con un *linguaggio astratto ed informale*

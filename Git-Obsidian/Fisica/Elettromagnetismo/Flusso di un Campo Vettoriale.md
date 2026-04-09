@@ -3,11 +3,11 @@
 
 > Il ***Flusso*** è:
 1. Proporzionale alla *densità delle linee*.
-![[DensitaLinee.png]]
+![[attachements/DensitaLinee.png]]
 2. Dipende dall'*orientazione della superficie* rispetto al campo.
-![[OrientamentoSuperficie.png]]
+![[attachements/OrientamentoSuperficie.png]]
 3. Proporzionale all'*area della superficie*.
-![[GrandezzaArea.png]]
+![[attachements/GrandezzaArea.png]]
 
 >[!definizione] Flusso in Termini Matematici
 >$$\phi_{A}(\vec{E})=\vec{E}\cdot(A\hat{n})\equiv\vec{E}\cdot\vec{A}=EA\cos\theta$$
@@ -16,7 +16,7 @@
 >>[!attention] Nota bene
 >>Questa definizione è valida se la *superficie è piana* e il ***campo è uniforme*** su tutta la superficie.
 
-![[Flusso.jpg|500]]
+![[attachements/Flusso.jpg|500]]
 
 > Casi:
 - Campo *Perpendicolare* al piano: $\phi=E\Delta S$
@@ -26,10 +26,10 @@
 ## Flusso di un campo non Uniforme
 ---
 >[!info]
->Se il [[Campi Elettrostatici#^32aa5b|campo]] **non** è *uniforme* e/o la superficie **non** è piana, il flusso è definito come un [[Calcolo Integrale|integrale]] sulla *superficie*.
+>Se il [[Campi Elettrostatici#^32aa5b|campo]] **non** è *uniforme* e/o la superficie **non** è piana, il flusso è definito come un [[../../Analisi/Calcolo Integrale/Calcolo Integrale|integrale]] sulla *superficie*.
 >$$\phi_{A}(\vec{E})=\int _{A} \,\vec{E}\cdot \text{d}\vec{A}=\int _{A}\vec{E}\cdot\hat{n} \, \text{d}A  $$
 
-![[FlussoCampoNonUniforme.png]]
+![[attachements/FlussoCampoNonUniforme.png]]
 
 > Se la superficie è ***chiusa***:
 - Si prende convenzionalmente $\text{d}\vec{A}$ diretto *verso l'esterno*.
@@ -39,7 +39,7 @@
 >[!hint] Osservazione
 >Dato che $\vec{E}$ è **radiale**, $\text{d}\vec{A}=\hat{n}\text{d}A$ è **sempre** parallelo ad $\vec{E}$, visto che $A$ è una *sfera*.
 
-![[FlussoSfera.png]]
+![[attachements/FlussoSfera.png]]
 
 $$
 \vec{E}\cdot\hat{n} =E=\frac{Q}{4\pi\varepsilon_{0}r^2}
@@ -60,7 +60,7 @@ $$
 
 >Consideriamo una superficie sferica esterna ad $A$ e centrata sulla carica $Q$.
 
-![[TeoremaGauss.png|400]]
+![[attachements/TeoremaGauss.png|400]]
 
 Ad ogni *porzione della superficie* $A$ corrisponde una ***porzione della sfera*** attraversata dallo stesso flusso.
 - Il flusso totale attraverso la superficie $A$ è quindi ***uguale al flusso attraverso la sfera***.
@@ -91,7 +91,7 @@ Ad ogni *porzione della superficie* $A$ corrisponde una ***porzione della sfera*
 Lontano dai bordi $\vec{E}$ sarà $\perp$ alla superficie, verso l'esterno se $\sigma>0$
 L'*intensità* la **stessa** sui due lati.
 - Scelgo $S$ cilindrica con asse $\perp$ alla superficie.
-![[LaminaPiana.png]]
+![[attachements/LaminaPiana.png]]
 
 - *Superficie laterale*: $\vec{E}\perp \hat{n}_{lati}\implies \phi_{elati}=0$
 - *Basi*: $\vec{E}\parallel \hat{n}_{base}\implies\phi_{b}=ES+ES$, dove $S$ è l'area della base del cilindro
@@ -113,9 +113,9 @@ $$
 - $\uparrow\vec{E}_{-}\quad \uparrow\vec{E}_{+}\implies\vec{E}=\displaystyle\frac{\sigma}{\varepsilon_{0}}\hat{j}$
 - $\uparrow\vec{E}_{-}\quad \downarrow\vec{E}_{+}\implies\vec{E}=0$
 
-![[Piani.png]]
+![[attachements/Piani.png]]
 
->[!cite] Ricavare la [[Coulomb#Legge di Coulomb|Legge di Coulomb]]
+>[[Coulomb#Legge di Coulomb|Legge di Coulomb]]
 >Data una carica puntiforme, scelgo: $\phi(\vec{E})=4\pi r^2E=\frac{q}{\varepsilon_{0}}$
 >$S$ è una sfera centrata sulla carica. (raggio $r$) $\vec{E}\parallel \hat{n}$ in ***ogni punto***.
 
@@ -126,7 +126,7 @@ $$
 ### Filo Molto Lungo
 >Densità **lineare** di carica $\lambda$ uniforme.
 
-![[FiloLungo.png]]
+![[attachements/FiloLungo.png]]
 
 - $\lambda= \displaystyle{\frac{q}{l}}$
 Lontano dalle estremità il campo sarà ***radiale***.
@@ -144,7 +144,7 @@ $$
 >- Carica in **tutto il volume**.
 >- Carica **solo sulla superficie**.
 
-![[CampoSfera.png|500]]
+![[attachements/CampoSfera.png|500]]
 
 - $\rho=\displaystyle\frac{p}{v}=\frac{3q}{4\pi R^2}$
 ##### Sfera $S$ carica in tutto il volume
@@ -162,7 +162,7 @@ $$
 \rho \implies E=\frac{1}{3\varepsilon_{0}}\rho r=\frac{1}{4\pi\varepsilon_{0}}\cdot \frac{qr}{R^3}
 $$
 
-![[GraficoSferaCarica.png]]
+![[attachements/GraficoSferaCarica.png]]
 
 
 ##### Sfera $S$ cava
@@ -174,7 +174,7 @@ $$E=\frac{1}{4\pi\varepsilon_{0}}\cdot \frac{q}{r^2}$$
 >[!caution] $r<R$
 
 $$E=0$$
-![[SferaCaricaSuperficie.png]]
+![[attachements/SferaCaricaSuperficie.png]]
 
 - Perché $4\pi r^2E=\displaystyle\frac{q}{\varepsilon_{0}}=0$
 

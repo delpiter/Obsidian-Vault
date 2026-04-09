@@ -4,7 +4,7 @@
 >Sia $f$ un [[4 - Isomorfismo#Endomorfismo|endomorfismo]] di $V$ e siano $\lambda_{1},\dots,\lambda_{t}$ i suoi [[9 - Matrici Diagonali#Autovettore e Autovalore|autovalori]] ***distinti***
 ><u>Allora</u>
 >$f$ si diagonalizza $\iff$ valgono ***entrambe queste condizioni***
->1. $\lambda_{i}\in\mathbb{K}, \forall i=1,\dots,t$, Tutti gli ***autovalori*** sono nel [[2 - Campi e Spazi Vettoriali#Campo|campo]]
+>1. $\lambda_{i}\in\mathbb{K}, \forall i=1,\dots,t$, Tutti gli ***autovalori*** sono nel [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Campo|campo]]
 >2. $ma(\lambda_{i})=mg(\lambda_{i}), \forall i=1,\dots,t$ La [[9 - Matrici Diagonali#Molteplicità|molteplicità algebrica e geometrica]] di tutti gli ***autovalori coincidono***
 
 ### Dimostrazione
@@ -15,7 +15,7 @@ $$
 V\lambda_{1},\dots,V\lambda_{t}
 $$
 Sia $U=V\lambda_{1}\oplus\dots\oplus V\lambda_{t}$
-- $U$ è una [[5 - Intersezione e Somma di Sottospazi#Somma Diretta|somma diretta]], perché, come abbiamo mostrato [[9 - Matrici Diagonali#Autospazio|prima]]:
+- $U$ è una [[../Basi dell'algebra/5 - Intersezione e Somma di Sottospazi#Somma Diretta|somma diretta]], perché, come abbiamo mostrato [[9 - Matrici Diagonali#Autospazio|prima]]:
 	- $V\lambda_{i}\cap V\lambda_{j}=\{ \underline{0} \} \text{ per }\lambda_{i}\neq \lambda_{j}$
 
 Sia $\mathcal{B}1$ una base di $V\lambda_{1},\dots,\mathcal{B_{t}}$ una base di $V\lambda_{t}$ 

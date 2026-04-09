@@ -145,7 +145,7 @@ $$
 >[!info] Definizione
 >Sia $\mathrm{I}$ intervallo di $\mathbb{R},f:\mathrm{I}\to \mathbb{R}$
 >Sia $c\in\mathrm{I}$
->Diciamo che $f$ è continua in $c$ se esiste il [[Limiti#Definizione Limite|limite]] e vale $f(c)$
+>Diciamo che $f$ è continua in $c$ se esiste il [[../Limiti/Limiti#Definizione Limite|limite]] e vale $f(c)$
 >$$\exists\lim\limits_{x\to c}f(x) = f(c)$$
 >Diciamo che $f$ è continua in $\mathrm{I}$ se è continua in ogni suo punto
 >>[!bug] Errore
@@ -259,7 +259,7 @@ $$
 ## Teorema di Weierstruss
 ---
 >[!info] Teorema
->Sia $f:[a,b]\to\mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Continuità|continua]]
+>Sia $f:[[.md#Continuità|continua]]
 ><u>Allora</u>
 >$f$ ammette massimo e minimo
 
@@ -327,7 +327,7 @@ $$
 
 ### Proprietà monotonia
 - Sia $f:A \to \mathbb{R}$
->Se $f$ è strettamente monotona allora $f$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Iniettività $[f ;1-1]$|iniettiva]] e $f^{-1}:f(A)\to A$ sono strettamente monotone della stessa monotonia
+>Se $f$ è strettamente monotona allora $f$ è [[.md#Iniettività $[f ;1-1]$|iniettiva]] e $f^{-1}:f(A)\to A$ sono strettamente monotone della stessa monotonia
 #### Dimostrazione
 - Voglio dimostrare che se $f(x_{1})=f(x_{2}) \implies x_{1}=x_{2}$
 	- Ciò è vero infatti:
@@ -424,7 +424,7 @@ f(x) = x^2
 f(x+k) = (x+2)^2
 f(x-k)= (x-2)^2
 ```
->[[Breve ripasso#Valore assoluto|Valore Assoluto]]
+>[[../Breve ripasso#Valore assoluto|Valore Assoluto]]
 ><font color="CornflowerBlue">$f(x) = (x-2)^2-2$</font>
 ><font color="red">$f(|x|) = (|x|-2)^2-2$</font>
 

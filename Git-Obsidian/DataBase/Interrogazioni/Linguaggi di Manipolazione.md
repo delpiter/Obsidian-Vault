@@ -1,5 +1,5 @@
 >[!info]
-> Un linguaggio di manipolazione per [[Git-Obsidian/DataBase/Introduzione#Database|DB]], o ***DML*** (**D**ata **M**anipulation **L**anguage), permette di *interrogare* e *modificare* istanze di basi di dati.
+> Un linguaggio di manipolazione per [[../Introduzione#Database|DB]], o ***DML*** (**D**ata **M**anipulation **L**anguage), permette di *interrogare* e *modificare* istanze di basi di dati.
 
 Oltre ai linguaggi utente, come [[SQL]], ne esistono latri, che rivestono *notevole importanza*.
 

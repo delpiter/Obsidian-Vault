@@ -1,7 +1,7 @@
 ## Alberi: Definizione
 ---
 >[!info] Alberi
->Un *albero* è un [[I Grafi#Grafo Definizione|grafo]] aciclico, con un numero di nodi uguale al numero di archi più uno.
+>Un *albero* è un [[../I Grafi#Grafo Definizione|grafo]] aciclico, con un numero di nodi uguale al numero di archi più uno.
 >$$\left| E \right| = \left| V \right|-1  $$
 >>[!done] Alternativa Equivalente
 >

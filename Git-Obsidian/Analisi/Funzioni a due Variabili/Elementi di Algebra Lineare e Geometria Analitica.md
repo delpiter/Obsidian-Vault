@@ -6,16 +6,16 @@
 >2) Una _**Direzione**_, rappresentata da una retta o da qualsiasi sua parallela.
 >3) Un _**Verso**_
 
-![[vettoreGeometrico.png]]
+![[attachements/vettoreGeometrico.png]]
 ### Rappresentazione Cartesiana
 Fissato un sistema di riferimento con origine $o(0,0)$:
 - È possibile assegneare ad ogni punto $A=(x,y)$ il vettore $\vec{V}$ che unisce $o$ e $A$ orientato da $o$ ad $A$
-![[vettoreCartesiano.png]]
+![[attachements/vettoreCartesiano.png]]
 
 #### Vettori Speciali
 Esistono per convenzione vettori "_particolari_":
 - Vettori di lunghezza $1$
-![[versori.png]]
+![[attachements/versori.png]]
 
 - Chiamati **versori**, sempre per convenzione denominati come $i$ e $j$
 ### Somma tra Vettori
@@ -26,14 +26,14 @@ Esistono per convenzione vettori "_particolari_":
 ><u>Allora</u>
 >Ottengo un nuovo vettore: $\vec{V}+\vec{W} = \vec{oC}$
 
-![[sommaVettori.png]]
+![[attachements/sommaVettori.png]]
 
 ### Vettore inverso
 >[!info] Definizione
 >Sia $\vec{V}$ un vettore di lunghezza $x$ e direzione di equazione $ax +c$:
 >Il vettore inverso sarà un vettore di ***lunghezza e direzione uguale***, ma con il verso invertito.
 
-![[vettoreInverso.png]]
+![[attachements/vettoreInverso.png]]
 
 ### Prodotto di Vettore per uno Scalare
 Considerando uno "scalare" come un qualsiasi numero $t\in\mathbb{R}$
@@ -55,7 +55,7 @@ Considerando uno "scalare" come un qualsiasi numero $t\in\mathbb{R}$
 >>[!done] Osservazione
 >>Posso identificare un punto $P\in\mathbb{R}^3 = (x,y,z)$ con il vettore che unsice $o$ a $P$ orientato da $o$ a $P$
 
-![[versoriR3.png]]
+![[attachements/versoriR3.png]]
 - In $\mathbb{R}^3$ si aggiunge un ***versore***, denominato $k$
 	- $i=(1,0,0),j=(0,1,0),k=(0,0,1)$
 	- Di conseguenza un vettore si può rappresentare come:
@@ -67,7 +67,7 @@ Le operazioni sono analoghe per qualsiasi numero di dimensioni che prendiamo
 $$
 |V|=\sqrt{ x_{p}^2+y^2_{p}+z^2_{p} }
 $$
-![[moduloVettore.png]]
+![[attachements/moduloVettore.png]]
 #### Somma di Vettori e Prodotto Scalare
 - Analoghi ad $\mathbb{R}^2$
 
@@ -107,7 +107,7 @@ Una retta in $\mathbb{R}^3$ può essere rappresentata in $3$ modi:
 >È della forma
 >$$P = P_{0}+tV\,\,\, , t\in\mathbb{R}$$
 
-![[rettaR3.png]]
+![[attachements/rettaR3.png]]
 - Il generico punto $P=(x,y,z)$ deve soddisfare le seguenti condizioni
 $$
 \begin{cases}
@@ -139,7 +139,7 @@ Dati due punti $P_{0}(x_{0},y_{0},z_{0})$ e $P_{1}(x_{1},y_{1},z_{1})$
 >[!done] In Breve
 >La retta passante per $P_{0}$ e $P_{1}$ non è altro che la retta passante per $P_{0}$ con direzione $V=P_{1}-P_{0}$
 
-![[rettaPassante2Punti.png]]
+![[attachements/rettaPassante2Punti.png]]
 
 ## Piano in $\mathbb{R}^3$
 ---
@@ -148,7 +148,7 @@ Un piano in $\mathbb{R}^3$ può essere rappresentato in $3$ modi:
 >Un piano in $\mathbb{R}^3$ è individuato da:
 >1) Un punto e un vettore ortogonale al piano
 >2) Tre punti
->3) Due rette non [[Definizioni_Analisi#Rette Sghembe|sghembe]]
+>3) Due rette non [[../../Definizioni/Definizioni_Analisi#Rette Sghembe|sghembe]]
 
 ### Punto e vettore Ortogonale
 >[!tip] 1

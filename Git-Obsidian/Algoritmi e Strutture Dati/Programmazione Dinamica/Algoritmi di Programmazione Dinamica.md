@@ -1,7 +1,7 @@
 ## Programmazione Dinamica
 ---
 >[!info] Definizione
->La ***programmazione dinamica*** è una tecnica di risoluzione di problemi simile a quella [[Divide et Impera]]:
+>La ***programmazione dinamica*** è una tecnica di risoluzione di problemi simile a quella [[../Divide et Impera]]:
 >- Risolve problemi *combinando soluzioni* di *sotto problemi*
 >
 >>[!question] Quando usarla?
@@ -11,12 +11,12 @@
 >
 >La ***programmazione dinamica*** tiene traccia delle soluzioni dei sotto problemi per non dovere calcolare la stessa soluzione più volte
 >>[!abstract] Applicazione
->>Si applica tipicamente a [[Definizioni_Algoritmi#Problema di Ottimizzazione|problemi di ottimizzazione]]
+>>Si applica tipicamente a [[../../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|problemi di ottimizzazione]]
 
 >[!warning] Attenzione
 
 Il termine "***programmazione***", in questo caso, non significa "***scrivere codice***"
-- Si riferisce ad un metodo di risoluzione chiamato [[Definizioni_Algoritmi#Tabular Method|tabular method]]
+- Si riferisce ad un metodo di risoluzione chiamato [[../../Definizioni/Definizioni_Algoritmi#Tabular Method|tabular method]]
 
 ### Passi Fondamentali
 >*Nella **programmazione dinamica** ci sono 4 passi fondamentali da rispettare*
@@ -46,10 +46,10 @@ Il termine "***programmazione***", in questo caso, non significa "***scrivere co
 ### Requisiti
 >*Per applicare con successo la programmazione dinamica, è necessario che il problema abbia:*
 
-![[Definizioni_Algoritmi#Sottostruttura Ottimale]]
+![[../../Definizioni/Definizioni_Algoritmi#Sottostruttura Ottimale]]
 
 >[!info] Sotto problemi Comuni
->Un [[Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]] ha sotto ***problemi comuni*** quando un algoritmo ricorsivo richiede di risolvere ***più di una volta lo stesso problema***
+>Un [[../../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]] ha sotto ***problemi comuni*** quando un algoritmo ricorsivo richiede di risolvere ***più di una volta lo stesso problema***
 
 
 ### Numeri di Fibonacci

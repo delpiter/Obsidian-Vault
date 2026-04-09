@@ -7,7 +7,7 @@
 - Permette di cambiare il contenuto du una pagina web **senza ricaricare la pagina intera**.
 - È una tecnologia **indipendente** dal software del server.
 - È eseguito dentro il browser.
-- È basato sul protocollo [[HTTP]].
+- È basato sul protocollo [[../../Reti/Application Layer/HTTP]].
 - Trasferisce in modo **asincrono** tra il browser e il server attraverso `HTTP Requests`.
 - Le request sono inviate da chiamate a script [[JavaScript]] senza dovere effettuare submit di form.
 

@@ -1,5 +1,5 @@
 >[!definizione] Android
->"The ***Android Manifest*** is an [[Markup Language#Metamarkup e XML|XML]] file which contains important metadata about the Android app.
+>"The ***Android Manifest*** is an [[../../Tecnologie Web/HTML/Markup Language#Metamarkup e XML|XML]] file which contains important metadata about the Android app.
 
 Ogni app project [[Introduzione ad Android|android]] deve avere un file `AndroidManifest.xml` nella radice del progetto.
 
@@ -65,7 +65,7 @@ Un componente dell'app deve dichiarare filtri separati per *ogni processo univoc
 </activity>
 ```
 
-Per chiamare l'activity in [[Linguaggio Kotlin]] occorre fare:
+Per chiamare l'activity in [[Kotlin/Linguaggio Kotlin]] occorre fare:
 ```kt
 val sendIntent = Intent().apply{
 	action = Intent.ACTION_SEND
@@ -117,7 +117,7 @@ Per superare il filtro, ogni categoria nell'oggetto, deve corrispondere a una ca
 
 > Un intent filter può dichiarare ***zero o più elementi data***.
 
-Ogni elemento può specificare una struttura `URI` e un [[Posta Elettronica#MIME|MIME Type]].
+Ogni elemento può specificare una struttura `URI` e un [[../../Reti/Application Layer/Posta Elettronica#MIME|MIME Type]].
 Ogni parte dell'`URI` è un attributo separato:
 - `<scheme>://<host>:<port>/<path>`
 - Es. `content://com.example.project:200/folder/subfolder/etc`

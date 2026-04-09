@@ -1,7 +1,7 @@
 
 >Di seguito una breve spiegazione di ogni strato dello [[ISO-OSI|stack ISO-OSI]]
 
-![[StackIso-Osi.png]]
+![[attachements/StackIso-Osi.png]]
 ## Physical Layer
 ---
 >[!hint] Scopo
@@ -33,7 +33,7 @@ Funzioni tipicamente svolte dal livello 2:
 >Lo scopo del ***network layer*** è di far giungere le unità di informazioni (**packets**) al destinatario, scegliendo la strada *attraverso la rete*.
 
 Si occupa del problema della *commutazione*.
-- Nelle reti si usa la [[Comunicazione#Commutazione di Pacchetto|Commutazione di Pacchetto]].
+- Nelle reti si usa la [[../Introduzione/Comunicazione#Commutazione di Pacchetto|Commutazione di Pacchetto]].
 - La funzione svolta dal livello 3 viene detta ***routing***
 
 > Occorre un modo per individuare i destinatari

@@ -1,6 +1,6 @@
 > Le velocità di trasmettitore e ricevitore **possono essere molto diverse**.
 
-Si utilizza un meccanismo a ***finestra scorrevole*** analogo al [[ARQ#Finestra di Trasmissione|caso dello strato 2]].
+Si utilizza un meccanismo a ***finestra scorrevole*** analogo al [[../Data Link Layer/ARQ#Finestra di Trasmissione|caso dello strato 2]].
 - Il ricevitore deve comunicare al trasmettitore le ***dimensioni della sua memoria di ricezione*** ([[TCP#Formato del Messaggio|advertised window]], `AW`).
 
 ## Finestra di Trasmissione e Ricezione
@@ -51,7 +51,7 @@ Un errato dimensionamento di $W$ può congestionare:
 	- Viene ricevuto `AW`$>0$.
 - Il processo trasmittente ***rincomincia a trasmettere***.
 
->[!danger] [[9 - Condivisione di Risorse#Deadlock|Deadlock]]
+>[[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|Deadlock]]
 >Caso
 >> *Trasmittente*:
 >- Invia messaggi
@@ -84,7 +84,7 @@ A questo punto il ***protocollo è in deadlock***.
 > Il fenomeno consiste nel generare segmenti `TCP` con un numero *piccolissimo* di `byte`, tipicamente uno.
 - Ha luogo quando l’applicazione che sta utilizzando la connessione *legge i dati ricevuti* un `byte` alla **volta** e il buffer è pieno.
 
->[!warning] Provoca una inefficienza significativa nell'uso della rete [[Protocollo IP|IP]].
+>[[../Network Layer/Protocollo IP|!warning]].
 
 > *Soluzione*:
 - Si autorizza l’invio di dati sulla connessione quando almeno la ***metà*** del suo *buffer di ricezione* è vuota.
@@ -166,7 +166,7 @@ Al superamento di una data soglia per il parametro `CW`, denominata *slow start 
 Il protocollo `TCP` prevede che un segmento ritenuto perso per la scadenza del *time-out* venga ritrasmesso e la `CW` venga *ridotta* all'***apertura minima***.
 - Inoltre si impone `ssthr`$=\max(W /2,2\cdot MSS)$
 
-![[CongestionAvoidance.png]]
+![[attachements/CongestionAvoidance.png]]
 
 >[!hint] Commenti
 >Il protocollo [[TCP]] cerca di ***adattarsi dinamicamente*** alle variazioni di capacità della rete.

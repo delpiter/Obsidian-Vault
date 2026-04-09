@@ -1,7 +1,7 @@
 >[!info] Livello "*intermedio*"
 >I protocolli **TLS** e **SSL** sono ***protocolli crittografici*** utilizzati per *garantire la sicurezza* delle comunicazioni su internet.
 
->Entrambi i protocolli operano a [[Livello di Trasporto|livello transport]] e forniscono [[Crittografia]] e autenticazione fra client e server.
+>Entrambi i protocolli operano a [[../Transport Layer/Livello di Trasporto|livello transport]] e forniscono [[../Crittografia|Crittografia]] e autenticazione fra client e server.
 - Solitamente ***crittografia asimmetrica*** (Doppia chiave, *pubblica* e *privata*) per ogni client.
 
 ## Transport Layer Security

@@ -5,9 +5,9 @@
 >La funzione hash $h$ prende in `input` una ***chiave*** e *restituisce* un valore compreso tra $0$ e $m-1$
 >Si utilizza un vettore $T$ di *puntatori* con $m$ posizioni indicizzate
 >L'elemento $x$ con chiave $x.key$ viene *memorizzato* in $T$ in posizione $h(x.key)$
-![[Screenshot_2024-03-17_164254-removebg-preview.png]]
+![[attachements/Screenshot_2024-03-17_164254-removebg-preview.png]]
 
-- Nelle [[Hash Table#Direct Address Table|direct access table]] la funzione di hash è semplicemente la [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Identità|funzione identità]]
+- Nelle [[Hash Table#Direct Address Table|direct access table]] la funzione di hash è semplicemente la [[../../../Analisi/Funzioni/Introduzione Funzioni#Funzione Identità|funzione identità]]
 	- $h(x) = x$
 
 ### Collisioni
@@ -41,11 +41,11 @@ La probabilità di collisione *cresce in modo sorprendente*
 ---
 ### Chaining
 >[!info] Risoluzione di collisioni con "***chaining***"
->Si crea una [[Linked Lists|lista]] per ogni cella della tabella (valori assumibili dalla funzione $h$)
+>Si crea una [[../Linked Lists|lista]] per ogni cella della tabella (valori assumibili dalla funzione $h$)
 >Si collegano i *record* afferenti a una *stessa cella* nella sua lista
 >Le celle della tabella sono le *teste delle liste* (`NULL` se liste vuote)
 
-![[Pasted image 20240317170426.png]]
+![[attachements/Pasted image 20240317170426.png]]
 #### Analisi della Complessità
 >[!info] Load Factor
 >Il *Load Factor* è una misura di quanto la tabella è piena
@@ -77,7 +77,7 @@ La probabilità di collisione *cresce in modo sorprendente*
 >Siano le collisioni ***gestite con chaining***
 >Sia la funzione di hash ***Semplice Uniforme***
 ><u>Allora</u>
->Una ricerca ha [[Complessità di Algoritmi#Analisi di Complessità|costo computazionale]] di $\Theta(1+\alpha)$
+>Una ricerca ha [[../../Confronto fra Algoritmi/Complessità di Algoritmi#Analisi di Complessità|costo computazionale]] di $\Theta(1+\alpha)$
 >Dove $1$ è il costo della funzione $h$ e $\alpha$ è il ***load factor***
 
 >[!hint] Dimostrazione
@@ -140,7 +140,7 @@ $$
 $$
 In questo caso la ricerca impiega ***tempo costante***!
 
-Se usiamo le [[Linked Lists#Doubly Linked List|doubly linked lists]] per le catene e se inseriamo in testa alle liste i nuovi elementi abbiamo che:
+Se usiamo le [[../Linked Lists#Doubly Linked List|doubly linked lists]] per le catene e se inseriamo in testa alle liste i nuovi elementi abbiamo che:
 - Ricerca
 - Cancellazione
 - Inserimento
@@ -155,7 +155,7 @@ Fanno in media $O(1)$ operazioni
 >Con $m =$ Dimensione della tabella
 
 Se $Pr()$ è sconosciuta:
-- Si utilizzano [[Definizioni_Algoritmi#Algoritmi Euristici|Algoritmi Euristici]]
+- Si utilizzano [[../../../Definizioni/Definizioni_Algoritmi#Algoritmi Euristici|Algoritmi Euristici]]
 
 >[!abstract] Metodo della Divisione
 >$$h(k)=k mod(m)$$
@@ -181,13 +181,13 @@ Costante $A$ ottimale:
 
 #### Uniform Hashing
 >[!info] Funzione Hash
->La gestione di collisioni con il metodo ***open addressing*** richiede che per ogni chiave $k$, la sequenza di [[Definizioni_Algoritmi#Probe|probe]] $<h(k,0),\dots,h(k,m-1)>$ deve essere una permutazione degli indici $<1,\dots,m>$ tali che ogni posizione della ***tabella hash*** è **prima o poi** considerata come uno *slot per una nuova chiave*
+>La gestione di collisioni con il metodo ***open addressing*** richiede che per ogni chiave $k$, la sequenza di [[../../../Definizioni/Definizioni_Algoritmi#Probe|probe]] $<h(k,0),\dots,h(k,m-1)>$ deve essere una permutazione degli indici $<1,\dots,m>$ tali che ogni posizione della ***tabella hash*** è **prima o poi** considerata come uno *slot per una nuova chiave*
 
 #### Open Addressing - Ricerca
 >[!check]
 >Sia $n$ il numero di celle occupate e $m$ il numero totale di celle
 >Data una *hash table* con *open addressing* e load factor $\alpha=\displaystyle\frac{n}{m}<1$
->La lunghezza **media** di una [[Definizioni_Algoritmi#Probe|probe]] in una *ricerca senza successo* è di $\displaystyle{\frac{1}{(1-\alpha)}}$
+>La lunghezza **media** di una [[../../../Definizioni/Definizioni_Algoritmi#Probe|probe]] in una *ricerca senza successo* è di $\displaystyle{\frac{1}{(1-\alpha)}}$
 >- Assumendo una ***permutazione uniforme di indici***
 
 ##### Dimostrazione
@@ -235,7 +235,7 @@ $$
 \end{array}
 $$
 Notare che ora la sommatoria non ha più il *fattore $i$ moltiplicato*
-- Ora basta ricondursi a una delle [[Confronto e Pseudocodice#Sommatorie utilizzate|sommatorie conosciute]]
+- Ora basta ricondursi a una delle [[../../Confronto fra Algoritmi/Confronto e Pseudocodice#Sommatorie utilizzate|sommatorie conosciute]]
 
 Sappiamo che la ***probabilità di fare almeno un accesso*** è:
 $$
@@ -268,7 +268,7 @@ $$
 #### Open Addressing - Inserimento
 >[!check]
 >Data una *hash table* con *open addressing* e **load factor** $\alpha=\frac{n}{m}<1$
->La lunghezza media di una [[Definizioni_Algoritmi#Probe|probe]] è $\frac{1}{1-\alpha}$
+>La lunghezza media di una [[../../../Definizioni/Definizioni_Algoritmi#Probe|probe]] è $\frac{1}{1-\alpha}$
 >- Assumendo una ***permutazione uniforme degli indici***
 
 ##### Dimostrazione
@@ -339,7 +339,7 @@ Per inserire un elemento abbiamo bisogno di *determinare la posizione* nella tab
 >Il ***linear probing*** è un caso speciale di *double hashing*.
 >È l'approccio ***open-addressing*** più semplice di risolvere le *collisioni*
 >>[!abstract] Funzionamento
->>Nel caso del ***linear probing*** una funzione di hash ausiliaria $h_{1}$ determina la prima posizione della **[[Definizioni_Algoritmi#Probe|probe]]** $h_{1}(k)$ per l'inserimento di un elemento.
+>>Nel caso del ***linear probing*** una funzione di hash ausiliaria $h_{1}$ determina la prima posizione della **[[../../../Definizioni/Definizioni_Algoritmi#Probe|probe]]** $h_{1}(k)$ per l'inserimento di un elemento.
 >>Se lo slot $T[h_{1}(k)]$ è già *occupato*, la prossima posizione da controllare sarà: $T[h_{1}(k)+1]$
 >>Continua il processo fino a che non si ***trova una cella libera***
 
@@ -356,14 +356,14 @@ $$
 - Questo accade perché uno *slot vuoto* **preceduto** da $i$ *slot pieni* viene successivamente riempito con una ***probabilità*** di $\frac{i+1}{m}$ 
 - Una lunga *sequenza di slot occupati* tende a diventare ***sempre più lunga***
 
-![[primary clustering.png]]
+![[attachements/primary clustering.png]]
 ###### Semi-Soluzione
 >[!info] Quadratic Probing
 >Ad ogni *collisione* l'indice $i$ si altera in ***maniera quadratica***
 >$$h(k,i)=(h_{1}(k)+c_{1}i+c_{2}i^2)\text{ mod }m$$
 
 
-![[Screenshot 2024-03-22 163714.png]]
+![[attachements/Screenshot 2024-03-22 163714.png]]
 >[!fail] Il problema persiste
 
 Due chiavi che vanno in collisione con $h_{1}(k,0)$ andranno in *collisione* ad ogni ***passaggio/iterazione***

@@ -2,10 +2,10 @@
 
 ## Formule
 ---
->[!Valore Atteso] [[6 - Valore Atteso|Valore Atteso]]
+>[[../6 - Valore Atteso|!Valore Atteso]]
 >$$E[X]=\int_{-\infty}^\infty sf_{X}(s) \, ds $$
 
->[!Varianza] [[7 - La Varianza|Varianza]]
+>[[../7 - La Varianza|!Varianza]]
 >$$Var(X)=E[(X-E[X])^2]$$
 
 ### Proprietà

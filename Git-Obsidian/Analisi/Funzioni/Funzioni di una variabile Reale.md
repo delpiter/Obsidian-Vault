@@ -46,7 +46,7 @@ y=3x^4-2x^2+2x+1
 ```
 ## Valore assoluto
 - - -
->[!info] [[Breve ripasso#Valore assoluto|Definizione]]
+>[[../Breve ripasso#Valore assoluto|Definizione]]
 >$$
 \begin{array}
 /f: \mathbb{R} \to \mathbb{R} \\
@@ -145,10 +145,10 @@ f(x)=x-floor(x)
 - $(a^x)^y=a^{x\cdot y}$
 - $a^x\cdot b^x=(ab)^x\ \ \ \ \ \ \ \ a,b\in\mathbb{R}^+\setminus\{0,1\}$
 - Se $a >1$
-	- $exp_{a}$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Crescente|strettamente crescente]]
+	- $exp_{a}$ è [[Introduzione Funzioni#Crescente|strettamente crescente]]
 - Se $0<a<1$
-	- $exp_{a}$ è [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Decrescente|strettamente descrescente]]
-- $exp_{a}:\mathbb{R}\to\mathbb{R}^+\setminus\{0\} \to$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Iniettività e surriettività|Invertibile]]
+	- $exp_{a}$ è [[Introduzione Funzioni#Decrescente|strettamente descrescente]]
+- $exp_{a}:\mathbb{R}\to\mathbb{R}^+\setminus\{0\} \to$ [[Introduzione Funzioni#Iniettività e surriettività|Invertibile]]
 ### Grafici
 <font color="CornflowerBlue">$\boxed{a>1}$ </font>
 <font color="red">$\boxed{0<a<1}$</font>
@@ -178,7 +178,7 @@ g(x)=(1/2)^x
 
 #### Dimostrazione proprietà 1
 > Voglio dimostrare che $\log_{a}(x\cdot y)=\log_{a}x+\log_{a}y$
-- Per la proprietà della [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Identità|funzione identità]]
+- Per la proprietà della [[Introduzione Funzioni#Funzione Identità|funzione identità]]
 	- $\huge{a^{\log_{a}(x\cdot y)}=a^{\log_{a}x}\cdot a^{\log_{a}y}}$
 	- Per la proprietà della funzione esponenziale
 	- $\huge{a^{\log_{a}x}\cdot a^{\log_{a}y}=a^{\log_{a}x+\log_{a}y}}$
@@ -210,7 +210,7 @@ g(x)=log(x)/log(1/2)
 >Sia $U=\{(x,y)\in\mathbb{R}\times\mathbb{R}|x^2+y^2=1\}$
 >La circonferenza goniometrica è una circonferenza di raggio $1$
 
-[[Definizioni_Analisi#Valori Notevoli|Alcuni valori notevoli]]
+[[../../Definizioni/Definizioni_Analisi#Valori Notevoli|Alcuni valori notevoli]]
 
 Considerando una retta $a$ con origine $O$ (*centro della circonferenza goniometrica*), e l'angolo che la retta fa con l'asse delle ascisse.
 
@@ -325,7 +325,7 @@ grid: true
 f(x)=cos(x)/sin(x)
 ```
 ### Funzioni Inverse
-- Per ottenere le [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione inversa|funzioni inverse]] di funzioni periodiche è necessario restringere il dominio
+- Per ottenere le [[Introduzione Funzioni#Funzione inversa|funzioni inverse]] di funzioni periodiche è necessario restringere il dominio
 #### Arcoseno
 >[!info] Definizione
 >Il seno nell'intervallo:

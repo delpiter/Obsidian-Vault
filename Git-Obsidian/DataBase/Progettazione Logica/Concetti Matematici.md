@@ -7,7 +7,7 @@
 
 Per definizione $A\times \varnothing = \varnothing\times A = \varnothing$
 
->Se $A$ e $B$ sono *insiemi distinti* il prodotto cartesiano $A\times B$ è formalmente diverso da $B\times A$ anche se i due prodotti sono in [[Definizioni_Analisi#Corrispondenza biunivoca|corrispondenza biunivoca]].
+>Se $A$ e $B$ sono *insiemi distinti* il prodotto cartesiano $A\times B$ è formalmente diverso da $B\times A$ anche se i due prodotti sono in [[../../Definizioni/Definizioni_Analisi#Corrispondenza biunivoca|corrispondenza biunivoca]].
 
 >[!example] Esempio
 >$A=\{ x,y,z \},\quad B=\{ 1,2 \}$
@@ -23,7 +23,7 @@ La **definizione** può essere estesa considerando $n>0$ insiemi $D_{1},D_{2},\d
 ---
 >[!definizione] Definizione
 >Si considerino due insiemi $A$ e $B$, *non vuoti e non necessariamente distinti*.
->Ogni ***sottoinsieme non vuoto*** del  [[1 - Combinatoria Elementare#Definizioni di Base|prodotto cartesiano]] $A\times B$ è detto:
+>Ogni ***sottoinsieme non vuoto*** del  [[../../Matematica Discreta e Probabilità/Combinatoria/1 - Combinatoria Elementare#Definizioni di Base|prodotto cartesiano]] $A\times B$ è detto:
 >- Relazione da $A$ a $B$.
 
 >Data una relazione $r\subseteq A\times B$:

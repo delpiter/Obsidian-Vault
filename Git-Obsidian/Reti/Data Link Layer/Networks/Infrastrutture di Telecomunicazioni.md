@@ -3,7 +3,7 @@
 >[!tldr] Idea
 >Le ***tipologie di infrastrutture*** vanno in base alla *dimensione dell'area geografica* da coprire.
 
-Ogni tipologia di rete può avere una [[Topologie di Rete|topologia]] diversa.
+Ogni tipologia di rete può avere una [[../../Introduzione/Topologie di Rete|topologia]] diversa.
 
 > [[LAN]]
 - Per piccole aree geografiche come una *singola struttura* (casa, scuola).
@@ -15,7 +15,7 @@ Ogni tipologia di rete può avere una [[Topologie di Rete|topologia]] diversa.
 >***WAN***
 - **Wide Area Network**
 - Per aree geografiche di *grandi dimensioni* (Nazione, Continente).
-- Topologia preferita: [[Topologie di Rete#Topologia a Maglia|Maglia più o meno completa]].
+- Topologia preferita: [[../../Introduzione/Topologie di Rete#Topologia a Maglia|Maglia più o meno completa]].
 
 >[!hint] Connettività
 >A causa delle grandi differenze in dimensioni, i vari modi per collegare i nodi della rete, in base all'infrastruttura **possono variare**.

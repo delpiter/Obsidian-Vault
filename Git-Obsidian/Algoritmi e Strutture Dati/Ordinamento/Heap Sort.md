@@ -16,23 +16,23 @@
 	\end{algorithmic}
 	\end{algorithm}
 ```
-![[Heap#Pseudocodice Heapify]]
-![[Heap#Pseudocodice Build Heap]]
+![[../Strutture Dati/Heap#Pseudocodice Heapify]]
+![[../Strutture Dati/Heap#Pseudocodice Build Heap]]
 
-![Heap Sort (youtube.com)](https://www.youtube.com/watch?v=_bkow6IykGM)
+![[youtube.com)](https://www.youtube.com/watch?v=_bkow6IykGM|Heap Sort (youtube.com)]]
 
 ## Concetto
 ---
 >[!tldr] L'idea
 >Per ordinare in senso ***cresente***:
 >Prima Parte
->- Si trasforma l'*array* in input in una [[Heap|max-heap]] (una *heap* con il valore più ***grande alla radice***)
+>- Si trasforma l'*array* in input in una [[../Strutture Dati/Heap|max-heap]] (una *heap* con il valore più ***grande alla radice***)
 >Seconda Parte
 >- Si scambia il **dato** nella *radice* con il **dato** dell'*ultimo nodo*
 >- Si *esclude* l'ultimo nodo dalla **heap**
 >- Si ricostruisce la ***heap***
 
-![[heap-removebg-preview.png]]
+![[attachements/heap-removebg-preview.png]]
 
 ## Complessità
 ---

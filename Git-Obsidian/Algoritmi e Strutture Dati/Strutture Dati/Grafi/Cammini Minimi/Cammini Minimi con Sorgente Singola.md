@@ -1,9 +1,9 @@
 ## Shortest Path Single Source
 ---
 >[!info] Problema
->È un [[Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]], chiede di trovare il ***percorso minimo*** fra *due nodi* in un grafo
+>È un [[../../../../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]], chiede di trovare il ***percorso minimo*** fra *due nodi* in un grafo
 >>[!abstract] Input
->>Un [[I Grafi|Grafo]] orientato o non orientato $G=(V,E,W)$ con ***funzione di peso***: $w:E\to\mathbb{R}$
+>>Un [[../I Grafi|Grafo]] orientato o non orientato $G=(V,E,W)$ con ***funzione di peso***: $w:E\to\mathbb{R}$
 >>E un vertice di tale grafo $s\in V$
 >
 >>[!caution] Output
@@ -36,7 +36,7 @@ $$
 >$W(p)=\delta(u,w)$
 
 #### Rappresentazione di Cammini Minimi
->*I cammini minimi vengono rappresentati analogamente agli alberi [[Algoritmi di Ricerca su Grafo#Breadth First Search|BFS]]*
+>*I cammini minimi vengono rappresentati analogamente agli alberi [[../Algoritmi di Ricerca su Grafo#Breadth First Search|BFS]]*
 
 >[!abstract] Albero dei Cammini Minimi
 >Per ogni vertice $v\in V$ si mantiene un ***predecessore*** $\pi(v)$
@@ -88,7 +88,7 @@ Questo *può non creare problemi* nella ricerca dei cammini minimi da una sorgen
 > Esistono cammini da $s$ a $u$ di ***costi sempre minori***, il costo di cammino minimo $\delta(s,u)$ ***non è definito***
 >>[!caution] In questo caso poniamo $\delta(s,u)=-\infty$
 
-![[Negative Weight Edges.png]]
+![[attachements/Negative Weight Edges.png]]
 
->[!warning] Per l'[[Algoritmo di Dijkstra]] non si accettano archi di costo negativo
+>[[Algoritmo di Dijkstra|!warning]] non si accettano archi di costo negativo
 

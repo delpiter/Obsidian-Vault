@@ -21,14 +21,14 @@ Il linguaggio C, così come qualsiasi altro linguaggio di programmazione è defi
 >[!info] Definizione
 >L'alfabeto di un linguaggio è l'unità minima di informazione che permette di definire costanti, variabili, operatori, parole chiave ed espressioni che formano il codice sorgente
 
-- Lo standard [[Definizioni_Programmazione#ISO|ISO]] richiede che l'alfabeto del linguaggio C comprenda
+- Lo standard [[../../Definizioni/Definizioni_Programmazione#ISO|ISO]] richiede che l'alfabeto del linguaggio C comprenda
 	- Un alfabeto **Base** per il codice sorgente, il _source character set_
 	- Un alfabeto per il codice eseguibile, _execution character set_
 	- **Trigraphs**, sequenze di tre caratteri trattate come un unico carattere
 
 #### Alfabeto Base
 >[!tldr]
->Tutti gli standard [[Definizioni_Programmazione#ISO|ISO]] richiedono che l'alfabeto base del linguaggio C comprenda almeno i seguenti 96 simboli:
+>Tutti gli standard [[../../Definizioni/Definizioni_Programmazione#ISO|ISO]] richiedono che l'alfabeto base del linguaggio C comprenda almeno i seguenti 96 simboli:
 
 ###### 26 Caratteri minuscoli 
 
@@ -101,7 +101,7 @@ int main() {
 #### Keywords
 >[!example] Definizione
 >Il linguaggio C contiene una serie di parole, _keywords_, che non possono essere utilizzazte come identificatori di variabili o funzioni.
-- Lo standard [[Definizioni_Programmazione#ISO|ISO]] C89 ha definito il seguente set di 32 parole chiave:
+- Lo standard [[../../Definizioni/Definizioni_Programmazione#ISO|ISO]] C89 ha definito il seguente set di 32 parole chiave:
 ```
 auto      break     case      char
 const     continue  default   do
@@ -137,7 +137,7 @@ Ci sono diverse regole per la creazione di identificatori:
 ##### Utilizzo
 Un identificatore può essere usato per denotare:
 1. Un nome di una variabile o funzione
-2. Un membro o _tag_ di [[Tipi di Dati Avanzati#Il Tipo `struct`|strutture]], [[Tipi di Dati Avanzati#Il Tipo `union`|unioni]] e [[Tipi di Dati Avanzati#Il Tipo `enum`|enumerazioni]]
+2. Un membro o _tag_ di [[../Variabili/Tipi di Dati Avanzati#Il Tipo `struct`|strutture]], [[../Variabili/Tipi di Dati Avanzati#Il Tipo `union`|unioni]] e [[../Variabili/Tipi di Dati Avanzati#Il Tipo `enum`|enumerazioni]]
 3. Un nome di tipo, definito con il _typedef_
 4. Un nome di macro o parametro di una macro
 

@@ -3,10 +3,10 @@
 >>[!done] Idea
 >>L'idea principale è quella di una ***catena di montaggio***, l'ideale sarebbe che la pipeline dovrebbe essere ***sempre piena***, ogni circuito non rimane mai inattivo
 
->[!question] [[Tipologie di Architetture#CISC|CISC]] o [[Tipologie di Architetture#RISC|RISC]] ?
+>[[Tipologie di Architetture#CISC|CISC]] o [[Tipologie di Architetture#RISC|RISC]] ?
 >Solitamente le pipeline vengono utilizzate su macchine `RISC` poiché quest'ultime quasi tutte le istruzioni hanno lo ***stesso tempo di esecuzione*** 
 
-![[Pipelining.png]]
+![[attachements/Pipelining.png]]
 
 Se il ciclo di clock della macchina è di $2ns$ sono necessari $10ns$ per completare l'esecuzione della prima istruzione
 - ***Nessun risparmio*** rispetto all'assenza di pipelining
@@ -14,7 +14,7 @@ Se il ciclo di clock della macchina è di $2ns$ sono necessari $10ns$ per comple
 Una volta riempita la ***pipeline*** si completerà ***una istruzione ogni*** $2ns$
 
 È possibile avere più di una ***pipeline***
-![[Multiple Pipeline.png]]
+![[attachements/Multiple Pipeline.png]]
 - Vengono lette due istruzioni alla volta che vengono eseguite su ***pipeline diverse***
 - Sarà necessario comunque gestire eventuali conflitti
  
@@ -44,8 +44,8 @@ Nel caso che ci sia un ***salto condizionale*** (`if` o `while`) quale istruzion
 >Queste architetture sono dette ***architetture superscalari***
 >>[!caution] Concetto
 >>Aumentare il numero di chip delle ***fasi che sono più onerose***
->>Solitamente si aumentano i chip della fase di esecuzione ([[Arithmetic Logic Unit|ALU]])
+>>Solitamente si aumentano i chip della fase di esecuzione ([[../Algebra di Bool e Logica Digitale/Arithmetic Logic Unit|ALU]])
 
-![[Superscalar Architecture.png]]
+![[attachements/Superscalar Architecture.png]]
 Questa soluzione porta ad un aumento delle prestazioni ***se il tempo di esecuzione*** delle unità funzionali dello stadio $S4$ è ***superiore al tempo di esecuzione degli altri stadi***
 - In questo caso la maggior velocità dei rimanenti stadi ***sarebbe compensata dal parallelismo***

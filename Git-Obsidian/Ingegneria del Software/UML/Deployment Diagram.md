@@ -33,7 +33,7 @@ Una associazione tra nodi rappresenta un canale di comunicazione tra di essi.
 
 >[!summary] Manufatti
 >Un ***manufatto*** rappresenta un'entità concreta del mondo reale, per esempio:
->- File sorgenti, eseguibili, script, tabelle di un [[Git-Obsidian/DataBase/Introduzione#Database|database]], documenti, modelli [[UML]].
+>- File sorgenti, eseguibili, script, tabelle di un [[../../DataBase/Introduzione#Database|database]], documenti, modelli [[UML]].
 
 I manufatti vengono *dislocati sui nodi*.
-![[DeploymentDiagram.svg]]
+![[attachements/DeploymentDiagram.svg]]

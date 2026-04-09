@@ -2,7 +2,7 @@
 ---
 >[!tldr] Idea
 >Il **DDL** di [[SQL]] permette di **definire** schemi di relazioni (o *tabelle*), **modificarli** ed **eliminarli**.
->Permette anche di specificare [[Vincoli di Integrità|vincoli]] sia a livello di *tupla* che a livello di *tabella*.
+>Permette anche di specificare [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità|vincoli]] sia a livello di *tupla* che a livello di *tabella*.
 
 Permette di definire nuovi **domini** oltre a quelli predefiniti
 - Domini di cui potrà fare uso il [[DML]].
@@ -25,7 +25,7 @@ CREATE tableName (
 ```
 
 >[!info] Primary Key
->Per assegnare la [[Vincoli di Integrità#Chiavi|chiave primaria]] si indica di *fianco al dominio* dell'attributo voluto il parametro `PRIMARY KEY`.
+>Per assegnare la [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Chiavi|chiave primaria]] si indica di *fianco al dominio* dell'attributo voluto il parametro `PRIMARY KEY`.
 >Se la *tabella* contiene una chiave composta da diversi attributi, si indicano tutti in una volta alla fine della *query*:
 >- `PRIMARY KEY(attribute1, attribute2,...)`
 
@@ -96,7 +96,7 @@ ALTER TABLE tableName(
 `{sql icon} identity(a,b)`
 - Aumenta, partendo da $a$, di $b$ valori.
 ##### Tipi Numerici Approssimati
-> Serve per rappresentare valori numerici approssimati come [[Numeri Floating-Point|floating point]].
+> Serve per rappresentare valori numerici approssimati come [[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Numeri Floating-Point|floating point]].
 
 Valori possibili:
 - `{sql icon} float(precision)`
@@ -148,25 +148,25 @@ Mediante la clausola `check` è possibile esprimere ***vincoli di tupla arbitrar
 attribute domain NOT NULL
 ```
 
-Sufficiente per **vietare** la presenza di valori [[Informazione Incompleta#Null|nulli]].
+Sufficiente per **vietare** la presenza di valori [[../Progettazione Logica/Modello Relazionale/Informazione Incompleta#Null|nulli]].
 
 ```sql
 attribute domain UNIQUE
 ```
 
-Esprime la definizione di [[Vincoli di Integrità#Chiavi|chiave non primaria]].
+Esprime la definizione di [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Chiavi|chiave non primaria]].
 
 ```sql
 attribute domain PRIMARY KEY
 ```
 
-Esprime il [[Vincoli di Integrità#Chiavi|vincolo di chiave primaria]].
+Esprime il [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Chiavi|vincolo di chiave primaria]].
 
 #### Inter-Relazionali
 >Vincoli espressi tra *diverse tabelle*.
 
 >[!help] Vincolo References
->Consente di definire [[Vincoli di Integrità#Vincolo di Integrità Referenziale|vincoli di integrità referenziale]] tra i valori in cui è definito (*Tabella interna*) e i valori di un **attributo** di una *seconda tabella*.  
+>Consente di definire [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Vincolo di Integrità Referenziale|vincoli di integrità referenziale]] tra i valori in cui è definito (*Tabella interna*) e i valori di un **attributo** di una *seconda tabella*.  
 
 ```sql
 FOREIGN KEY attribute REFERENCES table

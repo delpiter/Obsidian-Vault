@@ -45,12 +45,12 @@ Tabella studente con annesse le informazioni dell'università:
 >- **Qualità** del database.
 >- **Assenza di determinati difetti**.
 
-![[NormalForms.png]]
+![[attachements/NormalForms.png]]
 ### Decomposizione Senza Perdita
 >La decomposizione *non deve alterare* il **contenuto informativo** del database.
 
 >[!hint] Decomposizione Lossless
->Uno schema $R(X)$ si decompone senza perdita negli schemi $R_{1}(X_{1})$ e $R_{2}(X_{2})$ se, per ogni stato legale $r$ su $R(X)$, il  [[Algebra Relazionale#Join Naturale|join naturale]] delle [[Algebra Relazionale#Proiezione|proiezioni]] di $r$ su $X_{1}$ e $X_{2}$ è uguale a $r$ stessa:
+>Uno schema $R(X)$ si decompone senza perdita negli schemi $R_{1}(X_{1})$ e $R_{2}(X_{2})$ se, per ogni stato legale $r$ su $R(X)$, il  [[../Interrogazioni/Algebra Relazionale#Join Naturale|join naturale]] delle [[../Interrogazioni/Algebra Relazionale#Proiezione|proiezioni]] di $r$ su $X_{1}$ e $X_{2}$ è uguale a $r$ stessa:
 >$$\pi_{X_{1}}(r)\bowtie\pi_{X_{2}}(r)=r$$
 >>[!quote] A Parole
 >>Uno *schema* si decompone ***senza perdita*** se, eseguendo il **join naturale** delle tabelle “decomposte”, si ottiene esattamente la tabella originale.
@@ -63,7 +63,7 @@ Tabella studente con annesse le informazioni dell'università:
 
 ### Dipendenze Funzionali
 >[!definizione] Definizione
->Si considerino uno [[Modello Relazionale|schema di relazione]] $R(T)$ e un'estensione $r$; Due sottoinsiemi *non vuoti* di $T$ denominati $X$ e $Y$ rispettivamente.
+>Si considerino uno [[Modello Relazionale/Modello Relazionale|schema di relazione]] $R(T)$ e un'estensione $r$; Due sottoinsiemi *non vuoti* di $T$ denominati $X$ e $Y$ rispettivamente.
 >Si dice che in $r$ vale la dipendenza funzionale $X\to Y$ ($X$ <u>determina funzionalmente</u> $y$) se:
 >$$\forall t_{1},t_{2}\in r:t_{1}[X]=t_{2}[X]\implies t_{1}[Y]=t_{2}[Y]$$
 >>[!quote] A Parole
@@ -74,11 +74,11 @@ Una dipendenza funzionale sempre soddisfatta è detta **banale**.
 
 Dire che $X\to Y$ significa asserire che i valori della componente $Y$ ***dipendono*** (sono determinati) dai valori della componente $X$.
 
->Se $K$ è una [[Vincoli di Integrità#Chiavi|chiave]] in uno schema $R(T)$:
+>Se $K$ è una [[Modello Relazionale/Vincoli di Integrità#Chiavi|chiave]] in uno schema $R(T)$:
 - Allora ogni altro attributo di $R(T)$ dipende funzionalmente da $K$
 
 #### Dipendenze Funzionali e Superchiavi
-> Il concetto di [[Vincoli di Integrità#Superchiave|superchiave]] si esprime facendo uso di *dipendenze funzionali*.
+> Il concetto di [[Modello Relazionale/Vincoli di Integrità#Superchiave|superchiave]] si esprime facendo uso di *dipendenze funzionali*.
 
 $$
 K\subseteq T \text{ è superchiave di }R(T) \iff K \to T
@@ -93,7 +93,7 @@ $$
 $$
 - Ciò equivale a dire che non possono esistere due tuple distinte con lo stesso valore di $K$.
 
-> Se $K$ è *superchiave* di $R(T)$, dalla definizione di [[Vincoli di Integrità#Superchiave|superchiave]]:
+> Se $K$ è *superchiave* di $R(T)$, dalla definizione di [[Modello Relazionale/Vincoli di Integrità#Superchiave|superchiave]]:
 
 $$
 t_{1}[K]=t_{2}[K] \implies t_{1}=t_{2}
@@ -167,7 +167,7 @@ Si generano gli schemi:
 
 ### Forma normale di Boyce e Codd (BCNF)
 >[!tldr] Boyce-Codd Normal Form
->Uno schema $R(T)$ con vincoli $F$ è in **BCNF** se, per ogni *dipendenza funzionale* non banale $X\to Y$ definita su di esso, $X$ è una [[Vincoli di Integrità#Superchiave|superchiave]] di $R(T)$
+>Uno schema $R(T)$ con vincoli $F$ è in **BCNF** se, per ogni *dipendenza funzionale* non banale $X\to Y$ definita su di esso, $X$ è una [[Modello Relazionale/Vincoli di Integrità#Superchiave|superchiave]] di $R(T)$
 
 >[!warning] Attenzione
 > **Non è sempre possibile** portare uno schema in **BCNF** e allo stesso tempo *preservare tutte le dipendenze funzionali*.

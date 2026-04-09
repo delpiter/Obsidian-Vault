@@ -11,14 +11,14 @@ La legge è connessa al fatto che la carica elettrica è una ***quantità conser
 >[!cite] $II$
 >La *somma algebrica* delle differenze di potenziale **lungo una maglia chiusa** è ***zero***.
 
-La legge è connessa con il fatto che il [[Campi Elettrostatici|campo elettrico]] è [[Lavoro di una Forza#Forze Conservative e Non Conservative|conservativo]].
+La legge è connessa con il fatto che il [[../Campi Elettrostatici|campo elettrico]] è [[../../Lavoro e Energia/Lavoro di una Forza#Forze Conservative e Non Conservative|conservativo]].
 - Se la carica parte da una ***DDP*** e percorre un percorso chiuso, la carica ***deve tornare al potenziale iniziale***.
 
 ## Esempio
 ---
 > Siano $R=1100\Omega$, calcolare $I_{1},I_{2}$ ,correnti Entranti in $a$, e $I_{3}$ corrente uscente da $a$.
 
-![[Esempio.svg]]
+![[attachements/Esempio.svg]]
 
 >[!abstract] Semplifico il parallelo tra le resistenze $2R$
 

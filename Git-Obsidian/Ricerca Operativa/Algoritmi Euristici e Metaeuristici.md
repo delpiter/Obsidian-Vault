@@ -1,4 +1,4 @@
-> Si consideri un generico [[Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]].
+> Si consideri un generico [[../Definizioni/Definizioni_Algoritmi#Problema di Ottimizzazione|problema di ottimizzazione]].
 
 >[!question] Problema
 >$$\min f(x) \qquad x\in X$$
@@ -17,12 +17,12 @@ $$
 >[!hint] Obbiettivo
 >L'*obbiettivo* è quello di determinare tra le soluzioni ammissibili una ***soluzione ottima*** o una soluzione di ***buona qualità***.
 
-Molti problemi di ottimizzazione sono [[Classi P e NP#NP Completo|NPC]] e spesso le istanze di interesse pratico hanno dimensioni tali da ***rendere proibitivo l'uso di algoritmi esatti***.
+Molti problemi di ottimizzazione sono [[../Algoritmi e Strutture Dati/Complessità/Classi P e NP#NP Completo|NPC]] e spesso le istanze di interesse pratico hanno dimensioni tali da ***rendere proibitivo l'uso di algoritmi esatti***.
 - Si possono usare ***algoritmi euristici***.
 
 ## Algoritmi Euristici
 ---
-![[Definizioni_Algoritmi#Algoritmi Euristici]]
+![[../Definizioni/Definizioni_Algoritmi#Algoritmi Euristici]]
 
 >In generale:
 - Gli algoritmi euristici **non garantiscono l'ottimalità**  della soluzione prodotta.

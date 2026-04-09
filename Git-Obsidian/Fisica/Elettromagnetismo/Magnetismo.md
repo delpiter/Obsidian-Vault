@@ -99,7 +99,7 @@ Dentro le "***D***" la particella non sente il ***campo elettrico*** $\vec{E}$, 
 - Dovunque, il campo magnetico $\vec{B}$ viene usato per ***curvare la traiettoria***.
 Per poter accelerare la particella, quando la particella è dentro un elettrodo:
 - Il generatore di *D.D.P* alternato inverte che scambia la polarità degli elettrodi.
-![[Ciclotrone.png|450]]
+![[attachements/Ciclotrone.png|450]]
 
 La particella entra dal centro e compie una ***traiettoria a spirale***.
 - $r$ aumenta con $v$ *fino ad uscire*.
@@ -125,7 +125,7 @@ $$
 >- Seguendo la regola della mano destra, la forza applicata da $\vec{B}$ è opposta a quella applicata a $\vec{E}$.
 
 
-![[SelettoreVelocità.png]]
+![[attachements/SelettoreVelocità.png]]
 
 > Se la particella esce dal "***buco***", significa:
 

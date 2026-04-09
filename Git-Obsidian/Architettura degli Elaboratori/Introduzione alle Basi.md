@@ -1,7 +1,7 @@
 ## Macchine a Più Livelli
 ---
 > [!info] Linguaggio macchina ($L0$)
-> Insieme di istruzioni che l'[[Definizioni_Architettura#Il Calcolatore|hardware]] è in grado di eseguire
+> Insieme di istruzioni che l'[[../Definizioni/Definizioni_Architettura#Il Calcolatore|hardware]] è in grado di eseguire
 > - Solitamente molto limitato
 > - Poco adatto per i programmatori
 >La limitatezza del linguaggio è dovuta a due fattori
@@ -44,7 +44,7 @@ La macchina virtuale di questo livello ha un livello di astrazione simile a quel
 
 >[!tip] ISA Level
 
-Acronimo di `Instruction Set Architecture` questo livello definisce come il [[Definizioni_Architettura#Il Calcolatore|software]] controlla la `CPU`
+Acronimo di `Instruction Set Architecture` questo livello definisce come il [[../Definizioni/Definizioni_Architettura#Il Calcolatore|software]] controlla la `CPU`
 > In generale l'ISA definisce le istruzioni, tipi di dato, registri e l'hardware supportato per gestire la memoria principale
 
 - La complessità e il numero delle istruzioni presenti **variano da calcolatore a calcolatore**

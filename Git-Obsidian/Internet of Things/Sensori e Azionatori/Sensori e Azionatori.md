@@ -1,4 +1,4 @@
-> Un [[Sistemi Embedded|sistema embedded]] interagisce con l'ambiente esterno tramite sensori e azionatori.
+> Un [[../Sistemi Embedded|sistema embedded]] interagisce con l'ambiente esterno tramite sensori e azionatori.
 
 ## Sensori
 ---
@@ -7,12 +7,12 @@
 
 ### Principi di Utilizzo
 >[!hint] Fisica
->Ci si basa sulle leggi fisiche che governano le ***relazioni*** tra quantità fisiche e un output di [[Potenziale Elettrico|quantità elettrica]].
+>Ci si basa sulle leggi fisiche che governano le ***relazioni*** tra quantità fisiche e un output di [[../../Fisica/Elettromagnetismo/Potenziale Elettrico|quantità elettrica]].
 
 >[!example] Esempio: Thermistor
 >***Sensore di Temperatura***
 
-La [[Resistenza Elettrica#Resistività|resistività]] cambia in base alla temperatura.
+La [[../../Fisica/Elettromagnetismo/Circuiti/Resistenza Elettrica#Resistività|resistività]] cambia in base alla temperatura.
 - Per ricevere il segnale una corrente in `input` è necessaria per misurare il ***voltaggio in uscita***.
 
 ### Quantità Fisiche
@@ -28,14 +28,14 @@ Le informazioni associate a quantità fisiche sono chiamate ***segnali***.
 - Sensore Codificato: Output una *sequenza* di `bit`.
 
 >[!failure] Da quantità continua a discreta
-> [[Rappresentazione dei Suoni#Campionamento|Campionamento]]
-> [[Rappresentazione dei Suoni#Quantizzazione|Quantizzazione]]
+> [[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione dei Suoni#Campionamento|Campionamento]]
+> [[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Rappresentazione dei Suoni#Quantizzazione|Quantizzazione]]
 
 #### Misurazioni
 >[!hint] Misurazione di quantità fisiche
 >La ***misurazione*** è un confronto tra due quantità fisiche omogenee.
 
-Per le misurazioni si usa il [[Git-Obsidian/Fisica/Misurazione#Sistema Internazionale|sistema internazionale]].
+Per le misurazioni si usa il [[../../Fisica/Misurazione#Sistema Internazionale|sistema internazionale]].
 ##### Errori
 >[!fail] Systematic Errors
 >Un ***errore è sistematico*** se, quando le condizioni sperimentali sono fisse, l'errore ha *sempre lo stesso impatto*.
@@ -57,7 +57,7 @@ $f$ è definita in un range finito di input tra $x_{m}$ e $x_{M}$ e l'output è 
 >$$y=kx$$
 
 A causa di errori, la ***linearità è spesso sbagliata***.
-- L'andamento lineare si può ottenere tramite il [[Problema Minimi Quadrati|metodo dei minimi quadrati]].
+- L'andamento lineare si può ottenere tramite il [[../../Metodi Numerici per L'Intelligenza Artificiale/Equazioni Lineari/Problema Minimi Quadrati|metodo dei minimi quadrati]].
 
 #### Tipologie di Errori
 >***Offset Error***
@@ -113,26 +113,26 @@ Una precisione alta migliora la ripetibilità di un evento.
 >Un ***azionatore*** è un dispositivo che produce un effetto nell'ambiente.
 
 >[!info] Trasduttori
->I ***trasduttori*** sono dispositivi che convertono un tipo di [[Energia]] in un altro tipo.
+>I ***trasduttori*** sono dispositivi che convertono un tipo di [[../../Fisica/Lavoro e Energia/Energia]] in un altro tipo.
 
 ### Interfacciamento
 > Due casi principali
 
->[!done] Il voltaggio fornito dai [[General Purpose Input Output|GPIO]] è abbastanza
+>[[../Elementi del Microcontroller/General Purpose Input Output|!done]] è abbastanza
 
 >[!missing] Il voltaggio non è abbastanza.
 >Il dispositivo deve essere caricato da un ***circuito esterno***.
 
-In questo caso il `GPIO` è usato per aprire/chiudere il circuito tramite [[Storia dei Calcolatori#Generazione $II$|transistor]] e *relays* che funzionano come switch.
+In questo caso il `GPIO` è usato per aprire/chiudere il circuito tramite [[../../Architettura degli Elaboratori/Storia dei Calcolatori#Generazione $II$|transistor]] e *relays* che funzionano come switch.
 
 ### Carichi
 > Da un punto di vista elettronico il carico può essere classificato in due categorie.
 
 >[!caution] Carichi Resistivi
-- Un componente che applica una [[Resistenza Elettrica]] al passaggio di [[Corrente Elettrica|corrente]], risultando in una ***variazione del livello di voltaggio***.
+- Un componente che applica una [[../../Fisica/Elettromagnetismo/Circuiti/Resistenza Elettrica]] al passaggio di [[../../Fisica/Elettromagnetismo/Circuiti/Corrente Elettrica|corrente]], risultando in una ***variazione del livello di voltaggio***.
 
 >[!help] Carichi Induttivi
-- Dispositivi che lavorano [[Induzione|inducendo corrente]] in un filo.
+- Dispositivi che lavorano [[../../Fisica/Elettromagnetismo/Induzione|inducendo corrente]] in un filo.
 	- Solitamente generano una corrente inversa.
 
 
@@ -158,7 +158,7 @@ Per usare sensori e azionatori che funzionano a $3.3V$ nei `MCU` dobbiamo adotta
 >[!hint] Voltage Divider
 >I ***Voltage Divider*** vengono usati per produrre un output `Vout` (es. $3.3V$) partendo da un voltaggio più alto (es. $5V$).
 
-![[VoltageDivider.svg]]
+![[../attachements/VoltageDivider.svg]]
 
 $$
 \alpha=\frac{R_{2}}{R_{1}+R_{2}}\qquad V_{out}=\alpha V_{in}

@@ -1,4 +1,4 @@
-> Nel [[Il Ciclo di Vita del Software|Ciclo di Vita del Software]] la misurazione serve a **prevedere** o **stimare** tempi di consegna, costo di lavorazione e qualità del prodotto.
+> Nel [[../Ciclo di Vita del Software/Il Ciclo di Vita del Software|Ciclo di Vita del Software]] la misurazione serve a **prevedere** o **stimare** tempi di consegna, costo di lavorazione e qualità del prodotto.
 
 >[!hint] Scopi
 >Gli scopi di una ***misurazione*** sono:
@@ -8,7 +8,7 @@
 La misurazione viene fatta in diverse fasi del ciclo di vita di un software.
 
 > ***Pianificazione***
-- Per stimare tempi e costi nello [[Definizione Strategica e Pianificazione#Studio di Fattibilità|studio di fattibilità]].
+- Per stimare tempi e costi nello [[../Ciclo di Vita del Software/Definizione Strategica e Pianificazione#Studio di Fattibilità|studio di fattibilità]].
 
 > ***Progettazione***
 - Per prevedere la manutenibilità e prevenire problemi nel software.
@@ -45,9 +45,9 @@ La misurazione viene fatta in diverse fasi del ciclo di vita di un software.
 >I metodi di misurazione di un software sono metodi ***estremamente empirici***, basati sull'esperienza.
 
 Esistono 3 modalità di misurazione:
-- [[Metriche Dimensionali]].
-- [[Metriche Funzionali]].
-- [[Metriche Strutturali]].
+- [[Metriche/Metriche Dimensionali]].
+- [[Metriche/Metriche Funzionali]].
+- [[Metriche/Metriche Strutturali]].
 
 >[!note] Nota
 > Per misurare le *dimensioni* del software vengono usate le metriche ***dimensionali e funzionali***.

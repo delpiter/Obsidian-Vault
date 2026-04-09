@@ -24,7 +24,7 @@ necessario per poter evolvere
 >[!note] Molteplicità
 >Il numero di risorse in una classe viene detto molteplicità del tipo di risorsa
 
-![[ResourceClassification.png]]
+![[attachements/ResourceClassification.png]]
 >[!example] Esempio
 > La `RAM` è la ***classe*** delle risorse e le singole celle sono le ***istanze*** della risorsa
 > - La capacità totale di memoria è la ***molteplicità*** della risorsa
@@ -124,7 +124,7 @@ La *presenza* di queste condizioni è ***necessaria e sufficiente***
 - Devono valere tutte contemporaneamente affinché un *deadlock* si presenti nel sistema
 ## Grafo di Holt
 >[!info] 
->Il ***Grafo di Holt*** è un *sistema di rappresentazione* mediante un [[I Grafi|grafo]] che permette di rappresentare tutte le situazioni in cui si possono venire a trovare i *processi* e le *richieste di risorse*
+>Il ***Grafo di Holt*** è un *sistema di rappresentazione* mediante un [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi|grafo]] che permette di rappresentare tutte le situazioni in cui si possono venire a trovare i *processi* e le *richieste di risorse*
 >>[!done] Grafo diretto e bipartito
 >>Gli Archi hanno una ***direzione***.
 >>I nodi sono ***suddivisi*** in due sottoinsiemi e non esistono archi che collegano nodi dello stesso sottoinsieme
@@ -144,7 +144,7 @@ La *presenza* di queste condizioni è ***necessaria e sufficiente***
 >Gli archi *processo*$\to$ *risorsa*
 >- Indicano che il **processo** ha **richiesto** la risorsa
 
-![[Pasted image 20250109114134.png]]
+![[attachements/Pasted image 20250109114134.png]]
 >[!note] Nota
 > **Non si rappresentano** grafi di holt con archi relativi a richieste che possono essere soddisfatte
 
@@ -166,7 +166,7 @@ La *presenza* di queste condizioni è ***necessaria e sufficiente***
 >[!teor] Teorema
 >![[#^8b5cc1]]
 ><u>Allora</u>
->Lo stato è di deadlock **se e solo se** il *grafo di Holt* contiene un [[I Grafi#^e45e8d|ciclo]]
+>Lo stato è di deadlock **se e solo se** il *grafo di Holt* contiene un [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi#^e45e8d|ciclo]]
 ###### Dimostrazione
 >Si utilizza una *variante* del grafo di Holt: ***grafo Wait-For***
 
@@ -174,11 +174,11 @@ La *presenza* di queste condizioni è ***necessaria e sufficiente***
 - Il grafo di Holt contiene un *ciclo* ***se e solo se*** il grafo Wait-for contiene un *ciclo*
 - Se il grafo wait-for contiene un ciclo, abbiamo ***attesa circolare***
 
-![[CicloDeadlock.png]]
+![[attachements/CicloDeadlock.png]]
 - *Un collasso appropriato sarebbe un ciclo fra il processo $t_{1}$ e $t_{2}$*
 ##### Caso 2 più risorse per Classe
 La presenza di un *ciclo* nel caso di Holt ***non è sufficiente*** per avere deadlock
-![[Deadlock2.png]]
+![[attachements/Deadlock2.png]]
 - *Immagine a) Deadlock, Immagine b) No Deadlock*
 ##### Riducibilità di un grafo di Holt
 >[!definizione] Definizione
@@ -190,7 +190,7 @@ La presenza di un *ciclo* nel caso di Holt ***non è sufficiente*** per avere de
 >>>Eventualmente un **nodo** che utilizza una **risorsa** prima o poi la ***rilascerà***.
 
 - Dalle immagini di prima (*grafo b)*), possiamo applicare le seguenti *riduzioni*:
-![[HoltReduction.png]]
+![[attachements/HoltReduction.png]]
 >[!check]
 >![[#^8b5cc1]]
 ><u>Allora</u>
@@ -218,8 +218,8 @@ La presenza di un *ciclo* nel caso di Holt ***non è sufficiente*** per avere de
 - Risposta: ***No***
 >[!done] Si possono eseguire le seguenti riduzioni
 
-![[EsDeadlock.png]]
-![[EsDeadlock2.png]]
+![[attachements/EsDeadlock.png]]
+![[attachements/EsDeadlock2.png]]
 
 ##### Knot
 >[!definizione] Definizione

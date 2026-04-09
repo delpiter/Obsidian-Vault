@@ -1,6 +1,6 @@
 ## Sensori del Tempo e Clima
 ---
-> [[Sensori e Azionatori#Sensori|Sensori]] climatici.
+> [[../Sensori e Azionatori#Sensori|Sensori]] climatici.
 
 >[!summary] Temperatura
 

@@ -19,12 +19,12 @@
 	\end{algorithmic}
 	\end{algorithm}
 ```
-![Insertion Sort (youtube.com)](https://www.youtube.com/watch?v=8oJS1BMKE64)
+![[youtube.com)](https://www.youtube.com/watch?v=8oJS1BMKE64|Insertion Sort (youtube.com)]]
 ## Concetto
 ---
 >Ad ogni passo ho una sottosequenza ordinata in cui inserisco un nuovo elemento dell'input
 
-![[Pasted image 20240421180619.png]]
+![[attachements/Pasted image 20240421180619.png]]
 Si considera il primo elemento dell'insieme da solo come *ordinato*
 - Prendo il primo elemento della sottosequenza non ordinata e lo inserisco nel sottoinsieme già ordinato
 

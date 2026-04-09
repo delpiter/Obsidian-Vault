@@ -1,7 +1,7 @@
 ## 802.11
 ---
 >[!cite] Onde Radio
-> Le ***onde radio*** sono onde [[Elettromagnetismo|elettromagnetiche]] nella banda di frequenza compresa tra $0$ e $300 Ghz$.
+> Le ***onde radio*** sono onde [[../../../../Fisica/Elettromagnetismo/Elettromagnetismo|elettromagnetiche]] nella banda di frequenza compresa tra $0$ e $300 Ghz$.
 
 Il protocollo utilizza la banda `ISM` (***I***ndustrial ***S***cientific ***M***edical - da $2.4$ a $2.4835Ghz$) a $2.4Ghz$.
 - Disponibile per applicazioni industriali, scientifiche e mediche ***senza la richiesta di licenze***.
@@ -23,7 +23,7 @@ La ***frequenza del carrier*** cambia frequentemente tra numerosi canali in una 
 - Usato per tecnologie come il `Bluetooth`.
 
 ### Frame
-![[Pasted image 20251206115152.png]]
+![[attachements/Pasted image 20251206115152.png]]
 
 >[!abstract] Parametri
 
@@ -34,10 +34,10 @@ La ***frequenza del carrier*** cambia frequentemente tra numerosi canali in una 
 - Durata della comunicazione del frame e del relativo `ACK`, serve ad evitare *collisioni*.
 
 > ***Address*** (1-4)
-- Indirizzi [[Struttura del Data Link#Medium Access Control|MAC]] di: *mittente*, *destinatario*, *Tx* (trasmettitore) e *Rx* (ricevente) radio.
+- Indirizzi [[../../Struttura del Data Link#Medium Access Control|MAC]] di: *mittente*, *destinatario*, *Tx* (trasmettitore) e *Rx* (ricevente) radio.
 
 > ***FCS***
-- [[Controllo dell'Errore|Checksum]].
+- [[../../Controllo dell'Errore|Checksum]].
 ### Standard 802.11x
 >[!help] `802.11a`
 >Standard che sfrutta una delle più versatili tecniche di modulazione, implementa il `Wi-Fi` a ***banda larga***.
@@ -51,7 +51,7 @@ La ***frequenza del carrier*** cambia frequentemente tra numerosi canali in una 
 #### Divisione dello Spettro
 > Gli standard `802.11b/g` dividono entrambi lo spettro in $14$ sotto canali da $22Mhz$ ciascuno
 
-![[802.11bg.png]]
+![[attachements/802.11bg.png]]
 
 Ciascuno nell'intervallo $2.402$ e $2.484GHz$.
 
@@ -70,7 +70,7 @@ Ciascuno nell'intervallo $2.402$ e $2.484GHz$.
 >- Uno o più ***wireless terminal***: i dispositivi mobili dotati di *interfaccia wireless*.
 >- Un ***access point***: dispositivo che *connette i dispositivi mobili* tra di loro.
 
-- In questo caso l'***access point*** gestisce l'utilizzo del canale tramite il [[Interfacciamento di Periferiche#Polling|polling]], attribuendo a turno le stazioni che devono trasmettere (L'`AP` è il `Rx` iniziale).
+- In questo caso l'***access point*** gestisce l'utilizzo del canale tramite il [[../../../../Architettura degli Elaboratori/Architettura del Calcolatore/Interfacciamento di Periferiche#Polling|polling]], attribuendo a turno le stazioni che devono trasmettere (L'`AP` è il `Rx` iniziale).
 	- L'`AP` trasmette periodicamente un segnale di ***beacon*** che permette:
 		- La **sincronizzazione** delle stazioni.
 		- La rilevazione della presenza dell'`AP`.
@@ -93,7 +93,7 @@ Permette ad un singolo dispositivo di connettersi a diversi access points ***att
 > Supponiamo di avere 3 stazioni `A`, `B` e `C`, con i *raggi di azione raffigurati*.
 
 Supponiamo che `A` stia trasmettendo a `B`.
-![[Wifi_hidden_station_problem.svg|400]]
+![[attachements/Wifi_hidden_station_problem.svg|400]]
 
 >[!fail] Se `C` ascolta il canale, lo troverà libero
 >Sarà convinto di poter trasmettere a `B`, cosi facendo ***disturberà la trasmissione*** di `A`.
@@ -103,7 +103,7 @@ Supponiamo che `A` stia trasmettendo a `B`.
 > Supponiamo di avere 4 stazioni `S1`,`S2`,`R1` e `R2` con i raggi d'azione raffigurati.
 
 Supponiamo che `S1` stia trasmettendo a `R1` e che `S2` voglia trasmettere a `R2`.
-![[Pasted image 20251206112502.png]]
+![[attachements/Pasted image 20251206112502.png]]
 
 >[!fail] Ascoltando il canale `S2` sentirà la trasmissione di `S1`
 >Concluderà erroneamente di ***non poter trasmettere***.

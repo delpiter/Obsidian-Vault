@@ -40,12 +40,12 @@ $$
 >Non tutte le successioni hanno un limite
 ##### Es
 - $a_{n}=(-1)^n$
-![[succesioneOscillante.png]]
+![[attatchements/succesioneOscillante.png]]
 - Oscilla fra $1$ e $-1$
 ## Successioni Limitate/Illimitate
 - - -
 >[!tldr] Definizione
->Sia $(a_{n})_{n\in\mathbb{N}}$ in $\mathbb{R}$ diciamo che $(a_{n})$ è illimitata/[[Insiemi Numerici#Superiore|limitata superiormente]]/[[Insiemi Numerici#Inferiore|limitata inferiormente]] se lo è l'insieme dei suoi termini
+>Sia $(a_{n})_{n\in\mathbb{N}}$ in $\mathbb{R}$ diciamo che $(a_{n})$ è illimitata/[[../Insiemi/Insiemi Numerici#Superiore|limitata superiormente]]/[[../Insiemi/Insiemi Numerici#Inferiore|limitata inferiormente]] se lo è l'insieme dei suoi termini
 #### Termini
 - $sup(a_{n})_{n\in\mathbb{N}}:=sup(a_{n}|n\in\mathbb{N})$
 - $inf(a_{n})_{n\in\mathbb{N}}:=inf(a_{n}|n\in\mathbb{N})$
@@ -131,7 +131,7 @@ $$
 >>Allora
 >>$l\geq m$
 ### Dimostrazione
-- Consideriamo solo il caso $l,m\in\mathbb{R}$ poichè tutti gli altri casi si deducono usando [[Limiti di Successioni#Successioni Limitate/Illimitate|la terminologia]] precedentemente descritta
+- Consideriamo solo il caso $l,m\in\mathbb{R}$ poichè tutti gli altri casi si deducono usando [[.md#Successioni Limitate/Illimitate|la terminologia]] precedentemente descritta
 #### Dimostrazione per assurdo
 - Voglio dimostrare che $l\geq m$, assumo per assurdo
 $$

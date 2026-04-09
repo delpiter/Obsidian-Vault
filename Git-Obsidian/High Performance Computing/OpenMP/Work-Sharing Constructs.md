@@ -3,7 +3,7 @@
 >[!question] Programmi complessi
 >Non tutti i programmi hanno dei semplici `loop` che [[OpenMP]] può *parallelizzare*.
 
-> ***Esempio***: [[Linked Lists]] traversal.
+> ***Esempio***: [[../../Algoritmi e Strutture Dati/Strutture Dati/Linked Lists]] traversal.
 
 ```c
 ListNode *p = head;

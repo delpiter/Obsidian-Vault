@@ -13,7 +13,7 @@ Le transazioni possono essere eseguite:
 > Una transazione può avere ***solo due esiti***.
 
 >[!done] Terminare correttamente
->Avviene **solo** quando l’applicazione esegue una *particolare istruzione* [[SQL]], detta `{sql icon}COMMIT`, che comunica "*ufficialmente*" al ***Transaction Manager*** il termine delle operazioni.
+>Avviene **solo** quando l’applicazione esegue una *particolare istruzione* [[../Interrogazioni/SQL|SQL]], detta `{sql icon}COMMIT`, che comunica "*ufficialmente*" al ***Transaction Manager*** il termine delle operazioni.
 
 >[!fail] Terminare non Correttamente
 >Una ***transazione*** termina *anticipatamente* in due casi:
@@ -43,11 +43,11 @@ Le transazioni possono essere eseguite:
 >- **Write -> Read Dependency**
 
 >[!caution] Unrepeatable Read
->Accade quando una *transazione* legge la **stessa** [[Modello Relazionale#Relazione|tupla]] due volte e ottiene ***valori diversi***, a causa di una **modifica intermedia** da parte di una *seconda transazione*. (*Inconsistent Analysis*)
+>Accade quando una *transazione* legge la **stessa** [[../Progettazione Logica/Modello Relazionale/Modello Relazionale#Relazione|tupla]] due volte e ottiene ***valori diversi***, a causa di una **modifica intermedia** da parte di una *seconda transazione*. (*Inconsistent Analysis*)
 >- **Read -> Write Dependency** 
 
 >[!abstract] Phantom Row
->Accade quando una *transazione* *ri-esegue* una [[DML|query]] e trova nuovi valori che **non erano presenti** nella prima esecuzione.
+>Accade quando una *transazione* *ri-esegue* una [[../Interrogazioni/DML|query]] e trova nuovi valori che **non erano presenti** nella prima esecuzione.
 
 #### Cascading Abort
 >Quando una transazione $T$ fallisce, il *Recovery Manager* deve eliminare gli effetti da essa prodotti.
@@ -81,9 +81,9 @@ Per evitare il ***cascading abort*** è sufficiente *impedire* che una transazio
 - Significa ritardare ogni $read[x]$ fino a che tutte le transazioni che hanno operato $write[x]$ sono state **completate con successo** o sono state fatte **abortire**.
 
 ### Isolation
-> Una comune tecnica usata dai DBMS per evitare i problemi visti consiste nell’uso di [[13 - Semafori|lock]].
+> Una comune tecnica usata dai DBMS per evitare i problemi visti consiste nell’uso di [[../../Sistemi Operativi/Teoria/13 - Semafori|lock]].
 
-Nei [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] ci sono:
+Nei [[../Introduzione#DBMS|DBMS]] ci sono:
 - $S$ (*shared*): Lock **condiviso**, necessario per leggere.
 - $X$ (*exclusive*): Lock **esclusivo**, necessario per scrivere e modificare.
 
@@ -92,10 +92,10 @@ Nei [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] ci sono:
 
 Lo **Scheduler** della maggior parte dei sistemi reali è di fatto realizzato estendendo il *Transaction Manager* (**TM**) con un *Lock Manager* (**LM**).
 
-![[DMBSScheduler.png]]
+![[attachements/DMBSScheduler.png]]
 
 
-[[SQL]] mette a disposizione meccanismi di base per influenzare il modo con cui una **transazione** viene *eseguita*.
+`{sql icon} SQL` mette a disposizione meccanismi di base per influenzare il modo con cui una **transazione** viene *eseguita*.
 - Se una transazione sa di dover *elaborare molte tuple* di una relazione può **richiedere esplicitamente** di porre un **lock** sull'*intera relazione*.
 
 ###### Livelli di Isolamento
@@ -127,7 +127,7 @@ Lo **Scheduler** della maggior parte dei sistemi reali è di fatto realizzato es
 - È garantito l'isolamento completo delle transazioni.
 
 >[!danger] Effetti collaterali
->[[9 - Condivisione di Risorse#Deadlock|Deadlock]].
+>[[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|Deadlock]].
 
 
 #### Assenza di Phantom Row
@@ -185,7 +185,7 @@ Lo **Scheduler** della maggior parte dei sistemi reali è di fatto realizzato es
 >[!caution] Implementazione
 
 La responsabilità del protocollo `WAL` è del ***Buffer Manager***.
-![[BufferManager.png]]
+![[attachements/BufferManager.png]]
 
 > Quando una **transazione** $T$ modifica una pagina $P$, il ***Buffer Manager*** ha 2 possibilità:
 

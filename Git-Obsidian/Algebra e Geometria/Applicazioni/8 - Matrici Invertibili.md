@@ -9,7 +9,7 @@
 >Dove il ***cofattore*** è definito nel seguente modo:
 >$$\text{cof}(A)_{ij}=(-1)^{i+j}\det(A^{ij})$$
 >>[!done] A Parole
->>La matrice inversa è definita dall'inverso del [[7 - Determinante di una Matrice|determinante]] moltiplicato per il [[Definizioni_Analisi#Matrice Trasposta|trasposto]] del *cofattore*
+>>La matrice inversa è definita dall'inverso del [[7 - Determinante di una Matrice|determinante]] moltiplicato per il [[../../Definizioni/Definizioni_Analisi#Matrice Trasposta|trasposto]] del *cofattore*
 
 #### Esercizio
 $$
@@ -68,7 +68,7 @@ $$
 
 ## Matrice Inversa con Gauss
 ---
->*Osserviamo che [[Risoluzione di Sistemi#Metodo di Gauss|l'algoritmo di Gauss]] ci permette anche di trovere l'inversa di una matrice $A$ in modo **computazionalmente più efficiente** rispetto al metodo del cofattore*
+>*Osserviamo che [[../Risoluzione di Sistemi#Metodo di Gauss|l'algoritmo di Gauss]] ci permette anche di trovere l'inversa di una matrice $A$ in modo **computazionalmente più efficiente** rispetto al metodo del cofattore*
 
 ### Algoritmo di Gauss-Jordan
 >[!info] Passaggi

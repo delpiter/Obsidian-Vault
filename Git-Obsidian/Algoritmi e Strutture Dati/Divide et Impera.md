@@ -13,7 +13,7 @@ Constato che la ***dimensione del problema*** è troppo grande per essere *risol
 
 >[!tip] Risolvi
 
-Passo [[Recursive Functions|ricorsivo]]
+Passo [[../Programmazione/Funzioni/Recursive Functions|ricorsivo]]
 - Utilizza la tecnica appena descritta per risolvere le *singole istanze di complessità banale*
 - Chiamate anche ***sottoproblemi***
 

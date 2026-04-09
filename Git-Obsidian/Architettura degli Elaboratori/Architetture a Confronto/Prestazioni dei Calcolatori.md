@@ -31,10 +31,10 @@ Questa misura è affetta da una ***forte approssimazione***
 	- Più il set di istruzioni di una certa macchina è ***potente*** tanto più è possibile ***ridurre la lunghezza*** dei programmi eseguiti
 - Non tiene conto delle ***percentuali delle diverse istruzioni*** all'interno di programmi reali
 	- Una macchina più veloce in un programma può essere più lenta in altre
-- Non tiene conto dell'ampiezza dei [[BUS dei Calcolatori|BUS]], della presenza di [[Cache]] o altre tecniche che ottimizzano i tempi di esecuzione
+- Non tiene conto dell'ampiezza dei [[../Architettura del Calcolatore/BUS dei Calcolatori|BUS]], della presenza di [[../Architettura del Calcolatore/Cache]] o altre tecniche che ottimizzano i tempi di esecuzione
 
 ### Benchmark
->*Le stime vengono solitamente ottenute attraverso [[Definizioni_Architettura#Benchmarck|Benchmark]]*
+>*Le stime vengono solitamente ottenute attraverso [[../../Definizioni/Definizioni_Architettura#Benchmarck|Benchmark]]*
 
 >[!info] Benchmark Dhrystone
 >Utilizzato per ottenere stime di $IPS$
@@ -73,19 +73,19 @@ Cartoline d'auguri musicali , `RFID`, $\dots$
 
 *PlayStation, Xbox*,$\dots$
 - **Costo**: $100-500$€
-- **Potenza**: $250-10000$ `GFLOPS` ([[Schede Grafiche|GPU]])
+- **Potenza**: $250-10000$ `GFLOPS` ([[../Architettura del Calcolatore/Schede Grafiche|GPU]])
 
 >[!abstract] Personal Computer
 
 ***Desktop*** o Portatili
 - **Costo**: $500-2000$€
-- **Potenza**: $50-50000$ `GFLOPS` ([[La CPU|CPU]])
+- **Potenza**: $50-50000$ `GFLOPS` ([[../Architettura del Calcolatore/La CPU|CPU]])
 
 >[!info] Server Workstation
 
 ***Gestione archivi***, ***centralizzazione servizi***, multiutenza, deep learning, $\dots$:
 - **Costo**: $5-100\text{K}$€
-- **Potenza**: $1-5000$ `TFLOPS` ([[Schede Grafiche|GPU]] $+$ [[La CPU|CPU]])
+- **Potenza**: $1-5000$ `TFLOPS` ([[../Architettura del Calcolatore/Schede Grafiche|GPU]] $+$ [[../Architettura del Calcolatore/La CPU|CPU]])
 
 >[!abstract] Cluster
 

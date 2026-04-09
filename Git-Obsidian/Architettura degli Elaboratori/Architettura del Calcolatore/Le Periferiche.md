@@ -28,7 +28,7 @@ Utilizzando un **campo elettrico** per modificare l'***orientamento delle moleco
 >[!abstract] Luce
 >Una ***luce*** posizionata dietro la lastra posteriore
 
-![[LCDPanel.png]]
+![[attachements/LCDPanel.png]]
 
 >[!done] RGB
 >In uno schermo `LCD` a colori, ogni cella viene divisa in tre sezioni
@@ -75,7 +75,7 @@ Utilizzando un **campo elettrico** per modificare l'***orientamento delle moleco
 >Nei ***modelli meccanici***, una sfera fa girare due *rotelle* *forate* *ortogonalmente* tra loro
 >La loro *velocità di rotazione* è misurata da ***sensori a infrarossi*** e trasmessa al calcolatore
 
-![[BallMouse.png]]
+![[attachements/BallMouse.png]]
 
 >[!hint] Modello Ottico
 >I primi ***mouse ottici*** utilizzavano un `LED` e un *trasduttore ottico-elettrico* per rilevare il ***movimento relativo*** alla superficie
@@ -115,7 +115,7 @@ Il livello di definizione di una stampa si misura in `DPI` (***D***ots ***P***er
 >- ***C***yan ***Y***ellow ***M***agenta bla***K***
 >Il *nero* viene aggiunto poiché è difficile ottenere degli *inchiostri puri* da assorbire tutta la luce e produrre il colore nero
 
-![[CYMK.png]]
+![[attachements/CYMK.png]]
 #### Modelli
 >[!abstract] Piezoelettrici
 >Nei modelli ***Piezoelettrici*** un cristallo che opera come "*tappo*" si deforma quando gli si applica una *tensione* e fa fuoriuscire una gocciolina
@@ -129,7 +129,7 @@ La qualità di stampa varia dai $300$ `DPI` fino a oltre i $4000$ `DPI`
 ### Stampanti Laser
 >*Le stampanti laser usano una tecnologia simile a quelle delle fotocopiatrici*
 
-![[LaserPrinter.png]]
+![[attachements/LaserPrinter.png]]
 
 >[!done] ‎Funzionamento
 >1. Il tamburo viene ***caricato elettricamente*** e ricoperto di materiale *fotosensibile*

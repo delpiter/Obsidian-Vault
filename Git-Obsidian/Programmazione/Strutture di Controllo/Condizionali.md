@@ -1,7 +1,7 @@
 ## Strutture Condizionali
 ---
 >[!info] Definizione
->Le **Strutture condizionali** permettono di specificare due rami o [[Sequenziali|blocchi]] di codice, di cui solo uno verrà eseguito in base al **risultato booleano** di una specifica [[Intro Espressioni e Operatori#Espressioni e Operatori|espressione]] condizionale (***vero/falso***)
+>Le **Strutture condizionali** permettono di specificare due rami o [[Sequenziali|blocchi]] di codice, di cui solo uno verrà eseguito in base al **risultato booleano** di una specifica [[../Espressioni e Operatori/Intro Espressioni e Operatori#Espressioni e Operatori|espressione]] condizionale (***vero/falso***)
 
 ### Costrutto `if`
 >[!tldr]

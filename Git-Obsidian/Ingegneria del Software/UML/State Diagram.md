@@ -76,7 +76,7 @@ Modalità di rappresentazione:
 >[!warning] Evento di Segnale
 
 - Si verifica quando un oggetto riceve un *oggetto segnale* da un altro oggetto.
-- Usato in applicazioni [[7 - Scheduler#Scheduling Real-Time|real-time]].
+- Usato in applicazioni [[../../Sistemi Operativi/Teoria/7 - Scheduler#Scheduling Real-Time|real-time]].
 
 ### Transazioni
 >[!definizione]

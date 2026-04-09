@@ -10,7 +10,7 @@ Si possono rappresentare ***relazioni di contenimento***.
 - Si consiglia di mostrare al *massimo due livelli*.
 - I package annidati vedono il ***namespace*** dei package che li contengono.
 
-![[PackageDiagram.svg]]
+![[attachements/PackageDiagram.svg]]
 
 
 > Esiste una ***generalizzazione tra due package***
@@ -28,7 +28,7 @@ Si possono rappresentare ***relazioni di contenimento***.
 > `<<trace>>`
 - Rappresenta l'evoluzione di un elemento in un ***altro elemento più dettagliato***.
 
-![[PackageDependece.svg]]
+![[attachements/PackageDependece.svg]]
 
 Conviene ***dipendenze circolari***.
 

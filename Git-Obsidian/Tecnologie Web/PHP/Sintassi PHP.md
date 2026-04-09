@@ -20,7 +20,7 @@ Le variabili devono iniziare con una lettere o con il carattere `_`.
 - Il nome delle variabili è ***case-sensitive***.
 
 ### Scope
->Le variabili `PHP` possono avere uno di 3 [[Visibilità e Tempo di Vita|scope]].
+>Le variabili `PHP` possono avere uno di 3 [[../../Programmazione/Variabili/Visibilità e Tempo di Vita|scope]].
 
 >[!abstract] Local
 >Una variabile dichiarata in una funzione ha ***visibilità locale*** e può essere usata solo in quella funzione.
@@ -63,7 +63,7 @@ Per creare una costante bisogna usare:
 > Dove
 - ***case-insensitive*** è *opzionale* e specifica se il nome della costante dovrà essere case-insensitive, di default è `false`.
 ### Tipi di Dato
-> I [[Tipi di Dati|tipi di dato]] del linguaggio `PHP` sono:
+> I [[../../Programmazione/Variabili/Tipi di Dati|tipi di dato]] del linguaggio `PHP` sono:
 
 >[!bug] Boolean
 
@@ -174,7 +174,7 @@ krsort($array); // Decreasing Sort associative array based on the Key
 >[!tip] Object
 
 `PHP` consente di definire classi e istanziare oggetti.
-> Supporta i principali meccanismi del [[Paradigma ad Oggetti]].
+> Supporta i principali meccanismi del [[../../Ingegneria del Software/Paradigma ad Oggetti]].
 
 ```php
 class Person {
@@ -208,7 +208,7 @@ echo $mario->name;
 Una risorsa non è un vero e proprio ***tipo***.
 - È una variabile che contiene il ***riferimento ad una risorsa esterna***.
 - Create e usate da funzioni speciali.
-	- Es. [[Introduzione ai Files|file aperti]] o connessioni ad un [[Git-Obsidian/DataBase/Introduzione#Database|database]].
+	- Es. [[../../Programmazione/I File/Introduzione ai Files|file aperti]] o connessioni ad un [[../../DataBase/Introduzione#Database|database]].
 
 ### Variabili Superglobali
 >[!info]
@@ -264,7 +264,7 @@ array(2) {
 ---
 >[!done] Stato
 >`PHP` fornisce due strumenti per la gestione dello stato
->- [[HTTP#Cookie|Cookie]].
+>- [[../../Reti/Application Layer/HTTP#Cookie|Cookie]].
 >- **Session**.
 
 Un cookie consente di salvare un'informazione nel *browser dell'utente*.
@@ -348,8 +348,8 @@ var_dump($x !== $y);
 ## Strutture di Controllo
 > Anche le strutture di controllo sono identiche a quelle di `C`.
 
-- [[Condizionali]]
-- [[Iterative]]
+- [[../../Programmazione/Strutture di Controllo/Condizionali]]
+- [[../../Programmazione/Strutture di Controllo/Iterative]]
 
 Con l'aggiunta del `foreach`.
 

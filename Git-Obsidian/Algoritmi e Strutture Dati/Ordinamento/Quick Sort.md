@@ -35,11 +35,11 @@
 	\end{algorithmic}
 	\end{algorithm}
 ```
-![Quick Sort (LR pointers) (youtube.com)](https://www.youtube.com/watch?v=8hEyhs3OV1w)
+![[LR pointers) (youtube.com)](https://www.youtube.com/watch?v=8hEyhs3OV1w|Quick Sort (LR pointers) (youtube.com)]]
 
 ## Concetto
 ---
->Algoritmo di ordinamento basato sulla tecnica [[Divide et Impera]]
+>Algoritmo di ordinamento basato sulla tecnica [[../Divide et Impera]]
 
 Ideato da *Tony Hoare* nel 1960, come studente presso la *Moscow State University*
 - Implementato come *algoritmo di ordinamento standard* nella libreria `C` di Unix (**`qsort()`**)
@@ -60,7 +60,7 @@ Quando noto che `j<i` ho separato con successo il vettore in due sottovettori
 - Il sottovettore di sinistra contenente solo valori $\leq$ *pivot*
 - Il sottovettore di destra contenente solo valori $>$ *pivot*
 
-![[QuickSortExample.png]]
+![[attachements/QuickSortExample.png]]
 
 ## Costo Computazionale
 ---
@@ -97,7 +97,7 @@ Otteniamo la seguente equazione ricorsiva
 $$
 T(n) = T(n/10)+T(9n/10)+\Theta(n)
 $$
-![[QuickSortProof.png]]
+![[attachements/QuickSortProof.png]]
 *Albero della ricorsione del quick sort*
 
 Possiamo notare come la parte sinistra dell'albero si concluda con una altezza di solo:

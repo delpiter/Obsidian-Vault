@@ -1,5 +1,5 @@
 >[!info]
->Stadio della [[Rendering Graphics Pipeline]] che può essere vista come una pipeline di [[Sistemi di Riferimento#Trasformazioni Geometriche|trasformazioni geometriche]] o *trasformazioni di sistemi di coordinate*.
+>Stadio della [[../Rendering Graphics Pipeline]] che può essere vista come una pipeline di [[../../Geometria per la Grafica/Sistemi di Riferimento#Trasformazioni Geometriche|trasformazioni geometriche]] o *trasformazioni di sistemi di coordinate*.
 
 Definita una ***camera virtuale*** e una ***scena tridimensionale***, la pipeline di rendering costruisce una *serie di trasformazioni* che **proiettano** la scena tridimensionale in un'immagine in una finestra contenuta nello schermo bidimensionale.
 
@@ -48,12 +48,12 @@ Converte le coordinate $x,y$ di ogni vertice, in coordinate espresse in `pixel`.
 5. Proiezione ortogonale `3D` su un piano immagine `2D`.
 6. ***Trasformazione di viewport***, trasforma l'immagine nella window in coordinate `pixel` *viewport*.
 
-![[GeometryStage.png]]
+![[../attachements/GeometryStage.png]]
 
 ### Trasformazioni di Modellazione
 > Ogni oggetto è definito in un suo sistema di coordinate, `OCS` (*Object Coordinate System*).
 
-Le [[Sistemi di Riferimento#Trasformazioni Geometriche|trasformazioni di modellazione]] permettono di muovere, orientare e trasformare i modelli all'interno di un sistema di riferimento comune `WCS`.
+Le [[../../Geometria per la Grafica/Sistemi di Riferimento#Trasformazioni Geometriche|trasformazioni di modellazione]] permettono di muovere, orientare e trasformare i modelli all'interno di un sistema di riferimento comune `WCS`.
 
 >[!example] Trasformazioni
 >Le trasformazioni necessarie sono queste:

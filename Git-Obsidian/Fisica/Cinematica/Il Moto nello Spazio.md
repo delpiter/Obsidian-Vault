@@ -1,6 +1,6 @@
 > Descriviamo il moto in ***tre dimensioni spaziali***.
 
-![[MotoNelloSpazio.png]]
+![[attachements/MotoNelloSpazio.png]]
 
 La posizione di una *particella nello spazio* è individuata da un vettore posizione:
 $$
@@ -61,5 +61,5 @@ $$
 >L'accelerazione si può scrivere come somma di ***accelerazione tangenziale*** e ***accelerazione perpendicolare***.
 >
 
-![[VelocitaSpazio.png|500]]
+![[attachements/VelocitaSpazio.png|500]]
 - Il modulo della velocità aumenta se l'accelerazione tangenziale è nello **stesso verso della velocità**.

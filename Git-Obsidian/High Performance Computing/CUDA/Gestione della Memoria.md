@@ -40,7 +40,7 @@ Al contrario dei *blocchi paralleli* i threads hanno dei meccanismi in più:
 >[!done] Meccanismi di sincronizzazione e condivisione di informazioni
 - Meccanismi che servono principalmente a ***ridurre la pressione esercitata sulla memoria globale*** (molto lenta rispetto ai core).
 #### Esempio
-> Consideriamo una applicazione di uno [[Stencil]] ad un array `1D` di elementi.
+> Consideriamo una applicazione di uno [[../Parallel Programming Patterns/Stencil|stencil]] ad un array `1D` di elementi.
 
 >[!abstract] Consideriamo un raggio dello stencil di $3$.
 >Ogni elemento in output è la somma di $7$ *elementi in input*.
@@ -57,7 +57,7 @@ Ogni thread processa un elemento dell'**output**.
 > All'interno di un *blocco* i thread possono condividere i dati attraverso la ***memoria condivisa***.
 
 La memoria del blocco è ***estremamente veloce*** e *gestita dall'utente*.
-- Tipo una [[Cache]] ma gestita dal programmatore.
+- Tipo una [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Cache]] ma gestita dal programmatore.
 
 > `{c} __shared__`
 - Le variabili vengono dichiarate tramite il costrutto `{c} __shared__ int var[1024];`
@@ -104,7 +104,7 @@ I trasferimenti avvengono a partire da indirizzi multipli di $32,64,128$.
 	- Utilizzo del `BUS`: $100\%$
 	- Transazioni: $1$
 
-![[CachingLoad.png]]
+![[attachements/CachingLoad.png]]
 
 > Warp richiede $32$ parole di $4$ `byte` permutati in una *linea di cache*.
 - Il **warp** ha bisogno di $128$ `bytes`.
@@ -112,7 +112,7 @@ I trasferimenti avvengono a partire da indirizzi multipli di $32,64,128$.
 	- Utilizzo del `BUS`: $100\%$
 	- Transazioni: $1$
 
-![[CachingLoad2.png]]
+![[attachements/CachingLoad2.png]]
 
 > Warp richiede $32$ parole di $4$ `byte` non allineati in una *linea di cache*.
 - Il **warp** ha bisogno di $128$ `bytes`.
@@ -120,7 +120,7 @@ I trasferimenti avvengono a partire da indirizzi multipli di $32,64,128$.
 	- Utilizzo del `BUS`: $50\%$
 	- Transazioni: $2$
 
-![[CachingLoad3.png]]
+![[attachements/CachingLoad3.png]]
 
 > Tutti i thread richiedono la stessa parola da $4$ `byte`.
 - Il **warp** ha bisogno di $4$ `bytes`.
@@ -128,14 +128,14 @@ I trasferimenti avvengono a partire da indirizzi multipli di $32,64,128$.
 	- Utilizzo del `BUS`: $3.125\%$
 	- Transazioni: $1$
 
-![[CachingLoad4.png]]
+![[attachements/CachingLoad4.png]]
 
 > Warp richiede $32$ parole di $4$ `byte` posizionate casualmente.
 - Il **warp** ha bisogno di $128$ `bytes`.
 - $N\times128$ `byte` vengono mossi nel `BUS`.
 	- Utilizzo del `BUS`: $\displaystyle\frac{128}{N\times128}\%$
 
-![[CachingLoad5.png]]
+![[attachements/CachingLoad5.png]]
 
 ##### Esempi
 >[!example] Esempio 1: Rotazione di un'immagine
@@ -166,7 +166,7 @@ __global__ void compute(point3d *points, int n){
 ```
 
 Ogni ***transazione di memoria*** leggerà dei dati che non vengono utilizzati.
-![[ArrayOfStructure.png]]
+![[attachements/ArrayOfStructure.png]]
 
 >[!done] Soluzione
 >Cambiamo la ***struttura dei dati***.
@@ -191,9 +191,9 @@ __global__ void compute(points3d *points, int n){
 
 - In questo modo si accede alla memoria in **maniera contigua**.
 
-![[StructureOfArray.png]]
+![[attachements/StructureOfArray.png]]
 
-Questa tecnica è usata anche nella programmazione [[MPI]].
+Questa tecnica è usata anche nella programmazione [[../MPI/MPI|MPI]].
 
 #### Conclusione
 >[!todo] Guidelines per l'ottimizzazione della memoria

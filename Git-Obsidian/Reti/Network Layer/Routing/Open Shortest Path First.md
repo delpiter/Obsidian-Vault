@@ -3,7 +3,7 @@
 > È il più diffuso [[Routing Globale#Interior Gateway Protocol|IGP]].
 
 >[!info]
->L'`OSPF` è il protocollo generalmente usato in un [[Routing Globale|Autonomous Systems]] di medie o grandi dimensioni (`ISP` di [[Enti Importanti#Internet Service Provider|primo o secondo livello]]).
+>L'`OSPF` è il protocollo generalmente usato in un [[Routing Globale|Autonomous Systems]] di medie o grandi dimensioni (`ISP` di [[../../Standards/Enti Importanti#Internet Service Provider|primo o secondo livello]]).
 
 
 Progettato per operare correttamente con reti:
@@ -29,7 +29,7 @@ Ciascuna area si comporta come un `AS` dal punto di vista dell'`OSPF`.
 > Ogni router ha un ***identificativo*** che di default è l'indirizzo `IP` più alto fra le interfacce del router.
 - Ogni router ha anche una *priorità* (`0-255`).
 
-![[OSPFArea.png]]
+![[attachements/OSPFArea.png]]
 
 >[!caution] Classificazione di Route
 - Route ***intra-area***: Aggiornamento delle informazioni di routing *dell'area*.
@@ -58,7 +58,7 @@ Se un router ha più percorsi di uguale lunghezza, il **carico è distribuito eq
 
 >[!help] Routing dipendente dal grado di servizio (***Fondamentale***)
 
-I router scelgono il percorso sulla base dell'*indirizzo* e del campo `Type of Service` dell'[[Protocollo IP#Datagram|Header IP]].
+I router scelgono il percorso sulla base dell'*indirizzo* e del campo `Type of Service` dell'[[../Protocollo IP#Datagram|Header IP]].
 - Si adottano ***diverse metriche di corso*** in base al tipo di servizio richiesto, creando instradamenti diversi.
 - ***Tipi di Servizio***:
 	- *Affidabilità*, *Massimizzazione Throughput*, *Minimizzazione del Ritardo*.
@@ -74,7 +74,7 @@ I router scelgono il percorso sulla base dell'*indirizzo* e del campo `Type of S
 | $4$  | **Link State Update**         | `LSU`    | Aggiornamento sullo stato dei collegamenti                      |
 | $5$  | **Link State Acknowledgment** | `LSA`    | Riscontro dei messaggi LSU ricevuti                             |
 #### Pacchetti
->[!hint] Protocollo incapsulato direttamente nel [[Protocollo IP]].
+>[[../Protocollo IP|!hint]].
 
 Si compongono di un'**intestazione comune** e informazioni aggiuntive
 
@@ -132,7 +132,7 @@ Si diffondono gli `LSA` a ***tutti i router della rete***.
 I messaggi `LSU` vengono instradati con la tecnica di [[Senza Routing Table#Flooding|flooding]].
 
 >[!caution] Le informazioni costruiscono il ***grafo della rete***
->I percorsi vengono poi calcolati attraverso l'[[Algoritmo di Dijkstra]].
+>I percorsi vengono poi calcolati attraverso l'[[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Cammini Minimi/Algoritmo di Dijkstra]].
 
 Lo ***shortest path tree*** è rappresentato dal *Link State Database* presente in ogni router.
 ##### Caso Rete Multi Access

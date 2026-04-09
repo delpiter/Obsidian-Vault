@@ -15,4 +15,4 @@
 ---
 > L'approccio di sviluppo dell'***ingegneria del software*** è un approccio a step.
 
-![[Il Ciclo di Vita del Software#Attività]]
+![[../Ciclo di Vita del Software/Il Ciclo di Vita del Software#Attività]]

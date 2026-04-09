@@ -8,14 +8,14 @@
 >>Più il livello di privilegio ***aumenta***, più il *set di istruzioni* viene ***ristretto***
 >>- Diminuisce man mano quello che la `CPU` è in grado di fare
 
-![[Protection-Levels.png|400]]
+![[../Bash/attachements/Protection-Levels.png|400]]
 > *Livello di privilegio / protezione*
 
 Il livello $3$ è il livello di privilegio utilizzato quando viene usata una ***applicazione utente***
 
 La suddivisione in "***rings***" di protezione della `CPU` è un supporto dell'hardware che consente al sistema operativo di realizzare ***politiche di sicurezza***.
 
->[!hint] [[Virtualizzazione]]
+>[[../../Virtualizzazione di Sistemi/Virtualizzazione|!hint]]
 >Recentemente i sistemi operativi hanno aggiunto un *nuovo livello* "$-1$" usato unicamente per gestire operazioni potenzialmente pericolose da ***parte di macchine virtuali***.
 ### Cambio di Livello di privilegio
 > Nel momento in cui l'applicazione chiama una system call
@@ -48,7 +48,7 @@ Alcune *API* molto diffuse sono:
 - `POSIX` per sistemi *unix-like*
 - `Java API` per le *Java Virtual Machines*
 
-![[Levels-API.png]]
+![[../Bash/attachements/Levels-API.png]]
 
 >[!question] Quali system call utilizza un eseguibile?
 

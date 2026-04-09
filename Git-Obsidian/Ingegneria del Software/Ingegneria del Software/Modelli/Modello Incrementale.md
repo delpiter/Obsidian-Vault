@@ -1,5 +1,5 @@
 >[!info]
->Il ***modello Incrementale*** è un modello *iterativo* [[Produzione|di produzione del software]] che combina gli aspetti del modello a cascata applicati a sottosistemi del prodotto finale, producendo il **software** a *incrementi*.
+>Il ***modello Incrementale*** è un modello *iterativo* [[../Produzione|di produzione del software]] che combina gli aspetti del modello a cascata applicati a sottosistemi del prodotto finale, producendo il **software** a *incrementi*.
 
 Consiste nell'applicare più sequenze lineari, ***scalate nel tempo***, ognuna delle quali produce uno *stadio operativo del software*.
 
@@ -9,13 +9,13 @@ Consiste nell'applicare più sequenze lineari, ***scalate nel tempo***, ognuna d
 >[!help] Progetti
 >È adatto a progetti in cui i requisiti iniziali sono ***ben definiti*** ma la dimensione del sistema scoraggia l'adozione di un processo [[Modello a Cascata|puramente lineare]].
 
-![[incremental_model.png]]
+![[attachements/incremental_model.png]]
 
 > **Incrementale** vs **Iterativo**
 
 >[!hint] Similarità
 >Prevedono **più versioni successive** del sistema.
->Ad ogni istante dopo il primo rilascio esiste una versione in [[Il Ciclo di Vita del Software#Attività|esercizio]] e una in [[Il Ciclo di Vita del Software#Attività|sviluppo]].
+>Ad ogni istante dopo il primo rilascio esiste una versione in [[../../Ciclo di Vita del Software/Il Ciclo di Vita del Software#Attività|esercizio]] e una in [[../../Ciclo di Vita del Software/Il Ciclo di Vita del Software#Attività|sviluppo]].
 
 >[!missing] Differenze
 >***Incrementale***
@@ -34,7 +34,7 @@ Consiste nell'applicare più sequenze lineari, ***scalate nel tempo***, ognuna d
 
 L'accelerazione dello sviluppo è raggiunto tramite strategie costruttive fondate sull'***uso di componenti***.
 
-![[RAD_model.png]]
+![[attachements/RAD_model.png]]
 
 >[!fail] ***RAD*** fallisce se
 >- Gli utenti non riescono a *tenere il passo*.

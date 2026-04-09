@@ -25,7 +25,7 @@ int main( void )
 }
 ```
 
-Segue il pattern [[Reduce|reduction]].
+Segue il pattern [[../Parallel Programming Patterns/Reduce|reduction]].
 
 >[!caution] Funzionamento
 

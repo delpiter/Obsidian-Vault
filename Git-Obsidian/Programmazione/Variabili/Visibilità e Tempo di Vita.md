@@ -19,7 +19,7 @@ end
 end
 ```
 - Il campo di visibilità dipende principalmente dalla posizione della [[Introduzione Variabili#Dichiarazione|dichiarazione]] 
-	Gli [[Linguaggio C#Keywords|specificatori di classe]] di memorizzazione sono `extern` e `static` ci permettono di *alterare* la visibilità di variabili e [[Funzioni in C|funzioni]]
+	Gli [[../Introduzione Programmazione/Linguaggio C#Keywords|specificatori di classe]] di memorizzazione sono `extern` e `static` ci permettono di *alterare* la visibilità di variabili e [[../Funzioni/Funzioni in C|funzioni]]
 ### Variabili "Globali"
 >[!tldr]
 >Variabili dichiarate al di fuori di ogni funzione sono dette **Variabili Globali**

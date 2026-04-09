@@ -1,12 +1,12 @@
 ## Energia Potenziale Elettrica
 ---
-> Idea molto simile alla [[Energia Potenziale Gravitazionale]].
+> Idea molto simile alla [[../Gravitazione/Energia Potenziale Gravitazionale]].
 
 >[!definizione]
 >L'***energia potenziale elettrica*** è l'energia immagazzinata da una carica $q$ posta in un [[Campi Elettrostatici|campo]] $\vec{E}$.
 
 >[!info] Lavoro della forza Elettrica
->Possiamo affermare che se la carica generatrice è ferma, risulta che il [[Lavoro di una Forza|lavoro]] della [[Coulomb|forza elettrica]] ***non dipende dal percorso***.
+>Possiamo affermare che se la carica generatrice è ferma, risulta che il [[../Lavoro e Energia/Lavoro di una Forza|lavoro]] della [[Coulomb|forza elettrica]] ***non dipende dal percorso***.
 
 Consideriamo due [[Elettromagnetismo#Cariche Elettriche|cariche elettriche]] $Q$ e $q$, di cui:
 - $Q$ ferma e non necessariamente puntiforme.
@@ -38,12 +38,12 @@ $$
 $$
 
 >[!abstract] Per qualsiasi Traiettoria
->La [[Coulomb#Legge di Coulomb|forza elettrica]] è una [[Lavoro di una Forza#Forze Conservative e Non Conservative|forza conservativa]].
+>La [[Coulomb#Legge di Coulomb|forza elettrica]] è una [[../Lavoro e Energia/Lavoro di una Forza#Forze Conservative e Non Conservative|forza conservativa]].
 
 >[!caution] Differenza di Energia Potenziale
 >$$U_{b}-U_{a}=-\int _{a}^b\vec{F}\cdot \, \text{d}\vec{l}=\frac{q_{0}q}{4\pi\varepsilon_{0}}\left( \frac{1}{r_{b}}-\frac{1}{r_{a}} \right) $$
 
-> Come per l'[[Energia Potenziale Gravitazionale]], scelgo
+> Come per l'[[../Gravitazione/Energia Potenziale Gravitazionale]], scelgo
 
 $$
 U(r\to \infty)=0\implies U(r)=\frac{q_{0}q}{4\pi\varepsilon_{0}r}
@@ -108,9 +108,9 @@ $$
 ##### Superfici Equipotenziali
 > Le ***superfici equipotenziali*** (sulle quali si trova lo stesso valore di $V$), sono perpendicolari a $\vec{E}$ in ogni punto.
 
-![[SuperficiEquipotenziali.png|250]]
+![[attachements/SuperficiEquipotenziali.png|250]]
 
-- Del tutto analogo all'uso di [[Funzioni di due Variabili Reali#Curva di Livello|ISOIPSE]].
+- Del tutto analogo all'uso di [[../../Analisi/Funzioni a due Variabili/Funzioni di due Variabili Reali#Curva di Livello|ISOIPSE]].
 ## Elettrostatica e Conduttori
 ---
 > In un conduttore le [[Elettromagnetismo#Cariche Elettriche|cariche]] sono mobili.
@@ -139,7 +139,7 @@ $$
 >- **Costante** all'*interno*
 >- $\frac{1}{r}$ all'*esterno*
 
-![[CaricaConduttore.png|500]]
+![[attachements/CaricaConduttore.png|500]]
 
 >[!hint] Osservazione
 >Si vede che $\vec{E}=0$ e $V=\text{cost}$ vale anche nelle cavità.
@@ -193,7 +193,7 @@ V(z)=C\equiv V_{\oplus} \quad z<0 \\
 V(z)=- \displaystyle\frac{|\sigma|}{\varepsilon_{0}}z+c\quad z>d
 \end{cases}
 $$
-![[DoppioPiano.png]]
+![[attachements/DoppioPiano.png]]
 
 #### Calcolo del Potenziale per Cariche a Simmetria Sferica
 > Usiamo le espressioni per $\vec{E}$ già trovate e calcoliamo l'espressione per $V(r)$ con $V(r\to \infty)=0$:

@@ -1,7 +1,7 @@
 ## Retta Passante per Due Punti
 ---
 >[!info] Definizione
->Una ***retta*** in $\mathbb{K}^n$ è un [[2 - Campi e Spazi Vettoriali#Sottospazio Affine|sottospazio affine]] di dimensione $1$
+>Una ***retta*** in $\mathbb{K}^n$ è un [[Basi dell'algebra/2 - Campi e Spazi Vettoriali#Sottospazio Affine|sottospazio affine]] di dimensione $1$
 >>[!abstract] ‎ 
 >>Presi *due punti distinti* di $\mathbb{K}^n$ $\exists!$ una ***retta*** passante per ***entrambi i punti***
 
@@ -44,7 +44,7 @@ $S=\left\{  \left( \frac{1}{7}t, \frac{2}{7}t, t \right), t \in \mathbb{R}  \rig
 ## Piano Passante per Tre Punti
 ---
 >[!info] Definizione
->Una ***piano*** in $\mathbb{K}^n$ è un [[2 - Campi e Spazi Vettoriali#Sottospazio Affine|sottospazio affine]] di dimensione $2$
+>Una ***piano*** in $\mathbb{K}^n$ è un [[Basi dell'algebra/2 - Campi e Spazi Vettoriali#Sottospazio Affine|sottospazio affine]] di dimensione $2$
 >>[!abstract] ‎ 
 >>Dati 3 punti in $\mathbb{K}^n$ ***non allineati***, $\exists!$ un ***piano passante*** per i *tre punti*
 

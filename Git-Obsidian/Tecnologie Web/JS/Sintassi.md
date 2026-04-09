@@ -1,4 +1,4 @@
-> La sintassi di [[JavaScript]] è modellata su quella del [[Linguaggio C|C]] con alcune varianti significative.
+> La sintassi di [[JavaScript]] è modellata su quella del [[../../Programmazione/Introduzione Programmazione/Linguaggio C|C]] con alcune varianti significative.
 
 >[!summary] In Breve
 
@@ -167,7 +167,7 @@ window.setTimeout(function (), millis, ["opt"]);
 
 
 >[!hint] `{js icon} location`
->Contiene l'[[URL]] del documento corrente.
+>Contiene l'[[../../Reti/Introduzione/URL|URL]] del documento corrente.
 
 ```js
 window.location = "google.com"; // redirect

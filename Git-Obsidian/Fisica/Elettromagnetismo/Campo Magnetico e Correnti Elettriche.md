@@ -1,6 +1,6 @@
 ## Forza Agente su un Conduttore con Corrente
 ---
-> Preso un filo percorso da [[Corrente Elettrica|corrente]], vediamo che tipo di forza agisce su questo filo.
+> Preso un filo percorso da [[Circuiti/Corrente Elettrica|corrente]], vediamo che tipo di forza agisce su questo filo.
 
 >[!tldr] Idea
 >Immaginiamo di avere un filo con sezione $A$, supponiamo di avere un [[Magnetismo|campo magnetico]] $\vec{B}$ che attraversa il filo.
@@ -63,7 +63,7 @@ Di fatto si ha momento:
 $$
 \tau =IwlB\sin\theta=ISB\sin\theta
 $$
-![[SpiraCorrente.png|400]]
+![[attachements/SpiraCorrente.png|400]]
 
 Esprimendo la superficie $S$ della spira come vettore $\vec{S}$ perpendicolare alla stessa:
 $$
@@ -90,7 +90,7 @@ $$
 >[!cite] Legge della Circuitazione di Ampere
 >$$\oint_{\Gamma} \vec{B}\, \text{d}\vec{r}=\mu_{0} \sum I_{conc} $$
 
-> Consideriamo un pezzo di filo percorso da [[Corrente Elettrica]] $I$.
+> Consideriamo un pezzo di filo percorso da [[Circuiti/Corrente Elettrica]] $I$.
 
 La ***circuitazione*** del *campo magnetico* su un percorso chiuso è pari alla **somma algebrica** delle correnti "*concatenate*" con $\Gamma$, cioè che attraversano qualsiasi superficie di cui $\Gamma$ si il bordo.
 
@@ -99,19 +99,19 @@ La costante $\displaystyle\mu_{0}=\frac{1}{\varepsilon_{0}c^{2}}=4\pi\times10^{-
 
 >[!hint] Osservazioni
 
-La *circuitazione* è molto simile al calcolo del [[Lavoro di una Forza#Lavoro di una Forza Variabile|lavoro]].
+La *circuitazione* è molto simile al calcolo del [[../Lavoro e Energia/Lavoro di una Forza#Lavoro di una Forza Variabile|lavoro]].
 - L'integrale lungo un percorso di un vettore.
 
 Facendolo su un percorso chiuso, la ***Legge di Ampere*** afferma che *potrebbe non venire zero*.
-- Il campo magnetico ***non è un campo*** [[Lavoro di una Forza#Forze Conservative e Non Conservative|conservativo]].
+- Il campo magnetico ***non è un campo*** [[../Lavoro e Energia/Lavoro di una Forza#Forze Conservative e Non Conservative|conservativo]].
 ##### Legge di Ampere-Maxwell
 >[!question] È possibile che sia la variazione di $\vec{E}$ che generi un campo magnetico?
 
-Consideriamo un [[Conduttori#Condensatore|condensatore]] a facce piane e parallele, e due superfici:
+Consideriamo un [[Circuiti/Conduttori#Condensatore|condensatore]] a facce piane e parallele, e due superfici:
 - $S_{1}$ tra i due piani.
 - $S_{2}$ che taglia uno dei conduttori.
 
-![[CircuitazioneAmpere.png]]
+![[attachements/CircuitazioneAmpere.png]]
 
 
 $S_{1}$ e $S_{2}$ hanno lo stesso "*circuito*" come **bordo**.
@@ -194,7 +194,7 @@ $$
 Prendiamo un *solenoide ideale* e prendiamone una sezione.
 - Scegliamo come curva per l'applicazione della ***legge di Ampere*** un percorso rettangolare. 
 
-![[SolenoideAmpere.png|400]]
+![[attachements/SolenoideAmpere.png|400]]
 
 Lungo il tratto $SR$ il campo magnetico è $B=0$ (*solenoide infinita ideale*).
 
@@ -215,7 +215,7 @@ $$
 ###### Toroide
 > Consideriamo un toroide costruito attraverso l'avvolgimento di un conduttore.
 
-![[ToroideAmpere.png|400]]
+![[attachements/ToroideAmpere.png|400]]
 
 Scelgo come curva per l'applicazione del ***teorema di Ampere*** un cerchio di raggio $R$ che segue il *campo Magnetico*.
 $$
@@ -240,13 +240,13 @@ Si attirano o si respingono in ***base alla direzione della corrente***.
 ## Equazioni di Maxwell
 ---
 ### Campo Elettrico
->[!tl;dr] [[Flusso di un Campo Vettoriale#Teorema di Gauss|Teorema di Gauss]]
+>[[Flusso di un Campo Vettoriale#Teorema di Gauss|Teorema di Gauss]]
 
 $$
 \phi(\vec{E})= \frac{\sum Q^{\text{int}}}{\varepsilon_{0}}
 $$
 
->[!hint] [[Induzione#Legge dell'Induzione|Legge di Faraday Lenz]]
+>[[Induzione#Legge dell'Induzione|Legge di Faraday Lenz]]
 
 $$
 \oint  \vec{E}\cdot\, \text{d}l=-\displaystyle{\frac{\text{d}\phi(\vec{B})}{\text{d}t}} 
@@ -258,7 +258,7 @@ $$
 $$
 \phi(\vec{B})= 0
 $$
->[!help] [[#Legge di Ampere-Maxwell]]
+>[[#Legge di Ampere-Maxwell|!help]]
 
 $$
 \oint \vec{B}\cdot \text{d}\vec{l}=\mu_{0}\left(I_{\text{conc}}+\varepsilon_{0}\displaystyle{\frac{\text{d}\phi(\vec{E})}{\text{d}t}}\right)

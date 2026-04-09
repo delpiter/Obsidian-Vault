@@ -5,7 +5,7 @@
 ## Accelerometro
 ---
 >[!info] 
->L'***accelerometro*** è un [[Sensori e Azionatori#Sensori|sensore]] che misura l'accelerazione di un oggetto che si muove (*equipaggiato con il sensore*).
+>L'***accelerometro*** è un [[../Sensori e Azionatori#Sensori|sensore]] che misura l'accelerazione di un oggetto che si muove (*equipaggiato con il sensore*).
 
 ## Giroscopio
 ---

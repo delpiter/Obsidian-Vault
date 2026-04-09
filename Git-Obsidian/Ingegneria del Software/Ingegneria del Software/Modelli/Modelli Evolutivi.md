@@ -1,5 +1,5 @@
 >[!info]
-> I ***modelli evolutivi*** sono *modelli iterativi* di [[Produzione|produzione del software]], caratterizzati in modo da consentire lo sviluppo di **versioni sempre più complete del software**.
+> I ***modelli evolutivi*** sono *modelli iterativi* di [[../Produzione|produzione del software]], caratterizzati in modo da consentire lo sviluppo di **versioni sempre più complete del software**.
 
 Adatto a sistemi software che ***evolvono nel tempo*** e i requisiti cambiano durante lo sviluppo.
 - Usato quando è impossibile realizzare un prodotto completo e competitivo nei *tempi dettati dal mercato*.
@@ -27,7 +27,7 @@ L'uso principale consiste nell'aiutare i clienti e gli sviluppatori a capire meg
 - Si evidenziano ***funzionalità mancanti*** o confuse.
 - Un sistema funzionante è disponibile presto nel processo.
 
-![[Prototyping.png]]
+![[attachements/Prototyping.png]]
 
 ### Prototipazione Evolutiva
 >[!tldr] Idea

@@ -1,7 +1,7 @@
 >[!question] Che cos'è il Web?
 
 >[!definizione] Definizione da Wikipedia
->"The `World Wide Web` is an information space where *documents* and other *web resources* are identified by [[URL|Uniform Resource Locators]], interlinked by ***hypertext*** links, and can be accessed via the Internet".
+>"The `World Wide Web` is an information space where *documents* and other *web resources* are identified by [[../Reti/Introduzione/URL|Uniform Resource Locators]], interlinked by ***hypertext*** links, and can be accessed via the Internet".
 
 Gli ***hypertext links*** sono documenti dotati di link che permettono di accendere ad *altri documenti collegati*.
 
@@ -23,7 +23,7 @@ Il `WWW` è uno spazio informativo in cui ogni elemento di interesse è chiamato
 
 >[!abstract] Interazione
 
-Un protocollo di comunicazione chiamato [[HTTP]] permette di ***scambiare messaggi*** su una rete informatica.
+Un protocollo di comunicazione chiamato [[../Reti/Application Layer/HTTP|HTTP]] permette di ***scambiare messaggi*** su una rete informatica.
 
 #### HTML
 >[!tip] `HTML`
@@ -44,7 +44,7 @@ Un protocollo di comunicazione chiamato [[HTTP]] permette di ***scambiare messag
 ```
 
 ##### CSS
-> Gli aspetti presentazionali della pagina sono gestiti attraverso un linguaggio specifico che ne definisce gli stili. ([[Cascading Style Sheets|CSS]])
+> Gli aspetti presentazionali della pagina sono gestiti attraverso un linguaggio specifico che ne definisce gli stili. ([[CSS/Cascading Style Sheets|CSS]])
 
 >[!abstract] Cascading Style Sheets
 
@@ -66,18 +66,18 @@ Sono una sintassi nota usata in `www` per definire i nomi e indirizzi di oggetti
 - Risolvono il problema di creare un ***meccanismo di accesso unificato*** alle risorse.
 
 Gli uri sono definiti come:
-- [[URL]]: Sintassi che contiene informazioni immediatamente utilizzabili per accedere alla risorsa (es. *Indirizzo di rete*).
+- [[../Reti/Introduzione/URL|URL]]: Sintassi che contiene informazioni immediatamente utilizzabili per accedere alla risorsa (es. *Indirizzo di rete*).
 - ***URN***: *Uniform Resource Name*, una sintassi che permetta una etichettatura permanente e non ripudiabile della risorsa.
 
 
 >[!summary] Risorsa
 >Una ***risorsa*** è qualunque struttura che sia oggetto di scambio tra applicazioni all'interno del `web`.
 #### HTTP
->[!abstract] [[HTTP]]
+>[!abstract] [[../Reti/Application Layer/HTTP|HTTP]]
 >***HyperText Transfer Protocol***
->- Per l'*interazione* tra client e server sopra a [[TCP]].
+>- Per l'*interazione* tra client e server sopra a [[../Reti/Transport Layer/TCP]].
 
-Il `web` si basa su un protocollo internet di [[Protocolli Applicativi|livello applicativo]] basato sul modello *client* e *server*.
+Il `web` si basa su un protocollo internet di [[../Reti/Application Layer/Protocolli Applicativi|livello applicativo]] basato sul modello *client* e *server*.
 - Il client (*browser*)  è un **visualizzatore di documenti ipertestuali**.
 	- Inizia l'interazione.
 	- I browser hanno anche ***plug-in*** che permettono di visualizzare ogni tipo di formato speciale e un linguaggio di programmazione `{js icon} javascript` interno.
@@ -92,7 +92,7 @@ Il `web` si basa su un protocollo internet di [[Protocolli Applicativi|livello a
 
 ##### Javascript
 >[!info] Linguaggio
-> [[JavaScript]] è un linguaggio di scripting *orientato* agli ***oggetti*** e agli ***eventi***, utilizzato nella programmazione `web` lato client.
+> [[JS/JavaScript|JavaScript]] è un linguaggio di scripting *orientato* agli ***oggetti*** e agli ***eventi***, utilizzato nella programmazione `web` lato client.
 
 È un linguaggio ***interpretato debolmente tipizzato***, debolmente orientato agli oggetti.
 - È possibile usarlo anche *lato server*.
@@ -147,7 +147,7 @@ Lo stack è completamente ***open source***.
 >Come `LAMP` ma con windows al posto di Linux.
 
 ###### PHP
->[!todo] [[PHP Hypertext Preprocessor|PHP]]
+>[!todo] [[PHP/PHP Hypertext Preprocessor|PHP]]
 >È un ***linguaggio di scripting interpretato***, concepito per la programmazione di pagine `web` *dinamiche* lato server.
 
 L'interprete è un software libero distribuito sotto la `PHP` licence.

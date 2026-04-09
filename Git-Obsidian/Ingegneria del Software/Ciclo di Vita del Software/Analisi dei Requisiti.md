@@ -13,7 +13,7 @@ L'oggetto dell'analisi è l'organizzazione nel suo complesso.
 - *Processi*
 - Flussi *informativi*
 
-L'analisi dei requisiti è anche vista come [[Definizioni_Ingegneria-del-Software#Milestone|milestone]].
+L'analisi dei requisiti è anche vista come [[../../Definizioni/Definizioni_Ingegneria-del-Software#Milestone|milestone]].
 - Usato come *conferma dei requisiti* da parte del cliente.
 - L'utente finale e il progettista si accordano sulle funzionalità messe a disposizione del software.
 
@@ -102,7 +102,7 @@ classDiagram
 ```
 
 > Usato per applicazioni orientate agli oggetti
-- Come [[Git-Obsidian/DataBase/Introduzione#Database|DataBase]]
+- Come [[../../DataBase/Introduzione#Database|DataBase]]
 - L'aspetto più significativo è costituito dalle ***informazioni***.
 ### Analisi Orientata alle Funzioni
 >[!info]
@@ -170,7 +170,7 @@ Gli ***stati*** possono essere descritti a un *elevato livello di astrazione* o 
 
 >[!attention] Linguaggi Semiformali
 >***Notazione grafica***, che presenta una sematica sfumata, accoppiata con descrizioni in *linguaggio naturale*.
->- Come [[Modello Entity-Relationship|schemi E/R]].
+>- Come [[../../DataBase/Progettazione Concettuale/Modello Entity-Relationship|schemi E/R]].
 
 >[!done] Linguaggi Formali
 >Sono linguaggi di specifica ***basati sulla logica dei predicati***.

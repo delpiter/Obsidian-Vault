@@ -65,14 +65,14 @@ Vengono applicati ***diversi protocolli*** per il *trasporto* dell'informazione
 
 >Dati questi dati:
 
-![[Original Data.png]]
+![[attachements/Original Data.png]]
 ### Trasparenza Semantica
 >[!info] Concetto
 >Riguarda l'***integrità*** delle informazioni trasportate
 
 Richiede di attuare **procedure di recupero** da *situazioni di errore* che possono insorgere nella rete.
 
-![[SemanticTransparency.png]]
+![[attachements/SemanticTransparency.png]]
 - Rallenta il trasferimento dell'informazione
 
 >[!done] Uso
@@ -84,7 +84,7 @@ Richiede di attuare **procedure di recupero** da *situazioni di errore* che poss
 
 Un minimo ritardo di transito è ***sempre presente***
 
-![[TemporalTransparency.png]]
+![[attachements/TemporalTransparency.png]]
 - Può provocare errori nel trasferimento del dato
 
 >[!done] Uso

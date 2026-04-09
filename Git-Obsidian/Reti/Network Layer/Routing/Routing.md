@@ -1,14 +1,14 @@
 > Esistono più percorsi per raggiungere una destinazione da una sorgente
 
 >[!todo] Internet
-> Internet è una "***rete di reti***", il cui componente elementare è la ***network*** [[Protocollo IP|IP]].
+> Internet è una "***rete di reti***", il cui componente elementare è la ***network*** [[../Protocollo IP|IP]].
 
 Le ***network*** `IP` sono interconnesse da apparati che svolgono la funzione di "***ponte***".
 - *Router* o *Gateway*.
-- I calcolatori in una **network** `IP` sono connessi dalla medesima **infrastruttura di rete fisica** ([[ISO-OSI#TCP-IP|Livelli]] 1 e 2).
+- I calcolatori in una **network** `IP` sono connessi dalla medesima **infrastruttura di rete fisica** ([[../../Standards/ISO-OSI#TCP-IP|Livelli]] 1 e 2).
 
 Ogni network `IP` può essere implementata con una **tecnologia specifica**.
-- [[Rete Wireless|Wi-Fi]], `ADSL`, [[Rete Ethernet|Ethernet]], etc...
+- [[../../Data Link Layer/Networks/802.X/Rete Wireless|Wi-Fi]], `ADSL`, [[../../Data Link Layer/Networks/802.X/Rete Ethernet|Ethernet]], etc...
 
 >[!important] Ipotesi Fondamentale
 >Tutti gli host appartenenti alla medesima **network** `IP` sono in grado di parlare tra loro grazie alla tecnologia con cui essa viene implementata.
@@ -20,9 +20,9 @@ Ogni network `IP` può essere implementata con una **tecnologia specifica**.
 >La ***rete Logica*** è la **network** `IP` a cui un `host` appartiene logicamente.
 
 >[!caution] Rete Fisica
->La ***rete Fisica*** è la rete (es [[LAN]]) a cui un `host` è *effettivamente connesso*.
+>La ***rete Fisica*** è la rete (es [[../../Data Link Layer/Networks/LAN]]) a cui un `host` è *effettivamente connesso*.
 
-L'[[ISO-OSI|architettura a strati]] nasconde gli indirizzi fisici e consente alle applicazioni di lavorare solo con [[Protocollo IP#L'indirizzo IP|indirizzi IP]].
+L'[[../../Standards/ISO-OSI|architettura a strati]] nasconde gli indirizzi fisici e consente alle applicazioni di lavorare solo con [[../Protocollo IP#L'indirizzo IP|indirizzi IP]].
 
 ## Interconnesione
 ---
@@ -33,9 +33,9 @@ L'[[ISO-OSI|architettura a strati]] nasconde gli indirizzi fisici e consente all
 ### Router
 >[!definizione]
 >Il ***router*** è un dispositivo elettronico che connette due o più network `IP` inoltrando informazioni.
->- Ha funzioni dal livello $1$ al livello $3$ [[ISO-OSI|OSI]].
+>- Ha funzioni dal livello $1$ al livello $3$ [[../../Standards/ISO-OSI|OSI]].
 >
->È il nodo di commutazione nelle [[Reti IP]] specializzato per l'utilizzo del [[Protocollo IP]].
+>È il nodo di commutazione nelle [[../Reti IP]] specializzato per l'utilizzo del [[../Protocollo IP]].
 
 Il singolo calcolatore terminale sceglie un router come *gateway* verso le altre ***network*** `IP`, instrada il datagram verso il router.
 
@@ -54,7 +54,7 @@ Il *router* ha il compito di decidere **in che direzione** inviare il datagram.
 - *Interconnessione* fra `LAN` per organizzazioni di medie dimensioni.
 
 > ***Backbone Router***
-- Per [[Git-Obsidian/Reti/Introduzione/Introduzione#Rete di Transito|reti di trasporto]] e connessioni *inter-domain*.
+- Per [[../../Introduzione/Introduzione#Rete di Transito|reti di trasporto]] e connessioni *inter-domain*.
 
 #### Funzioni dei Router
 >[!caution] Routing
@@ -71,7 +71,7 @@ Il *router* ha il compito di decidere **in che direzione** inviare il datagram.
 ## Routing Diretto e Indiretto
 ---
 >[!abstract] Direct Delivery
->L'[[Protocollo IP|IP]] sorgente e destinatario sono sulla ***stessa network***.
+>L'[[../Protocollo IP|IP]] sorgente e destinatario sono sulla ***stessa network***.
 
 Il datagram viene spedito *direttamente al destinatario*.
 
@@ -96,7 +96,7 @@ I **router** formano una struttura interconnessa e cooperante.
 >> Colonne o *fields*
 >- Informazioni del medesimo tipo relative a opzioni di instradamento.
 
-Il formato della tabella dipende dal [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] e dall'implementazione.
+Il formato della tabella dipende dal [[../../../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]] e dall'implementazione.
 
 È una tabella risultato dei ***protocolli di routing***.
 ##### Route
@@ -170,7 +170,7 @@ Il **table lookup**, dopo aver scelto la `D`-esima riga:
 
 > Esempio
 
-![[Aggregation.png]]
+![[../attachements/Aggregation.png]]
 
 Le reti:
 - `137.204.64.0\24`
@@ -186,7 +186,7 @@ Il router `R2` non serve sapere come sono divise.
 ## Rappresentazione della Rete
 ---
 >[!info]
->Ad una generica [[Reti IP|rete]] si può facilmente associare un [[I Grafi#Terminologia|grafo orientato]].
+>Ad una generica [[../Reti IP|rete]] si può facilmente associare un [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi#Terminologia|grafo orientato]].
 
 I **nodi** rappresentano i *terminali* e gli **archi** rappresentano i *collegamenti*.
 - L'orientamento dell'arco rappresenta la ***direzione di trasmissione***.

@@ -1,19 +1,19 @@
 >[!example] Elementi
-> Il [[Sistemi Embedded#Processore|microcontroller]] è composto di diversi componenti.
-> - [[La CPU|CPU]]
+> Il [[../Sistemi Embedded#Processore|microcontroller]] è composto di diversi componenti.
+> - [[../../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU|CPU]]
 > - [[Memorie]]
 > - [[General Purpose Input Output|Input Output]]
 > - [[Timers]]
 > - [[Bus di Comunicazione]]
 > - [[Power Circuit]]
 
-![[MicrocontrollerElements.png]]
+![[attachements/MicrocontrollerElements.png]]
 
 
 ## Basic Control Architecture
 ---
 >[!failure] Super-Loop
->Il ***super loop*** è la più semplice architettura di controllo adottata per la programmazione di [[Sistemi Embedded#Processore|microcontroller]].
+>Il ***super loop*** è la più semplice architettura di controllo adottata per la programmazione di [[../Sistemi Embedded#Processore|microcontroller]].
 
 Non richiede alcun *supporto hardware*.
 

@@ -2,7 +2,7 @@
 ## Dagli Interrupt agli Eventi
 ---
 >[!tldr] Idea
->Il meccanismo degli [[Interfacciamento di Periferiche#Interrupt|Interrupt]] può essere usato per progettare architetture ad alto livello ***event-based***.
+>Il meccanismo degli [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Interfacciamento di Periferiche#Interrupt|Interrupt]] può essere usato per progettare architetture ad alto livello ***event-based***.
 
 Un ***interrupt*** può essere considerato un "*evento a basso livello*".
 - Un meccanismo che interrompe il *flow* del **super loop** per eseguire un *handler*.
@@ -37,12 +37,12 @@ Un ***interrupt*** può essere considerato un "*evento a basso livello*".
 2. La *source* avrà il compito di notificare tutti i *listener* in ascolto, quando un evento accade.
 
 >[!warning] Attenzione
->Nei [[Sistemi Embedded]] il codice del *listener* viene eseguito dall'***interrupt handler***.
+>Nei [[../Sistemi Embedded]] il codice del *listener* viene eseguito dall'***interrupt handler***.
 >>[!danger] Il *listener* **non deve contenere** computazioni a lungo termine
 
 ### FSM Asincrone
 >[!tldr] Idea
->Le `FSM` asincrone sono basate su due concetti base, il ***super-loop ininterrompibile*** (*event loop*) e una [[Queue]] di eventi.
+>Le `FSM` asincrone sono basate su due concetti base, il ***super-loop ininterrompibile*** (*event loop*) e una [[../../Algoritmi e Strutture Dati/Strutture Dati/Queue]] di eventi.
 
 Non c'è il concetto di [[Architetture Task-Based#Architetture Task-Based|periodo]].
 
@@ -62,7 +62,7 @@ void handlerExample()
 }
 ```
 
-Dietro all'***event-loop*** c'è una pool id [[6 - Processi, Schedule e Thread|thread]] che esegue gli handler.
+Dietro all'***event-loop*** c'è una pool id [[../../Sistemi Operativi/Teoria/6 - Processi, Schedule e Thread|thread]] che esegue gli handler.
 - Un eventuale valore di ritorno dell'**handler** è gestito tramite l'invio di un *ulteriore evento*.
 
 > C'è un disaccoppiamento tra la *generazione dell'evento* e la *reazione del sistema*.

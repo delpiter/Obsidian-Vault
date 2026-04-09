@@ -1,7 +1,7 @@
 ## Metodi Diretti
 ---
 >[!info]
->In *assenza* di [[Errore di Rappresentazione|errori di arrotondamento]] conducono alla *soluzione esatta* in un numero ***finito di passi***.
+>In *assenza* di [[../Numeri Finiti/Errore di Rappresentazione|errori di arrotondamento]] conducono alla *soluzione esatta* in un numero ***finito di passi***.
 >Adatti per la soluzione di sistemi con matrice dei coefficienti **densa** e di **moderate dimensioni**.
 
 >[!caution] Matrice Densa
@@ -18,7 +18,7 @@ I metodi diretti trasformano un *sistema lineare generico* in un *sistema linear
 >Si può spezzare in due problemi:
 >$$\begin{cases}By=b \\ Cx=y\end{cases}$$
 
->[[Complessità di Algoritmi|Complessità Algoritmo]] $O(n^3)\implies O(n^2)$
+>[[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|Complessità Algoritmo]] $O(n^3)\implies O(n^2)$
 
 #### Metodi di Risoluzione
 ##### Metodo di Eliminazione Gaussiana
@@ -36,7 +36,7 @@ I metodi diretti trasformano un *sistema lineare generico* in un *sistema linear
 >- $U$ triangolare superiore.
 
 
-Utilizza il [[Risoluzione di Sistemi#Metodo di Gauss|metodo di Gauss]] per costruire $U$.
+Utilizza il [[../../Algebra e Geometria/Risoluzione di Sistemi#Metodo di Gauss|metodo di Gauss]] per costruire $U$.
 - La matrice $L$ si inizializza all'identità.
 
 Per calcolare $L$
@@ -92,7 +92,7 @@ $$
 - $L$ è [[#Matrici Triangolari|triangolare]] inferiore con elementi diagonali positivi.
 - $R$ triangolare superiore con elementi diagonali positivi.
 
->[!warning] Solo per matrici simmetriche e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]].
+>[[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche#Tipi di Forme Quadratiche|Definita positiva]].
 
 ###### Fattorizzazione di Cholesky
 >[!check] Teorema di Cholesky
@@ -116,7 +116,7 @@ $$
 
 ###### Fattorizzazione $QR$
 >[!check] Teorema
->Sia $A\in\mathbb{R}^{m\times n}$, con $m\geq n$ e $\text{rank}(A)=n$ (Le colonne sono [[2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]).
+>Sia $A\in\mathbb{R}^{m\times n}$, con $m\geq n$ e $\text{rank}(A)=n$ (Le colonne sono [[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]).
 ><u>Allora</u>
 >Esistono una matrice $Q\in\mathbb{R}^{m\times m}$ **ortogonale** e una matrice $R=\begin{pmatrix}R_{1} \\ 0\end{pmatrix}\in \mathbb{R}^{(m-n)\times n}$ dove $R_{1}\in\mathbb{R}^{n\times n}$, è una matrice triangolare superiore ***non singolare***, e $0\in \mathbb{R}^{(m-n)\times n}$ è una matrice di zeri tali che $A=QR$ 
 
@@ -205,7 +205,7 @@ Se le costanti $a,b$ dipendono dall'ordine di $A$ si dice che la fattorizzazione
 >Metodi che generano una successione di soluzioni che sotto opportune ipotesi, ***convergono alla soluzione***.
 >Adatti per la soluzione di sistemi con matrice dei coefficienti di **grandi dimensioni** e [[#^6e46d3|sparsa]].
 
-Si basano su una decomposizione della matrice $A$ e presentano una [[Complessità di Algoritmi|complessità]] di $O(kn^2)$, dove $k$ è il numero di iterazioni.
+Si basano su una decomposizione della matrice $A$ e presentano una [[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità]] di $O(kn^2)$, dove $k$ è il numero di iterazioni.
 
 ### Basati sulla Decomposizione
 >[!check] Decomposizione
@@ -282,7 +282,7 @@ $$
 x_{i}^{(k)}=\displaystyle{\frac{-\displaystyle\sum^n_{j=1,\ j\neq i}a_{ij}x^{(k-1)}_{j}+b_{i}}{a_{ii}}},\quad i=1,2,\dots,n
 $$
 
-Dato che la matrice $D^{-1}$ è una [[9 - Matrici Diagonali|matrice diagonale]]:
+Dato che la matrice $D^{-1}$ è una [[../../Algebra e Geometria/Applicazioni/9 - Matrici Diagonali|matrice diagonale]]:
 - La ***matrice di iterazione*** del metodo di *Jacobi* è data da:
 
 $$
@@ -332,14 +332,14 @@ $$
 >Usa, per calcolare la ***nuova componente*** $i$-esima di un *iterato* le *componenti già calcolate* dell'iterato stesso.
 
 >[!hint] Osservazione
->Il metodo non si presta ad essere [[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele|parallelizzato]] in quanto ogni nuovo componente dell'iterato *dipende* da tutte le nuove componenti appena calcolate.
+>Il metodo non si presta ad essere [[../../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele|parallelizzato]] in quanto ogni nuovo componente dell'iterato *dipende* da tutte le nuove componenti appena calcolate.
 
 Il metodo suggerisce che la **soluzione** al passo $k$ si *ottiene*:
 - Risolvendo il sistema ***triangolare inferiore*** avente $(D+E)$ come matrici dei coefficienti e termine noto $b-Fx^{(k-1)}$.
 
 #### Convergenza
 >[!definizione]
->Un procedimento iterativo si dice [[Limiti di Successioni#Definizioni|convergente]] se, per ogni vettore iniziale $x_{0}$ la successione $\{ x_{k} \}$ converge ad un vettore limite $y$
+>Un procedimento iterativo si dice [[../../Analisi/Successioni/Limiti di Successioni#Definizioni|convergente]] se, per ogni vettore iniziale $x_{0}$ la successione $\{ x_{k} \}$ converge ad un vettore limite $y$
 >$$\lim\limits_{k\to \infty }x_{k}=y$$
 
 >[!check] Teorema
@@ -389,16 +389,16 @@ e^{(0)}$$
 >La condizione ***necessaria e sufficiente*** per la *convergenza* del procedimento iterativo, comunque si scelga il vettore iniziale $x^{(0)}$, al vettore soluzione $x$ del sistema $Ax=b$ , è che:
 >$$\rho(T)<1$$
 >>[!quote] A parole
->>Il [[Norma#Norme Indotte dalle Norme più Comuni|raggio spettrale]] della matrice di iterazione $T$ sia minore di $1$.
+>>Il [[../Norma#Norme Indotte dalle Norme più Comuni|raggio spettrale]] della matrice di iterazione $T$ sia minore di $1$.
 
 > Consideriamo ora condizioni più restrittive.
 
 >[!check] Teorema Condizione sufficiente alla Convergenza
->Se per una qualche [[Norma]] risulta $\| T\| < 1$, allora il *processo iterativo*:
+>Se per una qualche [[../Norma|norma]] risulta $\| T\| < 1$, allora il *processo iterativo*:
 >$$x^{(k)}=Tx^{(k-1)}+M^{-1}b\qquad k=1,2,\dots$$
 >È convergente per ogni $x^{(0)}$.
 ##### Dimostrazione
-> Dalla definizione di [[9 - Matrici Diagonali#Autovettore e Autovalore|autovalore]] di una matrice si ha $Tx=\lambda x$, con $x\neq 0$.
+> Dalla definizione di [[../../Algebra e Geometria/Applicazioni/9 - Matrici Diagonali#Autovettore e Autovalore|autovalore]] di una matrice si ha $Tx=\lambda x$, con $x\neq 0$.
 
 Da cui si può ottenere $|\lambda| \|x\| =\|Tx\|\leq\|T\|\|x\|$
 - Quindi $\mid\lambda\mid\leq \|T\|$
@@ -518,13 +518,13 @@ $$
 È noto che per matrici simmetriche definite positive e per $0<\omega<2$ il valore di $\rho(T_{\omega})$ si mantiene $<1$.
 - Ma c'è un punto in cui è minimo
 
-![[RelaxationMethods.png]]
+![[attachements/RelaxationMethods.png]]
 
 >[!caution] Calcolo
 >Il calcolo di $\omega_{\text{ottimo}}$ è molto complesso, per cui si suole andare per ***tentativi***.
 
 #### Criterio d'Arresto
->Occorre individuare dei [[Criteri di Arresto]] del procedimento
+>Occorre individuare dei [[../Equazioni non Lineari/Criteri di Arresto|criteri di arresto]] del procedimento.
 
 I criteri più comunemente usati, che consistono nel fissare una tolleranza $\varepsilon$ che tiene conto della ***precisione*** utilizzata nei calcoli, sono i seguenti:
 $$
@@ -535,7 +535,7 @@ $$
 \displaystyle{\frac{\|x^{(k)}-x^{(k-1)}\|}{\|x^{(k)}\|}}\leq \varepsilon
 $$
 La scelta della tolleranza $\varepsilon$ nel ***criterio d’arresto*** viene fatta considerando la *percentuale d’errore* da cui sono affetti i *dati iniziali*.
-La scelta del tipo di [[Norma]], dipende dallo specifico problema in esame; 
+La scelta del tipo di [[../Norma|norma]], dipende dallo specifico problema in esame; 
 - *Norme comunemente usate* sono la norma $\infty$ e la norma $2$.
 
 

@@ -10,7 +10,7 @@
 >>Un ***albero di copertura minimo*** $T$
 >>- $T=(V,E',W')$ tale che $\displaystyle\sum_{w\in W'}w$ è minima
 
-Ci sono 2 algoritmi [[Gli Algoritmi Greedy|greedy]] per calcolare un `MST`
+Ci sono 2 algoritmi [[../../Greedy/Gli Algoritmi Greedy|greedy]] per calcolare un `MST`
 - Entrambi basati su uno ***stesso algoritmo generale***
 
 L'*algoritmo* costruisce l'insieme $A$ degli archi dell'`MST` partendo dall'***insieme vuoto*** e aggiungendo di volta in volta un arco $a$ tale che $A\cup a$ sia sottoinsieme degli archi di un `MST`
@@ -20,7 +20,7 @@ Gli algoritmi differiscono per il modo in cui viene ***cercato l'arco da aggiung
 ### Algoritmo di Kruskal
 >[!info] Scelta Arco
 >Nell'***algoritmo di kruskal*** viene scelto l'arco di peso più piccolo che non chiuda un ciclo
->Vengono usati gli [[Insiemi Disgiunti#Strutture Dati per Insiemi Disgiunti|up tree]] con tutti i metodi annessi
+>Vengono usati gli [[../Insiemi Disgiunti#Strutture Dati per Insiemi Disgiunti|up tree]] con tutti i metodi annessi
 #### Kruskal: Pseudocodice
 ```pseudo
 	\begin{algorithm}
@@ -44,10 +44,10 @@ Gli algoritmi differiscono per il modo in cui viene ***cercato l'arco da aggiung
 	\end{algorithm}
 ```
 ##### Kruskal: Esempio
-![[Kruskal-1.png]]
-![[Kruskal-2.png]]
-![[Kruskal-3.png]]
-![[Kruskal-4.png]]
+![[attachements/Kruskal-1.png]]
+![[attachements/Kruskal-2.png]]
+![[attachements/Kruskal-3.png]]
+![[attachements/Kruskal-4.png]]
 
 #### Kruskal: Correttezza
 >[!Teorema]
@@ -79,7 +79,7 @@ $$
 $$
 O(E\cdot lg(E))
 $$
->[!todo] Operazioni nella Foresta di [[Insiemi Disgiunti]]
+>[[../Insiemi Disgiunti|!todo]]
 
 $$
 O(E)
@@ -94,7 +94,7 @@ O anche:
 $$
 O(E\cdot lg^*(V))
 $$
-- Operazioni su [[Insiemi Disgiunti#Strutture Dati per Insiemi Disgiunti|Up Tree]]
+- Operazioni su [[../Insiemi Disgiunti#Strutture Dati per Insiemi Disgiunti|Up Tree]]
 
 
 >[!info] Complessità Finale
@@ -143,9 +143,9 @@ $$
 ```
 
 ##### Prim: Esempio
-![[Prim-1.png]]
-![[Prim-2.png]]
-![[Prim-3.png]]
+![[attachements/Prim-1.png]]
+![[attachements/Prim-2.png]]
+![[attachements/Prim-3.png]]
 
 #### Prim: Complessità
 >*La complessità dipende dall'implementazione della coda di priorità*

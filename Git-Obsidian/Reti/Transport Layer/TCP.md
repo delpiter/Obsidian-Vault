@@ -67,8 +67,8 @@ title: "TCP Packet"
 
 > ***Checksum***:
 - Codice di controllo per la rilevazione di errori sul segmento `TCP`.
-- Calcolato applicando l'[[Controllo dell'Errore#Internet Checksum|internet checksum]] allo *pseudo-header*.
-	- [[Protocollo IP|Indirizzi IP]] *Sorgente* e *destinazione*
+- Calcolato applicando l'[[../Data Link Layer/Controllo dell'Errore#Internet Checksum|internet checksum]] allo *pseudo-header*.
+	- [[../Network Layer/Protocollo IP|Indirizzi IP]] *Sorgente* e *destinazione*
 	- Protocollo
 	- Lunghezza in `byte` del segmento.
 
@@ -107,7 +107,7 @@ title: "TCP Packet"
 >[!abstract] Azione
 >Qualcosa che il *software* del protocollo **fa** in un dispositivo come ***risposta ad un evento*** prima di effettuare un transizione di stato.
 
-![[TCPFinateStateMachine.png]]
+![[attachements/TCPFinateStateMachine.png]]
 
 > *Legenda*
 - Linee Tratteggiate: Azioni tipiche del **server**.
@@ -155,7 +155,7 @@ Il segmento di risposta `ACK` è caratterizzato da:
 - `SN`$=x+1$.
 - `AN`$=y+1$.
 
-![[ThreeWayHandshake.png]]
+![[attachements/ThreeWayHandshake.png]]
 
 
 La procedura di selezione dell'`ISN` è di tipo ***pseudocasuale***.
@@ -178,7 +178,7 @@ La scelta pseudocasuale risolve il problema descritto.
 >Può accadere che entrambe le stazioni terminali $A$ e $B$ inviino una all'altra un messaggio di *richiesta di connessione*.
 
 In questo caso se le porte di *sorgente* e *destinazione* coincidono, viene instaurata ***una unica connessione***.
-![[FullDuplexConnection.png]]
+![[attachements/FullDuplexConnection.png]]
 #### Maximum Segment Lifetime
 >[!question] I numeri di sequenza possono essere riutilizzati?
 
@@ -221,15 +221,15 @@ A questo punto la connessione da $A$ a $B$ si può considerare ***chiusa***.
 - La stazione $B$ può comunque continuare a inviare messaggi ad $A$.
 - Una volta completato l'invio dei segmenti dati nel *proprio buffer*, la stazione $B$ emette a sua volta un segmento `DR` (`FIN=1`)
 
-![[TCPCloseConnection.png]]
+![[attachements/TCPCloseConnection.png]]
 
 ### Svolgimento del Dialogo
 > Si vuole rappresentare l'interazione tra due host attraverso il **protocollo** `TCP`.
 
 La figura mostra la **successione delle operazioni** che hanno luogo tra applicazioni *client*/*server*.
-![[TCPDialog.png|500]]
+![[attachements/TCPDialog.png|500]]
 
-Viene utilizzato il protocollo [[ARQ]] per ***rendere affidabile il dialogo***.
+Viene utilizzato il protocollo [[../Data Link Layer/ARQ]] per ***rendere affidabile il dialogo***.
 
 >[!info] Numerazione in `TCP`
 >Per avere la massima flessibilità, si scegli di assegnare un numero non ai segmenti ma ai singoli `byte` *trasportati nei segmenti*.
@@ -248,7 +248,7 @@ La conferma di avvenuta ricezione viene data mettendo nel campo "*Acknowledgment
 
 > Possibilità
 
-- [[ARQ#Anknowledge|Piggybacking]] (`ACK=1`).
+- [[../Data Link Layer/ARQ#Anknowledge|Piggybacking]] (`ACK=1`).
 - Conferma esplicita (*Default*), il ricevitore trasmette un `ACK` per ogni segmento ricevuto
 - `ACK` ***Ritardati***
 

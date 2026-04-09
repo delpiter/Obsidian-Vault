@@ -11,11 +11,11 @@
 >
 >Di seguito l'architettura "***Sandy Bridge***", realizzata a partire dal 2011, contiene un numero di core variabili tra 2 e 6
 
-![[Sandy-Bridge.png]]
+![[attachements/Sandy-Bridge.png]]
 >*Schema dell'architettura di un singolo core*
 
 >[!info] Memory Subsystem
->Include la [[Cache]] privata $L_{2}$ unificata, dati e istruzioni insieme
+>Include la [[../Architettura del Calcolatore/Cache]] privata $L_{2}$ unificata, dati e istruzioni insieme
 >- In caso di *miss*, si interfaccia con la cache $L_{3}$ condivisa dai diversi core
 
 >[!abstract] Front End
@@ -36,7 +36,7 @@
 >>[!caution] Retirement Unit
 >>L'unità di ritiro garantisce che i risultati prodotti siano equivalenti rispetto a un'esecuzione in ordine
 
-![[Corei7DataPath.png]]
+![[attachements/Corei7DataPath.png]]
 >*Una vista semplificata del datapath di un core i7*
 
 ### Famiglie Intel x86
@@ -73,7 +73,7 @@
 ---
 >[!Abstract] SPARC
 >***S***calable ***P***rocessor ***ARC***hitecture
->È il nome di un'architettura "aperta" e non proprietaria per microprocessori `RISC`- [[Definizioni_Architettura#Ordinamento dei `BYTE`|Big Endian]]
+>È il nome di un'architettura "aperta" e non proprietaria per microprocessori `RISC`- [[../../Definizioni/Definizioni_Architettura#Ordinamento dei `BYTE`|Big Endian]]
 >Nel corso degli anni (1985-2010) l'architettura ha subito diverse revisioni
 >- Versione 9 introduce la gestione dei dati a $64$ `BIT`
 >
@@ -143,7 +143,7 @@
 >>Scelto come ***soc*** per ***Raspberry Pi 2***
 >
 >>[!caution] Cortex A72
->>Fino a 4 core per [[Definizioni_Architettura#Cluster|Cluster]], architettura superscalare a tre vie e ***predizione di salto sofisticata***
+>>Fino a 4 core per [[../../Definizioni/Definizioni_Architettura#Cluster|Cluster]], architettura superscalare a tre vie e ***predizione di salto sofisticata***
 >
 
 ### ISA ARM
@@ -157,7 +157,7 @@
 >[!tip] Esecuzione Condizionale
 >La maggior parte delle istruzioni permette ***esecuzione condizionale***
  
->[!caution] È possibile settare l'"[[Definizioni_Architettura#Ordinamento dei `BYTE`|endianess]]"
+>[[../../Definizioni/Definizioni_Architettura#Ordinamento dei `BYTE`|endianess]]"
 >È possibile operare in ***little endian o big endian***
 
 ### Apple M1
@@ -176,4 +176,4 @@
 >>3. `UMA`, una sorta di memoria cache $L_{3}$ di grande capacità, su questa memoria, `CPU`, `GPU`, `NPU` possono condividere i dati senza copie/spostamenti fra memorie diverse
 >
 
-![[M1-Architecture.png]]
+![[attachements/M1-Architecture.png]]

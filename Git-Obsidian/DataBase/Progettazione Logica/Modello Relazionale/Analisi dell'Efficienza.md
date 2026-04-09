@@ -13,9 +13,9 @@
 
 ## Analisi delle Operazioni
 ---
-> Prendiamo come riferimento il seguente [[Modello Entity-Relationship|schema]].
+> Prendiamo come riferimento il seguente [[../../Progettazione Concettuale/Modello Entity-Relationship|schema]].
 
-![[ExampleER.png]]
+![[attachements/ExampleER.png]]
 
 ### Tavola dei Volumi
 >[!definizione] Definizione
@@ -49,11 +49,11 @@ Il costo degli ***accessi in scrittura*** è in generale considerato **doppio** 
 >[!example] Esempio
 >Visualizzare tutti i dati di un impiegato, del dipartimento nel quale lavora e dei progetti ai quali partecipa.
 
-![[EfficiencyEstimate.png]]
+![[attachements/EfficiencyEstimate.png]]
 
 *Valutazione di costo*
 
-![[AccessTable.png]]
+![[attachements/AccessTable.png]]
 
 *Tavola degli Accessi*
 
@@ -67,7 +67,7 @@ Il costo degli ***accessi in scrittura*** è in generale considerato **doppio** 
 | Progetto       | $E$       | $3$     | Lettura |
 #### Analisi delle Ridondanze
 >[!info] Ridondanza
->Una ridondanza in uno [[Modello Entity-Relationship|schema E/R]] è un'informazione significativa ma ***derivabile da altre***.
+>Una ridondanza in uno [[../../Progettazione Concettuale/Modello Entity-Relationship|schema E/R]] è un'informazione significativa ma ***derivabile da altre***.
 
 
 >[!done] Pro:
@@ -92,11 +92,11 @@ Se si mantiene una *ridondanza*:
 >- Associazioni derivabili dalla composizione di altre associazioni.
 >
 
-![[RedundantAttribute.png]]
+![[attachements/RedundantAttribute.png]]
 
 *Attributo Derivabile*
 
-![[RedundantAssociation.png|300]]
+![[attachements/RedundantAssociation.png|300]]
 
 
 >[!question] Mantenere la Ridondanza?

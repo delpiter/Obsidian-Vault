@@ -7,7 +7,7 @@
 f'(x)=nx^{n-1}
 \end{array}
 >$$
-- Utilizzando la [[Definizioni_Analisi#Formula del Binomio di Newton|formula del binomio di newton]] voglio calcolare $f'(c), \forall c\in\mathbb{R}$
+- Utilizzando la [[../../Definizioni/Definizioni_Analisi#Formula del Binomio di Newton|formula del binomio di newton]] voglio calcolare $f'(c), \forall c\in\mathbb{R}$
 ### Dimostrazione
 $$
 \begin{array}
@@ -73,7 +73,7 @@ $$
 ## Derivate di Funzioni Composte
 ---
 >[!info] Teorema
->Siano $I,J$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervalli]] di $\mathbb{R}$, $f:I\to\mathbb{R}$, $g:J\to\mathbb{R},f(I)\subseteq J$
+>Siano $I,J$ [[../Funzioni/Introduzione Funzioni#Intervallo|intervalli]] di $\mathbb{R}$, $f:I\to\mathbb{R}$, $g:J\to\mathbb{R},f(I)\subseteq J$
 >Sia $c\in I$
 >Supponiamo $f$ derivabile in $c$ e $g$ sia derivabile in $f(c)$
 ><u>Allora</u>
@@ -101,13 +101,13 @@ $$
 ## Derivata della Funzione Inversa
 ---
 >[!info] Teorema
->Sia $I$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervallo]] di $\mathbb{R}$, $f:I\to\mathbb{R}$ invertibile e derivabile in $c\in I$
+>Sia $I$ [[../Funzioni/Introduzione Funzioni#Intervallo|intervallo]] di $\mathbb{R}$, $f:I\to\mathbb{R}$ invertibile e derivabile in $c\in I$
 >Supponiamo $f'(c)\neq 0$
 ><u>Allora</u>
 >Posto $y=f(c)$, si ha:
 >$$(f^{-1})'(y)= \displaystyle{\frac{1}{\underbrace{ f'(f^{-1}(y)) }_{ c }}}$$
 ### Dimostrazione Geometrica
-![[Pasted image 20231031153153.png]]
+![[attachements/Pasted image 20231031153153.png]]
 - Equazione di $r : y=\underbrace{ m }_{ f'(x) }x+q$
 	- $x= \displaystyle{\frac{y-q}{m}}$
 - Equazione di $s:y= \displaystyle{\frac{x}{m}}- \displaystyle{\frac{q}{m}}$

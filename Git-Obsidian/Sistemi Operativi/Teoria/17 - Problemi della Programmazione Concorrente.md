@@ -49,7 +49,7 @@ Le proprietà da garantire sono le [[#Proprietà da Garantire|stesse]] con l'agg
 >Si utilizzano due indici `front` e `rear` che indicano rispettivamente il ***prossimo elemento*** da *scrivere*/*leggere*
 
 Gli indici vengono utilizzati in ***modo ciclico***
-![[CircularArray.png]]
+![[attachements/CircularArray.png]]
 
 ```cpp title="Produttore/Consumatore"
 shared Object buffer[SIZE];
@@ -99,7 +99,7 @@ void Consumer(){
 
 Questo problema mostra come *gestire situazioni* in cui i processi entrano in ***competizione*** per accedere ad insiemi di risorse a ***intersezione non nulla***
 
-![[PhilosopherDinner.png]]
+![[attachements/PhilosopherDinner.png]]
 
 ##### La vita di un Filosofo
 ```c++ title:Filosofo
@@ -187,8 +187,8 @@ No.
 #### Priorità
 >[!info] Priorità ai Lettori
 >Se un *lettore* vuole accedere al database, lo potrà fare a patto che uno scrittore ***non*** l'abbia occupato
->>[!warning] Scrittori: possibilità di [[9 - Condivisione di Risorse#Starvation|starvation]]
+>>[[9 - Condivisione di Risorse#Starvation|starvation]]
 
 >[!list] Priorità ai Lettori
 >Uno *scrittore* attenderà il ***tempo minimo possibile*** prima di accedere al database
->>[!warning] Lettori: possibilità di [[9 - Condivisione di Risorse#Starvation|starvation]]
+>>[[9 - Condivisione di Risorse#Starvation|starvation]]

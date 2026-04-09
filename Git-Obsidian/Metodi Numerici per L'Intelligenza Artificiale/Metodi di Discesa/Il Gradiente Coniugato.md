@@ -3,7 +3,7 @@
 >[!definizione]
 >Data un'ellisse ed una ***direzione*** $p^{(0)}$, tutti i punti medi delle corde parallele alla direzione *sono allineati* e formano una ***direzione*** $p^{(1)}$ che si dice ***coniugata*** alla direzione data.
 
-![[Direction.png|600]]
+![[attachements/Direction.png|600]]
 
 Due direzioni $p^{(k)},p^{(k-1)}$ coniugate rispetto all'ellisse soddisfano la relazione:
 $$<Ap^{(k)},p^{(k-1)}> = <p^{(k)},Ap^{(k-1)}> = 0$$
@@ -43,10 +43,10 @@ $$
 Nel caso $n=2$ il ***metodo del gradiente coniugato*** raggiunge la soluzione in $2$ passi.
 - La direzione $p^{(1)}$, [[#Direzioni Coniugate|coniugata]] rispetto alla direzione $p^{(0)}$ **passa per il centro dell'ellissi** che corrisponde al *minimo della funzione*.
 
-![[ConjugateGradient.png|600]]
+![[attachements/ConjugateGradient.png|600]]
 
 ### Semplificazioni
-> Ora applichiamo alcune semplificazione che riducono la [[Complessità di Algoritmi|complessità computazionale]].
+> Ora applichiamo alcune semplificazione che riducono la [[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità computazionale]].
 
 >[!caution] Residuo
 >È possibile definire una formula ricorsiva che aggiorna il *residuo* $r^{(k)}$ usando una quantità ***necessaria per calcolare altre grandezze***.
@@ -59,11 +59,11 @@ Nel caso $n=2$ il ***metodo del gradiente coniugato*** raggiunge la soluzione in
 >$$\begin{array}\ <r^{(k)},r^{(j)}> =0 \\ <Ap^{(k)},p^{(j)}> = 0 \end{array}\qquad k\neq j, j=0,1,\dots,k-1$$
 
 Ciò significa che la direzione $p^{(k)}$ è coniugata a **tutte** le *precedenti direzioni di discesa*.
-- Il residuo $r^{(k)}$ è [[4 - Prodotto Scalare#Vettori Ortogonali|ortogonale]] a ***tutti i precedenti residui***.
+- Il residuo $r^{(k)}$ è [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Vettori Ortogonali|ortogonale]] a ***tutti i precedenti residui***.
 
 >[!hint] Osservazione
->Poiché in $\mathbb{R}^n$ non si possono avere più di $n$ vettori in una ***matrice ortogonale***, in teoria il metodo appartiene alla classe dei [[Risoluzione di Sistemi Lineari#Metodi Diretti|metodi diretti]].
->- In pratica a causa di [[Errore di Rappresentazione|errori di arrotondamento]] il metodo non termina al passo $k=n-1$.
+>Poiché in $\mathbb{R}^n$ non si possono avere più di $n$ vettori in una ***matrice ortogonale***, in teoria il metodo appartiene alla classe dei [[../Equazioni Lineari/Risoluzione di Sistemi Lineari#Metodi Diretti|metodi diretti]].
+>- In pratica a causa di [[../Numeri Finiti/Errore di Rappresentazione|errori di arrotondamento]] il metodo non termina al passo $k=n-1$.
 
 Possiamo dire quindi:
 $$
@@ -115,10 +115,10 @@ $$
 #### Confronto
 > Confrontiamo Graficamente ($n=2$) il metodo del gradiente coniugato e il [[Metodi di Discesa#Steepest Descent|metodo steepest descent]].
  
-![[Comparison.png]]
+![[attachements/Comparison.png]]
 ### Velocità di Convergenza
 >[!info]
-> Nel caso del ***metodo del gradiente coniugato*** applicato alla minimizzazione di una [[3 - Forme Quadratiche|forma quadratica]] $F(x)=\frac{1}{2}<Ax,x> - <b,x>$ con $A$  [[1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], il metodo ha [[Ordine di Convergenza#Ordini|ordine di convergenza lineare]].
+> Nel caso del ***metodo del gradiente coniugato*** applicato alla minimizzazione di una [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche|forma quadratica]] $F(x)=\frac{1}{2}<Ax,x> - <b,x>$ con $A$  [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/1 - Forme Bilineari#Matrici Simmetriche e Antisimmetriche|simmetrica]] e [[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/3 - Forme Quadratiche#Tipi di Forme Quadratiche|definita positiva]], il metodo ha [[../Equazioni non Lineari/Ordine di Convergenza#Ordini|ordine di convergenza lineare]].
 
 Per misurare l'errore, si definisce la norma indotta dalla matrice simmetrica definita positiva $A$ su $x$ come:
 $$

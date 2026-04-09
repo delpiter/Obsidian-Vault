@@ -5,22 +5,22 @@
 >[!missing] Blocking
 >L'informazione ***non raggiunge il destinatario***.
 
-![[Blocking.png]]
+![[attachements/Blocking.png]]
 
 >[!bug] Sniffing
 >Un ente *terzo* **ascolta la comunicazione**.
 
-![[Sniffing.png]]
+![[attachements/Sniffing.png]]
 
 >[!caution] Counterfeiting
 >Un ente *terzo* fa da "***ponte***" tra sorgente e destinatario.
 
-![[Counterfeiting.png]]
+![[attachements/Counterfeiting.png]]
 
 >[!abstract] Spoofing
 >Un ente *terzo* si **finge il mittente**.
 
-![[Spoofing.png]]
+![[attachements/Spoofing.png]]
 
 ## Virtual Private Network
 ---
@@ -91,19 +91,19 @@ Viene ***mascherato*** l'indirizzamento interno reale.
 >[!tldr] Idea
 > Nel ***transport*** si *aggiungono gli header* dei protocolli utilizzati.
 
-![[Transport.png]]
+![[attachements/Transport.png]]
 
 >[!tldr] Idea
 >Nel ***tunnelling*** il pacchetto intero viene "*incapsulato*".
 
-![[Tunnel.png]]
+![[attachements/Tunnel.png]]
 - Anche l'**IP** interno è criptato.
 #### Formato
 > Lo standard `IP`Sec è un insieme di $3$ **protocolli**.
 
 >[!caution] Internet Key Exchange
 >Il protocollo `IKE` è il protocollo utilizzato per lo ***scambio delle chiavi***.
->- Vengono decise gli algoritmi e le chiavi [[Crittografia|crittografiche]].
+>- Vengono decise gli algoritmi e le chiavi [[../../Crittografia|crittografiche]].
 
 > Scambio a $2$ Fasi
 1. ***Negoziazione Preliminare***

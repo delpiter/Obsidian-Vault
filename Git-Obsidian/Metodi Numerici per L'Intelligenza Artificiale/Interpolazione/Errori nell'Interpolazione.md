@@ -41,7 +41,7 @@ Allora risulta *minimo* $\omega_{n+1}(\overline{x})$ e all'aumentare del numero 
 ---
 >[!check] Condizionamento
 >Siano date le coppie $(x_{i},y_{i})$ con $x_{i}$ appartenenti all'intervallo $[a,b]$.
->Consideriamo le perturbazioni sui dati $\tilde{y_{i}}=y_{i}+\varepsilon_{i}$ e nell'[[Errore di Rappresentazione|errore relativo sui dati]].
+>Consideriamo le perturbazioni sui dati $\tilde{y_{i}}=y_{i}+\varepsilon_{i}$ e nell'[[../Numeri Finiti/Errore di Rappresentazione|errore relativo sui dati]].
 >$$\displaystyle{\frac{\|\tilde{y}-y\|_{\infty}}{\|y\|_{\infty}}}$$
 >Dove $\tilde{y}=(\tilde{y_{0}},\tilde{y_{1}},\dots,\tilde{y_{n}})^{T}$ e $y=(y_{0},y_{1},\dots,y_{n})^{T}$
 
@@ -60,7 +60,7 @@ $$
 >$$\lambda_{n}(x)=\sum_{i=0}^{n}|L_{i}(x)|$$
 >È chiamata ***funzione di Lebesgue***.
 
-> Passando alle [[Norma#Esempi di Norme|norme infinito]]:
+> Passando alle [[../Norma#Esempi di Norme|norme infinito]]:
 
 $$
 \max_{x\in[a,b]} |\tilde{P}_{n}(x)-P_{n}(x)|\leq\|\tilde{y}-y\|_{\infty} \max_{x\in[a,b]} \lambda_{n}(x)
@@ -78,7 +78,7 @@ Si ricava *facilmente* che:
 $$
 \displaystyle{\frac{\|\tilde{P}_{n}(x)-P_{n}(x)\|_{\infty}}{\|P_{n}(x)\|_{\infty}}}\leq\Lambda_{n} \displaystyle{\frac{\|\tilde{y}-y\|_{\infty} }{\|y\|_{\infty}}}
 $$
-- Dove $\Lambda_{n}$ è l'[[Condizionamento#Quantificare il Condizionamento|indice di condizionamento]].
+- Dove $\Lambda_{n}$ è l'[[../Condizionamento e Stabilità/Condizionamento#Quantificare il Condizionamento|indice di condizionamento]].
 
 Risulta che $\Lambda_{n}\geq 1$
 

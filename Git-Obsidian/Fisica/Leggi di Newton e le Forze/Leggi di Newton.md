@@ -1,11 +1,11 @@
 ## Prima Legge di Newton
 ---
 >[!cite] Legge di Inerzia
->Se un corpo non interagisce (applica forze) con altri corpi, si può trovare un *sistema di riferimento* nel quale la sua [[Moto Rettilineo#Accelerazione|accelerazione]] è nulla.
+>Se un corpo non interagisce (applica forze) con altri corpi, si può trovare un *sistema di riferimento* nel quale la sua [[../Cinematica/Moto Rettilineo#Accelerazione|accelerazione]] è nulla.
 >- Tale sistema di riferimento è detto ***inerziale***.
 >
 >>[!quote] Formulazione Alternativa
->>In *assenza di forze esterne* e se osservato da un **sistema di riferimento inerziale**, un corpo in quiete *resta in quiete* e un corpo in moto *continua* con [[Moto Rettilineo#|moto rettilineo uniforme]].
+>>In *assenza di forze esterne* e se osservato da un **sistema di riferimento inerziale**, un corpo in quiete *resta in quiete* e un corpo in moto *continua* con [[../Cinematica/Moto Rettilineo#|moto rettilineo uniforme]].
 
 >[!done] La forza è ciò che provoca la variazione di moto di un corpo.
 

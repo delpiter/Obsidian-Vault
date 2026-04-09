@@ -1,8 +1,8 @@
-[[Recursive Functions]]
+[[.md|Recursive Functions]]
 ## Ricorsione
 ---
 >[!info] Definizione
->La ***ricorsione*** è l'applicazione all'*informatica* del [[Tipologie di Dimostrazioni#Principio di induzione|principio di induzione]] della matematica
+>La ***ricorsione*** è l'applicazione all'*informatica* del [[../../Analisi/Tipologie di Dimostrazioni#Principio di induzione|principio di induzione]] della matematica
 >$$\text{Ricorsione}:\text{Informatica}=\text{Principio di Induzione}:\text{Matematica}$$
 >>[!tip] In altre parole
 >>La **ricorsione** è un metodo risolutivo per un problema in ***base a se stesso richiamato*** su *istanze più piccole* del problema
@@ -39,7 +39,7 @@
 ### Un Algoritmo Ricorsivo: Ricerca Binaria
 >*Solitamente le funzioni iterative sono più lente rispetto a quelle ricorsive*
 
-![[Complessità di Algoritmi#^7830b9]]
+![[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi#^7830b9]]
 
 >[!example] Nuovi Parametri e Condizioni
 >L'array $v[]$ deve essere un ***array ordinato***
@@ -114,4 +114,4 @@ $$
 $$
 ### Albero della Ricorsione
 
-![[Recursion Tree.png]]
+![[attachements/Recursion Tree.png]]

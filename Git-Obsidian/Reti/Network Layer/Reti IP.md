@@ -35,7 +35,7 @@ Intervallo di Indirizzi:
 La definizione delle classi è **standard**, quindi nota a tutti.
 - I **router** riconoscono la classe di una rete dai primi `bit` dell'indirizzo, ricavando di conseguenza il ***net-ID***.
 
-![[NetworkClasses.jpg]]
+![[attachements/NetworkClasses.jpg]]
 
 ### Indirizzi Riservati
 >[!abstract] [RFC 1700](https://www.rfc-editor.org/rfc/rfc1700.html)
@@ -71,9 +71,9 @@ Le reti `IP` vengono definite tramite la coppia **net-ID**/**netmask**.
 
 #### Supernetting
 >[!missing] Info
->Il supernetting consiste nel [[Routing#Aggregazione|raggruppare]] più reti con indirizzi consecutivi.
+>Il supernetting consiste nel [[Routing/Routing#Aggregazione|raggruppare]] più reti con indirizzi consecutivi.
 
-Nelle [[Routing#Tabella di Routing IP|tabelle di routing]] vengono indicate con una sola entry con l'opportuna netmask.
+Nelle [[Routing/Routing#Tabella di Routing IP|tabelle di routing]] vengono indicate con una sola entry con l'opportuna netmask.
 
 > Esempio: una rete con circa $2000$ indirizzi
 
@@ -113,8 +113,8 @@ Si definiscono gli ***indirizzi multicast***:
 - da `224.0.0.0` a `239.255.255.255`.
 
 I router possono usare diversi protocolli per l'utilizzo del multicast, come:
-- [[Routing Globale#Interior Gateway Protocol|RIP_v2]] `224.0.0.9`.
-- [[Open Shortest Path First|OSPF]] `224.0.0.5` (All router), `224.0.0.6` ([[Open Shortest Path First#Caso Rete Multi Access|Designated Router]]).
+- [[Routing/Routing Globale#Interior Gateway Protocol|RIP_v2]] `224.0.0.9`.
+- [[Routing/Open Shortest Path First|OSPF]] `224.0.0.5` (All router), `224.0.0.6` ([[Routing/Open Shortest Path First#Caso Rete Multi Access|Designated Router]]).
 
 ### Internet Group Management Protocol
 > L'`IGMP` serve per dichiarare l'appartenenza ad un ***gruppo di multicast***.
@@ -126,7 +126,7 @@ Prevede messaggi per *iscriversi*, *abbandonare* e *valutare l'appartenenza* ad 
 >Alcuni gruppi di [[Protocollo IP|indirizzi]] sono riservati a reti `IP` *private*.
 >- **Non sono raggiungibili** dalla rete pubblica.
 
-I [[Routing#Router|router]] **non** instradano datagram destinati a tali indirizzi.
+I [[Routing/Routing#Router|router]] **non** instradano datagram destinati a tali indirizzi.
 
 Gli indirizzi privati possono essere ***riutilizzati in reti isolate***.
 
@@ -142,7 +142,7 @@ Gli indirizzi privati possono essere ***riutilizzati in reti isolate***.
 Poiché gli indirizzi privati non hanno significato globale, le informazioni di routing circa le reti private ***non vengono propagate***.
 ### Relazione Indirizzi Fisici e Indirizzi IP
 >[!info]
->Gli **host** comunicano attraverso una ***rete fisica*** (es. [[LAN]]) quindi devono conoscere reciprocamente gli [[Struttura del Data Link#Medium Access Control|indirizzi fisici]].
+>Gli **host** comunicano attraverso una ***rete fisica*** (es. [[../Data Link Layer/Networks/LAN]]) quindi devono conoscere reciprocamente gli [[../Data Link Layer/Struttura del Data Link#Medium Access Control|indirizzi fisici]].
 
 >[!question] Come ricavo l'indirizzo fisico conoscendo solo l'`IP`
 
@@ -151,7 +151,7 @@ Poiché gli indirizzi privati non hanno significato globale, le informazioni di 
 >`ARP` [RFC 826](https://www.rfc-editor.org/rfc/rfc826.html) è un protocollo che serve a mappare gli indirizzi `IP` agli indirizzi fisici.
 
 ##### Funzionamento
-1. Il nodo sorgente invia un [[Controllo del Canale#Canale di Comunicazione|frame]] in **broadcast** (`ARP Request`) contenente l'indirizzo `IP` del nodo destinazione.
+1. Il nodo sorgente invia un [[../Data Link Layer/Controllo del Canale#Canale di Comunicazione|frame]] in **broadcast** (`ARP Request`) contenente l'indirizzo `IP` del nodo destinazione.
 2. Tutte le stazioni della rete leggono il frame.
 3. Il destinatario risponde al mittente inviando un messaggio che contiene il proprio indirizzo fisico (`ARP Reply`).
 4. L'host si salva in una tabella `cache ARP` le corrispondenze tra indirizzi logici e fisici.

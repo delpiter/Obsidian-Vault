@@ -21,5 +21,5 @@
 >>[!tldr] Il ***flusso è conservato*** in ogni nodo interno
 >>$$\sum_{v\in V}f(u,v)=\sum_{v\in V}f(v,u)\qquad \quad \forall u\in V\setminus\{s,t\}$$
 
-![[FlowExample.png]]
+![[attachements/FlowExample.png]]
 *Un esempio di flusso*

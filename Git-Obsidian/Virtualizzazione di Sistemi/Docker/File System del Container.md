@@ -11,13 +11,13 @@ Durante l'esecuzione il container può **modificare** il contenuto del proprio f
 >[!info]
 >I container che eseguono a *partire da una stessa immagine* condividono in ***sola lettura*** il file system dell'immagine nella docker area.
 
-![[DifferentialLayer.png]]
+![[attachements/DifferentialLayer.png]]
 
 >[!check] Copy-on-Write
 > Questo ***layer differenziale*** viene salvato sul file system dell'host, nella **docker area**. Questo tipo di immagine si dice ***Copy-on-Write***.
 
 Ciò è *efficiente* perché esisterà **solo una istanza dell'immagine originale** (***read only***), ogni container avrà poi una propria copia con le sole modifiche, risparmiando memoria sul disco.
-- Ogni layer è identificato da un digest univoco, calcolato con una [[Funzione di Hash]] partendo dal contenuto del layer stesso.
+- Ogni layer è identificato da un digest univoco, calcolato con una [[../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash]] partendo dal contenuto del layer stesso.
 
 Il daemon docker definisce una dimensione massima occupabile dal file system di ciascun container pari a $10Gb$ .
 - Configurazione modificabile tramite il file di configurazione del daemon docker (`/etc/docker/daemon.json`).
@@ -46,7 +46,7 @@ Lo spazio occupato negli storage esterni non concorre a saturare il limite di sp
 
 > 4. ***Efficienza*** delle scritture su disco
 
-In caso di container che devono modificare spesso i propri files ([[Git-Obsidian/DataBase/Introduzione#Database|Database]]) è meglio usare files in storage esterni che hanno un file system che ***non usa il modello copy-on-write***.
+In caso di container che devono modificare spesso i propri files ([[../../DataBase/Introduzione#Database|Database]]) è meglio usare files in storage esterni che hanno un file system che ***non usa il modello copy-on-write***.
 
 > 5. ***Eliminazione*** delle scritture su disco
 
@@ -96,7 +96,7 @@ docker run -d -v myVolume:/app/data myImage
 docker run --rm -d -v /app/data myimage
 ```
 
-Docker assegna un [[Funzione di Hash|hash]] casuale come nome.
+Docker assegna un [[../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash|hash]] casuale come nome.
 
 Sono difficili da gestire manualmente, non se ne conosce il nome.
 - Difficili da condividere o riutilizzare tra più container.
@@ -166,12 +166,12 @@ Quando deve essere creato un container con un volume in un `FS` distribuiti remo
 
 ### TMPFS Mounts
 >[!definizione]
->I `TMPFS` ***mounts*** sono file system creati in memoria [[RAM]].
+>I `TMPFS` ***mounts*** sono file system creati in memoria [[../../Architettura degli Elaboratori/Architettura del Calcolatore/RAM|RAM]].
 
 Si può dare un nome al mount o si può mantenere anonimo.
 >[!warning] Questi mount vengono svuotati quando il container termina e distrutti alla rimozione.
 
-Sono utilizzati per file di appoggio, consentono un accesso veloce ad astrazioni di files (es. [[Cache]]).
+Sono utilizzati per file di appoggio, consentono un accesso veloce ad astrazioni di files (es. [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Cache|Cache]]).
 
 ```docker title:syntax
 docker volume create --driver local /
@@ -202,7 +202,7 @@ Con l'opzione `uid=1000` indico che il mount è di proprietà dell'utente con `u
 > `NFS`:
 - **Non** un vero file system distribuito.
 - Protocollo di accesso remoto a un file system che risiede su un unico server.
-- Fornisce un ***meccanismo di*** [[13 - Semafori|lock]] sui file, avviato quando un file viene aperto da un client.
+- Fornisce un ***meccanismo di*** [[../../Sistemi Operativi/Teoria/13 - Semafori|lock]] sui file, avviato quando un file viene aperto da un client.
 - Molto ***efficiente***.
 
 > `GlusterFS`:

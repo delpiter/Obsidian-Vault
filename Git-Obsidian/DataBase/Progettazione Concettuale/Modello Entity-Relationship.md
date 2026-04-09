@@ -6,7 +6,7 @@
 >I ***modelli logici*** sono usati nei ***DBMS*** per l'*organizzazione dei dati* e usati dai programmi, ***indipendenti*** dalle ***strutture fisiche***
 
 >[!abstract] Modelli Concettuali
->I [[Definizioni Importanti#Modello Concettuale|modelli concettuali]] permettono di rappresentare i dati in modo *indipendente* da ogni particolare sistema.
+>I [[../Definizioni Importanti#Modello Concettuale|modelli concettuali]] permettono di rappresentare i dati in modo *indipendente* da ogni particolare sistema.
 >Cercano di descrivere i ***concetti del mondo reale***.
 >Sono usati nelle fasi preliminari di progettazione
 
@@ -33,7 +33,7 @@ I modelli concettuali prevedono una ***rappresentazione grafica***
 
 Graficamente un'entità si rappresenta con un ***rettangolo*** al cui interno è evidenziato la ***denominazione dell'entità*** stessa
 
-![[Entity.png]]
+![[attachements/Entity.png]]
 
 >[!info] Livello Intensionale
 >Il ***livello intensionale*** è lo schema che rappresenta un'entità, ne descrive la *struttura*.
@@ -65,7 +65,7 @@ Graficamente un'entità si rappresenta con un ***rettangolo*** al cui interno è
 >>N-upla costituita da *occorrenze di entità*, una per ciascuna delle entità coinvolte.
 
 Graficamente un'*associazione* si rappresenta con un **rombo** al cui interno ne viene evidenziata la ***denominazione***.
-![[BinaryRelation.png]]
+![[attachements/BinaryRelation.png]]
 - Se $p$ è istanza di *Persona* e $c$ è istanza di *Città*, la coppia $(p,c)$ è istanza dell'associazione *Residenza*
 
 > Per definizione:
@@ -117,7 +117,7 @@ Graficamente un'*associazione* si rappresenta con un **rombo** al cui interno ne
 > Denotato con un nome che ***deve essere univoco*** all'interno dell'entità o associazione
 
 Graficamente:
-![[Attribute.png]]
+![[attachements/Attribute.png]]
 
 Ogni attributo è definito su un ***dominio di valori***.
 
@@ -170,7 +170,7 @@ Se i *vincoli di cardinalità* per un’entità $E$ relativamente a un’associa
 
 >Graficamente:
 
-![[RelationCardinality.png]]
+![[attachements/RelationCardinality.png]]
 ###### Tipi di Associazioni
 
 *Associazione*
@@ -206,7 +206,7 @@ Se i *vincoli di cardinalità* per un’entità $E$ relativamente a un’associa
 >$$\min-card(A, B) = \max-card(A, B) = 1$$
 
 Ogni entità deve avere ***almeno un identificatore***, ma ne può avere ***più di uno***
-- In fase di *progettazione logica*, uno di essi sarà scelto come [[Vincoli di Integrità#Chiavi|chiave primaria]], per gli altri si dovrà comunque imporre un **vincolo di unicità**
+- In fase di *progettazione logica*, uno di essi sarà scelto come [[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Chiavi|chiave primaria]], per gli altri si dovrà comunque imporre un **vincolo di unicità**
 
 Nel caso di *più identificatori* è ammesso che gli attributi o le entità coinvolti in alcune identificazioni, **tranne una**, possano essere ***opzionali***
 ##### Tipologie
@@ -218,7 +218,7 @@ Nel caso di *più identificatori* è ammesso che gli attributi o le entità coin
 
 >Graficamente:
 
-![[Identifiers.png]]
+![[attachements/Identifiers.png]]
 
 #### Reificazione
 >[!definizione] Definizione
@@ -227,10 +227,10 @@ Nel caso di *più identificatori* è ammesso che gli attributi o le entità coin
 Nasce dalla necessità di avere identificatori all'*interno di una relazione*.
 
 >Il seguente schema:
-![[Reification.png]]
+![[attachements/Reification.png]]
 
 >Verrebbe reificato in questo schema.
-![[Example.png]]
+![[attachements/Example.png]]
 
 
 #### Generalizzazione
@@ -250,12 +250,12 @@ Le proprietà di $E$ sono *ereditate* da $E_{1},E_{2},\dots$
 >[!Gerarchia di generalizzazione]
 >Un’entità ***figlia*** è a sua volta entità ***padre*** di altre entità ***figlie***
 ##### Proprietà di Copertura
-![[Generalization.png]]
+![[attachements/Generalization.png]]
 ##### Subset
 >[!summary] Definizione
 >Il ***subset*** è un caso particolare di *gerarchia* che si ha quando si evidenzia **una sola classe** specializzata.
 
-![[Subset.png|300]]
+![[attachements/Subset.png|300]]
 
 ## Limiti del Modello E/R
 ---

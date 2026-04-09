@@ -1,10 +1,10 @@
 ## Single Instruction Multiple Data
 ---
-> Nel modello [[Istruzioni IA-32 Speciali#Istruzioni MMX|SIMD]] la stessa operazione è applicata a più dati.
+> Nel modello [[../Architettura degli Elaboratori/Assembly/Istruzioni IA-32 Speciali#Istruzioni MMX|SIMD]] la stessa operazione è applicata a più dati.
 
 Solitamente questo è fatto attraverso delle istruzioni speciali che lavorano con array di dimensione piccola e fissa.
 
-![[SIMDInstruction.png]]
+![[attachements/SIMDInstruction.png]]
 
 >[!abstract] Programmazione `SIMD` livelli
 
@@ -15,17 +15,17 @@ Solitamente questo è fatto attraverso delle istruzioni speciali che lavorano co
 3. **Domain specific** languages for `SIMD` programming (Mini linguaggi specifici per la programmazione `SIMD`).
 4. Compiler dependent ***vector data types***.
 	1. Estensioni prioritarie dei diversi compilatori.
-5. Compiler `SIMD` [[Istruzioni IA-32 Speciali#Intrinsics|Intrinsics]].
-6. [[Istruzioni IA-32|Assembly]] Language.
+5. Compiler `SIMD` [[../Architettura degli Elaboratori/Assembly/Istruzioni IA-32 Speciali#Intrinsics|Intrinsics]].
+6. [[../Architettura degli Elaboratori/Assembly/Istruzioni IA-32|Assembly]] Language.
 
 ### Estensioni SIMD
-![[Istruzioni IA-32 Speciali#Istruzioni MMX]]
+![[../Architettura degli Elaboratori/Assembly/Istruzioni IA-32 Speciali#Istruzioni MMX]]
 
 Per ogni tipo di dato ci sono **istruzioni apposite**.
 
 >[!fail] Questo provoca un'esplosione del numero di funzioni totale
 
-![[Istruzioni IA-32 Speciali#Evoluzioni SIMD]]
+![[../Architettura degli Elaboratori/Assembly/Istruzioni IA-32 Speciali#Evoluzioni SIMD]]
 
 ### Speedup Superlineare
 > La programmazione `SIMD` può essere causa di [[Valutazione delle Performance#Speedup|speedup superlineare]].
@@ -64,19 +64,19 @@ for (int i = 0; i < n; i+=4)
 ```
 
 >[!done] Speedup
->Oltre a fare una sola operazione al posto di $4$, viene ridotto altamente l'overhead dovuto dal ciclo [[La CPU#Fetch Decode Execute|Fetch Decode Execute]] dei dati e delle istruzioni.
+>Oltre a fare una sola operazione al posto di $4$, viene ridotto altamente l'overhead dovuto dal ciclo [[../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU#Fetch Decode Execute|Fetch Decode Execute]] dei dati e delle istruzioni.
 
-![[SuperlinearSpeedup.png]]
+![[attachements/SuperlinearSpeedup.png]]
 
 ### Opportunità di Vettorizzazione
-> Esempio: [[Reduce|Riduzione]] di un array.
+> Esempio: [[Parallel Programming Patterns/Reduce|Riduzione]] di un array.
 
 >[!tldr] Idea
 >Possiamo dividere il *vettore* in piccoli vettori e usare le istruzioni `SIMD` per fare somme su **più valori contemporaneamente**.
 
 Alla fine dovrà essere sommato il vettore di supporto per ottenere il risultato.
 
-![[VectorizationOpportunities.png]]
+![[attachements/VectorizationOpportunities.png]]
 
 ```c
 float vsum(float *v, int n)
@@ -185,7 +185,7 @@ v4i mask = (a>0); /* Mask = {-1, 0 ,-1, -1} */
 a = (vtrue & mask) | (vfalse & ~mask); 
 ```
 
-![[SectionAndMask.png]]
+![[attachements/SectionAndMask.png]]
 
 - Si sfruttano i *bitwise operator*.
 

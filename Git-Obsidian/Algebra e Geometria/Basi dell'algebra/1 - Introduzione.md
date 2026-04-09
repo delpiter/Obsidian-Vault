@@ -1,4 +1,4 @@
-La [[Concetti Base#Insieme|terminologia]] degli insiemi è sempre la stessa
+La [[../../Analisi/Concetti Base#Insieme|terminologia]] degli insiemi è sempre la stessa
 
 ## Relazione
 ---
@@ -70,11 +70,11 @@ Una relazione $R$ è una **relazione di equivalenza** se valgono le seguenti pro
 >Siano $A$ e $B$ insiemi non vuoti una **funzione o applicazione** che va d a $A$ a $B$ è una legge che associa ad ogni elemento dell'insieme $A$ uno e un solo elemento dell'insieme $B$
 ### Proprietà
 
-![[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Surriettiva]]
+![[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Surriettiva]]
 
-![[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Iniettiva]]
+![[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Iniettiva]]
 
-![[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca]]
+![[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Biunivoca]]
 
 ## Insiemi Numerici
-![[Insiemi Numerici#Tipologie]]
+![[../../Analisi/Insiemi/Insiemi Numerici#Tipologie]]

@@ -1,14 +1,14 @@
 ## Operazioni
 ---
 ### Prodotto Scalare
-![[4 - Prodotto Scalare#Prodotto Scalare Standard]]
+![[../../Algebra e Geometria/Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Prodotto Scalare Standard]]
 
 Una notazione equivalente è la seguente:
 $$
 <x,y> =x^{T}y
 $$
 
-> In generale un prodotto scalare su uno spazio vettoriale $\mathbb{R}^{n}$ è una [[1 - Applicazioni Lineari|applicazione]] da $\mathbb{R}^{n}\times\mathbb{R}^{n}$ a $\mathbb{R}$.
+> In generale un prodotto scalare su uno spazio vettoriale $\mathbb{R}^{n}$ è una [[../../Algebra e Geometria/Applicazioni/1 - Applicazioni Lineari|applicazione]] da $\mathbb{R}^{n}\times\mathbb{R}^{n}$ a $\mathbb{R}$.
 
 >[!hint] Proprietà
 >1. $x\cdot y=y\cdot x\qquad \forall x.y\in \mathbb{R}^{n}$
@@ -21,7 +21,7 @@ Due vettori $x,y\in \mathbb{R}^{n}$ si dicono ***ortogonali*** se il loro *prodo
 
 > Per misurare la lunghezza
 
-![[Norma#^093ca9]]
+![[../../Metodi Numerici per L'Intelligenza Artificiale/Norma#^093ca9]]
 
 >[!important] Importante
 >La norma euclidea fornisce una nozione di lunghezza che rimane *inalterata* per **rotazioni**/**traslazioni** e **riflessioni** del vettore.
@@ -105,7 +105,7 @@ Le *coordinate baricentriche* di un punto permettono di esprimere la posizione d
 
 >[!hint] Applicazioni Pratiche
 >- Determinazione della ***posizione relativa***, le coordinate indicano quanto "*peso*" ciascun vertice ha nel determinare la posizione del punto.
->- Consentono di [[Interpolazione Polinomiale|interpolare]] valori, come colori, temperature e altezze, definiti nei vertici del triangolo, per ottenere *valori continui in ogni punto interno*.
+>- Consentono di [[../../Metodi Numerici per L'Intelligenza Artificiale/Interpolazione/Interpolazione Polinomiale|interpolare]] valori, come colori, temperature e altezze, definiti nei vertici del triangolo, per ottenere *valori continui in ogni punto interno*.
 >- ***Geometria Computazionale***: facilitano il controllo di appartenenza di un punto a un triangolo, e migliorano l'efficienza degli algoritmi di #addLink *rendering*, *collision detection* e *mesh processing*.
 
 La ***combinazione affine*** di due punti distinti descrive la *retta passante per i due punti*.
@@ -134,7 +134,7 @@ $$
 
 Prendiamo un qualsiasi punto $P$ dato dalla combinazione convessa di $A,B,C$.
 
-![[BarycentricCoordinates.png]]
+![[attachements/BarycentricCoordinates.png]]
 
 Le aree risultanti: $APB, BPC$ e $APC$ sono *proporzionali alle coordinate baricentriche della combinazione*.
 $$
@@ -166,13 +166,13 @@ Ogni vertice del triangolo ha un colore specifico
 $$
 \text{colore}(p)=\alpha_{0}\text{colore}(v_{1})+\alpha_{1}\text{colore}(v_{2})+\alpha_{2}\text{colore}(v_{3})
 $$
-![[ColorInterpolation.png]]
+![[attachements/ColorInterpolation.png]]
 
 #### Convessità
 >[!definizione]
 >Un oggetto è ***convesso*** se e solo se comunque presi due punti nell'oggetto *tutti i punti sul segmento di linea* tra questi punti sono anche nell'oggetto.
 
-![[Convexity.png]]
+![[attachements/Convexity.png]]
 
 >[!help] Guscio Convesso
 
@@ -187,7 +187,7 @@ $$
 #### Distanza tra un Punto e una Retta
 > Bisogna cercare un punto $Q'$ tale che $(Q-Q')\perp v$.
 
-![[DistancePoint-Vector.png]]
+![[attachements/DistancePoint-Vector.png]]
 
 La distanza tra $Q$ e $l$ è uguale alla norma $\|Q-Q'\|$.
 Utilizzando il *teorema di Pitagora*:
@@ -208,7 +208,7 @@ $$
 Ax+By+C=0\quad A,B,C\in\mathbb{R}, AB\neq 0
 $$
 
-![[LineEquation.png]]
+![[attachements/LineEquation.png]]
 
 >[!caution] Intersezione Linea-Segmento
 
@@ -229,7 +229,7 @@ Data una retta in forma implicita, si definisce il vettore normale come i coeffi
 $$
 Ax+By+Cz+D=0\quad A,B,C,D\in\mathbb{R}\quad ABC\neq 0
 $$
-![[PlaneEquation.png]]
+![[attachements/PlaneEquation.png]]
 
 Dove:
 - $(x,y,z)$ sono le coordinate di un **punto** sul piano.
@@ -258,7 +258,7 @@ Di conseguenza abbiamo che:
 $$
 s=-\displaystyle{\frac{<P_{0}-Q,n>}{\|n\|^{2}}}
 $$
-![[Point-Plane_Distance.png]]
+![[attachements/Point-Plane_Distance.png]]
 
 In conclusione:
 $$

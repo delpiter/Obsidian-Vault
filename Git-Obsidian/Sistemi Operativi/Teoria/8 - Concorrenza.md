@@ -23,7 +23,7 @@ Esistono 3 modalità di gestione di processi multipli
 >[!abstract] Concetto: ***Interleaving***
 >I processi sono alternati con una velocità tale da dare l'impressione di avere un multiprocessore
 
-![[Interleaving.png]]
+![[attachements/Interleaving.png]]
 
 ### Multiprocessing
 >[!info] Definizione
@@ -35,7 +35,7 @@ Esistono 3 modalità di gestione di processi multipli
 >[!abstract] Concetto: ***Overlapping***
 >I processi sono "sovrapposti" nel tempo, si definisce "*overlapping*" la sovrapposizione temporale dei processi
 
-![[Overlapping.png]]
+![[attachements/Overlapping.png]]
 
 ### Distributed Processing
 >[!info] Definizione

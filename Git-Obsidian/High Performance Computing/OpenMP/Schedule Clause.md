@@ -2,7 +2,7 @@
 ---
 >[!todo] `{c icon} #pragma omp parallel for schedule(type, chunksize)`
 >La clausola `schedule` si aggiunge al costrutto [[Parallel Directive|parallel]] [[For Directive|for]] di [[OpenMP]], e consente di definire come le iterazioni del ciclo vengono ***assegnate ai thread***.
->- ([[7 - Scheduler|Scheduler]]).
+>- ([[../../Sistemi Operativi/Teoria/7 - Scheduler|Scheduler]]).
 
 Le iterazioni sono divise in **chunk** di `chunksize` iterazioni consecutive.
 ### Type
@@ -15,7 +15,7 @@ Se `chunksize` non è specificata allora:
 - `{c icon} chunksize = ceil(n_iteration/n_thread)`
 
 >[!abstract] `dynamic` o `guided`
->Le iterazioni assegnate ai thread seguono il [[Partition#Master-Worker Paradigm|Master-Worker Paradigm]].
+>Le iterazioni assegnate ai thread seguono il [[../Parallel Programming Patterns/Partition#Master-Worker Paradigm|Master-Worker Paradigm]].
 >
 
 Il `chunksize` di *default* è $1$.
@@ -26,7 +26,7 @@ In uno **schedule** `guided`, quando viene completato un *chunk* la dimensione d
 >Il **compilatore** e/o il **sistema runtime** determina la schedule.
 
 >[!failure] `runtime`
->Lo ***schedule*** è determinato a run-time usando la [[Git-Obsidian/Sistemi Operativi/Bash/Variabili|variabile d'ambiente]]: `{sh icon} OMP_SCHEDULE`.
+>Lo ***schedule*** è determinato a run-time usando la [[../../Sistemi Operativi/Bash/Variabili|variabile d'ambiente]]: `{sh icon} OMP_SCHEDULE`.
 
 - `{sh icon} OMP_SCHEDULE="static,1" ./my-prog.exe`
 

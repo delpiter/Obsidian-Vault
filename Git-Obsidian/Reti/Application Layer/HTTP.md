@@ -7,14 +7,14 @@ Una **pagina web** è immagazzinata in un server web.
 - Contiene una *collezione di oggetti* indirizzabili tramite collegamenti
 - Raggiungibile con il proprio *identificatore*
 
-> La modalità di accesso ad un elemento del web, viene specificata mediante un [[URL]]
+> La modalità di accesso ad un elemento del web, viene specificata mediante un [[../Introduzione/URL|URL]]
 ## Hypertext Transfer Protocol
 ---
 >[!info] HTTP
 >***Hypertext Transfer Protocol*** [RFC 2616](https://www.rfc-editor.org/rfc/rfc2616.html) è il protocollo di [[Protocolli Applicativi|livello applicativo]] che definisce le modalità di interazione tra client e server e il formato dei messaggi che questi si scambiano.
 
 *HTTP* è il protocollo utilizzato nell'applicazione **client-server** `WWW`.
-- Utilizza la [[Livello di Trasporto#Numero di Porta|porta]] $80$ o la **porta** $443$ (*HTTPS*)
+- Utilizza la [[../Transport Layer/Livello di Trasporto#Numero di Porta|porta]] $80$ o la **porta** $443$ (*HTTPS*)
 
 Regola lo scambio tra **web server** e **web client**.
 - Rispettivamente *sito web* e *browser*.

@@ -8,7 +8,7 @@ Esistono molte varianti tra cui:
 - $B^{+}$-Tree.
 
 >[!definizione] $B$-Tree
->Un $B$-Tree è un [[Gli Alberi|albero]] direzionato a più vie *perfettamente bilanciato*, organizzato a nodi che corrispondono a **blocchi di dati** (pagine) di uno storage device.
+>Un $B$-Tree è un [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Alberi/Gli Alberi|albero]] direzionato a più vie *perfettamente bilanciato*, organizzato a nodi che corrispondono a **blocchi di dati** (pagine) di uno storage device.
 
 Siano $g,h>0$ due numeri naturali, rispettivamente **ordine** e **altezza** del $B$-Tree
 - L'ordine corrisponde al ***numero minimo di chiavi*** in un nodo **non** radice.
@@ -25,7 +25,7 @@ Un $B$-Tree $\tau$ della classe $\tau(g,h)$ ha le seguenti *proprietà*:
 2. Un nodo intermedio con $l$ *chiavi* ($g\leq l\leq2g$) ha $l+1$ puntatori ad **altrettanti nodi figli**.
 3. In ogni nodo le chiavi sono memorizzate in ***ordine decrescente***.
 
-![[BTree.png]]
+![[attachements/BTree.png]]
 
 >Sia $k_{i}$ un generico valore di chiave:
 

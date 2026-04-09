@@ -8,7 +8,7 @@ Un algoritmo di criptazione è buono se è pubblico e la chiave è ***difficile 
 >[!info] Crittografia
 >L'idea di base è quella di trasformare un messaggio in modo tale che solo utenti autorizzati riescano a leggerlo.
 
-![[Cryptography.png]]
+![[attachements/Cryptography.png]]
 
 - $P$: Testo in chiaro, *comprensibile a tutti*.
 - $C$: Testo cifrato, comprensibile *solo al destinatario*.
@@ -28,12 +28,12 @@ Inoltre si presenta anche una terza opzione ***Ibrida***.
 >In un sistema con ***crittografia simmetrica*** mittente e destinatario **condividono la stessa chiave** per criptare e decriptare i messaggi.
 
 La crittografia *simmetrica* richiede **poche risorse** per l'utilizzo
-- [[Complessità di Algoritmi|Complessità computazionale]] ridotta.
+- [[../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|Complessità computazionale]] ridotta.
 
 >[!danger] La chiave deve essere nota sia a chi invia sia a chi riceve il messaggio
 >Durante il trasferimento della chiave chiunque riesca ad ottenerla ***è in grado di decifrare il testo***.
 
-![[SymmetricCryptography.png]]
+![[attachements/SymmetricCryptography.png]]
 
 Le funzioni di cifratura e decifrazione sono *una l'inversa dell'altra*
 $$
@@ -55,7 +55,7 @@ $$
 >[!tldr] Idea
 >In un sistema di comunicazione con ***crittografia asimmetrica***, si usano due chiavi $K_{1}$ e $K_{2}$, una utilizzata per *cifrare* e l'altra per *decifrare*.
 
-![[AsymmetricCryptography.png]]
+![[attachements/AsymmetricCryptography.png]]
 
 #### Algoritmi
 > Generalmente gli algoritmi di crittografia asimmetrica sono basati su formule matematiche basate sui **numeri primi**.
@@ -92,4 +92,4 @@ Per instaurare una ***comunicazione a due vie*** sono necessarie **4 chiavi** (*
 
 Utilizzato per ridurre l'*utilizzo eccessivo delle risorse*.
 
-![[Hybrid.png]]
+![[attachements/Hybrid.png]]

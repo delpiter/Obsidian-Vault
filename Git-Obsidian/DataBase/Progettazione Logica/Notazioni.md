@@ -2,7 +2,7 @@
 ---
 
 >[!info] Chiave Primaria
->Convenzionalmente si <u>sottolineano</u> gli attributi che costituiscono la [[Vincoli di Integrità#Chiavi|chiave]].
+>Convenzionalmente si <u>sottolineano</u> gli attributi che costituiscono la [[Modello Relazionale/Vincoli di Integrità#Chiavi|chiave]].
 
 >[!example] Esempio
 
@@ -32,12 +32,12 @@
 **IMPIEGATI**(<u>Agenzia</u>, Cognome, Nome, CodAgenzia:**AGENZIE**)
 
 >[!nota]
->Queste notazioni sono da intendersi come semplificazioni rispetto alla sintassi del linguaggio [[SQL]].
+>Queste notazioni sono da intendersi come semplificazioni rispetto alla sintassi del linguaggio [[../Interrogazioni/SQL|SQL]].
 
 ## Valori Null
 ---
 >Nella definizione di schemi relazionali a volte si usa il simbolo ***\****
-- Per denotare che è ammesso `NULL` come [[Informazione Incompleta|valore]].
+- Per denotare che è ammesso `NULL` come [[Modello Relazionale/Informazione Incompleta|valore]].
 
 >[!example] Esempi
 

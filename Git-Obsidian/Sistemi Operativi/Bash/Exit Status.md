@@ -11,7 +11,7 @@
 
 >[!question] Come catturare il ***risultato*** di un programma?
 
-Si utilizza una [[Git-Obsidian/Sistemi Operativi/Bash/Variabili#Le Variabili|variabili d'ambiente]] *predefinita*: `$?` che viene ***modificata*** ogni volta che un programma o un comando termina
+Si utilizza una [[Variabili#Le Variabili|variabili d'ambiente]] *predefinita*: `$?` che viene ***modificata*** ogni volta che un programma o un comando termina
 - Viene inserito il risultato numerico restituito dal comando o programma
 
 

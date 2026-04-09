@@ -13,7 +13,7 @@
 >>*Statica*:
 >>- Prevede fasi di riorganizzazione globale a *fronte di variazioni*.
 >
->>[!caution] Per [[Vincoli di Integrità#Chiavi|chiave primaria]] vs chiave secondaria.
+>>[[../Progettazione Logica/Modello Relazionale/Vincoli di Integrità#Chiavi|chiave primaria]] vs chiave secondaria.
 >> Il valore della chiave identifica un **unico record** in un’organizzazione per chiave primaria, e più record nel secondo caso.
 
 ### Tipi di Operazioni
@@ -69,7 +69,7 @@ La struttura permette di gestire [[Dispositivi di Memorizzazione#Rappresentazion
 >- Aggiornamenti **poco frequenti**.
 
 #### Sorted Sequential File
->Un [[Problema dell'Ordinamento|ordinamento]] in base a un **campo chiave** e l'organizzazione è detta ***sorted***
+>Un [[../../Algoritmi e Strutture Dati/Ordinamento/Problema dell'Ordinamento|ordinamento]] in base a un **campo chiave** e l'organizzazione è detta ***sorted***
  ***sequential file*** o ***clustered file***.
 
 >[!summary] SSF
@@ -85,16 +85,16 @@ Per aumentare l'efficienza:
 - Si prevedono molti spazi liberi, con ulteriori *blocchi* in un ***overflow file*** non ordinato.
 - Periodicamente i due file (*master* e *overflow*) vengono fusi per produrre un unico file.
 ### Hash File
-> Prevede l'uso di [[Funzione di Hash|funzioni hash]] per ***allocare i record nei blocchi***.
+> Prevede l'uso di [[../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash|funzioni hash]] per ***allocare i record nei blocchi***.
 
 Ogni indirizzo generato dalla funzione $H$ individua una ***pagina logica***.
-- Possono verificarsi delle [[Funzione di Hash#Collisioni|collisioni]].
+- Possono verificarsi delle [[../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash#Collisioni|collisioni]].
 
 >[!caution] Efficienza
 >Pur in presenza di collisioni, le ***organizzazioni hash*** sono in genere efficienti per il ***reperimento di un singolo record***.
 >Poco efficienti per altri tipi di ricerca (es. *intervallo*).
 
-> Una funzione hash deve essere [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Funzione Surriettiva|suriettiva]], quindi generare $n$ indirizzi tanti quanti sono i ***bucket dell'area primaria***.
+> Una funzione hash deve essere [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Surriettiva|suriettiva]], quindi generare $n$ indirizzi tanti quanti sono i ***bucket dell'area primaria***.
 ##### Organizzazione Statica
 >[!info] Il valore di $n$ è fissato alla creazione della struttura e mantenuto costante
 

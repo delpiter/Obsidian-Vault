@@ -1,4 +1,4 @@
->[!warning] Una [[2 - Campi e Spazi Vettoriali#Base|base]] non basta per definire la posizione di un punto
+>[[../../Algebra e Geometria/Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] non basta per definire la posizione di un punto
 
 Occorre definire un punto di riferimento.
 - L'***origine del sistema di riferimento***.
@@ -88,7 +88,7 @@ $$
 
 > Siano $F_{1}=(x,y,O)$ ed $F_{2}=(u,v,e)$ due [[#Frame]] di uno stesso spazio.
 
-![[ReferenceSystemChange.png]]
+![[attachements/ReferenceSystemChange.png]]
 
 Supponiamo di conoscere le coordinate del punto $P$ nel frame $F_{2}$ e vogliamo vedere quali sono le sue coordinate nel frame $F_{1}$
 
@@ -118,7 +118,7 @@ y \\
 O
 \end{bmatrix}
 $$
-La matrice $M=\begin{bmatrix}x_{u} & y_{u} & 0 \\x_{v} & y_{v} & 0 \\x_{e} & y_{e} & 1\end{bmatrix}$ rappresenta il [[6 - Cambiamenti di Base|cambiamento del sistema di riferimento]] da $F_{1}$ ad $F_{2}$.
+La matrice $M=\begin{bmatrix}x_{u} & y_{u} & 0 \\x_{v} & y_{v} & 0 \\x_{e} & y_{e} & 1\end{bmatrix}$ rappresenta il [[../../Algebra e Geometria/Applicazioni/6 - Cambiamenti di Base|cambiamento del sistema di riferimento]] da $F_{1}$ ad $F_{2}$.
 
 Il punto $P$ nel frame $F_{1}$ avrà coordinate omogenee $a^{T}=[x_p, y_{p},1]$
 Il punto $P$ nel frame $F_{2}$ avrà coordinate omogenee $b^{T}=[u_p,v_{p}, 1]$
@@ -265,7 +265,7 @@ $$
 P'=P+T
 $$
 - Ma questa operazione è *diversa* rispetto alla **rotazione** e alla **scalatura** (somma vs. prodotto).
-	- Questo causa problemi all'interno della [[Rendering Graphics Pipeline]].
+	- Questo causa problemi all'interno della [[../Rendering Pipeline/Rendering Graphics Pipeline]].
 
 Per risolvere questo problema si sfruttano le *coordinate omogenee*.
 - Nella notazione in ***coordinate omogenee*** possiamo riscrivere la traslazione come:
@@ -286,12 +286,12 @@ y \\
 $$
 > Esempio
 
-![[TranslationExample.png]]
+![[attachements/TranslationExample.png]]
 
 
 > Siano $F_{1}=(x,y,O)$ e $F_{2}=(u,v,e)$
 
-![[Translation.png]]
+![[attachements/Translation.png]]
 
 Il punto $P$ ha coordinate omogenee $a^{T}=(x_{p},y_{p},1)$ in $F_{1}$ e $b^{T}=(u_{p},v_{p},1)$ in $F_{1}$
 
@@ -342,7 +342,7 @@ $$
 
 > Esempio
 
-![[ScaleExample.png]]
+![[attachements/ScaleExample.png]]
 
 >[!hint] Osservazioni
 >- Fattori di scala $<1$ avvicinano l'oggetto al punto di riferimento, $>1$ lo allontanano.
@@ -391,14 +391,14 @@ y \\
 $$
 > Esempio
 
-![[RotationExample.png]]
+![[attachements/RotationExample.png]]
 
 >[!hint] Osservazioni
 >- Gli angoli sono considerati positivi quando misurati in senso orario.
 
 > Siano $F_{1}=(x,y,O)$ e $F_{2}=(u,v,e)$
 
-![[Rotation.png]]
+![[attachements/Rotation.png]]
 
 Il punto $P$ ha coordinate omogenee $a^{T}=(x_{p},y_{p},1)$ in $F_{1}$ e $b^{T}=(u_{p},v_{p},1)$ in $F_{1}$
 
@@ -529,7 +529,7 @@ $$
 
 Una traslazione seguita da rotazione attorno all'origine (*sinistra*), una rotazione intorno all'origine seguita da una traslazione (*destra*).
 
-![[NonCommutative.png]]
+![[attachements/NonCommutative.png]]
 
 > Esempio
 
@@ -557,7 +557,7 @@ $$
 ### Invertibilità delle Trasformazioni
 >Sia $M$ una trasformazione tra quelle fondamentali.
 
-Poiché $M$ non è [[Sistemi Lineari#Matrici Singolari|singolare]], allora esiste la matrice inversa $M^{-1}$ tale che:
+Poiché $M$ non è [[../../Metodi Numerici per L'Intelligenza Artificiale/Equazioni Lineari/Sistemi Lineari#Matrici Singolari|singolare]], allora esiste la matrice inversa $M^{-1}$ tale che:
 $$
 MM^{-1}=I
 $$

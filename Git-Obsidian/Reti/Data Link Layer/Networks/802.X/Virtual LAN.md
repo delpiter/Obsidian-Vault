@@ -1,9 +1,9 @@
 ## 802.1q
 ---
 >[!tldr] Idea
-> Un solo [[LAN#Switch|switch]] (*managed* o *configurabile*), più [[LAN]] separate.
+> Un solo [[../LAN#Switch|switch]] (*managed* o *configurabile*), più [[../LAN|LAN]] separate.
 
-Ogni `VLAN` rappresenta un diverso [[Reti IP#Broadcast|dominio di broadcast]].
+Ogni `VLAN` rappresenta un diverso [[../../../Network Layer/Reti IP#Broadcast|dominio di broadcast]].
 
 Lo standard `802.1q` è un protocollo che permette l'utilizzo delle stesse `VLAN` su ***diversi switch interconnessi tra loro***.
 
@@ -15,7 +15,7 @@ Lo standard `802.1q` è un protocollo che permette l'utilizzo delle stesse `VLAN
 >Anche detta porta ***untagged***.
 
 >[!caution] Trunk Mode
->Una porta associata a `VLAN` *multiple*, usata per connettere *due switch* o uno *switch* e un [[Routing#Router|router]].
+>Una porta associata a `VLAN` *multiple*, usata per connettere *due switch* o uno *switch* e un [[../../../Network Layer/Routing/Routing#Router|router]].
 >Anche detta porta ***tagged***.
 
 >[!tldr] Idea
@@ -27,7 +27,7 @@ Lo switch gestisce l'**aggiunta** e la **rimozione** del tag all'interno del [[R
 
 >[!important] Il frame avrà il tag della `VLAN` solo: dentro lo switch o in un collegamento "**trunk**".
 
-![[VLANExample.svg]]
+![[attachements/VLANExample.svg]]
 
 #### Router on a Stick
 >[!caution] Routing Inter-`VLAN`
@@ -36,7 +36,7 @@ Lo switch gestisce l'**aggiunta** e la **rimozione** del tag all'interno del [[R
 Il **router** che riceve un pacchetto con il tag, sarà in grado di *ritrasmetterlo alla rete interna* con il tag corretto.
 
 #### Formato del Frame
-![[VLANFrame.png]]
+![[attachements/VLANFrame.png]]
 
 >Al ***frame ethernet*** vengono aggiunti $4$`byte` per identificare la `VLAN`.
 
@@ -48,7 +48,7 @@ Il **router** che riceve un pacchetto con il tag, sarà in grado di *ritrasmette
 > ***Priority***
 
 > ***Canonical Format Indicator*** ($1$ `bit`)
-- Indica il formato del [[Struttura del Data Link#Medium Access Control|MAC]] **address**.
+- Indica il formato del [[../../Struttura del Data Link#Medium Access Control|MAC]] **address**.
 
 > ***Unique*** `LAN` ***Identifier***
 - $12$ `bit` che identificano il numero della `VLAN`.
@@ -64,7 +64,7 @@ Un **host** appartiene alla `VLAN` corrispondente alla porta a *cui è connesso*
 >L'appartenenza alla `VLAN` è stabilita in base all'***indirizzo dell'host***.
 
 Possono essere basate su:
-- [[Struttura del Data Link#Medium Access Control|MAC]]-based.
-- [[Protocollo IP|IP]]-based.
+- [[../../Struttura del Data Link#Medium Access Control|MAC]]-based.
+- [[../../../Network Layer/Protocollo IP|IP]]-based.
 
 Un host appartiene ad una `VLAN` indipendentemente dalla porta a cui è connesso.

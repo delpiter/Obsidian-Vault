@@ -1,24 +1,24 @@
 ## Dynamic Host Configuration Protocol
 ---
 >[!cite] [RFC 2131](https://www.rfc-editor.org/rfc/rfc2131.html)
->Il `DHCP` è un protocollo di livello [[Protocolli Applicativi|applicativo]] che utilizza la [[Livello di Trasporto#Numero di Porta|porta]] $67$.
->Introduce la capacità di ***allocare automaticamente*** [[Protocollo IP|indirizzi IP]] *riutilizzabili* e altre configurazioni aggiuntive.
+>Il `DHCP` è un protocollo di livello [[Protocolli Applicativi|applicativo]] che utilizza la [[../Transport Layer/Livello di Trasporto#Numero di Porta|porta]] $67$.
+>Introduce la capacità di ***allocare automaticamente*** [[../Network Layer/Protocollo IP|indirizzi IP]] *riutilizzabili* e altre configurazioni aggiuntive.
 
 Il protocollo fornisce un *indirizzo* `IP` ad un **host** interno alla rete che lo richiede.
 - L'indirizzo viene scelto da una ***address pool***.
-- È possibile stabilire degli ***indirizzi fissi*** per un host, inserendo l'[[Struttura del Data Link#Medium Access Control|indirizzo fisico]].
+- È possibile stabilire degli ***indirizzi fissi*** per un host, inserendo l'[[../Data Link Layer/Struttura del Data Link#Medium Access Control|indirizzo fisico]].
 ### Funzionamento
 >[!hint] Discovery
->Il client che deve ricevere l'indirizzo `IP` **manda un messaggio** [[Reti IP#Broadcast|broadcast]] alla rete (`DHCP discover`).
+>Il client che deve ricevere l'indirizzo `IP` **manda un messaggio** [[../Network Layer/Reti IP#Broadcast|broadcast]] alla rete (`DHCP discover`).
 
-- Tipicamente mandato usando l'[[UDP]].
+- Tipicamente mandato usando l'[[../Transport Layer/UDP]].
 - L'obbiettivo di "***scoprire***" i server `DHCP` disponibili.
 
 >[!abstract] Offer
 >Il server che riceve la "*discover*" risponde con un messaggio chiamato `DHCP offer`.
 
 - L'*offer* contiene un indirizzo `IP` disponibile nella ***address pool*** e altri parametri di configurazione come:
-	- [[Protocollo IP#Netmask|Subnet]], [[DNS]], [[Routing#Ruolo del Gateway|Default Gateway]].
+	- [[../Network Layer/Protocollo IP#Netmask|Subnet]], [[DNS]], [[../Network Layer/Routing/Routing#Ruolo del Gateway|Default Gateway]].
 
 >[!question] Request
 >Al ricevimento di più *offer* (dai vari server `DHCP`) il client **ne sceglie una**.
@@ -43,7 +43,7 @@ Una volta finito il **tempo di lease** possono avvenire:
 	- `REBIND`: Rinnovamento *avvenuto con successo*.
 	- `DHCPNACK`: Rinnovamento *rifiutato*.
 
-![[DHCP.png]]
+![[../Network Layer/attachements/DHCP.png]]
 
 ### Pacchetto
 ```mermaid

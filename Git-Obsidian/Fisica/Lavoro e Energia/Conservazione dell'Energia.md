@@ -52,10 +52,10 @@ $$
 ### Punti di Vista
 > Vediamo come posso usare diversi punti di vista per comprendere lo stesso fenomeno.
 
-![[POV.png|450]]
+![[attachements/POV.png|450]]
 
 >[!example] Esempio
->Considero un *blocco* connesso ad una molla, ***poggiato su un tavolo*** con [[Le Forze#Forze di Attrito|attrito]].
+>Considero un *blocco* connesso ad una molla, ***poggiato su un tavolo*** con [[../Leggi di Newton e le Forze/Le Forze#Forze di Attrito|attrito]].
 
 > 1. Il sistema è il blocco.
 

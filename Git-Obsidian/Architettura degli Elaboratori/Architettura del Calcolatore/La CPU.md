@@ -28,13 +28,13 @@ Normalmente i registri hanno tutti le *stesse dimensioni*
 Il registro più importante è il ***program counter*** (`PC`) che indica la *prossima istruzione da eseguire*
 
 >[!warning] Differenza
->I registri della `CPU` sono differenti rispetto ai [[Registri]] del ***linguaggio assembly***
+>I registri della `CPU` sono differenti rispetto ai [[../Assembly/Registri|registri]] del ***linguaggio assembly***
 ## Data Path
 ---
-![[DataPath.png]]
+![[attachements/DataPath.png]]
 >[!info] Definizione
 >Il passaggio di *due operandi* attraverso la `ALU` e la *memorizzazione del risultato* in un nuovo registro viene detto ***ciclo di data path***
->Ogni istruzione [[Il Livello ISA|ISA]] viene eseguita in ***uno o più cicli*** di *data path*
+>Ogni istruzione [[../Assembly/Il Livello ISA|ISA]] viene eseguita in ***uno o più cicli*** di *data path*
 >- Più è ***complessa*** l'operazione ***più cicli*** avrà bisogno per essere *eseguita*
 
 ### Ciclo di Clock
@@ -74,9 +74,9 @@ La `CPU` "*legge*" le istruzioni assembler del ***programma da eseguire dalla me
 Le istruzioni sono internamente decodificate e passate all'***unità di controllo***
 L'*unità di controllo* può essere di ***2 tipi***:
 
-- ***Microprogrammata*** (`CPU` [[Tipologie di Architetture#CISC|CISC]])
+- ***Microprogrammata*** (`CPU` [[../Architetture a Confronto/Tipologie di Architetture#CISC|CISC]])
 	- Ad ogni istruzione `ISA` corrisponde un *microprogramma* che indica la sequenza di *microistruzioni* da eseguire
-- ***Cablata*** (`CPU` [[Tipologie di Architetture#RISC|RISC]])
+- ***Cablata*** (`CPU` [[../Architetture a Confronto/Tipologie di Architetture#RISC|RISC]])
 	- L'esecuzione avviene attraverso un *circuito digitale sequenziale* che implementa una *macchina a strati*
 
 >[!done] Execute
@@ -92,11 +92,11 @@ L'*unità di controllo* può essere di ***2 tipi***:
 
 ## Il Chip della CPU
 ---
->*Quasi tutte le `CPU` moderne sono realizzate all'interno di un unico chip [[Circuiti Digitali#Circuiti Integrati|ULSI]]*
+>*Quasi tutte le `CPU` moderne sono realizzate all'interno di un unico chip [[../Algebra di Bool e Logica Digitale/Circuiti Digitali#Circuiti Integrati|ULSI]]*
 
 Questo chip è dotato di un insieme di *piedini/contatti* che servono al collegamento e all'interazione della `CPU` con il mondo esterno
 
-![[CPUPins.png]]
+![[attachements/CPUPins.png]]
 >*Una `CPU` con $1155$ contatti sul retro*
 
 >[!question] A cosa servono tutti questi contatti?
@@ -108,13 +108,13 @@ La `CPU` ha:
 - Pin per monitoraggio della *temperatura*
 - Pin per il controllo dell'elettricità
 
-![[PinLayout.png]]
+![[attachements/PinLayout.png]]
 
 >[!abstract] Chip di una `CPU` *"moderna"*
 
 Il silicio del chip $\text{Core i7-5960X}$ - 2014:
-- $2.6$ miliardi di [[Logica Digitale#Transistor|transistors]]
+- $2.6$ miliardi di [[../Algebra di Bool e Logica Digitale/Logica Digitale#Transistor|transistors]]
 - [[Cache#Livelli di Cache|cache]] $\text{L1}$ e $\text{L2}$ private a ciascun *core*
 - $20Mb$ di $\text{L3}$ condivisa tra gli 8 *core*
 
-![[SiliconChipLayout 1.png]]
+![[attachements/SiliconChipLayout 1.png]]

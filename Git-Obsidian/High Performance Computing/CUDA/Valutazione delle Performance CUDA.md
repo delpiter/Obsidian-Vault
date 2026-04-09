@@ -1,6 +1,6 @@
-> Il concetto di [[Valutazione delle Performance#Speedup|speedup]] non può essere usato
+> Il concetto di [[../Valutazione delle Performance#Speedup|speedup]] non può essere usato
 
->[!fail] Il programma non ha controllo sul numero di [[CUDA]] cores usati.
+>[[CUDA|!fail]] cores usati.
 
 > Servono ***metriche diverse***:
 

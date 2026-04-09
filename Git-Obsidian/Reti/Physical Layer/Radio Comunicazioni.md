@@ -20,7 +20,7 @@ Le onde elettromagnetiche si propagano il linea retta:
 
 ## Servizi su Comunicazioni Radio
 ---
-> Sono possibili trasmissioni [[Reti IP#Multicast|punto-multipunto]].
+> Sono possibili trasmissioni [[../Network Layer/Reti IP#Multicast|punto-multipunto]].
 
 >[!fail] Forte limitazione delle risorse
 - Lo spettro radio è **finito**.

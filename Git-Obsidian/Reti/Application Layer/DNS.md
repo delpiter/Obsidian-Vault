@@ -1,6 +1,6 @@
 ## Nomi Simbolici
 ---
->Affinché un calcolatore possa parlare con altri calcolatori, esso deve essere equipaggiato con almeno una ***interfaccia di rete***: deve avere associato un [[Protocollo IP|indirizzo IP]]
+>Affinché un calcolatore possa parlare con altri calcolatori, esso deve essere equipaggiato con almeno una ***interfaccia di rete***: deve avere associato un [[../Network Layer/Protocollo IP|indirizzo IP]]
 
 >[!todo] Nome del Calcolatore
 >Ad un calcolatore può essere associato un ***nome simbolico***.
@@ -14,8 +14,8 @@ Un nome simbolico rende ***più facile*** l'utilizzo agli esserei umani.
 ## Domain Name System
 ---
 >[!cite] Concetto
->Il ***D***omain ***N***ame ***S***ystem consente la traduzione di un [[Protocollo IP|indirizzo IP]] in un ***domain*** e viceversa.
->Utilizza la [[Livello di Trasporto#Numero di Porta|porta]] $53$.
+>Il ***D***omain ***N***ame ***S***ystem consente la traduzione di un [[../Network Layer/Protocollo IP|indirizzo IP]] in un ***domain*** e viceversa.
+>Utilizza la [[../Transport Layer/Livello di Trasporto#Numero di Porta|porta]] $53$.
 >>[!help] Ruolo
 >>Il `DNS` ha un ruolo *fondamentale* nel funzionamento di internet:
 >>- Consente di ***identificare e raggiungere*** i server e le risorse in modo *efficiente*.
@@ -52,21 +52,21 @@ Un nome simbolico rende ***più facile*** l'utilizzo agli esserei umani.
 
 L'assegnatario di un dominio è ***responsabile*** della gestione di eventuali ***sottodomini***.
 
-![[DNSHierarchy.png]]
+![[attachements/DNSHierarchy.png]]
 
 ### Nome di un Server
 >[!quote] Nome
 >Il ***nome di un host*** è una sequenza dei nomi di dominio a partire dal più esteso a destra
 >- `deisnet.deis.unibo.it`
 >
->I nomi dei domini sono assegnati da [[Enti Importanti#IANA|IANA]]
+>I nomi dei domini sono assegnati da [[../Standards/Enti Importanti#IANA|IANA]]
 >>[!danger] **Non** devono esistere due nomi uguali per host *diversi*.
 
 ### Funzionamento
 >Il `DNS` è strutturato in un albero gerarchico che consiste in diversi `DNS` server.
 
 >[!hint] `DNS` Resolver
->Per convertire un nome in un [[Protocollo IP|indirizzo IP]], l'host deve essere equipaggiato con un programma specifico detto ***name resolver***.
+>Per convertire un nome in un [[../Network Layer/Protocollo IP|indirizzo IP]], l'host deve essere equipaggiato con un programma specifico detto ***name resolver***.
 >Quando un client deve risolvere un *nome* invia una richiesta al `DNS` ***resolver*** per tradurre il domain.
 
 La gerarchia `DNS` comprende un **enorme insieme di record** la cui gestione pratica non può che basarsi sull'implementazione **distribuita** della funzione di associazione  *nome-indirizzo*
@@ -78,7 +78,7 @@ La gerarchia `DNS` comprende un **enorme insieme di record** la cui gestione pra
 >[!definizione] Definizione
 >Una ***zona*** è definita come un sottoalbero della gerarchia `DNS` con un *name server* responsabile della risoluzione dei nomi di dominio corrispondenti ai **nodi del sottoalbero**
 
-![[DNSZone.png|600]]
+![[attachements/DNSZone.png|600]]
 
 I name server di una zona sono detti ***autorevoli*** (*authoritative*)
 #### Risoluzione del Nome
@@ -100,16 +100,16 @@ La ***risoluzione del nome*** avviene nei seguenti passi:
 >>[!abstract] Ricorsiva
 >>Nella procedura ricorsiva, il ***root name server*** interroga il ***TLD*** *Name Server* che a sua volta interroga un **NS** di secondo livello ecc...
 
-![[IterativeSearch.png|600]]
+![[attachements/IterativeSearch.png|600]]
 
 - *Procedura Iterativa di Risoluzione*
 
-![[RecursiveSearch.png|600]]
+![[attachements/RecursiveSearch.png|600]]
 
 - *Procedura Ricorsiva di Risoluzione*
 
 ### Formato dei Messaggi
->[[ISO-OSI#Trasferimento dei Dati|PDU]] del protocollo `DNS` diviso in due:
+>[[../Standards/ISO-OSI#Trasferimento dei Dati|PDU]] del protocollo `DNS` diviso in due:
 
 >[!quote] Header
 >Contenente **informazioni** riguardo al **body**.
@@ -189,7 +189,7 @@ packet-beta
 
 >[!info] A
 
-Restituisce un indirizzo [[Protocollo IP|IPv4]] a $32$ `bit` corrispondente ad un nome simbolico indicato nella richiesta
+Restituisce un indirizzo [[../Network Layer/Protocollo IP|IPv4]] a $32$ `bit` corrispondente ad un nome simbolico indicato nella richiesta
 
 >[!summary] NS
 

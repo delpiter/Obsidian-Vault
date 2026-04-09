@@ -1,7 +1,7 @@
 ## Legge dell'Induzione
 ---
 >[!tldr] Idea
->Sperimentazioni con [[Magnetismo|campi magnetici]] e *circuiti* portano a capire che il movimento relativo di un ***magnete***/***circuito*** induce una [[Corrente Elettrica|corrente]].
+>Sperimentazioni con [[Magnetismo|campi magnetici]] e *circuiti* portano a capire che il movimento relativo di un ***magnete***/***circuito*** induce una [[Circuiti/Corrente Elettrica|corrente]].
 
 Faraday conclude che gli effetti sono dovuti alla ***variazione temporale*** del [[Flusso di un Campo Vettoriale|flusso]] magnetico $\vec{B}$.
 
@@ -11,9 +11,9 @@ Faraday conclude che gli effetti sono dovuti alla ***variazione temporale*** del
 ### Induzione dovuta al Moto
 >[!info]
 > Il filo si *muove verso destra* a velocità $\vec{v}$.
-> Sui portatori di carica in quel tratto agisce una [[Leggi di Newton#Seconda Legge di Newton|forza]] $\vec{F}=q\vec{v}\times\vec{B}$
+> Sui portatori di carica in quel tratto agisce una [[../Leggi di Newton e le Forze/Leggi di Newton#Seconda Legge di Newton|forza]] $\vec{F}=q\vec{v}\times\vec{B}$
 
-![[InduzioneMoto.svg]]
+![[attachements/InduzioneMoto.svg]]
 
 > Ora calcolo il flusso del campo $\vec{B}$
 

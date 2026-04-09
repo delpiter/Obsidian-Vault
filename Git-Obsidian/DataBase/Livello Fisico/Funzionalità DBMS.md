@@ -1,7 +1,7 @@
 ## Il DBMS
 ---
 >[!info]
->Un [[Git-Obsidian/DataBase/Introduzione#DBMS|DBMS]] è un insieme di programmi che permettono all'utente di *definire*, *costruire*, *manipolare* e *condividere* una **base di dati**.
+>Un [[../Introduzione#DBMS|DBMS]] è un insieme di programmi che permettono all'utente di *definire*, *costruire*, *manipolare* e *condividere* una **base di dati**.
 
 >[!example] Funzionalità Principali
 
@@ -31,7 +31,7 @@ Il catalogo è usato dal **DBMS** e dagli utenti che necessitano di informazioni
 >Un obbiettivo del **DBMS** consiste nel fornire caratteristiche di *indipendenza logica* e *fisica*.
 
 La soluzione è comunemente nota come ***architettura a 3 livelli***.
-![[ThreeLevelArchitecture.png]]
+![[attachements/ThreeLevelArchitecture.png]]
 ### Indipendenza Fisica
 >[!info]
 >L'***organizzazione fisica dei dati*** dipende da considerazioni legate all'efficienza delle strutture adottate.
@@ -46,12 +46,12 @@ La **riorganizzazione** fisica ***dei dati*** o la **creazione** di ***strutture
 >[!abstract] Files
 > Il "***DB Fisico***" consiste in una serie di file, residenti su dispositivi di memoria permanenti che contengono *dati*, *indici* e altre tipologie di *strutture*.
 
-Lo [[Definizioni Importanti#Schema|schema]] **fisico** descrive come il DB, definito a livello logico è ***rappresentato a livello fisico***.
+Lo [[../Definizioni Importanti#Schema|schema]] **fisico** descrive come il DB, definito a livello logico è ***rappresentato a livello fisico***.
 - La gestione del DB fisico è a carico del *Data Base Administrator*.
 
 ### Livello Esterno
 >[!hint] Livello delle Viste
->Il *livello esterno* è costruito a partire dallo ***schema logico*** integrato mediante la definizione di [[DML#Viste|viste]] ad hoc che descrivono *parte dello schema logico* secondo le esigenze di operatività dei diversi utenti.
+>Il *livello esterno* è costruito a partire dallo ***schema logico*** integrato mediante la definizione di [[../Interrogazioni/DML#Viste|viste]] ad hoc che descrivono *parte dello schema logico* secondo le esigenze di operatività dei diversi utenti.
 
 La distinzione tra **livello esterno** e **logico** può, in molti casi, risultare *trasparente* agli utenti, che, ad esempio, in un ***RDBMS*** “*vedono*” semplicemente un insieme di tabelle.
 
@@ -62,7 +62,7 @@ La distinzione tra **livello esterno** e **logico** può, in molti casi, risulta
 >[!info] Gestione Autorizzazioni
 >La ***gestione delle autorizzazioni*** può risultare complessa, per questo motivo sono previste figure di *Data Base Administrator* che conferiscono agli utenti i "**giusti**" privilegi.
 
-Il [[SQL#Componenti SQL|DCL]] di [[SQL]] semplifica la concessione di privilegi a una classe di utenti.
+Il [[../Interrogazioni/SQL#Componenti SQL|DCL]] di [[../Interrogazioni/SQL|SQL]] semplifica la concessione di privilegi a una classe di utenti.
 
 ## Persistenza dei Dati
 ---
@@ -71,7 +71,7 @@ Il [[SQL#Componenti SQL|DCL]] di [[SQL]] semplifica la concessione di privilegi 
 >[!caution] Concorrenza
 >Un **DBMS** deve garantire che gli accessi ai dati, da parte di diverse applicazioni, non interferiscano tra loro ***violando vincoli di integrità***.
 
-È necessario far ricorso a opportuni meccanismi di ***controllo*** *della* [[8 - Concorrenza|concorrenza]].
+È necessario far ricorso a opportuni meccanismi di ***controllo*** *della* [[../../Sistemi Operativi/Teoria/8 - Concorrenza|concorrenza]].
 
 >[!danger] Protezione dai Guasti
 >È possibile che per qualche motivo (*disk failure*, *interruzioni di rete*, *intervento dell’utente*, *transaction abort*, *errori software*, ...) solo una parte delle operazioni da eseguire sia **effettivamente eseguita**.
@@ -95,14 +95,14 @@ Per garantire l'integrità il **DBMS** deve provvedere ad annullare tali modific
 
 ## Moduli di un DBMS
 ---
-![[DBMSmodules.png]]
+![[attachements/DBMSmodules.png]]
 
 >[!example] Moduli
 
 - La base di dati e il catalogo del **DBMS** sono *memorizzati su disco*.
-- L'accesso al disco è controllato dal [[3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]].
+- L'accesso al disco è controllato dal [[../../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Introduzione|sistema operativo]].
 - Alcuni **DBMS** hanno un modulo di ***gestione del buffer***, per pianificare operazioni di lettura e scrittura su disco.
 - Un **gestore dei dati archiviati** che controlla l'accesso alle informazioni memorizzate su disco.
 
 #### Layer del DBMS
-![[DBMSLayers.png]]
+![[attachements/DBMSLayers.png]]

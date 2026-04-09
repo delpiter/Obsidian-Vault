@@ -1,12 +1,12 @@
 >[!info] Scheda Madre
 >La *scheda madre* (***motherboard***) è una *scheda elettronica* che raccoglie in sé tutta la *circuiteria* e i *collegamenti di interfaccia* tra i vari componenti interni principali del `PC`
 
-![[Motherboard.png]]
+![[attachements/Motherboard.png]]
 ## Contenuti Motherboard
 ---
 >[!done] CPU Socket
 
-Il ***socket*** è dove risiede la [[La CPU|CPU]], ne esistono di diversi [[Circuiti Digitali#Tipi di Package|tipi]]:
+Il ***socket*** è dove risiede la [[La CPU|CPU]], ne esistono di diversi [[../Algebra di Bool e Logica Digitale/Circuiti Digitali#Tipi di Package|tipi]]:
 I più usati al giorno d'oggi sono:
 - `LGA`
 	- I pin non sono sulla `CPU` ma risiedono all'interno del ***socket*** ($\text{LGA }1200$, $AM5$)
@@ -45,7 +45,7 @@ Al fine di semplificare la ***comunicazione*** tra calcolatori e dispositivi $I/
 
 >[!tip] Chipset
 
-![[Definizioni_Architettura#Chipset]]
+![[../../Definizioni/Definizioni_Architettura#Chipset]]
 
 In passato il chipset era diviso in due per problemi di velocità delle periferiche:
 - ***Northbridge***

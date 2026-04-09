@@ -19,7 +19,7 @@
 [6]: 1
 ```
 
-![[graph 1.png]]
+![[attachements/graph 1.png]]
 
 ## Matrice di Adiacenza
 ---
@@ -44,4 +44,4 @@
 | $5$ | $0$ | $1$ | $0$ | $0$ | $0$ | $0$ |
 | $6$ | $1$ | $0$ | $0$ | $0$ | $0$ | $0$ |
 
-![[graph 1.png]]
+![[attachements/graph 1.png]]

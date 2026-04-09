@@ -28,7 +28,7 @@ Il ***Terzo registro***:
 Il ***Quarto registro***:
 - Indica se i dati vanno *letti o scritti* dal/sul ***dispositivo***
 
-![[Direct Memory Acces.png]]
+![[attachements/Direct Memory Acces.png]]
 
 A questo punto la `CPU` da il ***via all'operazione*** di trasferimento
 - Il controllore usa il `BUS` per *leggere i valori* dal dispositivo e *scriverli in memoria*
@@ -62,11 +62,11 @@ Data la presenza nel sistema di *diverse periferiche*:
 #### Funzionamento 
 I primi `PC` utilizzavano un *chip* che si interponeva tra la `CPU` e le linee di richiesta interrupt ***provenienti dalle periferiche***
 
-![[Interrupt Chip.png]]
+![[attachements/Interrupt Chip.png]]
 - Quando un dispositivo richiede interrupt è sufficiente che ***attivi la propria linea*** `IRx`
 - Quando vengono attivate una o più linee il controllore ***attiva la linea*** `INT` della `CPU`
 - Quando la `CPU` è in grado di accettare l'***interrupt*** lo segnala attraverso la linea `INTA`:
 	- ***Int***errupt ***A***cknowledge
 - Il controllore invia alla `CPU` ***informazioni circa la periferica*** con priorità più alta che ha fatto richiesta
 - L'hardware della `CPU` utilizza questa informazione come ***offset di una tabella*** di puntatori, chiamati ***interrupt vector***, per trovare l'indirizzo della *funzione da eseguire* in risposta all'*interrupt*
-![[Interrupt Vector.png]]
+![[attachements/Interrupt Vector.png]]

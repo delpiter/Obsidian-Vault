@@ -13,8 +13,8 @@ Il pacchetto viene prima **memorizzato interamente** nel nodo e quindi ritrasmes
 La lunghezza è un numero che serve a caratterizzare il *peso del collegamento* nel determinare la ***funzione di costo del percorso*** totale di trasmissione.
 
 Vengono applicati algoritmi di calcolo dello shortest path.
-- [[Algoritmo di Dijkstra]].
-- [[Algoritmo di Bellman-Ford]].
+- [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Cammini Minimi/Algoritmo di Dijkstra]].
+- [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Cammini Minimi/Algoritmo di Bellman-Ford]].
 
 > L'implementazione può avvenire in modalità:
 - ***Centralizzata***
@@ -28,13 +28,13 @@ Vengono applicati algoritmi di calcolo dello shortest path.
 >Per implementare l'algoritmo verso una qualunque destinazione si devono usare:
 
 >[!summary] Protocolli
->Dei ***protocolli di routing*** per scambiarsi informazioni e apprendere la [[Topologie di Rete|topologia]] della rete.
+>Dei ***protocolli di routing*** per scambiarsi informazioni e apprendere la [[../../Introduzione/Topologie di Rete|topologia]] della rete.
 
 >[!todo] Algoritmi
 >Degli ***algoritmi*** per il calcolo dei **shortest path** sulla base delle informazioni ottenute.
 
 #### Routing Distance Vector
-> Algoritmo Basato su [[Algoritmo di Bellman-Ford|Bellman-Ford]] in versione dinamica e distribuita proposta da [[Ford-Fulkersron]].
+> Algoritmo Basato su [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Cammini Minimi/Algoritmo di Bellman-Ford|Bellman-Ford]] in versione dinamica e distribuita proposta da [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Max Flow/Ford-Fulkersron]].
 
 >[!tldr] Idea
 > Implementa meccanismi di dialogo per:
@@ -103,7 +103,7 @@ Tecnica per ***migliorare i tempi di convergenza***.
 1. I pacchetti `LSP` vengono trasmessi da tutti i [[Routing#Router|router]] a tutti i router.
 	- Step che utilizza il [[Senza Routing Table#Flooding|flooding]].
 2. Una volta ricevuti tutti gli `LSP` ogni router riesce a costruire l'*immagine della rete*.
-3. Ogni router calcola i cammini minimi tramite l'[[Algoritmo di Dijkstra]].
+3. Ogni router calcola i cammini minimi tramite l'[[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Cammini Minimi/Algoritmo di Dijkstra]].
 
 #### Distance Vector vs Link State Routing
 >[!abstract] Distance Vector

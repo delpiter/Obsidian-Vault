@@ -30,7 +30,7 @@ Le operazioni sono ***generalmente più rapide***
 La gamma di numeri che può essere rappresentata è ***limitata dalla posizione della virgola***
 
 ### Sistema a Virgola Mobile
->[[Numeri Floating-Point]]
+>[[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Numeri Floating-Point]]
 
 >[!summary] Concetto
 >Nei sistemi a ***virgola mobile*** (***floating point***) il numero di cifre dedicate alla parte intera e frazionaria *non è fisso*, ma dipende dall’**esponente**.

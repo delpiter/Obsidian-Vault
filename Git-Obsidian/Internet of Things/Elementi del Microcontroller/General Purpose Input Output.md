@@ -5,9 +5,9 @@
 
 I `PIN` sono tipicamente ***general purpose***, possono essere programmati come **input** o **output**, in *base alle necessità*.
 
-I pin possono essere [[Il Calcolatore e i Numeri Binari#I sistemi Digitali|analogici]] o [[Il Calcolatore e i Numeri Binari#I sistemi Digitali|digitali]].
+I pin possono essere [[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Il Calcolatore e i Numeri Binari#I sistemi Digitali|analogici]] o [[../../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Il Calcolatore e i Numeri Binari#I sistemi Digitali|digitali]].
 - Un ***pin digitale*** può assumere solo due valori `HIGH` o `LOW` (`1` o `0`).
-- Un ***pin analogico*** può assumere un qualsiasi valore nel range `0..5V` ([[Potenziale Elettrico#Potenziale Elettrico|Volt]]).
+- Un ***pin analogico*** può assumere un qualsiasi valore nel range `0..5V` ([[../../Fisica/Elettromagnetismo/Potenziale Elettrico#Potenziale Elettrico|Volt]]).
 	- Valori compresi tra `GND` e `VCC`.
 
 >[!caution] Conversione
@@ -15,13 +15,13 @@ I pin possono essere [[Il Calcolatore e i Numeri Binari#I sistemi Digitali|analo
 
 >[!help] Parametri di riferimento per i `PIN`
 
-> ***Voltaggio***: [[Potenziale Elettrico#Potenziale Elettrico|Volt]]
+> ***Voltaggio***: [[../../Fisica/Elettromagnetismo/Potenziale Elettrico#Potenziale Elettrico|Volt]]
 
-> ***Corrente***: [[Corrente Elettrica#Ampere|Ampere]]
+> ***Corrente***: [[../../Fisica/Elettromagnetismo/Circuiti/Corrente Elettrica#Ampere|Ampere]]
 
 
 Oltre ad essere general purpose, alcuni `PINs` hanno delle ***funzioni aggiuntive*** che possono essere attivate:
-- Dette `PIN` [[Multiplexing|multiplexed]] functions 
+- Dette `PIN` [[../../Reti/Introduzione/Multiplexing|multiplexed]] functions 
 >[!example] Esempi
 - **Interfacce seriali**.
 - **Interrupt**.
@@ -50,7 +50,7 @@ Una porta è gestita da uno o più `SRF` (***S***pecial ***P***urpose ***R***egi
 - Per leggere un valore analogico in un `PIN` specifico.
 
 >[!hint] Dettaglio: I delay
->`{c icon} delay()` è una procedura che esegue un [[10 - Sezioni Critiche#Busy-Waiting|busy waiting]] per un numero specificato di millisecondi.
+>`{c icon} delay()` è una procedura che esegue un [[../../Sistemi Operativi/Teoria/10 - Sezioni Critiche#Busy-Waiting|busy waiting]] per un numero specificato di millisecondi.
 
 ```c title:delay()
 void delay(unsigned long ms)
@@ -70,7 +70,7 @@ L'output è definito dal ***duty cycle***.
 
 ### Interrupt
 >[!info]
->Gli [[Interfacciamento di Periferiche#Interrupt|interrupt]] sono un meccanismo fondamentale usato dai microcontroller per reagire ad eventi innescati da **dispositivi esterni**.
+>Gli [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Interfacciamento di Periferiche#Interrupt|interrupt]] sono un meccanismo fondamentale usato dai microcontroller per reagire ad eventi innescati da **dispositivi esterni**.
 
 Una `CPU` fornisce diversi `PIN`, chiamati `IRQ` (interrupt request), per ***ricevere dei segnali di interrupt***.
 

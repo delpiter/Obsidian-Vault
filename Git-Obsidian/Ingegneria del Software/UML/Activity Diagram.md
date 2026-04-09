@@ -43,7 +43,7 @@ I diagrammi di attività ***modellano un processo*** come un'attività costituit
 - Diventa attivo **solo quando si attiva l'arco**.
 - Rappresentato da un arco con una clessidra.
 
-![[TemporalEvents.svg]]
+![[attachements/TemporalEvents.svg]]
 #### Nodi di Controllo
 >[!todo] Tipologie
 
@@ -56,7 +56,7 @@ I diagrammi di attività ***modellano un processo*** come un'attività costituit
 > Nodo ***Finale del Flusso***
 - Indica il termine di uno specifico flusso.
 
-![[StartEndNodes.svg]]
+![[attachements/StartEndNodes.svg]]
 
 > Nodo ***Decisionale***
 - Divide il flusso in più flussi alternativi.
@@ -64,7 +64,7 @@ I diagrammi di attività ***modellano un processo*** come un'attività costituit
 > Nodo ***Fusione***
 - Ricongiunge i flussi a valle di un nodo decisione.
 
-![[DecisionalNode.svg]]
+![[attachements/DecisionalNode.svg]]
 
 > Nodo ***Biforcazione*** (`fork`)
 - Divide il flusso in in più flussi concorrenti.
@@ -72,7 +72,7 @@ I diagrammi di attività ***modellano un processo*** come un'attività costituit
 > Nodo ***Ricongiunzione***
 - Sincronizza flussi concorrenti.
 
-![[ForkNode.svg]]
+![[attachements/ForkNode.svg]]
 #### Nodi Oggetto
 >[!info]
 >I ***nodi oggetto*** indicano che sono disponibili istanze di una data classe in un *punto specifico dell'attività*.
@@ -93,4 +93,4 @@ Le corsie possono corrispondere a:
 
 La semantica di ogni insieme di corsie è descritta da una ***dimensione***.
 
-![[Courses.svg]]
+![[attachements/Courses.svg]]

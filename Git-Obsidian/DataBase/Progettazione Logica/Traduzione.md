@@ -1,30 +1,30 @@
-> Si mappano i costrutti residui in elementi del [[Modello Relazionale]]
+> Si mappano i costrutti residui in elementi del [[Modello Relazionale/Modello Relazionale]]
 ## Traduzione Schema E/R
 ---
->Si crea la necessità di ***tradurre*** i costrutti del [[Modello Entity-Relationship|modello E/R]] in costrutti del modello *relazionale* per garantire l’equivalenza.
+>Si crea la necessità di ***tradurre*** i costrutti del [[../Progettazione Concettuale/Modello Entity-Relationship|modello E/R]] in costrutti del modello *relazionale* per garantire l’equivalenza.
 
 ### Traduzione delle Entità
 >[!tldr] Idea
 >Ogni **entità** è *tradotta* con una **relazione** con gli stessi attributi.
 
-La [[Vincoli di Integrità#Chiavi|chiave primaria]] coincide con l'identificatore principale dell'*entità*.
+La [[Modello Relazionale/Vincoli di Integrità#Chiavi|chiave primaria]] coincide con l'identificatore principale dell'*entità*.
 
 ### Traduzione delle Associazioni
 >[!tldr] Idea
 >Ogni **associazione** è *tradotta* con una **relazione** con gli stessi attributi, a cui si aggiungono gli identificatori di ***tutte le entità che essa collega***.
 >
 
-Gli identificatori delle entità collegate costituiscono una [[Vincoli di Integrità#Superchiave|Superchiave]].
+Gli identificatori delle entità collegate costituiscono una [[Modello Relazionale/Vincoli di Integrità#Superchiave|Superchiave]].
 - Dipende dalle **cardinalità massime** delle entità nella *associazione*.
-- Le **cardinalità minime** determinano la presenza o meno di [[Informazione Incompleta#Null|valori nulli]].
+- Le **cardinalità minime** determinano la presenza o meno di [[Modello Relazionale/Informazione Incompleta#Null|valori nulli]].
 
 #### Traduzione di Relazioni $n$-arie Molti a Molti
 >[!tldr] Idea
->La *relazione* diventa una **tabella** con la [[Vincoli di Integrità#Chiavi|chiave]] costruita dalle *chiavi delle entità coinvolte*, più gli attributi della relazione.
+>La *relazione* diventa una **tabella** con la [[Modello Relazionale/Vincoli di Integrità#Chiavi|chiave]] costruita dalle *chiavi delle entità coinvolte*, più gli attributi della relazione.
 
 > Lo schema:
 
-![[N_NRelationTraslation.png]]
+![[attachements/N_NRelationTraslation.png]]
 
 Diventa:
 - ***FORNITORI***(<u>PartitaIVA</u>, Nome)
@@ -50,11 +50,11 @@ Diventa:
 
 ### Traduzione con identificatore esterno
 >[!tldr] Idea
-> Le entità con ***identificatore esterno*** si traducono in una *tabella* che include tra le [[Vincoli di Integrità#Chiavi|chiavi]] gli **identificatori** dell’entità esterna.
+> Le entità con ***identificatore esterno*** si traducono in una *tabella* che include tra le [[Modello Relazionale/Vincoli di Integrità#Chiavi|chiavi]] gli **identificatori** dell’entità esterna.
 
 > Lo schema:
 
-![[ForeignIdentifier.png]]
+![[attachements/ForeignIdentifier.png]]
 
 Diventerebbe:
 - ***STUDENTI***(<u>Matricola</u>,<u>Università</u>, Cognome, Nome, AnnoDiCorso)

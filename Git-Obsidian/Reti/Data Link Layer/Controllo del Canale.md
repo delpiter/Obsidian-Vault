@@ -1,4 +1,4 @@
-![[Git-Obsidian/Reti/Introduzione/Introduzione#Canale]]
+![[../Introduzione/Introduzione#Canale]]
 
 ## Canale di Comunicazione
 ---
@@ -33,7 +33,7 @@ I servizi di ***controllo del canale*** rendono affidabile e sicuro il servizio 
 
 > Garantisce la corretta lettura dei singoli `bit`.
 ##### Sincronismo di Frame
-> Bisogna distinguere le [[ISO-OSI#Trasferimento dei Dati|PDU]].
+> Bisogna distinguere le [[../Standards/ISO-OSI#Trasferimento dei Dati|PDU]].
 
 >[!caution] Sincronismo
 >Si deve garantire il ***sincronismo di frame***.

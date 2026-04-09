@@ -5,7 +5,7 @@
 >Il protocollo regola la **comunicazione** tra due sistemi terminali dei quali uno agisce da client e uno da server.
 
 Il protocollo consiste in due ***connessioni***:
-- Dalla [[Livello di Trasporto#Numero di Porta|porta]] $21$ viaggiano i *comandi*.
+- Dalla [[../Transport Layer/Livello di Trasporto#Numero di Porta|porta]] $21$ viaggiano i *comandi*.
 - Dalla **porta** $20$ viaggiano i *file*/*dati*.
 
 ### Connessione di Controllo
@@ -21,9 +21,9 @@ Il **server** utilizza la porta $20$ per la *connessione dati*.
 
 ### Funzionamento
 >[!abstract] Connessione
->Per iniziare il trasferimento, viene instaurata una connessione tramite una sorta di  [[TCP#^bd3d55|three-way-handshake]].
+>Per iniziare il trasferimento, viene instaurata una connessione tramite una sorta di  [[../Transport Layer/TCP#^bd3d55|three-way-handshake]].
 
-![[FTP.png|450]]
+![[attachements/FTP.png|450]]
 
 La connessione "**attiva**" avviene con i seguenti passaggi:
 1. Il **client** sceglie due porte libere: una per i *comandi* e una per i *dati*.
@@ -35,7 +35,7 @@ La connessione "**attiva**" avviene con i seguenti passaggi:
 
 >[!done] Il server apre la connessione "**data**".
 ### Connessione Passiva
-> Usata se il *client* è schermato da un apparato [[Network Address Translation|Network Address Translation]] o [[Firewall]].
+> Usata se il *client* è schermato da un apparato [[../Network Layer/Network Security/Network Address Translation]] o [[../Network Layer/Network Security/Firewall]].
 
 >[!cite] Passive Mode
 > Nella modalità passiva, è il **client** che apre la connessione data.
@@ -43,7 +43,7 @@ La connessione "**attiva**" avviene con i seguenti passaggi:
 
 È il **client** a comunicare al server l'inizio di una *comunicazione* "**passiva**"
 - Il **server** risponderà con una *nuova porta* che verrà utilizzata per il trasferimento dei dati.
-![[PassiveFTP.png|450]]
+![[attachements/PassiveFTP.png|450]]
 
 ### Comandi
 > Riportiamo di seguito i ***principali comandi***.

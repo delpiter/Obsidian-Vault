@@ -61,7 +61,7 @@ $$
 F=-\displaystyle{\frac{\text{d}U}{\text{d}x}}
 $$
 >[!help] Caso tridimensionale
->Nel caso tridimensionale, si introduce il [[Calcolo Differenziale#Gradiente|gradiente]].
+>Nel caso tridimensionale, si introduce il [[../../Analisi/Funzioni a due Variabili/Calcolo Differenziale#Gradiente|gradiente]].
 >Indicato dal simbolo $\vec{\nabla}$
 
 $$
@@ -71,7 +71,7 @@ $$
 \vec{F} = -\vec{\nabla} U = -\frac{\partial U}{\partial x} \hat{i} - \frac{\partial U}{\partial y} \hat{j} - \frac{\partial U}{\partial z} \hat{k}
 $$
 ### Forza Peso
-> Energia Potenziale della [[Le Forze#Forza Peso|forza peso]].
+> Energia Potenziale della [[../Leggi di Newton e le Forze/Le Forze#Forza Peso|forza peso]].
 
 Si ricava che, detta $y$ la coordinata della direzione verticale, si ha:
 $$
@@ -130,7 +130,7 @@ $$
 ### Punti di Equilibrio e Inversione del Moto
 > Si consideri per un caso *unidimensionale*, una energia potenziale $U(x)$.
 
-![[PuntiEquilibrio.png]]
+![[attachements/PuntiEquilibrio.png]]
 
 Nel punto $A$ abbiamo:
 - $\displaystyle{\frac{\text{d}U}{\text{d}x}}>0$, ne segue che $F=-\displaystyle{\frac{\text{d}U}{\text{d}x}}<0$, cioè diretta verso *sinistra*.
@@ -143,7 +143,7 @@ Nel punto $B$ abbiamo:
 
 >Si osservi ora il grafico di $U(x)$
 
-![[PuntiStabiliInstabili.png]]
+![[attachements/PuntiStabiliInstabili.png]]
 
 Nei punti $A$ e $B$ si ha $\displaystyle{\frac{\text{d}U}{\text{d}x}}=0$, quindi in questi punti abbiamo $F=0$.
 
@@ -167,7 +167,7 @@ Caso punto $B$:
 #### Significato Grafico dell'Energia Meccanica
 >Nei punti $x_{A}$ e $x_{B}$ si ha $U(x_{A})=U(x_{B})$
 
-![[PuntiInversioneMoto.png]]
+![[attachements/PuntiInversioneMoto.png]]
 
 Dato che $E=K+U$ si avrà necessariamente che $K(x_{A})=K(x_{B})=0$
 - $v_{A}=v_{B}=0$

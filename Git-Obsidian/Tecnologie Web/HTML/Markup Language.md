@@ -90,7 +90,7 @@ La `DTD` può essere sia *interna* che *esterna*.
 >[!info]
 >Il ***web*** nasce dai ricercatori del `CERN` che ne definiscono il funzionamento.
 
-I ricercatori mandano all'[[Enti Importanti#Internet Engineering Task Force|IETF]] le specifiche del protocollo di [[Protocolli Applicativi|livello applicazione]] ([[HTTP]]).
+I ricercatori mandano all'[[../../Reti/Standards/Enti Importanti#Internet Engineering Task Force|IETF]] le specifiche del protocollo di [[../../Reti/Application Layer/Protocolli Applicativi|livello applicazione]] ([[../../Reti/Application Layer/HTTP]]).
 
 ***Mosaic*** è il primo prototipo di browser presentato dalla `NCSA`.
 - Primo browser a ottenere successo su larga scala.

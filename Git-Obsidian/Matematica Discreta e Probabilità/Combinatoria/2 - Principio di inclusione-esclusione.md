@@ -9,12 +9,12 @@
 $$
 \mid A\cup B \mid=|A|+|B|-|A\cap B|
 $$
-![[Pasted image 20240928101710.png|200]]
+![[attachements/Pasted image 20240928101710.png|200]]
 - *L'intersezione è contata due volte, quindi viene rimossa alla fine*
 
 >[!question] Proviamo con 3 insiemi
 
-![[Pasted image 20240928101829.png|200]]
+![[attachements/Pasted image 20240928101829.png|200]]
 Eseguendo semplicemente la somma delle cardinalità otteniamo che:
 $$
 |A\cup B\cup C|=|A|+|B|+|C|

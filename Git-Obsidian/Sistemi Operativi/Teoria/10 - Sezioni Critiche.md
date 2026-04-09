@@ -1,4 +1,4 @@
->[!warning] Problema: Se le sequenze di istruzioni non vengono eseguite in modo [[9 - Condivisione di Risorse#Azioni Atomiche|atomico]] come possiamo garantire la non-interferenza??
+>[[9 - Condivisione di Risorse#Azioni Atomiche|atomico]] come possiamo garantire la non-interferenza??
 
 >Dobbiamo specificare che certe parti dei programmi devono essere eseguite in *modo atomico*
 

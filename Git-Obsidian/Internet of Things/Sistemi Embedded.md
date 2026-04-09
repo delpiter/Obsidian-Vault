@@ -4,9 +4,9 @@
 >I ***sistemi embedded*** sono sistemi di computazione *special purpose*.
 >- Compiono funzioni o *task specifici* in **dispositivi fisici** o sistemi elettronici di dimensioni diverse e con scopi diversi.
 
-I ***task*** di *sistemi embedded* richiedono una interazione con il mondo fisico tramite [[Sensori e Azionatori]].
+I ***task*** di *sistemi embedded* richiedono una interazione con il mondo fisico tramite [[Sensori e Azionatori/Sensori e Azionatori]].
 
-Tipicamente composti da due parti: [[Definizioni_Architettura#Il Calcolatore|Hardware]] e [[Definizioni_Architettura#Il Calcolatore|Software]].
+Tipicamente composti da due parti: [[../Definizioni/Definizioni_Architettura#Il Calcolatore|Hardware]] e [[../Definizioni/Definizioni_Architettura#Il Calcolatore|Software]].
 - Potrebbe capitare che la parte ***software*** manchi.
 
 >[!example] Esempi di Sistemi Embedded
@@ -20,7 +20,7 @@ Tipicamente composti da due parti: [[Definizioni_Architettura#Il Calcolatore|Har
 > ***Macchine e Veicoli***
 - Drive System, Navigation System, ...
 
-![[EmbeddedSystems.png]]
+![[attachements/EmbeddedSystems.png]]
 
 Un sistema embedded tipicamente ***esegue una applicazione specifica***.
 - Un *programma infinito*, un **task** eseguito ripetutamente.
@@ -36,7 +36,7 @@ Progettati per essere **robusti** a per la ***minima utilizzazione di risorse***
 
 > **Reattività**
 - I sistemi embedded sono tipicamente usati in applicazioni dove i sistemi devono reagire a degli ***stimoli del mondo fisico***.
-- Nel caso di [[7 - Scheduler#Hard Real-Time|hard real time]] la violazione della deadline è considerata un fallimento del sistema.
+- Nel caso di [[../Sistemi Operativi/Teoria/7 - Scheduler#Hard Real-Time|hard real time]] la violazione della deadline è considerata un fallimento del sistema.
 
 ## Cyber-Physical Systems
 ----
@@ -55,10 +55,10 @@ Formati da 3 sottosistemi
 
 ## Embedded System Architecture
 ---
-![[HardwareArchitecture.png]]
+![[attachements/HardwareArchitecture.png]]
 
 ### Processore
->[!caution] Tecnologie di [[La CPU|CPU]]
+>[[../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU|!caution]]
 >***General-Purpose processors***
 >- Processori con un insieme di istruzioni e una architettura *predefinita*.
 >
@@ -83,7 +83,7 @@ Il ***microcontroller*** integra in un singolo chip tutti i componenti richiesti
 
 #### System On a Chip
 >[!help] SoC
->Il ***system on a chip*** è un [[Circuiti Digitali#Circuiti Integrati|chip]] che integra un sistema completo (`CPU`, *memoria*, *controller* *I*/*O* e controller di rete).
+>Il ***system on a chip*** è un [[../Architettura degli Elaboratori/Algebra di Bool e Logica Digitale/Circuiti Digitali#Circuiti Integrati|chip]] che integra un sistema completo (`CPU`, *memoria*, *controller* *I*/*O* e controller di rete).
 
 È un ***circuito integrato complesso*** che include un *microcontroller* o un *microprocessore* con altri componenti.
 - Es. Raspberry
@@ -95,7 +95,7 @@ Il ***microcontroller*** integra in un singolo chip tutti i componenti richiesti
 > - **Rilevare** e **quantificare** concentrazioni chimiche (fumo).
 
 Possono essere:
-- [[Il Calcolatore e i Numeri Binari#I sistemi Digitali|analogici]] che [[Il Calcolatore e i Numeri Binari#I sistemi Digitali|digitali]].
+- [[../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Il Calcolatore e i Numeri Binari#I sistemi Digitali|analogici]] che [[../Architettura degli Elaboratori/Rappresentazione dell'Informazione/Il Calcolatore e i Numeri Binari#I sistemi Digitali|digitali]].
 >[!example] Esempi
 - Sensore di prossimità
 - Di temperatura
@@ -105,7 +105,7 @@ Possono essere:
 >[!abstract] Azionatori
 >Gli ***azionatori*** sono dispositivi che producono degli effetti misurabili nell'ambiente.
 
->[!caution] [[BUS dei Calcolatori|BUS]]
+>[[../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori|!caution]]
 >Le *interazioni* tra il processore e i sensori è possibile tramite i `BUS`.
 
 Tipicamente ***seriali***.

@@ -1,4 +1,4 @@
-> A differenza della programmazione sequenziale, dove esiste un modello astratto di [[Organizzazione del Calcolatore|architettura sequenziale]], nel caso delle architetture parallele, questa ***astrazione non esiste***.
+> A differenza della programmazione sequenziale, dove esiste un modello astratto di [[../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione del Calcolatore|architettura sequenziale]], nel caso delle architetture parallele, questa ***astrazione non esiste***.
 
 >[!question] Come è gestito il parallelismo?
 
@@ -13,7 +13,7 @@ Non ci sono computer paralleli "*tipici*".
 
 ## Architettura di Von Neumann
 ---
-![[Organizzazione del Calcolatore]]
+![[../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione del Calcolatore]]
 
 ### Tempi di CPU comparati con il Mondo Reale
 
@@ -33,11 +33,11 @@ Non ci sono computer paralleli "*tipici*".
 - *Riduzione della latenza* per gli accessi in memoria.
 	- Utilizzo di cache e registri di `CPU` quando possibile.
 - *Nascondi la latenza* .
-	- Tramite multithreading e [[6 - Processi, Schedule e Thread#Mode Switching e Context Switching|context-switch]] durante gli accessi in memoria.
+	- Tramite multithreading e [[../Sistemi Operativi/Teoria/6 - Processi, Schedule e Thread#Mode Switching e Context Switching|context-switch]] durante gli accessi in memoria.
 - *Esegui multiple istruzioni* allo stesso tempo.
-	- [[Pipelining]]
-	- [[Predizione di Salto|Branch Prediction]]
-	- [[Predizione di Salto#Esecuzione Speculativa|Speculative Execution]]
+	- [[../Architettura degli Elaboratori/Architetture a Confronto/Pipelining]]
+	- [[../Architettura degli Elaboratori/Architetture a Confronto/Predizione di Salto|Branch Prediction]]
+	- [[../Architettura degli Elaboratori/Architetture a Confronto/Predizione di Salto#Esecuzione Speculativa|Speculative Execution]]
 	- `SIMD` extensions.
 
 >[!check] Rules of Thumb
@@ -47,7 +47,7 @@ Non ci sono computer paralleli "*tipici*".
 #### Cache
 > Memoria di piccole dimensioni usata per "*abbattere*" il muro di performance tra il processore e la memoria.
 
-![[Cache]]
+![[../Architettura degli Elaboratori/Architettura del Calcolatore/Cache]]
 
 ##### Esempio
 >[!fail] Prodotto Matrice $\times$ Matrice
@@ -73,18 +73,18 @@ void matmul( double *p, double* q, double *r, int n)
 	- Gli elementi di ciascuna riga sono salvati in ***aree contigue di memoria***.
 	- *Righe adiacenti* sono blocchi contigui di memoria.
 
-![[RowMajorOrder.png]]
+![[attachements/RowMajorOrder.png]]
 
 Accedere la memoria in modalità ***row-wise*** è efficiente in quanto i dati sono in una *area contigua di memoria*.
-- La **cache** aumenta le performance ([[Cache#Principi della Cache|Spartial Locality]]).
+- La **cache** aumenta le performance ([[../Architettura degli Elaboratori/Architettura del Calcolatore/Cache#Principi della Cache|Spartial Locality]]).
 
-![[Row_Wise_Access.png]]
+![[attachements/Row_Wise_Access.png]]
 
 
 Nel caso di accesso ***column-wise***, gli elementi non sono contenuti in blocchi contigui.
 - La cache **non ha effetto**.
 
-![[Column_Wise_Access.png]]
+![[attachements/Column_Wise_Access.png]]
 
 > Per ottimizzare gli accessi in memoria è possibile calcolare la ***matrice trasposta*** della seconda matrice del prodotto.
 - In maniera tale da fare accesso alla memoria con soli blocchi contigui.
@@ -92,7 +92,7 @@ Nel caso di accesso ***column-wise***, gli elementi non sono contenuti in blocch
 ## Hardware Multithreading
 ---
 >[!tldr] Idea
->Il ***multithreading a livello hardware*** permette alla [[La CPU|CPU]] di cambiare *task* quando quello corrente è in una *situazione di stallo*.
+>Il ***multithreading a livello hardware*** permette alla [[../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU|CPU]] di cambiare *task* quando quello corrente è in una *situazione di stallo*.
 
 *Tipologie*:
 > ***Fine-Grained Multithreading***:
@@ -112,24 +112,24 @@ L'[**Hyperthreading**](https://www.intel.com/content/www/us/en/gaming/resources/
 
 ## Architetture Parallele
 ---
-![[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Classificazione di sistemi Paralleli]]
+![[../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Classificazione di sistemi Paralleli]]
 
 ### Architetture MIMD
 
 >[!caution] Sistemi a Memoria Condivisa
 
-![[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multiprocessori]]
+![[../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multiprocessori]]
 
 >[!abstract] Sistemi a Memoria Distribuita
 
-![[Git-Obsidian/Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multicomputer]]
+![[../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele#Multicomputer]]
 
 #### Architetture Ibride
 > Molti ***High Performance Computers***, sono basati su una architettura *ibrida*.
 - Ogni nodo è un computer con *architettura a memoria condivisa*.
 - I nodi sono connessi tramite una *rete di interconnessioni*.
 
-![[HybridArchitecture.png]]
+![[attachements/HybridArchitecture.png]]
 
 #### Pro e Contro
 > ***Architettura a Memoria Condivisa***.
@@ -139,7 +139,7 @@ L'[**Hyperthreading**](https://www.intel.com/content/www/us/en/gaming/resources/
 - Utili per applicazioni con ***accessi irregolari ai dati***.
 
 >[!fail] Contro
-- Il programmatore deve tenere conto delle [[8 - Concorrenza#Race Condition|race conditions]].
+- Il programmatore deve tenere conto delle [[../Sistemi Operativi/Teoria/8 - Concorrenza#Race Condition|race conditions]].
 - Memory Bandwidth *limitata*.
 
 > ***Architettura a Memoria Distribuita***.
@@ -149,6 +149,6 @@ L'[**Hyperthreading**](https://www.intel.com/content/www/us/en/gaming/resources/
 - Utile per applicazioni con un alto ***Computation/Communication*** *rate*.
 
 >[!fail] Contro
-- I programmatori devono tenere conto dei [[9 - Condivisione di Risorse#Deadlock|deadlock]].
+- I programmatori devono tenere conto dei [[../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]].
 - **Latenza** nella rete di interconnessione.
 - *Difficili* da programmare.

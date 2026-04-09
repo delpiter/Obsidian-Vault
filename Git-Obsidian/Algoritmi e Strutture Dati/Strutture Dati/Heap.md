@@ -1,5 +1,5 @@
 >[!info] Definizione
->Un *Heap* è un [[Gli Alberi Binari#Alberi Binari Quasi Completi|albero binario quasi completo]]
+>Un *Heap* è un [[Grafi/Alberi/Gli Alberi Binari#Alberi Binari Quasi Completi|albero binario quasi completo]]
 >Quasi, significa che *possono mancare* alcune foglie *consecutive* a partire dall'ultima foglia di destra
 >Per ogni nodo deve valere:
 >$$value(i)\leq value(parent(i))$$

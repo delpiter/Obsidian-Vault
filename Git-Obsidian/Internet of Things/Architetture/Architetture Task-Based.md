@@ -6,11 +6,11 @@ C'è bisogno di modi per decomporre e modularizzare i comportamenti e le funzion
 ## Architetture Task-Based
 ---
 >[!tldr] Idea
->Il comportamento di un software [[Sistemi Embedded|embedded]] è decomposto in un insieme di ***task concorrenti***.
+>Il comportamento di un software [[../Sistemi Embedded|embedded]] è decomposto in un insieme di ***task concorrenti***.
 
 Ogni **task** rappresenta una specifica *unità di lavoro ben definita* da eseguire.
 - Il comportamento di ogni **task** può essere descritto da una [[Finite State Machines|FSM]].
-- Il comportamento **globale** è il risultato dell'esecuzione e interazione di `FSM` [[8 - Concorrenza|concorrenti]].
+- Il comportamento **globale** è il risultato dell'esecuzione e interazione di `FSM` [[../../Sistemi Operativi/Teoria/8 - Concorrenza|concorrenti]].
 >[!example] Esempio
 
 > *Led show*: Un led lampeggiante ogni $500ms$, tre led che si accendono/spengono in sequenza con un intervallo di $500ms$.
@@ -109,7 +109,7 @@ void loop(){
 >[!info]
 >È necessario tenere traccia del periodo di ogni **task**.
 
-Si implementa un **task** [[7 - Scheduler|scheduling]] che chiama ogni **task** con il proprio periodo.
+Si implementa un **task** [[../../Sistemi Operativi/Teoria/7 - Scheduler|scheduling]] che chiama ogni **task** con il proprio periodo.
 
 ```mermaid
 classDiagram
@@ -125,14 +125,14 @@ classDiagram
     SimpleScheduler "1" --> "*" Task
 ```
 
-- Strategia: [[7 - Scheduler#Round Robin|round robin]] cooperativo.
+- Strategia: [[../../Sistemi Operativi/Teoria/7 - Scheduler#Round Robin|round robin]] cooperativo.
 - Il **task** dovrà controllare se è passato il periodo corretto per l'esecuzione.
 
 >[!Caution] Nota Bene
 >L'esecuzione della funzione `tick()` deve sempre avere una durata minore del ***periodo dello schduler***.
 
 ### Dipendenza tra Task
-> I singoli **task** possono avere [[Parallelizzare i Loop#Data Dependence|dipendenze]] che richiedono varie forme di interazione.
+> I singoli **task** possono avere [[../../High Performance Computing/Parallelizzare i Loop#Data Dependence|dipendenze]] che richiedono varie forme di interazione.
 
 >[!failure] Dipendenze Temporali
 
@@ -144,7 +144,7 @@ classDiagram
 
 Queste ***dipendenze***, nel nostro caso, si possono risolvere tramite delle *variabili condivise*.
 #### Problemi
->[!danger] Le variabili condivise tra task concorrenti potrebbero portare a [[8 - Concorrenza#Race Condition|Race Condition]].
+>[[../../Sistemi Operativi/Teoria/8 - Concorrenza#Race Condition|Race Condition]].
 
 Nel nostro caso (task ***cooperativi***) non ci possono essere *race conditions*.
 - Ogni *task* è eseguito dallo scheduler in sequenza.
@@ -155,7 +155,7 @@ Nel nostro caso (task ***cooperativi***) non ci possono essere *race conditions*
 
 Potrebbe portare a delle "*corse di alto livello*".
 
->[!done] Sfruttare la [[Power Circuit|Sleep Mode]]
+>[[../Elementi del Microcontroller/Power Circuit|!done]]
 
 Se il periodo dello scheduler è abbastanza largo:
 - Ad ogni ciclo lo scheduler dopo aver eseguito il ***task***, entra in "*sleep*" fino al raggiungimento del timer del prossimo `tick`.
@@ -168,7 +168,7 @@ Se il periodo dello scheduler è abbastanza largo:
 Chiamato `timer-overrun` se lo scheduler è **time-based** e usa gli interrupt.
 - In questo caso un interrupt viene generato prima della conclusione del precedente.
 
-> Queste eccezioni possono essere individuate facendo una analisi delle line di codice [[Istruzione Assembly|assembly]].
+> Queste eccezioni possono essere individuate facendo una analisi delle line di codice [[../../Architettura degli Elaboratori/Assembly/Istruzione Assembly|assembly]].
 - Tramite ***stime*** del tempo totale delle azioni.
 
 Si controlla se nel caso peggiore dell'esecuzione la *durata eccede il periodo*.
@@ -184,7 +184,7 @@ Nel caso che $U>100\%$ una ***overrun exception*** potrebbe accadere.
 >- Aumentare il **periodo**.
 >- **Ottimizzare** la sequenza di istruzioni per ridurre il `WCET`.
 >- Spezzare lunghe sequenze in **azioni più piccole**.
->- Usare un [[Sistemi Embedded#Processore|microcontroller]] **più veloce**.
+>- Usare un [[../Sistemi Embedded#Processore|microcontroller]] **più veloce**.
 >- **Rimuovere** funzionalità dal sistema.
 
 >[!hint] Osservazione
@@ -204,10 +204,10 @@ $$
 
 ##### Jitter
 >[!missing] Definizione
->Il [[Servizi#Proprietà|jitter]] è il delay che c'è tra il tempo in cui il **task** è *pronto* ad essere eseguito e l'***effettiva esecuzione***.
+>Il [[../../Reti/Introduzione/Servizi#Proprietà|jitter]] è il delay che c'è tra il tempo in cui il **task** è *pronto* ad essere eseguito e l'***effettiva esecuzione***.
 
 Diverse strategie di scheduling possono portare a diversi valori di **jitter**.
-- Dare priorità ai [[7 - Scheduler#Shortest Job First|task più corti]] minimizza il **jitter**.
+- Dare priorità ai [[../../Sistemi Operativi/Teoria/7 - Scheduler#Shortest Job First|task più corti]] minimizza il **jitter**.
 
 #### Deadline
 >[!definizione]
@@ -218,7 +218,7 @@ Se un **task** non è eseguito entro la deadline, accade un ***Missed Deadline E
 
 #### Priorità Dinamica e Statica
 >[!info]
->La [[7 - Scheduler#Scheduling a Priorità|priorità]] decide l'ordine con cui i **task** vengono eseguiti.
+>La [[../../Sistemi Operativi/Teoria/7 - Scheduler#Scheduling a Priorità|priorità]] decide l'ordine con cui i **task** vengono eseguiti.
 
 > ***Statica***
 - Se la priorità non cambia nel tempo.
@@ -226,7 +226,7 @@ Se un **task** non è eseguito entro la deadline, accade un ***Missed Deadline E
 > ***Dinamica***
 - Se cambia durante l'esecuzione.
 
-Concetto fondamentale nei [[7 - Scheduler#Scheduling Real-Time|sistemi real time]].
+Concetto fondamentale nei [[../../Sistemi Operativi/Teoria/7 - Scheduler#Scheduling Real-Time|sistemi real time]].
 
 #### Task non Periodici
 >[!abstract] Sporadic Task

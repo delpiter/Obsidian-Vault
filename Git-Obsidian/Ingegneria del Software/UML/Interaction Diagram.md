@@ -46,17 +46,17 @@ Per ogni *messaggio di chiamata* **ricevuto** da una linea di vita, ***deve*** e
 
 > Modalità di messaggio:
 - **Messaggio sincrono**: Il mittente aspetta che il destinatario ritorni. (*chiamata di procedura*).
-![[Interaction.svg|150]]
+![[attachements/Interaction.svg|150]]
 
 - **Messaggio asincrono**: Il mittente continua l'esecuzione.
-![[AsyncMessage.svg|150]]
+![[attachements/AsyncMessage.svg|150]]
 - **Messaggio di ritorno**: Il destinatario restituisce il controllo al mittente.
 	- Può avere del contenuto (*Valore di ritorno* della procedura).
-![[Dependency.svg|150]]
+![[attachements/Dependency.svg|150]]
 - **Creazione di un Oggetto**: Si crea un'istanza del classificatore destinatario.
-![[CreationMessage.svg|150]]
+![[attachements/CreationMessage.svg|150]]
 - **Distruzione di un Oggetto**
-![[DestructionMessage.svg]]
+![[attachements/DestructionMessage.svg]]
 ### Diagramma di Sequenza
 >[!abstract] Sequence Diagram
 >I ***diagrammi di sequenza*** mostrano le interazioni tra linee di vita come una *sequenza di messaggi ordinati*.

@@ -128,7 +128,7 @@ Questa soluzione provoca un bottleneck quando il "*master*" deve processare tant
 
 - Ogni *processore* invia il risultato parziale ad un altro *processore*.
 
-![[ParallelReduction.png]]
+![[attachements/ParallelReduction.png]]
 
 $P-1$ somme sono comunque eseguite, ma il processo $0$ riceve $\log_{2}P$ messaggi ed esegue $\log_{2}P$ somme.
 

@@ -19,7 +19,7 @@ Unendo un oggetto di carica $q_{1}$ con un oggetto di carica $q_{2}$:
 >>Temperatura dell'aria in una stanza $T(x,y,z)$
 >>- Magari varia anche nel tempo: $T(x,y,z,t)$
 >>
->>Esistono anche ***campi vettoriali*** come quello della [[Legge di Gravitazione|gravitazione]].
+>>Esistono anche ***campi vettoriali*** come quello della [[../Gravitazione/Legge di Gravitazione|gravitazione]].
 
 ^32aa5b
 
@@ -79,7 +79,7 @@ $$
 >3. Le frecce indicano la *direzione del verso*.
 >4. La densità delle linee è *proporzionale* a $\mid \vec{E}\mid$
 
-![[linee-di-forza.png]]
+![[attachements/linee-di-forza.png]]
 
 ## Moto delle Cariche in un Campo Uniforme
 ---
@@ -112,7 +112,7 @@ $$
 >[!tldr] Idea
 >Prendere oggetti ***molto piccoli*** e ***caricarli molto*** poco e metterli in un campo elettrico per misurare *quanta carica hanno*.
 
-![[MillikanExperiment.png|400]]
+![[attachements/MillikanExperiment.png|400]]
 - *Apparato dell'esperimento*
 
 > ***Funzionamento***

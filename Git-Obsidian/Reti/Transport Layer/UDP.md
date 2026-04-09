@@ -8,7 +8,7 @@
 >Il pacchetto **UDP** viene chiamato ***datagramma*** (*Datagram*).
 
 Protocollo pensato per invio di ***blocchi di dati di limitate dimensioni*** e per comunicazione fra applicazioni che **non** *richiedono un controllo della qualità del trasporto*.
-- [[Posta Elettronica]], [[DNS]], ...
+- [[../Application Layer/Posta Elettronica]], [[../Application Layer/DNS]], ...
 
 Solitamente usato in *reti ad alta affidabilità*.
 
@@ -37,4 +37,4 @@ packet-beta
 
 > Campi del *datagram*
 - **Length**, indica la lunghezza in `byte` dell'intera unità informativa.
-- **Checksum**, (opzionale) codice di controllo per [[Controllo dell'Errore|rilevare errori]].
+- **Checksum**, (opzionale) codice di controllo per [[../Data Link Layer/Controllo dell'Errore|rilevare errori]].

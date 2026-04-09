@@ -1,14 +1,14 @@
 ## Internet Protocol
 ---
 >[!info] Definizione
->Il ***protocollo IP*** [RFC 791](https://www.rfc-editor.org/rfc/rfc791.html) fornisce al livello superiore un servizio di trasferimento di tipo "[[Comunicazione#^2e0d0e|connectionless]]" delle unità informative, denominate ***datagrammi*** (*datagram*).
+>Il ***protocollo IP*** [RFC 791](https://www.rfc-editor.org/rfc/rfc791.html) fornisce al livello superiore un servizio di trasferimento di tipo "[[../Introduzione/Comunicazione#^2e0d0e|connectionless]]" delle unità informative, denominate ***datagrammi*** (*datagram*).
 
 Un datagram può essere duplicato dalla rete e le copie possono seguire ***percorsi diversi con frammentazioni diverse***.
 
 Il protocollo **non fornisce alcuna garanzia** sull'effettivo trasferimento con *successo* dei *datagram*.
-- Funziona tramite [[Comunicazione#Commutazione di Pacchetto|commutazione di pacchetto]].
+- Funziona tramite [[../Introduzione/Comunicazione#Commutazione di Pacchetto|commutazione di pacchetto]].
 
->Questo protocollo interagisce con i protocollo [[TCP]] e [[UDP]] dello strato superiore.
+>Questo protocollo interagisce con i protocollo [[../Transport Layer/TCP]] e [[../Transport Layer/UDP]] dello strato superiore.
 
 L'indirizzo *IP* identifica i **punti di interconnessione** di un host con la rete.
 - Non identifica un host individuale ma ***una delle sue interfacce di rete***.
@@ -19,7 +19,7 @@ L'indirizzo *IP* identifica i **punti di interconnessione** di un host con la re
 >- $n$ distinti indirizzi *IP*, uno per ciascuna interfaccia.
 
 Il protocollo ***frammenta*** e ***riassembla*** i datagram quando necessario.
-- Offre un servizio best effort, non sono previsti meccanismi di affidabilità e [[Controllo di Flusso TCP|Controllo di Flusso]].
+- Offre un servizio best effort, non sono previsti meccanismi di affidabilità e [[../Transport Layer/Controllo di Flusso TCP|Controllo di Flusso]].
 
 ### L'indirizzo IP
 > Il protocollo identifica `host` e `router` tramite indirizzi di lunghezza fissa, raggruppandoli in reti `IP`.
@@ -32,7 +32,7 @@ Il protocollo ***frammenta*** e ***riassembla*** i datagram quando necessario.
 >Il numero massimo teorico di indirizzi è $2^{32}$
 >- Nella realtà si riescono a sfruttare un ***numero molto inferiore***
 
-Gli indirizzi sono assegnati dalla [[Enti Importanti#IANA|IANA]].
+Gli indirizzi sono assegnati dalla [[../Standards/Enti Importanti#IANA|IANA]].
 
 ### Datagram
 >[!hint] Formato
@@ -90,7 +90,7 @@ packet-beta
 - Il primo blocco del datagram è $0$.
 
 > ***TTL***
-- *Time to Live*: Campo che viene aggiornato da ogni [[Routing#Router|router]] attraversato.
+- *Time to Live*: Campo che viene aggiornato da ogni [[Routing/Routing#Router|router]] attraversato.
 - Se un datagram non viene consegnato entro un tempo definito (numero massimo di salti) **viene scartato**.
 - Il "*contatore*" parte da un valore (default $64$) e viene ***decrementato ad ogni passo***.
 
@@ -98,7 +98,7 @@ packet-beta
 - Specifica il protocollo di livello superiore *che ha originato il datagram*.
 
 > ***Header Checksum***
-- Contiene un [[Controllo dell'Errore|codice di rilevazione dell'errore]] sul contenuto del **solo header**.
+- Contiene un [[../Data Link Layer/Controllo dell'Errore|codice di rilevazione dell'errore]] sul contenuto del **solo header**.
 
 > ***Source e Destination*** `IP` ***address***
 - Indirizzi di sorgente e destinazione.
@@ -116,7 +116,7 @@ packet-beta
 >- ***Host ID***.
 
 > *Network ID*
-- Prefisso che identifica la [[Routing|network IP]] a cui appartiene l'indirizzo.
+- Prefisso che identifica la [[Routing/Routing|network IP]] a cui appartiene l'indirizzo.
 - Tutti gli indirizzi di una medesima network `IP` hanno il medesimo prefisso.
 
 > *Host ID*

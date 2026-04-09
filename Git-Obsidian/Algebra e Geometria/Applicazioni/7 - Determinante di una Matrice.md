@@ -113,7 +113,7 @@ $$\det(A)=a_{11}a_{22}-a_{21}a_{12}$$
 
 >[!info] $n=3$
 
-> Se $n=3$, lo sviluppo di *Laplace* rispetto alla prima colonna otteniamo la [[Definizioni_Analisi#Regola di Sarrus|regola di Sarrus]]
+> Se $n=3$, lo sviluppo di *Laplace* rispetto alla prima colonna otteniamo la [[../../Definizioni/Definizioni_Analisi#Regola di Sarrus|regola di Sarrus]]
 
 #### Esercizio
 >*I vettori* $v_{1}=(-3,7,2,1), v_{2}=(0,2,0,0), v_{3}=(0,11,-1,0),v_{4}=(4,9,3,0)$
@@ -148,7 +148,7 @@ $$
 ### $\det(f)$
 >[!info] Definizione
 >Data $f:V\to V$ [[1 - Applicazioni Lineari|lineare]], definiamo $\det(f)=\det(A)$
->Dove $A$ è la *matrice* che *rappresenta* $f$ in qualsiasi [[2 - Campi e Spazi Vettoriali#Base|base]]
+>Dove $A$ è la *matrice* che *rappresenta* $f$ in qualsiasi [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]]
 >Per la proposizione precedente, ***non dipende dalla base scelta*** se $A$ e $M$ rappresentano la stessa $f$ in ***basi diverse***
 >>[!done] Osservazione
 >>$$f\text{ isomorfismo }\iff \det(f)\neq 0$$

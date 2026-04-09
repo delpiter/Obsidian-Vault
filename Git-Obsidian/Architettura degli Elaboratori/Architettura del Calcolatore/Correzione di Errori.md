@@ -35,7 +35,7 @@ Il calcolatore **identifica la presenza di un errore** quando:
 >[!info] Definizione
 >La ***distanza di Hamming di un codice di correzione*** è data dalla *minima* distanza tra *tutte le codeword valide*
 
-Il codice di correzione degli errori ***più semplice*** è quello che si ottiene utilizzando un [[Definizioni_Architettura#Parity Bit|bit di parità]].
+Il codice di correzione degli errori ***più semplice*** è quello che si ottiene utilizzando un [[../../Definizioni/Definizioni_Architettura#Parity Bit|bit di parità]].
 #### Individuazione di Errore
 >[!abstract] Requisiti
 >Per ***individuare*** $d$ errori di un `BIT` serve un codice con distanza $d+1$

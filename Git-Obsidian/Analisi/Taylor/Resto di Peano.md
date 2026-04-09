@@ -19,7 +19,7 @@
 ---
 - Analoghe alle successioni
 >[!info] o Piccoli
->Siano $f,g:I\to\mathbb{R}$ [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo|intervalli]] o un [[Git-Obsidian/Analisi/Funzioni/Introduzione Funzioni#Intervallo Forato|intervalli forati]], $c\in[inf(I),sup(I)]$
+>Siano $f,g:I\to\mathbb{R}$ [[../Funzioni/Introduzione Funzioni#Intervallo|intervalli]] o un [[../Funzioni/Introduzione Funzioni#Intervallo Forato|intervalli forati]], $c\in[inf(I),sup(I)]$
 >Diciamo che $f$ è trascurabile rispetto a $g$ e scriviamo $f(x)=\circ(g(x))$ per $x\to c$
 >Se
 >$$\lim\limits_{x\to c} \displaystyle{\frac{f(x)}{g(x)}}=0$$

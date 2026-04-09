@@ -4,9 +4,9 @@
 >`{dockerfile icon} Docker` utilizza una ***architettura client- server***.
 >Il client parla al **docker** [[Container#^f4ae14|daemon]], che gestisce il building, l'esecuzione e la distribuzione dei [[Container]].
 
-Il client e il daemon di docker comunicano attraverso [[Scenari di Integrazione#^8d35e7|REST API]] con socket `UNIX` o una network intrerface.
+Il client e il daemon di docker comunicano attraverso [[../Scenari di Integrazione#^8d35e7|REST API]] con socket `UNIX` o una network intrerface.
 
-![[DockerArchitecture.png]]
+![[../attachements/DockerArchitecture.png]]
 
 >[!failure] Daemon
 >Il `{docker icon} Docker` ***daemon*** (`dockerd`) ascolta per richieste `API` e gestisce oggetti come immagini docker, container e network.
@@ -40,7 +40,7 @@ Un client può comunicare con più di un **daemon**.
 >Se si termina il servizio `docker.service`, il `docker.socket` rimane attivo e potrebbe risvegliare il servizio docker.
 
 La configurazione del daemon di docker è nel file in formato `{json icon} json`: `/etc/docker/daemon.json`
-- [Docker Daemon Configuration](https://docs.docker.com/reference/cli/dockerd/#daemon-configuration-file)
+- [[https://docs.docker.com/reference/cli/dockerd/#daemon-configuration-file]]
 ### Docker Objects
 > Quando si usa docker, vengono create e usate immagini, container, plugin e altri oggetti.
 
@@ -56,8 +56,8 @@ Puoi creare le **tue immagini** o usare quelle **create dagli altri**.
 >Un ***container*** è un'istanza eseguibile di un'immagine.
 >Puoi *creare*, *iniziare*, *fermare*, *spostare* o *eliminare* un container, usando le `API` o attraverso la linea di comando.
 
-È possibile collegare un container a uno o più [[Reti IP|reti]], attaccare uno starage, o creare una nuova immagine basata sullo [[#Stati di un Container|stato]] corrente.
-Di default un container è ben isolato da altri container e l'[[Virtualizzazione|host]].
+È possibile collegare un container a uno o più [[../../Reti/Network Layer/Reti IP|reti]], attaccare uno starage, o creare una nuova immagine basata sullo [[#Stati di un Container|stato]] corrente.
+Di default un container è ben isolato da altri container e l'[[../Virtualizzazione|host]].
 
 Un container è definito dalla sua ***immagine*** e da una ***configurazione*** fornita in all'avvio.
 - Quando un container è eliminato, un qualsiasi cambiamento che non è salvato in una memoria persistente è persa.
@@ -72,7 +72,7 @@ Assumendo che si utilizza la configurazione di default:
 1. Se non si ha l'immagine `ubuntu` in locale, **docker** la scarica automaticamente dai ***registry*** configurati, come se avessi eseguito `docker pull ubuntu`.
 2. Docker crea un nuovo container, come se avessi eseguito `docker container create`.
 3. Docker alloca un ***filesystem*** al container. Questo permette al container in esecuzione di *creare* e/o *modificare* files e directories nel filesystem ***locale***.
-4. Docker crea un'interfaccia network per connettere il container alla rete. Questo include un assegnamento di un [[Protocollo IP#L'indirizzo IP|indirizzo IP]] al container.
+4. Docker crea un'interfaccia network per connettere il container alla rete. Questo include un assegnamento di un [[../../Reti/Network Layer/Protocollo IP#L'indirizzo IP|indirizzo IP]] al container.
 5. Docker fa partire il container ed esegue `/bin/bash`. Poiché il container è eseguito **interattivamente** (`-i`) e **attaccato al terminale** (`-t`), è possibile fornire input da tastiera e l'output verrà visualizzato sul terminale.
 6. Quando viene eseguito `exit` per terminare il comando `/bin/bash` il container è fermato ***ma non viene rimosso***.
 
@@ -82,7 +82,7 @@ Assumendo che si utilizza la configurazione di default:
 >`[REGISTRY_HOST]/[NAMESPACE]/REPOSITORY:[TAG]`
 
 > Dove:
-- Il ***registry host***, facoltativo, indica l'host del registry, deve avere almeno un punto, come i [[DNS|domain names]] (`docker.io`, `my-registry.com:5000`).
+- Il ***registry host***, facoltativo, indica l'host del registry, deve avere almeno un punto, come i [[../../Reti/Application Layer/DNS|domain names]] (`docker.io`, `my-registry.com:5000`).
 - Il ***namespace***, facoltativo, indica l'utente o l'organizzazione proprietaria dell'immagine.
 - La ***repository***, indica il nome logico dell'immagine.
 - Il ***tag***, facoltativo, specifica la versione dell'immagine (es. `:latest`, `:1.0`).
@@ -118,7 +118,7 @@ stateDiagram-v2
 > ***Exited***
 - Il container ha terminato l'esecuzione ma non è stato rimosso dal sistema.
 - La terminazione dell'esecuzione restituisce un ***exit status***.
-	- Exit status ***del container*** che molto spesso corrisponde all'[[Exit Status|Exit Code]] del processo principale.
+	- Exit status ***del container*** che molto spesso corrisponde all'[[../../Sistemi Operativi/Bash/Exit Status|Exit Code]] del processo principale.
 - La terminazione non elimina il container, può essere fatto ripartire, tornando in stato **running**.
 - Il riavvio di un container terminato avvia il *processo principale*, il container rimane lo stesso,
 

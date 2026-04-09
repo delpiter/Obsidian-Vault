@@ -90,7 +90,7 @@ $\mathcal{P}(X_{1}=1,X_{2}=0)=\mathcal{P}(X_{1}=1)\cdot\mathcal{P}(X_{2}=0\mid X
 >Date le densità marginali, posso ottenere diverse ***densità congiunte***
 
 ##### Osservazione
->[!definizione] Ridefinizione di [[2 - Unione di Eventi#Eventi Indipendenti|variabili indipendenti]]
+>[[2 - Unione di Eventi#Eventi Indipendenti|variabili indipendenti]]
 >Due variabili $X,Y$ si dicono ***indipendenti*** se $\forall h,k$ gli eventi $X=h$ e $Y=k$ sono indipendenti
 >>[!note] Cioè
 >>$$\underbrace{ \mathcal{P}(X=h,Y=k) }_{ d_{X,Y}(h,k) }=\underbrace{ \mathcal{P}(X=h)\cdot\mathcal{P}(Y=k) }_{ d_{X}(h)\cdot d_{Y}(k) }$$

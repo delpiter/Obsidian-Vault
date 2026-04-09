@@ -14,7 +14,7 @@ Quindi $a=\pm 1\implies$ ci sono solamente due isometrie:
 ## $\text{dim}(V)=2$
 >*Sia* $f:\mathbb{R}^2\to\mathbb{R}^2$
 
-Fissiamo una *[[4 - Prodotto Scalare#Base Ortonormale|BON]]* di $V$
+Fissiamo una *[[../Frome Bilineari e Prodotti Scalari/4 - Prodotto Scalare#Base Ortonormale|BON]]* di $V$
 
 Poiché $f$ è una *isometria*, la matrice di $f$
 $$

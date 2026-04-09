@@ -32,7 +32,7 @@ Per questo motivo è stata definita una **codifica *standard*** o *normalizzata*
 
 I **floating-point** possono essere utilizzati per "simulare" i numeri reali
 - I numero di valori rappresentabili sono comunque infinitamente inferiore al numero di numeri reali
-![[floatingpoints.png]]
+![[attachements/floatingpoints.png]]
 
 >[!warning] Non tutti i numeri reali appartenenti alle aree rappresentabili possono essere espressi correttamente tramite un numero **floating-point**
 
@@ -97,17 +97,17 @@ Esprimo l'esponente in eccesso $127$
 - $12+127 = 139 \implies 10001011$
 
 Ottenendo cosi la seguente codifica binaria:
-![[BinaryFloatingPoint.png]]
+![[attachements/BinaryFloatingPoint.png]]
 #### Rappresentazione dello zero
 Per rappresentare lo zero, lo standard riserva la combinazione di `BIT`, quelli dell'*esponente* e quelli del *significant*, a zero
-![[plus0.png]]
+![[attachements/plus0.png]]
 
 - Ovviamente sarà inevitabile la doppia rappresentazione dello zero
 	- Uno negativo e uno positivo
 #### $-\infty +\infty$
 Per rappresentare $\pm\infty$, lo standard riserva la combinazione di `BIT`, quelli dell'*esponente* tutti a `1` e quelli del *significant* tutti a `0
 
-![[infinityFP.png]]`
+![[attachements/infinityFP.png]]`
 
 #### Forma Denormalizzata
 >[!tip] Valori Ancora più Piccoli
@@ -120,7 +120,7 @@ Composta nel seguente modo:
 >[!warning] Questa rappresentazione comporta una progressiva perdita di cifre significative
 
 Il numero più piccolo rappresentabile in questa configurazione è:
-![[smallestFloatingPoint.png]]
+![[attachements/smallestFloatingPoint.png]]
 
 #### NaN
 Per rappresentare questi valori si utilizzano le configurazioni in cui tutti i `BIT` dell'*esponente* sono `1`

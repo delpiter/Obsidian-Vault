@@ -3,15 +3,15 @@
 >[!info] Definizione
 >Un `BUS` è un ***collegamento elettrico*** comunemente *multi-linea* comune fra più dispositivi
 >Ci sono $2$ tipi di `BUS`
->>[!abstract] Interni alla [[La CPU|CPU]]
->>Molto veloci, utilizzati per trasportare i dati dai registri alla [[Arithmetic Logic Unit|ALU]].
+>>[[La CPU|!abstract]]
+>>Molto veloci, utilizzati per trasportare i dati dai registri alla [[../Algebra di Bool e Logica Digitale/Arithmetic Logic Unit|ALU]].
 >>I *protocolli di funzionamento* di questi `BUS` sono solitamente ***tenuti segreti*** dai produttori dei chip
 >
 >>[!tldr] Esterni alla `CPU`
 >>Utilizzati per collegare la `CPU` alla [[Organizzazione della Memoria#Memoria Principale|memoria principale]] e alle *periferiche* come, [[Schede Grafiche|GPU]] e altre [[Le Periferiche|periferiche]]
 
 - Un *`BUS` controller* è necessario per interconnettere tra loro 2 diversi `BUS` "***esterni***"
-![[Internal&External_BUS.png]]
+![[attachements/Internal&External_BUS.png]]
 
 >[!warning] `BUS` Esterni
 
@@ -29,14 +29,14 @@ I `BUS` esterni, in particolare quelli che si devono interfacciare con periferic
 
 - Alcuni esempi di operazioni svolte da ***master e slave***
 
-![[Master-Slave.png]]
+![[attachements/Master-Slave.png]]
 
 ### Larghezza del BUS
 >[!info] Descrizione
 >La ***larghezza del `BUS`*** è uno dei parametri più importanti per la progettazione di un `BUS`
 >Indica il ***numero di linee elettriche*** all'interno di un `BUS`
 
-![[BUS_Width.png]]
+![[attachements/BUS_Width.png]]
 - *Evoluzione del `BUS` delle prime `CPU` per rimanere retrocompatibile*
 
 ### BUS Sincroni e Asincroni
@@ -75,7 +75,7 @@ Ci sono 2 tipi di ***arbitraggio***:
 #### Arbitraggio Centralizzato
 >*Il metodo di arbitraggio centralizzato più noto è detto* ***daisy chaining***
 
-![[Daisy_Chain.png]]
+![[attachements/Daisy_Chain.png]]
 
 >[!abstract] *Daisy chaining*:
 1. Una linea di ***Grant***, in *output* dal ***chip arbitro***, è collegate in serie a tutti i dispositivi che possono richiedere di ***diventare master***
@@ -104,7 +104,7 @@ Ogni dispositivo è collegato a tutte $16$ le linee
 
 >[!warning] Non occorre alcun arbitro ma deve essere presente un *protocollo* che ogni dispositivo conosce
 
-![[Pasted image 20240425173719.png]]
+![[attachements/Pasted image 20240425173719.png]]
 >*Variante decentralizzata del daisy chaining*
 
 - Quando il dispositivo prende il controllo del `BUS`, nega il proprio output di ***grant*** e attiva la linea ***busy***
@@ -141,7 +141,7 @@ Ogni dispositivo è collegato a tutte $16$ le linee
 >- Portando a $64$ le linee dati e a $66MHz$ la frequenza di funzionamento
 
 - Gli slot `PCI` hanno forme *leggermente diverse* a seconda della tensione di funzionamento e del `BUS` dati ($32$ o $64$ `BIT`)
-![[PCI_BUS.png]]
+![[attachements/PCI_BUS.png]]
 
 Sul `PCI` per limitare il numero di *contatti* le linee dati e indirizzi sono ***comuni*** 
 - Indirizzi e dati devono occupare fisicamente le linee in *istanti diversi* ***sincronizzati dal clock***
@@ -150,7 +150,7 @@ Sul `PCI` per limitare il numero di *contatti* le linee dati e indirizzi sono **
 
 L'[[#Arbitraggio del BUS|arbitro]] (***arbitraggio centralizzato***), spesso implementato in uno dei chip "*bridge*", decide quale dei dispositivi richiedenti ha priorità maggiore
 
-![[PCI arbiter.png]]
+![[attachements/PCI arbiter.png]]
 
 ## USB
 ---
@@ -196,7 +196,7 @@ Il protocollo supporta $4$ ***modalità di comunicazione***:
 
 ### Connettori
 Inizialmente i connettori erano diversi per ***lato host*** (***A***) e ***lato device*** (***B***)
-![[USBports.png]]
+![[attachements/USBports.png]]
 Da `USB` $3.1$ è disponibile anche lo standard per cavi e connettori `USB-C`
 - $24$ pin simmetrici
 
@@ -214,7 +214,7 @@ Presto abbandonato a favore di `USB 3` e ***Thunderbolt***
 ---
 >*Il `BUS` `PCI` è stato al centro di un calcolatore per poco tempo*
 
-![[PCI_Architecture.png]]
+![[attachements/PCI_Architecture.png]]
 
 >[!question] Perché tutte queste complicazioni?
 
@@ -226,7 +226,7 @@ Presto abbandonato a favore di `USB 3` e ***Thunderbolt***
 
 >[!abstract] PCI perde la centralità
 
-![[PCI_Architecture_2.png]]
+![[attachements/PCI_Architecture_2.png]]
 
 >[!info] Bridge Chip
 >Per poter connettere dispositivi diversi su un sistema multi-`BUS`
@@ -243,7 +243,7 @@ Presto abbandonato a favore di `USB 3` e ***Thunderbolt***
 >- I device che richiedono elevata banda eseguono comunicazione in ***parallelo su più canali*** usando *slot* appositi
 >	- Tipico per una [[Schede Grafiche|scheda grafica]] usare uno slot $\times 16$
 
-![[PCI_e.png]]
+![[attachements/PCI_e.png]]
  - *Il `BUS` `PCI-e` si comporta esattamente come un network switch*
 	 - Lo *scambio di dati* avviene attraverso un *protocollo* basato su ***pacchetti***
 
@@ -253,4 +253,4 @@ Presto abbandonato a favore di `USB 3` e ***Thunderbolt***
 
 >[!caution] Calcolatori Moderni
 >Nei calcolatori moderni, la [[La CPU|CPU]] ha alcuni *collegamenti diretti* con gli slot `PCI-e` per ***massimizzare la performance***
->Altri slot `PCI-e` saranno collegati al [[Definizioni_Architettura#Chipset|Chipset]]
+>Altri slot `PCI-e` saranno collegati al [[../../Definizioni/Definizioni_Architettura#Chipset|Chipset]]

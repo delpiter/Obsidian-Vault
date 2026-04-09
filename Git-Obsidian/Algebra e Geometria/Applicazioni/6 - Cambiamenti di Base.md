@@ -2,9 +2,9 @@
 
 ## Teorema del Cambiamento di Base
 >[!info] ‎ 
->Sia $V$ uno [[2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su un [[2 - Campi e Spazi Vettoriali#Campo|campo]] $\mathbb{K}$ e sia $f:V\to V$ una [[1 - Applicazioni Lineari|applicazione lineare]].
+>Sia $V$ uno [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Spazio Vettoriale|spazio vettoriale]] su un [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Campo|campo]] $\mathbb{K}$ e sia $f:V\to V$ una [[1 - Applicazioni Lineari|applicazione lineare]].
 >Siano $\mathcal{B}=\{ v_{1},\dots,v_{n} \}$ e $\mathcal{B}'=\{ u_{1},\dots,u_{n} \}$
->Sia $A$ la matrice di $f$ nella [[2 - Campi e Spazi Vettoriali#Base|base]] $\mathcal{B}$
+>Sia $A$ la matrice di $f$ nella [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] $\mathcal{B}$
 >Sia $M$ la matrice di $f$ nella base $\mathcal{B}'$
 >>[!abstract] In altre parole
 >>$$f(v_{j})=a_{1j}v_{1}+\dots+a_{nj}v_{n}$$
@@ -223,7 +223,7 @@ Cioè $A$ è simile ad $N$
 >[!question] Come si fa a capire se una matrice quadrata $A$ è invertibile?
 
 >[!check]
->Una ***matrice quadrata*** $A$ è invertibile $\iff$ i suoi vettori colonna sono [[2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]
+>Una ***matrice quadrata*** $A$ è invertibile $\iff$ i suoi vettori colonna sono [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]
 
 ### Dimostrazione
 >*Siano* $v_{1},\dots,v_{n}$ *i vettori colonna di* $A\in\mathcal{M}_{n\times n}$
@@ -252,7 +252,7 @@ $$
 Notiamo che la funzione è ***invertibile***
 - Quindi per il [[4 - Isomorfismo#Teorema Isomorfismo-Basi|teorema isomorfismo-basi]] 
 
-$f$ è un isomorfismo $\iff$ $v_{1},\dots,v_{n}$ è una [[2 - Campi e Spazi Vettoriali#Base|base]] di $\mathbb{K}^n$
+$f$ è un isomorfismo $\iff$ $v_{1},\dots,v_{n}$ è una [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Base|base]] di $\mathbb{K}^n$
 
 Poiché in $\mathbb{K}^n$ ogni insieme di $n$ ***vettori linearmente indipendenti è una base***
 $$
@@ -355,7 +355,7 @@ Di conseguenza $f$ non è invertibile
 ## Rango di una Matrice
 ---
 >[!info] Definizione
->Il ***rango di una matrice*** è il *massimo numero* di vettori colonna [[2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]
+>Il ***rango di una matrice*** è il *massimo numero* di vettori colonna [[../Basi dell'algebra/2 - Campi e Spazi Vettoriali#Dipendenza Lineare|linearmente indipendenti]]
 >>[!done] ‎ 
 >>Possiamo allora riformulare il teorema precedente:
 >>Una matrice $n\times n$ è ***invertibile*** $\iff$ ha ***rango*** $n$

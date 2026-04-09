@@ -6,11 +6,11 @@ L'***accreditamento*** è definito come il *riconoscimento formale di idoneità*
 ## Certificazione ISO 9000
 ---
 >[!abstract] Info
->La [[Definizioni_Programmazione#ISO|ISO]] 9000 è una ***serie di standard internazionali*** dell'`ISO` che stabilisce i fondamenti di un *Sistema di Gestione per la Qualità*.
+>La [[../../Definizioni/Definizioni_Programmazione#ISO|ISO]] 9000 è una ***serie di standard internazionali*** dell'`ISO` che stabilisce i fondamenti di un *Sistema di Gestione per la Qualità*.
 >
 
 La certificazione `ISO` 9000 può essere rilasciata su *sotto-porzioni dell'azienda* oggetto di valutazione.
-![[ISO9000.png]]
+![[attachements/ISO9000.png]]
 
 > È compito dell'organismo di certificazione, in collaborazione con l'azienda da certificare, definire i confini e l'estensione della certificazione.
 

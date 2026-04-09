@@ -17,7 +17,7 @@
 - Valutare l'*efficacia del sistema sviluppato* con appropriate metriche.
 
 
-![[AIGeneralConcept.png]]
+![[attachements/AIGeneralConcept.png]]
 
 ### Organizzazione dei Dati
 > Una volta ottenuti i dati raccolti, è necessario **organizzarli**.

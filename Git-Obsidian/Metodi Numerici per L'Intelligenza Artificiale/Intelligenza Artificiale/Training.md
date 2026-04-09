@@ -42,7 +42,7 @@ Per calcolare il vettore dei pesi:
 $$
 w^{*}=\{ w^{(1)},\dots,w^{(l)} \}\in\underset{ w }{ \arg\min }\ C(w)  =\frac{1}{n_{T}}\sum_{j=1}^{n_{T}}L(y^{(j)},\hat{y}^{(j)}(w))
 $$
-ricorriamo al [[Metodi di Discesa#Steepest Descent|metodo del gradiente]].
+ricorriamo al [[../Metodi di Discesa/Metodi di Discesa#Steepest Descent|metodo del gradiente]].
 $$
 w^{(k)}=w^{(k-1)}-\eta \nabla C(w^{(k-1)})
 $$
@@ -249,7 +249,7 @@ h(x)=-x
 > Metodo che risolve i problemi introdotti dalla non convessità della ***funzione loss***.
 
 >[!failure] Momentum
->Il ***momentum*** è una tecnica usata per accelerare la convergenza e ridurre le oscillazioni durante l'allenamento con il [[Metodi di Discesa#Steepest Descent|Gradient Descent]].
+>Il ***momentum*** è una tecnica usata per accelerare la convergenza e ridurre le oscillazioni durante l'allenamento con il [[../Metodi di Discesa/Metodi di Discesa#Steepest Descent|Gradient Descent]].
 >Si introduce una variabile aggiuntiva chiamata $v^{(k)}$ (*momentum*).
 >- Il *momentum* al passo $k$ è una combinazione della **velocità al passo precedente** e del **gradiente corrente**.
 >
@@ -279,7 +279,7 @@ $$
 > La funzione costo  ***diminuisce costantemente*** fino a raggiungere 
 il valore minimo possibile
 
-![[AdaptiveLearningRate.png|400]]
+![[attachements/AdaptiveLearningRate.png|400]]
 #### Learning Rate Scheduling
 > Un learning rate alto è auspicabile all'inizio, uno basso è più appropriato nella fase finale.
 

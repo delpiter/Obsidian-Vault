@@ -1,10 +1,10 @@
 ## Modello Logico-Relazionale
 ---
 >[!note] Note
->Il ***modello relazionale*** è un [[Definizioni Importanti#Modello Logico|modello logico]] , nel senso che risponde al requisito di **indipendenza** dalla particolare *rappresentazione dei dati* a livello fisico.
+>Il ***modello relazionale*** è un [[../../Definizioni Importanti#Modello Logico|modello logico]] , nel senso che risponde al requisito di **indipendenza** dalla particolare *rappresentazione dei dati* a livello fisico.
 
 >[!tip] Progettazione Logica
->La fase di ***progettazione logica*** consiste nella **traduzione** dello [[Definizioni Importanti#Modello Concettuale|schema concettuale]] in uno schema logico.
+>La fase di ***progettazione logica*** consiste nella **traduzione** dello [[../../Definizioni Importanti#Modello Concettuale|schema concettuale]] in uno schema logico.
 
 ## Modello Relazionale
 ---
@@ -28,7 +28,7 @@
 | The Flex Pistoia | Consultinvest Pesaro | $86$      | $83$        |
 > La struttura non è più ***posizionale***
 - L'***ordine*** degli attributi **non ha più rilevanza**
-	- Si supera il problema della non commutatività del [[Concetti Matematici#Prodotto Cartesiano|prodotto cartesiano]]
+	- Si supera il problema della non commutatività del [[../Concetti Matematici#Prodotto Cartesiano|prodotto cartesiano]]
 
 ##### Dominio di un attributo
 >[!done] Definizione
@@ -42,7 +42,7 @@
 
 >[!example] Schema di Relazione
 >Uno schema di relazione $R(X)$ è definito da un nome della relazione $R$ e dall'insieme di attributi $X=\{ A_{1},A_{2},\dots,A_{n} \}$
->- Lo schema $R(X)$ definisce a livello [[Modello Entity-Relationship#Entità|intensionale]] una relazione
+>- Lo schema $R(X)$ definisce a livello [[../../Progettazione Concettuale/Modello Entity-Relationship#Entità|intensionale]] una relazione
 
 **Scelta del nome**:
 - È importante che la scelta dei nomi diano **immediatamente** il significato di "*cosa contiene*"
@@ -51,9 +51,9 @@
 
 >[!abstract] Istanza di Relazione $R(X)$
 >Una ***istanza*** (o ***stato***/***estensione***) di *relazione* su $X$ è l'insieme $r$ di *tuple* su $X$
->- L'istanza di una Relazione definisce a livello [[Modello Entity-Relationship#Entità|estensionale]] una relazione
+>- L'istanza di una Relazione definisce a livello [[../../Progettazione Concettuale/Modello Entity-Relationship#Entità|estensionale]] una relazione
 
-![[RelationTable.png]]
+![[attachements/RelationTable.png]]
 #### Tabelle
 >Le tabelle sono formate da diverse parti e devono seguire alcune regole.
 

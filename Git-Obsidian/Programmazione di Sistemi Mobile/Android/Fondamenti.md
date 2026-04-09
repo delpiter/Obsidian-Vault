@@ -134,7 +134,7 @@ Tramite il content provider, altre app possono eseguire query o modificare i dat
 >[!todo] Un intent viene creato con un oggetto `Intent` , che definisce un messaggio per attivare un componente specifico (explicit intent) o un tipo specifico di componente (implicit intent)
 
 > Per [[#Activities]] e [[#Services]], un *intent* definisce l'azione da eseguire.
-- Può specificare l'[[Indirizzamento#In Internet|URI]] dei dati su cui agire.
+- Può specificare l'[[../../Reti/Introduzione/Indirizzamento#In Internet|URI]] dei dati su cui agire.
 - In alcuni casi, è possibile avviare un'**activity** per ricevere un risultato, nel qual caso l'attività restituisce anche il risultato in un **intent**.
 
 > Per [[#Broadcast Receivers]] l'*intent* definisce semplicemente l'**annuncio da trasmettere**.

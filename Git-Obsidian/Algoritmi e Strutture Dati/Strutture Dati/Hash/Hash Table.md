@@ -14,10 +14,10 @@
 >Ogni chiave trova un posto nella tabella in funzione del suo valore
 >$$\text{key value } = \text{ position in the vector}$$
 
-![[image-removebg-preview 1.png]]
+![[attachements/image-removebg-preview 1.png]]
 >[!done] Pro
 
-Estremamente efficiente in termini di [[Complessità di Algoritmi#Analisi di Complessità|complessità computazionale]].
+Estremamente efficiente in termini di [[../../Confronto fra Algoritmi/Complessità di Algoritmi#Analisi di Complessità|complessità computazionale]].
 
 ```pseudo
 	\begin{algorithm}
@@ -59,7 +59,7 @@ Estremamente efficiente in termini di [[Complessità di Algoritmi#Analisi di Com
 Quando lo *spazio delle chiavi* è **enorme** e il numero di chiavi attive (*actual keys*) è molto **piccolo:**
 - Avviene un grande ***spreco di memoria***
 
-![[Pasted image 20240317162039.png]]
+![[attachements/Pasted image 20240317162039.png]]
 
 ### Esempio
 > Prendiamo come esempio l'**insieme delle persone** (*Italiane*)

@@ -127,12 +127,12 @@ add<<<(N + BLKDIM - 1)/BLKDIM,BLKDIM>>>(d_a, d_b, d_c, N);
 Il codice lancia ***kernel paralleli***.
 - Lancia `{c} (N + BLKDIM - 1)/BLKDIM` *blocchi* di dimensione `{c} BLKDIM`.
 
-![[CUDAMultithreading.png]]
+![[attachements/CUDAMultithreading.png]]
 
 ### Esecuzione con Blocchi Multidimensionali
 >[!example] Esempio: Moltiplicazione Matrice $\times$ Matrice
 
-![[MatrixMultiplication.png]]
+![[attachements/MatrixMultiplication.png]]
 
 Decomponiamo la matrice risultato `r` in blocchi quadrati.
 - Assegniamo ciascun blocco ad un ***blocco di thread***.
@@ -198,7 +198,7 @@ $$
 >2. Calcola il prodotto matrice per matrice `local_p`$\times$`local_q` in ***parallelo***.
 >3. Passa al blocco successivo.
 
-![[MatrixProductShared.png]]
+![[attachements/MatrixProductShared.png]]
 
 ```c title:"Matmul Kernel"
 __global__ void matmul( float *p, float *q, float *r, int n )

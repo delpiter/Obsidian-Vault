@@ -91,7 +91,7 @@ $$
 >[!bug] Mixed Integer Programming
 > Un problema di programmazione lineare intera prevede il vincolo aggiuntivo che le variabili decisionali ***devono assumere valori interi***.
 
-![[MixedIntegerProgramming.png]]
+![[attachements/MixedIntegerProgramming.png]]
 
 $$
 \begin{array}

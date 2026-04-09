@@ -92,7 +92,7 @@ $$
 ## Legge dei Grandi Numeri
 ---
 >[!definizione] Definizione
->Siano $X_{1},X_{2},X_{3},\dots$ [[3 - Variabili Aleatorie|variabili aleatorie]] *indipendenti* che abbiano tutte la ***stessa densità*** con [[6 - Valore Atteso|valore atteso]] $\mu$ e [[3 - Varianza|varianza]] $\sigma^2$
+>Siano $X_{1},X_{2},X_{3},\dots$ [[3 - Variabili Aleatorie|variabili aleatorie]] *indipendenti* che abbiano tutte la ***stessa densità*** con [[6 - Valore Atteso|valore atteso]] $\mu$ e [[../Statistica Descrittiva/3 - Varianza|varianza]] $\sigma^2$
 ><u>Allora</u>
 >La *successione*
 >$$Y_{1} = X_{1}\qquad Y_{2}= \displaystyle{\frac{X_{1}+X_{2}}{2}}\qquad Y_{3}= \displaystyle{\frac{X_{1}+X_{2}+X_{3}}{3}}$$

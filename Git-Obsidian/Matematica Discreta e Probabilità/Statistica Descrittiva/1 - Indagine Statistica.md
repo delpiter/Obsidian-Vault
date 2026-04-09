@@ -19,7 +19,7 @@
 >>[!caution] Qualitativo
 >>Un *carattere* è ***qualitativo*** quando non è *quantitativo*
 >
->Un *carattere* si dice ***Discreto*** se i valori che può assumere sono finiti o [[Git-Obsidian/Matematica Discreta e Probabilità/0 - Introduzione#Insiemi Numerabili|numerabili]]
+>Un *carattere* si dice ***Discreto*** se i valori che può assumere sono finiti o [[../0 - Introduzione#Insiemi Numerabili|numerabili]]
 
 #### Esempio
 >*Popolazione:* Lanci di una moneta (tutti i modi possibili di lanciare la moneta)
@@ -116,7 +116,7 @@ $$
 >>La proprietà funziona unicamente con ***funzioni di primo grado***
 
 ###### Dimostrazione
->Sfruttando le [[Utility#Proprietà delle Sommatorie|proprietà delle sommatorie]]
+>Sfruttando le [[../Utility#Proprietà delle Sommatorie|proprietà delle sommatorie]]
 $$
 \overline{y}=\frac{1}{n}\sum_{i=1}^ny=\frac{1}{n}\sum_{i=1}^n(ax_{i}+b)=\frac{1}{n}\left( \sum_{i=1}^nax_{i}+\sum_{i=1}^nb \right)=a\underbrace{ \frac{1}{n}\sum_{i=1}^nx_{i} }_{ \overline{x} }+\frac{1}{\cancel{ n }}b\cancel{ n }=
 $$

@@ -30,7 +30,7 @@ int MPI_Bcast(void *buffer, int count,
 ```
 
 >[!info]
->Invia un ***messaggio*** [[Reti IP#Broadcast|broadcast]] a tutti gli altri processi del gruppo.
+>Invia un ***messaggio*** [[../../Reti/Network Layer/Reti IP#Broadcast|broadcast]] a tutti gli altri processi del gruppo.
 >>[!warning] Tutti i processi eseguono la funzione
 
 >[!abstract] Parametri
@@ -49,7 +49,7 @@ int MPI_Scatter(const void *sendbuf, int sendcount,
 				MPI_Datatype recvtype, int root ,MPI_Comm comm);
 ```
 
-![[Scatter.png]]
+![[attachements/Scatter.png]]
 
 >[!info]
 >***Distribuisce dati*** a gli altri processi nel gruppo.
@@ -109,7 +109,7 @@ int MPI_Allgather(const void *sendbuf, int  sendcount,
 >Equivalente a `gather()` seguito da un `scatter()`.
 
 Possiamo assumere sia più efficiente delle due funzioni singole.
-![[AllGather.png]]
+![[attachements/AllGather.png]]
 
 ### Scatterv e Gatherv
 >[!tldr] Idea
@@ -126,7 +126,7 @@ int MPI_Scatterv(const void *sendbuf, const int sendcounts[],
 				 int root, MPI_Comm comm);
 ```
 
-![[Scatterv.png]]
+![[attachements/Scatterv.png]]
 
 >[!abstract] Parametri
 
@@ -147,7 +147,7 @@ int MPI_Reduce(const void *sendbuf, void *recvbuf, int count,
 ```
 
 >[!info]
->Esegue una [[Reduce|riduzione]] e mette il risultato in un processo.
+>Esegue una [[../Parallel Programming Patterns/Reduce|riduzione]] e mette il risultato in un processo.
 
 > `{c icon} MPI_Op op`
 - È l'***operazione da eseguire*** come riduzione (somma, sottrazione, max, min, etc...).
@@ -155,7 +155,7 @@ int MPI_Reduce(const void *sendbuf, void *recvbuf, int count,
 > `{c icon} count`
 - Se `count>1`, `{c} recvbuf[i]` è la riduzione di tutti gli elementi in `{c} sendbuf[i]` nei vari processi.
 
-![[MPIReduce.png]]
+![[attachements/MPIReduce.png]]
 
 | Operation      | Value                           |
 | -------------- | ------------------------------- |
@@ -214,7 +214,7 @@ int MPI_Scan(const void *sendbuf, void *recvbuf, int count,
 ```
 
 >[!info]
->Esegue una [[Scan]] ***inclusiva*** sugli elementi, in maniera simile alla *reduce*.
+>Esegue una [[../Parallel Programming Patterns/Scan]] ***inclusiva*** sugli elementi, in maniera simile alla *reduce*.
 
 > `{c icon} count`
 - Se `count>1`, `{c} recvbuf[i]` è la scan di tutti gli elementi in `{c} sendbuf[i]` nei vari processi.

@@ -14,4 +14,4 @@ L'errore di arrotondamento può dipendere da:
 - **Numero di cifre utilizzate**.
 - ***Ordine delle operazioni***.
 
-![[FinateNumbers.png]]
+![[attachements/FinateNumbers.png]]

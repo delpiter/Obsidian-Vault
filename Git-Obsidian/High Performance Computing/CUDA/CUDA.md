@@ -1,8 +1,8 @@
 ## Compute Unified Device Architecture
 ---
 >[!info]
->`CUDA` è una tecnologia proprietaria per la programmazione di [[Schede Grafiche|GPU]].
->- Espone un modello per la programmazione [[Il Design di Programmi Paralleli#Task Parallelism e Data Parallelism|data-parallel]].
+>`CUDA` è una tecnologia proprietaria per la programmazione di [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Schede Grafiche|GPU]].
+>- Espone un modello per la programmazione [[../Il Design di Programmi Paralleli#Task Parallelism e Data Parallelism|data-parallel]].
 
 > `OpenCL`
 - `OpenCL` è una alternativa *open source* e portabile per la programmazione di `GPU` e `CPU`.
@@ -26,7 +26,7 @@ Il caso più semplice di interazione tra *host program* e *device program* è la
 > Il ***device*** è la `GPU` e la propria memoria interna (*device memory*).
 
 ### Anatomia di una GPU
-![[GPUAnatomy.png]]
+![[attachements/GPUAnatomy.png]]
 
 >[!tip] Composizione
 >La `GPU` è composta di numerosi "***streaming multiprocessor***" (`SM`), ciascuno di essi è composto da ulteriori "***streaming processor***" (`SP`).
@@ -35,10 +35,10 @@ Il caso più semplice di interazione tra *host program* e *device program* è la
 
 Dal punto di vista del programmatore la `GPU` è composta da:
 
-> [[6 - Processi, Schedule e Thread|Thread]]
+> [[../../Sistemi Operativi/Teoria/6 - Processi, Schedule e Thread|Thread]]
 - I ***thread*** sono l'unità più piccola di lavoro.
-- Eseguono tutti la stessa funzione [[3 - Livelli del Sistema Operativo#Kernel|kernel]].
-- I ***thread*** sono raggruppati in `WARP` di $32$ per lo [[7 - Scheduler|scheduling]].
+- Eseguono tutti la stessa funzione [[../../Sistemi Operativi/Teoria/3 - Livelli del Sistema Operativo#Kernel|kernel]].
+- I ***thread*** sono raggruppati in `WARP` di $32$ per lo [[../../Sistemi Operativi/Teoria/7 - Scheduler|scheduling]].
 
 > ***Block***
 - Un `Block` è una ***unità logica*** formata da un array `3D` di thread.

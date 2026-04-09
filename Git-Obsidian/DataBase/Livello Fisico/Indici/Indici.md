@@ -6,7 +6,7 @@ Concettualmente è come una mappa che memorizza entrate come:
 
 >Due "*famiglie*" di indici principali:
 - ***Order Index***: I valori di chiave sono mantenuti *ordinati*.
-- Hash Index: I valori di chiave sono memorizzati in bucket i cui indirizzi sono generati da [[Funzione di Hash|funzioni Hash]].
+- Hash Index: I valori di chiave sono memorizzati in bucket i cui indirizzi sono generati da [[../../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash|funzioni Hash]].
 
 ## Hash Index
 ---
@@ -30,7 +30,7 @@ Ricerca del record con chiave $k_{i}$:
 4. **Accesso** al blocco dati.
 
 Poiché l'indice contiene un insieme di valori chiave, le coppie $(k_{i},p_{i})$ possono essere mantenute ordinate in base ai valori $k_{i}$.
-- Al fine di potere applicare la [[Recursive Functions#Un Algoritmo Ricorsivo Ricerca Binaria|ricerca binaria]].
+- Al fine di potere applicare la [[../../../Programmazione/Funzioni/Recursive Functions#Un Algoritmo Ricorsivo Ricerca Binaria|ricerca binaria]].
 - Permette risparmi più **grandi** tanto più è **grande** la ***differenza di dimensione*** in `byte` tra *chiave* e *record intero*.
 
 #### Tipi di Indice Ordinato
@@ -45,7 +45,7 @@ Poiché l'indice contiene un insieme di valori chiave, le coppie $(k_{i},p_{i})$
 ### Indici Multilivello
 >Per ragioni di efficienza un indice in memoria secondaria è ***organizzato in più livelli***.
 
-La soluzione più comune per un indice si basa su [[Gli Alberi Binari|alberi binari]] bilanciati.
+La soluzione più comune per un indice si basa su [[../../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Alberi/Gli Alberi Binari|alberi binari]] bilanciati.
 
 
 
@@ -55,5 +55,5 @@ La soluzione più comune per un indice si basa su [[Gli Alberi Binari|alberi bin
 >2. *Occupazione minima*: Si deve poter stabilire un limite inferiore all'utilizzazione di blocchi.
 >3. *Efficienza di Aggiornamento*: I due requisiti espressi devono essere soddisfatti garantendo che le operazioni abbiano un ***costo limitato***.
 
-![[UnbalancedTree.png|400]]
+![[attachements/UnbalancedTree.png|400]]
 - *Albero sbilanciato rispetto ai blocchi ma bilanciato rispetto ai nodi*.
