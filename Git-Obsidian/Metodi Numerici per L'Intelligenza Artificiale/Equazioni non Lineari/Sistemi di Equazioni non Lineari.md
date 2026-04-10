@@ -263,7 +263,7 @@ $$
 \nabla f(X)=
 \begin{bmatrix}
 \displaystyle\frac{\partial f(X)}{\partial x_1} \\
-\displaystyle\frac{\partial fX)}{\partial x_2} \\
+\displaystyle\frac{\partial f(X)}{\partial x_2} \\
 \vdots \\
 \displaystyle\frac{\partial f(X)}{\partial x_n}
 \end{bmatrix}=\begin{bmatrix}
