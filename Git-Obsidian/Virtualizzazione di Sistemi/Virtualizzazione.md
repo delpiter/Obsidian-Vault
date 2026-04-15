@@ -23,7 +23,8 @@ La macchina virtuale è chiamata ***ospite*** (***guest***).
 	- Si definisce virtualizzazione di tipo 1 una virtualizzazione nel quale il sistema *host* è assente e le sue funzioni ***vengono sostituite dall'hypervisor***.
 - Tipo 2 o ***hosted***.
 	- Si definisce virtualizzazione di tipo 2 una virtualizzazione nel quale l'hypervisor è un ***normale processo utente sul sistema operativo host***.
-### Virtualizzazione Desktop e Server
+### Tipi di Virtualizzazione
+#### Virtualizzazione Desktop
 >[!abstract] Desktop
 >Consente di usare una ***virtual machine*** che esegue sul `PC` dell'utente.
 >- Permette di eseguire altri sistemi operativi *sopra il sistema host*.
@@ -37,6 +38,7 @@ Realizzata tramite particolari software.
 - ***UTM*** (MacOsX).
 - ***Parallel*** (MacOsX).
 
+#### Virtualizzazione Server
 >[!help] Server
 >Esegue su Hardware in sale macchine, l'utente **opera** sulla macchina virtuale *da remoto*.
 
@@ -46,6 +48,22 @@ Realizzato mediante l'uso di sistemi operativi dedicati, permette di eseguire al
 > Principali software:
 - ***Proxmox***.
 - ***Hyper-V***.
+
+#### Virtualizzazione Storage
+>[!abstract] Storage
+>Viene presentata una view virtuale di un ***dispositivo di storage fisico***.
+>
+
+> Ci sono due tipologie di virtualizzazione di storage
+- *Block* (es `iSCSI`).
+	- L'accesso avviene a livello di blocchi, come un **disco fisico**.
+	- Generalmente più veloce per database.
+- *File* (es `NFS`).
+	- L'accesso avviene a livello di file come una **condivisione di rete**.
+	- Più lento per carichi pesanti ma migliore per condivisione di file.
+
+>[!warning] Attenzione
+>Non è possibile usare un qualsiasi tipo di file system, è necessario usarne uno che ***gestisca la concorrenza***.
 ### Emulazione
 >[!info] Emulazione
 > Nell'***emulazione*** l'hardware viene completamente emulato dal programma di controllo.

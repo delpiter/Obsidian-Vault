@@ -32,7 +32,7 @@ Se un sistema monolitico aveva bisogno di due librerie (possibilmente in conflit
 - *Disco virtuale* accedibile dalle macchine virtuali.
 - *Archive Storage*, per archiviazione a basso costo per accessi rari.
 - *Distributore di carico web* e istanziatore a runtime di nuove `VM` per sopperire a picchi di carico (**kubernetes**).
-- [[../Reti/Data Link Layer/Networks/VPN]], [[../Reti/Application Layer/DNS]].
+- [[../Reti/Data Link Layer/Networks/VPN|VPN]], [[../Reti/Application Layer/DNS|DNS]].
 - *Multi factor authentication*.
 - etc...
 
