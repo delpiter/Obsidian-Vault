@@ -19,7 +19,9 @@ Si parla di "*reti overlay*":
 - Sicurezza e privacy.
 
 ## Tecnologie di Virtualizzazione
+
 ---
+
 >[!example] Lista di Tecnologie
 - [[802.X/Virtual LAN|VLAN]] 
 - GRE

@@ -3,7 +3,7 @@
 >[!definizione]
 >***Proxmox Virtual Enviroment*** è una piattaforma di virtualizzazione progettata per fornire infrastrutture *iper-convergenti*.
 
-Proxmox permette la gestione di [[Virtualizzazione|macchine virtuali]] e [[Docker/Container|Containers]].
+Proxmox permette la gestione di [[../Virtualizzazione|Macchine virtuali]] e [[../Docker/Container|Containers]].
 - Basato su Linux Debian, utilizza una versione modificata del kernel di ubuntu.
 
 **Proxmox** supporta due tipi di virtualizzazione:
@@ -16,9 +16,9 @@ Proxmox permette la gestione di [[Virtualizzazione|macchine virtuali]] e [[Docke
 >> ***Linux Containers*** è una virtualizzazione a livello di sistema operativo, viene usato per eseguire multiple istanze di sistemi linux indipendenti su un host *usando un solo kernel*.
 >
 >> [!hint] `KVM`
->> ***Kernel-Based Virtual Machine*** è un modulo di virtualizzazione di linux che permette al kernel di funzionare come un [[Virtualizzazione#Hypervisor|hypervisor]].
+>> ***Kernel-Based Virtual Machine*** è un modulo di virtualizzazione di linux che permette al kernel di funzionare come un [[../Virtualizzazione#Hypervisor|hypervisor]].
 
-Proxmox ha una [[Docker/Docker#Nome di una Immagine Docker|repository]] di immagini `LXC` già pronte.
+Proxmox ha una [[../Docker/Docker#Nome di una Immagine Docker|repository]] di immagini `LXC` già pronte.
 
 >[!caution] Migrazione a Caldo
 >Proxmox permette una ***migrazione di una macchina virtuale in utilizzo*** da un nodo (potenzialmente molto utilizzato) ad un altro (più libero).
@@ -79,9 +79,9 @@ Proxmox VE authentication server
 
 > [!caution] Active Directory
 
-#addLink L'*active direcotry* è un servizio per gestire in modo centralizzato autenticazione, autorizzazione e amministrazione di risorse di rete.
+L'[[Active Directory]] è un servizio per gestire in modo centralizzato autenticazione, autorizzazione e amministrazione di risorse di rete.
 - Possibilità di sincronizzare tutti gli utenti del dominio
-- Servono per accedere alle `GUI`/`API` e *usare* le ***vm***
+- Servono per accedere alle `GUI`/`API` e *usare* le ***vm***.
 
 ### Ruoli di Proxmox
 | Role Name             | Description                                                                |
@@ -106,19 +106,19 @@ Proxmox VE authentication server
 >[!caution] Bridge (Linux Bridge)
 * È la modalità più comune.
 * Collega le ***VM*** direttamente alla rete fisica, come se fossero dispositivi reali.
-* Le ***VM*** ottengono un [[../Reti/Network Layer/Protocollo IP|IP]] dalla stessa rete del nodo *Proxmox*.
+* Le ***VM*** ottengono un [[../../Reti/Network Layer/Protocollo IP|IP]] dalla stessa rete del nodo *Proxmox*.
 * Esempio: `vmbr0` collegato a `eth0`.
 
 >[!hint] VLAN
 
 * Permette di separare il traffico su *più reti logiche* usando una sola interfaccia fisica.
 * Configurabile su bridge (es. `vmbr0.10`, `vmbr0.20`).
-* Richiede switch compatibile [[../Reti/Data Link Layer/Networks/802.X/Virtual LAN|VLAN]].
+* Richiede switch compatibile [[../../Reti/Data Link Layer/Networks/802.X/Virtual LAN|VLAN]].
 
 >[!definizione] SDN (Software Defined Networking)
 
 * Funzionalità recente in Proxmox.
-* Permette di gestire *reti virtuali*, [[../Reti/Data Link Layer/Networks/Virtualizzazione di Rete#Tecnologie di Virtualizzazione|rete di overlay]] (VXLAN), e configurazioni multi-nodo.
+* Permette di gestire *reti virtuali*, [[../../Reti/Data Link Layer/Networks/Virtualizzazione di Rete#Tecnologie di Virtualizzazione|rete di overlay]] (VXLAN), e configurazioni multi-nodo.
 * Si integra con ***firewall*** e automazione.
 
 ## Ansible
