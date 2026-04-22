@@ -17,10 +17,25 @@ Durante l'esecuzione il container può **modificare** il contenuto del proprio f
 > Questo ***layer differenziale*** viene salvato sul file system dell'host, nella **docker area**. Questo tipo di immagine si dice ***Copy-on-Write***.
 
 Ciò è *efficiente* perché esisterà **solo una istanza dell'immagine originale** (***read only***), ogni container avrà poi una propria copia con le sole modifiche, risparmiando memoria sul disco.
-- Ogni layer è identificato da un digest univoco, calcolato con una [[../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash]] partendo dal contenuto del layer stesso.
+- Ogni layer è identificato da un digest univoco, calcolato con una [[../../Algoritmi e Strutture Dati/Strutture Dati/Hash/Funzione di Hash|Funzione di Hash]] partendo dal contenuto del layer stesso.
 
 Il daemon docker definisce una dimensione massima occupabile dal file system di ciascun container pari a $10Gb$ .
 - Configurazione modificabile tramite il file di configurazione del daemon docker (`/etc/docker/daemon.json`).
+
+
+In sistemi molto grandi, la docker area nel sistema host, è una ***partizione separata*** con un file system specializzato come: `btrfs`, `overlayfs`, etc...
+
+>[!tip] File System Sovrapposto
+> Nel caso la docker area non sia in una partizione dedicata, il daemon *adatta il file system esistente* alle proprie esigenze
+
+>[!warning] Dangling Images
+> Potrebbero esserci alcune immagini intermedie che sono state *create durante il build* per funzionare come cache per build successivi.
+> Quando queste immagini non sono più referenziate da nessuna immagine o container (es. è stato cambiato il [[Dockerfile]]), tali immagini sono dette ***dangling***.
+
+Si possono visualizzare tutte le ***immagini dangling*** attraverso il seguente comando:
+```sh
+docker images -f dangling=true
+```
 
 ## Mounts
 ---

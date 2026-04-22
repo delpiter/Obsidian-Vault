@@ -18,7 +18,7 @@ Proxmox permette la gestione di [[../Virtualizzazione|Macchine virtuali]] e [[..
 >> [!hint] `KVM`
 >> ***Kernel-Based Virtual Machine*** è un modulo di virtualizzazione di linux che permette al kernel di funzionare come un [[../Virtualizzazione#Hypervisor|hypervisor]].
 
-Proxmox ha una [[../Docker/Docker#Nome di una Immagine Docker|repository]] di immagini `LXC` già pronte.
+Proxmox ha una [[../Docker/Docker#Architettura|repository]] di immagini `LXC` già pronte.
 
 >[!caution] Migrazione a Caldo
 >Proxmox permette una ***migrazione di una macchina virtuale in utilizzo*** da un nodo (potenzialmente molto utilizzato) ad un altro (più libero).
