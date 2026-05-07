@@ -108,3 +108,49 @@ Per potere aggiungere collegamenti di rete a *container in esecuzione*, si deve 
 >Il ***DNS embedded*** di docker, oltre a mappare i nomi dei container agli indirizzi `IP`, mappa anche l'indirizzo `IP` del container con il servizio #addLink che il container implementa.
 
 Si possono sovrascrivere queste opzioni di base quando si ***creano i container***.
+
+## Netfilter
+---
+```mermaid
+flowchart TD
+    A[/Network/]
+    Z[/Network/]
+    B@{ shape: stadium, label: "Raw pre-routing" }
+    C@{ shape: stadium, label: "Mangle pre-routing" }
+    D@{ shape: stadium, label: "NAT Prerouting" }
+	E(Routing Decision)
+	A-->B
+	B-->C
+	C-->D
+	D-->E
+	F@{ shape: stadium, label: "Mangle Input" }
+	G@{ shape: stadium, label: "Filter Input" }
+	H{{Local Process}}
+	I@{ shape: stadium, label: "Mangle Forward" }
+	L@{ shape: stadium, label: "Filter Forward" }
+	E-->F
+	F-->G
+	G-->H
+	E-->I
+	I-->L
+	J(Routing Decision)
+	K(Routing Decision)
+	L-->J
+	H-->K
+	M@{ shape: stadium, label: "Raw Output" }
+	N@{ shape: stadium, label: "Mangle Output" }
+	O@{ shape: stadium, label: "Nat Output" }
+	P@{ shape: stadium, label: "Filter Output" }
+	K-->M
+	M-->N
+	N-->O
+	O-->P
+	P-->J
+	Q@{ shape: stadium, label: "Mangle Post-Routing" }
+	R@{ shape: stadium, label: "Nat Post-Routing" }
+	J-->Q
+	Q-->R
+	R-->Z
+```
+
+> Schema di gestione pacchetti di un host all'interno del ***kernel Linux*** da parte di netfilter
