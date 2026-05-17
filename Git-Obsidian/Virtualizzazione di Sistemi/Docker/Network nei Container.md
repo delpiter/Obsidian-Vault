@@ -6,6 +6,20 @@
 I container hanno il *networking* abilitato di default, e sono in grado di creare connessioni all'esterno.
 - Un container ***non ha conoscenza*** su che tipo di rete è connesso o se i suoi [[../../Reti/Introduzione/Comunicazione#Peer to Peer|peer]] sono altri container, vede solo un'interfaccia con un [[../../Reti/Network Layer/Protocollo IP|indirizzo IP]], un **gateway**, una [[../../Reti/Network Layer/Routing/Routing#Tabella di Routing IP|routing table]] e altri dettagli della rete.
 
+### Comandi
+> Docker fornisce diversi comandi per la gestione delle reti.
+
+- `{sh icon} docker network create`
+	- Usato per creare una rete di docker con opzioni precise.
+- `{sh icon} docker network connect`
+	- Usato per connettere un container ad una rete esistente.
+- `{sh icon} docker network ls`
+	- Listing delle reti di docker esistenti
+- `{sh icon} docker network rm networkName|networkId`
+	- Usato per eliminare una rete (se nessun container è connesso)
+- `{sh icon} docker network disconnect`
+	- Comando duale del comando connect.
+- `{sh icon} docker network inspect`
 ### User-defined networks
 > Può essere utile separare gruppi di container che dovrebbero avere completo accesso tra di loro, ma accesso ristretto ad altri gruppi.
 
@@ -13,6 +27,33 @@ I container hanno il *networking* abilitato di default, e sono in grado di crear
 >Si possono creare delle ***reti personalizzate***, e connettere *gruppi di container* alla stessa rete.
 
 Una volta connessi ad una rete user-defined, i container possono comunicare con gli altri usando ***indirizzi*** `IP` o ***nomi dei container***.
+
+>[!warning] Importante
+>È raccomandato l'utilizzo dell'opzione `--subnet` quando viene creata una rete.
+>Se non è specificato, il daemon docker sceglie *automaticamente* una **subnet** per la rete che ***potrebbe sovrapporsi*** con una subnet nella infrastruttura dell'host che *non è gestita da docker*.
+
+Oltre alla subnet (`--subnet=192.168.0.0/16`) è possibile definire:
+- Gateway: `--gateway=192.168.0.10`
+- Aux address: `--aux-address="my-router=192.168.1.3"`, assegna dei nomi host a degli indirizzi che devono essere visti dai container.
+
+>[!caution] Opzioni
+
+> ***Ip masquerade*** ([[../../Reti/Network Layer/Network Security/Network Address Translation|NAT]]).
+- `--ip-masq`.
+
+> ***Host binding ipv4***
+- Serve a definire a quale indirizzo ip dell'host deve essere associata una porta esposta da un container sull'host.
+- `--ip`.
+
+> ***Internal***
+- Quando specificata *impedisce che la rete creata possa comunicare con l'host*.
+- Usata per avere una comunicazione privata tra container.
+- `--internal`.
+
+>[!abstract] Connessione con un contaner
+
+Per connettere un container ad una ***rete user-defined*** è sufficiente eseguire il comando `{sh icon} docker run` con il parametro [[Docker Cheatsheet#Parametri del comando Run|--network]] indicando il nome della rete appena creata.
+- Cosi facendo verrà creata una interfaccia di rete virtuale al container che si affaccia alla rete specificata.
 ### Drivers
 > Il sottosistema di rete di docker è collegabile, utilizzando i **driver**.
 
@@ -27,10 +68,12 @@ Esistono diversi *driver di default* che forniscono funzionalità di rete di bas
 | [[#IPVlan]]  | Connect containers to external VLANs.                               |
 | [[#MACVlan]] | Containers appear as devices on the host's network.                 |
 Il tipo di rete che un container utilizza è indifferente dal punto di vista del container.
-- Il container vede: [[../../Reti/Network Layer/Protocollo IP|indirizzo IP]], un **gateway**, una [[../../Reti/Network Layer/Routing/Routing#Tabella di Routing IP|routing table]], i servizi [[../../Reti/Application Layer/DNS]] e altri servizi.
+- Il container vede: [[../../Reti/Network Layer/Protocollo IP|indirizzo IP]], un **gateway**, una [[../../Reti/Network Layer/Routing/Routing#Tabella di Routing IP|routing table]], i servizi [[../../Reti/Application Layer/DNS|DNS]] e altri servizi.
 
 #### Bridge
 > Quando docker engine inizia per la prima volta ha una singola rete chiamata "***default bridge***".
+
+Una rete bridge risiede su un singolo host che esegue una istanza di ***docker engine***.
 
 >[!definizione]
 >In termini di docker, una ***rete bridge*** utilizza un bridge software, che permette ai container connessi alla *stessa rete bridge* di comunicare, garantendo un'isolazione dai container che **non** appartengono alla stessa rete bridge.
@@ -74,11 +117,11 @@ Il ***docker daemon*** indirizza il traffico ai container attraverso gli indiriz
 >Di default un container **non** ha nessuna porta aperta al mondo esterno, per aprirla si deve usare il comando `--publish` o `-p`, con la seguente sintassi:
 >- `{sh} -p hostPort:containerPort`
 
-- Questo crea una regola del [[../../Reti/Network Layer/Network Security/Firewall]] che ***mappa*** una porta del container a una porta dell'host docker.
+- Questo crea una regola del [[../../Reti/Network Layer/Network Security/Firewall|firewall]] che ***mappa*** una porta del container a una porta dell'host docker.
 
 | Flag Value                            | Description                                                                                                                                               |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `{sh} -p 8080:80`                     | Map a [[../../Reti/Transport Layer/TCP]] port `80` in the container to the port `8080` in the host                                                                                   |
+| `{sh} -p 8080:80`                     | Map a [[../../Reti/Transport Layer/TCP\|TCP]] port `80` in the container to the port `8080` in the host                                                   |
 | `{sh} -p 192.168.10.100:8080:80`      | Map a `TCP` port `80` in the container to port `8080` on the docker host for connections to `IP` `192.168.10.100` of the host.                            |
 | `{sh} -p 8080:80/tcp -p 8080:80/udp ` | Maps a `TCP` port `80` in the container to `TCP` port `8080` in the host and map an `UDP` port `80` in the container to the `UDP` port `8080` in the host |
 
@@ -90,7 +133,7 @@ Per vedere tutte le porte definite in un container, esegui il comando:  `{docker
 L'indirizzo è assegnato da una ***pool di indirizzi*** assegnata alla rete.
 
 >[!note] DHCP
-> Il ***docker daemon*** agisce come un server [[../../Reti/Application Layer/DHCP]] per ogni container.
+> Il ***docker daemon*** agisce come un server [[../../Reti/Application Layer/DHCP|DHCP]] per ogni container.
 > Ogni rete ha una **subnet mask** e un **gateway** di default.
 
 Quando un container viene inizializzato può essere connesso ad una singola rete usando il flag `--network`.
@@ -102,13 +145,12 @@ Quando un container viene inizializzato può essere connesso ad una singola rete
 
 Per potere aggiungere collegamenti di rete a *container in esecuzione*, si deve usare il comando `docker network connect`.
 ### DNS
-> Di default il container eredita la **configurazione** [[../../Reti/Application Layer/DNS]] dell'host.
+> Di default il container eredita la **configurazione** [[../../Reti/Application Layer/DNS|DNS]] dell'host.
 
 >[!help] Docker DNS
 >Il ***DNS embedded*** di docker, oltre a mappare i nomi dei container agli indirizzi `IP`, mappa anche l'indirizzo `IP` del container con il servizio #addLink che il container implementa.
 
 Si possono sovrascrivere queste opzioni di base quando si ***creano i container***.
-
 ## Netfilter
 ---
 ```mermaid
@@ -153,4 +195,16 @@ flowchart TD
 	R-->Z
 ```
 
-> Schema di gestione pacchetti di un host all'interno del ***kernel Linux*** da parte di netfilter
+> Schema di gestione pacchetti di un host all'interno del ***kernel Linux*** da parte di netfilter.
+
+>[!tldr] Idea
+>***Ip-tables*** (*comando*) e ***netfilter*** (*insieme di moduli di kernel*) sono una coppia di strumenti forniti dal sistema linux.
+>Questa coppia permette di definire una struttura di regole da seguire, definite da ip-tables e gestite da netfilter.
+
+Vengono definiti alcuni ***stati*** in cui si trovano i pacchetti funzione di come arrivano nel sistema e di quali operazioni devono svolgere.
+
+>[!example] Esempio
+
+Quando un pacchetto viene ricevuto da una macchina.
+1. Si verifica a chi è indirizzato il pacchetto.
+	- In questo momento il pacchetto è in stato di ***prerouting***.

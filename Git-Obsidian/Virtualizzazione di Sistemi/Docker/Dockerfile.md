@@ -15,6 +15,44 @@ docker image inspect image_name
 Se voglio selezionare solo un campo del file in formato `{json icon} JSON`, posso usare il flag `--format`:
 ```sh
 docker image inspect image_name --format='{{.Id}}'
+docker image inspect image_name --format='{{json.NetworkSettings.Networks}}' containerId
+```
+
+> Esiste anche un comando docker network inspect
+- Valido esclusivamente per le reti docker.
+- L'output è un file che contiene informazioni come:
+	- Elenco dei container connessi alla rete
+	- Informazioni sulle impostazioni attivate per la particolare rete.
+
+```sh title:example
+docker network inspect [options] networkName|networkId
+```
+
+```json title:output
+[
+	{
+		"Name": "bridge", "Scope": "local",
+		"IPAM": { "Config": [ { "Subnet": "172.17.0.0/16" } ] },
+		"Internal": false,
+		"Containers": 
+		{ "f48fc7c2f0993ef49a0ad157717b999a11300699728ad13214d56554b387133c": {
+			"Name": "hello2_web_1",
+			"EndpointID": "08993ebb840f18996ca494795f457751b3117e7517e025b557c289fcbd241732",
+			"MacAddress": "02:42:ac:11:00:03",
+			"IPv4Address": "172.17.0.3/16",
+			"IPv6Address": ""
+			}
+		},
+		"Options": {
+			"com.docker.network.bridge.default_bridge": "true",
+			"com.docker.network.bridge.enable_icc": "true",
+			"com.docker.network.bridge.enable_ip_masquerade": "true",
+			"com.docker.network.bridge.host_binding_ipv4": "0.0.0.0",
+			"com.docker.network.bridge.name": "docker0",
+			"com.docker.network.driver.mtu": "1500"
+		},
+	}
+]
 ```
 
 #### Layers
