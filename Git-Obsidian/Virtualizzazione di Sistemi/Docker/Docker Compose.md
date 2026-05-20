@@ -106,7 +106,7 @@ Il formato di un compose file richiede specificatamente che alcune chiavi abbian
 
 ### Sintassi
 >[!abstract] Services
->Definisce i ***servizi*** che compongono l'applicazione
+>Definisce i ***servizi*** che compongono l'applicazione, ogni ***servizio*** è una *immagine di container* e le sue strutture (network, volumi, ...).
 
 ```yaml
 services:

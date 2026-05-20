@@ -151,6 +151,8 @@ Per potere aggiungere collegamenti di rete a *container in esecuzione*, si deve 
 >Il ***DNS embedded*** di docker, oltre a mappare i nomi dei container agli indirizzi `IP`, mappa anche l'indirizzo `IP` del container con il servizio #addLink che il container implementa.
 
 Si possono sovrascrivere queste opzioni di base quando si ***creano i container***.
+
+Il `DNS` embedded di docker **non** mappa quando due container condividono la rete bridge di default, devono essere stati connessi ad una rete ***user-defined***.
 ## Netfilter
 ---
 ```mermaid

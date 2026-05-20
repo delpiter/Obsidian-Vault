@@ -42,7 +42,7 @@ Un ***interrupt*** può essere considerato un "*evento a basso livello*".
 
 ### FSM Asincrone
 >[!tldr] Idea
->Le `FSM` asincrone sono basate su due concetti base, il ***super-loop ininterrompibile*** (*event loop*) e una [[../../Algoritmi e Strutture Dati/Strutture Dati/Queue]] di eventi.
+>Le `FSM` asincrone sono basate su due concetti base, il ***super-loop ininterrompibile*** (*event loop*) e una [[../../Algoritmi e Strutture Dati/Strutture Dati/Queue|coda]] di eventi.
 
 Non c'è il concetto di [[Architetture Task-Based#Architetture Task-Based|periodo]].
 
