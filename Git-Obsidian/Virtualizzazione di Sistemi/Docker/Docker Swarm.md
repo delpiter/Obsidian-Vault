@@ -211,3 +211,4 @@ Questa opzione attiva un meccanismo, detto ***routing mesh***:
 
 >[!missing] Inefficienza
 >Il *routing mesh* causa una notevole latenza, poiché una risposta ad una richiesta che è stata inoltrata ad un nodo ***deve ripercorrere la stessa route all'indietro***.
+
