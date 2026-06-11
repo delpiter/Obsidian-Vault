@@ -22,7 +22,7 @@ val b = 3
 Una proprietà `const` **DEVE** soddisfare i seguenti requisiti:
 - Deve essere inizializzato con valore `String` o un tipo primitivo.
 - Non può essere un getter personalizzato
-- Deve essere una proprietà top-level, un membro di un object o la dichiarazione di un companion object. #addLink
+- Deve essere una proprietà top-level, un membro di un object o la dichiarazione di un [[Classi in Kotlin#Companion Objects|companion object]].
 
 #### Stringhe
 > `{kt icon} Kotlin` offre alcune funzionalità per la gestione delle stringhe.

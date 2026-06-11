@@ -114,7 +114,7 @@ Si richiede di:
 
 >[!tip] Kerberos
 >Protocollo che attraverso ***chiavi di cifrature*** e ***marche temporali*** identificano i due attori della comunicazione.
-- Protocollo usato da ***microsoft active directory***. #addLink
+- Protocollo usato da ***microsoft*** [[Ciro/Active Directory|Active Directory]].
 
 Composto da due server:
 - Uno per l'**autenticazione**.

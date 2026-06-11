@@ -148,7 +148,7 @@ Per potere aggiungere collegamenti di rete a *container in esecuzione*, si deve 
 > Di default il container eredita la **configurazione** [[../../Reti/Application Layer/DNS|DNS]] dell'host.
 
 >[!help] Docker DNS
->Il ***DNS embedded*** di docker, oltre a mappare i nomi dei container agli indirizzi `IP`, mappa anche l'indirizzo `IP` del container con il servizio #addLink che il container implementa.
+>Il ***DNS embedded*** di docker, oltre a mappare i nomi dei container agli indirizzi `IP`, mappa anche l'indirizzo `IP` del container con il [[Docker Compose#Compose File|servizio]] che il container implementa.
 
 Si possono sovrascrivere queste opzioni di base quando si ***creano i container***.
 

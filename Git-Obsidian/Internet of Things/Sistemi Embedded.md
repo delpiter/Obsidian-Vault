@@ -51,7 +51,7 @@ Progettati per essere **robusti** a per la ***minima utilizzazione di risorse***
 Formati da 3 sottosistemi
 - **Parte fisica**.
 - Parte **embedded** (una o più piattaforme equipaggiate di sensori).
-- Parte Network #addLink 
+- Parte Network #addLink
 
 ## Embedded System Architecture
 ---

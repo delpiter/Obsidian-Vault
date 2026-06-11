@@ -48,11 +48,14 @@ Questi protocolli sono:
 - Lightweight Directory Access Protocol (`LDAP`)
 	- Protocollo di accesso a un servizio di directory
 	- Definisce il protocolli per lo scambio di informazioni della directory tra *client* e *server*.
-- Kerberos
+- [[../Kerberos|Kerberos]]
 	- Protocollo che permette l'autenticazione degli utenti, permette il [[../Scenari di Integrazione#Single Sign On|Single Sign On]]
 - Network Time Protocol (`NTP`)
 	- Protocollo che serve a sincronizzare gli orologi dei vari computer attraverso una rete a [[../../Reti/Introduzione/Comunicazione#Commutazione|commutazione di pacchetto]]
 - [[../../Reti/Application Layer/DNS|DNS]]
+	- Record DNS usati:
+		- ***SRV***: Localizzatore di servizi
+		- ***PTR***: Restituisce un nome di dominio dato un `IP`.
 
 ### Struttura di Active Directory
 #### Domini, Alberi e Foreste
@@ -60,6 +63,8 @@ Questi protocolli sono:
 
 >[!info] Dominio
 >Un ***dominio*** è un gruppo *logico* di computer che condividono un database di directory centralizzato.
+
+Un dominio di active directory è solitamente un dominio non accessibile dall'esterno (`.local`).
 
 > [!caution] Albero
 > Un ***albero*** è una struttura di domini che *condividono uno spazio dei nomi contiguo*.
@@ -75,7 +80,9 @@ Questi protocolli sono:
 
 **Non** hanno uno spazio dei nomi separato.
 - Due utenti in diverse `OU` possono avere lo **stesso username**.
+
 All'interno delle `OU` vengono tipicamente inseriti i computer ai quali si vogliono applicare particolari settaggi a seconda delle `OU` a cui appartengono (`Group Policy`).
+- Una group policy è una regola che viene applicata a tutti i dispositivi del gruppo.
 
 #### Sites
 
@@ -85,6 +92,8 @@ All'interno delle `OU` vengono tipicamente inseriti i computer ai quali si vogli
 La definizione dei *sites* è indipendente dalla struttura dei domini delle `OU`.
 - Vengono utilizzati per controllare il traffico di replicazione fra i vari domini.
 
+Definiscono le connessioni identificando connessioni lente (`WAN`, `VPN`) dalle connessioni veloci (`LAN`).
+- Principale utilizzo è quello di permettere ai client di connettersi al domain controller più vicino.
 #### Le partizioni
 
 > [!abstract] Info
@@ -123,3 +132,51 @@ Contiene oltre all'intera partizione del proprio dominio, una replica parziale e
 Si compone di due servizi principali:
 - `DFS Namespace`, è il servizio che si occupa di presentare le varie condivisioni come una unica unità
 - `DFS Replication`, è il servizio che si preoccupa di mantenere sincronizzate fra loro le unità distribuite.
+
+#### Ruoli in Active Directory
+
+> In Active Directory i domain controller sono allo stesso livello di importanza.
+
+Ogni modifica agli oggetti può essere fatta da qualunque `DC` (*multimaster update*).
+- Eventuali conflitti vengono gestiti attraverso il *conflict resolution* (Last edit wins).
+- In alcuni casi è meglio prevenire tale conflitto.
+
+
+> [!abstract] Operation Master
+> Per evitare questi conflitti è possibile definire un **operation master**, l'unico `DC` in grado di apportare modifiche.
+
+Questo ruolo è "trasferibile" tra controller, da qui il nome `FSMO` (Flexible Single Master Operation)
+
+##### Ruoli FSMO
+
+> [!help] Per-domain role
+> 
+
+> ***PDC Emulator***
+- Master per la sincronizzazione degli orologi e il cambio delle password utenti.
+
+> ***RID Master***
+- Gestisce i relative ID degli oggetti creati, responsabile dello spostamento degli oggetti tra domini.
+
+>***Infrastructure Master***
+- Gestisce la consistenza dei riferimenti degli oggetti tra i domini.
+
+
+> [!abstract] Per-forest role
+> 
+
+> ***Schema Master***
+- Gestisce i cambiamenti dello schema della foresta e la propagazione delle modifiche.
+
+>***Domain Naming Master***
+- Gestisce l'aggiunta o la rimozione di domini in una foresta.
+
+### Tools di Active Directory
+
+> [!help] Active Directory Domains and Trusts
+
+> Permette di:
+- *Visualizzare* i domini della foresta
+- *Gestire* il livello di funzionalità del dominio e della foresta
+- *Cambiare* il ruolo **domain name master**
+

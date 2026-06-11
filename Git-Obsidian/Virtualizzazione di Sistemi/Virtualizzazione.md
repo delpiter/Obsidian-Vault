@@ -164,4 +164,4 @@ Tra queste architetture ricordiamo:
 - [OpenStack](https://www.openstack.org/)
 - [OpenNebula](https://opennebula.io/)
 
-È anche possibile usare kubernetes #addLink .
+È anche possibile usare [[Docker/Kubernetes|Kubernetes]].
