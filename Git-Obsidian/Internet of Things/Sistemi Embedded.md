@@ -30,6 +30,8 @@ Progettati per essere **robusti** a per la ***minima utilizzazione di risorse***
 
 >[!abstract] Caratteristiche dei Sistemi
 
+"*One never ending program*"
+
 > **Critical Systems**
 - I sistemi embedded spesso sono fondamentali nel contesto dove sono usati.
 - Devono essere **affidabili** e **sicuri**.
@@ -38,6 +40,9 @@ Progettati per essere **robusti** a per la ***minima utilizzazione di risorse***
 - I sistemi embedded sono tipicamente usati in applicazioni dove i sistemi devono reagire a degli ***stimoli del mondo fisico***.
 - Nel caso di [[../Sistemi Operativi/Teoria/7 - Scheduler#Hard Real-Time|hard real time]] la violazione della deadline è considerata un fallimento del sistema.
 
+> **Efficienza**
+- I sistemi embedded sono progettati per avere una elevata efficienza energetica.
+- Devono essere inoltre efficienti in termini di: dimensione del codice, tempo di esecuzione, costi.
 ## Cyber-Physical Systems
 ----
 >[!definizione]
@@ -58,9 +63,10 @@ Formati da 3 sottosistemi
 ![[attachements/HardwareArchitecture.png]]
 
 ### Processore
->[[../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU|!caution]]
+>[!caution] [[../Architettura degli Elaboratori/Architettura del Calcolatore/La CPU|CPU]]
 >***General-Purpose processors***
 >- Processori con un insieme di istruzioni e una architettura *predefinita*.
+>- Il comportamento del sistema è definito dal programma (*software*).
 >
 >***Single-Purpose processors***
 >- Circuiti progettati per implementare una *specifica funzione*.
@@ -73,14 +79,6 @@ Formati da 3 sottosistemi
 
 Il ***microcontroller*** integra in un singolo chip tutti i componenti richiesti per avere una completa autonomia.
 - È in grado di eseguire **autonomamente** i *task* per il cui sistema embedded è progettato.
-
-#tomove
->[!question] Domanda Orale: Conoscere la differenza tra microcontroller e microprocessore
-
->[!question] Dov'è il microcontroller in arduino?
-
->[!question] Dov'è la memoria?
-
 #### System On a Chip
 >[!help] SoC
 >Il ***system on a chip*** è un [[../Architettura degli Elaboratori/Algebra di Bool e Logica Digitale/Circuiti Digitali#Circuiti Integrati|chip]] che integra un sistema completo (`CPU`, *memoria*, *controller* *I*/*O* e controller di rete).
@@ -105,7 +103,7 @@ Possono essere:
 >[!abstract] Azionatori
 >Gli ***azionatori*** sono dispositivi che producono degli effetti misurabili nell'ambiente.
 
->[[../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori|!caution]]
+>[!caution] [[../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori|BUS]]
 >Le *interazioni* tra il processore e i sensori è possibile tramite i `BUS`.
 
 Tipicamente ***seriali***.

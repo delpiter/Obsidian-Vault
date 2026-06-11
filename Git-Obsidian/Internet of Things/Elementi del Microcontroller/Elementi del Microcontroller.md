@@ -9,6 +9,20 @@
 
 ![[attachements/MicrocontrollerElements.png]]
 
+> [!hint] Differenze tra microcontrollore e microprocessore
+>
+
+I ***microcontroller*** sono piccoli sistemi contenuti interamente in un unico chip completamente assestante.
+- Un *microcontrollore* ha un piccolo *microprocessore* al suo interno.
+Utilizzano una architettura speciale chiamata ***Harvard Architecture***.
+- Una memoria per il codice, una per i dati.
+- I ***registri*** sono mappati all'interno della memoria dei dati.
+
+![[attachements/HarvardArchitecture.png]]
+
+Un ***microprocessore*** è un dispositivo molto più potente di un microcontrollore con capacità computazionali molto elevate.
+- A differenza del microcontroller **necessita di periferiche** come memoria, controller e interfacce di comunicazione.
+Usato in sistemi con architettura di [[../../Architettura degli Elaboratori/Architettura del Calcolatore/Organizzazione del Calcolatore|Von Neumann]].
 
 ## Basic Control Architecture
 ---

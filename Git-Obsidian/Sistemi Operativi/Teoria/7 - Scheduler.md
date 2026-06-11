@@ -199,6 +199,11 @@ L'*aging* è una tecnica che consiste nell'***incrementare gradualmente*** la pr
 >[!info] Concetto
 >In un sistema ***real-time*** la correttezza dell'esecuzione non dipende solamente dal *valore restituito*, ma anche dall'*istante temporale* nel quale il risultato viene emesso
 
+Un sistema real time deve essere:
+- Efficente
+- Affidabile
+- Deterministico e Predicibile
+
 >Scheduler Real-Time
 
 >[!note] Earliest Deadline First

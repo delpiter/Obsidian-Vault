@@ -16,12 +16,15 @@ I pin possono essere [[../../Architettura degli Elaboratori/Rappresentazione del
 >[!help] Parametri di riferimento per i `PIN`
 
 > ***Voltaggio***: [[../../Fisica/Elettromagnetismo/Potenziale Elettrico#Potenziale Elettrico|Volt]]
+- Da applicare al pin (*input*) o prodotto dal pin (*output*).
 
 > ***Corrente***: [[../../Fisica/Elettromagnetismo/Circuiti/Corrente Elettrica#Ampere|Ampere]]
-
+- Corrente che si è in grado di ricevere (*input*) o prodotta (*output*)
+- In questo caso si parla di *milliampere* ($40mA$, arduino o $12mA$, ESP32).
 
 Oltre ad essere general purpose, alcuni `PINs` hanno delle ***funzioni aggiuntive*** che possono essere attivate:
-- Dette `PIN` [[../../Reti/Introduzione/Multiplexing|multiplexed]] functions 
+- Dette `PIN` [[../../Reti/Introduzione/Multiplexing|multiplexed]] functions.
+
 >[!example] Esempi
 - **Interfacce seriali**.
 - **Interrupt**.
@@ -31,9 +34,21 @@ Oltre ad essere general purpose, alcuni `PINs` hanno delle ***funzioni aggiuntiv
 >Il ***microcontroller*** interagisce con i `PIN` attraverso le ***porte***.
 >- Come per i `PIN` le *porte* possono essere sia di *input* che di *output*.
 
-Una porta è gestita da uno o più `SRF` (***S***pecial ***P***urpose ***R***egisters).
+Una porta è gestita da uno o più `SRF` (Special Purpose Registers).
 - Ha il compito di mantenere lo ***stato*** (il valore corrente) e la configurazione (**input**/**output**).
 
+Sul `ATMega328P` (arduino):
+- Ogni porta è gestita da 3 registri
+	- *DDRx*, *PORTx*, *PINDx*, dove *x* è il nome della porta.
+
+> `DDRx` mantiene la direzione del pin (**input/output**).
+
+> `PORTx` mantiene lo stato del pin.
+- Per un pin input il `bit` a $1$ attiva la resistenza di Pull Up, a $0$ la disattiva.
+	- Le resistenze usate nei circuiti per garantire che gli ingressi di un sistema logico stabilito siano a livelli logici previsti se i dispositivi esterni sono scollegati.
+- Per pin output il `bit` a $1$ indica lo stato `HIGH`, $0$ lo stato `LOW`.
+
+> `PINx`, per i pin input, mantiene il valore del segnale letto.
 ### Impostare, Scrivere e Leggere un PIN
 >Ci sono delle `API` per il funzionamento dei `PIN`.
 
@@ -66,7 +81,10 @@ void delay(unsigned long ms)
 
 L'output è definito dal ***duty cycle***.
 - Il ***duty cycle*** è un valore percentuale che rappresenta il periodo in cui il segnale è `HIGH`.
-- Il valore medio del voltaggio è dato dalla seguente equazione: $\text{duty-cycle}\cdot VCC$.
+- Il valore medio del voltaggio è dato dalla seguente equazione:
+$$
+\text{VCC}_{\text{average}} = \text{duty cycle } \times \text{VCC}
+$$
 
 ### Interrupt
 >[!info]
@@ -79,6 +97,7 @@ Una `CPU` fornisce diversi `PIN`, chiamati `IRQ` (interrupt request), per ***ric
 
 Queste funzioni devono essere usate con ***cautela***.
 - Si vuole avere una "***interrupt latency***" *bassa*. (tempo usato per reagire ad un interrupt).
+- È meglio evitare utilizzare funzioni come `delay()`
 #### Handling interrupts in Wiring
 > `API`:
 - `attachInterrupt(intNum, ISR, mode)`, where

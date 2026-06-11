@@ -15,6 +15,10 @@ Per questo motivo sono state introdotte delle interfacce di comunicazione specif
 
 ![[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#BUS Sincroni e Asincroni]]
 
+In interfacce seriali asincrone, non c'è una linea per il clock, la sincronizzazione avviene tramite un ***protocollo*** per assicurare una trasmissione *senza errori*.
+
+Il protocollo può essere configurato attraverso alcuni parametri che devono essere concordati da entrambe le parti della comunicazione.
+
 >[!abstract] BAUD Rate
 >La velocità di trasmissione in `bit`$/\sec$ 
 
@@ -23,7 +27,7 @@ A livello hardware, un `BUS` seriale è composto da due *linee*:
 - Una per ricevere i `bit`.
 
 Uno dei componenti principali di un sistema seriale è `UART` (***U***niversal ***A***synchronous ***R***eceiver ***T***ransmitter).
-	- Ha il compito di [[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#Arbitraggio del BUS|arbitrare]] i dati che arrivano e che partono dalle interfacce seriali.
+- Ha il compito di [[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#Arbitraggio del BUS|arbitrare]] i dati che arrivano e che partono dalle interfacce seriali.
 #### Data Frame
 > Ogni blocco di dato è trasmesso in un pacchetto chiamato ***frame***.
 
@@ -42,6 +46,13 @@ title: "Data Frame"
 >[!warning] Attenzione
 >Prestare attenzione all'"[[../../Definizioni/Definizioni_Architettura#Ordinamento dei `BYTE`|endianess]]".
 
+#### Hardware Seriale
+> A livello hardware un bus asincrono seriale è composto da due linee.
+
+Una che trasmette i `bit` e una che li riceve.
+
+![[../../Internet of Things/Elementi del Microcontroller/attachements/SerialLine.png]]
+
 #### Libreria Seriale
 > `Serial`class is an extension of `Stream` and includes methods such as:
 - `{c}begin()`, `{c}end()`
@@ -57,7 +68,7 @@ char data;
 
 void setup()
 {
-	Serial.begin(9600);
+	Serial.begin(9600); // baud rate
 }
 
 void loop()
@@ -75,7 +86,7 @@ void loop()
 >Il protocollo "***eye to see***" è un protocollo standard per i `BUS`.
 
 Buone velocità, minimizzando il numero di `PIN` richiesti.
-- Anche detto `TW` (Two Wire) poiché usa solo $2$ linee per la comunicazione (**data** e **clock**).
+- Anche detto `TW` (Two Wire) poiché usa solo $2$ linee per la comunicazione (**data** e **clock**), rispettivamente `SDA` (*Serial Data Line*) e `SCL` (*Serial Clock Line*).
 
 Ha una architettura di tipo [[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#Master e Slave|master e slave]].
 - La comunicazione è sempre iniziata dal **master**.
@@ -86,3 +97,6 @@ Ha una architettura di tipo [[../../Architettura degli Elaboratori/Architettura 
 >Il `BUS` ***SPI*** implementa un protocollo seriale ***full-duplex*** che permette una comunicazione bidirezionale tra il *master* e gli *slaves*.
 
 **Non** è uno *standard ufficiale*.
+
+Si differenzia dal $I^{2}C$, poiché vengono usate linee diverse per inviare e ricevere dati.
+- Una linea specifica viene usata per decidere con quale slave il master deve comunicare.

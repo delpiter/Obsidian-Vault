@@ -235,3 +235,21 @@ Concetto fondamentale nei [[../../Sistemi Operativi/Teoria/7 - Scheduler#Schedul
 Lo scheduler deve avere le capacità di gestire i ***task aperiodici***, tramite:
 - Inserimento e rimozione di task in maniera **dinamica**.
 - Assegnamento *dinamico della priorità*.
+
+### Proprietà temporali dei task
+> [!cite] Proprietà
+> Le ***proprietà temporali*** delle task sono definite da 4 parametri fondamentali.
+
+> ***Release time***
+- È l'istante temporale in cui la task entra nella ready queue.
+
+> ***Execution Time***
+- Durata massima della task (`WCET`). 
+
+> ***Response Time***
+- Intervallo di tempo tra l'avvio della task e il suo completamento.
+
+> ***Deadline***
+- Tempo massimo permesso per eseguire la task.
+
+[[../../Sistemi Operativi/Teoria/7 - Scheduler#Criteri di Scelta di uno Scheduler|Criteri di scelta di uno scheduler]].

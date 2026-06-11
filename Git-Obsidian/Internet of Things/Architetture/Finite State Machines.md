@@ -38,7 +38,7 @@ Formalmente definiamo lo stato come una "***codifica di tutto ciò che è accadu
 >[!definizione] Finite State Machine
 >Una ***macchina a stati finiti*** è una macchina dove l'insieme degli [[#State|stati]] possibili è un [[../../Analisi/Concetti Base#Modi per identificare insiemi|insieme finito]].
 
-Se il numero di stati è *ragionevolmente piccolo*, le macchine a stati finiti possono essere rappresentate usando lo [[../../Ingegneria del Software/UML/State Diagram]].
+Se il numero di stati è *ragionevolmente piccolo*, le macchine a stati finiti possono essere rappresentate usando lo [[../../Ingegneria del Software/UML/State Diagram|state diagram]].
 
 ```mermaid
 stateDiagram
