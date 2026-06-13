@@ -146,14 +146,28 @@ Altri comandi:
 - `restart` indica cosa deve essere fatto nel caso il container non venga eseguito con successo.
 
 
->[!cite] Volumes
+>[!cite] Volumes e Networks
 
 ```yaml
 volumes:
  db_data:
+
 networks:
- my_network:
+ inner:
+  driver: bridge
+  internal: true
+  driver_opts:
+   com.docker.network.enable_ipv6: "false"
+ outer:
+  driver: bridge
+  internal: false
+  driver_opts:
+   com.docker.network.enable_ipv6: "false"
 ```
+
+La sezione networks definisce due reti: `inner` e `outer`.
+- Ogni servizio con `{yaml icon} networks: - outer` o `inner` è collegato alla rete specificata.
+- `inner` permette la comunicazione solo con altri container della rete, mentre `outer` **consente di comunicare con l'host**.
 
 ### Comandi docker Compose
 >[!tldr] Info

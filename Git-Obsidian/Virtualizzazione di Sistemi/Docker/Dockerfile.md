@@ -489,7 +489,7 @@ Gli argomenti di `docker run` vengono aggiunti dopo `ENTRYPOINT` (forma exec) e 
 | Entry_line                 | CMD_line            |                                  | Entry_line CMD_line    |
 | Entry_line                 |                     | Opt_cmdline                      | Entry_line Opt_cmdline |
 | Entry_line                 | CMD_line            | Opt_cmdline                      | Entry_line Opt_cmdline |
-|                            |                     |                                  |                        |
+|                            |                     |                                  | error                  |
 |                            | CMD_line            |                                  | CMD_line               |
 |                            |                     | Opt_cmdline                      | Opt_cmdline            |
 |                            | CMD_line            | Opt_cmdline                      | Opt_cmdline            |
