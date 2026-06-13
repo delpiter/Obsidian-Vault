@@ -482,32 +482,17 @@ Gli argomenti di `docker run` vengono aggiunti dopo `ENTRYPOINT` (forma exec) e 
 #### Interazione CMD e ENTRYPOINT
 > Sia `ENTRYPOINT` che `CMD` concorrono a *definire il comando principale* che viene eseguito appena il container è in esecuzione.
 
-<table>
-    <tr>
-      <th></th>
-      <th>Nessun ENTRYPOINT</th>
-      <th><code>ENTRYPOINT exec_entry</code></th>
-      <th><code>ENTRYPOINT ["exec_entry"]</code></th>
-    </tr>
-    <tr>
-      <th>Nessun CMD</th>
-      <td>errore</td>
-      <td><code>/bin/sh -c exec_entry</code></td>
-      <td><code>exec_entry</code></td>
-    </tr>
-    <tr>
-      <th><code>CMD ["exec_cmd"]</code></th>
-      <td><code>exec_cmd</code></td>
-      <td><code>/bin/sh -c exec_entry</code></td>
-      <td><code>exec_entry exec_cmd</code></td>
-    </tr>
-    <tr>
-      <th><code>CMD exec_cmd p1_cmd</code></th>
-      <td><code>/bin/sh -c exec_cmd p1_cmd</code></td>
-      <td><code>/bin/sh -c exec_entry p1_entry</code></td>
-      <td><code>exec_entry p1_entry /bin/sh -c exec_cmd p1_cmd</code></td>
-    </tr>
-</table>
+
+| `{docker icon} ENTRYPOINT` | `{docker icon} CMD` | `{sh icon} docker run --options` | Result command         |
+| -------------------------- | ------------------- | -------------------------------- | ---------------------- |
+| Entry_line                 |                     |                                  | Entry_line             |
+| Entry_line                 | CMD_line            |                                  | Entry_line CMD_line    |
+| Entry_line                 |                     | Opt_cmdline                      | Entry_line Opt_cmdline |
+| Entry_line                 | CMD_line            | Opt_cmdline                      | Entry_line Opt_cmdline |
+|                            |                     |                                  |                        |
+|                            | CMD_line            |                                  | CMD_line               |
+|                            |                     | Opt_cmdline                      | Opt_cmdline            |
+|                            | CMD_line            | Opt_cmdline                      | Opt_cmdline            |
 
 >[!example] Esempio
 
