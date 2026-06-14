@@ -1,14 +1,14 @@
-## Stack e Tsak
+## Stack e Task
 ---
 >[!tldr] Idea
->Uno ***swarm*** è composto da uno o più nodi (*macchine*). Uno dei nodi assume il ruolo di manager, mentre gli altri.
+>Uno ***swarm*** è composto da uno o più nodi (*macchine*). Uno dei nodi assume il ruolo di **manager**, mentre gli altri sono nodi *worker*.
 
 Il **manager** copre anche il ruolo di *worker*, solitamente viene tenuto "scarico" per permettere di gestire il cluster.
 
 Uno **swarm** è in grado di eseguire uno *stack*
 
 >[!abstract] Stack
-> Uno ***stack*** è un gruppo di [[Docker Compose#Sintassi|servizio]].
+> Uno ***stack*** è un gruppo di [[Docker Compose#Sintassi|servizi]].
 > Ogni servizio è descritto attraverso un file [[Docker Compose]].
 
 Un servizio può essere distribuito su più nodi worker del cluster, creando più istanze su ogni nodo worker.
