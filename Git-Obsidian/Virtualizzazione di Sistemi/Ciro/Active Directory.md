@@ -79,11 +79,12 @@ Un dominio di active directory è solitamente un dominio non accessibile dall'es
 > Una ***organization unit*** è un contenitore che ci permette di organizzare gli oggetti (`OU`, *computer*, *users*, *groups*, etc...) per meglio rappresentare la struttura dell'organizzazione.
 
 **Non** hanno uno spazio dei nomi separato.
-- Due utenti in diverse `OU` possono avere lo **stesso username**.
+- Due utenti in diverse `OU` **NON** possono avere lo **stesso username**.
 
-All'interno delle `OU` vengono tipicamente inseriti i computer ai quali si vogliono applicare particolari settaggi a seconda delle `OU` a cui appartengono (`Group Policy`).
+All'interno delle `OU` vengono tipicamente inseriti i computer ai quali si vogliono applicare particolari impostazioni a seconda delle `OU` a cui appartengono (`Group Policy`).
 - Una group policy è una regola che viene applicata a tutti i dispositivi del gruppo.
 
+Le group policy possono essere ad un dominio, ai siti o alle singole `OU`.
 #### Sites
 
 > [!hint] Info
@@ -122,9 +123,12 @@ Definiscono le connessioni identificando connessioni lente (`WAN`, `VPN`) dalle 
 
 Contiene oltre all'intera partizione del proprio dominio, una replica parziale e di sola lettura delle *partizioni degli altri domini*.
 
+> Funzioni del ***Global Catalog***
+1. Viene usato per fare le ricerche dei client in Active Directory
+2. Logon dell'utente e appartenenza ai gruppi universali
+3. Quando un utente si autentica tramite lo User Principal Name il `GC` si occupa di capire a quale dominio appartiene per poi contattare un domain controller di quel dominio.
 #### Replicazione all'interno del Dominio
 > Alcuni dati della directory sono replicati attraverso un meccanismo chiamato `DFS`
-
 
 > [!failure] Distributed File System
 > Il `DFS` è un set di servizi che permette di presentare diverse condivisioni su diversi server, come unica unità ed eventualmente replicarle fra loro.
@@ -140,7 +144,6 @@ Si compone di due servizi principali:
 Ogni modifica agli oggetti può essere fatta da qualunque `DC` (*multimaster update*).
 - Eventuali conflitti vengono gestiti attraverso il *conflict resolution* (Last edit wins).
 - In alcuni casi è meglio prevenire tale conflitto.
-
 
 > [!abstract] Operation Master
 > Per evitare questi conflitti è possibile definire un **operation master**, l'unico `DC` in grado di apportare modifiche.

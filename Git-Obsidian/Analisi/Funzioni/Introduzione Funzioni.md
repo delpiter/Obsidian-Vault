@@ -307,7 +307,7 @@ f(x_{1})\geq f(x_{2})
 - È vero che $\forall x_{1},x_{2}$ con $x_{1}\leq x_{2}$ si ha $f(x_{1})\leq f(x_{2})$?
 $$
 \begin{array}
-/f(x)=mx+q \\
+/f(x)=mx+q \\ 
 mx_{1}+q \leq mx_{2}+q \\
 mx_{1}+\cancel{q} \leq mx_{2}+\cancel{q} \\
 m(x_{1}-x_{2})\leq 0 \\

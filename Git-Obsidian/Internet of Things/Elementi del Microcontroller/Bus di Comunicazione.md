@@ -91,7 +91,22 @@ Buone velocità, minimizzando il numero di `PIN` richiesti.
 Ha una architettura di tipo [[../../Architettura degli Elaboratori/Architettura del Calcolatore/BUS dei Calcolatori#Master e Slave|master e slave]].
 - La comunicazione è sempre iniziata dal **master**.
 - Il messaggio è ricevuto da tutti gli **slave**, solo il *target slave* reagisce al messaggio.
+- Tutti i dispositivi condividono le due linee (dati e clock)
 
+> ***Velocità di Trasferimento***
+- Supporta diverse modalità, tra cui la Standard Mode a $100 Kbit/s$ e versioni Low-speed a $10 Kbit/s$.
+
+##### Funzionamento
+> Tipicamente è il Microcontroller che inizializza la comunicazione.
+
+>[!abstract] Schema tipico di comunicazione
+
+1.  Invio di un bit di START da parte del Master;
+2.  Invio dell'identificativo a 7 bit del dispositivo Slave;
+3.  Definizione dell'operazione (bit di lettura 0 o scrittura 1) per interagire con i registri;
+4. Riscontro dello Slave tramite un bit di ACK (attivo a 0);
+5. Trasferimento dei dati: in scrittura il Master invia byte e riceve ACK, in lettura riceve byte e invia ACK;
+6. Chiusura della sessione tramite un bit di STOP inviato dal Master.
 ##### SPI
 >[!abstract] SPI
 >Il `BUS` ***SPI*** implementa un protocollo seriale ***full-duplex*** che permette una comunicazione bidirezionale tra il *master* e gli *slaves*.
@@ -99,4 +114,11 @@ Ha una architettura di tipo [[../../Architettura degli Elaboratori/Architettura 
 **Non** è uno *standard ufficiale*.
 
 Si differenzia dal $I^{2}C$, poiché vengono usate linee diverse per inviare e ricevere dati.
-- Una linea specifica viene usata per decidere con quale slave il master deve comunicare.
+- Una linea per il clock (`SCK` shared serial clock)
+- Una linea per inviare dati dal master allo slave (`MOSI`)
+- Una linea per inviare dati dal slave allo master (`MISO`)
+- Una linea specifica viene usata per decidere con quale slave il master deve comunicare (`SS`).
+
+Ci sono diversi modi con cui si possono connettere più slaves ad un master:
+- Usando multiple line `SS`
+- Usando una connessione a daisy chaining.

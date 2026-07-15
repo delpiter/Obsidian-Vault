@@ -42,10 +42,22 @@ Le tecnologie wireless si distinguono in base alla portata:
 | **Lungo raggio** | LPWA, 3G/4G/5G |
 
 #### WiFi
-
 Il WiFi segue lo standard **IEEE 802.11x** e, pur essendo ampiamente utilizzato anche in ambito embedded, non è stato progettato per quel contesto. Il suo principale limite è l'**alto consumo energetico**, che lo rende non ideale per dispositivi IoT a batteria.
 
-#### 5G
+
+#### Reti Cellulari
+> La comunicazione si effettua attraverso la rete cellulare a banda larga.
+
+Tecnologia in continua evoluzione
+
+>[!example] Caratteristiche
+
+- Data rate da $80Kbps$ fino ad alcuni $Mbps$
+- Range di alcuni chilometri
+- Alto consumo energetico (non il 5G)
+	- Non ideal per l'IoT.
+##### 5G
+Nuova tecnologia progettata per l'***IoT***
 
 > [!success] 5G e IoT
 > Il 5G porta con sé molti vantaggi: alta affidabilità, velocità di trasferimento elevata e basse latenze. È stato progettato **anche per l'IoT**, rendendolo una delle tecnologie più promettenti per i sistemi M2M del futuro.

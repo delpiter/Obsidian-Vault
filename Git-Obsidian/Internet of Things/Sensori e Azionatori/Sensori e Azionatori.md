@@ -113,12 +113,13 @@ Una precisione alta migliora la ripetibilità di un evento.
 >Un ***azionatore*** è un dispositivo che produce un effetto nell'ambiente.
 
 >[!info] Trasduttori
->I ***trasduttori*** sono dispositivi che convertono un tipo di [[../../Fisica/Lavoro e Energia/Energia]] in un altro tipo.
+>I ***trasduttori*** sono dispositivi che convertono un tipo di [[../../Fisica/Lavoro e Energia/Energia|Energia]] in un altro tipo.
 
 ### Interfacciamento
 > Due casi principali
 
->[[../Elementi del Microcontroller/General Purpose Input Output|!done]] è abbastanza
+>[!done] Il voltaggio dei [[../Elementi del Microcontroller/General Purpose Input Output|GPIO]] è abbastanzaa
+>
 
 >[!missing] Il voltaggio non è abbastanza.
 >Il dispositivo deve essere caricato da un ***circuito esterno***.
@@ -129,7 +130,7 @@ In questo caso il `GPIO` è usato per aprire/chiudere il circuito tramite [[../.
 > Da un punto di vista elettronico il carico può essere classificato in due categorie.
 
 >[!caution] Carichi Resistivi
-- Un componente che applica una [[../../Fisica/Elettromagnetismo/Circuiti/Resistenza Elettrica]] al passaggio di [[../../Fisica/Elettromagnetismo/Circuiti/Corrente Elettrica|corrente]], risultando in una ***variazione del livello di voltaggio***.
+- Un componente che applica una [[../../Fisica/Elettromagnetismo/Circuiti/Resistenza Elettrica|resistenza]] al passaggio di [[../../Fisica/Elettromagnetismo/Circuiti/Corrente Elettrica|corrente]], risultando in una ***variazione del livello di voltaggio***.
 
 >[!help] Carichi Induttivi
 - Dispositivi che lavorano [[../../Fisica/Elettromagnetismo/Induzione|inducendo corrente]] in un filo.

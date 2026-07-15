@@ -9,7 +9,7 @@
 
 Posto $h=Q^Tb=\begin{bmatrix}\underbrace{ h_{1} }_{ n \text{ componenti} }\\ \underbrace{ h_{2} }_{ m-n \text{ componenti}}\end{bmatrix}$
 si ha:
-$$
+$$ 
 \left\| 
 \left( 
 \underbrace{ \begin{bmatrix}
