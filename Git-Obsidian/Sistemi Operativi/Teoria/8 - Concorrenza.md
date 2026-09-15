@@ -8,7 +8,7 @@
 >Ogni [[6 - Processi, Schedule e Thread#Processi|processo]] viene eseguito ad una velocità ***finita***, ma ***sconosciuta***
 
 
->[!question] Che cos'è la ***concorrenza***?
+>[!question] Che cos'è la [[../../Concurrent Systems/Sistemi Concorrenti|Concorrenza]]?
 
 >La concorrenza riguarda la gestione di *processi multipli*
 
