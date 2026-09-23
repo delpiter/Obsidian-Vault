@@ -3,10 +3,17 @@
 
 ### Machine Learning
 >[!abstract]
->Un modello di ***machine learning*** durante la fase di training apprende a partire da esempi.
+>Un **modello** di ***machine learning*** durante la fase di training apprende a partire da esempi.
 >Successivamente è in grado di generalizzare e gestire nuovi dati nello stesso dominio applicativo.
 
 *Sinonimi di modello*: algoritmo, metodo, tecnica e approccio.
 
 > ***AI sub-simbolica***
 - Non utilizza dei simboli comprensibili agli umani, ma codifica l'informazione sotto forma di numeri come input.
+
+A seconda del contesto si possono usare i seguenti sinonimi di *modello*:
+- algoritmo, metodo, tecnica, approccio.
+
+### Storia
+![[../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Storia|Storia]]
+

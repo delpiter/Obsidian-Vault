@@ -1,4 +1,4 @@
-[[.md|Recursive Functions]]
+[[Recursive Functions]]
 ## Ricorsione
 ---
 >[!info] Definizione

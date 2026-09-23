@@ -102,3 +102,47 @@ Il processo $(x \to P | x \to Q)$ si dice non deterministico poiché dopo l'azio
 > Esempio
 
 `COIN = (toss->heads->COIN | toss -> tails -> COIN).`
+
+#### Indexed Processes and Action
+> [!tldr] Idea
+> In `FSP` sia i processi locali che le action label possono essere ***indicizzate***, modellando processi e azioni che **possono assumere valori multipli**.
+
+> Esempio: *Buffer*
+
+$\text{BUFF}=(in[i:0..3]\to out[i]\to BUFF)$
+
+È equivalente a scrivere:
+$$
+\begin{align}
+\text{BUFF}=(in[0]\to out[0]\to BUFF  \\
+\mid in[1]\to out[1]\to BUFF  \\
+\mid in[2]\to out[2]\to BUFF \\
+\mid in[3]\to out[3]\to BUFF)
+\end{align}
+$$
+#### Variabili
+> [!caution] Range
+> Si può specificare un ***range*** riutilizzabile in più punti.
+
+```
+range T = 0..3
+BUFF = (in[i:T]-> STORE[i]),
+STORE[i:T] = (out[i] -> BUFF)
+```
+
+> [!abstract] Costanti
+>
+
+$\text{const } N=3$
+#### Guarded Action
+> [!tldr] Idea
+> È spesso necessario definire alcune azioni in **base allo stato corrente della macchina**.
+> Si possono usare delle *espressioni booleane* (**guards**) per indicare che una azione specifica può essere selezionata ***solo se l'espressione è vera***.
+
+La scelta $(\text{when } B \ x\to P | y\to Q)$ significa che quando l'espressione $B$ è vera allora entrambe le azioni $x$ e $y$ possono essere scelte, altrimenti solo $y$ può essere scelta.
+```example
+COUNT (N=3) = COUNT[0],
+COUNT[i:0..N] = ( when(i<N) inc->COUNT[i+1]
+				| when(i>0) dec->COUNT[i-1]).
+```
+
