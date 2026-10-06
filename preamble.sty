@@ -1,0 +1,139 @@
+\newcommand{\emptyln}{\newline{}\newline{}}
+
+% Text color
+\newcommand{\red}[1]{{\color{red}{#1}}}
+\newcommand{\blue}[1]{{\color{blue}{#1}}}
+
+% Math shortcuts
+
+% --- fracs and notations ---
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\dhalf}{\dfrac{1}{2}}
+
+\newcommand{\pr}[2]{\pt{#1,\,#2}}
+
+\newcommand{\dist}[2]{dist\pt{{#1},\,{#2}}}
+
+\newcommand{\cssm}[2]{CosSimilarity\pt{{#1},\,{#2}}}
+\newcommand{\csds}[2]{CosDistance\pt{{#1},\,{#2}}}
+\newcommand{\ands}[2]{AngularDistance\pt{{#1},\,{#2}}}
+
+\newcommand{\inv}[1]{{#1}^{-1}}
+\newcommand{\T}[1]{{#1}^{T}}
+
+% --- Prob ---
+\newcommand{\p}[1]{P\pt{#1}}
+\newcommand{\dpb}[1]{p\pt{#1}}
+
+\newcommand{\ba}[2]{\p{{#1}|{#2}}}
+\newcommand{\dba}[2]{\dpb{{#1}|{#2}}}
+
+\newcommand{\ev}[1]{E\pt{{#1}}}
+
+% --- Parentheses ---
+\newcommand{\ab}[1]{\left | {#1} \right |}
+\newcommand{\nm}[1]{\left\|{#1}\right\|}
+
+\newcommand{\pt}[1]{{\left({#1}\right)}}
+\newcommand{\ps}[1]{{\left[{#1}\right]}}
+\newcommand{\pg}[1]{{\left\{{#1}\right\}}}
+
+\newcommand{\itc}[1]{\left[{#1}\right]}
+\newcommand{\ito}[1]{\left({#1}\right)}
+\newcommand{\itlo}[1]{\left({#1}\right]}
+\newcommand{\itro}[1]{\left[{#1}\right)}
+
+% --- Symbols ---
+\newcommand{\ift}{\infty}
+% integral
+\newcommand{\id}[1][x]{\mathrm{d}{#1}}
+% derivative
+\newcommand{\dd}{\partial}
+\newcommand{\dr}{\mathrm{d}}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\lw}[2][]{{#2}_{#1}}
+\newcommand{\hg}[2][]{{#2}^{#1}}
+
+\newcommand{\alo}{\lw[0]{a}}
+\newcommand{\ali}{\lw[1]{a}}
+\newcommand{\alii}{\lw[2]{a}}
+\newcommand{\aln}{\lw[n]{a}}
+
+\newcommand{\blo}{\lw[0]{b}}
+\newcommand{\bli}{\lw[1]{b}}
+\newcommand{\blii}{\lw[2]{b}}
+\newcommand{\bln}{\lw[n]{b}}
+
+\newcommand{\qlo}{\lw[0]{q}}
+\newcommand{\qli}{\lw[1]{q}}
+\newcommand{\qlii}{\lw[2]{q}}
+\newcommand{\qln}{\lw[n]{q}}
+
+\newcommand{\wlo}{\lw[0]{w}}
+\newcommand{\wli}{\lw[1]{w}}
+\newcommand{\wlii}{\lw[2]{w}}
+\newcommand{\wln}{\lw[n]{w}}
+
+\newcommand{\wi}{\lw[i]{w}}
+
+% --- Greek Letters ---
+\newcommand{\power}[2]{{#1}^{#2}}
+
+\newcommand{\al}[1][]{\power{\alpha}{#1}}
+\newcommand{\Al}[1][]{\power{\Alpha}{#1}}
+\newcommand{\bt}[1][]{\power{\beta}{#1}}
+\newcommand{\Bt}[1][]{\power{\Beta}{#1}}
+\newcommand{\dt}[1][]{\power{\delta}{#1}}
+\newcommand{\Dt}[1][]{\power{\Delta}{#1}}
+\newcommand{\eps}[1][]{\power{\epsilon}{#1}}
+\newcommand{\Eps}[1][]{\power{\Epsilon}{#1}}
+\newcommand{\gm}[1][]{\power{\gamma}{#1}}
+\newcommand{\Gm}[1][]{\power{\Gamma}{#1}}
+\newcommand{\lb}[1][]{\power{\lambda}{#1}}
+\newcommand{\Lb}[1][]{\power{\Lambda}{#1}}
+\newcommand{\si}[1][]{\power{\sigma}{#1}}
+\newcommand{\Si}[1][]{\power{\Sigma}{#1}}
+\newcommand{\te}[1][]{\power{\theta}{#1}}
+\newcommand{\Te}[1][]{\power{\Theta}{#1}}
+\newcommand{\om}[1][]{\power{\omega}{#1}}
+\newcommand{\Om}[1][]{\power{\Omega}{#1}}
+
+\newcommand{\m}[1][]{\power{\mu}{#1}}
+\newcommand{\Mu}[1][]{\power{\M}{#1}}
+
+\newcommand{\vphi}[1][]{\power{\varphi}{#1}}
+\newcommand{\veps}[1][]{\power{\varepsilon}{#1}}
+
+\newcommand{\hdt}[1][]{\hat{\power{\delta}{#1}}}
+
+\newcommand{\fte}[1]{\te\pt{#1}}
+\newcommand{\fTe}[1]{\Te\pt{#1}}
+
+\newcommand{\fphi}[1]{\phi\pt{#1}}
+\newcommand{\fvphi}[1]{\vphi[]\pt{#1}}
+\newcommand{\fPhi}[1]{\Phi\pt{#1}}
+
+% --- Functions ---
+\newcommand{\fx}[1][x]{f\pt{{#1}}}
+\newcommand{\gx}[1][x]{g\pt{{#1}}}
+
+\newcommand{\dfx}[1][x]{f'\pt{{#1}}}
+
+\NewDocumentCommand{\gix}{O{1} O{x}}{
+    {g_{#1}\pt{{#2}}}
+}
+
+\NewDocumentCommand{\gxy}{O{x} O{y}}{
+    {g\pt{{#1},\,{#2}}}
+}
+
+% --- Operators ---
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\sign}{sign}
+
+\newcommand{\vc}[2]{#1,\,\dots,\,#2}

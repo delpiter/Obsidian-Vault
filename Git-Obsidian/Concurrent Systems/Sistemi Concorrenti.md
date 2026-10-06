@@ -56,3 +56,25 @@ La concorrenza è una **modalità di strutturare il software**, per scrivere cod
 ---
 
 ![[../Architettura degli Elaboratori/Architetture a Confronto/Architetture Parallele|Architetture Parallele]]
+
+## Interleaving
+---
+> Approccio classico per modellare la concorrenza è l'utilizzo dell'*interleaving*.
+
+![[../Sistemi Operativi/Teoria/8 - Concorrenza#^4dcb27]]
+
+![[../Sistemi Operativi/Teoria/attachements/Interleaving.png]]
+
+Lo *scenario* dove due azioni vengono **eseguite allo stesso momento** viene scomposto in ***due scenari possibili*** con una esecuzione *sequenziale* delle due azioni:
+- Prima l'azione $A$ poi l'azione $B$
+- Prima l'azione $B$ poi l'azione $A$
+
+
+> [!cite] Preservando l'ordine della sequenza di azioni  relative ad ogni singolo processo.
+> 
+
+> [!danger] Non Determinismo
+> A causa dell'interleaving possiamo avere ***diversi scenari possibili*** come risultato dall'esecuzione di processi concorrenti.
+
+Il numero di scenari possibili potrebbe ***non essere finito***.
+- Siccome I processi eseguono a velocità relative le azioni di processi differenti sono *alternati arbitrariamente*.

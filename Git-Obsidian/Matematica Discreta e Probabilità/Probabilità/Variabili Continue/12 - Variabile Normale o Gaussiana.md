@@ -21,6 +21,12 @@ $$
 >[!info] Densità Normale Standard
 >$$f(s)=\frac{1}{\sqrt{ 2\pi }}\cdot e^{ -s^2/2 }$$
 
+
+> [!hint] Distribuzione Normale
+> La densità di probabilità della distribuzione normale è:
+> $$f(s)=\frac{1}{\sigma\sqrt{ 2\pi }}\cdot e^{ -(s-\mu)^2/2\sigma^{2} }$$
+
+Dove $\mu$ è il valore medio e $\sigma$ è la deviazione standard o scarto quadratico medio e il suo quadrato la varianza.
 ### Variabile Normale Standard
 >[!abstract] Definizione
 >Una [[../3 - Variabili Aleatorie|Variabile Aleatoria]] con questa densità 

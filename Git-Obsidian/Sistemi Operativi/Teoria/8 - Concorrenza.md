@@ -23,6 +23,8 @@ Esistono 3 modalità di gestione di processi multipli
 >[!abstract] Concetto: ***Interleaving***
 >I processi sono alternati con una velocità tale da dare l'impressione di avere un multiprocessore
 
+^4dcb27
+
 ![[attachements/Interleaving.png]]
 
 ### Multiprocessing
@@ -72,6 +74,7 @@ I problemi derivano dal fatto che ***non*** è possibile *predire* gli istanti t
 >"*Nothing Bad Happens*"
 >Indica che se il programma avanza, sta andando nella direzione "*voluta*"
 >>[!note] I meccanismi di sincronizzazione servono a ***garantire*** questa proprietà
+
 
 Nei programmi sequenziali:
 - Esprime la correttezza dello *stato finale*

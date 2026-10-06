@@ -3,12 +3,12 @@
 > [!hint] Definizione
 >  Un ***automa a stati finiti deterministico*** (`ASFD`) o *deterministic finite automaton* (`DFA`) è un *automa* a stati finiti dove per ogni coppia di stato e simbolo in ingresso c'è una ed una sola transizione allo stato successivo.
 
-Si dice deterministico se e solo se da ogni stato c'è una e una sola transizione uscente con ciascuno dei caratteri dell'alfabeto.
+Si dice deterministico **se e solo se** da ogni stato c'è una e una sola transizione uscente con ciascuno dei caratteri dell'alfabeto.
 
-Una `DFA` è una ***quintupla***.
-$$
-A=(Q,\Sigma,\delta,q_{0},F)
-$$
+### Definizione Formale
+>[!abstract] Una `DFA` è una ***quintupla***.
+> $$A=(Q,\Sigma,\delta,q_{0},F)$$
+
 > Dove:
 - $Q$ è un insieme finito di **stati**
 - $\Sigma$ è un [[Linguistica#Alfabeto|alfabeto]] finito
@@ -69,3 +69,20 @@ $$
 	&\hat\delta\left(q_0, \textcolor{red}{011}0\right) = \delta\left(\underbrace{\hat\delta\left(q_0,011\right)}_{\textcolor{red}{q_1}}, 0\right) = \delta\left(q_1, 0\right) = \textcolor{red}{q_1} \\
 \end{aligned}
 $$
+
+### Stato Pozzo
+> [!tldr] Idea 
+> In un `DFA` uno ***stato pozzo*** è uno stato di errore, dove ogni carattere dell'alfabeto è collegato allo stato stesso.
+
+Se durante il cammino di una stringa dell'alfabeto si finisce in uno ***stato pozzo***, il cammino concluderà per forza in questo stato.
+
+### Pattern Matematici
+> [!hint] Resto della divisione
+>
+
+Se un numero $n$ ha resto $r$ se diviso per $x$, allora si può scrivere che
+$$
+n = m \cdot x + r
+$$
+
+Se il numero è rappresentato attraverso i numeri binari:
