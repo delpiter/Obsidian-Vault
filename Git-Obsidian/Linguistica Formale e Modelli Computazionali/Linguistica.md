@@ -1,3 +1,6 @@
+
+> [!NOTE] Title
+> Contents
 ## Linguistica Formale
 ---
 > Un linguaggio naturale/di programmazione è un insieme di lessico e sintassi.
