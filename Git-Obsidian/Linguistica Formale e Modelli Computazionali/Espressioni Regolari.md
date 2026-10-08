@@ -152,3 +152,19 @@ $$
 > [!done] Espressione regolare finale
 > L'espressione regolare del `DFA` dato è la seguente:
 > $$ E_{fin}= E_{q0} + E_{q1} = (1+0(0+10)^{*})^{*}+(1+0(0+10)^{*}11)^{*}.0(0+10)^{*}$$
+
+#### Da espressioni regolari a $\epsilon$-NFA
+> [!cite] Teorema
+> Per ogni espressione regolare $R$ possiamo costruire un $\epsilon$-***NFA*** $A$ con un unico stato finale, diverso da quello iniziale tale che $L(A)=L(R)$
+
+> ***Dimostrazione***
+
+***Base***
+- Gli automi per $\epsilon,\emptyset$ e $a$
+
+![[attachements/REtoENFABase.png]]
+
+***Induzione***
+- Gli automi per $R+S,RS$ e $R^{*}$
+![[attachements/REtoENFAInductive.png]]
+
