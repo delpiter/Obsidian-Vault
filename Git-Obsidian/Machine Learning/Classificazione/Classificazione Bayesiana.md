@@ -213,3 +213,5 @@ Le kernel function devono essere [[../../Matematica Discreta e Probabilità/Prob
 $$
 \varphi(u) = \frac{1}{(2\pi)^{d/2}}e^{ \displaystyle{\frac{-u^{t}u}{2}} }
 $$
+
+![[attachements/ParzenWindow&SoftKernel.png]]
