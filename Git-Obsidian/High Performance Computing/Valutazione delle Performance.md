@@ -92,7 +92,7 @@ $$
 
 Lo speedup massimo che può essere raggiunto è: $\displaystyle{\frac{T_{\text{ser}}}{\alpha\cdot T_{\text{ser}}}}$
 
->[[../Architettura degli Elaboratori/Architetture a Confronto/Prestazioni dei Calcolatori#Legge di Amdhal|Legge di Amdhal]]
+>[!cite] [[../Architettura degli Elaboratori/Architetture a Confronto/Prestazioni dei Calcolatori#Legge di Amdhal|Legge di Amdhal]]
 >La ***legge di Amdhal*** indica qual è il *massimo speedup*.
 >$$S(p)=\displaystyle{\frac{1}{\alpha+\displaystyle{\frac{1-\alpha}{p}}}}$$
 
@@ -152,8 +152,8 @@ Data una dimensione $n_{p}$, la quantità di "*lavoro seriale*" richiesto per ca
 
 <u>Quindi</u>
 $$
-\begin{array}
-\ \displaystyle\frac{n^{3}}{p}=k \\
+\begin{array}{}
+\displaystyle\frac{n^{3}}{p}=k \\
 n=\sqrt[3]{ p\times k } \\
 n=\sqrt[3]{ p }\times k'
 \end{array}

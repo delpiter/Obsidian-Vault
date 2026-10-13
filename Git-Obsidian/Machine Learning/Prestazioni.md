@@ -33,7 +33,7 @@ $$
 - Idealmente la matrice dovrebbe essere [[../Algebra e Geometria/Applicazioni/9 - Matrici Diagonali|diagonale]].
 	- Fuori dalla diagonale indicano casi di errore.
 
-![[attachements/Pasted image 20260925092812.png]]
+![[attachements/ConfusionMatrix.png]]
 
 ### Classificazione binaria
 > [!info] 
@@ -44,7 +44,7 @@ $$
 - *False* **Positive**, Errore di tipo $I$ o $False$
 - *False* **Negative**, Errore di tipo $II$ o $Miss$
 
-![[attachements/Pasted image 20260925093656.png]]
+![[attachements/TruthTable.png]]
 
 Passando da errori a frequenze/probabilità (che corrisponde a normalizzare per righe la confusion matrix):
 - $TPR=\frac{TP}{P}$ (true positive rate)
@@ -66,14 +66,14 @@ $$
 Soglie restrittive (*elevate*) **riducono** i ***false positive*** a discapito dei ***false negative***
 - viceversa soglie tolleranti (*basse*) riducono i false negative a discapito dei false positive.
 
-![[attachements/Pasted image 20260925094833.png]]
+![[attachements/ThresholdErrorRate.png]]
 
 Le due curve possono essere "*condensate*" in una curva `DET` (***Detection Error Tradeoff***) che nasconde la soglia.
 - Esprime il rapporto dei falsi negativi in funzione dei falsi positivi.
 
 Piuttosto usata è anche la rappresentazione `ROC` (***Receiver Operating Characteristic***) che in ordinata riporta True positive invece di False negative (ROC è ribaltata verticalmente rispetto a DET).
 
-![[attachements/Pasted image 20260925095240.png]]
+![[attachements/Det-Roc.png]]
 
 Un confronto può essere fatto "*mediando*" sui diversi punti di lavoro del sistema. L’area sotto la curva `ROC` (`AUC`) è uno scalare in $[0,1]$ che caratterizza la prestazione media (maggiore è, meglio è). 
 - Può essere calcolata come integrale numerico attraverso il metodo dei trapezi.

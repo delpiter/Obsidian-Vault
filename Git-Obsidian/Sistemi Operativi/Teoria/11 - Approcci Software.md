@@ -61,7 +61,7 @@
 ## Dimostrazioni
 ---
 ### Mutua Esclusione
->[[9 - Condivisione di Risorse#Mutua Esclusione|Mutua Esclusione]]
+>[!hint] [[9 - Condivisione di Risorse#Mutua Esclusione|Mutua Esclusione]]
 >Assumiamo per ***assurdo*** che $P$ e $Q$ siano in una [[10 - Sezioni Critiche|sezione critica]] contemporaneamente
 
 >Poiché gli accessi in memoria sono esclusivi
@@ -77,7 +77,7 @@ Poiché $P$ entra nella ***critical section*** mentre $Q$ è nella ***critical s
 
 >[!danger] Assurdo
 ### Assenza di Deadlock
->[[9 - Condivisione di Risorse#Deadlock|Deadlock]]
+>[!info] [[9 - Condivisione di Risorse#Deadlock|Deadlock]]
 >Assumiamo per ***assurdo*** che né $P$ né $Q$ possano entrare in una ***critical section***
 
 >$P$ e $Q$ devono essere bloccati nel primo `while`
@@ -97,7 +97,7 @@ Esiste un istante $t$ dopo di che $needp$ e $needq$ sono sempre `true`
 >$P$ può entrare nella ***critical section***
 
 ### Assenza di Starvation
->[[9 - Condivisione di Risorse#Starvation|Starvation]]
+>[!help] [[9 - Condivisione di Risorse#Starvation|Starvation]]
 >Se $Q$ richiede di accedere alla ***critical section***
 >- $needq=true$
 
