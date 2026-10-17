@@ -27,9 +27,10 @@
 	- Solo *un processo alla volta* deve essere all'interno della ***critical section***
 2. Assenza di [[9 - Condivisione di Risorse#Deadlock|Deadlock]]
 	- Uno scenario dove tutti i processi **rimangono bloccati** definitivamente *non è ammissibile*
+	- Se alcuni processi stanno cercando di entrare la sezione critica, uno deve prima o poi riuscirci. 
 3. Assenza di ***dalay*** non necessari
 	- Un *processo* appena uscito dalla ***critical section*** non deve ritardare l'ingresso nella ***critical section*** da parte di un *altro processo*
-4. ***Eventual Entry***
+4. ***Eventual Entry*** (Assenza di [[9 - Condivisione di Risorse#Starvation|starvation]])
 	- Ogni processo che lo richiede, prima o poi entra nella ***critical section***
 
 #### Approcci

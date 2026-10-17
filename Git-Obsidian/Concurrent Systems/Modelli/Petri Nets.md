@@ -21,7 +21,7 @@ I *places* possono essere connessi **solo** con le *transition* e ***viceversa**
 
 Il grafo di una ***rete di petri*** modella le ***proprietà statiche*** di un sistema.
 
-![[attachements/Pasted image 20260930111923.png]]
+![[attachements/PetriNets.png]]
 #### Token e Marking
 > In aggiunta alle *proprietà statiche* rappresentate dal grafo, una *rete di Petri* ha delle proprietà dinamiche che sono il risultato dall'esecuzione.
 
@@ -74,7 +74,7 @@ I sistemi vengono modellati in termini di:
 > [!tldr] Idea
 > Le ***reti di Petri*** sono ideali per modellare sistemi con controllo distribuito, con multipli processi eseguiti in maniera concorrente.
 
-![[attachements/Pasted image 20260930151830.png]]
+![[attachements/PetriNetSyncronization.png]]
 
 - Il primo grafo modella ***due attività parallele***.
 - Il secondo grafo modella *due attività parallele* ***con sincronizzazione***.

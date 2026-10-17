@@ -34,8 +34,7 @@ Il "***test of safety***" verifica che il comportamento di una classe o sistema 
 > La proprietà ***liveness*** richiede che una certa condizione sia prima o poi vera in ogni computazione.
 
 ### Metodi formali di verifica
-
-> [!abstract] [[Model Checking]]
+> [!abstract] Model checking
 > La verifica tramite ***model checking*** è fatta generando uno per uno *tutti gli stati del sistema* e controllando le proprietà per ciascuno stato.
 
 Il *model checking* è la tecnica più usata e importante per controllare **automaticamente** la ***correttezza di un sistema concorrente***.
