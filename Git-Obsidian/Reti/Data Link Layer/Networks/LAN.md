@@ -51,7 +51,7 @@ mindmap
 ```
 
 
-> I protocolli ad [[.md#Tassonomia|accesso conteso]] ammettono le collisioni e cercano di gestirle.
+> I protocolli ad ***accesso conteso*** ammettono le collisioni e cercano di gestirle.
 #### Con Rilevazione del Canale
 >[!info] CAP
 >La ***Channel Access Procedure*** è l'insieme delle procedure che la stazione effettua per realizzare l'accesso al canale.
@@ -85,7 +85,7 @@ mindmap
 
 #### Protocollo a Contesa
 ##### ALOHA
-> Nato per collegare le università delle isole Hawaii, predecessore del [[802.X/Rete Ethernet#Carrier Sense Multiple Access with Collision Detection|CSMA]].
+> Nato per collegare le università delle isole Hawaii, predecessore del [[802.X/Rete Ethernet#CSMA with Collision Detection|CSMA]].
 
 >[!info]
 >Prevede stazione a terra e un [[../../../Fisica/Gravitazione/Legge di Gravitazione#Orbite Geostazionarie|satellite geostazionario]].
@@ -154,7 +154,7 @@ Prima di iniziare le trasmissioni la stazione deve acquisire il sincronismo, inv
 >Centro stella di **edificio**, contenitore degli apparati attivi della `LAN`.
 - Punto di arrivo del **floor distributor**.
 - ***Patch Cord***: Spezzone di cavo che connette le porte dello switch ai *patch panel*.
-- ***Patch Panel***: Pannello che presenta un insieme di connettori per cavi [[802.X/Rete Ethernet#Doppini|UTP]]. 
+- ***Patch Panel***: Pannello che presenta un insieme di connettori per cavi. 
 
 >[!caution] Floor Distributor
 >Centro stella del **piano** (*cablaggio orizzontale*).

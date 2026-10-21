@@ -14,15 +14,14 @@ $$
 & \frac{f_{n+1}}{f_{n}} = \frac{\left( 1+\frac{1}{n+1} \right)^{n+1}}{\left( 1+\frac{1}{n} \right)^{n}}= \frac{\left( \frac{n+2}{n+1} \right)^{n+1}}{\left( \frac{n+1}{n} \right)^{n}}= \left( \frac{n+2}{n+1} \right)^{n+1} \cdot \left( \frac{n}{n+1} \right)^{n} = 
 \end{align}
 $$
-Trasformiamo l'esponente di $\left( \frac{n}{n+1} \right)^{n}$ per poter sfruttare la [[Funzioni di una variabile Reale#Funzione Esponenziale#Funzione Esponenziale#Funzione Esponenziale#Funzione Esponenziale#Proprietà|proprietà delle funzioni esponenziali]]
+Trasformiamo l'esponente di $\left( \frac{n}{n+1} \right)^{n}$ per poter sfruttare la [[Funzioni di una variabile Reale#Funzione Esponenziale#Proprietà|proprietà delle funzioni esponenziali]]
+
 $$
-\displaylines{
-\begin{align}
+\begin{align}{}
 & \left( \frac{n+2}{n+1} \right)^{n+1} \cdot \left( \frac{n}{n+1} \right)^{n+1}\cdot \frac{n+1}{n}= \\
 & =\left( \frac{n^{2}+2n+1-1}{(n+1)^{2}} \right)^{n+1}\left( \frac{n+1}{n} \right) = \left( \frac{(n+1)^{2}-1}{(n+1)^{2}} \right)\left( \frac{n+1}{n} \right)
-\end{align} \\ \\
+\end{align} \\
 = \left( 1-\frac{1}{(n+1)^{2}} \right)^{n+1}\left( \frac{n+1}{n} \right)
-}
 $$
 Sfruttiamo poi la [[../Tipologie di Dimostrazioni#Disuguaglianza di Bernoulli|disugualianza di Bernoulli]] ponendo
 - $x = \frac{1}{(n+1)^{2}}$

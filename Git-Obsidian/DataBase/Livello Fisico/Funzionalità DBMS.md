@@ -81,7 +81,7 @@ Per garantire l'integrità il **DBMS** deve provvedere ad annullare tali modific
 ## Proprietà ACID
 ---
 >[!help] ***A***tomicity 
->La [[#Transazione]] è ***indivisibile*** nella sua esecuzione e la sua esecuzione deve essere o totale o nulla.
+>La [[Transazioni|transazione]] è ***indivisibile*** nella sua esecuzione e la sua esecuzione deve essere o totale o nulla.
 
 >[!abstract] ***C***onsistency
 >Quando inizia una ***transazione*** il database si trova in uno *stato consistente* e al termine della transazione il database **deve ancora essere** in un stato consistente.

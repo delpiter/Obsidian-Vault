@@ -149,6 +149,6 @@ L'[**Hyperthreading**](https://www.intel.com/content/www/us/en/gaming/resources/
 - Utile per applicazioni con un alto ***Computation/Communication*** *rate*.
 
 >[!fail] Contro
-- I programmatori devono tenere conto dei [[../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]].
+- I programmatori devono tenere conto dei [[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]].
 - **Latenza** nella rete di interconnessione.
 - *Difficili* da programmare.

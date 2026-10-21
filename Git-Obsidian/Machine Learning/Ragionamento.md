@@ -7,8 +7,8 @@
 > Nel ***ragionamento deduttivo*** la verità delle premesse (*caso generale*) garantisce la verità della conclusione (*caso particolare*).
 
 $$
-\begin{array}
-\ \text{Rule}(C \to R): \text{Tutti gli uomini sono mortali} \\
+\begin{array}{}
+\text{Rule}(C \to R): \text{Tutti gli uomini sono mortali} \\
 \text{Case}(C_{1}): \text{Socrate è un uomo} \\
 \text{Result}(R_{1}): \text{Socrate è mortale}
 \end{array}
@@ -23,8 +23,8 @@ Il ragionamento deduttivo è il fondamento di gran parte delle [[../Analisi/Tipo
 > Nel ***ragionamento induttivo***, le premesse (*caso/i particolare/i*) forniscono un’evidenza più o meno forte a sostegno della conclusione (*generalizzazione*), ma **non** ne garantiscono necessariamente la **verità**.
 
 $$
-\begin{array}
-\ \text{Caso}(C_{1}): \text{Scorate era un uomo} \\
+\begin{array}{}
+\text{Caso}(C_{1}): \text{Scorate era un uomo} \\
 \text{Result}(R_{1}): \text{Socrate morì} \\
 \text{Rule}(C \to R): \text{Tutti gli uomini sono mortali} \\
 \end{array}
@@ -39,7 +39,7 @@ La forma più comune di ragionamento induttivo è la **generalizzazione** con cu
 > Il ***ragionamento abdutivo*** è probabilistico, ma invece di generalizzare ci si muove "*lateralmente*", ipotizzando che un’implicazione **valga anche al contrario**.
 
 $$
-\begin{array}
+\begin{array}{}
 \text{Rule}(C \to R): \text{Tutti gli uomini sono mortali} \\
 \text{Result}(R_{1}): \text{Socrate morì} \\
 \text{Caso}(C_{1}): \text{Scorate era un uomo} \\

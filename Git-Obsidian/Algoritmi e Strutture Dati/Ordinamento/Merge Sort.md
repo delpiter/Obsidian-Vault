@@ -45,7 +45,9 @@
 	\end{algorithmic}
 	\end{algorithm}
 ```
-![[youtube.com)](https://www.youtube.com/watch?v=ZRPoEKHXTJg|Merge Sort (youtube.com)]]
+
+![Merge Sort](https://www.youtube.com/watch?v=ZRPoEKHXTJg)
+
 ## Concetto
 ---
 > Algoritmo di ordinamento basato sulla tecnica [[../Divide et Impera]]

@@ -5,7 +5,7 @@
 >- Tale sistema di riferimento è detto ***inerziale***.
 >
 >>[!quote] Formulazione Alternativa
->>In *assenza di forze esterne* e se osservato da un **sistema di riferimento inerziale**, un corpo in quiete *resta in quiete* e un corpo in moto *continua* con [[../Cinematica/Moto Rettilineo#|moto rettilineo uniforme]].
+>>In *assenza di forze esterne* e se osservato da un **sistema di riferimento inerziale**, un corpo in quiete *resta in quiete* e un corpo in moto *continua* con [[../Cinematica/Moto Rettilineo|moto rettilineo uniforme]].
 
 >[!done] La forza è ciò che provoca la variazione di moto di un corpo.
 

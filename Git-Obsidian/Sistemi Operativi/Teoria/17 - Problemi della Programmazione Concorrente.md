@@ -8,7 +8,7 @@
 #### Proprietà da Garantire
 - `Producer` ***non*** deve *scrivere* l'area di memoria condivisa prima che `Consumer` abbia effettivamente *usato* il ***valore precedente***
 - `Consumer` ***non*** deve *leggere* due volte lo stesso valore
-- Assenza di [[9 - Condivisione di Risorse#Deadlock|deadlock]]
+- Assenza di [[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]]
 
 #### Implementazione
 ```c++ title="Produttore/Consumatore"
@@ -43,7 +43,7 @@ void Consumer(){
 
 #### Proprietà da Garantire
 Le proprietà da garantire sono le [[#Proprietà da Garantire|stesse]] con l'aggiunta:
-- Assenza di [[9 - Condivisione di Risorse#Starvation|starvation]]
+- Assenza di [[../../Concurrent Systems/Concorrenza nei sistemi#Starvation|starvation]]
 
 #### Implementazione
 >Si utilizzano due indici `front` e `rear` che indicano rispettivamente il ***prossimo elemento*** da *scrivere*/*leggere*
@@ -121,7 +121,7 @@ void Philo[i]{
 >$$down_{i}\leq up_{i} \leq down_{i}+1$$
 
 In pratica:
-> La bacchetta può essere vista come [[13 - Semafori#Semafori Binari|semaforo binario]]
+> La bacchetta può essere vista come [[../../Concurrent Systems/Critical Section/Meccanismi per la Coordinazione#Semafori Binari|semaforo binario]].
 
 ##### Soluzione
 ```c++ title:"cena dei filosofi"
@@ -187,8 +187,7 @@ No.
 #### Priorità
 >[!info] Priorità ai Lettori
 >Se un *lettore* vuole accedere al database, lo potrà fare a patto che uno scrittore ***non*** l'abbia occupato
->>[[9 - Condivisione di Risorse#Starvation|starvation]]
+>>[[../../Concurrent Systems/Concorrenza nei sistemi#Starvation|Starvation]]
 
 >[!list] Priorità ai Lettori
 >Uno *scrittore* attenderà il ***tempo minimo possibile*** prima di accedere al database
->>[[9 - Condivisione di Risorse#Starvation|starvation]]

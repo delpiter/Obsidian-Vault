@@ -106,7 +106,7 @@ Una risorsa è ***prerilasciabile*** se:
 - Classi di Sezioni Critiche
 
 ## Deadlock
->Le risorse bloccate in [[9 - Condivisione di Risorse#Deadlock|Deadlock]] ***non*** possono essere utilizzate da altri processi
+>Le risorse bloccate in [[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]] ***non*** possono essere utilizzate da altri processi
 #### Condizioni per deadlock
 >[!info] Mutua Esclusione
 > Le *risorse* coinvolte devono essere ***seriali***

@@ -80,7 +80,7 @@ Le differenze si basano sulla specifica delle ***liveness properties***, e non i
 
 >[!info] Semafori `FIFO`
 >La politica più semplice è quella `FIFO`, il processo che è stato in ***sospeso più a lungo*** viene "*svegliato*" per primo
->- Garantisce assenza di [[9 - Condivisione di Risorse#Starvation|starvation]] 
+>- Garantisce assenza di [[../../Concurrent Systems/Concorrenza nei sistemi#Starvation|starvation]]
 >- Struttura dati usata: ***Coda***
 
 ```c title:"Implementazione Semafori"

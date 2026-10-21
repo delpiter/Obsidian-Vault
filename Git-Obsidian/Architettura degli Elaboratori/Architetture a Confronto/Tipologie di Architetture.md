@@ -22,7 +22,7 @@
 
 >[!abstract] L'unità di controllo all'interno della `CPU` è ***cablata*** 
 
-La `CPU` è realizzata con un [[../Algebra di Bool e Logica Digitale/Circuiti Sequenziali#|circuito digitale sequenziale]]
+La `CPU` è realizzata con un [[../Algebra di Bool e Logica Digitale/Circuiti Sequenziali|circuito sequenziale]]
 - Una ***macchina a stati***
 
 >[!warning] La `CPU` non è microprogrammata

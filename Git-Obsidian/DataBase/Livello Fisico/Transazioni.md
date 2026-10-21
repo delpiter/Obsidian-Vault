@@ -127,7 +127,7 @@ Lo **Scheduler** della maggior parte dei sistemi reali è di fatto realizzato es
 - È garantito l'isolamento completo delle transazioni.
 
 >[!danger] Effetti collaterali
->[[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|Deadlock]].
+>[[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]].
 
 
 #### Assenza di Phantom Row

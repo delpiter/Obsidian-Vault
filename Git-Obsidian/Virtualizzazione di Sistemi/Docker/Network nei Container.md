@@ -65,7 +65,7 @@ Esistono diversi *driver di default* che forniscono funzionalità di rete di bas
 | [[#Host]]    | Remove network isolation between the container and the Docker host. |
 | None         | Completely isolate a container from the host and other containers.  |
 | [[#Overlay]] | Swarm Overlay networks connect multiple Docker daemons together.    |
-| [[#IPVlan]]  | Connect containers to external VLANs.                               |
+| IPVlan       | Connect containers to external VLANs.                               |
 | [[#MACVlan]] | Containers appear as devices on the host's network.                 |
 Il tipo di rete che un container utilizza è indifferente dal punto di vista del container.
 - Il container vede: [[../../Reti/Network Layer/Protocollo IP|indirizzo IP]], un **gateway**, una [[../../Reti/Network Layer/Routing/Routing#Tabella di Routing IP|routing table]], i servizi [[../../Reti/Application Layer/DNS|DNS]] e altri servizi.

@@ -17,8 +17,8 @@ I *Grafi* sono la struttura fondamentale negli [[../../Problemi e Algoritmi#Algo
 >[!example] Grafo non Ordinato
 
 $$
-\begin{array}
-\ V=\{ a,b,c,d,e \} \\
+\begin{array}{}
+V=\{ a,b,c,d,e \} \\
 E=\{ \{ a,b \},\{ a,c \},\{ a,d \},\{ b,e \},\{ c,d \},\{ c,e \}, \{ d,e \} \}
 \end{array}
 $$
@@ -27,12 +27,12 @@ $$
 >Se ogni coppia del grafo $(u,v)$ è ordinata allora il Grafo si dice *diretto o ordinato*
 
 $$
-\begin{array}
-\ V=\{ a,b,c,d,e \} \\
+\begin{array}{}
+V=\{ a,b,c,d,e \} \\
 E=\{ ( a,b ),( a,c ),( a,d ),( b,e ),( c,d ),( c,e ), ( d,e ) \}
 \end{array}
 $$
-![[1)](attachements/graph (1|graph (1)]].png)
+![[attachements/graph 1.png]]
 ## Terminologia
 ---
 ### Vertici Adiacenti

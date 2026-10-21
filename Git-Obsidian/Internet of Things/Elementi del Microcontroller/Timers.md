@@ -23,7 +23,7 @@ unsigned long millis()
 >Il ***Watch Dog Timer*** è un timer che conta fino ad un valore specificato, dopodiché un segnale è prodotto per **riavviare il sistema**.
 
 In un normale funzionamento, il *watch dog timer*, riceve periodicamente un segnale prima di raggiungere il **threshold**, resettando il counter.
-- Se non riceve un segnale, significa che il **microprocessore** ha incontrato un problema ([[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]]) e deve essere resettato.
+- Se non riceve un segnale, significa che il **microprocessore** ha incontrato un problema ([[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]]) e deve essere resettato.
 
 ### Timers e Pulsewidth Modulation
 >[!warning] Attenzione

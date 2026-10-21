@@ -23,7 +23,7 @@ Per la ***classificazione di un nuovo pattern*** si deve:
 > [!info] Definizione
 > Per ogni nodo, l'algoritmo suddivide gli $m$ pattern entranti del training set in *due sottoinsiemi* disgiunti di dimensioni $m_{left}$ e $m_{right}$.
 
-La suddivisione avviene in modo [[../Algoritmi e Strutture Dati/Greedy/Gli Algoritmi Greedy|greedy]], considerando una singola feature $k$ e una soglia $t_{k}$.
+La suddivisione avviene in modo [[../../Algoritmi e Strutture Dati/Greedy/Gli Algoritmi Greedy|greedy]], considerando una singola feature $k$ e una soglia $t_{k}$.
 - La coppia $(k,t_{k})$ è scelta come quella che produce i sottoinsiemi più puri, ovvero minimizzando:
 $$
 J(k,t_{k})=\frac{m_{left}}{m} G_{left}+\frac{m_{rigth}}{m}G_{right}

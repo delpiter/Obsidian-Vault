@@ -34,7 +34,7 @@ int MPI_Send(const void *buf, int count, MPI_Datatype datatype,
 >>[!danger] **NON** quando il messaggio è arrivato al destinatario.
 
 >[!bug] Attenzione
->Utilizzando `send` e `receive` ***bloccanti*** è possibile che accada un [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]].
+>Utilizzando `send` e `receive` ***bloccanti*** è possibile che accada un [[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]].
 
 Per evitare i ***deadlock*** si può:
 - Riordinare le *operazioni*.
@@ -146,7 +146,7 @@ int MPI_Sendrecv(const void *sendbuf, int sendcount,
 
 >[!info]
 >Esegue una ***send e una receive bloccanti*** in una singola chiamata.
->- `MPI` [[../../Sistemi Operativi/Teoria/7 - Scheduler|schedula]] la comunicazione in modo che non possa verificarsi il [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]].
+>- `MPI` [[../../Sistemi Operativi/Teoria/7 - Scheduler|schedula]] la comunicazione in modo che non possa verificarsi il [[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]].
 
 >[!abstract] Parametri
 

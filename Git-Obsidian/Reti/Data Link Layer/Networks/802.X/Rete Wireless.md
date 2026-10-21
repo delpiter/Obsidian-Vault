@@ -121,7 +121,7 @@ Supponiamo che `S1` stia trasmettendo a `R1` e che `S2` voglia trasmettere a `R2
 >Il problema della stazione esposta è risolvibile *solo* tramite un'***accurata progettazione fisica della rete***.
 
 ##### Collisioni
-> Il protocollo [[Rete Ethernet#Carrier Sense Multiple Access with Collision Detection|CSMA/CD]] non è utilizzabile nelle `WLAN`.
+> Il protocollo [[Rete Ethernet#CSMA with Collision Detection|CSMA/CA]] non è utilizzabile nelle `WLAN`.
 
 >[!done] Carrier Sense Multiple Access with Collision Avoidance
 >Questa tecnica introduce un *intervallo di tempo* durante il quale il trasmettitore **attende** al fine di accertarsi che non vi siano altri frame `RTS` o `CTS` sul canale.

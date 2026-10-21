@@ -75,11 +75,11 @@ Le informazioni di utente sono *strutturate in messaggi* unitamente ad opportune
 
 >[!done] Confermato
 >Il dialogo ***confermato*** prevede una esplicita conferma da parte del destinatario
->- [[#Connection Oriented]]
+>- *Connection Oriented*
 
 >[!missing] Non Confermato
 >Il dialogo ***non confermato*** non prevede alcuna conferma.
->- [[#Connectionless]]
+>- *Connectionless*
 
 >[!question] Parzialmente Confermato
 >La *richiesta* viene **confermata** dal service-provider.

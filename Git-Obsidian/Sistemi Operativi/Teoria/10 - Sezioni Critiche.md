@@ -7,7 +7,7 @@
 
 > Obbiettivi
 - Vogliamo ***garantire*** che le sezioni critiche siano eseguite in modo *mutualmente esclusivo*
-- Vogliamo ***evitare*** situazione di blocco ([[9 - Condivisione di Risorse#Deadlock|Deadlock]] o [[9 - Condivisione di Risorse#Starvation|Starvation]])
+- Vogliamo ***evitare*** situazione di blocco ([[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]] o [[../../Concurrent Systems/Concorrenza nei sistemi#Starvation|starvation]])
  
 >[!note] Assunzione
 >Un processo può terminare solamente ***fuori dalla sua sezione critica***

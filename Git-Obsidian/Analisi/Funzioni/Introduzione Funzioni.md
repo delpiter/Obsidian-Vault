@@ -187,8 +187,8 @@ f\cdot g \text{ è continua} \\
 >Siano $A \subseteq \mathbb{R}, \;f:A\to\mathbb{R}$ diciamo che $f$ è limitata superiormente o inferiormente se lo è $f(A)$ (l'immagine)
 ###### Es
 $$
-\begin{array}
-/f:\mathbb{R}\to\mathbb{R}, f(x)=x^2 \\
+\begin{array}{}
+f:\mathbb{R}\to\mathbb{R}, f(x)=x^2 \\
 f(\mathbb{R})=\mathbb{R}^+=\{x \in \mathbb{R}|x\geq 0\}
 \end{array}
 $$
@@ -231,8 +231,8 @@ $$
 $$
 ###### Es
 $$
-\begin{array}
-/f:\mathbb{R}\to\mathbb{R} \\
+\begin{array}{}
+f:\mathbb{R}\to\mathbb{R} \\
 x \mapsto (x-2)^2
 \end{array}
 $$
@@ -249,8 +249,7 @@ grid: true
 f(x)=(x-2)^2
 ```
 $$
-\begin{array} \\
-
+\begin{array}{}
 \sup\limits_{\mathbb{R}}f:=+\infty \\
 \inf\limits_{\mathbb{R}}f:=0 \\
 x=2\text{ Punto di minimo di }f
@@ -259,7 +258,7 @@ $$
 ## Teorema di Weierstruss
 ---
 >[!info] Teorema
->Sia $f:[[.md#Continuità|continua]]
+>Sia $f$:[[#Continuità|continua]]
 ><u>Allora</u>
 >$f$ ammette massimo e minimo
 
@@ -306,8 +305,8 @@ f(x_{1})\geq f(x_{2})
 - Mi chiedo quando $f$ è crescente $\nearrow$
 - È vero che $\forall x_{1},x_{2}$ con $x_{1}\leq x_{2}$ si ha $f(x_{1})\leq f(x_{2})$?
 $$
-\begin{array}
-/f(x)=mx+q \\ 
+\begin{array}{}
+f(x)=mx+q \\ 
 mx_{1}+q \leq mx_{2}+q \\
 mx_{1}+\cancel{q} \leq mx_{2}+\cancel{q} \\
 m(x_{1}-x_{2})\leq 0 \\
@@ -327,7 +326,7 @@ $$
 
 ### Proprietà monotonia
 - Sia $f:A \to \mathbb{R}$
->Se $f$ è strettamente monotona allora $f$ è [[.md#Iniettività $[f ;1-1]$|iniettiva]] e $f^{-1}:f(A)\to A$ sono strettamente monotone della stessa monotonia
+>Se $f$ è strettamente monotona allora $f$ è [[#Iniettività e surriettività|iniettiva]] e $f^{-1}:f(A)\to A$ sono strettamente monotone della stessa monotonia
 #### Dimostrazione
 - Voglio dimostrare che se $f(x_{1})=f(x_{2}) \implies x_{1}=x_{2}$
 	- Ciò è vero infatti:

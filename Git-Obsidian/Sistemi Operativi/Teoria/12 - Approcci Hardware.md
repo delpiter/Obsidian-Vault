@@ -20,7 +20,7 @@ Inoltre non funziona su ***sistemi multiprocessore***
 >[!fail] Svantaggi
 
 - Viene utilizzato il [[10 - Sezioni Critiche#Busy-Waiting|Busy-Waiting]]
-- I problemi di [[9 - Condivisione di Risorse#Starvation|starvation]] ***non*** sono eliminati
+- I problemi di [[../../Concurrent Systems/Concorrenza nei sistemi#Starvation|starvation]] ***non*** sono eliminati
 - Complessi da programmare
 
 ![[../../Concurrent Systems/Critical Section/Soluzioni Hardware|Soluzioni Hardware]]

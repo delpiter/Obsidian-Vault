@@ -51,7 +51,7 @@ Un errato dimensionamento di $W$ può congestionare:
 	- Viene ricevuto `AW`$>0$.
 - Il processo trasmittente ***rincomincia a trasmettere***.
 
->[[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|Deadlock]]
+>[[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]]
 >Caso
 >> *Trasmittente*:
 >- Invia messaggi

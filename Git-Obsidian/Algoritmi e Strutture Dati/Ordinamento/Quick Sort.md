@@ -35,7 +35,8 @@
 	\end{algorithmic}
 	\end{algorithm}
 ```
-![[LR pointers) (youtube.com)](https://www.youtube.com/watch?v=8hEyhs3OV1w|Quick Sort (LR pointers) (youtube.com)]]
+
+![Quick Sort (LR pointers)](https://www.youtube.com/watch?v=8hEyhs3OV1w)
 
 ## Concetto
 ---

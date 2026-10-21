@@ -34,8 +34,8 @@ ciao
 Le **subshell** ereditano una *copia* di tutte le *variabili d'ambiente* e i *file aperti*
 - **NON** eredita le variabili locali del padre
 
-Per l'*esecuzione* dello script, in ogni caso [[*)](#Comando `source`|(*)]] viene **creato un nuovo processo figlio** (una nuova `shell`)
- - Lo *script* viene ***quasi*** sempre [[*)](#Comando `source`|(*)]] eseguito dal *processo figlio*
+Per l'*esecuzione* dello script, in ogni caso [[#Comando `source`|(*)]] viene **creato un nuovo processo figlio** (una nuova `shell`)
+ - Lo *script* viene ***quasi*** sempre eseguito dal *processo figlio*
  - Quando il processo figlio inizia l'esecuzione, il *processo padre ferma la propria esecuzione*
 	 - Si mette in **attesa** che il processo figlio finisca
  - Quando il processo figlio *termina*, il padre **riprende il controllo**

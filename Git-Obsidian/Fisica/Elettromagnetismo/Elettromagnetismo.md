@@ -87,6 +87,6 @@ Dato che $e$ è una quantità piccolissima, possiamo considerare la carica elett
 ## Legge di Conservazione della Carica
 ---
 >[!quote]
->In un **sistema isolato** la [[.md#Cariche Elettriche|carica elettrica]] totale è *costante nel tempo*.
+>In un **sistema isolato** la carica elettrica totale è *costante nel tempo*.
 
 La conservazione vale anche nelle interazioni tra particelle elementari.

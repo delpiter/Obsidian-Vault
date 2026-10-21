@@ -31,12 +31,12 @@ Ogni sezione critica tipicamente è una sequenza di statement che possono accede
 
 1. [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Mutua Esclusione|Mutua Esclusione]]
 	- Solo *un processo alla volta* deve essere all'interno della ***critical section***
-2. Assenza di [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|Deadlock]]
+2. Assenza di [[../Concorrenza nei sistemi#Deadlock|deadlock]]
 	- Uno scenario dove tutti i processi **rimangono bloccati** definitivamente *non è ammissibile*
 	- Se alcuni processi stanno cercando di entrare la sezione critica, uno deve prima o poi riuscirci. 
 3. Assenza di ***delay*** non necessari
 	- Un *processo* appena uscito dalla ***critical section*** non deve ritardare l'ingresso nella ***critical section*** da parte di un *altro processo*
-4. ***Eventual Entry*** (Assenza di [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Starvation|starvation]])
+4. ***Eventual Entry*** (Assenza di [[../Concorrenza nei sistemi#Starvation|starvation]])
 	- Ogni processo che lo richiede, prima o poi entra nella ***critical section***
 
 Una qualsiasi soluzione deve soddisfare la [[Modelli/Finite State Processes#Check delle proprietà del sistema|progress property]] per la sezione critica.

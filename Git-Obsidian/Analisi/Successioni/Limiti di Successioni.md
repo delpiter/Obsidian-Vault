@@ -121,8 +121,8 @@ $$
 >Siano $(a_{n})_{n\in\mathbb{N}},(b_{n})_{n\in\mathbb{N}}$ successioni regolari
 >Siano $l,m\in \overline{\mathbb{R}}$ tali che:
 > $$
-\begin{array}
-\ \lim\limits_{n\to+\infty}a_{n}=l \\
+\begin{array}{}
+\lim\limits_{n\to+\infty}a_{n}=l \\
 \lim\limits_{n\to+\infty}b_{n}=m
 \end{array}
 >$$
@@ -131,7 +131,7 @@ $$
 >>Allora
 >>$l\geq m$
 ### Dimostrazione
-- Consideriamo solo il caso $l,m\in\mathbb{R}$ poichè tutti gli altri casi si deducono usando [[.md#Successioni Limitate/Illimitate|la terminologia]] precedentemente descritta
+- Consideriamo solo il caso $l,m\in\mathbb{R}$ poichè tutti gli altri casi si deducono usando [[#Successioni Limitate/Illimitate|la terminologia]] precedentemente descritta.
 #### Dimostrazione per assurdo
 - Voglio dimostrare che $l\geq m$, assumo per assurdo
 $$
@@ -141,14 +141,14 @@ $$
 	- $l<l+\mathcal{E}< \displaystyle{\frac{l+m}{2}}<m-\mathcal{E}<m$
 - Ma per ipotesi
 $$
-\begin{array}\
+\begin{array}{}
 \exists p_{\mathcal{E}} \in \mathbb{N}:l-\mathcal{E}\leq a_{n}\leq l+\mathcal{E} \\
 \exists q_{\mathcal{E}} \in \mathbb{N}:m-\mathcal{E}\leq b_{n}\leq m+\mathcal{E}
 \end{array}
 $$
 - Quindi
 $$
-\begin{array}\
+\begin{array}{}
 \forall n \geq max\{p_{\mathcal{E}},q_{\mathcal{E}}\}\text{ si ha: } \\
 a_{n}\leq l+\mathcal{E}< \displaystyle{\frac{l+m}{2}}<m-\mathcal{E}\leq b_{n}
 \end{array}
@@ -158,8 +158,8 @@ $$
 Se avessi come ipotesi $a_{n}>b_{n}$ non potrei dedurre $l>m$ ma solo $m\geq l$
 ##### Esempio
 $$
-\begin{array}
-\ a_{n}=\frac{1}{n}\ \ \ \ \ \ \ \ \ b_{n}=0 \\
+\begin{array}{}
+a_{n}=\frac{1}{n}\ \ \ \ \ \ \ \ \ b_{n}=0 \\
 a_{n}>b_{n} \\
 l=0\geq m=0
 \end{array}

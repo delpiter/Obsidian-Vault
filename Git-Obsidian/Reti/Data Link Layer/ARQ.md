@@ -65,7 +65,7 @@ Il ricevitore invia al trasmettitore il proprio valore di $R$
 >- Tempo trascorso fra la partenza dell'ultimo `bit` di un frame e la ricezione dell'**ACK**.
 
 #### Time Out
-> Il protocollo può entrare in uno strato di [[../../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock|deadlock]]. 
+> Il protocollo può entrare in uno strato di [[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock|deadlock]]. 
 
 >[!danger] Se sia i frame che gli **ACK** sono perduti
 

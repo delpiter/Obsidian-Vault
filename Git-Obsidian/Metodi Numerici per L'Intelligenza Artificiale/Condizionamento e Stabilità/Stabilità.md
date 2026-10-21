@@ -24,7 +24,7 @@ $$
 - Il **tipo** di operazioni eseguite.
 ### Accuratezza della Soluzione Numerica
 >[!missing] Errore Inerente
->Definiamo ***Errore Inerente***, quello che deriva dalla [[../Numeri Finiti/Floating Point|rappresentazione finita]] dei numeri nel sistema di calcolo ed è legato al [[#Condizionamento di un Problema|condizionamento]] del problema.
+>Definiamo ***Errore Inerente***, quello che deriva dalla [[../Numeri Finiti/Floating Point|rappresentazione finita]] dei numeri nel sistema di calcolo ed è legato al [[Condizionamento#Condizionamento di un Problema|condizionamento]] del problema.
 >$$E_{in}=\displaystyle{\frac{f(\tilde{x})-f(x)}{f(x)}}$$
 
 >[!help] Errore Algoritmico

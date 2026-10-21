@@ -18,7 +18,7 @@ I pin possono essere [[../../Architettura degli Elaboratori/Rappresentazione del
 > ***Voltaggio***: [[../../Fisica/Elettromagnetismo/Potenziale Elettrico#Potenziale Elettrico|Volt]]
 - Da applicare al pin (*input*) o prodotto dal pin (*output*).
 
-> ***Corrente***: [[../../Fisica/Elettromagnetismo/Circuiti/Corrente Elettrica#Ampere|Ampere]]
+> ***Corrente***: [[../../Fisica/Elettromagnetismo/Circuiti/Corrente Elettrica|ampere]]
 - Corrente che si è in grado di ricevere (*input*) o prodotta (*output*)
 - In questo caso si parla di *milliampere* ($40mA$, arduino o $12mA$, ESP32).
 

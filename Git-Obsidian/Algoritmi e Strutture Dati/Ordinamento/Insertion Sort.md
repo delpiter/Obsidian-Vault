@@ -19,7 +19,8 @@
 	\end{algorithmic}
 	\end{algorithm}
 ```
-![[youtube.com)](https://www.youtube.com/watch?v=8oJS1BMKE64|Insertion Sort (youtube.com)]]
+
+![Insertion Sort](https://www.youtube.com/watch?v=8oJS1BMKE64)
 ## Concetto
 ---
 >Ad ogni passo ho una sottosequenza ordinata in cui inserisco un nuovo elemento dell'input

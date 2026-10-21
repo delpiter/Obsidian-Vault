@@ -151,7 +151,7 @@ Poiché $P$ entra nella ***critical section*** mentre $Q$ è nella ***critical s
 
 >[!danger] Assurdo
 ##### Assenza di Deadlock
->[!info] [[9 - Condivisione di Risorse#Deadlock|Deadlock]]
+>[!info] [[../Concorrenza nei sistemi#Deadlock|Deadlock]]
 >Assumiamo per ***assurdo*** che né $P$ né $Q$ possano entrare in una ***critical section***
 
 >$P$ e $Q$ devono essere bloccati nel primo `while`
@@ -171,7 +171,7 @@ Esiste un istante $t$ dopo di che $needp$ e $needq$ sono sempre `true`
 >$P$ può entrare nella ***critical section***
 
 ##### Assenza di Starvation
->[!help] [[9 - Condivisione di Risorse#Starvation|Starvation]]
+>[!help] [[../../Concurrent Systems/Concorrenza nei sistemi#Starvation|Starvation]]
 >Se $Q$ richiede di accedere alla ***critical section***
 >- $needq=true$
 

@@ -108,7 +108,7 @@ La moderna generative `AI` fa largo uso di modelli generativi basati su reti neu
 > [!hint] Supervisionato
 > Nell'***apprendimento supervisionato*** sono note le classi dei pattern usati per l'addestramento.
 
-Il [[Divisione dell'insieme dei dati#Training Set|training set]] è etichettato
+Il [[../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Machine Learning#Organizzazione dei Dati|training set]] è etichettato
 - Situazione tipica nella ***classificazione e regressione***.
 
 

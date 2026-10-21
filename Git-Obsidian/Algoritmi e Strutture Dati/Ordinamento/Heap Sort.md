@@ -19,7 +19,8 @@
 ![[../Strutture Dati/Heap#Pseudocodice Heapify]]
 ![[../Strutture Dati/Heap#Pseudocodice Build Heap]]
 
-![[youtube.com)](https://www.youtube.com/watch?v=_bkow6IykGM|Heap Sort (youtube.com)]]
+![Heap Sort (youtube.com)](https://www.youtube.com/watch?v=_bkow6IykGM)
+
 
 ## Concetto
 ---
