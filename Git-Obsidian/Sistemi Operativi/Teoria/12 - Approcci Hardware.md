@@ -6,7 +6,7 @@
 
 >[!question] Risolve il problema, disabilitare gli interrupt?
 
-Il sistema operativo deve la sciare ai processi la responsabilità di riattivare gli interrupt
+Il sistema operativo deve lasciare ai processi la responsabilità di riattivare gli interrupt
 >[!danger] Altamente Pericoloso!
 
 Inoltre non funziona su ***sistemi multiprocessore***
@@ -22,63 +22,5 @@ Inoltre non funziona su ***sistemi multiprocessore***
 - Viene utilizzato il [[10 - Sezioni Critiche#Busy-Waiting|Busy-Waiting]]
 - I problemi di [[9 - Condivisione di Risorse#Starvation|starvation]] ***non*** sono eliminati
 - Complessi da programmare
-### Test e Set
->[!abstract] Istruzioni Speciali
->Sono istruzioni che realizzano due azioni in modo ***atomico***
->>[!example] Come
->>- Lettura e Scrittura
->>- Test e Scrittura
->
->`TS(x,y):= < y = x; x = 1 >`
->>[!done] A parole
->>Assegna in `y` il valore precedente di `x`, e successivamente assegna `1` ad `x`
 
-
-##### Esempio di Utilizzo di Test&Set
-```pseudo
-	\begin{algorithm}
-	\begin{algorithmic}
-	\State $ \text{shared }lock\  =0 $
-	\State $\text{Cobegin } P \ \ Q \text{ Coend}$
-	\Procedure{P}{$  $}
-\State $ \text{int }vp  $
-\While{$true$}
-\Repeat
-\State \Call{TS}{$ lock,vp $}
-\Until{$vp$}
- \State $ \text{Critical Section} $
- \State $ lock = 0 $
- \State $  \text{Non-Critical Section} $
-\EndWhile
- \EndProcedure
-	\end{algorithmic}
-	\end{algorithm}
-```
-
-```pseudo
-	\begin{algorithm}
-	\begin{algorithmic}
-\Procedure{Q}{$  $}
-\State $ \text{int }vq  $
-\While{$true$}
-\Repeat
-\State \Call{TS}{$ lock,vq $}
-\Until{$vq$}
- \State $ \text{Critical Section} $
- \State $ lock = 0 $
- \State $  \text{Non-Critical Section} $
-\EndWhile
- \EndProcedure
-	\end{algorithmic}
-	\end{algorithm}
-```
-
->[!done] Mutua Esclusione
->Entra solo chi riesce a settare per primo il lock
-
->[!done] No deadlock
->Il primo che esegue `TS` entra senza problemi
-
->[!done] No Delay non necessari
->Un processo fuori dalla ***critical section*** non blocca gli altri
-
+![[../../Concurrent Systems/Critical Section/Soluzioni Hardware|Soluzioni Hardware]]

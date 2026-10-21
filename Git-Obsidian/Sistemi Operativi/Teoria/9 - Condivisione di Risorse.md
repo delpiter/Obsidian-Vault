@@ -8,21 +8,10 @@
 - Due processi che vogliono accedere ad una stampante
 
 >[!warning] Problemi: Starvation e Deadlock
-### Deadlock
 
->[!info] Definizione
->Una situazione di *Deadlock* (*stallo*) si verifica quando due o più processi *rimangono in attesa* di eventi che **non potranno mai verificarsi** a causa di condizioni cicliche nel ***possesso*** e nella ***richiesta*** di risorse.
->>[!question] Come sistemare un processo in stato di Deadlock?
->>Nei sistemi reali, se ne può uscire sono con metodi "**distruttivi**", ***terminando i processi***
+![[../../Concurrent Systems/Concorrenza nei sistemi#Deadlock]]
 
-![[attachements/Starvation&Deadlock.png]]
->Immagine $b$: Autisti in un incrocio
->- Nessuno da la precedenza e finiscono tutti per bloccarsi
-### Starvation
->[!info] Definizione
->Una situazione di *Starvation* (o *blocco individuale*) si verifica quando un processo *rimane in attesa* di un **evento che non accadrà mai**, e quindi non può portare a termine il proprio lavoro
->>[!note] Situazione di Uscita
->>A differenza del **deadlock**, non è una condizione definitiva, basta adottare un'opportuna politica di assegnamento
+![[../../Concurrent Systems/Concorrenza nei sistemi#Starvation]]
 
 ## Garantire l'esecuzione Corretta
 ---

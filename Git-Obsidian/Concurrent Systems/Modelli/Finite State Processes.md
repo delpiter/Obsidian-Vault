@@ -246,7 +246,7 @@ USER = (ready->use->USER).
 
 Una officina crea **un** item e segnala che l'oggetto è pronto all'uso.
 
-![[attachements/Pasted image 20260921101526.png]]
+![[../attachements/FSPSyncronization.png]]
 
 Però in questo caso **due item possono essere creati** prima che il primo venga *utilizzato*.
 - Supponendo che questo è un **comportamento non voluto**, possiamo modificare il modello in moto tale che l'utente indica che l'item è stato utilizzato.

@@ -108,9 +108,21 @@ Mantenere relazioni temporali, il che include:
 - Producono effetti negativi solo quando il rapporto tra le velocità dei processi assume valori specifici (**errori dipendenti dal tempo** o [[../Sistemi Operativi/Teoria/8 - Concorrenza#Race Condition|Race Condition]]).
 
 ### Situazioni critiche
-![[../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Deadlock]]
+#### Deadlock
+>[!info] Definizione
+>Una situazione di *Deadlock* (*stallo*) si verifica quando due o più processi *rimangono in attesa* di eventi che **non potranno mai verificarsi** a causa di condizioni cicliche nel ***possesso*** e nella ***richiesta*** di risorse.
+>>[!question] Come sistemare un processo in stato di Deadlock?
+>>Nei sistemi reali, se ne può uscire sono con metodi "**distruttivi**", ***terminando i processi***
 
-![[../Sistemi Operativi/Teoria/9 - Condivisione di Risorse#Starvation]]
+![[attachements/Starvation&Deadlock.png]]
+
+>Immagine $b$: Autisti in un incrocio
+- **Nessuno da la precedenza** e finiscono tutti per bloccarsi
+#### Starvation
+>[!info] Definizione
+>Una situazione di *Starvation* (o *blocco individuale*) si verifica quando un processo *rimane in attesa* di un **evento che non accadrà mai**, e quindi non può portare a termine il proprio lavoro
+>>[!note] Situazione di Uscita
+>>A differenza del **deadlock**, non è una condizione definitiva, basta adottare un'opportuna politica di assegnamento
 #### Livelock
 > [!info] Definizione  
 > Un ***livelock*** è simile a un *deadlock*, con l'unica differenza che gli stati dei processi coinvolti nel livelock **cambiano costantemente**, senza che alcuno proceda con l'esecuzione.
