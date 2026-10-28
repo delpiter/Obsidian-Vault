@@ -118,6 +118,22 @@ Mantenere relazioni temporali, il che include:
 
 >Immagine $b$: Autisti in un incrocio
 - **Nessuno da la precedenza** e finiscono tutti per bloccarsi
+
+##### Condizioni per deadlock
+>[!info] Mutua Esclusione
+> Le *risorse* coinvolte devono essere ***seriali***
+
+>[!example] Risorsa non Prerilasciabile
+> Le risorse non possono essere ***prerilasciate***, devono essere lasciate *volontariamente*
+
+>[!todo] Richieste bloccanti
+> Le richieste di risorse devono essere ***bloccanti***
+
+>[!definizione] Attesa Circolare
+>Esiste una **sequenza di processi** $P_{0},P_{1},\dots,P_{n}$, tali per cui $P_{0}$ attende una risorsa *controllata* da $P_{1}$, $P_{1}$ attende una risorsa *controllata* da $P_{2}$, $\dots$, $P_{n}$ attende una risorsa *controllata* da $P_{0}$
+
+La *presenza* di queste condizioni è ***necessaria e sufficiente***
+- Devono valere tutte contemporaneamente affinché un *deadlock* si presenti nel sistema
 #### Starvation
 >[!info] Definizione
 >Una situazione di *Starvation* (o *blocco individuale*) si verifica quando un processo *rimane in attesa* di un **evento che non accadrà mai**, e quindi non può portare a termine il proprio lavoro

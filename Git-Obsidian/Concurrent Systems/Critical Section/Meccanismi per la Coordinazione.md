@@ -1,3 +1,4 @@
+#todo Fix order
 ## Meccanismi e astrazioni per la coordinazione di processi
 ---
 > Gli algoritmi descritti per risolvere la [[Critical Section/Sezione Critica]] possono essere eseguiti da una macchina basilare.
@@ -14,10 +15,10 @@ Gli algoritmi utilizzano solo le istruzioni macchina che il computer offre.
 
 >[!definizione] Definizione
 >Il ***semaforo*** è un tipo di dato astratto per il quale sono definite due operazioni
->>[!note] `V`
+>>[!note] `V` o "Signal"
 >>Invocata per *inviare* un segnale, come il verificarsi di un *evento* o il rilascio di una *risorsa*
 >
->>[!cite] `P`
+>>[!cite] `P` o "Wait"
 >> Invocata per *attendere* il segnale, come un *evento* o il rilascio della *risorsa*
 
 ###### Definizione informale
@@ -27,7 +28,7 @@ Gli algoritmi utilizzano solo le istruzioni macchina che il computer offre.
 	- E *decrementa* il valore del semaforo
 - L'operazione `V`  *incrementa* il valore del semaforo
 
->[!note] Le azioni `V` e `P` sono ***atomiche***
+>[!hint] Le azioni `V` e `P` sono ***atomiche***
 
 ##### Dimostrazione della Correttezza
 > Costruiamo il diagramma degli stati dato i seguenti processi
@@ -39,15 +40,23 @@ Gli algoritmi utilizzano solo le istruzioni macchina che il computer offre.
 
 ![[attachements/SemaphoresCorrectness.png]]
 #### Tipologie di Semafori
+#todo fix this
 > ***Mutex*** o semafori binari
 - Semafori la cui componente intera può solo assumere i valori $0$ e $1$.
 - Il nome deriva dall'uso tipico per implementare la ***mut***ual ***ex***clusion.
+- Inizializzato con il valore $1$ che rappresenta la ***disponibilità della risorsa***.
 
 > ***General*** o resource semaphores
 - Semafori la cui componente intera può assumere un qualsiasi valore $\geq 0$
 
 > ***Event*** semaphores
 - Inizializzati con $0$, usati per scopi di sincronizzazione.
+	- $0$ significa che l'evento non è ancora accaduto e il processo deve aspettare.
+- Il semaforo rappresenta un evento.
+- Si mette il wait nel processo che aspetta l'evento, e signal nel processo che lo scatena
+- Si possono fare anche ***barriere di sincronizzazione***.
+	- Un semaforo per ciascun processo che devo sincronizzare.
+	- Un processo $Q$ generico, quando arriva alla barriera, segnala $n$ volte (signal) che $Q$ ha concluso la propria esecuzione, dove $n$ è il numero totale di processi che devono essere sincronizzati $-1$.
 
 >[!hint] Varianti
 >Ci sono diverse definizioni per il ***tipo semaforo***.
@@ -157,3 +166,4 @@ Infatti, vengono semplicemente "*spostati*":
 Il semaforo viene implementato tramite due semafori binari
 - Uno che *blocca* i processi che vogliono *diminuire* il valore a $-1$
 - Uno che *blocca* i processi che vogliono *aumentare* il valore a $2$
+
