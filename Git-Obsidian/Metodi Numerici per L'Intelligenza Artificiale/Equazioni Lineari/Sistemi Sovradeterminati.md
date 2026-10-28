@@ -33,7 +33,7 @@ $$
 x^*=\arg\min\limits_{x\in\mathbb{R}^n }\|r(x)\|_{2}^2=\arg\min\limits_{x\in\mathbb{R}^n }\|Ax-b\|_{2}^2
 $$
 $$
-\begin{array}\
+\begin{array}{}
 F(x)=\|Ax-b\|_{2}^2=(Ax-b)^T(Ax-b)=x^TA^TAx-x^TA^Tb-b^TAx+b^Tb= \\
 =x^TA^TAX-2x^TA^Tb+b^Tb
 \end{array}

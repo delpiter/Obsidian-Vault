@@ -383,8 +383,8 @@ $$
 $$
 Che espresso in forma matriciale:
 $$
-\begin{array}
-\ 0=F(X_{k})+J(X_{k})(X-X_{k}) \\
+\begin{array}{} 
+0=F(X_{k})+J(X_{k})(X-X_{k}) \\
 J(X_{k})(X-X_{k})=-F(X_{k}) \\
 \end{array}
 $$
@@ -689,8 +689,8 @@ $$Mx^{(k)}=Nx^{(k-1)}+b$$
 
 Sostituendo ad $M$ la matrice $E+D$ e ad $N$ la matrice $-F$, otteniamo:
 $$
-\begin{array}
-\ (E + D)\,x^{(k)} = -F\,x^{(k-1)} + b \qquad k = 1, 2, \dots \\
+\begin{array}{}
+(E + D)\,x^{(k)} = -F\,x^{(k-1)} + b \qquad k = 1, 2, \dots \\
 \end{array}
 $$
 
@@ -1219,11 +1219,11 @@ $$L_{j}^{(n)}(x)=c(x-x_{0})(x-x_{1})\dots(x-x_{j-1})(x-x_{j+1})\dots(x-x_{n})$$
 
 *Impongo*:
 $$
-L_{j}^{(n)}(x_{j})=c\prod_{\begin{array}\ k=0 \\ k\neq j\end{array}}^{n}(x_{j}-x_{k})=1
+L_{j}^{(n)}(x_{j})=c\prod_{\begin{array}{} k=0 \\ k\neq j\end{array}}^{n}(x_{j}-x_{k})=1
 $$
 ***Quindi***:
 $$
-L_{j}^{(n)}(x)=\prod_{\begin{array}\ k=0 \\ k\neq j\end{array}}^{n} \frac{(x-x_{k})}{(x_{j}-x_{k})}
+L_{j}^{(n)}(x)=\prod_{\begin{array}{} k=0 \\ k\neq j\end{array}}^{n} \frac{(x-x_{k})}{(x_{j}-x_{k})}
 $$
 
 > Ricorda:
