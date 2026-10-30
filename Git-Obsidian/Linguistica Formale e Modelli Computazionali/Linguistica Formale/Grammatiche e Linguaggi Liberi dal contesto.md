@@ -416,3 +416,172 @@ $$
 
 > [!hint] Info
 > Può essere provato che ***ogni grammatica*** per $L$ si comporta come questa.
+
+## Pulizia di un Linguaggio
+---
+> La [[Forma Normale di Chomsky]] richiede per essere applicata la ***pulizia della grammatica***
+
+"***Pulire***" la grammatica significa:
+1. Eliminare le ***produzioni*** $\epsilon$.
+2. Eliminare le ***produzioni unità***.
+3. Eliminare i ***simboli inutili***.
+
+> [!hint] Osservazione
+> Per pulire correttamente la grammatica è ***necessario seguire l'ordine*** di operazioni descritto.
+
+### Eliminazione dei simboli inutili
+> [!cite] Definizione
+> Un simbolo $X$ è ***utile per una*** [[#Context-Free Grammars|grammatica]] $G=(V,T,P,S)$ se esiste una derivazione:
+> $$S\overset{*}{\underset{G}{\Rightarrow}} \alpha X\beta \overset{*}{\underset{G}{\Rightarrow}} w$$
+> per una stringa di terminali $w$.
+
+I simboli che non sono utili sono detti ***inutili***.
+
+> Simboli ***generanti***
+- Un simbolo $X$ è generante se $X \overset{*}{\underset{G}{\Rightarrow}} w$ per qualche $w \in T^{*}$
+
+> Simboli ***raggiungibili***
+- Un simbolo $X$ è raggiungibile se $S \overset{*}{\underset{G}{\Rightarrow}} \alpha X\beta$ per qualche $\{ \alpha,\beta \}\subseteq (V\cup T)^{*}$
+
+
+> [!hint] Ordine delle operazioni
+> Se in $G$ con $L(G)\neq \emptyset$ eliminiamo prima i simboli *non generanti* poi quelli *non raggiungibili*, rimarranno solamente ***simboli utili***.
+
+###### Esempio
+> Sia $G$ la grammatica: $S \to AB|a, \ A\to b$
+
+Il linguaggio $L(G)=\{  a \}$ poiché per definizione una stringa del linguaggio deve contenere solo ***simboli terminali*** e il terminale $b$ lo si può raggiungere solo se scelgo $AB$.
+
+$S$ e $A$ sono generanti, $B$ non lo è.
+- Se eliminiamo $B$ dobbiamo eliminare $S\to AB$ ***riducendo la grammatica***.
+
+Ora solo la variabile $S$ è raggiungibile.
+- Eliminando $A$ rimane solo $S\to a$ con *linguaggio equivalente all'originale*.
+
+> [!warning] Importanza dell'ordine delle operazioni
+> Se eliminiamo prima i simboli *non raggiungibili*:
+> - Tutti i simboli ($A$ e $B$) sono raggiungibili\
+> - Eliminiamo poi $B$ in quanto *non generante*
+>
+> Rimane la grammatica $S\to a, \ A\to b$ che contiene ancora ***simboli inutili***.
+
+### Eliminazione delle produzioni epsilon
+> Si ha che se $L$ è una `CFL` allora $L\setminus \{ \epsilon \}$ ha una grammatica priva di produzioni $\epsilon$.
+
+> [!cite] Variabile Annullabile
+> Una variabile $A$ è ***annullabile*** se $A\overset{*}{\implies} \epsilon$
+> Sia $A$ annullabile, rimpiazziamo una regola del tipo $B\to \alpha A\beta$ con:
+> $$B\to \alpha A\beta, \ B\to \alpha\beta$$
+
+Rimpiazzando anche le nuove regole via via ottenute e cancellando tutte le regole con corpo $\epsilon$.
+
+> Indichiamo con $n(G)$ l'insieme dei *simboli annullabili* di una grammatica $G=(V,T,P,S)$
+
+> [!warning] Attenzione
+> Questa trasformazione ***non mantiene lo stesso linguaggio***, in quanto non sarò più in grado di generare le stringhe $\epsilon$
+
+###### Esempio
+> Sia $G$ la grammatica: $S\to AB, \ A\to aAA \mid\epsilon, \ B\to bBB\mid\epsilon$
+
+Identifico le variabili *nullable*:
+- $n(G)=\{ A,B,S \}$
+
+Applico quindi la ***regola di eliminazione*** per ciascuna variabile:
+- $S\to AB\mid A\mid B$
+- $A\to aAA\mid aA\mid aA\mid a$
+- $B\to bBB\mid bB\mid bB\mid b$
+
+Eliminiamo le regole con corpo $\epsilon$ e otteniamo la grammatica $G_{1}$:
+$$
+\begin{align}{}
+& S\to AB\mid A\mid B \\
+& A\to aAA \mid aA \mid a \\
+& B\to bBB\mid bB\mid b
+\end{align}
+$$
+
+### Eliminazione delle produzioni unità
+> [!info] Produzione unità
+> $A\to B$ è una produzione unità, nel caso in cui $A$ e $B$ siano ***variabili***.
+
+Le produzioni unità possono essere eliminate ***senza cambiare il linguaggio***.
+
+Si consideri la seguente [[#Context-Free Grammars|grammatica]]:
+$$
+\begin{aligned}
+&E\to T\mid E+T \\
+&T\to F\mid T*F \\
+&F\to I\mid (E) \\
+&I\to a\mid b\mid Ia\mid Ib\mid I0\mid I1
+\end{aligned}
+$$
+- Ha le seguenti produzioni unità $E\to T,\ T\to F$ e $F\to I$
+
+Consideriamo la produzione $E\to T$.
+- Si trasforma tale produzione con il seguente ***procedimento a espansione***.
+
+1. Si espande $E\to T$ ottenendo le produzioni:
+$$
+E\to F\mid T*F\mid E+T
+$$
+2. Con l'espansione ho ottenuto un'altra produzione unità, continuo a espandere:
+$$
+E\to I \mid (E)\mid E\to T*F\mid E+T
+$$
+3. Infine espando $E\to I$
+$$
+E\to a \mid b\mid Ia \mid Ib \mid I0 \mid I1 \mid (E) \mid T*F\mid E+T
+$$
+
+Ora si considerano le altre produzioni unità della grammatica ($T\to F$ e $F\to I$) e applichiamo lo stesso procedimento.
+
+La ***nuova grammatica*** è la seguente:
+$$
+\begin{align}{}
+& E \to a\mid b\mid Ia\mid Ib\mid I0\mid I1\mid (E)\mid T*F\mid E+T \\
+& T \to a\mid b\mid Ia\mid Ib\mid I0\mid I1\mid (E)\mid T*F \\
+& F \to a\mid b\mid Ia\mid Ib\mid I0\mid I1\mid (E) \\
+& I \to a\mid b\mid Ia\mid Ib\mid I0\mid I1 \\
+\end{align}
+$$
+
+> [!question] Questo procedimento funzione per qualsiasi grammatica?
+>> [!fail] ***No!***
+>
+>Se ci sono cicli il procedimento non consente di giungere alla rimozione delle produzioni che ***continuano a generarsi***.
+
+Ad esempio la grammatica: $A\to B,\ B\to C,\ C\to A$
+
+> Serve una condizione di terminazione in *caso di cicli*.
+- Se durante il procedimento si genera una produzione unità che sia ha già espanso ***la si può semplicemente rimuovere***.
+
+###### Esempio
+> Consideriamo la grammatica:
+
+$$
+\begin{align}
+A\to B|a \\
+B\to C|b \\
+C\to A|c
+\end{align}
+$$
+Espando $A\to B$ e ottengo le seguenti produzioni in successione:
+$$
+\begin{align}{}
+&A\to C \mid b\\
+&A\to A \mid c\mid b\\
+&A\to B\mid a\mid c\mid b
+\end{align}
+$$
+Mi posso fermare e eliminare $A\to B$ che ho ***già incontrato***.
+
+> Eliminando anche le altre produzioni unità ottengo:
+
+$$
+\begin{align}
+&A\to a\mid b\mid c \\
+&B\to a\mid b\mid c \\
+&C\to a\mid b\mid c \\
+\end{align}
+$$
+- Dove $B$ e $C$ ***non sono raggiungibili*** e dunque possono essere rimosse.

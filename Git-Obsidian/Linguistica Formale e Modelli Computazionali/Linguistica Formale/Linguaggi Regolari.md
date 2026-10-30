@@ -107,7 +107,7 @@ Sia $B=(Q,\Sigma,\delta,q_{0},Q\backslash F)$ allora $L(B)=\overline{L}$
 
 > Dimostrazioni
 
-Per la [[../Architettura degli Elaboratori/Algebra di Bool e Logica Digitale/Algebra di Bool|legge di DeMorgan]] $L\cap M = \overline{\overline{L}\cup\overline{M}}$ e sappiamo già che i linguaggi regolari sono chiusi rispetto al complemento e all'unione.
+Per la [[../../Architettura degli Elaboratori/Algebra di Bool e Logica Digitale/Algebra di Bool|legge di DeMorgan]] $L\cap M = \overline{\overline{L}\cup\overline{M}}$ e sappiamo già che i linguaggi regolari sono chiusi rispetto al complemento e all'unione.
 
 > Oppure
 
@@ -283,7 +283,7 @@ $$
 $$
 
 > [!nota]
-> $p /_{\equiv}$ è classe di equivalenza della [[../Algebra e Geometria/Basi dell'algebra/1 - Introduzione#Relazione di Equivalenza|relazione di equivalenza]], cioè una relazione *riflessiva*, *simmetrica* e *transitiva*.
+> $p /_{\equiv}$ è classe di equivalenza della [[../../Algebra e Geometria/Basi dell'algebra/1 - Introduzione#Relazione di Equivalenza|relazione di equivalenza]], cioè una relazione *riflessiva*, *simmetrica* e *transitiva*.
 
 Per minimizzare un `DFA` $A=(Q,\Sigma,\delta,q_{0},F)$ dove assumiamo di aver già eliminato tutti gli stati non raggiungibili dallo stato iniziale.
 
