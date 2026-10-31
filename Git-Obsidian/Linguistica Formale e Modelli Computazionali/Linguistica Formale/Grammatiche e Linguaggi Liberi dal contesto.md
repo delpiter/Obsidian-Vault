@@ -585,3 +585,178 @@ $$
 \end{align}
 $$
 - Dove $B$ e $C$ ***non sono raggiungibili*** e dunque possono essere rimosse.
+
+## Proprietà di Decisione per CFL
+---
+> Di seguito analizzeremo i seguenti problemi decidibili:
+
+> [!question] Se ho una grammatica libera $G$, riesco a decidere se una stringa $w$ appartiene al linguaggio $L(G)$?
+
+> [!question] Riesco a verificare se il linguaggio $L(G)$ non è vuoto? 
+
+### Appartenenza al linguaggio
+> [!tldr] Prima tecnica inefficiente
+> Supponiamo che $G$ sia in [[Forma Normale di Chomsky]] e che la stringa $w$ abbia lunghezza $|w|= n$.
+> Visto che il suo albero sintattico è [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/Alberi/Gli Alberi Binari|binaro]], ci sono $2n-1$ nodi interni.
+
+Basta quindi generare *tutti* gli alberi sintattici di $G$ con $2n-1$ nodi interni e controllare poi se almeno uno genera $w$.
+
+> [!fail] Problema
+> Il numero di alberi possibili e quindi la [[../../Algoritmi e Strutture Dati/Confronto fra Algoritmi/Complessità di Algoritmi|complessità computazionale]] è ***esponenziale***.
+#### Algoritmo CYK
+
+> [!cite] Algoritmo Cocke Younger, Kasami
+> L'algoritmo `CYK` permette di ***controllare l'appartenenza*** di una stringa $w$ a una grammatica e di ***trovare un suo albero sintattico*** in *tempo polinomiale*.
+>> [!tldr] Si basa sulla costruzione induttiva di una tabella
+
+> Assumiamo $G$ in `CNF` e che $w=a_{1}a_{2}\dots a_{n}$
+
+Costruiamo una tabella triangolare, dove $X_{ij}$ è l'insieme delle variabili $A$ che permettono la ***generazione di un pezzo della stringa*** dal simbolo $i$ al simbolo $j$.
+$$A\overset{*}{\underset{G}{\Rightarrow}} a_{i}a_{i^{1}}\dots a_{j}$$
+
+![[attachements/CYKALgorithm.png]]
+
+> Si riempie la tabella riga per riga, partendo dal basso verso l'alto
+
+La prima riga è calcolata la ***passo base***, le successive tramite il ***passo induttivo***.
+
+> ***Passo Base***
+- $X_{ii}=\{ A:A\to a_{i} \in G\}$
+
+> [!quote] In altre parole
+> Tutte le variabili che mi portano ***direttamente*** al terminale $a_{i}$
+
+> ***Passo Induttivo***
+- Calcoliamo $X_{ij}$ (riga $j-i+1$)
+
+Abbiamo che $A\in X_{ij}$  ***se e solo se***:
+- $A \overset{*}{\Rightarrow} a_{i}a_{i+1}\dots a_{j}$, che equivale a dire che $A\to BC$ e per qualche $i\leq k < j$ abbiamo:
+	- $B \overset{*}{\Rightarrow} a_{i}a_{i+1}\dots a_{k}$
+	- $C \overset{*}{\Rightarrow} a_{k}a_{k+1}\dots a_{j}$
+
+Questo equivale a controllare se esiste una produzione $A\to BC$ e un $i\leq k <j$ tale che $B\in X_{ik}$ e $C\in X_{(k+1)j}$
+
+> [!quote] In altre parole
+> Considero la stringa $w_{14}$ come la stringa che va dal carattere $1$ al $4$.
+> Per derivare $w_{14}$ devo considerare ***tutti i modi di spezzarla*** in $2$:
+> - $w_{11}$ e $w_{24}$
+> - $w_{12}$ e $w_{34}$
+> - $w_{13}$ e $w_{44}$
+> Per ciascuna di queste combinazioni $w_{1x}$ e $w_{(x+1)4}$ devo controllare se ho una produzione $A\to BC$ con $B\in w_{1x}$ e $C\in w_{(x+1)4}$.
+> Se ho una produzione che rispetta queste condizioni, *aggiungo* $A\in X_{14}$.
+
+> [!check] L'obbiettivo è quello di calcolare $X_{1n}$
+> Si ha $w\in L(G)\iff S\in X_{1n}$
+
+#### Coppie di Insiemi
+> Per calcolare $X_{ij}$ dobbiamo analizzare al più $n$ coppie di insiemi ***precedentemente calcolati***
+
+$$
+(X_{ii}, X_{(i+1)j}),(X_{i(i+1)}, X_{(i+2)j}),\dots,(X_{i(j-1)}, X_{jj})
+$$
+
+> [!quote] In altre parole
+> Come suggerito dalla seguente immagine, per controllare tutte le divisioni possibili della string
+> "***Salgo sulla verticale e scendo sulla diagonale***"
+
+![[attachements/CYKDivisionTrick.png]]
+
+Per $w=a_{1}\dots a_{n}$ ci sono $O(n^{2})$ insiemi $X_{ij}$ da calcolare.
+- E visto che per calcolare ogni insieme bisogna analizzare $n$ coppie di insiemi:
+
+
+> [!caution] Costo computazionale
+> Il ***costo computazionale*** totale è quindi $O(n^{3})$
+
+###### Esempio
+> Consideriamo la grammatica $G$ con le seguenti produzioni
+$$
+\begin{aligned}
+S&\to AB\mid BC \\
+A&\to BA\mid a \\
+B&\to CC\mid b \\
+C&\to AB\mid a
+\end{aligned}
+$$
+
+
+> [!summary] Passo Base
+> Aggiungo alla riga $0$ gli insiemi di produzioni che mi generano il carattere "***sottostante***"
+
+$$
+\begin{array}{|lllll}
+* & & & & \\ 
+* & * & & & \\ 
+* & * & * & & \\ 
+* & * & * & * & \\ 
+\{B\} & \{A,C\} & \{A,C\} & \{B\} & \{A,C\} \\ 
+\hline
+b & a & a & b & a
+\end{array}
+$$
+
+> [!caution] Passo Induttivo
+> Ora calcoliamo $X_{12}$
+
+Posso dividere la stringa $ba$ in un solo modo:
+- $b\mid a$
+
+Gli insiemi corrispondenti sono $\{ B \}$ e $\{ A,C \}$
+- Formo tutte le possibili coppie con $B$ a *sinistra* e $A$ o $C$ a *destra* 
+- Controllo tutte le produzioni per vedere se ne ho una del tipo $P \to BA$ o $P\to BC$
+
+Eseguo questo procedimento per ciascun insieme nella prima riga e ottengo:
+$$
+\begin{array}{|lllll}
+* & & & & \\ 
+* & * & & & \\ 
+* & * & * & & \\ 
+\{S,A\} & \{B\} & \{S,C\} & \{S,A\} & \\ 
+\{B\} & \{A,C\} & \{A,C\} & \{B\} & \{A,C\} \\ 
+\hline
+b & a & a & b & a
+\end{array}
+$$
+
+> Ora proviamo a completare $X_{25}$
+
+$$
+\begin{array}{|lllll}
+* & & & & \\ 
+* & * & & & \\ 
+- & \{B\} & \{B\} & & \\ 
+\{S,A\} & \{B\} & \{S,C\} & \{S,A\} & \\ 
+\{B\} & \{A,C\} & \{A,C\} & \{B\} & \{A,C\} \\ 
+\hline
+b & a & a & b & a
+\end{array}
+$$
+Ho $3$ modi di dividere la stringa $aaba$:
+- $a\mid aba$ cioè gli insiemi già calcolati: $X_{22}$ e $X_{35}$
+- $aa\mid ba$ : $X_{23}$ e $X_{45}$ 
+- $aab\mid a$: $X_{24}$ e $X_{55}$
+
+Per ogni coppia di insiemi trovati controllo le coppie di variabili $JK$ con $J\in X_{2x}$ e $K \in X_{(x+1)5}$ con $2\leq x < 5$.
+Controllo se esistono le ***produzioni che generano***:
+- $AB$ o $CB$
+- $BS$ o $BA$
+- $BA$ o $BC$
+
+L'insieme $X_{25}$ sarà quindi: $\{ S,A,C \}$
+
+> [!done] Procedo fino a $X_{15}$
+> La ***tabella completa*** è la seguente
+
+$$
+\begin{array}{|lllll}
+\{S,A,C\} & & & & \\ 
+- & \{S,A,C\} & & & \\ 
+- & \{B\} & \{B\} & & \\ 
+\{S,A\} & \{B\} & \{S,C\} & \{S,A\} & \\ 
+\{B\} & \{A,C\} & \{A,C\} & \{B\} & \{A,C\} \\ 
+\hline
+b & a & a & b & a
+\end{array}
+$$
+
+
