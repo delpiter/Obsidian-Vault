@@ -20,6 +20,8 @@ La classificazione si dice *binaria* se le classi sono solo $2$ altrimenti *mult
 
 ## Regressione
 ---
+> [[Regressione/Regressione|Regressione]]
+
 >[!tldr] Idea
 >Applicare la [[../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Machine Learning#Regressione|regressione]] significa assegnare un valore continuo a un pattern.
 
@@ -34,6 +36,8 @@ Utile per la predizione di valori continui
 
 ## Clustering
 ---
+> [[Clustering/Clustering|Clustering]]
+
 > [!hint] Info
 > Nel [[../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Machine Learning#Clustering|clustering]] vengono individuati gruppi (*cluster*) di pattern con caratteristiche simli.
 

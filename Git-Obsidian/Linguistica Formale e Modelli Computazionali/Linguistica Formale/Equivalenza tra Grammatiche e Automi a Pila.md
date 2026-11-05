@@ -36,7 +36,7 @@ Dove:
 
 ## Equivalenza da PDA a CFG
 ---
-> Mostriamo ora l'esistenza di una `CFG` il cui linguaggio è lo stesso linguaggio $P$ che accetta per pila vuota.
+> Mostriamo ora l'esistenza di una `CFG` il cui linguaggio è lo stesso linguaggio $P$ che accetta per [[Automi a Pila#Accettazione per Pila Vuota|pila vuota]].
 
 > [!tldr] Idea
 > L'***evento fondamentale*** nella storia del processo di un input in un `PDA` è il ***pop*** di un simbolo dalla pila ***consumando un certo input***.
@@ -92,6 +92,9 @@ Le ***produzioni*** di $G$ si definiscono come di seguito:
 
 Allora per tutte le liste di stati $r_{1},r_{2},\dots,r_{k}$, $G$ ha la **produzione**:
 - $[qXr_{k}]\to a[rY_{1}r_{1}][r_{1}Y_{2}r_{2}]\dots[r_{k-1}Y_{k}r_{k}]$
+
+Se $k=0$ la produzione sarà:
+- $[qXq_{1}] \to a$ dove $q_{1}$ è direttamente lo ***stato finale***.
 
 > [!hint] Idea
 > Questa produzione indica che ***un modo di rimuovere*** $X$ e passare da uno stato $q$ a uno stato $r_{k}$ è quello di **leggere** $a$, e usare un input per **rimuovere** $Y_{1}$ dalla pila **passando dallo stato** $r$ allo **stato** $r_{1}$ e poi leggere un altro input che rimuove $Y_{2}$ dallo stack e passare da $r_{1}$ a $r_{2}$ e così via.

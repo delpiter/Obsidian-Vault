@@ -3,7 +3,7 @@
 > [!cite] Definizione
 > Dato un training set contenente $n$ pattern $(x_{1},y_{1}),\dots,(x_n, y_{n})$ e la seguente dipendenza tra variabile indipendente e dipendete:
 > $$y_{i}=\alpha+ \beta\cdot x_{i}+\epsilon_{i}$$
-> La soluzione ai ***minimi quadrati*** ([[../Metodi Numerici per L'Intelligenza Artificiale/Equazioni Lineari/Sistemi Sovradeterminati#Least Squares|Least Squares]]) del problema consiste nel determinare l'equazione della retta.
+> La soluzione ai ***minimi quadrati*** ([[../../Metodi Numerici per L'Intelligenza Artificiale/Equazioni Lineari/Sistemi Sovradeterminati#Least Squares|Least Squares]]) del problema consiste nel determinare l'equazione della retta.
 
 Dove:
 - $\epsilon_{i}$ è l'errore di misura (incognito) del pattern $x_{i}$
