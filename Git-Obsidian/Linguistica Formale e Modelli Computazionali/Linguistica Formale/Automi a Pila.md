@@ -186,3 +186,70 @@ Dove
 - Per ciascun stato di accettazione $q\in F$ e per ogni simbolo dello stack $Y\in\Gamma\cup X_{0}$, $\delta_{N}(q,\epsilon,Y)$ contiene $(p,\epsilon)$.
 	- Con questa regola, quando $P_{F}$ accetta una stringa, $P_{N}$ può iniziare a ***svuotare lo stack senza consumare altri input***.
 - Per ciascun simbolo dello stack $Y\in\Gamma\cup X_{0}$, $\delta_{N}(p,\epsilon,Y)=\{ (p,\epsilon) \}$, una volta nello stato $p$, che succede solo quando $P_{F}$ ha accettato la stringa, $P_{N}$ rimuove tutti i simboli dallo stack, finché la pila è vuota.
+
+## Deterministic Push Down Automaton
+---
+> [!abstract] Definizione
+> Un [[#Pushdown Automaton|PDA]] $P=(Q,\Sigma,\Gamma,\delta,q_{0},Z_{0},F)$ è ***deterministico*** se e solo se:
+> 1. Ogni $\delta(q,a,X)$ con $a\in \Sigma\cup\{ \epsilon \}$ contiene al più un elemento.
+> 2. Se $\delta(q,a,X)$ non vuoto per un $a\in \Sigma$ allora $\delta(q,\epsilon,X)$ è vuoto.
+
+> A parole
+1. In ogni situazione l'automa ha al massimo una *mossa* possibile.
+2. Partendo da uno ***stesso stato***, richiedendo uno ***stesso carattere*** nella pila, se ho una transizione, non posso averne un'altra con $\epsilon$ al posto di $a$.
+### DPDA che accetta per stato finale
+> Mostriamo che i linguaggi regolari $\subset L(DPDA) \subset CFL$ 
+
+> [!cite] Teorema
+> Se $L$ è regolare, allora $L=L(P)$ per qualche `DPDA` $P$
+
+> ***Dimostrazione***
+
+Dato che $L$ è regolare, esiste un DFA $A$ tale che $L=L(A)$
+Sia
+$$
+A=(Q,\Sigma,\delta_{A},q_{0},F)
+$$
+Definiamo il `DPDA`
+$$
+P=(Q,\Sigma,\{ Z_{0} \},\delta_{P}, q_{0},Z_{0},F)
+$$
+dove $\delta_{P}(q,a,Z_{0})=\{ (\delta_{A}(q,a),Z_{0}) \}$ per tutti i $p,q \in Q$ e $a\in\Sigma$
+
+### DPDA che accetta per pila vuota
+> [!warning] Attenzione
+> I `DPDA` che accettano per pila vuota ***riconoscono meno linguaggi***.
+
+> [!cite] Teorema
+> Dato un `DPDA` $P$ che accetta un linguaggio $L$ per **pila vuota**, esiste un `PDPA` $P'$ che accetta $L$ ***per stato finale***.
+
+Basta applicare la trasformazione vista in precedenza #addLink, poiché preserva il determinismo.
+
+Il viceversa però non vale.
+
+
+> [!cite] Teorema
+> Dato un `DPDA` $P$ che accetta $L$ per stato finale, esiste un `DPDA` $P'$ su $\Sigma \cup \{ \$ \}$ che accetta $L\{ \$ \}$ per pila vuota con $\$ \notin \Sigma$
+
+Il simbolo speciale $\$$ dice che la stringa è finita e deve accettare ***svuotando la pila***.
+- Nelle implementazioni dei parser/compilatori si usa il carattere speciale `EOF` che è **sempre in fondo ai files**.
+
+### DPDA e non ambiguità
+> Relazione tra riconoscimento deterministico e non ambigutià
+
+> [!cite] Teorema
+> Se $L=L(P)$ per qualche `DPDA` $P$ con accettazione per stato finale, allora $L$ ha una `CFG` $G$ ***non ambigua***
+
+> Dimostrazione
+
+Esiste un `DPDA` $P'$ che accetta $L\{ \$ \}$ con $\$ \notin \Sigma$ per pila vuota.
+- Applico a $P'$ la costruzione vista da `PDA` a `CFG`
+- Essendo $P'$ deterministico, mi da' una `CFG` $G'$ con **derivazioni a sinistra uniche per ogni stringa**.
+
+Ora modifico $G'$ in $G$ tale che $L(G)=L$ aggiungendo la produzione $\$\to\epsilon$ e considero $\$$ una variabile iniziale anziché terminale.
+
+
+> [!warning] Il viceversa non vale
+
+Il linguaggio delle stringhe palindrome con alfabeto $\{ 0,1 \}$ ha una grammatica non ambigua ma non appartiene $L(DPDA)$.
+- $L(DPDA)$ è una sottoclasse stretta dei `CFL` aventi grammatiche non ambigue.

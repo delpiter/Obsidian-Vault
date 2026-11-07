@@ -760,3 +760,61 @@ b & a & a & b & a
 $$
 
 
+##### Generare gli alberi sintattici
+> Nel caso $w\in L(G)$ possiamo usare l'algoritmo `CYK` per generare tutti gli alberi sintattici di $w$.
+
+
+> [!help] Parsing
+> La generazione di tutti i possibili alberi sintattici di una stringa $w$ viene detto ***parsing***.
+
+Per farlo memorizziamo esplicitamente i backpointers ai simboli che hanno causato l'***aggiunta di una variabile ad un insieme***.
+- Se una variabile viene aggiunta più volte allo stesso insieme, memorizziamo tutte le coppie alternative di backpointers.
+
+
+> [!caution] Traceback
+
+Infine, per costruire gli alberi si fa ***traceback*** a partire da $S$ dell'insieme $X_{1n}$ seguendo i ***backpointers*** per costruire tutti gli alberi sintattici di $w$.
+
+
+> [!hint] Nota
+> Il traceback costruisce una ***quantità esponenziale di alberi*** a partire da una rappresentazione polinomiale della foresta di alberi.
+
+### Verificare se un CLF è non vuoto
+> [!info]
+> $L(G)$ è *non vuoto* se il simbolo iniziale $S$ è ***generante***.
+
+Una implementazione naive del calcolo dei simboli generati di $G$ richiede tempo $O(n^{2})$.
+
+Ottimizzando le strutture dati di appoggio può essere calcolato in tempo $O(n)$.
+
+#### Proprietà di chiusura dei CLF
+> [!cite] Teorema
+> I `CLF` ***sono chiusi*** rispetto ai seguenti operatori:
+> 1. Unione
+> 2. Concatenazione
+> 3. Chiusura di Kleene
+> 4. Chiusura positiva
+
+
+> [!cite] Teorema
+> Se $L$ è una `CLF` allora lo è anche $L^{R}$
+
+> ***Dimostrazione***
+
+Supponiamo che $L$ sia generato da $G=(V,T,P,S)$. Costruiamo $G^{R}=(V,T,P^{R},S)$ dove:
+$$
+P^{R}=\{ A\to\alpha^{R}:A\to\alpha\in P \}
+$$
+Si mostra per induzione sulla lunghezza delle derivazioni in $G$ e in $G^{R}$ che $(L(G))^{R}=L(G^{R})$
+
+
+> [!fail] I `CLF` non sono chiusi rispetto all'intersezione
+>Per ***esempio***: Sia $L_{1}=\{ 0^{n}1^{n}2^{i}: n\geq , i\geq 1 \}$, allora $L_{1}$ è `CLF` con grammatica:
+> $$\begin{align}& S\to AB \\& A\to 0A1 \mid 01 \\& B\to 2B \mid 2\end{align}$$
+
+Inoltre $L_{2}=\{ 0^{i}1^{n}2^{n}: n\geq , i\geq 1 \}$ è `CLF` con grammatica
+$$\begin{align}& S\to AB \\& A\to 0A \mid 0 \\& B\to 1B2 \mid 12\end{align}$$
+Invece $L_{1} \cap L_{2}=\{ 0^{n}1^{n}2^{n}:n\geq 1\}$ non è `CFL`.
+
+#todo non può essere fatto l'esecuzione parallela in quanto mettendo in parallelo due PDA io ottengo comunque una pila sola, che non può essere gestita da due esecuizoni parallele.
+
