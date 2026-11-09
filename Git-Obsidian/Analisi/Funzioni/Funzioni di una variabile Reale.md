@@ -2,8 +2,8 @@
 - - -
 >[!info] Definizione
 >$$
-\begin{array}
-/f : \mathbb{R} \to \mathbb{R} \\
+\begin{array} {}
+f : \mathbb{R} \to \mathbb{R} \\
 f(x) =k, \; k \in \mathbb{R}
 \end{array}
 >$$
@@ -24,8 +24,8 @@ f(x)=3
 - - -
 >[!info] Definizione
 >$$
-\begin{array}
-/f: \mathbb{R} \to \mathbb{R} \\
+\begin{array}{}
+f: \mathbb{R} \to \mathbb{R} \\
 f(x) = ax^p+bx^{p-1}+\dots+ax+a \\
 p \in \mathbb{N} \\
 \end{array}
@@ -42,14 +42,14 @@ bounds: [-3,3,-3,3]
 disableZoom: true
 grid: true
 ---
-y=3x^4-2x^2+2x+1
+f(x)=3x^4-2x^2+2x+1
 ```
 ## Valore assoluto
 - - -
 >[[../Breve ripasso#Valore assoluto|Definizione]]
 >$$
-\begin{array}
-/f: \mathbb{R} \to \mathbb{R} \\
+\begin{array}{}
+f: \mathbb{R} \to \mathbb{R} \\
 f(x)=|x|
 \end{array}
 >$$
@@ -63,14 +63,14 @@ bounds: [-3,3,-3,3]
 disableZoom: true
 grid: true
 ---
-y=abs(x)
+f(x)=abs(x)
 ```
 ## Funzione Segno
 - - -
 >[!info] Definizione
 >$$
-\begin{array}
-/f: \mathbb{R}\setminus \{0\} \to \mathbb{R} \\ \\
+\begin{array}{}
+f: \mathbb{R}\setminus \{0\} \to \mathbb{R} \\ \\
 f(x)=segno(x)=\begin{cases}
 1\;\text{se}\;x>0 \\
 -1\;\text{se}\;x<0
