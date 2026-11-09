@@ -105,8 +105,8 @@ Possiamo notare come la parte sinistra dell'albero si concluda con una altezza d
 - $log_{10}n$
 La ricorsione, però si conclude solo quando il lato destro dell'albero ha raggiunto la fine
 $$
-\begin{array}
-\ \frac{n}{\left( \frac{10}{9} \right)^k}=1 \implies n=\left( \frac{10}{9} \right)^k \\
+\begin{array}{}
+\frac{n}{\left( \frac{10}{9} \right)^k}=1 \implies n=\left( \frac{10}{9} \right)^k \\
 log_{\frac{10}{9}}n=k
 \end{array}
 $$

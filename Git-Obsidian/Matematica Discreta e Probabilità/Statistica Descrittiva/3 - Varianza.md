@@ -44,8 +44,8 @@ $$
 
 ##### Dimostrazione
 $$
-\begin{array}
-\ \sigma^2_{y}=\overline{y^2}-\overline{y}^2=\overline{x^2+2ax+a^2}-(\overline{x}^2+2a\overline{x}+a^2) =\\=\overline{x^2}+\cancel{ 2a\overline{x} }+\cancel{ a^2 }-(\overline{x}^2+\cancel{ 2a\overline{x} }+\cancel{ a^2 })= \\
+\begin{array}{}
+\sigma^2_{y}=\overline{y^2}-\overline{y}^2=\overline{x^2+2ax+a^2}-(\overline{x}^2+2a\overline{x}+a^2) =\\=\overline{x^2}+\cancel{ 2a\overline{x} }+\cancel{ a^2 }-(\overline{x}^2+\cancel{ 2a\overline{x} }+\cancel{ a^2 })= \\
 =\overline{x^2}-\overline{x}^2
 \end{array}
 $$
@@ -54,8 +54,8 @@ $$
 
 ##### Dimostrazione
 $$
-\begin{array}
-\ \sigma^2_{y}=\overline{y^2}-\overline{y}^2= \\
+\begin{array}{}
+\sigma^2_{y}=\overline{y^2}-\overline{y}^2= \\
 \overline{(ax)^2}-\overline{ax}^2= \\
 =a^2(\overline{x^2}-\overline{x}^2)= \\
 =a^2\sigma^2_{x}
@@ -97,8 +97,8 @@ Se la ***varianza è positiva***
 
 ##### Dimostrazione
 $$
-\begin{array}
-\ \sigma_{x,y}=\displaystyle\frac{1}{n} \sum_{i=1}^n(x_{i}-\overline{x})(y_{i}-\overline{y}) =\\
+\begin{array}{}
+\sigma_{x,y}=\displaystyle\frac{1}{n} \sum_{i=1}^n(x_{i}-\overline{x})(y_{i}-\overline{y}) =\\
 =\displaystyle\underbrace{ \frac{1}{n}\sum_{i=1}^nx_{i}y_{i} }_{ \overline{xy} }-\underbrace{ \frac{1}{n}\sum^n_{i=1}x_{i-\overline{y}} }_{ \overline{x}\overline{y} }-\underbrace{ \frac{1}{n}\sum_{i=1}^n\overline{x}y_{i}U }_{ \overline{x}\overline{y} }+\frac{1}{n}\underbrace{ \sum_{i=1}^n\overline{x}\overline{y} }_{ \overline{x}\overline{y} }= \\
 =\overline{xy}-\overline{x}\overline{y}-\cancel{ \overline{x}\overline{y} }+\cancel{ n\cdot \frac{1}{n}\overline{x}\overline{y} }= \\
 =\overline{xy}-\overline{x}\overline{y}

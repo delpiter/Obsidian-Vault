@@ -58,8 +58,8 @@ $U=\{ (a,b,0,0), a,b\in \mathbb{R} \}$
 $W =\{( 0,t,s,0 ), t,s\in\mathbb{R}\}$
 
 $$
-\begin{array}
-\ U+W=\{ u+w, u\in W,w\in W \}=\{ (a,b+t,s,0),a,b+t,s\in\mathbb{R} \}= \\
+\begin{array}{}
+U+W=\{ u+w, u\in W,w\in W \}=\{ (a,b+t,s,0),a,b+t,s\in\mathbb{R} \}= \\
 =\{ (x_{1},x_{2},x_{3}x_{4})\in\mathbb{R}^4:x_{4}=0 \} \text{ dim} =3
 \end{array}
 $$
@@ -113,8 +113,8 @@ $$
 $$
 E otterremo che:
 $$
-\begin{array}
-\ \underbrace{  \text{dim}(U) }_{ r }+\underbrace{ \text{dim}(W) }_{ s } = \underbrace{ \text{dim}(U+W) }_{ r+s-i } +\underbrace{ \text{dim}(U\cap W) }_{ i } \\
+\begin{array}{}
+\underbrace{  \text{dim}(U) }_{ r }+\underbrace{ \text{dim}(W) }_{ s } = \underbrace{ \text{dim}(U+W) }_{ r+s-i } +\underbrace{ \text{dim}(U\cap W) }_{ i } \\
 r+s=r+s\cancel{ -i }\cancel{ +i }
 \end{array}
 $$
@@ -157,8 +157,8 @@ $$
 >[!tip] $(2,4,1,0)\in U+W$
 
 $$
-\begin{array}
-\ \underbrace{ (2,3,0,0) }_{ \in U }+\underbrace{ (0,1,1,0) }_{ \in W } \\
+\begin{array}{}
+\underbrace{ (2,3,0,0) }_{ \in U }+\underbrace{ (0,1,1,0) }_{ \in W } \\
 \underbrace{ (2,1,0,0) }_{ \in U }+\underbrace{ (0,3,1,0) }_{ \in W }
 \end{array}
 $$

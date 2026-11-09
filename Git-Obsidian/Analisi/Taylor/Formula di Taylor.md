@@ -42,8 +42,8 @@ $$
 - Ora basta dimostrare che $d_{x} = x$
 ##### Applico il valore assoluto
 $$
-\begin{array}
-\ 0\leq\left|\displaystyle{\frac{R(x)-R(0)}{x^2}}\right|=\left| \displaystyle\frac{R'(d_{x})}{x} \right|\leq \underbrace{ \left| \displaystyle\frac{R'(d_{x})}{d_{x}} \right| }_{ \text{ tende a 0 per }x\to0 }  \\
+\begin{array}{}
+0\leq\left|\displaystyle{\frac{R(x)-R(0)}{x^2}}\right|=\left| \displaystyle\frac{R'(d_{x})}{x} \right|\leq \underbrace{ \left| \displaystyle\frac{R'(d_{x})}{d_{x}} \right| }_{ \text{ tende a 0 per }x\to0 }  \\
 \end{array}
 $$
 - Dato che $d_{x}$ è compreso tra $x$ e $-x$ se $x\to 0$ anche $d_{x}\to0$

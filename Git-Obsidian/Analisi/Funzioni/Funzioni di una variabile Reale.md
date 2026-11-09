@@ -274,8 +274,8 @@ f(x)=sin(x)
 >$$\frac{a}{sin(\alpha)}=\frac{b}{sin(\beta)}=\frac{c}{sin(\gamma))}$$
 ### Formule Seno e Coseno
 $$
-\begin{array}
-\ \forall x_{1},x_{2}\in\mathbb{R},cos(x_{1}+x_{2})=cos(x_{1})\cdot cos(x_{2})-sen(x_{1})\cdot sen(x_{2}) \\
+\begin{array}{}
+\forall x_{1},x_{2}\in\mathbb{R},cos(x_{1}+x_{2})=cos(x_{1})\cdot cos(x_{2})-sen(x_{1})\cdot sen(x_{2}) \\
 \forall x_{1},x_{2}\in\mathbb{R},sen(x_{1}+x_{2})=cos(x_{1})\cdot sen(x_{2})+cos(x_{2})\cdot sen(x_{1}) \\
 \forall x \in \mathbb{R}, cos(2x)=cos^2(x)-sen^2(x) \\
 \forall x\in\mathbb{R},sen(2x)=2cos(x)\cdot sen(x)

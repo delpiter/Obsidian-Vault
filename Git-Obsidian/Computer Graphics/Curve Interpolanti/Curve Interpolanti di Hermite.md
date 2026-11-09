@@ -18,8 +18,8 @@ Scegliamo una base di funzioni $\varphi$ per lo spazio in cui vogliamo costruire
 - Interpoliamo quindi le coppie $(t_{i},x_{i})$ e $(t_{i},y_{i})$:
 
 $$
-\begin{array}
-\ \displaystyle X_{n}(t)=\sum_{j=0}^{n}\alpha_{j}\varphi_{j}(t)\quad t.c. \ X_{n}(t_{i})=x_{i} \\
+\begin{array}{}
+\displaystyle X_{n}(t)=\sum_{j=0}^{n}\alpha_{j}\varphi_{j}(t)\quad t.c. \ X_{n}(t_{i})=x_{i} \\
 \displaystyle Y_{n}(t)=\sum_{j=0}^{n}\beta_{j}\varphi_{j}(t)\quad t.c. \ Y_{n}(t_{i})=y_{i}
 \end{array}
 $$

@@ -51,7 +51,7 @@ Le tecniche allo stato dell'arte applicano regole per ridurre il numero di stati
 
 Può essere automatizzato da strumenti chiamati ***sistemi deduttivi***.
 
-Entrambe le tecniche si basano su una specie di [[../../Linguistica Formale e Modelli Computazionali/Linguistica#Linguaggio Formale|linguaggio formale]]per specificare le proprietà di correttezza.
+Entrambe le tecniche si basano su una specie di [[../Linguistica Formale e Modelli Computazionali/Linguistica Formale/Linguistica#Linguaggio Formale|linguaggio formale]]per specificare le proprietà di correttezza.
 
 ## Descrizione logica delle proprietà
 ---

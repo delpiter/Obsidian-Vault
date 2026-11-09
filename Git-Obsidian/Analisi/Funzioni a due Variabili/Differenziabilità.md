@@ -70,8 +70,8 @@ z=f(x_{0},y_{0})+ \displaystyle{\frac{df}{dx}}(x_{0},y_{0})(x-x_{0})+ \displayst
 >>[!example] Differenziale
 >>Chiamo differenziale di $f$ nel punto $(x_{0},y_{0})$
 >>La funzione lineare
->>$$\begin{array}
-\ df_{(x_{0},y_{0})}:\mathbb{R}^2\to\mathbb{R} \\
+>>$$\begin{array}{}
+df_{(x_{0},y_{0})}:\mathbb{R}^2\to\mathbb{R} \\
 (h,k) \mapsto \displaystyle{\frac{df}{dx}}(x_{0},y_{0})h+ \displaystyle{\frac{df}{dy}}(x_{0},y_{0})k
 \end{array}
 $$

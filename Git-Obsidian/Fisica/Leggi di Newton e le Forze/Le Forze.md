@@ -209,8 +209,8 @@ Un attimo prima che il corpo scivoli abbiamo: $\sum F=0$
 > Per l'angolo $\theta_{0}$ ho raggiunto la ***massima forza di attrito possibile*** $F_{s}^{\text{max}}$.
 
 $$
-\begin{array}
-\ -mg\sin\theta_{0}+F_{s}^{\text{max}}=0 \\
+\begin{array}{}
+-mg\sin\theta_{0}+F_{s}^{\text{max}}=0 \\
 -mg\sin\theta_{0}+\mu_{s}N=0 \\
 -mg\sin\theta_{0}+\mu_{s}mg\cos\theta_{0}=0
 \end{array}\implies\mu_{s}=\tan\theta_{0}
@@ -260,8 +260,8 @@ Abbiamo una ***equazione differenziale*** che è soddisfatta da una $f(t)$ tale 
 >[!done] Seno e Coseno
 
 $$
-\begin{array}
-\ x(t)=A\cos(\omega t+\phi) \\
+\begin{array}{}
+x(t)=A\cos(\omega t+\phi) \\
 \displaystyle{\frac{\text{d}x}{\text{d}t}}(t)=-\omega A\sin(\omega t+\phi) \\
 \displaystyle{\frac{\text{d}^2x}{\text{d}t^2}}(t)=-\omega^2 A\cos(\omega t+\phi)=-\omega^2 x(t)
 \end{array}

@@ -114,8 +114,8 @@ La ***combinazione affine*** di due punti distinti descrive la *retta passante p
 - Consideriamo la combinazione affine $\alpha+\beta=1$
 
 $$
-\begin{array}
-\ P=\alpha R+\beta Q, \quad \beta=1-\alpha \\
+\begin{array}{}
+P=\alpha R+\beta Q, \quad \beta=1-\alpha \\
 P(\alpha)=\alpha R+(1-\alpha)Q \\
 P(\alpha)=Q+\alpha(R-Q) \\
 P(\alpha)=Q+\alpha v

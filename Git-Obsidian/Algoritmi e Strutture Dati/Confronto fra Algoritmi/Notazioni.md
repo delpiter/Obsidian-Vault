@@ -166,8 +166,8 @@ c(x) = x^(1+sin(x))
 ## Limiti e Ordini di Grandezza
 ---
 $$
-\begin{array}
-\ \text{Se } \lim\limits_{n\to +\infty} \displaystyle{\frac{f(n)}{g(n)}} = c \neq 0\implies f(n)=\Theta(g(n)) \\
+\begin{array}{}
+\text{Se } \lim\limits_{n\to +\infty} \displaystyle{\frac{f(n)}{g(n)}} = c \neq 0\implies f(n)=\Theta(g(n)) \\
 \text{Se } \lim\limits_{n\to +\infty} \displaystyle{\frac{f(n)}{g(n)}} =0\implies f(n)=\circ (g(n)) \\
 \text{Se } \lim\limits_{n\to +\infty} \displaystyle{\frac{f(n)}{g(n)}} = +\infty \implies f(n)=\omega(g(n))
 \end{array}

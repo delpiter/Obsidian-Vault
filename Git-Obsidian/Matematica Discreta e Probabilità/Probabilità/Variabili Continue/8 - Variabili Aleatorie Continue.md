@@ -241,8 +241,8 @@ $$
 >Se $0<t<1$
 
 $$
-\begin{array}
-\ F_{X^2}(t)=F_{X}(\sqrt{ t })-F_{X}(-\sqrt{ t })= \\
+\begin{array}{}
+F_{X^2}(t)=F_{X}(\sqrt{ t })-F_{X}(-\sqrt{ t })= \\
 = \displaystyle{\frac{\sqrt{ t }+1}{3}}-\displaystyle{\frac{-\sqrt{ t }+1}{3}}= \frac{2}{3}\sqrt{ t }
 \end{array}
 $$

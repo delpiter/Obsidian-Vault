@@ -92,8 +92,8 @@ $$
 >Tornando all'esempio:
 
 $$
-\begin{array}
-\ X\sim \tilde{G}\left( \frac{1}{6} \right)\quad d_{X}(k)=\frac{1}{6}\cdot\left( \frac{5}{6} \right)^{k-1} \quad \forall k\geq 1 \\
+\begin{array}{}
+X\sim \tilde{G}\left( \frac{1}{6} \right)\quad d_{X}(k)=\frac{1}{6}\cdot\left( \frac{5}{6} \right)^{k-1} \quad \forall k\geq 1 \\
 F_{X}(k)=\mathcal{P}(X\leq k)=1-\mathcal{P}(X>k)=1-\left( \frac{5}{6} \right)^k \\
 Y\sim \tilde{G}\left( \frac{1}{2} \right)\quad d_{Y}(k)=\frac{1}{2}\cdot\left( \frac{1}{2} \right)^{k-1} \quad \forall k\geq 1 \\
 F_{Y}(k)=1-\left( \frac{1}{2} \right)^k 

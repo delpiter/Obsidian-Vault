@@ -373,8 +373,8 @@ $$
 >Verifichiamo:
 
 $$
-\begin{array}
-\ 1-a^{n+1}=(1-a)(1+a+a^2+a^3+\dots+a^n)= \\
+\begin{array}{}
+1-a^{n+1}=(1-a)(1+a+a^2+a^3+\dots+a^n)= \\
 =1\cancel{ +a }\cancel{ -a }\cancel{ +a^2 }\cancel{ -a^2 }+\dots\cancel{ +a^n }\cancel{ -a^n }-a^{n+1}
 \end{array}
 $$
@@ -431,16 +431,16 @@ $Z=\#$ di lanci totale
 3. $Z\sim \tilde{G}\left( \frac{1}{36} \right)$
 
 $$
-\begin{array}
-\ \mathcal{P}(X<Y) + \mathcal{P}(X>Y)+\mathcal{P}(X=Y)=1 \\
+\begin{array}{}
+\mathcal{P}(X<Y) + \mathcal{P}(X>Y)+\mathcal{P}(X=Y)=1 \\
 2\mathcal{P}(X<Y) +\mathcal{P}(X=Y)=1
 \end{array}
 $$
 - Calcoliamo $\mathcal{P}(X=Y)$
 
 $$
-\begin{array}
-\ \mathcal{P}(X=Y)=\displaystyle\sum_{k=1}^\infty\mathcal{P}(X=Y=k)=\displaystyle\sum_{k=1}^\infty\mathcal{P}(X=k)\cdot\mathcal{P}(Y=k) =\\
+\begin{array}{}
+\mathcal{P}(X=Y)=\displaystyle\sum_{k=1}^\infty\mathcal{P}(X=Y=k)=\displaystyle\sum_{k=1}^\infty\mathcal{P}(X=k)\cdot\mathcal{P}(Y=k) =\\
 =\displaystyle\sum_{k=1}^\infty\left( \frac{5}{6} \right)^{k-1}\cdot \frac{1}{6}\cdot\left( \frac{5}{6} \right)^{k-1}\cdot \frac{1}{6}= \\
 \displaystyle\sum_{k=1}^\infty\left( \frac{25}{36} \right)^{k-1}\cdot \frac{1}{36}=\frac{1}{36}\cdot\displaystyle\sum_{h=0}^\infty\left( \frac{25}{36} \right)^h= \\
 =\displaystyle\frac{36}{11}\cdot \frac{1}{36}=\frac{1}{11}

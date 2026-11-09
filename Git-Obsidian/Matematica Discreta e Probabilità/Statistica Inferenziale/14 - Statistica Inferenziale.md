@@ -50,8 +50,8 @@ $$
 >$$\mathcal{P}\left( -z_{c}< \displaystyle{\frac{\overline{X_{n}}-\mu_{X}}{\sigma_{X} / \sqrt{ n }}} < z_{c}\right)=c$$
 
 $$
-\begin{array}
-\ \mathcal{P}\left( \displaystyle{\frac{-z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}< \overline{X_{n}}-\mu_{X}<  \displaystyle{\frac{z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}\right)=c \implies\\
+\begin{array}{}
+\mathcal{P}\left( \displaystyle{\frac{-z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}< \overline{X_{n}}-\mu_{X}<  \displaystyle{\frac{z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}\right)=c \implies\\
 \mathcal{P}\left( \displaystyle{\frac{-z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}-\overline{X_{n}}< -\mu_{X}<  \displaystyle{\frac{z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}-\overline{X_{n}}\right)=c \implies  \\
 \mathcal{P}\left( \overline{X_{n}} -\displaystyle{\frac{z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}< \mu_{X}<  \overline{X_{n}}+\displaystyle{\frac{z_{c}\cdot \sigma_{X}}{\sqrt{ n }}}\right)=c
 \end{array}

@@ -47,8 +47,8 @@ $$
 #### Dimostrazione
 Voglio mostrare che $1\Leftrightarrow 2$
 $$
-\begin{array}
-\ \lim\limits_{x\to c} \displaystyle{\frac{f(x)-f(c)}{x-c}}=l \Leftrightarrow \lim\limits_{x\to c} \displaystyle{\frac{f(x)-f(c)}{x-c}}-l = 0 \\
+\begin{array}{}
+\lim\limits_{x\to c} \displaystyle{\frac{f(x)-f(c)}{x-c}}=l \Leftrightarrow \lim\limits_{x\to c} \displaystyle{\frac{f(x)-f(c)}{x-c}}-l = 0 \\
 \displaystyle{\frac{f(x)-f(c)}{x-c}}=l+\circ (1)\text{ per } x\to c\\
 f(x)-f(c) = l(x-c)+\circ(x-c) \text{ per } x\to c \\
 f(x) =f(c) + l(x-c)+\circ(x-c) \text{ per } x\to c

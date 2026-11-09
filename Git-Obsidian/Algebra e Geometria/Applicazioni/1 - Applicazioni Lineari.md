@@ -27,8 +27,8 @@ $$
 
 Applico l'applicazione $f$ alla *somma*
 $$
-\begin{array}
-\ f(v_{1}+v_{2}) =(2(z_{1}+z_{2}),(x_{1}+x_{2})+(y_{1}+y_{2})) \\
+\begin{array}{}
+f(v_{1}+v_{2}) =(2(z_{1}+z_{2}),(x_{1}+x_{2})+(y_{1}+y_{2})) \\
 f(v_{1})+f(v_{2}) = (2z_{1},x_{1}+y_{1})+(2z_{2},x_{2}+y_{2})
 \end{array}
 $$
@@ -36,8 +36,8 @@ $$
 
 Controlliamo il *prodotto*
 $$
-\begin{array}
-\ f(av)=(2az,ax+ay) \\
+\begin{array}{}
+f(av)=(2az,ax+ay) \\
 af(v)=a(2z,x+y)
 \end{array}
 $$
@@ -54,8 +54,8 @@ $$
 
 Applico l'applicazione $f$ alla *somma*
 $$
-\begin{array}
-\ f(v_{1}+v_{2}) = f(x_{1}+x_{2},y_{1}+y_{2}) =(2(x_{1}+x_{2}),(y_{1}+y_{2})^2) \\
+\begin{array}{}
+f(v_{1}+v_{2}) = f(x_{1}+x_{2},y_{1}+y_{2}) =(2(x_{1}+x_{2}),(y_{1}+y_{2})^2) \\
 f(v_{1})+f(v_{2})=(2x_{1},y_{1}^2)+(2x_{2},y_{2}^2) = (2(x_{1}+x_{2}),y_{1}^2+y_{2}^2)
 \end{array}
 $$
@@ -71,8 +71,8 @@ $$
 
 Controllo la *somma*
 $$
-\begin{array}
-\ f(v_{1}+v_{2}) = f(x_{1}+x_{2},y_{1},y_{2}) = (0,x_{1}+x_{2}+y_{1}+y_{2},1) \\
+\begin{array}{}
+f(v_{1}+v_{2}) = f(x_{1}+x_{2},y_{1},y_{2}) = (0,x_{1}+x_{2}+y_{1}+y_{2},1) \\
 f(v_{1})+f(v_{2})=(0,x_{1}+y_{1},1)+(0,x_{2}+y_{2},1) = (0,x_{1}+x_{2}+y_{1}+y_{2},2)
 \end{array}
 $$
@@ -155,8 +155,8 @@ Siano $v_{1},v_{2}\in V:f(v_{1})=f(v_{2})\implies f(v_{1})-f(v_{2})=\underline{0
 >$f:\mathbb{R}^2\to\mathbb{R}^2, f(x,y)\mapsto(x+y,2x+2y)$
 
 $$
-\begin{array}
-\ \mathrm{ker}f=\{ (x,y)\in\mathbb{R}^2:f(x,y)=0 \}=\{ (x,y)\in\mathbb{R}^2: \begin{cases}
+\begin{array}{}
+\mathrm{ker}f=\{ (x,y)\in\mathbb{R}^2:f(x,y)=0 \}=\{ (x,y)\in\mathbb{R}^2: \begin{cases}
 x+y=0 \\
 2x+2y=0
 \end{cases}

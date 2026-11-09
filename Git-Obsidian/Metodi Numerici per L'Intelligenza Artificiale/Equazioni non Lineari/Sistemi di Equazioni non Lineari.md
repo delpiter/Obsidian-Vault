@@ -138,8 +138,8 @@ Lo Jacobiano di $F(X)$ calcolato in $X_{k}$
 
 Il [[#^263baf|sistema]] si può esprimere in forma matriciale come
 $$
-\begin{array}
-\ 0=F(X_{k})+J(X_{k})(X-X_{k}) \\
+\begin{array}{}
+0=F(X_{k})+J(X_{k})(X-X_{k}) \\
 J(X_{k})(X-X_{k})=-F(X_{k}) \\
 \end{array}
 $$

@@ -314,8 +314,8 @@ $$Mx^{(k)}=Nx^{(k-1)}+b$$
 
 Sostituendo ad $M$ la matrice $E+D$ e ad $N$ la matrice $-F$, otteniamo:
 $$
-\begin{array}
-\ (E + D)\,x^{(k)} = -F\,x^{(k-1)} + b \qquad k = 1, 2, \dots \\
+\begin{array}{}
+(E + D)\,x^{(k)} = -F\,x^{(k-1)} + b \qquad k = 1, 2, \dots \\
 D\,x^{(k)} = -E\,x^{(k)} - F\,x^{(k-1)} + b \\
 x^{(k)} = D^{-1}(-E\,x^{(k)} - F\,x^{(k-1)} + b) \\
 \end{array}

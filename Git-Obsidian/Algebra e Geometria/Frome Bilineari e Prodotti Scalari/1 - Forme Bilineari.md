@@ -24,8 +24,8 @@ $$
 >[!abstract] Somma
 
 $$
-\begin{array}
-\ \beta(v+v',u)=\beta((x_{1}+x_{1}',x_{2}+x_{2}'),(y_{1},y_{2}))= \\
+\begin{array}{}
+\beta(v+v',u)=\beta((x_{1}+x_{1}',x_{2}+x_{2}'),(y_{1},y_{2}))= \\
 =2(x_{1}+x_{1}')y_{1}+(x_{1}+x_{1}')y_{2}+2(x_{2}+x_{2}')y_{1}(x_{2}+x_{2}')y_{2} = \\
 \beta(v,u)+\beta(v',u)
 \end{array}
@@ -35,8 +35,8 @@ $$
 >[!abstract] Prodotto
 
 $$
-\begin{array}
-\ \beta(av,u)=\beta((ax_{1},ax_{2}),(y_{1},y_{2}))= \\
+\begin{array}{}
+\beta(av,u)=\beta((ax_{1},ax_{2}),(y_{1},y_{2}))= \\
 =2ax_{1}y_{1}+ax_{1}y_{2}+3ax_{2}y_{1}-ax_{2}y_{2}= \\
 =a(2x_{1}y_{1}+x_{1}y_{2}+3x_{2}y_{1}-x_{2}y_{2}) = a\beta(v,u)
 \end{array}
@@ -55,8 +55,8 @@ $$
 >[!abstract] Prodotto
 
 $$
-\begin{array}
-\ \beta(av,u)=(ax_{1})(ax_{2})+y_{1}y_{2}=a^2x_{1}x_{2}+y_{1}y_{2}\neq \\
+\begin{array}{}
+\beta(av,u)=(ax_{1})(ax_{2})+y_{1}y_{2}=a^2x_{1}x_{2}+y_{1}y_{2}\neq \\
 \neq ax_{1}x_{2}+ay_{1}y_{2}=a\beta(v,u)
 \end{array}
 $$

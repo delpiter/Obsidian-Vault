@@ -49,8 +49,8 @@ Le proprietà delle **operazioni** comunemente conosciute non sono **sempre vere
 $a+(b-c)=(a+b)-c$
 ##### Esempio
 $$
-\begin{array}
-\ 400+(300-500) = (400+300)-500 \\
+\begin{array}{}
+400+(300-500) = (400+300)-500 \\
 400+(\underbrace{ -200 }_{ \text{Underflow} }) = 700-500
 \end{array}
 $$
@@ -60,8 +60,8 @@ $$
 $a\times(b-c) = a\times b -a\times c$
 ##### Esempio
 $$
-\begin{array}
-\ 50\times (50-40)=50\times 50 -50\times 40 \\
+\begin{array}{}
+50\times (50-40)=50\times 50 -50\times 40 \\
 50\times 10 = \underbrace{ 2500 }_{ \text{Overflow} }-\underbrace{ 2000 }_{ \text{Overflow} }
 \end{array}
 $$
@@ -93,8 +93,8 @@ Utilizzato nel linguaggio dell'assebly poichè molto compatto e semplice da scan
 ### Conversione tra Basi
 #### Da Base $n$ a Base $10$ 
 $$
-\begin{array}
-\ \displaystyle\sum_{i=k}^{n_{d}-1} n_{i}\cdot b^i 
+\begin{array}{}
+\displaystyle\sum_{i=k}^{n_{d}-1} n_{i}\cdot b^i 
  \\n_{d} = \text{number of digits} \\
 k = \text{index of first digit} \\
 b = \text{ base}
@@ -136,8 +136,8 @@ Si procede con i seguenti calcoli:
 2. Il processo viene reiterato al resto della sottrazione
 3. Il risultato binario si ottiene ponendo a uno le cifre delle potenze che sono state utilizzate
 $$
-\begin{array}
-\ 1492.25 = 2^{10}+468.25 \\
+\begin{array}{}
+1492.25 = 2^{10}+468.25 \\
 468.25 = 2^8+212.25 \\
 212.25 = 2^7+84.25 \\
 84.25 = 2^6+20.25 \\
@@ -154,8 +154,8 @@ Questo procedimento è generalizzabile per passare da base decimale a qualsiasi 
 4. Il risultato binario si ottiene ponendo a uno le cifre delle potenze che sono state utilizzate
 ##### Decimale-Base 3
 $$
-\begin{array}
-\ 1492_{10} = 2 \cdot 3^6 34\\
+\begin{array}{}
+1492_{10} = 2 \cdot 3^6 34\\
 34 = 0\cdot 3^5 +34 \\
 34 = 0\cdot 3^4 +34 \\
 34 = 1 \cdot 3^3 +7\\

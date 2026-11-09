@@ -29,8 +29,8 @@ $(0,1)\cdot(0,1)=(0\cdot0-1\cdot1,0\cdot1+1\cdot0) = (-1,0)$
 ## Forma Algebrica
 - - -
 $$
-\begin{array}
-\ z\in\mathbb{C} \\
+\begin{array}{}
+z\in\mathbb{C} \\
 z=(a,b)=a(1,0)+b(0,1)=a+ib
 \end{array}
 $$
@@ -40,15 +40,15 @@ $$
 - Osserviamo che
 ##### Somma
 $$
-\begin{array}
-\ (a+ib)+(c+id)=a+c+i(b+d) \\
+\begin{array}{}
+(a+ib)+(c+id)=a+c+i(b+d) \\
 (a,b)+(c,d)=(a+c,b+d)
 \end{array}
 $$
 ##### Prodotto
 $$
-\begin{array}
-\ (a+ib)\cdot(c+id)=ac-bd+i(bc+ad) \\
+\begin{array}{}
+(a+ib)\cdot(c+id)=ac-bd+i(bc+ad) \\
 (a,b)\cdot(c,d)=(ac-db,ad+bc)
 \end{array}
 $$
@@ -59,15 +59,15 @@ $$
 
 - Si può osservare
 $$
-\begin{array}
-\ \mathbb{R}e(z)=\displaystyle{\frac{z+\overline{z}}{2}}=a \\
+\begin{array}{}
+\mathbb{R}e(z)=\displaystyle{\frac{z+\overline{z}}{2}}=a \\
 Im(z)=\displaystyle{\frac{z-\overline{z}}{2i}}=b
 \end{array}
 $$
 ### Proprietà
 $$
-\begin{array}
-\ \overline{z_{1}}+\overline{z_{2}}=\overline{z_{1}+z_{2}}\\
+\begin{array}{}
+\overline{z_{1}}+\overline{z_{2}}=\overline{z_{1}+z_{2}}\\
 \overline{z_{1}}\cdot\overline{z_{2}}=\overline{z_{1}\cdot z_{2}}
 \end{array}
 $$

@@ -4,8 +4,8 @@
 >Siano $(a_{n}),(b_{n})_{n\in\mathbb{N}},\ l,m\in\mathbb{R}$
 ><u>Allora</u>
 > $$
-\begin{array}
-\ \lim\limits_{n\to+\infty}a_{n}\pm b_{n}=l\pm m \\ \\
+\begin{array}{}
+\lim\limits_{n\to+\infty}a_{n}\pm b_{n}=l\pm m \\ \\
 \lim\limits_{n\to+\infty} a_{n}\cdot b_{n}=l\cdot m \\
 \lim\limits_{n\to+\infty} \displaystyle{\frac{a_{n}}{b_{n}}}=\frac{l}{m}, b_{n}\neq 0, m\neq0 \\
 \lim\limits_{n\to+\infty} \displaystyle{\frac{a_{n}}{b_{n}}}=0,\text{ se } m=\pm\infty,l\in\mathbb{R}
@@ -42,8 +42,8 @@ $$
 $$
 ##### Osservazione
 $$
-\begin{array}
-\ \lim\limits_{n\to+\infty}a_{n}=l,\ \ \ \lim\limits_{n\to+\infty}b_{n}=0 \\
+\begin{array}{}
+\lim\limits_{n\to+\infty}a_{n}=l,\ \ \ \lim\limits_{n\to+\infty}b_{n}=0 \\
 \displaystyle{\frac{a_{n}}{b_{n}}} \text{ in generale non diverge}
 \end{array}
 $$

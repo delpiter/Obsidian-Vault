@@ -125,8 +125,8 @@ $$
 > Le formule del gradiente della loss function $L$ rispetto a tutti i pesi sono:
 
 $$
-\begin{array}
-\ \displaystyle\frac{ \partial L }{ \partial w_{11}^{(3)} }=\delta_{1}^{(3)} z_{1}^{(2)} \\
+\begin{array}{}
+\displaystyle\frac{ \partial L }{ \partial w_{11}^{(3)} }=\delta_{1}^{(3)} z_{1}^{(2)} \\
 \displaystyle\frac{ \partial L }{ \partial w_{11}^{(2)} }=\delta_{1}^{(2)} z_{1}^{(1)} \\
 \displaystyle\frac{ \partial L }{ \partial w_{11}^{(1)} }=\delta_{1}^{(1)} z_{1}^{(0)}
 \end{array}
@@ -138,8 +138,8 @@ $$
 > Omettendo gli indici $k$ e $k+1$ dell'epoca:
 
 $$
-\begin{array}
-\ w_{11}^{(3)}=w_{11}^{(3)}-\eta \delta_{1}^{(3)}z_{1}^{(2)} \\
+\begin{array}{}
+w_{11}^{(3)}=w_{11}^{(3)}-\eta \delta_{1}^{(3)}z_{1}^{(2)} \\
 w_{11}^{(2)}=w_{11}^{(2)}-\eta \delta_{1}^{(2)}z_{1}^{(1)} \\
 w_{11}^{(1)}=w_{11}^{(1)}-\eta \delta_{1}^{(1)}x_{1}
 \end{array}

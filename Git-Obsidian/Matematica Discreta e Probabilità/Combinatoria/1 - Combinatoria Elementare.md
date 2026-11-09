@@ -51,8 +51,8 @@ $$
 >Le ***potenze cartesiane*** e ***l'insieme delle parti*** sono correlati
 
 $$
-\begin{array}
-\ \varnothing \mapsto(0,0,0) \\
+\begin{array}{}
+\varnothing \mapsto(0,0,0) \\
 \{ 1 \}\mapsto(1,0,0) \\
 \{ a \}\mapsto(0,1,0) \\
 \{ \pi \}\mapsto(0,0,1) \\
@@ -177,8 +177,8 @@ $$
 
 ### Dimostrazione
 $$
-\begin{array}
-\ \{ 1,2,3 \} \iff (1,1,1,0,0) \iff (0,0,0,1,1)\iff\{ 4,5 \} \\
+\begin{array}{}
+\{ 1,2,3 \} \iff (1,1,1,0,0) \iff (0,0,0,1,1)\iff\{ 4,5 \} \\
 \vdots \\
 \{ 2,3,5 \}\iff(0,1,1,0,1)\iff(1,0,0,1,0)\iff\{ 1,4 \} \\
 \vdots

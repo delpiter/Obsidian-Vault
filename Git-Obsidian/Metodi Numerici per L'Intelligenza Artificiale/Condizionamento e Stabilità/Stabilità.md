@@ -42,8 +42,8 @@ $$
 > Verifichiamo che $E_{tot}\approx E_{in} + E_{alg}$
 
 $$
-\begin{array}
-\ \displaystyle{\frac{\Psi(\tilde{x})-f(x)}{f(x)}} = \displaystyle{\frac{\Psi(\tilde{x})}{f(x)}}-1= \\
+\begin{array}{}
+\displaystyle{\frac{\Psi(\tilde{x})-f(x)}{f(x)}} = \displaystyle{\frac{\Psi(\tilde{x})}{f(x)}}-1= \\
 =\displaystyle{\frac{\Psi(\tilde{x})}{f(\tilde{x})}} \displaystyle{\frac{f(\tilde{x})}{f(x)}}-1= \\
 =\displaystyle\frac{\Psi(\tilde{x}) - f(\tilde{x}) + f(\tilde{x})}{f(\tilde{x})} \cdot \frac{f(\tilde{x}) - f(x) + f(x)}{f(x)} - 1= \\
 = \displaystyle\left( \frac{\Psi(\tilde{x}) - f(\tilde{x})}{f(\tilde{x})} + 1 \right) \left( \frac{f(\tilde{x}) - f(x)}{f(x)} + 1 \right) - 1 = \\

@@ -2,16 +2,16 @@
 ---
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x) = x^n, n\in\mathbb{N} \\
+\begin{array}{}
+f(x) = x^n, n\in\mathbb{N} \\
 f'(x)=nx^{n-1}
 \end{array}
 >$$
 - Utilizzando la [[../../Definizioni/Definizioni_Analisi#Formula del Binomio di Newton|formula del binomio di newton]] voglio calcolare $f'(c), \forall c\in\mathbb{R}$
 ### Dimostrazione
 $$
-\begin{array}
-\ \lim\limits_{h\to 0 } \displaystyle{\frac{(c+h)^n-c^n}{h}} = \lim\limits_{h\to 0} \displaystyle{\frac{\displaystyle\left( \sum^n_{k=0} \binom{n}{k}c^{n-k}h^k\right)-c^n}{h}} = \\
+\begin{array}{}
+\lim\limits_{h\to 0 } \displaystyle{\frac{(c+h)^n-c^n}{h}} = \lim\limits_{h\to 0} \displaystyle{\frac{\displaystyle\left( \sum^n_{k=0} \binom{n}{k}c^{n-k}h^k\right)-c^n}{h}} = \\
 =\lim\limits_{h\to 0} \displaystyle{\frac{\cancel{ c^n }+n c^{n-1}h+\displaystyle\left( \sum^n_{k=2} \binom{n}{k}c^{n-k}h^k\right)-\cancel{ c^n }}{h}} =
 \end{array}
 $$
@@ -23,8 +23,8 @@ $$
 ---
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)=e^x, c\in\mathbb{R} \\
+\begin{array}{}
+f(x)=e^x, c\in\mathbb{R} \\
 f'(x) = e^{ x }
 \end{array}
 >$$
@@ -44,8 +44,8 @@ $$f'(c)=\lim\limits_{x\to c} \displaystyle{\frac{e^x-e^c}{x-c}}=\lim\limits_{x\t
 
 ### Dimostrazione Proprietà 1
 $$
-\begin{array}
-\ \displaystyle{\frac{(f+g)(x)-(f+g)(c)}{x-c}} = \displaystyle{\frac{f(x)+g(x)-f(c)-f(x)}{x-c}} =\\
+\begin{array}{}
+\displaystyle{\frac{(f+g)(x)-(f+g)(c)}{x-c}} = \displaystyle{\frac{f(x)+g(x)-f(c)-f(x)}{x-c}} =\\
 = \displaystyle{\frac{f(x)-f(c)}{x-c}} + \displaystyle{\frac{g(x)-g(c)}{x-c}} \\
 \end{array}
 $$
@@ -55,8 +55,8 @@ $$
 $$
 ### Dimostrazione  Proprietà 2
 $$
-\begin{array}
-\ \displaystyle{\frac{(f\cdot g)(x)-(f\cdot g)(c)}{x-c}}=\displaystyle{\frac{f(x)g(x)-f(x)g(c)+f(x)g(c)-f(c)g(c)}{x-c}}= \\
+\begin{array}{}
+\displaystyle{\frac{(f\cdot g)(x)-(f\cdot g)(c)}{x-c}}=\displaystyle{\frac{f(x)g(x)-f(x)g(c)+f(x)g(c)-f(c)g(c)}{x-c}}= \\
 = f(x)\displaystyle{\frac{(g(x)-g(c))}{x-c}}+g(c) \displaystyle{\frac{(f(x)-f(c))}{x-c}}
 \end{array}
 $$
@@ -66,8 +66,8 @@ $$
 $$
 ### Dimostrazione Proprietà 3
 $$
-\begin{array}
-\ \displaystyle{\frac{\left( \frac{f}{g} \right)(x)-\left( \frac{f}{g} \right)(c)}{x-c}} = \displaystyle{\frac{\displaystyle{\frac{f(x)}{g(x)}}-\displaystyle{\frac{f(x)}{g(c)}}+\displaystyle{\frac{f(x)}{g(c)}}-\displaystyle{\frac{f(c)}{g(c)}}}{x-c}}
+\begin{array}{}
+\displaystyle{\frac{\left( \frac{f}{g} \right)(x)-\left( \frac{f}{g} \right)(c)}{x-c}} = \displaystyle{\frac{\displaystyle{\frac{f(x)}{g(x)}}-\displaystyle{\frac{f(x)}{g(c)}}+\displaystyle{\frac{f(x)}{g(c)}}-\displaystyle{\frac{f(c)}{g(c)}}}{x-c}}
 \end{array}
 $$
 ## Derivate di Funzioni Composte
@@ -92,8 +92,8 @@ g(f(x)) = g(f(c))+g'(f(c))\cdot (f(x)-f(c))+\circ(f(x)-f(c)) \text{ per }f(x)\to
 $$
 - Applico la definizione di derivata
 $$
-\begin{array}
-\ 
+\begin{array}{}
+
 \lim\limits_{x\to c} \displaystyle{\frac{\cancel{ g(f(c)) }+g'(f(c))\cdot (f(x)-f(c))+\circ(f(x)-f(c))-\cancel{ g(f(c)) }}{x-c}}= \\
 = \lim\limits_{x\to c}g'(f(c))\cdot\underbrace{  \displaystyle{\frac{f(x)-f(c)}{x-c}} }_{ f'(c) } = g'(f(c))f'(c)
 \end{array}
@@ -129,15 +129,15 @@ $$
 ## Logaritmo
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)=ln(x)=(exp)^{-1}(x) \\
+\begin{array}{}
+f(x)=ln(x)=(exp)^{-1}(x) \\
 f'(x) = \displaystyle{\frac{1}{x}}
 \end{array}
 >$$
 ### Dimostrazione
 $$
-\begin{array}
-\ (ln)'(x) = \displaystyle{\frac{1}{exp(ln(x))}} = \displaystyle{\frac{1}{x}}
+\begin{array}{}
+(ln)'(x) = \displaystyle{\frac{1}{exp(ln(x))}} = \displaystyle{\frac{1}{x}}
 \end{array}
 $$
 ## Funzioni Trigonometriche
@@ -145,16 +145,16 @@ $$
 ### Seno
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)=sin(x) \\
+\begin{array}{}
+f(x)=sin(x) \\
 f'(x) = cos(x)
 \end{array}
 >$$
 
 #### Dimostrazione
 $$
-\begin{array}
-\ f'(c)=\lim\limits_{h\to 0} \displaystyle{\frac{sen(c+h)-sen(c)}{h}}= \\
+\begin{array}{}
+f'(c)=\lim\limits_{h\to 0} \displaystyle{\frac{sen(c+h)-sen(c)}{h}}= \\
 \lim\limits_{h\to 0} \displaystyle{\frac{sen(c)cos(h)+sen(h)cos(c)-sen(c)}{h}}= \\
 = \lim\limits_{h\to 0} sen(c)\displaystyle{\underbrace{ \frac{(cos(h)-1)}{h} }_{ 0 }}+\displaystyle{\underbrace{ \frac{sen(h)}{h} }_{ 1 }cos(c)} = cos(c)
 \end{array}
@@ -162,31 +162,31 @@ $$
 ### Coseno
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)=cos(x) \\
+\begin{array}{}
+f(x)=cos(x) \\
 f'(x) = -sin(x)
 \end{array}
 >$$
 #### Dimostrazione
 $$
-\begin{array}
-\ f'(c)= \lim\limits_{h\to 0} \displaystyle{\frac{cos(c+h)-cos(c)}{h}} = \lim\limits_{h\to 0} \displaystyle{\frac{cos(c)cos(h)-sen(c)sen(h)-cos(c)}{h}} \\
+\begin{array}{}
+f'(c)= \lim\limits_{h\to 0} \displaystyle{\frac{cos(c+h)-cos(c)}{h}} = \lim\limits_{h\to 0} \displaystyle{\frac{cos(c)cos(h)-sen(c)sen(h)-cos(c)}{h}} \\
 \lim\limits_{h\to 0} cos(c)\displaystyle{\frac{cos(h)-1}{h}}- \displaystyle{\frac{sen(c)sen(h)}{h}}
 \end{array}
 $$
 ### Tangente
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)=tan(x) =\displaystyle{\frac{sen(x)}{cos(x)}},x\neq \displaystyle{\frac{\pi}{2}}+k\pi, k\in\mathbb{Z} \\
+\begin{array}{}
+f(x)=tan(x) =\displaystyle{\frac{sen(x)}{cos(x)}},x\neq \displaystyle{\frac{\pi}{2}}+k\pi, k\in\mathbb{Z} \\
 f'(x)= \displaystyle{\frac{1}{cos^2(x)}} = 1+tan^2(x)
 \end{array}
 >$$
 
 #### Dimostrazione
 $$
-\begin{array}
-\ f'(x)= \displaystyle{\frac{cos(x)\cdot cos(x)-(-sen(x)\cdot sen(x))}{cos^2(x)}}= \\
+\begin{array}{}
+f'(x)= \displaystyle{\frac{cos(x)\cdot cos(x)-(-sen(x)\cdot sen(x))}{cos^2(x)}}= \\
 = \displaystyle{\frac{cos^2(x)+sen^2(x)}{cos^2(x)}}= \displaystyle{\frac{1}{cos^2(x)}}=1+ tan^2(x)
 \end{array}
 $$
@@ -194,16 +194,16 @@ $$
 ### Arcoseno
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)=arcsen(x), \ \ \ \ arcsen(x)\in\left[ - \displaystyle{\frac{\pi}{2}}; \displaystyle{\frac{\pi}{2}} \right] \\
+\begin{array}{}
+f(x)=arcsen(x), \ \ \ \ arcsen(x)\in\left[ - \displaystyle{\frac{\pi}{2}}; \displaystyle{\frac{\pi}{2}} \right] \\
 f'(x) = \displaystyle{\frac{1}{\sqrt{ 1-x^2 }}}
 \end{array}
 >$$
 
 #### Dimostrazione
 $$
-\begin{array}
-\ f'(x)= \displaystyle{\frac{1}{sen'(arcsen(x))}} = \displaystyle{\frac{1}{cos(arcsen(x))}}=\displaystyle{\frac{1}{\sqrt{ 1-x^2 }}}
+\begin{array}{}
+f'(x)= \displaystyle{\frac{1}{sen'(arcsen(x))}} = \displaystyle{\frac{1}{cos(arcsen(x))}}=\displaystyle{\frac{1}{\sqrt{ 1-x^2 }}}
 \end{array}
 $$
 
@@ -216,8 +216,8 @@ $$
 ### Arcocoseno
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)= arccos(x),\ \ \ \ \ arccos(x)\in\left[ 0;\pi \right] \\
+\begin{array}{}
+f(x)= arccos(x),\ \ \ \ \ arccos(x)\in\left[ 0;\pi \right] \\
 f'(x) = - \displaystyle{\frac{1}{\sqrt{ 1-x^2 }}}
 \end{array}
 >$$
@@ -229,15 +229,15 @@ $$
 ### Arcotangente
 >[!tip] Funzione
 >$$
-\begin{array}
-\ f(x)=arctan(x) \\
+\begin{array}{}
+f(x)=arctan(x) \\
 f'(x) = \displaystyle{\frac{1}{1+x^2}}
 \end{array}
 >$$
 
 #### Dimostrazione
 $$
-\begin{array}
-\ f'(x)= \displaystyle{\frac{1}{tan'(arctan(x))}}= \displaystyle{\frac{1}{1+\underbrace{ tan^2(arctan(x)) }_{ \displaystyle x^2 }}} = \displaystyle{\frac{1}{1+x^2}}
+\begin{array}{}
+f'(x)= \displaystyle{\frac{1}{tan'(arctan(x))}}= \displaystyle{\frac{1}{1+\underbrace{ tan^2(arctan(x)) }_{ \displaystyle x^2 }}} = \displaystyle{\frac{1}{1+x^2}}
 \end{array}
 $$

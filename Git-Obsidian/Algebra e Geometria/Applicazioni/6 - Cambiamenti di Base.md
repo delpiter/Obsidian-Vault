@@ -79,8 +79,8 @@ $$
 Scriviamo la ***matrice del cambiamento di base***
 
 $$
-\begin{array}
-\ u_{1}=\frac{1}{3}v_{1}+\frac{1}{3}v_{2} \\
+\begin{array}{}
+u_{1}=\frac{1}{3}v_{1}+\frac{1}{3}v_{2} \\
 u_{2}= \frac{1}{3}v_{1}-\frac{2}{3}v_{2}
 \end{array}
 , \ \ \ \ B=\begin{pmatrix}
@@ -90,8 +90,8 @@ u_{2}= \frac{1}{3}v_{1}-\frac{2}{3}v_{2}
 
 $$
 $$
-\begin{array}
-\ v_{1}=2u_{1}+1u_{2} \\
+\begin{array}{}
+v_{1}=2u_{1}+1u_{2} \\
 v_{2}=1u_{1}-1u_{2}
 \end{array}
 \ \ \ \ B^{-1}=\begin{pmatrix}
@@ -324,8 +324,8 @@ $v_{1}=(-1,3)$ e $v_{2}=(2,-6)$ ***non sono linearmente dipendenti***
 In effetti l'unica ***applicazione lineare*** tale che $f(e_{1})=v_{1},f(e_{2})=v_{2}$ è:
 
 $$
-\begin{array}
-\ f(e_{1})=-e_{1}+3e_{2} \\
+\begin{array}{}
+f(e_{1})=-e_{1}+3e_{2} \\
 f(e_{2})=2e_{1}-6e_{2}
 \end{array} \implies f(x,y)=(-x+2y,3x-6y)
 $$

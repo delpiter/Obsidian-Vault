@@ -173,8 +173,8 @@ $$
 >Sequenze di lunghezza $4$, $3-$ piene
 
 $$
-\begin{array}
-\ \displaystyle\sum_{j=0}^3(-1)^j\cdot\binom{3}{j}\cdot(3-j)^4= \\
+\begin{array}{}
+\displaystyle\sum_{j=0}^3(-1)^j\cdot\binom{3}{j}\cdot(3-j)^4= \\
 =\displaystyle\binom{3}{0}3^4-\binom{3}{1}2^4+\binom{3}{2}1^4-\binom{3}{3}0^4= \\
 =81-48+3-0=36
 \end{array}

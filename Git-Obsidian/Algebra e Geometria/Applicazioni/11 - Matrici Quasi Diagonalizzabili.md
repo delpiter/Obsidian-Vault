@@ -63,8 +63,8 @@ Base di $V\lambda_{1}=\{ e_{1} \}\implies mg(\lambda_{1})=1$
 
 ##### Vediamolo in una Prospettiva Diversa
 $$
-\begin{array}
-\ f^2(x,y,z,w)=f_{o}f(x,y,z,w)=f(y,z,w,0)=(z,w,0,0)\\
+\begin{array}{}
+f^2(x,y,z,w)=f_{o}f(x,y,z,w)=f(y,z,w,0)=(z,w,0,0)\\
 f^3(x,y,z,w)=f(z,w,0,0)=(w,0,0,0) \\
 f^4(x,y,z,w)=f(w,0,0,0)=(0,0,0,0)
 \end{array}

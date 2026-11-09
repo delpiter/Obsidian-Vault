@@ -70,8 +70,8 @@ Estraiamo una pallina a caso
 >[!question] Qual è la probabilità che questa sia rossa?
 
 $$
-\begin{array}
-\ \mathcal{P}(R)=\mathcal{P}(R\cap U_{1})+\mathcal{P}(R\cap U_{2})
+\begin{array}{}
+\mathcal{P}(R)=\mathcal{P}(R\cap U_{1})+\mathcal{P}(R\cap U_{2})
  \\=\mathcal{P}(R|U_{1})\cdot\mathcal{P}(U_{1})+\mathcal{P}(R|U_{2})\cdot\mathcal{P}(U_{2}) \\
 =\displaystyle\frac{3}{7}\cdot \frac{1}{2}+\frac{2}{8}\cdot \frac{1}{2}= \frac{19}{56}
 \end{array}

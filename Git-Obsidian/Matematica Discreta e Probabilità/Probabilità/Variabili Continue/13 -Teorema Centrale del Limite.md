@@ -207,8 +207,8 @@ $\mathcal{P}(S_{n}>24)\leq0.1$
 ![[attachements/EsercizioVacanze.png]]
 
 $$
-\begin{array}
-\ \displaystyle{\frac{24.5-n\cdot 0.7}{\sqrt{ n \cdot 0.7\cdot 0.3 }}}\geq 1.28 \\
+\begin{array}{}
+\displaystyle{\frac{24.5-n\cdot 0.7}{\sqrt{ n \cdot 0.7\cdot 0.3 }}}\geq 1.28 \\
 n\leq 30
 \end{array}
 

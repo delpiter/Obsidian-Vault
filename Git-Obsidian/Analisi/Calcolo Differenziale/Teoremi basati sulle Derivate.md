@@ -119,8 +119,8 @@ g'(x) = f'(x)- \displaystyle{\frac{f(b)-f(a)}{b-a}}
 $$
 - Quindi
 $$
-\begin{array}
-\ \exists c \in(a,b)t.c. \\
+\begin{array}{}
+\exists c \in(a,b)t.c. \\
 g'(c)=0 \implies g'(x)=f'(x)-0- \displaystyle{\frac{f(b)-f(a)}{b-a}}-0\\
 \Leftrightarrow f'(c)=\displaystyle{\frac{f(b)-f(a)}{b-a}}
 \end{array}

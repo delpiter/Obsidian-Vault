@@ -3,8 +3,8 @@
 >[!info] Definizione
 >Sia $A \subseteq \mathbb{R}^2$, considerando
 >$$
->\begin{array}
-\ f:A\to\mathbb{R} \\
+>\begin{array}{}
+f:A\to\mathbb{R} \\
 (x,y)\mapsto f(x,y)
 \end{array}
 >$$

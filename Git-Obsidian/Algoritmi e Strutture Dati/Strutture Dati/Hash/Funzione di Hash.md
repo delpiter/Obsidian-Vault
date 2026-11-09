@@ -111,8 +111,8 @@ $$
 $$
 Scomponiamo la sommatoria:
 $$
-\begin{array}
-\ \underbrace{ \displaystyle\sum_{i=1}^n 1 }_{ n } + \displaystyle\sum_{i=1}^n \frac{i}{m} - \underbrace{ \displaystyle\sum_{i=1}^n \frac{1}{m} }_{ \frac{n}{m} } \\
+\begin{array}{}
+\underbrace{ \displaystyle\sum_{i=1}^n 1 }_{ n } + \displaystyle\sum_{i=1}^n \frac{i}{m} - \underbrace{ \displaystyle\sum_{i=1}^n \frac{1}{m} }_{ \frac{n}{m} } \\
 n+\displaystyle\frac{1}{m}\displaystyle\sum_{i=1}^ni - \frac{n}{m} \\
 n+\displaystyle\frac{1}{m}\cdot \displaystyle{\frac{n(n+1)}{2}} - \frac{n}{m} 
 \end{array}
@@ -198,8 +198,8 @@ Dobbiamo valutare $E[x]$, la media di tutte le possibili $x$
 Posso calcolare la *media* di valori facendo:
 -  La somma di ***valori assumibili*** moltiplicata per la ***probabilità*** con cui viene *assunto* il valore
 $$
-\begin{array}
-\ A=\{ 3,6,1,3,9,6,8,5,5 \} \\
+\begin{array}{}
+A=\{ 3,6,1,3,9,6,8,5,5 \} \\
 \text{ Average }=1\cdot \frac{1}{9} + 2\cdot0+2\cdot \frac{2}{9}+4\cdot0+5\cdot \frac{2}{9}+6\cdot \frac{2}{9} +7\cdot 0+8\cdot\frac{1}{9} +9\cdot \frac{1}{9}= \\
 \displaystyle\sum_{i=0}^{+\infty}i\cdot p_{i}
 \end{array}
@@ -220,16 +220,16 @@ $$
 >La probabilità che un numero ***fuori dall'insieme*** venga estratto è uguale a $0$
 
 $$
-\begin{array}
-\ \displaystyle\sum_{i=0}^{+\infty}i\cdot p_{i}=\displaystyle\sum_{i=0}^{+\infty}i\cdot p(x=i)= \\
+\begin{array}{}
+\displaystyle\sum_{i=0}^{+\infty}i\cdot p_{i}=\displaystyle\sum_{i=0}^{+\infty}i\cdot p(x=i)= \\
 \end{array}
 $$
 - Posso sostituire la *probabilità* che venga assunto un valore $=i$ con:
 	- La *differenza fra la probabilità* che venga assunto un valore $\geq i$ e la *probabilità* che venga assunto un valore $\geq i+1$
 
 $$
-\begin{array}
-\ \displaystyle\sum_{i=0}^{+\infty} i(p(x\geq i)-p(x\geq i+1)) = 1P_{1}\underbrace{ -1P_{2}+2P_{2} }_{ +P_{2} }\underbrace{ -2P_{3}+3P_{3} }_{ +P_{3} }+\dots= \\
+\begin{array}{}
+\displaystyle\sum_{i=0}^{+\infty} i(p(x\geq i)-p(x\geq i+1)) = 1P_{1}\underbrace{ -1P_{2}+2P_{2} }_{ +P_{2} }\underbrace{ -2P_{3}+3P_{3} }_{ +P_{3} }+\dots= \\
 \displaystyle\sum_{i=1}^{+\infty} p(x\geq i)
 
 \end{array}
@@ -243,8 +243,8 @@ p_{1}=\frac{n}{m}
 $$
 Quindi, di *conseguenza*:
 $$
-\begin{array}
-\ p_{2}(\text{1 cella occupata}) = \displaystyle\frac{n}{m}\cdot \displaystyle{\frac{n-1}{m-1}}< \left( \frac{n}{m} \right)^2 \\
+\begin{array}{}
+p_{2}(\text{1 cella occupata}) = \displaystyle\frac{n}{m}\cdot \displaystyle{\frac{n-1}{m-1}}< \left( \frac{n}{m} \right)^2 \\
 \dots \\
 p_{i}(\text{i-1 celle occupate})=\displaystyle\frac{n}{m}\cdot ... \cdot \displaystyle{\frac{n-(i-1)}{m-(i-1)}} < \left( \frac{n}{m} \right)^i
 \end{array}

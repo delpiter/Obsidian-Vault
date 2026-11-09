@@ -37,8 +37,8 @@ La crittografia *simmetrica* richiede **poche risorse** per l'utilizzo
 
 Le funzioni di cifratura e decifrazione sono *una l'inversa dell'altra*
 $$
-\begin{array}
-\ D(E(P,K),K)=P \\
+\begin{array}{}
+D(E(P,K),K)=P \\
 E(D(C,K),K)=C
 \end{array}
 $$

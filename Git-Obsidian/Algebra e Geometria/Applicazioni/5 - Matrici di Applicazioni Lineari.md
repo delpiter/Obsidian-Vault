@@ -76,8 +76,8 @@ $$
 > Ora controlliamo:
 
 $$
-\begin{array}
-\ (g_{o}f)(x,y)=g(5x+2y,-2x+y) \\
+\begin{array}{}
+(g_{o}f)(x,y)=g(5x+2y,-2x+y) \\
 =(2(5x+2y)-(2x+y),-(5x+2y)+3(-2x+y))= \\
 =(12x+3y,-11x+y)
 \end{array}

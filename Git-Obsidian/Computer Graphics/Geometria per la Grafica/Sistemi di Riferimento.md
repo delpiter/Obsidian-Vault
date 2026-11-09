@@ -96,8 +96,8 @@ Supponiamo di conoscere le coordinate del punto $P$ nel frame $F_{2}$ e vogliamo
  
 Esprimiamo i vettori e origine di $F_{2}$ in termini di vettori e origine di $F_{1}$:
 $$
-\begin{array}
-\ u=x_{u}x+y_{u}y+0\cdot O \\
+\begin{array}{}
+u=x_{u}x+y_{u}y+0\cdot O \\
 v=x_{v}x+y_{v}y+0\cdot O \\
 e=x_{e}x+y_{e}y+1\cdot O
 \end{array}

@@ -4,8 +4,8 @@
 >Consideriamo un *caso unidimensionale*. Partendo dalla definizione di lavoro, costruiamo una espressione basata sulle **velocità iniziali** e **finali** del corpo.
 
 $$
-\begin{array}
-\ \displaystyle\mathscr{L} = \int_{x_i}^{x_f} F \,\text{d}x = \int_{x_i}^{x_f} m a \,\text{d}x = \int_{x_i}^{x_f} m \frac{\text{d}v}{\text{d}t} \,\text{d}x  =\\
+\begin{array}{}
+\displaystyle\mathscr{L} = \int_{x_i}^{x_f} F \,\text{d}x = \int_{x_i}^{x_f} m a \,\text{d}x = \int_{x_i}^{x_f} m \frac{\text{d}v}{\text{d}t} \,\text{d}x  =\\
 \displaystyle= \int_{v_i}^{v_f} m \frac{\text{d}x}{\text{d}t} \,\text{d}v = \int_{v_i}^{v_f} m v \,\text{d}v = \left[ \frac{1}{2} m v^2 \right]_{v_i}^{v_f} = \frac{1}{2} m v_f^2 - \frac{1}{2} m v_i^2
 \end{array}
 $$
@@ -90,8 +90,8 @@ $$
 $$
 ### Energia Potenziale Elastica
 $$
-\begin{array}
-\ F=-kx \\
+\begin{array}{}
+F=-kx \\
 \mathscr{L}=\displaystyle\int _{x_{i}}^{x_{f}} -kx\, \text{d}x=\frac{1}{2}kx^2_{i}-\frac{1}{2}kx^2 _{f} \\
 \displaystyle\Delta U=-\mathscr{L}=\frac{1}{2}kx^2_{f}-\frac{1}{2}kx_{i}^2
 \end{array}

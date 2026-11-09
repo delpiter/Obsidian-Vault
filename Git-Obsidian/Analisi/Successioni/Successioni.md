@@ -67,8 +67,8 @@ a_{n} \geq a_{n+1}, \,\,\,\ \forall n\in\mathbb{N}
 >$a_{n}$ è regolare
 >Più precisamente
 >$$
-\begin{array}
-\ \text{se }a_{n}\nearrow \implies\lim\limits_{n\to+\infty}a_{n}=sup(a_{n}) \\
+\begin{array}{}
+\text{se }a_{n}\nearrow \implies\lim\limits_{n\to+\infty}a_{n}=sup(a_{n}) \\
 \text{se }a_{n}\searrow \implies\lim\limits_{n\to+\infty}a_{n}=inf(a_{n})
 \end{array}
 >$$

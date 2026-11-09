@@ -153,8 +153,8 @@ $a_{1}=0,\dots,a_{k}=0$
 
 In effetti $\forall i\in\{ 1,\dots,k \}$ dalla uguaglianza precedente, facendo il ***prodotto scalare***, ottengo:
 $$
-\begin{array}
-\ (v_{i},a_{1}v_{1}+\dots+a_{k}v_{k})=(v_{i},\underline{0})=0 \\
+\begin{array}{}
+(v_{i},a_{1}v_{1}+\dots+a_{k}v_{k})=(v_{i},\underline{0})=0 \\
 a_{1}\cancelto{ 0 }{ (v_{i},v_{1}) }+\dots+a_{i}\underbrace{ (v_{i},v_{i}) }_{ \neq 0 }+\dots+a_{k}\cancelto{ 0 }{ (v_{i},v_{k}) } \\
 \implies a_{i}(v_{i},v_{i})=0 \implies a_{i}=0 \forall i\in\{ 1,\dots,k \}
 \end{array}

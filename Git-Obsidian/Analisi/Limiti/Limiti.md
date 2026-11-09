@@ -197,8 +197,8 @@ f(x_{2}) = y_{2}
 - Supponiamo che $x_{1}<x_{2}$
 - Introduco una funzione
 $$
-\begin{array}
-\ g:[x_{1},x_{2}]\to\mathbb{R} \\
+\begin{array}{}
+g:[x_{1},x_{2}]\to\mathbb{R} \\
 g(x) = f(x)-y, \ \ \ \ y_{1}<y<y_{2}
 \end{array}
 $$
@@ -206,8 +206,8 @@ $$
 	- Infatti:
 
 $$
-\begin{array}
-\ g(x_{1})=f(x_{1})-y = y_{1}-y < 0 \\
+\begin{array}{}
+g(x_{1})=f(x_{1})-y = y_{1}-y < 0 \\
 g(x_{2})=f(x_{2})-y = y_{2}-y > 0
 \end{array}
 $$

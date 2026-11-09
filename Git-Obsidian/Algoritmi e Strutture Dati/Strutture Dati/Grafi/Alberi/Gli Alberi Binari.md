@@ -33,8 +33,8 @@ $$
 $$
 Di conseguenza:
 $$
-\begin{array}
-\ h\leq log(n)< h+1 \\
+\begin{array}{}
+h\leq log(n)< h+1 \\
 log(n)-1 < h \leq log(n) \\
 h = \lceil log(n) \rceil 
 \end{array}

@@ -70,8 +70,8 @@ Nella ***telefonia analogica*** *tradizionale* il segnale sonoro prodotto dallâ€
 >Il ***teorema Shannon-Nyquist*** permette di determinare il *minimo intervallo di campionamento* che permette di **ricostruire** il segnale analogico in modo integrale
 
 $$
-\begin{array}
-\ f_{s} \geq 2 f_{M} \\
+\begin{array}{}
+f_{s} \geq 2 f_{M} \\
 T_{s}=\displaystyle\frac{1}{f_{s}} < \frac{1}{2f_{M}}
 \end{array}
 $$

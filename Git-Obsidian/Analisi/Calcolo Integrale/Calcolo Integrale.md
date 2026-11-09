@@ -19,8 +19,8 @@ $$
 Per il [[../Calcolo Differenziale/Teoremi basati sulle Derivate#Teorema di Lagrange|teorema di Lagrange]] ad ogni intervallo $[x_{i},x_{i-1}]$
 $\exists c_{i}\in[x_{i},x_{i-1}]:$
 $$
-\begin{array}
-\ f'(c_{i}) = \displaystyle{\frac{f(x_{i})-f(x_{i-1})}{x_{i}-x_{i-1}}}\\
+\begin{array}{}
+f'(c_{i}) = \displaystyle{\frac{f(x_{i})-f(x_{i-1})}{x_{i}-x_{i-1}}}\\
 f(x_{i})-f(x_{i-1})=f'(c_{i})(x_{i}-x_{i-1})
 \end{array}
 $$
@@ -137,15 +137,15 @@ $$
 $$
 - Questa frazione è uguale a quella originale se e solo se:
 $$
-\begin{array}
-\ x+1 = Ax-A +Bx-3B \\
+\begin{array}{}
+x+1 = Ax-A +Bx-3B \\
 \Leftrightarrow x+1=x(A+B) -A-3B
 \end{array}
 $$
 - Ora risolvo il sistema a due incognite
 $$
-\begin{array}
-\ \Leftrightarrow\begin{cases}
+\begin{array}{}
+\Leftrightarrow\begin{cases}
 A+B = 1 \to A=-B+1\\
 -A-3B = 1 \to B-1-3B = 1 
 \end{cases} \\
@@ -176,8 +176,8 @@ Occasionalmente è possibile procedere anche con il metodo della sostituzione
 In questo caso notiamo che il denominatore non si può scomporre.
 - È necessario infatti cercare di ricondursi ad una arcotangente
 $$
-\begin{array}
-\ \displaystyle \int_{1}^{2} \displaystyle{\frac{2x +1}{2+x^2}} \, dx \\
+\begin{array}{}
+\displaystyle \int_{1}^{2} \displaystyle{\frac{2x +1}{2+x^2}} \, dx \\
 \displaystyle\int_{1}^{2} \displaystyle{\frac{2x}{2+x^2}}  \, dx + \displaystyle \int_{1}^{2} \displaystyle{\frac{1}{2+x^2}} \, dx  
 \end{array}
 $$

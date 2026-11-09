@@ -47,16 +47,16 @@ $$
 
 ###### Dimostrazione
 $$
-\begin{array}
-\ Var(X+Y)=E[(X+Y)^2]-E[(X+Y)]^2= \\
+\begin{array}{}
+Var(X+Y)=E[(X+Y)^2]-E[(X+Y)]^2= \\
 =E[X^2+2XY+Y^2]-(E[X]+E[Y])^2= \\
 =E[X^2]+2E[XY]+E[Y^2]-E[X]^2-2E[X]E[Y]-E[Y]^2=
 \end{array}
 $$
 E poiché [[6 - Valore Atteso#Prodotto di Valori Attesi|le variabili sono indipendenti]]
 $$
-\begin{array}
-\ E[X^2]\cancel{ +2E[XY]}+E[Y^2] -E[X]^2-\cancel{ 2E[X]E[Y] }-E[Y]^2= \\
+\begin{array}{}
+E[X^2]\cancel{ +2E[XY]}+E[Y^2] -E[X]^2-\cancel{ 2E[X]E[Y] }-E[Y]^2= \\
 =\underbrace{ E[X^2]-E[X]^2 }_{ Var(X) }+\underbrace{ E[Y^2]-E[Y]^2 }_{ Var(Y) }=Var(X)+Var(Y)
 \end{array}
 $$

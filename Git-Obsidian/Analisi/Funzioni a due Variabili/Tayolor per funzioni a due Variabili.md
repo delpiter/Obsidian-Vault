@@ -52,8 +52,8 @@ $$
 
 #### Conclusione
 $$
-\begin{array}
-\ H(t)= f(x_{0}+th,y_{0}+tk) = f(x_{0},y_{0})+ \\
+\begin{array}{}
+H(t)= f(x_{0}+th,y_{0}+tk) = f(x_{0},y_{0})+ \\
 +(\underbrace{ \partial xf(x_{0},y_{0})h +\partial yf(x_{0},y_{0})k }_{ \displaystyle df_{(x_{0},y_{0})}(h,k) })t+ \\
 +\left( \underbrace{ \displaystyle{\displaystyle\frac{ \partial^2 f }{ \partial x^2 }(x_{0},y_{0})h^2 + 2\displaystyle\frac{ \partial^2 f }{ \partial x \partial y }(x_{0},y_{0})hk+\displaystyle\frac{ \partial^2 f }{ \partial y^2 }(x_{0},y_{0})k^2 }}_{ \displaystyle d^2f_{(x_{0},y_{0})}(h,k) } \right) \displaystyle{\frac{t^2}{2}} +\\
 +\circ(t^2) \text{ per }t\to0

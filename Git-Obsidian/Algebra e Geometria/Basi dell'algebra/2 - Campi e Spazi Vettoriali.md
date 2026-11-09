@@ -68,8 +68,8 @@ $\forall\ v,v_{1},v_{2} \in V, \forall a,b \in \mathbb{K}$
 5. Proprietà Associativa $$a(bv)=(ab)v$$
 6. Proprietà Distributiva 
 $$
-\begin{array}
-\ (a+b)v = av +bv \\
+\begin{array}{}
+(a+b)v = av +bv \\
 a(v_{1}+v_{2}) = av_{1}+av_{2}
 \end{array}
 $$
@@ -85,8 +85,8 @@ V=\mathbb{K}^n = \{ (x_{1},x_{2},\dots,x_{n}), x_{i}\in k, \forall i=1,2,3,\dots
 $$
 - È uno **spazio vettoriale** su $\mathbb{K}$ rispetto alle operazioni:
 $$
-\begin{array}
-\ v_{1}=(x_{1},x_{2},\dots,x_{n}),v_{2}=(y_{1},y_{2},\dots,y_{n}) \\
+\begin{array}{}
+v_{1}=(x_{1},x_{2},\dots,x_{n}),v_{2}=(y_{1},y_{2},\dots,y_{n}) \\
 v_{1}+v_{2} = (x_{1}+y_{1},x_{2}+y_{2},\dots,x_{n}+y_{n}) \\
 av_{1}=(ax_{1},ax_{2},\dots,ax_{n})
 \end{array}
@@ -145,8 +145,8 @@ Chiamiamo invece *vettori* gli elementi dello spazio vettoriale $V$
 >[!question] $U$ è un sottospazio vettoriale??
 
 $$
-\begin{array}
-\ v_{1}=(x,2x)\ \ \ \ v_{2}=(x',2x') \in U \\
+\begin{array}{}
+v_{1}=(x,2x)\ \ \ \ v_{2}=(x',2x') \in U \\
 v_{1}+v_{2} = (x+x', 2(x+x'))\in U \\
 av_{1} = a(x,2x) = (ax,2ax)\in U
 \end{array}
@@ -294,8 +294,8 @@ $$
 >[!question] $\mathrm{u}$ è una combinazione lineare di $u_{1},u_{2}$?? 
 
 $$
-\begin{array}
-\ \forall a_{1}, a_{2}\in\mathbb{R},a_{1}u_{1}+a_{2}u_{2}= \\
+\begin{array}{}
+\forall a_{1}, a_{2}\in\mathbb{R},a_{1}u_{1}+a_{2}u_{2}= \\
 (2a_{1},0)+(-a_{2},0)=(2a_{1}-a_{2},0) = (1,3)
 \end{array}
 $$
@@ -328,8 +328,8 @@ E poichè il sistema non ha soluzione, qualsiasi siano $a_{1}$ e $a_{2}$
 $<v_{1},v_{2}>=\{ a_{1}v_{1}+a_{2}v_{2}, \ a_{1},a_{2}\in \mathbb{R} \}$
 
 $$
-\begin{array}
-\ =\{ (2a_{1},0,0,0)+(0,a_{2},-a_{2},0) ,\ a_{1},a_{2} \in \mathbb{R}\} \\
+\begin{array}{}
+=\{ (2a_{1},0,0,0)+(0,a_{2},-a_{2},0) ,\ a_{1},a_{2} \in \mathbb{R}\} \\
 =\{ (2a_{1},a_{2},-a_{2},0) ,\ a_{1},a_{2} \in \mathbb{R}\} \\
 =\{ (x_{1},x_{2},x_{3},x_{4})\in \mathbb{R}^4 :\begin{cases}
 x_{2}+x_{3} = 0 \\

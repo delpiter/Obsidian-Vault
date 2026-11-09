@@ -48,8 +48,8 @@ a_{21} & a_{22}
 >$$
 >>[!tip] $1)$
 >>$$
-\begin{array}
-\ q \text{ è definita positiva } \Leftrightarrow \begin{cases}
+\begin{array}{}
+q \text{ è definita positiva } \Leftrightarrow \begin{cases}
 a_{11}>0 \\
 \det A>0
 \end{cases} \\
@@ -62,8 +62,8 @@ a_{11}<0 \\
 >
 >>[!example] $2)$
 >>$$
-\begin{array}
-\ q \text{ è semi definita positiva } \Leftrightarrow \begin{cases}
+\begin{array}{}
+q \text{ è semi definita positiva } \Leftrightarrow \begin{cases}
 a_{11}>0 \\
 \det A=0
 \end{cases} \\

@@ -59,8 +59,8 @@ Diventa necessario introdurre uno strumento matematico che estenda l'[[Numeri Fi
 Si può far vedere che valgono le seguenti disuguaglianze:
 
 $$
-\begin{array}
-\ \|x\|_{\infty} \leq \|x\|_2 \leq \sqrt{n} \|x\|_{\infty} \\
+\begin{array}{}
+\|x\|_{\infty} \leq \|x\|_2 \leq \sqrt{n} \|x\|_{\infty} \\
 \|x\|_{\infty} \leq \|x\|_1 \leq n \|x\|_{\infty} \\
 \|x\|_2 \leq \|x\|_1 \leq \sqrt{n} \|x\|_2 \\
 \end{array}
@@ -180,8 +180,8 @@ Dove $\rho$ è il ***raggio spettrale***, cioè l'autovalore di modulo massimo d
 >Si dice che le norme $\mid\mid A\mid\mid$ e $\mid\mid A \mid\mid_{*}$ sono ***equivalenti***.
 
 $$
-\begin{array}
-\ \displaystyle \frac{1}{\sqrt{ n }}\|A\|_{\infty}\leq \|A\|_{2}\leq\sqrt{ n } \|A\|_{\infty} \\
+\begin{array}{}
+\displaystyle \frac{1}{\sqrt{ n }}\|A\|_{\infty}\leq \|A\|_{2}\leq\sqrt{ n } \|A\|_{\infty} \\
 \displaystyle \frac{1}{\sqrt{ n }}\|A\|_{1}\leq \|A\|_{2}\leq\sqrt{ n } \|A\|_{1}
 \end{array}
 $$

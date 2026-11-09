@@ -29,8 +29,8 @@ $a_{n}=\displaystyle{\frac{2n+1}{n+2}}$
 - Verifica che $\lim\limits_{n\to+\infty}a_{n}=2$
 - Dato $\mathcal{E}>0$
 $$
-\begin{array}
-\ |a_{n}-l|=|\displaystyle{\frac{2n+1}{n+2}}-2|\leq \mathcal{E} \\
+\begin{array}{}
+|a_{n}-l|=|\displaystyle{\frac{2n+1}{n+2}}-2|\leq \mathcal{E} \\
 | \displaystyle{\frac{2n+1-2n-4}{n+2}}|\leq\mathcal{E} \\
 \displaystyle{\frac{3}{n+2}}\leq\mathcal{E} \Leftrightarrow n+2\geq \displaystyle{\frac{3}{\mathcal{E}}} \\
 n\geq \displaystyle{\frac{3}{\mathcal{E}}}-2
@@ -67,8 +67,8 @@ n\text{ se n è pari} \\
 >[!info] Teorema
 >Sia $(a_{n})_{n\in\mathbb{N}}$ in $\mathbb{R}$, siano $l,m \in \mathbb{R}$ supponiamo
 >$$
-\begin{array}
-\ \lim\limits_{n\to+\infty}a_{n}=l \\
+\begin{array}{}
+\lim\limits_{n\to+\infty}a_{n}=l \\
 \lim\limits_{n\to+\infty}a_{n}=m
 \end{array}
 >$$
@@ -77,15 +77,15 @@ n\text{ se n è pari} \\
 ### Dimostrazione
 - Per ipotesi ho che
 $$
-\begin{array}
-\ \forall \mathcal{E}>0,p_{\mathcal{E}}\in\mathbb{R}:|a_{n}-l|\leq\mathcal{E} \forall n\geq p_{\mathcal{E}} \\
+\begin{array}{}
+\forall \mathcal{E}>0,p_{\mathcal{E}}\in\mathbb{R}:|a_{n}-l|\leq\mathcal{E} \forall n\geq p_{\mathcal{E}} \\
 \forall \mathcal{E}>0,q_{\mathcal{E}}\in\mathbb{R}:|a_{n}-m|\leq\mathcal{E} \forall n\geq q_{\mathcal{E}}
 \end{array}
 $$
 - Sia $n\geq max\{p_{\mathcal{E}},q_{\mathcal{E}}\}$
 $$
-\begin{array}
-\ | l-m | =   | l-a_{n}+a_{n}-m | \leq \underbrace{| l-a_{n} |}_{\leq\mathcal{E}} +   \underbrace{| a_{n}-m |}_{\leq\mathcal{E}} \\
+\begin{array}{}
+| l-m | =   | l-a_{n}+a_{n}-m | \leq \underbrace{| l-a_{n} |}_{\leq\mathcal{E}} +   \underbrace{| a_{n}-m |}_{\leq\mathcal{E}} \\
 |l-m|\leq 2\mathcal{E}
 \end{array}
 $$

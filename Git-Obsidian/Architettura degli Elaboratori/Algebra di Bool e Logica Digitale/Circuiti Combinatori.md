@@ -107,8 +107,8 @@ Per fare una somma con il riporto è necessario utilizzare un ***full-adder*** a
 >[!abstract] *Sum*
 
 $$
-\begin{array}
-\ \text{Sum}=\overline{A}\ \overline{B}C+\overline{A}B\overline{C}+A\overline{B}\ \overline{C} + ABC \\
+\begin{array}{}
+\text{Sum}=\overline{A}\ \overline{B}C+\overline{A}B\overline{C}+A\overline{B}\ \overline{C} + ABC \\
 \text{Sum} = \overline{C}(\overline{A}B+A\overline{B})+C(AB+\overline{A}\ \overline{B}) \\
 \text{Sum}=\overline{C}(\overline{A}B+A\overline{B})+C\left( \overline{\overline{A}B+A\overline{B}} \right) \\
 \text{Sum} =C\oplus (A\oplus B)
@@ -118,8 +118,8 @@ $$
 >[!abstract] *Carry Out*
 
 $$
-\begin{array}
-\ \text{Carry Out}=\overline{A}BC+A\overline{B}C+AB\overline{C}+ABC \\
+\begin{array}{}
+\text{Carry Out}=\overline{A}BC+A\overline{B}C+AB\overline{C}+ABC \\
 \text{Carry Out}=C(\overline{A}B+A\overline{B})+AB(C+\overline{C}) \\
 \text{Carry Out}=C(A\oplus B)+AB
 \end{array}

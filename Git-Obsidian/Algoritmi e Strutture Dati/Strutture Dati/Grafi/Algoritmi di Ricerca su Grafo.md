@@ -135,8 +135,8 @@ Cioè lineare nella dimensione della rappresentazione del grafo con [[Rappresent
 >*Sottografo dei predecessori di $G$*
 
 $$
-\begin{array}
-\ G_{\pi}=(V_{\pi},E_{\pi}) \\
+\begin{array}{}
+G_{\pi}=(V_{\pi},E_{\pi}) \\
 V_{\pi}=\{ v\in V:\pi[v]\neq \text{NULL} \}\cup\{ s \} \\
 E_{\pi}=\{ (\pi[v],v)\in E :v\in V_{\pi} -\{ s \}\}
 \end{array}
@@ -243,8 +243,8 @@ Algoritmo ricorsivo diviso in due funzioni
 >*Definito in modo leggermente diverso dalla `BFS`*
 
 $$
-\begin{array}
-\ G_{\pi}=(V, E_{\pi}) \\
+\begin{array}{}
+G_{\pi}=(V, E_{\pi}) \\
 E_{\pi}=\{ (\pi[v],v)\in E:v\in V \text{ and } \pi[v]\neq \text{NULL}\}
 \end{array}
 $$

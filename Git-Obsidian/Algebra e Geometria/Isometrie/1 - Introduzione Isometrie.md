@@ -26,8 +26,8 @@ Se $f$ *conserva la norma* di ogni vettore:
 - Dati $v,u\in V$ calcoliamo:
 
 $$
-\begin{array}
-\ \mid\mid v+u\mid\mid^2-\mid\mid v-u\mid\mid^2=(v+u,v+u)-(v-u,v-u)= \\
+\begin{array}{}
+\mid\mid v+u\mid\mid^2-\mid\mid v-u\mid\mid^2=(v+u,v+u)-(v-u,v-u)= \\
 =(v,v)+(u,u)+2(v,u)-[(v,v)+(u,u)-2(v,u)]=4(v,u) \\
 \implies(v,u)=\frac{1}{4}(\mid\mid v+u\mid\mid^2-\mid\mid v-u\mid\mid^2)
 \end{array}

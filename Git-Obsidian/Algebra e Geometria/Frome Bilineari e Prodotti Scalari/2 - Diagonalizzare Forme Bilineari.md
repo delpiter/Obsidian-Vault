@@ -181,8 +181,8 @@ Controllo che si sia azzerato quello che volevo si azzerasse
 
 Calcolo l'ultimo elemento della matrice: $\beta(u_{3},u_{3})$:
 $$
-\begin{array}
-\ \beta(u_{3},u_{3})=\beta(w_{3}'+2w_{2}',w_{3}'+2w_{2}')=\beta(w_{3}',w_{3}'+2w_{2})+2\beta(w_{2}',w_{3}'+2w_{2}')= \\
+\begin{array}{}
+\beta(u_{3},u_{3})=\beta(w_{3}'+2w_{2}',w_{3}'+2w_{2}')=\beta(w_{3}',w_{3}'+2w_{2})+2\beta(w_{2}',w_{3}'+2w_{2}')= \\
 =\beta(w_{3}',w_{3}')+4\beta(w_{2}',w_{2}')+4\beta(w_{2}',w_{3}')= 2+4(-1)+4(2)=6
 \end{array}
 $$

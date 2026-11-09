@@ -21,8 +21,8 @@ Andiamo in fermata in un ***istante qualunque***
 - $X=$ tempo di attesa
 
 $$
-\begin{array}
-\ \mathcal{P}(0<X< 1)=\displaystyle\frac{1}{10} \\
+\begin{array}{}
+\mathcal{P}(0<X< 1)=\displaystyle\frac{1}{10} \\
 \mathcal{P}(1<X< 2)=\displaystyle\frac{1}{10} \\
 \vdots \\
 \mathcal{P}(9<X< 10)=\displaystyle\frac{1}{10}

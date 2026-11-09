@@ -60,8 +60,8 @@ $$
 >Esprimiamo il sistema di riferimento `VCS` in termini del `WCS`: $(O,x,y,z)$.
 
 $$
-\begin{array}
-\ u=u_{x}x+u_{y}y+u_{z}z+0\cdot O \\
+\begin{array}{}
+u=u_{x}x+u_{y}y+u_{z}z+0\cdot O \\
 v=v_{x}x+v_{y}y+v_{z}z+0\cdot O \\
 w=w_{x}x+w_{y}y+w_{z}z+0\cdot O \\
 C=C_{x}x+C_{y}y+C_{z}z+1\cdot O

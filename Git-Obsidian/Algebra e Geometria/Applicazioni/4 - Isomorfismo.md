@@ -13,15 +13,15 @@
 - $v_{2}=(x',y')$
 
 $$
-\begin{array}
-\ f((x,y)+(x',y'))=f(x,y)+f(x',y') \\
+\begin{array}{}
+f((x,y)+(x',y'))=f(x,y)+f(x',y') \\
 f(x+x',y+y')=(x+x'+y+y',x+x'-y-y') \\
 f(x,y)+f(x',y')=(x+y,x-y)+(x'+y',x'-y')=(x+x'+y+y',x+x'-y-y')
 \end{array}
 $$
 $$
-\begin{array}
-\ f(a(x,y))=af(x,y) \\
+\begin{array}{}
+f(a(x,y))=af(x,y) \\
 f(a(x,y))=(ax+ay,ax-ay) \\
 af(x,y)=a(x+y,x-y)=(ax+ay,ax-ay)
 \end{array}
@@ -62,8 +62,8 @@ Sia $f:V\to U$, $a_{0}+a_{1}x+a_{2}x^2+\dots+a_{n-1}x^{n-1}\mapsto(a_{0},a_{1},a
 Uno spazio vettoriale è un ***isomorfismo*** *rispetto a se stesso*
 - Prendo la [[../../Analisi/Funzioni/Introduzione Funzioni#Funzione Identità|funzione identità]]
 $$
-\begin{array}
-\ f:V\to V \\
+\begin{array}{}
+f:V\to V \\
 v\mapsto v
 \end{array}
 $$
@@ -221,8 +221,8 @@ f(v_{1})=u_{1},f(v_{2})=u_{2}
 $$
 - Dove:
 $$
-\begin{array}
-\ v_{1}=(1,1),v_{2} = (1,-1) \\
+\begin{array}{}
+v_{1}=(1,1),v_{2} = (1,-1) \\
 u_{1}=(0,2), u_{2}=(-1,0)
 \end{array}
 $$
@@ -253,8 +253,8 @@ f(v_{1}) = w_{1},f(v_{2})=w_{2}
 $$
 - Dove
 $$
-\begin{array}
-\ v_{1}=(1,1),v_{2}=(1,-1) \\
+\begin{array}{}
+v_{1}=(1,1),v_{2}=(1,-1) \\
 w_{1}=(-1,2),w_{2}=(2,-4)
 \end{array}
 $$
@@ -326,8 +326,8 @@ Esiste un'unica $f:V\to U:f(e_{1})=1,\dots,f(e_{n})=x^{n-1}$ e tale $f$ è un *i
 
 Esso è uno ***spazio vettoriale*** su $\mathbb{K}$ che ha per *base*
 $$
-\left\{ E_{ij},\begin{array}
-\ i\in\{ 1,\dots,n \} \\
+\left\{ E_{ij},\begin{array}{}
+i\in\{ 1,\dots,n \} \\
 j\in\{ 1,\dots,m \}
 \end{array} \right\}
 $$
@@ -383,8 +383,7 @@ $$
 >*Cerchiamo una base*
 
 $$
-\begin{array}
-\ \\
+\begin{array}{}
 E_{11}=\begin{pmatrix}
 1 & 0 & 0  \\
 0 & 0 & 0
@@ -435,8 +434,8 @@ $$
 $$
 È uno spazio vettoriale su $\mathbb{R}$ rispetto alle operazioni:
 $$
-\begin{array}
-\ \forall f,g\in \text{Hom}(V,U),\forall a \in\mathbb{R} \\
+\begin{array}{}
+\forall f,g\in \text{Hom}(V,U),\forall a \in\mathbb{R} \\
 (f+g)(v)=f(v)+g(v) \\
 (af)(v)=af(v)
 \end{array}
@@ -496,8 +495,8 @@ Viene da una $g$ per il [[3 - Estensione Lineare#Teorema dell'Estensione Lineare
 >$$\text{Hom}(V,U)$$ e $$\mathcal{M}_{2,3}(\mathbb{R})$$
 
 $$
-\begin{array}
-\ f_{11}: e_{1}\to e_{1}', e_{2}\to 0, e_{3}\to0 \underbrace{ \rightarrow }_{ \Phi } \begin{pmatrix}
+\begin{array}{}
+f_{11}: e_{1}\to e_{1}', e_{2}\to 0, e_{3}\to0 \underbrace{ \rightarrow }_{ \Phi } \begin{pmatrix}
 1 & 0 & 0 \\
 0 & 0 & 0
 \end{pmatrix} = E_{11}, f(e_{1})=1e_{1}'+0e_{2}' \\

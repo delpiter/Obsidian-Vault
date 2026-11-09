@@ -79,8 +79,8 @@ $1,\quad \frac{1}{2},\quad2, \quad \frac{1}{3}, \quad \frac{2}{3},\quad \frac{3}
 > Supponiamo per assurdo di riuscire a mettere tutti gli elementi di $B$ in fila
 
 $$
-\begin{array}
-\ b_{1}\to \text{Primo Elemento della fila} \\
+\begin{array}{}
+b_{1}\to \text{Primo Elemento della fila} \\
 b_{2}\to \text{Secondo Elemento della fila} \\
 b_{3}\to \text{Terzo Elemento della fila} \\
 \vdots

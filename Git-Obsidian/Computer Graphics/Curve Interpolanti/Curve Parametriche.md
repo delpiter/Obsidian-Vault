@@ -316,8 +316,8 @@ $$
 
 
 $$
-\begin{array}
-\ t_{0}=0 \\
+\begin{array}{}
+t_{0}=0 \\
 t_{i}=t_{i-1} +\|P_{i}-P_{i-1}\| = t_{i-1}+\sqrt{ (x_{i}-x_{i-1})^{2} + (y_{i}-y_{i-1})^{2}}
 \end{array}
 $$

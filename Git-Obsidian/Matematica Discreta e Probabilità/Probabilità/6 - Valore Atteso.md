@@ -40,8 +40,8 @@ $X\sim B\left( 2, \displaystyle{\frac{2}{3}} \right)$
 >Per la proprietà appena enunciata:
 
 $$
-\begin{array}
-\ \displaystyle E[X+Y]=\sum_{h,k}(h+k)d_{X,Y}(h,k) \\
+\begin{array}{}
+\displaystyle E[X+Y]=\sum_{h,k}(h+k)d_{X,Y}(h,k) \\
 =\displaystyle\sum_{h,k}h\cdot d_{X,Y}(h,k)+\sum_{h,k}k\cdot d_{X,Y}(h,k)= \\
 =\displaystyle\sum_{h}h\underbrace{ \sum_{k}d_{X,Y}(h,k) }_{ \text{ densità marginale}}+\sum_{k}k\sum_{h}d_{X,Y}(h,k)= \\
 =\displaystyle\sum_{h}h\cdot d_{X}(h)+\sum_{k}k\cdot d_{Y}(k)= E[X]+E[Y]

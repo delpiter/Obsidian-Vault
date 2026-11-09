@@ -12,8 +12,8 @@ Sia $x$ la soluzione del sistema.
 
 Vogliamo stimare $\delta x$ in funzione di $\delta b$
 $$
-\begin{array}
-\ Ax+A\delta x=b+\delta b \\
+\begin{array}{}
+Ax+A\delta x=b+\delta b \\
 Ax-b+A\delta x=\delta b
 \end{array}
 $$

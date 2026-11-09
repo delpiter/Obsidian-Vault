@@ -164,8 +164,8 @@ $$
 V_{B}-\frac{Q}{C}-IR=0\implies V_{B}-\frac{Q}{C}=R\displaystyle{\frac{\text{d}Q}{\text{d}t}}\implies \displaystyle{\frac{\text{d}Q}{V_{B}C-Q}}=\displaystyle{\frac{\text{d}t}{RC}}
 $$
 $$
-\begin{array}
-\ \displaystyle Q(t)=V_{B}C(1-e^{-t/RC}) \\
+\begin{array}{}
+\displaystyle Q(t)=V_{B}C(1-e^{-t/RC}) \\
 \displaystyle I(t)=\frac{V_{B}}{R}e^{-t/RC} \\
 \displaystyle V(t)=V_{B}(1-e^{-t/RC})
 \end{array}

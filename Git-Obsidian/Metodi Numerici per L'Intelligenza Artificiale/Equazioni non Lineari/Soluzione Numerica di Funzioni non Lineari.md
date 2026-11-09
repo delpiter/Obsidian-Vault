@@ -29,8 +29,8 @@
 
 Infatti:
 $$
-\begin{array}
-\ f'(x)=2(x+2) \\
+\begin{array}{}
+f'(x)=2(x+2) \\
 f''(x)=2
 \end{array}
 $$

@@ -134,7 +134,7 @@ $\mathcal{P}($*"Esce 1"*$)$=$\mathcal{P}($*"Esce 1 al primo estratto"*$)+\mathca
 >- $E\cup E^c=\Omega$
 
 
-$$\begin{array}
-\ \mathcal{P}(E)+\mathcal{P}(E^c)=\mathcal{P(\Omega)}=1 \\
+$$\begin{array}{}
+\mathcal{P}(E)+\mathcal{P}(E^c)=\mathcal{P(\Omega)}=1 \\
 \mathcal{P}(E)=1-\mathcal{P}(E^c)
 \end{array}$$

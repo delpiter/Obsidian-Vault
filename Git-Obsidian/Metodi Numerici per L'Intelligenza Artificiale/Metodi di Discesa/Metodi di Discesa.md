@@ -35,8 +35,8 @@ $$
 Sviluppiamo $F(x)$
 
 $$
-\begin{array}
-\ F(x)=\frac{1}{2}(a_{11}x_{1}^2+a_{12}x_{1}x_{2}+\dots+a_{1i}x_{1}x_{i}+\dots+a_{1n}x_{1}x_{n}+ \\ a_{21}x_{2}x_{1}+a_{22}x_{2}^2+\dots+a_{2i}x_{2}x_{i}+\dots+a_{2n}x_{2}x_{n}
+\begin{array}{}
+F(x)=\frac{1}{2}(a_{11}x_{1}^2+a_{12}x_{1}x_{2}+\dots+a_{1i}x_{1}x_{i}+\dots+a_{1n}x_{1}x_{n}+ \\ a_{21}x_{2}x_{1}+a_{22}x_{2}^2+\dots+a_{2i}x_{2}x_{i}+\dots+a_{2n}x_{2}x_{n}
 + \\
 \dots \\
 a_{i1}x_{i}x_{1}+a_{i2}x_{i}x_{2}+\dots+a_{ii}x_{i}^2+\dots+a_{in}x_{i}x_{n}
@@ -119,8 +119,8 @@ $$
 >Nel caso in cui $A$ sia nota si vede che:
 
 $$
-\begin{array}
-\ F(x^{(k)}+\alpha^{(k)}p^{(k)})=\frac{1}{2}<A(x^{(k)}+\alpha^{(k)}p^{(k)}),(x^{(k)}+\alpha^{(k)}p^{(k)})> -<b,(x^{(k)}+\alpha^{(k)}p^{(k)})> = \\
+\begin{array}{}
+F(x^{(k)}+\alpha^{(k)}p^{(k)})=\frac{1}{2}<A(x^{(k)}+\alpha^{(k)}p^{(k)}),(x^{(k)}+\alpha^{(k)}p^{(k)})> -<b,(x^{(k)}+\alpha^{(k)}p^{(k)})> = \\
 =\frac{1}{2}< Ax^{(k)},x^{(k)}>+\frac{1}{2}\alpha^{(k)}<Ax^{(k)},p^{(k)}>+\frac{1}{2}\alpha^{(k)}<Ap^{(k)},x^{(k)}>+ \\
 +\frac{1}{2}(\alpha^{(k)})^2<Ap^{(k)},p^{(k)}>+<b,x^{(k)}>-\alpha^{(k)}<b,p^{(k)}>
 \end{array}$$

@@ -25,8 +25,8 @@
 - Vale la solita regola dei segni
 ##### In Generale
 $$
-\begin{array}
-\ \lim\limits_{x\to c} \displaystyle{\frac{1}{(x-c)^A}}=+\infty \text{ con A pari}
+\begin{array}{}
+\lim\limits_{x\to c} \displaystyle{\frac{1}{(x-c)^A}}=+\infty \text{ con A pari}
 \\ \lim\limits_{x\to c} \displaystyle{\frac{1}{(x-c)^B}}\to \text{non esiste con B dispari} \\
 \text{ma} \\
 \begin{cases}
@@ -137,8 +137,8 @@ $$
 #### Es
 - $\lim\limits_{x\to 0} \displaystyle{\frac{e^{2x}-1}{ln(1+3x)}}$
 $$
-\begin{array}
-\ e^{2x}=1+2x+\circ(x) \text{ per } x\to 0 \\
+\begin{array}{}
+e^{2x}=1+2x+\circ(x) \text{ per } x\to 0 \\
 ln(1+3x) = 3x+\circ(x) \text{ per } x\to 0
 \end{array}
 $$
@@ -156,8 +156,8 @@ $$
 	3. Triangolo $\overset{\triangle}{OAT}$
 - In particolare per un fatto di inclusione:
 $$
-\begin{array}
-\ 
+\begin{array}{}
+
 \text{Area }\overset{\triangle}{OAP}\leq \text{ Area settore circolare }OAP\leq\text{ Area }\overset{\triangle}{OAT} \\
 = \displaystyle{\frac{\sin(x)}{2}\leq \displaystyle{\frac{x}{2}}}\leq \displaystyle{\frac{\tan(x)}{2}}, x\in\left[ 0, \displaystyle{\frac{\pi}{2}} \right]
 \end{array}
@@ -172,8 +172,8 @@ $$
 $$
 - Per il [[Limiti#Teorema dei due Carabinieri|teorema dei due carabinieri]]
 $$
-\begin{array}
-\ \lim\limits_{x\to 0}1 = 1 \\
+\begin{array}{}
+\lim\limits_{x\to 0}1 = 1 \\
 \lim\limits_{x\to 0} \displaystyle{\frac{1}{|\cos(x)|}}=1 \\
 \text{Quindi} \\
 \lim\limits_{x\to 0} \displaystyle{\frac{|x|}{|\sin(x)|}}=1

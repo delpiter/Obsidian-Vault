@@ -3,8 +3,8 @@
 
 Si consideri un problema di *programmazione lineare continua* con $n$ variabili decisionali e $m$ vincoli.
 $$
-\begin{array}
-\ \min z = \sum_{j=1}^{n}c_{j}x_{j} \\
+\begin{array}{}
+\min z = \sum_{j=1}^{n}c_{j}x_{j} \\
 s.t. \sum_{j=1}^{n} a_{ij}x_{j} \geq b_{i}\qquad i=1,\dots,m \\
 x_{j} \geq 0 \qquad j=1,\dots,n
 \end{array}
@@ -18,8 +18,8 @@ $$
 
 Una rappresentazione più compatta del problema è la seguente:
 $$
-\begin{array}
-\ \min z = c^{T}x \\
+\begin{array}{}
+\min z = c^{T}x \\
 s.t. \ Ax\geq b \\
 x>0
 \end{array}
@@ -94,8 +94,8 @@ $$
 ![[attachements/MixedIntegerProgramming.png]]
 
 $$
-\begin{array}
-\ \min z = \sum_{j=1}^{n}c_{j}x_{j} \\
+\begin{array}{}
+\min z = \sum_{j=1}^{n}c_{j}x_{j} \\
 s.t. \sum_{j=1}^{n} a_{ij}x_{j} \geq b_{i}\qquad i=1,\dots,m \\
 x_{j} \geq 0 \qquad j=1,\dots,n \\
 x_{j} \quad \text{ integer}

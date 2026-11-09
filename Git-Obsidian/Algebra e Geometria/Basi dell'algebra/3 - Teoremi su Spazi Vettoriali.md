@@ -113,8 +113,8 @@ Abbiamo visto che $v_{1}=(2,1),v_{2}=(1,-1)$ è una base di $\mathbb{R}^2$
 
 Questa è una base perchè
 $$
-\begin{array}
-\ \forall v=(x_{1},\dots,x_{n})\in V \\
+\begin{array}{}
+\forall v=(x_{1},\dots,x_{n})\in V \\
 v=x_{1}e_{1}+x_{2}e_{2}+\dots+x_{n}e_{n}
 \end{array}
 $$

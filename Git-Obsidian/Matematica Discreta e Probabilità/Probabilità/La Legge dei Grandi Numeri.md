@@ -103,14 +103,14 @@ $$
 >$Y_{n}= \frac{1}{n}(X_{1}+\dots+X_{n})$
 
 $$
-\begin{array}
-\ E[Y_{n}]= \displaystyle{\frac{1}{n}}(\underbrace{ E[X_{1}]+\dots+E[X_{n}] }_{ \displaystyle n\cdot\mu })= \\
+\begin{array}{}
+E[Y_{n}]= \displaystyle{\frac{1}{n}}(\underbrace{ E[X_{1}]+\dots+E[X_{n}] }_{ \displaystyle n\cdot\mu })= \\
 =\displaystyle\frac{1}{\cancel{ n }}\cdot \cancel{ n }\cdot \mu
 \end{array}
 $$
 $$
-\begin{array}
-\ Var(Y_{n})=Var\left( \displaystyle \frac{1}{n}(X_{1}+\dots+X_{n}) \right)=\\
+\begin{array}{}
+Var(Y_{n})=Var\left( \displaystyle \frac{1}{n}(X_{1}+\dots+X_{n}) \right)=\\
 =\displaystyle \frac{1}{n^2}\cdot n\cdot \sigma^2
 \end{array}
 $$
