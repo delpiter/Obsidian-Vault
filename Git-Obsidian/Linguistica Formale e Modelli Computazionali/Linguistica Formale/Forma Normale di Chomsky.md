@@ -97,3 +97,75 @@ $$
 &P\to+,\,M\to*,\,L\to(,\,R\to)
 \end{aligned}
 $$
+
+## Gerarchia delle grammatiche di Chomsky
+---
+> Chomsky ha definito una gerarchia di 4 grammatiche con restrizioni sempre più stringenti.
+###### \* Produzioni Epsilon
+> [!eccezione] 
+> Viene permessa una possibile produzione $S\to \epsilon$ per il simbolo iniziale $S$ a patto che non ci sia una produzione $\alpha\to\beta$ con $S$ che appare in $\beta$  
+
+Questo serve per rappresentare tutti i linguaggi che contengono la stringa $\epsilon$.
+- Deve essere usabile solo all'inizio e non in mezzo alle altre derivazioni.
+
+Una qualsiasi grammatica $G'$ che accetta $L(G')=L(G)\cup \{  \epsilon \}$ è ottenuta aggiungendo un nuovo simbolo iniziale $S'$ e le produzioni:
+- $S'\to \epsilon$ e $S'\to S$
+
+### Senza Restrizioni
+> [!abstract] Unrestricted
+> Una [[Grammatiche e Linguaggi Liberi dal contesto|Grammatica]] $G=(V,T,P,S)$ senza restrizioni nella forma delle produzioni, anche detta di ***Tipo 0***.
+
+Le produzioni $P$ sono del tipo:
+$$
+\alpha \to \beta \in P, \qquad \alpha\in (V\cup T)^{+}, \ \beta \in (V\cup T)^{*}
+$$
+#### Metodo Riconoscitivo
+> Il metodo riconoscitivo per i linguaggi generati da queste grammatiche sono le ***procedure***
+
+> [!done] Procedura
+> Una procedura ***termina*** e ***accetta*** se l'input appartiene al linguaggio.
+
+Altrimenti *rifiuta* o *non termina*.
+### Dipendenti dal Contesto
+> [!attention] Context-Sensitive
+> Le grammatiche ***dipendenti dal contesto*** (***Tipo 1***) restringono le produzioni a $\alpha \to \beta$ con $|\beta| \geq |\alpha|$ (\*)
+
+In una grammatica dipendente dal contesto, facendo una qualsiasi produzione, la lunghezza della stringa ***non può diminuire***.
+
+Una produzione dipendente dal contesto è del tipo:
+- $\alpha_{1}A\alpha_{2} \to \alpha_{1}\beta\alpha_{2}$ con $A\in V$ e $\beta\in (V\cup T)^{+}$ e $\alpha_{1},\alpha_{2}\in(V\cup T)^{*}$
+
+> **Esempio**: $L(G)=\{ a^{n}b^{n}c^{n}\mid n\geq 1 \}$
+
+$$
+\begin{align}
+& S\to aSBc \mid aBC \\
+& cB \to Bc \\
+& aB \to ab \\
+& bB\to bb
+\end{align}
+$$
+Dove, in ordine le produzioni:
+1. Genera le stringhe $a^{n}(Bc)^{n}$
+2. Permette alle $B$ di essere spostate prima delle $c$
+3. Cambia la $B$ più a sinistra in una $b$
+4. Cambia tutte le altre $B$ in $b$ solo se sono adiacenti.
+#### Metodo Riconoscitivo
+> Il metodo riconoscitivo per i linguaggi generati da queste grammatiche sono gli ***algoritmi non deterministici***.
+
+> [!done] Algoritmo non deterministico
+> È una ***procedura che termina sempre*** con una complessità spaziale ***lineare***.
+### Libere dal Contesto
+>[!tip] Context-Free
+> In una [[Grammatiche e Linguaggi Liberi dal contesto|grammatica libera dal contesto]] le produzioni sono del tipo:
+> $A\to\beta$ con $A\in V$ e $\beta\in(V\cup T)^{+}$ (\*)
+
+#### Metodo Riconoscitivo
+> Il metodo riconoscitivo per i linguaggi generati da queste grammatiche sono gli [[Automi a Pila]] ***non deterministici***.
+### Regolari
+> [!help] Regular
+> Le ***grammatiche*** [[Linguaggi Regolari|regolari]] hanno le produzioni del tipo:
+> $A\to a$ oppure $A\to aB$ con $A,B\in V$ e $a \in T$ (\*)
+
+#### Metodo Riconoscitivo
+> Il metodo riconoscitivo per i linguaggi generati da queste grammatiche sono gli Automi a stati finiti [[Automi a Stati Finiti Deterministici|deterministici]] o [[Automi a Stati Finiti non Deterministici|non deterministici]].
