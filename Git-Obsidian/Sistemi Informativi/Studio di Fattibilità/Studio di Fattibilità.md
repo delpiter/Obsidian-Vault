@@ -6,6 +6,7 @@ L’obiettivo di uno studio di fattibilità non è quindi quello di individuare 
 
 
 > [!check] Lo studio di fattibilità è un ***progetto vero e proprio*** e segue il processo di attuazione.
+>>[!hint] Non porta a un risultato concreto ma abbassa il rischio e il corso del progetto vero e proprio
 
 Si cerca di **evitare**, o si cerca di *limitare i punti di analisi* poiché
 - è un costo certo rispetto a un risultato non certo.
@@ -212,3 +213,156 @@ Vengono fatte scelte sui vari progetti, in base ai rischi presenti in ciascuno d
 > - [[Diagramma di Pert]]
 
 Tre *diagrammi di base* di **gestione** del progetto
+
+### Analisi Costi-Benefici
+> Sezione che si articola in tre punti
+
+> [!hint] Valutazione dei Benefici Attesi
+> Fornisce una ***valutazione dettagliata dei benefici attesi***, limitatamente a quelli monetizzabili o misurabili secondo criteri oggettivi.
+
+- Individuazione e descrizione dei benefici attesi
+- Individuazione delle metriche dei valori attesi
+- Correlazione obbiettivi-benefici
+
+> [!help] Stima dei Costi
+> Individuazione delle ***principali voci di costo*** e esplicitazione delle metriche utilizzate.
+
+Si fanno le stime dei costi di *impianto* e di *esercizio*.
+
+Solitamente ***più facile dei benefici***.
+
+> [!caution] Analisi dell'investimento
+> Fornisce una valutazione comparate dei benefici e dei costi che si presentano nelle diverse alternative.
+
+Si devono indicare:
+- Le giustificazioni economiche all'investimento
+- Gli elementi per la scelta nel caso in cui si comparino più alternative.
+
+#### Stima dei Costi
+> I costi legati a un sistema informativo possono essere classificati usando i seguenti criteri
+
+Si classificano i costi nel seguente modo
+
+> [!todo] Per tipologia di risorsa
+
+- Costi delle **tecnologie** (*hardware* e *software*)
+- Costi del **personale** (dedicato allo sviluppo, gestione, manutenzione e assistenza del sistema).
+
+> [!caution] Per missione
+
+Tipicamente sono il $70-80\%$ dei costi informatici per un'azienda.
+- Costi di **sviluppo** (*progettazione*, *realizzazione* e costi di *avviamento*)
+- Costi di **esercizio** (per il corretto funzionamento dei sistemi)
+
+> [!help] Costi interni
+
+- Costi **diretti** (personale tecnico impegnato nelle attività di sviluppo e esercizio)
+- Costi **indotti** (legati alle attività svolte dagli utenti per attività connesse al progetto)
+
+> [!abstract] Costi esterni
+> 
+
+Relativi all'***acquisizione di prodotti hardware e software*** e dei servizi affidati a **società esterne**.
+
+> I procedimenti di stima e di valorizzazione dei costi variano a secondo del tipo di costo
+
+***Es.***
+- Costi **hardware**: valori di listino, sconti di volume, prezzo di mercato per unità, etc.
+- Costi di **sviluppo**: valorizzazione del tempo uomo impegnato con costi standard
+- etc...
+##### Outsourcing
+> Forma alternativa di gestione dei costi
+
+> [!info] 
+> L'***outsourcing*** ha luogo quando un'organizzazione affida tramite un *accordo contrattuale* a un fornitore esterno la responsabilità di una o più funzioni specializzate precedentemente ***svolte internamente***.
+
+Si delega completamente la responsabilità della funzione.
+- Evita la necessità di investimenti in beni immobili
+- Riduce i costi di gestione (gestisce tutto l'outsourcer)
+- Aumenta il livello qualitativo del servizio.
+
+> [!warning] Attenzione 
+> Quando si opta per l’outsourcing è necessario considerare il rischio di perdere il controllo del ***know how*** sul proprio sistema informativo
+
+La *progettazione* del `SI` deve sempre essere fatta all'***interno dell’azienda***
+appaltando all'esterno solo la *gestione delle problematiche tecnologiche*.
+
+###### Cloud Computing
+> [!quote] Info
+> Con ***cloud computing*** si indica un insieme di tecnologie che permettono di memorizzare, archiviare e elaborare dati grazie all'utilizzo di *risorse hardware/software distribuite e virtualizzate in rete*.
+
+- ***SaaS*** (Software as a Service): Programmi installati su un server remoto.
+- ***DaaS*** (Data as a Service): Si mettono a disposizioni i dati via web.
+- ***Paas*** (Platform as a Service): Fornisce allo sviluppatore ambienti pronti all'uso (container), non si gestisce ne hardware ne Sistema operativo
+- ***Iaas*** (Infrastructure as a Service): Acquisto di una piattaforma hardware completa.
+
+Si dice ***cloud pubblico*** quando i servizi sono offerti tipicamente da un fornitore terzo.
+
+> ***Multicloud***
+- La piattaforma cloud viene distribuita su *più cloud provider*.
+- Si evita il vendor lock-in
+
+
+> [!done] Vantaggi
+
+> Economici
+- Diminuisce i costi di start-up
+- Si riducono gli investimenti a fronte di maggiore spese correnti (catex opex #addLink)
+
+> Operativi
+- Riduzione dei tempi di realizzazione e di messa in esercizio
+- Ottimizzazione dei consumi energetici
+
+
+> [!fail] Svantaggi
+
+> Normative
+- La normativa in materia di protezione dei dati personali non è nata pensando al cloud
+- I dati sono distribuiti geograficamente
+
+> Compromissione della sicurezza
+- Gli aspetti di sicurezza sono regolati da clausole penali
+- Reale isolamento tra le risorse virtualizzate.
+
+###### Appliance
+
+> [!quote] Info
+> Con il termine ***appliance*** si identifica un hardware integrato con il software necessario a fornire una funzionalità.
+
+Questo paradigma è applicabile solo a grandi realtà visto il costo elevato.
+#### Benefici
+> Ci sono 3 tipologie di ***Benefici***
+
+> [!help] Monetizzabili
+> Sono quelli a cui è possibile ***associare direttamente*** un *valore monetario*.
+
+Maggiori guadagni, minori costi, esempio (Pubblica amministrazione):
+- Riduzione del personale
+- Riduzioni di canoni affitto locali
+
+
+> [!caution] Misurabili
+> Pur non essendo possibile associarli direttamente un valore economico è necessario ***individuare dei misuratori*** ([[Business Process Reengineering/Key Performance Indicator|KPI]]) tramite i quali si possa *quantificarne il loro valore*.
+
+> [!hint] Intangibili
+> Possono essere valutati sono in base a ***considerazioni*** *qualitative*, *aziendali*, *sociali* o *politiche*.
+
+Alcuni esempi:
+- Miglioramento del servizio all'utenza
+- Miglioramento dell'immagine dell'organizzazione
+- Affidabilità dell'informazione
+- ...
+
+Assume particolare rilevanza il livello di servizio reso agli utenti interni o esterni.
+#### Total Cost Ownership
+> Si valutano su un orizzonte temporale abbastanza lungo (dai 3 ai 5 anni) quali sono tutti i costi da pagare per possedere una certa risorsa.
+
+>[!cite] Definizione
+>Il `TCO` rappresenta il ***costo totale*** legato all'*acquisto*, all'*implementazione*, all'uso e alla *manutenzione* di un asset per tutto il suo ciclo di vita.
+
+1. Costi di Acquisto/Capitale (`CAPEX`) pagati in Up-Front.
+	- Hardware, software e installazione
+2. Costi operativi (`OPEX`)
+	- Energia elettrica, personale, manutenzione, rete e connettività, licenze.
+3. Costi Indiretti/nascosti
+	- Downtime, perdita di produttività, interruzione dei servizi, formazione del personale, aggiornamenti, costi di sicurezza.
