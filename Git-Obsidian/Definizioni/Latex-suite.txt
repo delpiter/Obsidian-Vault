@@ -100,6 +100,7 @@
 	{trigger: "lra", replacement: "\\Leftrightarrow", options: "mA"},
 	{trigger: "ooo", replacement: "\\infty", options: "mA"},
 	{trigger: "sum", replacement: "\\sum", options: "mA"},
+	{trigger: "isum", replacement: "\\sum_{$0=$1,\\dots,$3}$4", options: "mA"},
 	{trigger: "prod", replacement: "\\prod", options: "mA"},
 	{trigger: "lim", replacement: "\\lim\\limits_{$0\\to $1}", options: "mA"},
 	{trigger: "([^\\\\])pm", replacement: "[[0]]\\pm", options: "rm"},
