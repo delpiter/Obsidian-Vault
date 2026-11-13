@@ -1,21 +1,4 @@
-## Tipologie di Reti Neurali
----
-> Le reti neurali sono composte da gruppi di [[Neurone#Neurone Artificiale|Neuroni]] ***artificiali organizzati in livelli***.
-
->[!summary] Tipicamente
-
-> Livelli presenti:
-- Livello di ***Input***.
-- Livello di ***Output***.
-- Uno o più livello *intermedi* (***hidden layers***).
-
->[!abstract] FeedForward
->Nelle reti *feedforward* (`FFNN`) le connessioni collegano i neuroni di un livello con i neuroni di un **livello successivo**.
->**Non** sono consentite *connessioni all’indietro* o connessioni verso lo stesso livello.
-
->[!help] Ricorrenti
->Nelle ***reti ricorrenti*** sono previste *connessioni di feedback*, in genere verso neuroni dello *stesso livello*, ma anche all’**indietro**.
-
+![[../../Machine Learning/Reti Neurali/Neurone#Tipologie di Reti Neurali]]
 ### Cost e Loss Function
 >[!missing] Loss Function
 >La ***loss function*** è una misura dell'errore della previsione da un modello di [[Machine Learning]] rispetto ai dati di training.
@@ -74,4 +57,3 @@ Una `CNN` tradizionale è composta da un *insieme di layer sequenziali*:
 - "Srotola" il volume di input.
 
 La rete *fully-connected* alla fine esegue il compito di classificazione in base all'input dalla *parte convoluzionale*.
-
