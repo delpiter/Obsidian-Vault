@@ -437,12 +437,11 @@ $$
 
 I simboli che non sono utili sono detti ***inutili***.
 
-> Simboli ***generanti***
-- Un simbolo $X$ è generante se $X \overset{*}{\underset{G}{\Rightarrow}} w$ per qualche $w \in T^{*}$
-
 > Simboli ***raggiungibili***
 - Un simbolo $X$ è raggiungibile se $S \overset{*}{\underset{G}{\Rightarrow}} \alpha X\beta$ per qualche $\{ \alpha,\beta \}\subseteq (V\cup T)^{*}$
 
+> Simboli ***generanti***
+- Un simbolo $X$ è generante se $X \overset{*}{\underset{G}{\Rightarrow}} w$ per qualche $w \in T^{*}$
 
 > [!hint] Ordine delle operazioni
 > Se in $G$ con $L(G)\neq \emptyset$ eliminiamo prima i simboli *non generanti* poi quelli *non raggiungibili*, rimarranno solamente ***simboli utili***.

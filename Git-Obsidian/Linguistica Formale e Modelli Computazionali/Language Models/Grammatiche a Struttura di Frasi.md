@@ -66,7 +66,7 @@ $$
 \begin{align}
 & S\to NP \ \ VP \\
 & NP \to \text{Noun} \mid \text{Pronoun} \\
-& VP \to \text{Verb }VP \mid \text{Modal Verb}  \\
+& VP \to \text{Verb }NP \mid \text{Modal Verb}  \\
 &  \\
 & \text{Noun} \to [fish] \mid \dots \\
 & \text{Pronoun} \to [I] \mid [they] \mid \dots \\
@@ -76,11 +76,14 @@ $$
 $$
 
 La frase "***I can fish***" ha due alberi sintattici:
-
-![[attachements/Pasted image 20261108182906.png]]
-
+![[attachements/AmbiguousSyntaxTree.png]]
 
 > [!done] Soluzione
 > L'ambiguità è gestita usando un approccio probabilistico, ***assegnando delle probabilità alle produzioni della grammatica***.
 
 Selezionando infine l'albero sintattico ***più probabile***.
+
+> [!hint] Nota Bene
+> La grammatica si divide visibilmente in *due sezioni*:
+> - ***Categorie Sintattiche***: le produzioni che portano ad altre variabili ($S\to NP\ \ VP$)
+> - ***Categorie Lessicali***: le produzioni che portano a terminali.
