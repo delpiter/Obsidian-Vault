@@ -49,7 +49,7 @@ L’adozione di un ciclo di pianificazione e controllo è il primo passo per man
 > Durante la fase di ***attuazione*** vengono svolte le attività di progetto.
 > Momento in cui le idee e strategie pianificate vengono realizzate, è la *fase più lunga*.
 
-- Studio di fattibilità #addLink
+- [[Studio di Fattibilità/Studio di Fattibilità|Studio di Fattibilità]]
 - Definizione di progetti esecutivi
 - Acquisizione di prodotti e servizi dal mercato
 - Realizzazione dei progetti
@@ -59,7 +59,7 @@ L’adozione di un ciclo di pianificazione e controllo è il primo passo per man
 > ***Verifica*** dello stato di "*salute*" dei processi aziendali e dei servizi.
 > Verifico effettivamente lo **stato intero dell'azienda**.
 
-Analisi #addLink e diagnosi dell'as-is, raccolgo tutte le informazioni necessarie come:
+Analisi e diagnosi dell'as-is, raccolgo tutte le informazioni necessarie come:
 - dove sono più carente/scoperto
 - dove la tecnologia è più arretrata
 
@@ -71,7 +71,7 @@ Raccolgo le info dalle varie sezioni aziendali e **definisco nuovi progetti**.
 - In questa fase esco con una **serie di progetti** con *stime* dei costi e dei tempi, che porto nuovamente in fase di pianificazione.
 
 > Es.
-- Acquisto di un nuovo software o l'integrazione di una base di dati
+- Acquisto di un nuovo software o l'[[Integrazione/Integrazione|Integrazione]] di una base di dati
 
 A partire da una diagnosi cerco di capire quali attività devono essere fatte poiché l'innovazione venga implementata veramente.
 - Pensare nella pratica il cambiamento.
