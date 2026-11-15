@@ -146,11 +146,10 @@ La soluzione è fatta in modo da *evitare perdita di informazioni* e la strategi
 Il processo si basa su 3 principi:
 
 > ***Completezza***
-
 - Con la sovrapposizione risulteranno evidenti ulteriori proprietà inter-schema.
 
 > ***Minimalità***
-- Evitare forte ridondanza dei concetti.
+- Evitare forte ridondanza dei concetti che anche se espressi in modo univoco dai sorgenti risultano *duplicati* o *derivabili*.
 
 > ***Leggibilità***
 - Facilita e sveltisce le successive fasi di progettazione
