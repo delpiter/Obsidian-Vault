@@ -22,7 +22,7 @@ Un metodo più robusto, $k$-nn può essere visto come una ***estensione del near
 
 ### k-Nearest Neighbour
 > [!help] K-nn
-> La regola ***k-nearest neighbor*** determina i $k$ elementi più vicini al pattern $x$ da classificare (con $k$ [[../../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Training#Iperparametri|iperparametro]]).
+> La regola ***k-nearest neighbor*** determina i $k$ elementi più vicini al pattern $x$ da classificare (con $k$ [[../Modalità di Apprendimento#Iperparametri|Iperparametro]]).
 
 Ogni pattern tra i $k$ più vicini "*vota*" per la classe cui esso stesso appartiene.
 - Il pattern $x$ viene assegnato alla classe che ha ottenuto il ***maggior numero di voti***.

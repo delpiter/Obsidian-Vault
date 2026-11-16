@@ -160,7 +160,7 @@ Il problema di ottimizzazione viene così modificato:
 $$
 \displaystyle{\frac{||w||^{2}}{2}}+C \sum_{i=1,\dots,n}\xi_{i}
 $$
-- $C$ è l'[[../../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Training#Iperparametri|iperparametro]] che indica quanto è importante il margine rispetto alla violazione dei vincoli.
+- $C$ è l'[[../Modalità di Apprendimento#Iperparametri|Iperparametro]] che indica quanto è importante il margine rispetto alla violazione dei vincoli.
 
 > Vincoli:
 

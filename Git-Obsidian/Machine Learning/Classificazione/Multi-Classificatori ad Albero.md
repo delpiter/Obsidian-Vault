@@ -44,7 +44,7 @@ Entropy è usato quando le classi coinvolte sono ***più o meno equiprobabili***
 
 > [!caution] Ricorsione
 > Il processo ***continua ricorsivamente*** dividendo i sottoinsiemi creati fino a quanto
-> - Si raggiunge in ogni ramo la profondità massima specificata ([[../../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Training#Iperparametri|iperparametro]] $max\_depth$)
+> - Si raggiunge in ogni ramo la profondità massima specificata ([[../Modalità di Apprendimento#Iperparametri|Iperparametro]]$max\_depth$)
 > - Non è più possibile ridurre ulteriormente le impurità.
 
 ### Altri iperparametri

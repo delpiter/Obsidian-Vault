@@ -14,7 +14,7 @@ Il clustering ha applicazioni in numerose discipline come:
 
 ![[attachements/Clustering.png]]
 
-Il problema è molto complesso ([[../Algoritmi e Strutture Dati/Complessità/Classi P e NP|NP-Hard]])
+Il problema è molto complesso ([[../../Algoritmi e Strutture Dati/Complessità/Classi P e NP|NP-Hard]])
 - Determinare la soluzione ottima con ricerca esaustiva è possibile solo nei casi semplici con pochi pattern.
 
 ### Numero di Soluzioni
@@ -23,7 +23,7 @@ Il problema è molto complesso ([[../Algoritmi e Strutture Dati/Complessità/Cla
 
 Anche per esempi molto piccoli come $n=100$ e $s=5$ il numero totale di soluzioni è $\approx 10^{67}$
 
-Se $s$ non è noto, il numero di soluzioni è dato dal [[../Matematica Discreta e Probabilità/Combinatoria/3 - Partizioni#Triangolo di Bell|numero di bell]] ottenibile sommando i casi precedenti per tutti i valori di $s$ da $1$ a $n$.
+Se $s$ non è noto, il numero di soluzioni è dato dal [[../../Matematica Discreta e Probabilità/Combinatoria/3 - Partizioni#Triangolo di Bell|numero di bell]] ottenibile sommando i casi precedenti per tutti i valori di $s$ da $1$ a $n$.
 ### Criteri di Clustering
 > Criteri e algoritmi di clustering sono due cose ben distinte
 

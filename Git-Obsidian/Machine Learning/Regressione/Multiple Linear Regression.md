@@ -173,7 +173,7 @@ Rispetto alla classificazione, qui si inverte la logica:
 
 L'approssimazione può essere **lineare** o **non-lineare**.
 
-L' [[../../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Training#Iperparametri|iperparametro]] $C$ e i regolarizzatori del ***kernel*** permettono il controllo dell'overfitting.
+L' [[../Modalità di Apprendimento#Iperparametri|Iperparametro]] $C$ e i regolarizzatori del ***kernel*** permettono il controllo dell'overfitting.
 ##### Random Forest Regressor
 >[!tldr] Idea
 >Stessa logica di creazione della [[../Classificazione/Multi-Classificatori ad Albero#Random Forest|foresta]] con ***doppio bagging*** su feature e pattern, ma con gli alberi `CART` usati come *regressori*.

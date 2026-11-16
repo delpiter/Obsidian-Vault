@@ -93,7 +93,6 @@ $$
 - Applico la definizione di derivata
 $$
 \begin{array}{}
-
 \lim\limits_{x\to c} \displaystyle{\frac{\cancel{ g(f(c)) }+g'(f(c))\cdot (f(x)-f(c))+\circ(f(x)-f(c))-\cancel{ g(f(c)) }}{x-c}}= \\
 = \lim\limits_{x\to c}g'(f(c))\cdot\underbrace{  \displaystyle{\frac{f(x)-f(c)}{x-c}} }_{ f'(c) } = g'(f(c))f'(c)
 \end{array}
