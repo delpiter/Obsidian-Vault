@@ -26,7 +26,7 @@ p_{i}=\frac{e^{ a_{i} }}{\sum_{k=1}^{n}e^{ a_{k} }}
 $$
 ## Convolutional Neural Network
 ---
-> Create dopo le reti ***MLP*** (Multi Layer [[Neurone#Neurone Artificiale|Perceptron]]).
+> Create dopo le reti ***MLP*** (Multi Layer [[../../Machine Learning/Reti Neurali/Neurone#Neurone Artificiale|perceptron]]).
 
 Le reti ***MLP*** sono computazionalmente troppo pesanti per essere impiegate nell'elaborazione di immagini.
 

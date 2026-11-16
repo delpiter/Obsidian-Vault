@@ -18,7 +18,7 @@ La *scarsa capacità computazionale* e i *dataset di piccole dimensioni* sono il
 ## 1980-1987
 ---
 >[!hint] Nuova Primavera
->Nascono i ***sistemi esperti*** e l'algoritmo di [[Training#Backwards Propagation|Back Propagation]].
+>Nascono i ***sistemi esperti*** e l'algoritmo di [[../../Machine Learning/Reti Neurali/Training#Backwards Propagation|back propagation]].
 
 > ***Expert Systems***:
 - Sistemi progettati per risolvere complessi problemi usando regole logiche, attraverso corpi di conoscenza (principalmente catene di `if-else`).

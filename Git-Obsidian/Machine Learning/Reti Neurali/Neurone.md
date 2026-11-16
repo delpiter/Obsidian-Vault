@@ -48,20 +48,28 @@ $$
 
 > Di seguito alcuni esempi di Funzione di attivazione
 
-***ReLU***
+***ReLU*** con varianti Leaky e Exponential
+
 $$
-f(x)=\max(0,x)
+f(x)=\max(0,x) \\
+l(x)=\max(0.1x,x) \\ 
+e(x)=\begin{cases}
+x & x\geq 0 \\
+\alpha(e^{ x }-1) & x<0
+\end{cases}
 $$
 ```functionplot
 ---
 title:
 xLabel: 
 yLabel: 
-bounds: [-6,6,-8,8]
+bounds: [-8,8,-8,8]
 disableZoom: true
 grid: true
 ---
 f(x)=max(0,x)
+g(x)=max(0.2*x,x)
+e(x)=(x > 0) ? x : 1 * exp(x)-1
 ```
 ***Sigmoid***
 $$
@@ -142,6 +150,29 @@ $$
 I valori $z_{k}$ possono essere interpretati come probabilità delle classi
 - Appartengono a $[0\dots1]$
 - La loro somma è $1$.
+
+### Cross Entropy Loss
+> Per un problema di classificazione multi classe viene consigliata questa strategia.
+
+> [!abstract] Cross Entropy
+> La ***cross-entropy*** tra due distribuzioni discrete $p$ e $q$ è definita da:
+> $$H(p,q)=-\sum_{v}p(v)\cdot \log(q(v))$$
+
+Usata come ***loss function***: 
+- $p$ è il vettore *target*
+- $q$ il vettore *output* della rete.
+
+Il valore minimo di $H$ si ha quando il vettore target coincide con l'output.
+
+> [!help] One hot targets
+> Quando il target vector per $x$ assume la forma ***one hot***, con tutti i valori a $0$ con un solo $1$ per la ***classe corretta***.
+
+Allora $J(w,x)=H(t,z)=-\log(z_{g})$
+
+Se $z_{g}$ è ottenuta con la funzione di attivazione ***softmax*** allora:
+$$
+J(w,x)=\log\left( \displaystyle{\frac{e^{ net^{g} }}{\sum_{c=1}^{s}e^{ net_{c} }}} \right)=-net^{g}+\log\sum_{c=1}^{s}e^{ net_{c} } 
+$$
 ## Tipologie di Reti Neurali
 ---
 > Le reti neurali sono composte da gruppi di [[Neurone#Neurone Artificiale|Neuroni]] ***artificiali organizzati in livelli***.
@@ -173,3 +204,53 @@ Complica notevolmente il flusso delle informazioni e l'addestramento.
 È una rete di ***almeno 3 livelli*** (1 *nascosto*) con funzioni di attivazione non lineari.
 
 Un singolo percettrone o una rete di percettroni a due soli livelli può essere addestrato con una semplice regola detta ***delta rule***.
+
+## Iperparametri
+---
+
+>[!example] Gli iperparametri per una rete neurale sono i seguenti:
+
+1. [[Learning Rate]]
+2. Numero di *Epoche*
+3. Dimensione del *Mini-Batch*
+4. *Architettura* del Modello
+5. *Regolarizzazione*
+6. Inizializzazione dei *Pesi*
+7. [[Neurone#Funzioni di Attivazione|Funzione di Attivazione]]
+### Regolarizzazione
+> Usata per ridurre l'***overfitting***.
+
+> [!hint] Osservazione
+> Reti neurali i cui pesi, o parte di essi, ***assumono valori piccoli*** vicino allo zero producono output più stabili e regolari, portando a una migliore ***generalizzazione***.
+
+Per spingere le rete ad adottare pesi di valore piccolo si può aggiungere un termine di regolarizzazione alla *loss function*.
+
+> Nel caso della ***cross entropy***
+
+$$
+J_{Tot}=J_{cross-ent}+J_{reg}
+$$
+
+> Regolarizzazione $L_{2}$
+- Il termine aggiunto corrisponde alla somma dei quadrati di tutti i pesi della rete.
+$$
+J_{reg}=\frac{1}{2}\lambda \sum_{i}w_{i}^{2}
+$$
+> Regolarizzazione $L_{1}$
+- Si usa il valore assoluto.
+$$
+J_{reg}=\frac{1}{2}\lambda \sum_{i}|w_{i}|
+$$
+
+> [!quote] Parametro Lambda
+> In entrambi i casi il parametro $\lambda$ regola la ***forza della regolarizzazione***.
+
+Pertanto l'aggiornamento dei pesi ora è influenzato da questo nuovo parametro, poiché il gradiente delle $J_{Tot}$ corrisponde alla somma dei gradienti $J_{cross-ent}$ e $J_{reg}$
+
+Quest'ultimo vale:
+$$
+\displaystyle\frac{ \partial J_{reg} }{ \partial w_{k} }= \displaystyle\frac{ \partial  }{ \partial w_{k} }\left( \frac{1}{2}\lambda \sum_{i}w_{i}^{2} \right)=\lambda\cdot w_{k}
+$$
+
+L'aggiornamento dei pesi a seguito di *back propagation* include un ulteriore termine denominato ***weight decay*** che ha l'effetto di tirarlo verso lo **zero**.
+

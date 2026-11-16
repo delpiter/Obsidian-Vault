@@ -231,17 +231,3 @@ I modelli *generalizzano meglio* quando convergono a **flat minima** (minimi pia
 
 - In genere, con minibatch più grandi si può usare un learning rate **più aggressivo (maggiore)**, grazie a un effetto "media" più forte nelle correzioni (il gradiente stimato è meno rumoroso).
 - Alcuni autori propongono un **aumento lineare di $\eta$** all'aumentare di $size_{mb}$ (_linear scaling rule_).
-## Iperparametri
----
->[!info]
->Gli ***iperparametri*** sono parametri esterni al modello di [[Machine Learning]] che devono essere impostati *prima* dell'avvio del processo di addestramento.
-
->[!example] Gli iperparametri sono:
-
-1. *Learning Rate*
-2. Numero di *Epoche*
-3. Dimensione del *Mini-Batch*
-4. *Architettura* del Modello
-5. *Regolarizzazione*
-6. Inizializzazione dei *Pesi*
-7. [[Neurone#Funzioni di Attivazione|Funzione di Attivazione]]

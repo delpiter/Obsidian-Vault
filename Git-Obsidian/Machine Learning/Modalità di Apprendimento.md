@@ -60,8 +60,10 @@ $f$ può essere ottimizzata:
 - **Esplicitamente**, con metodi che operano a partire dalla *definizione matematica*.
 - **Implicitamente**, usando euristiche che modificano i parametri in modo coerente con $f$.
 
-![[../Metodi Numerici per L'Intelligenza Artificiale/Intelligenza Artificiale/Training#Iperparametri]]
-
+## Iperparametri
+---
+>[!info]
+>Gli ***iperparametri*** sono parametri esterni al modello di [[Machine Learning]] che devono essere impostati *prima* dell'avvio del processo di addestramento.
 ### Selezione automatica iperparametri
 > La ricerca di valori ottimali per gli iperparametri può essere lunga e noiosa.
 
