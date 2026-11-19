@@ -1,3 +1,11 @@
+## Tipologie di Grammatiche Probabilistiche
+---
+> Esistono varie tipologie di ***grammatiche probabilistiche***.
+
+- [[#Grammatiche Regolari Probabilistiche]]
+- [[#Grammatiche Probabilistiche Libere dal Contesto]]
+
+Ovviamente 
 ## Grammatiche Probabilistiche Libere dal Contesto
 ---
 > [!info] Probabilistic Context-Free Grammar
@@ -92,8 +100,7 @@ La probabilità $P_{G}(T)$ di un albero sintattico $T$ è la probabilità di una
 > Le ambiguità nelle `PCFG` sono definite  come per le [[../Linguistica Formale/Grammatiche e Linguaggi Liberi dal contesto#Ambiguità in grammatiche e linguaggi|CFG]].
 
 In una `PCFG` si potrebbero avere delle stringhe $w\in\Sigma^{*}$ tali che $w$ ha diverse ***derivazioni canoniche*** **destre** o **sinistre**.
-- Questo implica la presenza di diversi *alberi sintattici*.
-
+- Questo implica la presenza di diversi *alberi sintattici*.-------ilkukjukjyjky 
 
 > [!cite] Probabilità
 > La probabilità di generare $w\in \Sigma^{*}$ è la ***somma delle probabilità***:
@@ -232,3 +239,26 @@ Dove:
 > [!warning] La variabile si riproduce troppo velocemente rispetto a quanto si elimina
 > 
 
+> [!tl;dr] Caratterizzazione della Consistenza
+> Sia $G$ una `PCFG` dove ogni *variabile raggiungibile* è **generante**.
+> $\mu_{g}^{rec}(A)\leq 1$ per ogni variabile ricorsiva $A$ in $G$ è una condizione che ***caratterizza la consistenza***.
+> Dove:
+> - $\mu$ è il numero medio di repliche di $A$ che $A$ *genera* in diversi alberi sintattici.
+
+Nell'esempio precedente, dopo ogni *ciclo ricorsivo* $S$ genera $0.6\cdot 2$ repliche di se stesso, quindi $\mu_{g}^{rec}(S)=1.2 > 1$.
+- La grammatica ***non è consistente***.
+
+## Grammatiche Regolari Probabilistiche
+---
+> [!cite] Definizione
+> Una ***grammatica regolare probabilistica*** è una `PCFG` dove le produzioni sono quelle di una [[../Linguistica Formale/Linguaggi Regolari|Grammatica Regolare]].
+
+### Consistenza
+> In una `PRG` la condizione necessaria delle `PCFG` è anche sufficiente.
+
+È ovvio che se $G$ è regolare allora soddisfa la caratterizzazione di consistenza delle `PCFG`.
+
+> [!summary] Prova
+> Poiché nel corpo di una produzione è presente al più una variabile, una variabile ricorsiva $A$ non può generare repliche di se stessa in più di un ramo.
+>> [!done] Può solo generare al più una replica di se stesso.
+>
