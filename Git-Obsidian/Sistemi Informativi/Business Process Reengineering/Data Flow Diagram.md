@@ -1,6 +1,6 @@
 ## Data Flow Diagram
 ---
-> I `DFD` traggono origine dalla teoria dei [[../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi|Grafi]].
+> I `DFD` traggono origine dalla teoria dei [[../../Algoritmi e Strutture Dati/Strutture Dati/Grafi/I Grafi|grafi]].
 
 Un sistema è visto come una **rete di processi funzionali** interconnessi da depositi di dati (*repository*).
 
